@@ -1,0 +1,70 @@
+[*********************100%%**********************]  1 of 1 completed
+Date
+2012-05-18     18.373451
+2012-05-21     18.357675
+2012-05-22     18.341910
+2012-05-23     18.326155
+2012-05-24     18.310412
+                 ...
+2023-05-24    161.422848
+2023-05-25    161.480483
+2023-05-26    161.538114
+2023-05-30    161.595741
+2023-05-31    161.653365
+Name: trend, Length: 2776, dtype: float64
+Date
+2012-05-18    -2.037154
+2012-05-21    -1.339882
+2012-05-22    -1.369428
+2012-05-23    -1.131669
+2012-05-24    -1.129782
+                ...
+2023-05-24    -6.710148
+2023-05-25   -10.178066
+2023-05-26   -10.052258
+2023-05-30    -6.308041
+2023-05-31    -3.033076
+Name: season, Length: 2776, dtype: float64
+Date
+2012-05-18    -0.340124
+2012-05-21    -0.089687
+2012-05-22    -0.174359
+2012-05-23     0.013506
+2012-05-24    -0.130677
+                ...
+2023-05-24    16.021889
+2023-05-25    20.574780
+2023-05-26    22.815643
+2023-05-30    20.871769
+2023-05-31    17.489513
+Name: resid, Length: 2776, dtype: float64
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[32m[I 2024-10-25 04:05:00,765][0m A new study created in memory with name: no-name-77864721-1c8e-4a2d-8f74-4019542fa05f[0m
+/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py:160: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+learning_rate: 2.677741604668213e-05, batch_size: 111, step_size: 10, gamma: 0.8498906817002387, depth: 6, dim: 90
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+[32m[I 2024-10-25 04:05:22,034][0m Trial 0 finished with value: 0.1731295883655548 and parameters: {'learning_rate': 2.677741604668213e-05, 'batch_size': 111, 'step_size': 10, 'gamma': 0.8498906817002387, 'depth': 6, 'dim': 90}. Best is trial 0 with value: 0.1731295883655548.[0m
+learning_rate: 0.00016032045191961228, batch_size: 117, step_size: 6, gamma: 0.9296639759538029, depth: 3, dim: 103
+[32m[I 2024-10-25 04:05:34,954][0m Trial 1 finished with value: 0.10225333273410797 and parameters: {'learning_rate': 0.00016032045191961228, 'batch_size': 117, 'step_size': 6, 'gamma': 0.9296639759538029, 'depth': 3, 'dim': 103}. Best is trial 1 with value: 0.10225333273410797.[0m
+learning_rate: 2.2756194747138524e-05, batch_size: 78, step_size: 8, gamma: 0.8286347713785757, depth: 2, dim: 82
+[32m[I 2024-10-25 04:05:44,021][0m Trial 2 finished with value: 0.24810537695884705 and parameters: {'learning_rate': 2.2756194747138524e-05, 'batch_size': 78, 'step_size': 8, 'gamma': 0.8286347713785757, 'depth': 2, 'dim': 82}. Best is trial 1 with value: 0.10225333273410797.[0m
+learning_rate: 8.76238201863687e-06, batch_size: 55, step_size: 9, gamma: 0.9167032199713911, depth: 2, dim: 79
+[32m[I 2024-10-25 04:05:54,432][0m Trial 3 finished with value: 0.33131691813468933 and parameters: {'learning_rate': 8.76238201863687e-06, 'batch_size': 55, 'step_size': 9, 'gamma': 0.9167032199713911, 'depth': 2, 'dim': 79}. Best is trial 1 with value: 0.10225333273410797.[0m
+learning_rate: 0.0004861554363129413, batch_size: 115, step_size: 3, gamma: 0.8423103925029718, depth: 4, dim: 116
+[32m[I 2024-10-25 04:06:12,989][0m Trial 4 finished with value: 0.12492910027503967 and parameters: {'learning_rate': 0.0004861554363129413, 'batch_size': 115, 'step_size': 3, 'gamma': 0.8423103925029718, 'depth': 4, 'dim': 116}. Best is trial 1 with value: 0.10225333273410797.[0m
+learning_rate: 0.00020715859591910032, batch_size: 81, step_size: 10, gamma: 0.9101127337833508, depth: 6, dim: 109
+[32m[I 2024-10-25 04:06:40,831][0m Trial 5 finished with value: 0.024014461785554886 and parameters: {'learning_rate': 0.00020715859591910032, 'batch_size': 81, 'step_size': 10, 'gamma': 0.9101127337833508, 'depth': 6, 'dim': 109}. Best is trial 5 with value: 0.024014461785554886.[0m
+learning_rate: 1.093140725767412e-05, batch_size: 123, step_size: 5, gamma: 0.9406657496587116, depth: 4, dim: 67
+[32m[I 2024-10-25 04:06:54,268][0m Trial 6 finished with value: 0.9049542546272278 and parameters: {'learning_rate': 1.093140725767412e-05, 'batch_size': 123, 'step_size': 5, 'gamma': 0.9406657496587116, 'depth': 4, 'dim': 67}. Best is trial 5 with value: 0.024014461785554886.[0m
+learning_rate: 4.95368815756904e-06, batch_size: 71, step_size: 10, gamma: 0.8649651957810426, depth: 5, dim: 111
+[32m[I 2024-10-25 04:07:19,499][0m Trial 7 finished with value: 0.3345813751220703 and parameters: {'learning_rate': 4.95368815756904e-06, 'batch_size': 71, 'step_size': 10, 'gamma': 0.8649651957810426, 'depth': 5, 'dim': 111}. Best is trial 5 with value: 0.024014461785554886.[0m
+learning_rate: 3.475070880363041e-06, batch_size: 114, step_size: 10, gamma: 0.8080907499697748, depth: 4, dim: 46
+[32m[I 2024-10-25 04:07:29,748][0m Trial 8 finished with value: 0.6319735050201416 and parameters: {'learning_rate': 3.475070880363041e-06, 'batch_size': 114, 'step_size': 10, 'gamma': 0.8080907499697748, 'depth': 4, 'dim': 46}. Best is trial 5 with value: 0.024014461785554886.[0m
+learning_rate: 0.0004009447572709515, batch_size: 54, step_size: 10, gamma: 0.8308565846463313, depth: 3, dim: 78
+[32m[I 2024-10-25 04:07:43,898][0m Trial 9 finished with value: 0.12546022236347198 and parameters: {'learning_rate': 0.0004009447572709515, 'batch_size': 54, 'step_size': 10, 'gamma': 0.8308565846463313, 'depth': 3, 'dim': 78}. Best is trial 5 with value: 0.024014461785554886.[0m
+learning_rate: 8.520214508312148e-05, batch_size: 34, step_size: 1, gamma: 0.9852314315824311, depth: 6, dim: 123

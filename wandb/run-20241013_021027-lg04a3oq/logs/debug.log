@@ -1,0 +1,33 @@
+2024-10-13 02:10:27,822 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
+2024-10-13 02:10:27,823 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Configure stats pid to 172030
+2024-10-13 02:10:27,824 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Loading settings from /home/raikakoki/.config/wandb/settings
+2024-10-13 02:10:27,825 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Loading settings from /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/settings
+2024-10-13 02:10:27,826 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-13 02:10:27,827 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-10-13 02:10:27,828 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'STLdemo.py', 'program_abspath': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py', 'program': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py'}
+2024-10-13 02:10:27,829 INFO    MainThread:172030 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-13 02:10:27,831 INFO    MainThread:172030 [wandb_init.py:_log_setup():532] Logging user logs to /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241013_021027-lg04a3oq/logs/debug.log
+2024-10-13 02:10:27,832 INFO    MainThread:172030 [wandb_init.py:_log_setup():533] Logging internal logs to /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241013_021027-lg04a3oq/logs/debug-internal.log
+2024-10-13 02:10:27,833 INFO    MainThread:172030 [wandb_init.py:init():617] calling init triggers
+2024-10-13 02:10:27,834 INFO    MainThread:172030 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
+config: {}
+2024-10-13 02:10:27,835 INFO    MainThread:172030 [wandb_init.py:init():667] starting backend
+2024-10-13 02:10:27,835 INFO    MainThread:172030 [wandb_init.py:init():671] sending inform_init request
+2024-10-13 02:10:27,845 INFO    MainThread:172030 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-13 02:10:27,846 INFO    MainThread:172030 [wandb_init.py:init():684] backend started and connected
+2024-10-13 02:10:27,863 INFO    MainThread:172030 [wandb_init.py:init():779] updated telemetry
+2024-10-13 02:10:27,907 INFO    MainThread:172030 [wandb_init.py:init():812] communicating run to backend with 90.0 second timeout
+2024-10-13 02:10:28,365 INFO    MainThread:172030 [wandb_init.py:init():863] starting run threads in backend
+2024-10-13 02:10:28,562 INFO    MainThread:172030 [wandb_run.py:_console_start():2465] atexit reg
+2024-10-13 02:10:28,562 INFO    MainThread:172030 [wandb_run.py:_redirect():2313] redirect: wrap_raw
+2024-10-13 02:10:28,564 INFO    MainThread:172030 [wandb_run.py:_redirect():2378] Wrapping output streams.
+2024-10-13 02:10:28,564 INFO    MainThread:172030 [wandb_run.py:_redirect():2403] Redirects installed.
+2024-10-13 02:10:28,568 INFO    MainThread:172030 [wandb_init.py:init():907] run started, returning control to user process
+2024-10-13 02:10:30,151 INFO    MainThread:172030 [wandb_run.py:_config_callback():1394] config_cb None None {'learning_rate': 0.0008, 'epochs': 10, 'batch_size': 32, 'observation_period_num': 30, 'predict_period_num': 1}
+2024-10-13 02:10:38,848 INFO    MainThread:172030 [wandb_run.py:_finish():2164] finishing run raika-koki/gafam-stock-price-prediction/lg04a3oq
+2024-10-13 02:10:38,849 INFO    MainThread:172030 [wandb_run.py:_atexit_cleanup():2428] got exitcode: 0
+2024-10-13 02:10:38,852 INFO    MainThread:172030 [wandb_run.py:_restore():2410] restore
+2024-10-13 02:10:38,852 INFO    MainThread:172030 [wandb_run.py:_restore():2416] restore done
+2024-10-13 02:10:42,242 INFO    MainThread:172030 [wandb_run.py:_footer_history_summary_info():4049] rendering history
+2024-10-13 02:10:42,243 INFO    MainThread:172030 [wandb_run.py:_footer_history_summary_info():4081] rendering summary
+2024-10-13 02:10:42,270 INFO    MainThread:172030 [wandb_run.py:_footer_sync_info():4008] logging synced files

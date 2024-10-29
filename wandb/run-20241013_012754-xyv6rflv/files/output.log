@@ -1,0 +1,178 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+{'AAPL': Date
+2019-12-31     78.597345
+2020-01-02     78.442409
+2020-01-03     78.286272
+2020-01-06     78.128838
+2020-01-07     77.970016
+                 ...
+2023-05-24    173.117852
+2023-05-25    173.456802
+2023-05-26    173.795648
+2023-05-30    174.134453
+2023-05-31    174.473267
+Name: trend, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633881
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961807
+2020-01-07    212.420410
+                 ...
+2023-05-24    248.461914
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925354
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938202
+2020-01-03    152.021393
+2020-01-06    152.414337
+2020-01-07    151.024673
+                 ...
+2023-05-24    310.853607
+2023-05-25    322.808411
+2023-05-26    329.711884
+2023-05-30    328.047882
+2023-05-31    325.254852
+Name: Adj Close, Length: 860, dtype: float64}
+{'AAPL': Date
+2019-12-31   -7.656762
+2020-01-02   -5.129810
+2020-01-03   -5.123263
+2020-01-06   -6.032040
+2020-01-07   -5.890344
+                ...
+2023-05-24   -3.198169
+2023-05-25   -1.174740
+2023-05-26    0.261969
+2023-05-30    0.765899
+2023-05-31    1.324539
+Name: season, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633881
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961807
+2020-01-07    212.420410
+                 ...
+2023-05-24    248.461914
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925354
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938202
+2020-01-03    152.021393
+2020-01-06    152.414337
+2020-01-07    151.024673
+                 ...
+2023-05-24    310.853607
+2023-05-25    322.808411
+2023-05-26    329.711884
+2023-05-30    328.047882
+2023-05-31    325.254852
+Name: Adj Close, Length: 860, dtype: float64}
+{'AAPL': Date
+2019-12-31    0.309837
+2020-01-02   -0.436477
+2020-01-03   -0.995399
+2020-01-06    0.645839
+2020-01-07    0.320857
+                ...
+2023-05-24    0.814921
+2023-05-25   -0.404849
+2023-05-26    0.243881
+2023-05-30    1.259118
+2023-05-31    0.312011
+Name: resid, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633881
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961807
+2020-01-07    212.420410
+                 ...
+2023-05-24    248.461914
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925354
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938202
+2020-01-03    152.021393
+2020-01-06    152.414337
+2020-01-07    151.024673
+                 ...
+2023-05-24    310.853607
+2023-05-25    322.808411
+2023-05-26    329.711884
+2023-05-30    328.047882
+2023-05-31    325.254852
+Name: Adj Close, Length: 860, dtype: float64}
+Dataset created successfully.
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 135, in <module>
+    model_trend, train_loss_trend, valid_loss_trend = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 31, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fb4016980d0>", line 67, in forward
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/model.py", line 167, in forward
+    assert x.shape[1:] == (self.lookback_len, self.num_variates)
+AssertionError
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 135, in <module>
+    model_trend, train_loss_trend, valid_loss_trend = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 31, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fb4016980d0>", line 67, in forward
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/model.py", line 167, in forward
+    assert x.shape[1:] == (self.lookback_len, self.num_variates)
+AssertionError

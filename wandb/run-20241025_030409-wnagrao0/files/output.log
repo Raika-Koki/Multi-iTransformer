@@ -1,0 +1,250 @@
+[*********************100%%**********************]  1 of 1 completed
+Date
+2012-05-18     18.373450
+2012-05-21     18.357674
+2012-05-22     18.341909
+2012-05-23     18.326155
+2012-05-24     18.310411
+                 ...
+2023-05-24    161.422813
+2023-05-25    161.480447
+2023-05-26    161.538078
+2023-05-30    161.595705
+2023-05-31    161.653329
+Name: trend, Length: 2776, dtype: float64
+Date
+2012-05-18    -2.037158
+2012-05-21    -1.339883
+2012-05-22    -1.369429
+2012-05-23    -1.131668
+2012-05-24    -1.129778
+                ...
+2023-05-24    -6.710205
+2023-05-25   -10.178086
+2023-05-26   -10.052296
+2023-05-30    -6.308037
+2023-05-31    -3.033555
+Name: season, Length: 2776, dtype: float64
+Date
+2012-05-18    -0.340122
+2012-05-21    -0.089685
+2012-05-22    -0.174362
+2012-05-23     0.013508
+2012-05-24    -0.130674
+                ...
+2023-05-24    16.021996
+2023-05-25    20.574836
+2023-05-26    22.815716
+2023-05-30    20.871802
+2023-05-31    17.490014
+Name: resid, Length: 2776, dtype: float64
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[32m[I 2024-10-25 03:04:14,124][0m A new study created in memory with name: no-name-c510fd07-9895-46f0-a49f-02c9473f8926[0m
+/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py:160: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+(Training, Validation)0.219328, 0.593100
+(Training, Validation)0.186146, 0.549469
+(Training, Validation)0.206528, 0.952771
+(Training, Validation)0.222587, 0.299398
+(Training, Validation)0.232657, 0.439566
+(Training, Validation)0.206808, 0.403177
+(Training, Validation)0.199915, 0.347691
+(Training, Validation)0.240185, 0.249062
+(Training, Validation)0.247829, 0.125528
+(Training, Validation)0.120525, 0.165107
+(Training, Validation)0.045997, 0.083184
+(Training, Validation)0.037961, 0.032814
+(Training, Validation)0.036733, 0.023921
+(Training, Validation)0.067763, 0.131903
+(Training, Validation)0.030596, 0.095561
+(Training, Validation)0.022573, 0.035046
+(Training, Validation)0.020699, 0.027652
+(Training, Validation)0.015089, 0.036983
+(Training, Validation)0.013524, 0.037736
+(Training, Validation)0.012466, 0.033250
+(Training, Validation)0.011200, 0.034580
+(Training, Validation)0.009527, 0.024839
+(Training, Validation)0.008526, 0.020522
+(Training, Validation)0.007902, 0.015586
+(Training, Validation)0.007393, 0.012293
+(Training, Validation)0.007025, 0.011370
+(Training, Validation)0.006605, 0.009562
+(Training, Validation)0.006275, 0.009800
+(Training, Validation)0.005934, 0.008654
+(Training, Validation)0.005693, 0.008999
+(Training, Validation)0.005441, 0.008150
+(Training, Validation)0.005263, 0.008549
+(Training, Validation)0.005079, 0.007843
+(Training, Validation)0.004945, 0.008270
+(Training, Validation)0.004808, 0.007653
+(Training, Validation)0.004705, 0.008081
+(Training, Validation)0.004602, 0.007532
+(Training, Validation)0.004521, 0.007944
+(Training, Validation)0.004443, 0.007453
+(Training, Validation)0.004377, 0.007835
+(Training, Validation)0.004319, 0.007404
+(Training, Validation)0.004264, 0.007742
+(Training, Validation)0.004220, 0.007378
+(Training, Validation)0.004174, 0.007654
+(Training, Validation)0.004140, 0.007371
+(Training, Validation)0.004102, 0.007568
+(Training, Validation)0.004074, 0.007378
+(Training, Validation)0.004043, 0.007486
+(Training, Validation)0.004019, 0.007388
+(Training, Validation)0.003994, 0.007418
+(Training, Validation)0.003973, 0.007388
+(Training, Validation)0.003954, 0.007375
+(Training, Validation)0.003936, 0.007374
+(Training, Validation)0.003920, 0.007351
+(Training, Validation)0.003905, 0.007355
+(Training, Validation)0.003893, 0.007337
+(Training, Validation)0.003879, 0.007337
+(Training, Validation)0.003869, 0.007326
+(Training, Validation)0.003858, 0.007323
+(Training, Validation)0.003849, 0.007316
+(Training, Validation)0.003840, 0.007313
+(Training, Validation)0.003833, 0.007306
+(Training, Validation)0.003824, 0.007304
+(Training, Validation)0.003818, 0.007299
+(Training, Validation)0.003811, 0.007296
+(Training, Validation)0.003806, 0.007292
+(Training, Validation)0.003800, 0.007289
+(Training, Validation)0.003796, 0.007286
+(Training, Validation)0.003791, 0.007284
+(Training, Validation)0.003788, 0.007281
+(Training, Validation)0.003783, 0.007279
+(Training, Validation)0.003780, 0.007277
+(Training, Validation)0.003777, 0.007275
+(Training, Validation)0.003774, 0.007273
+(Training, Validation)0.003771, 0.007271
+(Training, Validation)0.003769, 0.007270
+(Training, Validation)0.003766, 0.007268
+(Training, Validation)0.003765, 0.007267
+(Training, Validation)0.003762, 0.007266
+(Training, Validation)0.003761, 0.007264
+(Training, Validation)0.003759, 0.007263
+(Training, Validation)0.003758, 0.007262
+(Training, Validation)0.003756, 0.007262
+(Training, Validation)0.003755, 0.007261
+(Training, Validation)0.003754, 0.007260
+(Training, Validation)0.003753, 0.007259
+(Training, Validation)0.003751, 0.007259
+(Training, Validation)0.003751, 0.007258
+(Training, Validation)0.003750, 0.007257
+(Training, Validation)0.003749, 0.007257
+(Training, Validation)0.003748, 0.007257
+(Training, Validation)0.003748, 0.007256
+(Training, Validation)0.003747, 0.007256
+(Training, Validation)0.003746, 0.007256
+(Training, Validation)0.003746, 0.007256
+(Training, Validation)0.003745, 0.007255
+(Training, Validation)0.003745, 0.007255
+(Training, Validation)0.003745, 0.007255
+(Training, Validation)0.003744, 0.007255
+(Training, Validation)0.003744, 0.007255
+Epoch 100/100, Training Loss: 0.0037, Validation Loss: 0.0073
+[32m[I 2024-10-25 03:06:11,981][0m Trial 0 finished with value: 0.007255096919834614 and parameters: {'learning_rate': 0.0009125683775143736, 'batch_size': 61, 'step_size': 2, 'gamma': 0.8247226214185193, 'depth': 3, 'dim': 93}. Best is trial 0 with value: 0.007255096919834614.[0m
+(Training, Validation)0.271445, 0.581623
+(Training, Validation)0.269628, 0.287588
+(Training, Validation)0.377644, 0.343728
+(Training, Validation)0.325570, 0.354118
+(Training, Validation)0.248253, 0.380864
+(Training, Validation)0.272828, 0.539670
+(Training, Validation)0.346018, 0.247649
+(Training, Validation)0.399237, 0.134895
+(Training, Validation)0.253123, 0.064346
+(Training, Validation)0.152432, 0.214770
+(Training, Validation)0.051592, 0.045848
+(Training, Validation)0.035732, 0.022038
+(Training, Validation)0.061419, 0.019939
+(Training, Validation)0.086778, 0.263551
+(Training, Validation)0.048160, 0.037657
+(Training, Validation)0.051531, 0.035772
+(Training, Validation)0.055641, 0.023725
+(Training, Validation)0.027680, 0.015215
+(Training, Validation)0.019380, 0.008629
+(Training, Validation)0.021193, 0.022156
+(Training, Validation)0.020259, 0.023661
+(Training, Validation)0.052433, 0.013647
+(Training, Validation)0.070167, 0.292459
+(Training, Validation)0.024208, 0.029409
+(Training, Validation)0.017007, 0.067091
+(Training, Validation)0.014152, 0.055606
+(Training, Validation)0.013653, 0.052031
+(Training, Validation)0.013487, 0.061743
+(Training, Validation)0.009365, 0.041631
+[33m[W 2024-10-25 03:06:58,901][0m Trial 1 failed with parameters: {'learning_rate': 0.0005421279793117921, 'batch_size': 67, 'step_size': 9, 'gamma': 0.9077961646578061, 'depth': 4, 'dim': 98} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend = optuna.create_study(direction='minimize')
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 189, in objective
+    print(f"learning_rate: {learning_rate}, batch_size: {batch_size}, step_size: {step_size}, gamma: {gamma}, depth: {depth}, dim: {dim}")
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[33m[W 2024-10-25 03:06:58,925][0m Trial 1 failed with value None.[0m
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <module>
+    study_trend = optuna.create_study(direction='minimize')
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend = optuna.create_study(direction='minimize')
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 189, in objective
+    print(f"learning_rate: {learning_rate}, batch_size: {batch_size}, step_size: {step_size}, gamma: {gamma}, depth: {depth}, dim: {dim}")
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <module>
+    study_trend = optuna.create_study(direction='minimize')
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend = optuna.create_study(direction='minimize')
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 189, in objective
+    print(f"learning_rate: {learning_rate}, batch_size: {batch_size}, step_size: {step_size}, gamma: {gamma}, depth: {depth}, dim: {dim}")
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

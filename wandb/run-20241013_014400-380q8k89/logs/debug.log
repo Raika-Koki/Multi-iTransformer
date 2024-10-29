@@ -1,0 +1,27 @@
+2024-10-13 01:44:00,220 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Current SDK version is 0.18.3
+2024-10-13 01:44:00,221 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Configure stats pid to 164370
+2024-10-13 01:44:00,221 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Loading settings from /home/raikakoki/.config/wandb/settings
+2024-10-13 01:44:00,222 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Loading settings from /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/settings
+2024-10-13 01:44:00,222 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-10-13 01:44:00,222 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-10-13 01:44:00,223 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'STLdemo.py', 'program_abspath': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py', 'program': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py'}
+2024-10-13 01:44:00,223 INFO    MainThread:164370 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-10-13 01:44:00,224 INFO    MainThread:164370 [wandb_init.py:_log_setup():532] Logging user logs to /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241013_014400-380q8k89/logs/debug.log
+2024-10-13 01:44:00,225 INFO    MainThread:164370 [wandb_init.py:_log_setup():533] Logging internal logs to /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241013_014400-380q8k89/logs/debug-internal.log
+2024-10-13 01:44:00,225 INFO    MainThread:164370 [wandb_init.py:init():617] calling init triggers
+2024-10-13 01:44:00,226 INFO    MainThread:164370 [wandb_init.py:init():624] wandb.init called with sweep_config: {}
+config: {}
+2024-10-13 01:44:00,226 INFO    MainThread:164370 [wandb_init.py:init():667] starting backend
+2024-10-13 01:44:00,226 INFO    MainThread:164370 [wandb_init.py:init():671] sending inform_init request
+2024-10-13 01:44:00,235 INFO    MainThread:164370 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-13 01:44:00,236 INFO    MainThread:164370 [wandb_init.py:init():684] backend started and connected
+2024-10-13 01:44:00,252 INFO    MainThread:164370 [wandb_init.py:init():779] updated telemetry
+2024-10-13 01:44:00,282 INFO    MainThread:164370 [wandb_init.py:init():812] communicating run to backend with 90.0 second timeout
+2024-10-13 01:44:00,786 INFO    MainThread:164370 [wandb_init.py:init():863] starting run threads in backend
+2024-10-13 01:44:01,028 INFO    MainThread:164370 [wandb_run.py:_console_start():2465] atexit reg
+2024-10-13 01:44:01,029 INFO    MainThread:164370 [wandb_run.py:_redirect():2313] redirect: wrap_raw
+2024-10-13 01:44:01,030 INFO    MainThread:164370 [wandb_run.py:_redirect():2378] Wrapping output streams.
+2024-10-13 01:44:01,030 INFO    MainThread:164370 [wandb_run.py:_redirect():2403] Redirects installed.
+2024-10-13 01:44:01,033 INFO    MainThread:164370 [wandb_init.py:init():907] run started, returning control to user process
+2024-10-13 01:44:02,888 INFO    MainThread:164370 [wandb_run.py:_config_callback():1394] config_cb None None {'learning_rate': 0.0008, 'epochs': 100, 'batch_size': 32, 'observation_period_num': 30, 'predict_period_num': 1}
+2024-10-13 01:45:22,451 WARNING MsgRouterThr:164370 [router.py:message_loop():77] message_loop has been closed

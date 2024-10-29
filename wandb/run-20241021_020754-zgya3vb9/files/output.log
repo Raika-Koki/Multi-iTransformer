@@ -1,0 +1,35 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+Dataset created successfully.
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+Epoch 1/100, (Training, Validation) Trend Loss: nan, nan| Seasonal Loss: nan, nan| Residual Loss: nan, nan
+Epoch 2/100, (Training, Validation) Trend Loss: nan, nan| Seasonal Loss: nan, nan| Residual Loss: nan, nan
+Epoch 3/100, (Training, Validation) Trend Loss: nan, nan| Seasonal Loss: nan, nan| Residual Loss: nan, nan
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 196, in <module>
+    model_seasonal, train_loss_seasonal, valid_loss_seasonal = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 196, in <module>
+    model_seasonal, train_loss_seasonal, valid_loss_seasonal = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

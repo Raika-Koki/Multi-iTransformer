@@ -1,0 +1,649 @@
+2024-09-24 18:29:37,294 INFO    StreamThr :213104 [internal.py:wandb_internal():85] W&B internal server running at pid: 213104, started at: 2024-09-24 18:29:37.291278
+2024-09-24 18:29:37,297 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: status
+2024-09-24 18:29:37,311 INFO    WriterThread:213104 [datastore.py:open_for_write():87] open: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/run-hdd16rip.wandb
+2024-09-24 18:29:37,315 DEBUG   SenderThread:213104 [sender.py:send():379] send: header
+2024-09-24 18:29:37,361 DEBUG   SenderThread:213104 [sender.py:send():379] send: run
+2024-09-24 18:29:38,181 INFO    SenderThread:213104 [dir_watcher.py:__init__():211] watching files in: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files
+2024-09-24 18:29:38,182 INFO    SenderThread:213104 [sender.py:_start_run_threads():1188] run started: hdd16rip with start time 1727170177.291956
+2024-09-24 18:29:38,316 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: check_version
+2024-09-24 18:29:38,317 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: check_version
+2024-09-24 18:29:38,439 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: run_start
+2024-09-24 18:29:38,441 DEBUG   HandlerThread:213104 [system_info.py:__init__():26] System info init
+2024-09-24 18:29:38,442 DEBUG   HandlerThread:213104 [system_info.py:__init__():41] System info init done
+2024-09-24 18:29:38,443 INFO    HandlerThread:213104 [system_monitor.py:start():194] Starting system monitor
+2024-09-24 18:29:38,443 INFO    SystemMonitor:213104 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-24 18:29:38,444 INFO    HandlerThread:213104 [system_monitor.py:probe():214] Collecting system info
+2024-09-24 18:29:38,445 INFO    SystemMonitor:213104 [interfaces.py:start():188] Started cpu monitoring
+2024-09-24 18:29:38,449 INFO    SystemMonitor:213104 [interfaces.py:start():188] Started disk monitoring
+2024-09-24 18:29:38,451 INFO    SystemMonitor:213104 [interfaces.py:start():188] Started memory monitoring
+2024-09-24 18:29:38,452 INFO    SystemMonitor:213104 [interfaces.py:start():188] Started network monitoring
+2024-09-24 18:29:38,458 DEBUG   HandlerThread:213104 [system_info.py:probe():152] Probing system
+2024-09-24 18:29:38,561 DEBUG   HandlerThread:213104 [system_info.py:_probe_git():137] Probing git
+2024-09-24 18:29:38,630 DEBUG   HandlerThread:213104 [system_info.py:_probe_git():145] Probing git done
+2024-09-24 18:29:38,630 DEBUG   HandlerThread:213104 [system_info.py:probe():200] Probing system done
+2024-09-24 18:29:38,631 DEBUG   HandlerThread:213104 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-09-24T09:29:38.459080', 'startedAt': '2024-09-24T09:29:37.145002', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/demo.py', 'codePathLocal': 'demo.py', 'codePath': 'demo.py', 'git': {'remote': None, 'commit': None}, 'email': None, 'root': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer', 'host': 'LAPTOP-T1I126TP', 'username': 'raikakoki', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.2099999999996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 19.02655792236328}}, 'memory': {'total': 15.447296142578125}}
+2024-09-24 18:29:38,631 INFO    HandlerThread:213104 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-24 18:29:38,632 INFO    HandlerThread:213104 [system_monitor.py:probe():227] Publishing system info
+2024-09-24 18:29:38,640 INFO    HandlerThread:213104 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-24 18:29:38,644 DEBUG   SenderThread:213104 [sender.py:send():379] send: files
+2024-09-24 18:29:38,644 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-09-24 18:29:38,782 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-24 18:29:38,783 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: python_packages
+2024-09-24 18:29:38,783 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-24 18:29:38,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:38,790 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: stop_status
+2024-09-24 18:29:39,027 DEBUG   SenderThread:213104 [sender.py:send():379] send: telemetry
+2024-09-24 18:29:39,192 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-metadata.json
+2024-09-24 18:29:39,195 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/requirements.txt
+2024-09-24 18:29:39,369 INFO    wandb-upload_0:213104 [upload_job.py:push():130] Uploaded file /tmp/tmpaxq24ap7wandb/z5befd76-wandb-metadata.json
+2024-09-24 18:29:39,784 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:40,140 DEBUG   SenderThread:213104 [sender.py:send():379] send: config
+2024-09-24 18:29:40,195 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:40,488 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:40,491 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:40,492 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:40,496 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:40,749 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:40,750 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:40,751 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:40,754 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:40,784 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:41,059 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:41,061 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:41,062 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:41,065 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:41,200 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:41,277 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:41,278 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:41,279 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:41,282 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:41,555 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:41,556 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:41,557 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:41,560 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:41,784 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:41,859 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:41,860 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:41,861 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:41,864 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:42,065 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:42,067 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:42,067 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:42,070 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:42,205 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:42,205 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:42,331 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:42,332 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: status_report
+2024-09-24 18:29:42,333 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:42,333 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:42,337 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:42,588 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:42,590 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:42,591 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:42,595 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:42,784 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:42,909 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:42,911 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:42,911 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:42,914 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:43,123 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:43,125 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:43,125 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:43,128 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:43,212 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:43,385 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:43,388 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:43,388 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:43,393 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:43,636 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:43,637 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:43,637 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:43,643 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:43,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:43,969 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:43,971 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:43,971 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:43,976 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:44,178 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:44,179 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:44,180 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:44,183 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:44,218 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:44,219 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:44,437 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:44,438 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:44,439 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:44,443 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:44,700 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:44,702 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:44,702 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:44,707 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:44,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:45,029 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:45,066 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:45,067 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:45,070 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:45,223 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:45,248 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:45,249 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:45,250 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:45,253 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:45,489 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:45,491 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:45,492 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:45,496 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:45,744 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:45,745 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:45,746 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:45,751 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:45,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:46,049 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:46,050 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:46,051 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:46,054 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:46,228 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:46,229 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:46,270 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:46,271 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:46,272 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:46,275 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:46,531 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:46,532 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:46,533 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:46,536 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:46,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:46,859 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:46,860 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:46,861 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:46,865 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:47,069 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:47,071 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:47,071 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:47,075 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:47,234 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:47,332 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:47,333 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: status_report
+2024-09-24 18:29:47,333 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:47,334 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:47,337 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:47,586 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:47,587 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:47,588 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:47,591 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:47,786 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:47,889 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:47,891 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:47,892 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:47,895 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:48,109 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:48,110 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:48,111 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:48,114 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:48,238 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:48,239 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:48,381 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:48,383 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:48,383 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:48,388 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:48,652 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:48,654 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:48,654 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:48,659 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:48,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:48,959 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:48,961 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:48,961 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:48,966 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:49,180 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:49,181 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:49,182 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:49,185 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:49,245 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:49,435 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:49,437 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:49,437 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:49,441 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:49,705 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:49,706 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:49,707 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:49,711 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:49,786 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:50,019 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:50,020 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:50,021 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:50,025 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:50,213 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:50,215 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:50,216 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:50,219 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:50,251 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:50,252 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:50,475 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:50,509 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:50,510 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:50,513 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:50,749 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:50,751 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:50,752 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:50,756 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:50,786 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:51,069 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:51,070 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:51,071 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:51,076 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:51,256 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:51,279 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:51,280 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:51,281 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:51,284 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:51,536 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:51,538 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:51,539 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:51,542 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:51,789 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:51,849 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:51,879 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:51,880 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:51,884 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:52,056 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:52,058 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:52,059 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:52,062 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:52,261 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:52,262 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:52,314 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:52,315 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:52,316 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:52,325 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:52,579 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:52,580 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: status_report
+2024-09-24 18:29:52,581 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:52,582 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:52,585 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:52,788 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:52,879 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:52,881 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:52,881 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:52,885 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:53,097 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:53,099 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:53,100 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:53,105 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:53,265 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:53,360 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:53,362 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:53,363 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:53,366 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:53,621 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:53,622 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:53,623 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:53,628 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:53,783 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-24 18:29:53,784 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: stop_status
+2024-09-24 18:29:53,789 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:53,949 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:54,131 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:54,132 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:54,135 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:54,204 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:54,206 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:54,206 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:54,211 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:54,271 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:54,272 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:54,472 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:54,474 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:54,475 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:54,479 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:54,759 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:54,760 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:54,763 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:54,766 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:54,789 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:55,089 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:55,090 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:55,091 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:55,095 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:55,277 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:55,310 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:55,312 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:55,315 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:55,321 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:55,578 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:55,580 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:55,580 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:55,584 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:55,789 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:55,879 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:55,881 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:55,882 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:55,887 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:56,121 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:56,122 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:56,123 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:56,126 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:56,282 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:56,283 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:56,372 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:56,374 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:56,375 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:56,378 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:56,636 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:56,638 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:56,638 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:56,643 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:56,790 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:56,939 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:56,941 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:56,941 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:56,945 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:57,170 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:57,171 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:57,172 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:57,177 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:57,287 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:57,426 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:57,428 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:57,429 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:57,434 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:57,689 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:57,691 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: status_report
+2024-09-24 18:29:57,691 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:57,692 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:57,695 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:57,790 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:57,999 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:58,001 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:58,001 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:58,004 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:58,198 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:58,199 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:58,200 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:58,203 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:58,293 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:29:58,294 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:58,456 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:58,458 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:58,459 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:58,462 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:58,715 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:58,716 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:58,717 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:58,720 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:58,790 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:29:59,039 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:59,040 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:59,041 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:59,044 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:59,236 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:59,237 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:59,238 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:59,242 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:59,299 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:29:59,485 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:59,487 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:59,487 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:59,492 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:59,758 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:29:59,760 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:29:59,761 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:29:59,764 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:29:59,790 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:00,089 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:00,091 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:00,092 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:00,095 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:00,304 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:00,309 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:30:00,310 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:00,347 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:00,347 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:00,351 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:00,574 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:00,575 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:00,576 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:00,580 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:00,790 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:00,889 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:00,891 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:00,892 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:00,895 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:01,113 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:01,115 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:01,116 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:01,120 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:01,315 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:01,382 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:01,420 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:01,421 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:01,425 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:01,647 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:01,648 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:01,649 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:01,661 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:01,790 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:01,969 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:01,970 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:01,971 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:01,975 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:02,177 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:02,179 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:02,179 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:02,183 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:02,321 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:30:02,321 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:02,453 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:02,454 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:02,454 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:02,458 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:02,720 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:02,722 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: status_report
+2024-09-24 18:30:02,722 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:02,723 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:02,727 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:02,791 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:03,029 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:03,030 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:03,031 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:03,037 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:03,250 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:03,252 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:03,252 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:03,256 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:03,328 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:03,524 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:03,525 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:03,526 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:03,530 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:03,791 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:03,839 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:03,840 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:03,841 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:03,846 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:04,061 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:04,062 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:04,063 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:04,066 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:04,335 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:30:04,336 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:04,359 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:04,360 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:04,361 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:04,364 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:04,638 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:04,640 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:04,641 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:04,644 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:04,791 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:04,949 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:04,951 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:04,951 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:04,954 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:05,148 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:05,150 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:05,150 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:05,153 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:05,341 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:05,418 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:05,420 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:05,420 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:05,423 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:05,683 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:05,685 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:05,686 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:05,689 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:05,791 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:05,999 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:06,000 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:06,001 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:06,005 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:06,217 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:06,219 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:06,219 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:06,222 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:06,347 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:30:06,348 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:06,472 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:06,473 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:06,474 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:06,477 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:06,731 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-24 18:30:06,733 DEBUG   SenderThread:213104 [sender.py:send():379] send: history
+2024-09-24 18:30:06,733 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: summary_record
+2024-09-24 18:30:06,737 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:06,784 DEBUG   SenderThread:213104 [sender.py:send():379] send: exit
+2024-09-24 18:30:06,785 INFO    SenderThread:213104 [sender.py:send_exit():586] handling exit code: 1
+2024-09-24 18:30:06,785 INFO    SenderThread:213104 [sender.py:send_exit():588] handling runtime: 28
+2024-09-24 18:30:06,794 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:06,796 INFO    SenderThread:213104 [sender.py:send_exit():594] send defer
+2024-09-24 18:30:06,796 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:06,797 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-24 18:30:06,797 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:06,798 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-09-24 18:30:06,798 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 1
+2024-09-24 18:30:06,798 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:06,799 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-24 18:30:06,799 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:06,799 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-09-24 18:30:06,800 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 2
+2024-09-24 18:30:06,800 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:06,800 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-24 18:30:06,800 INFO    HandlerThread:213104 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-24 18:30:06,801 DEBUG   SystemMonitor:213104 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-24 18:30:06,801 INFO    HandlerThread:213104 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-24 18:30:06,801 DEBUG   SystemMonitor:213104 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-24 18:30:06,802 INFO    HandlerThread:213104 [interfaces.py:finish():200] Joined disk monitor
+2024-09-24 18:30:06,802 DEBUG   SystemMonitor:213104 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-24 18:30:06,803 INFO    HandlerThread:213104 [interfaces.py:finish():200] Joined memory monitor
+2024-09-24 18:30:06,804 INFO    HandlerThread:213104 [interfaces.py:finish():200] Joined network monitor
+2024-09-24 18:30:06,804 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:06,805 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-09-24 18:30:06,805 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 3
+2024-09-24 18:30:06,805 DEBUG   SenderThread:213104 [sender.py:send():379] send: stats
+2024-09-24 18:30:06,805 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:06,806 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-24 18:30:06,807 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:06,807 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-09-24 18:30:06,807 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 4
+2024-09-24 18:30:06,808 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:06,808 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-24 18:30:06,809 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:06,809 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-09-24 18:30:06,810 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 5
+2024-09-24 18:30:06,810 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:06,810 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-24 18:30:06,811 DEBUG   SenderThread:213104 [sender.py:send():379] send: summary
+2024-09-24 18:30:06,814 INFO    SenderThread:213104 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-09-24 18:30:06,815 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:06,815 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-09-24 18:30:06,816 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 6
+2024-09-24 18:30:06,816 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:06,816 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-24 18:30:06,817 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:06,817 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-09-24 18:30:06,821 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: status_report
+2024-09-24 18:30:07,043 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 7
+2024-09-24 18:30:07,044 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:07,045 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-24 18:30:07,047 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:07,048 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-09-24 18:30:07,365 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:30:07,368 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:07,372 INFO    Thread-12 :213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/config.yaml
+2024-09-24 18:30:07,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-24 18:30:08,240 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 8
+2024-09-24 18:30:08,241 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: poll_exit
+2024-09-24 18:30:08,241 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:08,243 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-24 18:30:08,244 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:08,245 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-09-24 18:30:08,246 INFO    SenderThread:213104 [job_builder.py:build():440] Attempting to build job artifact
+2024-09-24 18:30:08,265 INFO    SenderThread:213104 [job_builder.py:_get_source_type():580] no source found
+2024-09-24 18:30:08,266 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 9
+2024-09-24 18:30:08,267 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:08,268 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-24 18:30:08,269 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:08,270 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-09-24 18:30:08,271 INFO    SenderThread:213104 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-24 18:30:08,427 INFO    SenderThread:213104 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:30:08,432 INFO    SenderThread:213104 [dir_watcher.py:finish():388] scan: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files
+2024-09-24 18:30:08,439 INFO    SenderThread:213104 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/config.yaml config.yaml
+2024-09-24 18:30:08,454 INFO    SenderThread:213104 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log output.log
+2024-09-24 18:30:08,469 INFO    SenderThread:213104 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/requirements.txt requirements.txt
+2024-09-24 18:30:08,482 INFO    SenderThread:213104 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-metadata.json wandb-metadata.json
+2024-09-24 18:30:08,482 INFO    SenderThread:213104 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json wandb-summary.json
+2024-09-24 18:30:08,495 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 10
+2024-09-24 18:30:08,495 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:08,496 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-24 18:30:08,497 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:08,497 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-09-24 18:30:08,500 INFO    SenderThread:213104 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-24 18:30:08,785 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-24 18:30:08,787 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: poll_exit
+2024-09-24 18:30:08,911 INFO    wandb-upload_0:213104 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/config.yaml
+2024-09-24 18:30:09,179 INFO    wandb-upload_2:213104 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/requirements.txt
+2024-09-24 18:30:09,181 INFO    wandb-upload_1:213104 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/output.log
+2024-09-24 18:30:09,188 INFO    wandb-upload_3:213104 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/files/wandb-summary.json
+2024-09-24 18:30:09,390 INFO    Thread-11 (_thread_body):213104 [sender.py:transition_state():614] send defer: 11
+2024-09-24 18:30:09,391 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:09,392 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-24 18:30:09,393 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:09,394 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-09-24 18:30:09,395 INFO    SenderThread:213104 [file_pusher.py:join():175] waiting for file pusher
+2024-09-24 18:30:09,396 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 12
+2024-09-24 18:30:09,397 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:09,398 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-24 18:30:09,399 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:09,400 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-09-24 18:30:09,400 INFO    SenderThread:213104 [file_stream.py:finish():601] file stream finish called
+2024-09-24 18:30:09,692 INFO    SenderThread:213104 [file_stream.py:finish():605] file stream finish is done
+2024-09-24 18:30:09,693 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 13
+2024-09-24 18:30:09,695 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:09,696 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-24 18:30:09,697 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:09,698 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-09-24 18:30:09,699 INFO    SenderThread:213104 [sender.py:transition_state():614] send defer: 14
+2024-09-24 18:30:09,701 DEBUG   SenderThread:213104 [sender.py:send():379] send: final
+2024-09-24 18:30:09,701 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: defer
+2024-09-24 18:30:09,702 DEBUG   SenderThread:213104 [sender.py:send():379] send: footer
+2024-09-24 18:30:09,703 INFO    HandlerThread:213104 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-24 18:30:09,705 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: defer
+2024-09-24 18:30:09,706 INFO    SenderThread:213104 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-09-24 18:30:09,708 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-24 18:30:09,709 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: server_info
+2024-09-24 18:30:09,710 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: poll_exit
+2024-09-24 18:30:09,711 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-24 18:30:09,713 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: server_info
+2024-09-24 18:30:09,714 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-24 18:30:09,720 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-24 18:30:09,722 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-24 18:30:09,883 DEBUG   SenderThread:213104 [sender.py:send_request():406] send_request: poll_exit
+2024-09-24 18:30:09,885 INFO    MainThread:213104 [wandb_run.py:_footer_history_summary_info():4008] rendering history
+2024-09-24 18:30:09,886 INFO    MainThread:213104 [wandb_run.py:_footer_history_summary_info():4040] rendering summary
+2024-09-24 18:30:09,887 INFO    MainThread:213104 [wandb_run.py:_footer_sync_info():3967] logging synced files
+2024-09-24 18:30:09,889 DEBUG   HandlerThread:213104 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-24 18:30:09,890 INFO    HandlerThread:213104 [handler.py:finish():882] shutting down handler
+2024-09-24 18:30:10,715 INFO    WriterThread:213104 [datastore.py:close():296] close: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20240924_182937-hdd16rip/run-hdd16rip.wandb
+2024-09-24 18:30:10,884 INFO    SenderThread:213104 [sender.py:finish():1608] shutting down sender
+2024-09-24 18:30:10,885 INFO    SenderThread:213104 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-24 18:30:10,886 INFO    SenderThread:213104 [file_pusher.py:join():175] waiting for file pusher

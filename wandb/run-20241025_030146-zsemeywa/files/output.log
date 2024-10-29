@@ -1,0 +1,265 @@
+[*********************100%%**********************]  1 of 1 completed
+Date
+2012-05-18     18.373451
+2012-05-21     18.357675
+2012-05-22     18.341910
+2012-05-23     18.326155
+2012-05-24     18.310412
+                 ...
+2023-05-24    161.422830
+2023-05-25    161.480465
+2023-05-26    161.538096
+2023-05-30    161.595723
+2023-05-31    161.653346
+Name: trend, Length: 2776, dtype: float64
+Date
+2012-05-18    -2.037161
+2012-05-21    -1.339889
+2012-05-22    -1.369427
+2012-05-23    -1.131666
+2012-05-24    -1.129777
+                ...
+2023-05-24    -6.710177
+2023-05-25   -10.178097
+2023-05-26   -10.052286
+2023-05-30    -6.308032
+2023-05-31    -3.033395
+Name: season, Length: 2776, dtype: float64
+Date
+2012-05-18    -0.340126
+2012-05-21    -0.089685
+2012-05-22    -0.174358
+2012-05-23     0.013509
+2012-05-24    -0.130673
+                ...
+2023-05-24    16.021936
+2023-05-25    20.574845
+2023-05-26    22.815689
+2023-05-30    20.871779
+2023-05-31    17.489851
+Name: resid, Length: 2776, dtype: float64
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[32m[I 2024-10-25 03:01:51,182][0m A new study created in memory with name: no-name-29bac700-5730-4078-890f-8ad9eec03eba[0m
+study_trend: <optuna.study.study.Study object at 0x7f23e156bf10>
+/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py:160: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+(Training, Validation)0.164835, 0.881230
+[32m[I 2024-10-25 03:01:52,669][0m Trial 0 finished with value: 0.8812304735183716 and parameters: {'learning_rate': 0.000781997406430479, 'batch_size': 81, 'step_size': 10, 'gamma': 0.9189701061051083, 'depth': 3, 'dim': 116}. Best is trial 0 with value: 0.8812304735183716.[0m
+(Training, Validation)0.407725, 0.366811
+[32m[I 2024-10-25 03:01:55,416][0m Trial 1 finished with value: 0.3668113052845001 and parameters: {'learning_rate': 2.4193793691764316e-05, 'batch_size': 62, 'step_size': 10, 'gamma': 0.9620667828987143, 'depth': 5, 'dim': 125}. Best is trial 1 with value: 0.3668113052845001.[0m
+(Training, Validation)1.066642, 2.079672
+[32m[I 2024-10-25 03:01:56,363][0m Trial 2 finished with value: 2.079672336578369 and parameters: {'learning_rate': 1.4698007414255212e-05, 'batch_size': 67, 'step_size': 6, 'gamma': 0.9883572660371074, 'depth': 3, 'dim': 43}. Best is trial 1 with value: 0.3668113052845001.[0m
+(Training, Validation)0.314829, 0.544262
+[32m[I 2024-10-25 03:01:57,973][0m Trial 3 finished with value: 0.544261634349823 and parameters: {'learning_rate': 0.00019106243585950266, 'batch_size': 94, 'step_size': 10, 'gamma': 0.9037159436965598, 'depth': 5, 'dim': 75}. Best is trial 1 with value: 0.3668113052845001.[0m
+(Training, Validation)1.505465, 3.602945
+[32m[I 2024-10-25 03:01:59,006][0m Trial 4 finished with value: 3.6029446125030518 and parameters: {'learning_rate': 3.7423457237474097e-06, 'batch_size': 121, 'step_size': 6, 'gamma': 0.8991404642069944, 'depth': 2, 'dim': 110}. Best is trial 1 with value: 0.3668113052845001.[0m
+(Training, Validation)0.439821, 0.780589
+[32m[I 2024-10-25 03:02:00,411][0m Trial 5 finished with value: 0.7805889844894409 and parameters: {'learning_rate': 4.453340385869373e-05, 'batch_size': 121, 'step_size': 5, 'gamma': 0.9710163957378745, 'depth': 3, 'dim': 116}. Best is trial 1 with value: 0.3668113052845001.[0m
+(Training, Validation)0.554133, 0.732718
+[32m[I 2024-10-25 03:02:02,076][0m Trial 6 finished with value: 0.7327184677124023 and parameters: {'learning_rate': 0.0002843158960430486, 'batch_size': 103, 'step_size': 6, 'gamma': 0.9146029872778999, 'depth': 6, 'dim': 59}. Best is trial 1 with value: 0.3668113052845001.[0m
+(Training, Validation)0.208292, 0.359424
+[32m[I 2024-10-25 03:02:03,122][0m Trial 7 finished with value: 0.35942405462265015 and parameters: {'learning_rate': 6.61720872930039e-05, 'batch_size': 93, 'step_size': 1, 'gamma': 0.8334267172609424, 'depth': 4, 'dim': 41}. Best is trial 7 with value: 0.35942405462265015.[0m
+(Training, Validation)0.364856, 1.135067
+[32m[I 2024-10-25 03:02:05,135][0m Trial 8 finished with value: 1.1350665092468262 and parameters: {'learning_rate': 1.145171998684465e-06, 'batch_size': 105, 'step_size': 1, 'gamma': 0.8394128702708228, 'depth': 4, 'dim': 123}. Best is trial 7 with value: 0.35942405462265015.[0m
+(Training, Validation)0.662235, 1.872088
+[32m[I 2024-10-25 03:02:06,808][0m Trial 9 finished with value: 1.8720884323120117 and parameters: {'learning_rate': 9.054088215793889e-06, 'batch_size': 90, 'step_size': 8, 'gamma': 0.9454518581633933, 'depth': 5, 'dim': 74}. Best is trial 7 with value: 0.35942405462265015.[0m
+(Training, Validation)0.322905, 0.282569
+[32m[I 2024-10-25 03:02:08,397][0m Trial 10 finished with value: 0.2825689911842346 and parameters: {'learning_rate': 7.651156284560046e-05, 'batch_size': 36, 'step_size': 1, 'gamma': 0.8000397902975642, 'depth': 4, 'dim': 33}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.314116, 0.312357
+[32m[I 2024-10-25 03:02:10,121][0m Trial 11 finished with value: 0.3123566508293152 and parameters: {'learning_rate': 8.404614144983302e-05, 'batch_size': 32, 'step_size': 1, 'gamma': 0.8000128762047879, 'depth': 4, 'dim': 35}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.095820, 0.413958
+[32m[I 2024-10-25 03:02:11,598][0m Trial 12 finished with value: 0.4139580726623535 and parameters: {'learning_rate': 9.971232599559708e-05, 'batch_size': 32, 'step_size': 3, 'gamma': 0.8004241324048434, 'depth': 4, 'dim': 32}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.090163, 0.695352
+[32m[I 2024-10-25 03:02:13,305][0m Trial 13 finished with value: 0.6953516602516174 and parameters: {'learning_rate': 0.0003951931019794238, 'batch_size': 33, 'step_size': 2, 'gamma': 0.8508287263491746, 'depth': 4, 'dim': 55}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.092865, 0.548461
+[32m[I 2024-10-25 03:02:15,911][0m Trial 14 finished with value: 0.5484613180160522 and parameters: {'learning_rate': 0.00011172069705891835, 'batch_size': 49, 'step_size': 3, 'gamma': 0.8095162992141977, 'depth': 6, 'dim': 97}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.482319, 0.608100
+[32m[I 2024-10-25 03:02:16,889][0m Trial 15 finished with value: 0.6080997586250305 and parameters: {'learning_rate': 4.704352578942412e-05, 'batch_size': 45, 'step_size': 4, 'gamma': 0.8663390120490535, 'depth': 2, 'dim': 55}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.190277, 0.520684
+[32m[I 2024-10-25 03:02:18,302][0m Trial 16 finished with value: 0.5206844210624695 and parameters: {'learning_rate': 0.0008938331586451664, 'batch_size': 50, 'step_size': 2, 'gamma': 0.873573224511574, 'depth': 3, 'dim': 92}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.471283, 1.498420
+[32m[I 2024-10-25 03:02:19,697][0m Trial 17 finished with value: 1.498420238494873 and parameters: {'learning_rate': 5.491547210189991e-06, 'batch_size': 64, 'step_size': 1, 'gamma': 0.8235422331472859, 'depth': 5, 'dim': 36}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.275094, 0.559869
+[32m[I 2024-10-25 03:02:21,725][0m Trial 18 finished with value: 0.5598694682121277 and parameters: {'learning_rate': 0.0001404154346780764, 'batch_size': 42, 'step_size': 4, 'gamma': 0.8175576084763876, 'depth': 5, 'dim': 64}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)1.910804, 2.577808
+[32m[I 2024-10-25 03:02:22,961][0m Trial 19 finished with value: 2.577808141708374 and parameters: {'learning_rate': 2.0705154269428004e-05, 'batch_size': 53, 'step_size': 8, 'gamma': 0.8708922065500859, 'depth': 3, 'dim': 47}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.255577, 0.521362
+[32m[I 2024-10-25 03:02:24,139][0m Trial 20 finished with value: 0.5213619470596313 and parameters: {'learning_rate': 0.0004367356427397496, 'batch_size': 72, 'step_size': 2, 'gamma': 0.8478436142646999, 'depth': 4, 'dim': 48}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)1.113820, 1.580185
+[32m[I 2024-10-25 03:02:25,230][0m Trial 21 finished with value: 1.580184817314148 and parameters: {'learning_rate': 7.02668180619579e-05, 'batch_size': 83, 'step_size': 1, 'gamma': 0.8293911004562994, 'depth': 4, 'dim': 39}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.202348, 0.289997
+[32m[I 2024-10-25 03:02:26,782][0m Trial 22 finished with value: 0.2899972200393677 and parameters: {'learning_rate': 4.496383277690882e-05, 'batch_size': 39, 'step_size': 1, 'gamma': 0.8034871566738103, 'depth': 4, 'dim': 33}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.874206, 1.034383
+[32m[I 2024-10-25 03:02:28,244][0m Trial 23 finished with value: 1.0343828201293945 and parameters: {'learning_rate': 4.53448031564945e-05, 'batch_size': 39, 'step_size': 3, 'gamma': 0.8025362812487087, 'depth': 4, 'dim': 32}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.221247, 0.393841
+[32m[I 2024-10-25 03:02:29,648][0m Trial 24 finished with value: 0.3938414752483368 and parameters: {'learning_rate': 2.9452483484875015e-05, 'batch_size': 55, 'step_size': 2, 'gamma': 0.8148496158851161, 'depth': 4, 'dim': 49}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.106210, 0.711260
+[32m[I 2024-10-25 03:02:31,794][0m Trial 25 finished with value: 0.7112599611282349 and parameters: {'learning_rate': 0.00020626777056639357, 'batch_size': 38, 'step_size': 4, 'gamma': 0.8010599587849196, 'depth': 5, 'dim': 63}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.425174, 0.561201
+[32m[I 2024-10-25 03:02:33,382][0m Trial 26 finished with value: 0.5612008571624756 and parameters: {'learning_rate': 1.1327819732321473e-05, 'batch_size': 32, 'step_size': 1, 'gamma': 0.8575592704541097, 'depth': 3, 'dim': 69}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.561361, 0.402401
+[32m[I 2024-10-25 03:02:34,425][0m Trial 27 finished with value: 0.402401328086853 and parameters: {'learning_rate': 0.00010020731717609427, 'batch_size': 58, 'step_size': 2, 'gamma': 0.8855867870065006, 'depth': 3, 'dim': 39}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.156905, 0.472409
+[32m[I 2024-10-25 03:02:36,398][0m Trial 28 finished with value: 0.4724091589450836 and parameters: {'learning_rate': 7.054728517633119e-05, 'batch_size': 44, 'step_size': 3, 'gamma': 0.8233624101539678, 'depth': 4, 'dim': 83}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.157713, 0.353720
+[32m[I 2024-10-25 03:02:37,994][0m Trial 29 finished with value: 0.3537198305130005 and parameters: {'learning_rate': 0.0005628746831084052, 'batch_size': 75, 'step_size': 7, 'gamma': 0.9363961986023044, 'depth': 5, 'dim': 51}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.202878, 0.459685
+[32m[I 2024-10-25 03:02:40,158][0m Trial 30 finished with value: 0.4596845805644989 and parameters: {'learning_rate': 0.00017116008690809266, 'batch_size': 37, 'step_size': 1, 'gamma': 0.838366446398234, 'depth': 6, 'dim': 33}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.483917, 0.585425
+[32m[I 2024-10-25 03:02:41,460][0m Trial 31 finished with value: 0.5854246020317078 and parameters: {'learning_rate': 0.0005325337725353836, 'batch_size': 74, 'step_size': 7, 'gamma': 0.9323954243956735, 'depth': 5, 'dim': 44}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.152689, 0.854079
+[32m[I 2024-10-25 03:02:43,224][0m Trial 32 finished with value: 0.8540789484977722 and parameters: {'learning_rate': 0.0006640865067474127, 'batch_size': 47, 'step_size': 8, 'gamma': 0.9452443280898115, 'depth': 5, 'dim': 55}. Best is trial 10 with value: 0.2825689911842346.[0m
+(Training, Validation)0.141375, 0.253656
+[32m[I 2024-10-25 03:02:44,529][0m Trial 33 finished with value: 0.25365638732910156 and parameters: {'learning_rate': 0.0002616109327545786, 'batch_size': 60, 'step_size': 9, 'gamma': 0.9247909313719657, 'depth': 4, 'dim': 50}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.839253, 0.476063
+[32m[I 2024-10-25 03:02:45,700][0m Trial 34 finished with value: 0.47606343030929565 and parameters: {'learning_rate': 0.00027502766710831375, 'batch_size': 59, 'step_size': 9, 'gamma': 0.9163385719527676, 'depth': 4, 'dim': 39}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.508613, 0.858506
+[32m[I 2024-10-25 03:02:46,894][0m Trial 35 finished with value: 0.8585060834884644 and parameters: {'learning_rate': 1.9260776995698615e-05, 'batch_size': 42, 'step_size': 5, 'gamma': 0.8103679391431825, 'depth': 3, 'dim': 44}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)1.277644, 2.430772
+[32m[I 2024-10-25 03:02:47,945][0m Trial 36 finished with value: 2.430772066116333 and parameters: {'learning_rate': 4.177015356221766e-05, 'batch_size': 52, 'step_size': 10, 'gamma': 0.9890310624093698, 'depth': 3, 'dim': 37}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.350518, 0.360969
+[32m[I 2024-10-25 03:02:49,006][0m Trial 37 finished with value: 0.36096861958503723 and parameters: {'learning_rate': 0.00021140325524156216, 'batch_size': 64, 'step_size': 9, 'gamma': 0.9061898072554001, 'depth': 4, 'dim': 32}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.773821, 0.909554
+[32m[I 2024-10-25 03:02:50,513][0m Trial 38 finished with value: 0.9095544219017029 and parameters: {'learning_rate': 2.9268347236872663e-05, 'batch_size': 39, 'step_size': 2, 'gamma': 0.9282258600171466, 'depth': 4, 'dim': 44}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.410259, 0.377803
+[32m[I 2024-10-25 03:02:51,249][0m Trial 39 finished with value: 0.37780287861824036 and parameters: {'learning_rate': 0.00032326088709508166, 'batch_size': 68, 'step_size': 5, 'gamma': 0.8900575262195816, 'depth': 2, 'dim': 52}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.360158, 0.631662
+[32m[I 2024-10-25 03:02:53,046][0m Trial 40 finished with value: 0.6316617131233215 and parameters: {'learning_rate': 6.489963718954055e-05, 'batch_size': 36, 'step_size': 9, 'gamma': 0.954059221814214, 'depth': 3, 'dim': 105}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.510123, 0.432102
+[32m[I 2024-10-25 03:02:54,238][0m Trial 41 finished with value: 0.43210160732269287 and parameters: {'learning_rate': 0.0001306780113184568, 'batch_size': 84, 'step_size': 6, 'gamma': 0.9721007777940674, 'depth': 5, 'dim': 48}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.341139, 0.437266
+[32m[I 2024-10-25 03:02:55,488][0m Trial 42 finished with value: 0.43726587295532227 and parameters: {'learning_rate': 0.0007065538407784945, 'batch_size': 77, 'step_size': 7, 'gamma': 0.9361567206418089, 'depth': 5, 'dim': 42}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.785817, 0.405430
+[32m[I 2024-10-25 03:02:56,965][0m Trial 43 finished with value: 0.40542951226234436 and parameters: {'learning_rate': 8.312468860680204e-05, 'batch_size': 57, 'step_size': 7, 'gamma': 0.9208905591452285, 'depth': 4, 'dim': 65}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.520916, 0.357270
+[32m[I 2024-10-25 03:02:57,807][0m Trial 44 finished with value: 0.35727009177207947 and parameters: {'learning_rate': 0.00029198394954672564, 'batch_size': 128, 'step_size': 10, 'gamma': 0.9677198641455406, 'depth': 4, 'dim': 36}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)1.085983, 2.644160
+[32m[I 2024-10-25 03:02:58,879][0m Trial 45 finished with value: 2.6441597938537598 and parameters: {'learning_rate': 1.063988563109697e-06, 'batch_size': 87, 'step_size': 1, 'gamma': 0.9060497662131423, 'depth': 4, 'dim': 52}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.217053, 0.588890
+[32m[I 2024-10-25 03:03:00,473][0m Trial 46 finished with value: 0.5888895988464355 and parameters: {'learning_rate': 0.0009858500045211238, 'batch_size': 96, 'step_size': 9, 'gamma': 0.9429001118311439, 'depth': 6, 'dim': 58}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.538768, 0.451174
+[32m[I 2024-10-25 03:03:01,933][0m Trial 47 finished with value: 0.45117437839508057 and parameters: {'learning_rate': 0.0005068622967555145, 'batch_size': 70, 'step_size': 6, 'gamma': 0.8076966435818091, 'depth': 4, 'dim': 77}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.217265, 0.426283
+[32m[I 2024-10-25 03:03:04,192][0m Trial 48 finished with value: 0.42628294229507446 and parameters: {'learning_rate': 0.00016145282338186296, 'batch_size': 46, 'step_size': 8, 'gamma': 0.9795076460089601, 'depth': 5, 'dim': 59}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.517356, 0.975498
+[32m[I 2024-10-25 03:03:05,182][0m Trial 49 finished with value: 0.9754981994628906 and parameters: {'learning_rate': 3.5940173802393286e-05, 'batch_size': 79, 'step_size': 7, 'gamma': 0.9569505568869314, 'depth': 4, 'dim': 36}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.208858, 0.377438
+[32m[I 2024-10-25 03:03:06,658][0m Trial 50 finished with value: 0.37743839621543884 and parameters: {'learning_rate': 5.3970286665013226e-05, 'batch_size': 101, 'step_size': 1, 'gamma': 0.8215710799529369, 'depth': 5, 'dim': 70}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)1.276176, 0.570882
+[32m[I 2024-10-25 03:03:07,677][0m Trial 51 finished with value: 0.5708823204040527 and parameters: {'learning_rate': 0.00028870244695783706, 'batch_size': 113, 'step_size': 10, 'gamma': 0.9640057046743038, 'depth': 4, 'dim': 36}. Best is trial 33 with value: 0.25365638732910156.[0m
+(Training, Validation)0.186523, 0.253811
+[32m[I 2024-10-25 03:03:09,522][0m Trial 52 finished with value: 0.253810852766037 and parameters: {'learning_rate': 0.00035171077814326405, 'batch_size': 34, 'step_size': 10, 'gamma': 0.97814630438018, 'depth': 4, 'dim': 42}. Best is trial 33 with value: 0.25365638732910156.[0m
+[33m[W 2024-10-25 03:03:10,782][0m Trial 53 failed with parameters: {'learning_rate': 2.03618254623744e-06, 'batch_size': 35, 'step_size': 9, 'gamma': 0.8809959381132634, 'depth': 4, 'dim': 42} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 188, in objective
+    model, train_loss, valid_loss = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 31, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7f23fe36be20>", line 67, in forward
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/model.py", line 190, in forward
+    x = ff(x) + x
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+[33m[W 2024-10-25 03:03:10,806][0m Trial 53 failed with value None.[0m
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <module>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 188, in objective
+    model, train_loss, valid_loss = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 31, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7f23fe36be20>", line 67, in forward
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/model.py", line 190, in forward
+    x = ff(x) + x
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <module>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 188, in objective
+    model, train_loss, valid_loss = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 31, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7f23fe36be20>", line 67, in forward
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/model.py", line 190, in forward
+    x = ff(x) + x
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

@@ -1,0 +1,216 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+{'AAPL': Date
+2019-12-31     78.597265
+2020-01-02     78.442334
+2020-01-03     78.286203
+2020-01-06     78.128775
+2020-01-07     77.969957
+                 ...
+2023-05-24    173.117850
+2023-05-25    173.456800
+2023-05-26    173.795646
+2023-05-30    174.134451
+2023-05-31    174.473265
+Name: trend, Length: 860, dtype: float64, 'GOOGL': Date
+2019-12-31     66.804085
+2020-01-02     68.264961
+2020-01-03     67.907852
+2020-01-06     69.717865
+2020-01-07     69.583206
+                 ...
+2023-05-24    120.601372
+2023-05-25    123.175003
+2023-05-26    124.302208
+2023-05-30    123.364525
+2023-05-31    122.566505
+Name: Adj Close, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633865
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961807
+2020-01-07    212.420410
+                 ...
+2023-05-24    248.461914
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925354
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938217
+2020-01-03    152.021423
+2020-01-06    152.414368
+2020-01-07    151.024643
+                 ...
+2023-05-24    310.853607
+2023-05-25    322.808441
+2023-05-26    329.711914
+2023-05-30    328.047913
+2023-05-31    325.254822
+Name: Adj Close, Length: 860, dtype: float64}
+{'AAPL': Date
+2019-12-31   -7.656619
+2020-01-02   -5.129639
+2020-01-03   -5.123081
+2020-01-06   -6.031970
+2020-01-07   -5.890214
+                ...
+2023-05-24   -3.198202
+2023-05-25   -1.174765
+2023-05-26    0.261947
+2023-05-30    0.765912
+2023-05-31    1.324552
+Name: season, Length: 860, dtype: float64, 'GOOGL': Date
+2019-12-31     66.804085
+2020-01-02     68.264961
+2020-01-03     67.907852
+2020-01-06     69.717865
+2020-01-07     69.583206
+                 ...
+2023-05-24    120.601372
+2023-05-25    123.175003
+2023-05-26    124.302208
+2023-05-30    123.364525
+2023-05-31    122.566505
+Name: Adj Close, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633865
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961807
+2020-01-07    212.420410
+                 ...
+2023-05-24    248.461914
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925354
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938217
+2020-01-03    152.021423
+2020-01-06    152.414368
+2020-01-07    151.024643
+                 ...
+2023-05-24    310.853607
+2023-05-25    322.808441
+2023-05-26    329.711914
+2023-05-30    328.047913
+2023-05-31    325.254822
+Name: Adj Close, Length: 860, dtype: float64}
+{'AAPL': Date
+2019-12-31    0.309789
+2020-01-02   -0.436581
+2020-01-03   -0.995496
+2020-01-06    0.645833
+2020-01-07    0.320800
+                ...
+2023-05-24    0.814940
+2023-05-25   -0.404838
+2023-05-26    0.243905
+2023-05-30    1.259107
+2023-05-31    0.312000
+Name: resid, Length: 860, dtype: float64, 'GOOGL': Date
+2019-12-31     66.804085
+2020-01-02     68.264961
+2020-01-03     67.907852
+2020-01-06     69.717865
+2020-01-07     69.583206
+                 ...
+2023-05-24    120.601372
+2023-05-25    123.175003
+2023-05-26    124.302208
+2023-05-30    123.364525
+2023-05-31    122.566505
+Name: Adj Close, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633865
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961807
+2020-01-07    212.420410
+                 ...
+2023-05-24    248.461914
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925354
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938217
+2020-01-03    152.021423
+2020-01-06    152.414368
+2020-01-07    151.024643
+                 ...
+2023-05-24    310.853607
+2023-05-25    322.808441
+2023-05-26    329.711914
+2023-05-30    328.047913
+2023-05-31    325.254822
+Name: Adj Close, Length: 860, dtype: float64}
+Dataset created successfully.
+Train Data Trend Shape: torch.Size([30, 5])
+Valid Data Trend Shape: torch.Size([30, 5])
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+Epoch 1/10, Trend Training Loss: 0.7480, Trend Validation Loss: 0.2302, Seasonal Training Loss: 0.6339, Seasonal Validation Loss: 0.5468, Residual Training Loss: 0.9222, Residual Validation Loss: 0.7006
+Epoch 2/10, Trend Training Loss: 0.2252, Trend Validation Loss: 0.2082, Seasonal Training Loss: 0.3536, Seasonal Validation Loss: 0.3907, Residual Training Loss: 0.4244, Residual Validation Loss: 0.3664
+Epoch 3/10, Trend Training Loss: 0.1395, Trend Validation Loss: 0.1785, Seasonal Training Loss: 0.2814, Seasonal Validation Loss: 0.4370, Residual Training Loss: 0.3354, Residual Validation Loss: 0.3371
+Epoch 4/10, Trend Training Loss: 0.1282, Trend Validation Loss: 0.1441, Seasonal Training Loss: 0.2261, Seasonal Validation Loss: 0.3010, Residual Training Loss: 0.2512, Residual Validation Loss: 0.2730
+Epoch 5/10, Trend Training Loss: 0.0920, Trend Validation Loss: 0.1508, Seasonal Training Loss: 0.1854, Seasonal Validation Loss: 0.2620, Residual Training Loss: 0.2306, Residual Validation Loss: 0.2653
+Epoch 6/10, Trend Training Loss: 0.0831, Trend Validation Loss: 0.1179, Seasonal Training Loss: 0.1562, Seasonal Validation Loss: 0.2480, Residual Training Loss: 0.1946, Residual Validation Loss: 0.2245
+Epoch 7/10, Trend Training Loss: 0.0672, Trend Validation Loss: 0.1030, Seasonal Training Loss: 0.1431, Seasonal Validation Loss: 0.2093, Residual Training Loss: 0.1806, Residual Validation Loss: 0.2083
+Epoch 8/10, Trend Training Loss: 0.0580, Trend Validation Loss: 0.0948, Seasonal Training Loss: 0.1170, Seasonal Validation Loss: 0.1911, Residual Training Loss: 0.1607, Residual Validation Loss: 0.1817
+Epoch 9/10, Trend Training Loss: 0.0545, Trend Validation Loss: 0.0780, Seasonal Training Loss: 0.1049, Seasonal Validation Loss: 0.1922, Residual Training Loss: 0.1484, Residual Validation Loss: 0.1651
+Epoch 10/10, Trend Training Loss: 0.0493, Trend Validation Loss: 0.0644, Seasonal Training Loss: 0.1027, Seasonal Validation Loss: 0.1862, Residual Training Loss: 0.1391, Residual Validation Loss: 0.1535
+Predicted Trend Type: <class 'dict'>
+Predicted Trend Shape: No shape attribute
+Predicted Trend Keys: dict_keys([1])
+/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py:188: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_aapl = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_list_trend[0] + mean_list_trend[0]
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 189, in <module>
+    predicted_seasonal_aapl = predicted_seasonal[0, :, 0].cpu().numpy().flatten() * std_list_seasonal[0] + mean_list_seasonal[0]
+TypeError: unhashable type: 'slice'
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 189, in <module>
+    predicted_seasonal_aapl = predicted_seasonal[0, :, 0].cpu().numpy().flatten() * std_list_seasonal[0] + mean_list_seasonal[0]
+TypeError: unhashable type: 'slice'

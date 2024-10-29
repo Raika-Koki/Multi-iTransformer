@@ -1,0 +1,301 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+{'AAPL': Date
+2019-12-31     78.597217
+2020-01-02     78.442290
+2020-01-03     78.286162
+2020-01-06     78.128737
+2020-01-07     77.969923
+                 ...
+2023-05-24    173.117858
+2023-05-25    173.456808
+2023-05-26    173.795654
+2023-05-30    174.134459
+2023-05-31    174.473274
+Name: trend, Length: 860, dtype: float64, 'GOOGL': Date
+2019-12-31     66.804077
+2020-01-02     68.264961
+2020-01-03     67.907845
+2020-01-06     69.717865
+2020-01-07     69.583206
+                 ...
+2023-05-24    120.601372
+2023-05-25    123.175003
+2023-05-26    124.302208
+2023-05-30    123.364532
+2023-05-31    122.566513
+Name: Adj Close, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633865
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961823
+2020-01-07    212.420425
+                 ...
+2023-05-24    248.461929
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925323
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938217
+2020-01-03    152.021393
+2020-01-06    152.414337
+2020-01-07    151.024689
+                 ...
+2023-05-24    310.853638
+2023-05-25    322.808380
+2023-05-26    329.711884
+2023-05-30    328.047882
+2023-05-31    325.254822
+Name: Adj Close, Length: 860, dtype: float64}
+{'AAPL': Date
+2019-12-31   -7.656547
+2020-01-02   -5.129533
+2020-01-03   -5.122998
+2020-01-06   -6.031900
+2020-01-07   -5.890141
+                ...
+2023-05-24   -3.198224
+2023-05-25   -1.174771
+2023-05-26    0.261933
+2023-05-30    0.765896
+2023-05-31    1.324540
+Name: season, Length: 860, dtype: float64, 'GOOGL': Date
+2019-12-31     66.804077
+2020-01-02     68.264961
+2020-01-03     67.907845
+2020-01-06     69.717865
+2020-01-07     69.583206
+                 ...
+2023-05-24    120.601372
+2023-05-25    123.175003
+2023-05-26    124.302208
+2023-05-30    123.364532
+2023-05-31    122.566513
+Name: Adj Close, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633865
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961823
+2020-01-07    212.420425
+                 ...
+2023-05-24    248.461929
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925323
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938217
+2020-01-03    152.021393
+2020-01-06    152.414337
+2020-01-07    151.024689
+                 ...
+2023-05-24    310.853638
+2023-05-25    322.808380
+2023-05-26    329.711884
+2023-05-30    328.047882
+2023-05-31    325.254822
+Name: Adj Close, Length: 860, dtype: float64}
+{'AAPL': Date
+2019-12-31    0.309765
+2020-01-02   -0.436651
+2020-01-03   -0.995555
+2020-01-06    0.645831
+2020-01-07    0.320754
+                ...
+2023-05-24    0.814955
+2023-05-25   -0.404824
+2023-05-26    0.243911
+2023-05-30    1.259114
+2023-05-31    0.312003
+Name: resid, Length: 860, dtype: float64, 'GOOGL': Date
+2019-12-31     66.804077
+2020-01-02     68.264961
+2020-01-03     67.907845
+2020-01-06     69.717865
+2020-01-07     69.583206
+                 ...
+2023-05-24    120.601372
+2023-05-25    123.175003
+2023-05-26    124.302208
+2023-05-30    123.364532
+2023-05-31    122.566513
+Name: Adj Close, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633865
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961823
+2020-01-07    212.420425
+                 ...
+2023-05-24    248.461929
+2023-05-25    251.931458
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925323
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139679
+2020-01-02    153.938217
+2020-01-03    152.021393
+2020-01-06    152.414337
+2020-01-07    151.024689
+                 ...
+2023-05-24    310.853638
+2023-05-25    322.808380
+2023-05-26    329.711884
+2023-05-30    328.047882
+2023-05-31    325.254822
+Name: Adj Close, Length: 860, dtype: float64}
+Dataset created successfully.
+Train Data Trend Shape: torch.Size([30, 5])
+Valid Data Trend Shape: torch.Size([30, 5])
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+Epoch 1/100, Trend Training Loss: 0.5211, Trend Validation Loss: 0.2360, Seasonal Training Loss: 0.6203, Seasonal Validation Loss: 0.7971, Residual Training Loss: 0.4400, Residual Validation Loss: 0.3239
+Epoch 2/100, Trend Training Loss: 0.2818, Trend Validation Loss: 0.2799, Seasonal Training Loss: 0.3519, Seasonal Validation Loss: 0.4771, Residual Training Loss: 0.2601, Residual Validation Loss: 0.2878
+Epoch 3/100, Trend Training Loss: 0.1594, Trend Validation Loss: 0.1742, Seasonal Training Loss: 0.2596, Seasonal Validation Loss: 0.4134, Residual Training Loss: 0.2185, Residual Validation Loss: 0.2458
+Epoch 4/100, Trend Training Loss: 0.1305, Trend Validation Loss: 0.1499, Seasonal Training Loss: 0.2058, Seasonal Validation Loss: 0.3152, Residual Training Loss: 0.2106, Residual Validation Loss: 0.2132
+Epoch 5/100, Trend Training Loss: 0.0867, Trend Validation Loss: 0.1316, Seasonal Training Loss: 0.1766, Seasonal Validation Loss: 0.2650, Residual Training Loss: 0.1607, Residual Validation Loss: 0.1696
+Epoch 6/100, Trend Training Loss: 0.0802, Trend Validation Loss: 0.1298, Seasonal Training Loss: 0.1580, Seasonal Validation Loss: 0.2293, Residual Training Loss: 0.1405, Residual Validation Loss: 0.1515
+Epoch 7/100, Trend Training Loss: 0.0682, Trend Validation Loss: 0.0867, Seasonal Training Loss: 0.1814, Seasonal Validation Loss: 0.2123, Residual Training Loss: 0.1280, Residual Validation Loss: 0.1413
+Epoch 8/100, Trend Training Loss: 0.0602, Trend Validation Loss: 0.1059, Seasonal Training Loss: 0.1517, Seasonal Validation Loss: 0.2109, Residual Training Loss: 0.1271, Residual Validation Loss: 0.1354
+Epoch 9/100, Trend Training Loss: 0.0575, Trend Validation Loss: 0.0624, Seasonal Training Loss: 0.1416, Seasonal Validation Loss: 0.2389, Residual Training Loss: 0.1429, Residual Validation Loss: 0.1451
+Epoch 10/100, Trend Training Loss: 0.0498, Trend Validation Loss: 0.0806, Seasonal Training Loss: 0.1228, Seasonal Validation Loss: 0.2320, Residual Training Loss: 0.1468, Residual Validation Loss: 0.1689
+Epoch 11/100, Trend Training Loss: 0.0494, Trend Validation Loss: 0.0466, Seasonal Training Loss: 0.1253, Seasonal Validation Loss: 0.1827, Residual Training Loss: 0.1290, Residual Validation Loss: 0.1342
+Epoch 12/100, Trend Training Loss: 0.0423, Trend Validation Loss: 0.0616, Seasonal Training Loss: 0.0991, Seasonal Validation Loss: 0.1960, Residual Training Loss: 0.1068, Residual Validation Loss: 0.1244
+Epoch 13/100, Trend Training Loss: 0.0406, Trend Validation Loss: 0.0388, Seasonal Training Loss: 0.0943, Seasonal Validation Loss: 0.1907, Residual Training Loss: 0.1119, Residual Validation Loss: 0.1377
+Epoch 14/100, Trend Training Loss: 0.0350, Trend Validation Loss: 0.0497, Seasonal Training Loss: 0.0946, Seasonal Validation Loss: 0.1773, Residual Training Loss: 0.1008, Residual Validation Loss: 0.1304
+Epoch 15/100, Trend Training Loss: 0.0336, Trend Validation Loss: 0.0338, Seasonal Training Loss: 0.0819, Seasonal Validation Loss: 0.1775, Residual Training Loss: 0.0969, Residual Validation Loss: 0.1137
+Epoch 16/100, Trend Training Loss: 0.0299, Trend Validation Loss: 0.0421, Seasonal Training Loss: 0.0782, Seasonal Validation Loss: 0.1719, Residual Training Loss: 0.0914, Residual Validation Loss: 0.1172
+Epoch 17/100, Trend Training Loss: 0.0298, Trend Validation Loss: 0.0295, Seasonal Training Loss: 0.0773, Seasonal Validation Loss: 0.1695, Residual Training Loss: 0.0887, Residual Validation Loss: 0.1183
+Epoch 18/100, Trend Training Loss: 0.0275, Trend Validation Loss: 0.0375, Seasonal Training Loss: 0.0725, Seasonal Validation Loss: 0.1664, Residual Training Loss: 0.0847, Residual Validation Loss: 0.1129
+Epoch 19/100, Trend Training Loss: 0.0283, Trend Validation Loss: 0.0259, Seasonal Training Loss: 0.0661, Seasonal Validation Loss: 0.1678, Residual Training Loss: 0.0841, Residual Validation Loss: 0.1143
+Epoch 20/100, Trend Training Loss: 0.0255, Trend Validation Loss: 0.0366, Seasonal Training Loss: 0.0680, Seasonal Validation Loss: 0.1585, Residual Training Loss: 0.0822, Residual Validation Loss: 0.1118
+Epoch 21/100, Trend Training Loss: 0.0256, Trend Validation Loss: 0.0228, Seasonal Training Loss: 0.0628, Seasonal Validation Loss: 0.1620, Residual Training Loss: 0.0796, Residual Validation Loss: 0.1106
+Epoch 22/100, Trend Training Loss: 0.0237, Trend Validation Loss: 0.0428, Seasonal Training Loss: 0.0569, Seasonal Validation Loss: 0.1615, Residual Training Loss: 0.0785, Residual Validation Loss: 0.1136
+Epoch 23/100, Trend Training Loss: 0.0268, Trend Validation Loss: 0.0231, Seasonal Training Loss: 0.0580, Seasonal Validation Loss: 0.1519, Residual Training Loss: 0.0774, Residual Validation Loss: 0.1120
+Epoch 24/100, Trend Training Loss: 0.0279, Trend Validation Loss: 0.0727, Seasonal Training Loss: 0.0543, Seasonal Validation Loss: 0.1583, Residual Training Loss: 0.0761, Residual Validation Loss: 0.1088
+Epoch 25/100, Trend Training Loss: 0.0443, Trend Validation Loss: 0.0379, Seasonal Training Loss: 0.0501, Seasonal Validation Loss: 0.1545, Residual Training Loss: 0.0745, Residual Validation Loss: 0.1106
+Epoch 26/100, Trend Training Loss: 0.0427, Trend Validation Loss: 0.1365, Seasonal Training Loss: 0.0491, Seasonal Validation Loss: 0.1496, Residual Training Loss: 0.0731, Residual Validation Loss: 0.1098
+Epoch 27/100, Trend Training Loss: 0.0663, Trend Validation Loss: 0.0520, Seasonal Training Loss: 0.0475, Seasonal Validation Loss: 0.1538, Residual Training Loss: 0.0720, Residual Validation Loss: 0.1095
+Epoch 28/100, Trend Training Loss: 0.0454, Trend Validation Loss: 0.1034, Seasonal Training Loss: 0.0454, Seasonal Validation Loss: 0.1500, Residual Training Loss: 0.0712, Residual Validation Loss: 0.1101
+Epoch 29/100, Trend Training Loss: 0.0414, Trend Validation Loss: 0.0303, Seasonal Training Loss: 0.0439, Seasonal Validation Loss: 0.1490, Residual Training Loss: 0.0703, Residual Validation Loss: 0.1083
+Epoch 30/100, Trend Training Loss: 0.0295, Trend Validation Loss: 0.0548, Seasonal Training Loss: 0.0430, Seasonal Validation Loss: 0.1501, Residual Training Loss: 0.0693, Residual Validation Loss: 0.1093
+Epoch 31/100, Trend Training Loss: 0.0238, Trend Validation Loss: 0.0280, Seasonal Training Loss: 0.0419, Seasonal Validation Loss: 0.1479, Residual Training Loss: 0.0682, Residual Validation Loss: 0.1090
+Epoch 32/100, Trend Training Loss: 0.0217, Trend Validation Loss: 0.0381, Seasonal Training Loss: 0.0408, Seasonal Validation Loss: 0.1481, Residual Training Loss: 0.0676, Residual Validation Loss: 0.1089
+Epoch 33/100, Trend Training Loss: 0.0201, Trend Validation Loss: 0.0288, Seasonal Training Loss: 0.0400, Seasonal Validation Loss: 0.1476, Residual Training Loss: 0.0668, Residual Validation Loss: 0.1086
+Epoch 34/100, Trend Training Loss: 0.0194, Trend Validation Loss: 0.0321, Seasonal Training Loss: 0.0392, Seasonal Validation Loss: 0.1469, Residual Training Loss: 0.0660, Residual Validation Loss: 0.1085
+Epoch 35/100, Trend Training Loss: 0.0187, Trend Validation Loss: 0.0287, Seasonal Training Loss: 0.0384, Seasonal Validation Loss: 0.1468, Residual Training Loss: 0.0653, Residual Validation Loss: 0.1089
+Epoch 36/100, Trend Training Loss: 0.0184, Trend Validation Loss: 0.0294, Seasonal Training Loss: 0.0378, Seasonal Validation Loss: 0.1462, Residual Training Loss: 0.0647, Residual Validation Loss: 0.1085
+Epoch 37/100, Trend Training Loss: 0.0180, Trend Validation Loss: 0.0278, Seasonal Training Loss: 0.0371, Seasonal Validation Loss: 0.1459, Residual Training Loss: 0.0641, Residual Validation Loss: 0.1087
+Epoch 38/100, Trend Training Loss: 0.0177, Trend Validation Loss: 0.0276, Seasonal Training Loss: 0.0365, Seasonal Validation Loss: 0.1455, Residual Training Loss: 0.0635, Residual Validation Loss: 0.1084
+Epoch 39/100, Trend Training Loss: 0.0174, Trend Validation Loss: 0.0269, Seasonal Training Loss: 0.0359, Seasonal Validation Loss: 0.1452, Residual Training Loss: 0.0630, Residual Validation Loss: 0.1091
+Epoch 40/100, Trend Training Loss: 0.0171, Trend Validation Loss: 0.0266, Seasonal Training Loss: 0.0354, Seasonal Validation Loss: 0.1449, Residual Training Loss: 0.0624, Residual Validation Loss: 0.1084
+Epoch 41/100, Trend Training Loss: 0.0169, Trend Validation Loss: 0.0261, Seasonal Training Loss: 0.0349, Seasonal Validation Loss: 0.1446, Residual Training Loss: 0.0622, Residual Validation Loss: 0.1100
+Epoch 42/100, Trend Training Loss: 0.0167, Trend Validation Loss: 0.0258, Seasonal Training Loss: 0.0345, Seasonal Validation Loss: 0.1444, Residual Training Loss: 0.0616, Residual Validation Loss: 0.1092
+Epoch 43/100, Trend Training Loss: 0.0165, Trend Validation Loss: 0.0254, Seasonal Training Loss: 0.0340, Seasonal Validation Loss: 0.1441, Residual Training Loss: 0.0622, Residual Validation Loss: 0.1157
+Epoch 44/100, Trend Training Loss: 0.0163, Trend Validation Loss: 0.0251, Seasonal Training Loss: 0.0336, Seasonal Validation Loss: 0.1438, Residual Training Loss: 0.0629, Residual Validation Loss: 0.1183
+Epoch 45/100, Trend Training Loss: 0.0161, Trend Validation Loss: 0.0248, Seasonal Training Loss: 0.0333, Seasonal Validation Loss: 0.1436, Residual Training Loss: 0.0674, Residual Validation Loss: 0.1515
+Epoch 46/100, Trend Training Loss: 0.0160, Trend Validation Loss: 0.0246, Seasonal Training Loss: 0.0329, Seasonal Validation Loss: 0.1434, Residual Training Loss: 0.0767, Residual Validation Loss: 0.1593
+Epoch 47/100, Trend Training Loss: 0.0158, Trend Validation Loss: 0.0244, Seasonal Training Loss: 0.0326, Seasonal Validation Loss: 0.1432, Residual Training Loss: 0.0807, Residual Validation Loss: 0.2048
+Epoch 48/100, Trend Training Loss: 0.0157, Trend Validation Loss: 0.0241, Seasonal Training Loss: 0.0323, Seasonal Validation Loss: 0.1429, Residual Training Loss: 0.0912, Residual Validation Loss: 0.1330
+Epoch 49/100, Trend Training Loss: 0.0155, Trend Validation Loss: 0.0239, Seasonal Training Loss: 0.0320, Seasonal Validation Loss: 0.1428, Residual Training Loss: 0.0685, Residual Validation Loss: 0.1261
+Epoch 50/100, Trend Training Loss: 0.0154, Trend Validation Loss: 0.0237, Seasonal Training Loss: 0.0317, Seasonal Validation Loss: 0.1425, Residual Training Loss: 0.0653, Residual Validation Loss: 0.1110
+Epoch 51/100, Trend Training Loss: 0.0153, Trend Validation Loss: 0.0236, Seasonal Training Loss: 0.0314, Seasonal Validation Loss: 0.1425, Residual Training Loss: 0.0624, Residual Validation Loss: 0.1125
+Epoch 52/100, Trend Training Loss: 0.0152, Trend Validation Loss: 0.0234, Seasonal Training Loss: 0.0312, Seasonal Validation Loss: 0.1421, Residual Training Loss: 0.0638, Residual Validation Loss: 0.1100
+Epoch 53/100, Trend Training Loss: 0.0151, Trend Validation Loss: 0.0233, Seasonal Training Loss: 0.0309, Seasonal Validation Loss: 0.1422, Residual Training Loss: 0.0674, Residual Validation Loss: 0.1134
+Epoch 54/100, Trend Training Loss: 0.0150, Trend Validation Loss: 0.0231, Seasonal Training Loss: 0.0307, Seasonal Validation Loss: 0.1417, Residual Training Loss: 0.0773, Residual Validation Loss: 0.1115
+Epoch 55/100, Trend Training Loss: 0.0149, Trend Validation Loss: 0.0230, Seasonal Training Loss: 0.0305, Seasonal Validation Loss: 0.1421, Residual Training Loss: 0.0833, Residual Validation Loss: 0.1134
+Epoch 56/100, Trend Training Loss: 0.0148, Trend Validation Loss: 0.0228, Seasonal Training Loss: 0.0304, Seasonal Validation Loss: 0.1413, Residual Training Loss: 0.0926, Residual Validation Loss: 0.1109
+Epoch 57/100, Trend Training Loss: 0.0148, Trend Validation Loss: 0.0227, Seasonal Training Loss: 0.0301, Seasonal Validation Loss: 0.1420, Residual Training Loss: 0.0702, Residual Validation Loss: 0.1100
+Epoch 58/100, Trend Training Loss: 0.0147, Trend Validation Loss: 0.0226, Seasonal Training Loss: 0.0301, Seasonal Validation Loss: 0.1409, Residual Training Loss: 0.0633, Residual Validation Loss: 0.1097
+Epoch 59/100, Trend Training Loss: 0.0146, Trend Validation Loss: 0.0225, Seasonal Training Loss: 0.0298, Seasonal Validation Loss: 0.1419, Residual Training Loss: 0.0593, Residual Validation Loss: 0.1094
+Epoch 60/100, Trend Training Loss: 0.0146, Trend Validation Loss: 0.0224, Seasonal Training Loss: 0.0299, Seasonal Validation Loss: 0.1405, Residual Training Loss: 0.0584, Residual Validation Loss: 0.1093
+Epoch 61/100, Trend Training Loss: 0.0145, Trend Validation Loss: 0.0223, Seasonal Training Loss: 0.0297, Seasonal Validation Loss: 0.1417, Residual Training Loss: 0.0579, Residual Validation Loss: 0.1093
+Epoch 62/100, Trend Training Loss: 0.0144, Trend Validation Loss: 0.0222, Seasonal Training Loss: 0.0299, Seasonal Validation Loss: 0.1405, Residual Training Loss: 0.0577, Residual Validation Loss: 0.1093
+Epoch 63/100, Trend Training Loss: 0.0144, Trend Validation Loss: 0.0221, Seasonal Training Loss: 0.0298, Seasonal Validation Loss: 0.1414, Residual Training Loss: 0.0575, Residual Validation Loss: 0.1093
+Epoch 64/100, Trend Training Loss: 0.0143, Trend Validation Loss: 0.0221, Seasonal Training Loss: 0.0302, Seasonal Validation Loss: 0.1410, Residual Training Loss: 0.0573, Residual Validation Loss: 0.1093
+Epoch 65/100, Trend Training Loss: 0.0143, Trend Validation Loss: 0.0220, Seasonal Training Loss: 0.0301, Seasonal Validation Loss: 0.1411, Residual Training Loss: 0.0571, Residual Validation Loss: 0.1094
+Epoch 66/100, Trend Training Loss: 0.0142, Trend Validation Loss: 0.0219, Seasonal Training Loss: 0.0303, Seasonal Validation Loss: 0.1417, Residual Training Loss: 0.0570, Residual Validation Loss: 0.1094
+Epoch 67/100, Trend Training Loss: 0.0142, Trend Validation Loss: 0.0218, Seasonal Training Loss: 0.0299, Seasonal Validation Loss: 0.1407, Residual Training Loss: 0.0568, Residual Validation Loss: 0.1094
+Epoch 68/100, Trend Training Loss: 0.0141, Trend Validation Loss: 0.0218, Seasonal Training Loss: 0.0298, Seasonal Validation Loss: 0.1418, Residual Training Loss: 0.0567, Residual Validation Loss: 0.1095
+Epoch 69/100, Trend Training Loss: 0.0141, Trend Validation Loss: 0.0217, Seasonal Training Loss: 0.0292, Seasonal Validation Loss: 0.1402, Residual Training Loss: 0.0566, Residual Validation Loss: 0.1095
+Epoch 70/100, Trend Training Loss: 0.0141, Trend Validation Loss: 0.0217, Seasonal Training Loss: 0.0290, Seasonal Validation Loss: 0.1412, Residual Training Loss: 0.0565, Residual Validation Loss: 0.1096
+Epoch 71/100, Trend Training Loss: 0.0140, Trend Validation Loss: 0.0216, Seasonal Training Loss: 0.0286, Seasonal Validation Loss: 0.1400, Residual Training Loss: 0.0564, Residual Validation Loss: 0.1096
+Epoch 72/100, Trend Training Loss: 0.0140, Trend Validation Loss: 0.0216, Seasonal Training Loss: 0.0284, Seasonal Validation Loss: 0.1405, Residual Training Loss: 0.0563, Residual Validation Loss: 0.1096
+Epoch 73/100, Trend Training Loss: 0.0140, Trend Validation Loss: 0.0215, Seasonal Training Loss: 0.0282, Seasonal Validation Loss: 0.1400, Residual Training Loss: 0.0562, Residual Validation Loss: 0.1097
+Epoch 74/100, Trend Training Loss: 0.0139, Trend Validation Loss: 0.0215, Seasonal Training Loss: 0.0282, Seasonal Validation Loss: 0.1402, Residual Training Loss: 0.0561, Residual Validation Loss: 0.1097
+Epoch 75/100, Trend Training Loss: 0.0139, Trend Validation Loss: 0.0214, Seasonal Training Loss: 0.0281, Seasonal Validation Loss: 0.1400, Residual Training Loss: 0.0560, Residual Validation Loss: 0.1097
+Epoch 76/100, Trend Training Loss: 0.0139, Trend Validation Loss: 0.0214, Seasonal Training Loss: 0.0280, Seasonal Validation Loss: 0.1400, Residual Training Loss: 0.0559, Residual Validation Loss: 0.1098
+Epoch 77/100, Trend Training Loss: 0.0138, Trend Validation Loss: 0.0213, Seasonal Training Loss: 0.0279, Seasonal Validation Loss: 0.1399, Residual Training Loss: 0.0558, Residual Validation Loss: 0.1098
+Epoch 78/100, Trend Training Loss: 0.0138, Trend Validation Loss: 0.0213, Seasonal Training Loss: 0.0279, Seasonal Validation Loss: 0.1399, Residual Training Loss: 0.0558, Residual Validation Loss: 0.1098
+Epoch 79/100, Trend Training Loss: 0.0138, Trend Validation Loss: 0.0212, Seasonal Training Loss: 0.0278, Seasonal Validation Loss: 0.1398, Residual Training Loss: 0.0557, Residual Validation Loss: 0.1098
+Epoch 80/100, Trend Training Loss: 0.0138, Trend Validation Loss: 0.0212, Seasonal Training Loss: 0.0278, Seasonal Validation Loss: 0.1398, Residual Training Loss: 0.0556, Residual Validation Loss: 0.1099
+Epoch 81/100, Trend Training Loss: 0.0138, Trend Validation Loss: 0.0212, Seasonal Training Loss: 0.0277, Seasonal Validation Loss: 0.1398, Residual Training Loss: 0.0556, Residual Validation Loss: 0.1099
+Epoch 82/100, Trend Training Loss: 0.0137, Trend Validation Loss: 0.0211, Seasonal Training Loss: 0.0277, Seasonal Validation Loss: 0.1397, Residual Training Loss: 0.0555, Residual Validation Loss: 0.1099
+Epoch 83/100, Trend Training Loss: 0.0137, Trend Validation Loss: 0.0211, Seasonal Training Loss: 0.0276, Seasonal Validation Loss: 0.1397, Residual Training Loss: 0.0555, Residual Validation Loss: 0.1099
+Epoch 84/100, Trend Training Loss: 0.0137, Trend Validation Loss: 0.0211, Seasonal Training Loss: 0.0276, Seasonal Validation Loss: 0.1396, Residual Training Loss: 0.0554, Residual Validation Loss: 0.1100
+Epoch 85/100, Trend Training Loss: 0.0137, Trend Validation Loss: 0.0211, Seasonal Training Loss: 0.0275, Seasonal Validation Loss: 0.1396, Residual Training Loss: 0.0554, Residual Validation Loss: 0.1100
+Epoch 86/100, Trend Training Loss: 0.0137, Trend Validation Loss: 0.0210, Seasonal Training Loss: 0.0275, Seasonal Validation Loss: 0.1396, Residual Training Loss: 0.0553, Residual Validation Loss: 0.1100
+Epoch 87/100, Trend Training Loss: 0.0136, Trend Validation Loss: 0.0210, Seasonal Training Loss: 0.0274, Seasonal Validation Loss: 0.1395, Residual Training Loss: 0.0553, Residual Validation Loss: 0.1100
+Epoch 88/100, Trend Training Loss: 0.0136, Trend Validation Loss: 0.0210, Seasonal Training Loss: 0.0274, Seasonal Validation Loss: 0.1395, Residual Training Loss: 0.0552, Residual Validation Loss: 0.1100
+Epoch 89/100, Trend Training Loss: 0.0136, Trend Validation Loss: 0.0210, Seasonal Training Loss: 0.0274, Seasonal Validation Loss: 0.1395, Residual Training Loss: 0.0552, Residual Validation Loss: 0.1101
+Epoch 90/100, Trend Training Loss: 0.0136, Trend Validation Loss: 0.0209, Seasonal Training Loss: 0.0273, Seasonal Validation Loss: 0.1394, Residual Training Loss: 0.0551, Residual Validation Loss: 0.1101
+Epoch 91/100, Trend Training Loss: 0.0136, Trend Validation Loss: 0.0209, Seasonal Training Loss: 0.0273, Seasonal Validation Loss: 0.1394, Residual Training Loss: 0.0551, Residual Validation Loss: 0.1101
+Epoch 92/100, Trend Training Loss: 0.0136, Trend Validation Loss: 0.0209, Seasonal Training Loss: 0.0273, Seasonal Validation Loss: 0.1394, Residual Training Loss: 0.0551, Residual Validation Loss: 0.1101
+Epoch 93/100, Trend Training Loss: 0.0136, Trend Validation Loss: 0.0209, Seasonal Training Loss: 0.0272, Seasonal Validation Loss: 0.1394, Residual Training Loss: 0.0550, Residual Validation Loss: 0.1101
+Epoch 94/100, Trend Training Loss: 0.0135, Trend Validation Loss: 0.0209, Seasonal Training Loss: 0.0272, Seasonal Validation Loss: 0.1393, Residual Training Loss: 0.0550, Residual Validation Loss: 0.1101
+Epoch 95/100, Trend Training Loss: 0.0135, Trend Validation Loss: 0.0208, Seasonal Training Loss: 0.0272, Seasonal Validation Loss: 0.1393, Residual Training Loss: 0.0550, Residual Validation Loss: 0.1102
+Epoch 96/100, Trend Training Loss: 0.0135, Trend Validation Loss: 0.0208, Seasonal Training Loss: 0.0271, Seasonal Validation Loss: 0.1393, Residual Training Loss: 0.0549, Residual Validation Loss: 0.1102
+Epoch 97/100, Trend Training Loss: 0.0135, Trend Validation Loss: 0.0208, Seasonal Training Loss: 0.0271, Seasonal Validation Loss: 0.1393, Residual Training Loss: 0.0549, Residual Validation Loss: 0.1102
+Epoch 98/100, Trend Training Loss: 0.0135, Trend Validation Loss: 0.0208, Seasonal Training Loss: 0.0271, Seasonal Validation Loss: 0.1393, Residual Training Loss: 0.0549, Residual Validation Loss: 0.1102
+Epoch 99/100, Trend Training Loss: 0.0135, Trend Validation Loss: 0.0208, Seasonal Training Loss: 0.0271, Seasonal Validation Loss: 0.1392, Residual Training Loss: 0.0549, Residual Validation Loss: 0.1102
+Epoch 100/100, Trend Training Loss: 0.0135, Trend Validation Loss: 0.0208, Seasonal Training Loss: 0.0271, Seasonal Validation Loss: 0.1392, Residual Training Loss: 0.0548, Residual Validation Loss: 0.1102
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 182, in <module>
+    predicted_trend_aapl = predicted_trend[0, :, 0].cpu().numpy().flatten() * std_list_trend[0] + mean_list_trend[0]
+TypeError: unhashable type: 'slice'
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 182, in <module>
+    predicted_trend_aapl = predicted_trend[0, :, 0].cpu().numpy().flatten() * std_list_trend[0] + mean_list_trend[0]
+TypeError: unhashable type: 'slice'

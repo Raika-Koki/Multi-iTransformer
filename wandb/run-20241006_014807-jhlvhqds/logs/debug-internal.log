@@ -1,0 +1,176 @@
+2024-10-06 01:48:07,284 INFO    StreamThr :232088 [internal.py:wandb_internal():85] W&B internal server running at pid: 232088, started at: 2024-10-06 01:48:07.280763
+2024-10-06 01:48:07,287 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: status
+2024-10-06 01:48:07,302 INFO    WriterThread:232088 [datastore.py:open_for_write():87] open: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/run-jhlvhqds.wandb
+2024-10-06 01:48:07,305 DEBUG   SenderThread:232088 [sender.py:send():379] send: header
+2024-10-06 01:48:07,349 DEBUG   SenderThread:232088 [sender.py:send():379] send: run
+2024-10-06 01:48:08,008 INFO    SenderThread:232088 [dir_watcher.py:__init__():211] watching files in: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files
+2024-10-06 01:48:08,009 INFO    SenderThread:232088 [sender.py:_start_run_threads():1188] run started: jhlvhqds with start time 1728146887.283303
+2024-10-06 01:48:08,029 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: check_version
+2024-10-06 01:48:08,030 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: check_version
+2024-10-06 01:48:08,139 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: run_start
+2024-10-06 01:48:08,140 DEBUG   HandlerThread:232088 [system_info.py:__init__():26] System info init
+2024-10-06 01:48:08,141 DEBUG   HandlerThread:232088 [system_info.py:__init__():41] System info init done
+2024-10-06 01:48:08,142 INFO    HandlerThread:232088 [system_monitor.py:start():194] Starting system monitor
+2024-10-06 01:48:08,142 INFO    SystemMonitor:232088 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-06 01:48:08,142 INFO    HandlerThread:232088 [system_monitor.py:probe():214] Collecting system info
+2024-10-06 01:48:08,144 INFO    SystemMonitor:232088 [interfaces.py:start():188] Started cpu monitoring
+2024-10-06 01:48:08,147 INFO    SystemMonitor:232088 [interfaces.py:start():188] Started disk monitoring
+2024-10-06 01:48:08,148 INFO    SystemMonitor:232088 [interfaces.py:start():188] Started memory monitoring
+2024-10-06 01:48:08,150 INFO    SystemMonitor:232088 [interfaces.py:start():188] Started network monitoring
+2024-10-06 01:48:08,154 DEBUG   HandlerThread:232088 [system_info.py:probe():152] Probing system
+2024-10-06 01:48:08,230 DEBUG   HandlerThread:232088 [system_info.py:_probe_git():137] Probing git
+2024-10-06 01:48:08,282 DEBUG   HandlerThread:232088 [system_info.py:_probe_git():145] Probing git done
+2024-10-06 01:48:08,283 DEBUG   HandlerThread:232088 [system_info.py:probe():200] Probing system done
+2024-10-06 01:48:08,283 DEBUG   HandlerThread:232088 [system_monitor.py:probe():223] {'os': 'Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-10-05T16:48:08.155017', 'startedAt': '2024-10-05T16:48:07.144799', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py', 'codePathLocal': 'STLdemo.py', 'codePath': 'STLdemo.py', 'git': {'remote': None, 'commit': None}, 'email': None, 'root': '/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer', 'host': 'LAPTOP-T1I126TP', 'username': 'raikakoki', 'executable': '/usr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.2099999999996, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}, {'current': 2803.21, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 19.268165588378906}}, 'memory': {'total': 15.447296142578125}}
+2024-10-06 01:48:08,284 INFO    HandlerThread:232088 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-06 01:48:08,285 INFO    HandlerThread:232088 [system_monitor.py:probe():227] Publishing system info
+2024-10-06 01:48:08,292 INFO    HandlerThread:232088 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-06 01:48:08,299 DEBUG   SenderThread:232088 [sender.py:send():379] send: files
+2024-10-06 01:48:08,300 INFO    SenderThread:232088 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-10-06 01:48:08,574 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: python_packages
+2024-10-06 01:48:08,575 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: python_packages
+2024-10-06 01:48:08,575 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-06 01:48:08,577 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-06 01:48:08,580 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: stop_status
+2024-10-06 01:48:08,875 DEBUG   SenderThread:232088 [sender.py:send():379] send: telemetry
+2024-10-06 01:48:09,020 INFO    wandb-upload_0:232088 [upload_job.py:push():130] Uploaded file /tmp/tmptj0fy7twwandb/ftuadxfz-wandb-metadata.json
+2024-10-06 01:48:09,031 INFO    Thread-12 :232088 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/wandb-metadata.json
+2024-10-06 01:48:09,036 INFO    Thread-12 :232088 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/requirements.txt
+2024-10-06 01:48:09,579 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-06 01:48:10,037 INFO    Thread-12 :232088 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/output.log
+2024-10-06 01:48:10,351 DEBUG   SenderThread:232088 [sender.py:send():379] send: config
+2024-10-06 01:48:10,497 DEBUG   SenderThread:232088 [sender.py:send():379] send: exit
+2024-10-06 01:48:10,497 INFO    SenderThread:232088 [sender.py:send_exit():586] handling exit code: 1
+2024-10-06 01:48:10,498 INFO    SenderThread:232088 [sender.py:send_exit():588] handling runtime: 2
+2024-10-06 01:48:10,504 INFO    SenderThread:232088 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-06 01:48:10,506 INFO    SenderThread:232088 [sender.py:send_exit():594] send defer
+2024-10-06 01:48:10,506 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,507 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 0
+2024-10-06 01:48:10,508 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,508 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-10-06 01:48:10,509 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 1
+2024-10-06 01:48:10,509 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,511 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 1
+2024-10-06 01:48:10,512 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,513 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-10-06 01:48:10,513 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 2
+2024-10-06 01:48:10,514 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,514 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 2
+2024-10-06 01:48:10,515 INFO    HandlerThread:232088 [system_monitor.py:finish():203] Stopping system monitor
+2024-10-06 01:48:10,515 DEBUG   SystemMonitor:232088 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-06 01:48:10,517 DEBUG   SystemMonitor:232088 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-10-06 01:48:10,516 INFO    HandlerThread:232088 [interfaces.py:finish():200] Joined cpu monitor
+2024-10-06 01:48:10,517 DEBUG   SystemMonitor:232088 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-10-06 01:48:10,518 INFO    HandlerThread:232088 [interfaces.py:finish():200] Joined disk monitor
+2024-10-06 01:48:10,520 INFO    HandlerThread:232088 [interfaces.py:finish():200] Joined memory monitor
+2024-10-06 01:48:10,521 INFO    HandlerThread:232088 [interfaces.py:finish():200] Joined network monitor
+2024-10-06 01:48:10,522 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,522 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-10-06 01:48:10,523 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 3
+2024-10-06 01:48:10,523 DEBUG   SenderThread:232088 [sender.py:send():379] send: stats
+2024-10-06 01:48:10,524 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,525 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 3
+2024-10-06 01:48:10,526 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,527 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-10-06 01:48:10,527 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 4
+2024-10-06 01:48:10,528 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,528 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 4
+2024-10-06 01:48:10,529 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,529 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-10-06 01:48:10,530 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 5
+2024-10-06 01:48:10,530 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,530 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 5
+2024-10-06 01:48:10,531 DEBUG   SenderThread:232088 [sender.py:send():379] send: summary
+2024-10-06 01:48:10,535 INFO    SenderThread:232088 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-10-06 01:48:10,537 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,538 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-10-06 01:48:10,538 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 6
+2024-10-06 01:48:10,539 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,539 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 6
+2024-10-06 01:48:10,540 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,540 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-10-06 01:48:10,546 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: status_report
+2024-10-06 01:48:10,832 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 7
+2024-10-06 01:48:10,833 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:10,833 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 7
+2024-10-06 01:48:10,834 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:10,834 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-10-06 01:48:11,059 INFO    Thread-12 :232088 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/config.yaml
+2024-10-06 01:48:11,064 INFO    Thread-12 :232088 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/wandb-summary.json
+2024-10-06 01:48:11,497 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 01:48:11,987 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 8
+2024-10-06 01:48:11,988 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: poll_exit
+2024-10-06 01:48:11,988 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:11,989 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 8
+2024-10-06 01:48:11,990 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:11,991 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-10-06 01:48:11,991 INFO    SenderThread:232088 [job_builder.py:build():440] Attempting to build job artifact
+2024-10-06 01:48:12,003 INFO    SenderThread:232088 [job_builder.py:_get_source_type():580] no source found
+2024-10-06 01:48:12,004 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 9
+2024-10-06 01:48:12,005 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:12,005 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 9
+2024-10-06 01:48:12,006 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:12,007 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-10-06 01:48:12,008 INFO    SenderThread:232088 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-10-06 01:48:12,103 INFO    SenderThread:232088 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/output.log
+2024-10-06 01:48:12,106 INFO    SenderThread:232088 [dir_watcher.py:finish():388] scan: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files
+2024-10-06 01:48:12,112 INFO    SenderThread:232088 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/config.yaml config.yaml
+2024-10-06 01:48:12,125 INFO    SenderThread:232088 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/output.log output.log
+2024-10-06 01:48:12,138 INFO    SenderThread:232088 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/requirements.txt requirements.txt
+2024-10-06 01:48:12,149 INFO    SenderThread:232088 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/wandb-metadata.json wandb-metadata.json
+2024-10-06 01:48:12,150 INFO    SenderThread:232088 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/wandb-summary.json wandb-summary.json
+2024-10-06 01:48:12,161 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 10
+2024-10-06 01:48:12,162 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:12,164 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 10
+2024-10-06 01:48:12,166 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:12,166 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-10-06 01:48:12,167 INFO    SenderThread:232088 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-06 01:48:12,499 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 01:48:12,500 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: poll_exit
+2024-10-06 01:48:12,558 INFO    wandb-upload_0:232088 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/config.yaml
+2024-10-06 01:48:12,648 INFO    wandb-upload_1:232088 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/output.log
+2024-10-06 01:48:12,717 INFO    wandb-upload_3:232088 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/wandb-summary.json
+2024-10-06 01:48:12,813 INFO    wandb-upload_2:232088 [upload_job.py:push():130] Uploaded file /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/files/requirements.txt
+2024-10-06 01:48:13,014 INFO    Thread-11 (_thread_body):232088 [sender.py:transition_state():614] send defer: 11
+2024-10-06 01:48:13,016 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:13,018 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 11
+2024-10-06 01:48:13,019 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:13,020 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-10-06 01:48:13,022 INFO    SenderThread:232088 [file_pusher.py:join():175] waiting for file pusher
+2024-10-06 01:48:13,023 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 12
+2024-10-06 01:48:13,024 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:13,025 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 12
+2024-10-06 01:48:13,026 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:13,027 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-10-06 01:48:13,028 INFO    SenderThread:232088 [file_stream.py:finish():601] file stream finish called
+2024-10-06 01:48:13,272 INFO    SenderThread:232088 [file_stream.py:finish():605] file stream finish is done
+2024-10-06 01:48:13,273 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 13
+2024-10-06 01:48:13,274 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:13,276 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 13
+2024-10-06 01:48:13,277 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:13,278 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-10-06 01:48:13,279 INFO    SenderThread:232088 [sender.py:transition_state():614] send defer: 14
+2024-10-06 01:48:13,281 DEBUG   SenderThread:232088 [sender.py:send():379] send: final
+2024-10-06 01:48:13,281 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 01:48:13,282 DEBUG   SenderThread:232088 [sender.py:send():379] send: footer
+2024-10-06 01:48:13,283 INFO    HandlerThread:232088 [handler.py:handle_request_defer():184] handle defer: 14
+2024-10-06 01:48:13,286 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: defer
+2024-10-06 01:48:13,287 INFO    SenderThread:232088 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-10-06 01:48:13,289 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 01:48:13,290 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: server_info
+2024-10-06 01:48:13,291 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: poll_exit
+2024-10-06 01:48:13,292 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 01:48:13,293 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: server_info
+2024-10-06 01:48:13,295 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: get_summary
+2024-10-06 01:48:13,300 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: sampled_history
+2024-10-06 01:48:13,301 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-06 01:48:13,578 DEBUG   SenderThread:232088 [sender.py:send_request():406] send_request: poll_exit
+2024-10-06 01:48:13,579 INFO    MainThread:232088 [wandb_run.py:_footer_history_summary_info():4008] rendering history
+2024-10-06 01:48:13,580 INFO    MainThread:232088 [wandb_run.py:_footer_history_summary_info():4040] rendering summary
+2024-10-06 01:48:13,581 INFO    MainThread:232088 [wandb_run.py:_footer_sync_info():3967] logging synced files
+2024-10-06 01:48:13,582 DEBUG   HandlerThread:232088 [handler.py:handle_request():158] handle_request: shutdown
+2024-10-06 01:48:13,583 INFO    HandlerThread:232088 [handler.py:finish():882] shutting down handler
+2024-10-06 01:48:14,295 INFO    WriterThread:232088 [datastore.py:close():296] close: /mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/wandb/run-20241006_014807-jhlvhqds/run-jhlvhqds.wandb
+2024-10-06 01:48:14,579 INFO    SenderThread:232088 [sender.py:finish():1608] shutting down sender
+2024-10-06 01:48:14,580 INFO    SenderThread:232088 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-06 01:48:14,581 INFO    SenderThread:232088 [file_pusher.py:join():175] waiting for file pusher

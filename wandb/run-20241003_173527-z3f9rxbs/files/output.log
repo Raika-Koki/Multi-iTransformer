@@ -1,0 +1,44 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 107, in <module>
+    model_trend, train_loss_trend, valid_loss_trend = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 31, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fe75b98d5a0>", line 67, in forward
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/model.py", line 167, in forward
+    assert x.shape[1:] == (self.lookback_len, self.num_variates)
+AssertionError
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 107, in <module>
+    model_trend, train_loss_trend, valid_loss_trend = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 31, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fe75b98d5a0>", line 67, in forward
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/model.py", line 167, in forward
+    assert x.shape[1:] == (self.lookback_len, self.num_variates)
+AssertionError
+Date
+2019-12-31     71.250427
+2020-01-02     72.876106
+2020-01-03     72.167618
+2020-01-06     72.742653
+2020-01-07     72.400551
+                 ...
+2023-05-24    170.734604
+2023-05-25    171.877213
+2023-05-26    174.301498
+2023-05-30    176.159470
+2023-05-31    176.109802
+Name: Adj Close, Length: 860, dtype: float64

@@ -1,0 +1,38 @@
+_wandb:
+    value:
+        cli_version: 0.18.3
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 55
+            "2":
+                - 1
+                - 55
+            "3":
+                - 2
+                - 23
+                - 55
+            "4": 3.10.12
+            "5": 0.18.3
+            "8":
+                - 5
+            "12": 0.18.3
+            "13": linux-x86_64
+batch_sizes:
+    value:
+        resid_batch_size: 64
+        seasonal_batch_size: 128
+        trend_batch_size: 128
+epochs:
+    value: 100
+learning_rates:
+    value:
+        resid_lr: 0.85
+        seasonal_lr: 0.85
+        trend_lr: 0.85
+observation_period_num:
+    value: 30
+predict_period_num:
+    value: 1

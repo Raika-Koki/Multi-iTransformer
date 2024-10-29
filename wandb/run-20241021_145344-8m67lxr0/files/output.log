@@ -1,0 +1,55 @@
+[*********************100%%**********************]  1 of 1 completed
+Date
+2012-05-18     18.384155
+2012-05-21     18.368320
+2012-05-22     18.352496
+2012-05-23     18.336682
+2012-05-24     18.320879
+                 ...
+2023-06-13    165.192612
+2023-06-14    165.257763
+2023-06-15    165.322912
+2023-06-16    165.388057
+2023-06-20    165.453200
+Name: trend, Length: 2789, dtype: float64
+Date
+2012-05-18    -2.020069
+2012-05-21    -1.334500
+2012-05-22    -1.367998
+2012-05-23    -1.136498
+2012-05-24    -1.130977
+                ...
+2023-06-13   -16.051062
+2023-06-14     0.585708
+2023-06-15    -0.695819
+2023-06-16   -19.510912
+2023-06-20     2.806943
+Name: season, Length: 2789, dtype: float64
+Date
+2012-05-18    -0.367914
+2012-05-21    -0.105710
+2012-05-22    -0.186377
+2012-05-23     0.007812
+2012-05-24    -0.139942
+                ...
+2023-06-13    32.989279
+2023-06-14    16.923221
+2023-06-15    20.186353
+2023-06-16    37.853308
+2023-06-20    15.559727
+Name: resid, Length: 2789, dtype: float64
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+Dataset created successfully.
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 159, in <module>
+    model_trend = iTransformer(num_variates=len(tickers), lookback_len=observation_period_num, depth=depths["trend"], dim=dims["trend"], pred_length=predict_period_num).to(device)
+  File "<@beartype(src.model.iTransformer.__init__) at 0x7fa4e637bd00>", line 43, in __init__
+beartype.roar.BeartypeCallHintParamViolation: Method[1m[35m src.model.iTransformer.__init__()[0m parameter [1m[34mlookback_len[0m=[1m[31m{'trend': 10, 'seasonal': 10, 'resid': 10}[0m violates type hint [1m[32m<class 'int'>[0m, as [1m[33mdict [0m[1m[31m{'trend': 10, 'seasonal': 10, 'resid': 10}[0m not instance of [1m[32mint[0m.
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 159, in <module>
+    model_trend = iTransformer(num_variates=len(tickers), lookback_len=observation_period_num, depth=depths["trend"], dim=dims["trend"], pred_length=predict_period_num).to(device)
+  File "<@beartype(src.model.iTransformer.__init__) at 0x7fa4e637bd00>", line 43, in __init__
+beartype.roar.BeartypeCallHintParamViolation: Method[1m[35m src.model.iTransformer.__init__()[0m parameter [1m[34mlookback_len[0m=[1m[31m{'trend': 10, 'seasonal': 10, 'resid': 10}[0m violates type hint [1m[32m<class 'int'>[0m, as [1m[33mdict [0m[1m[31m{'trend': 10, 'seasonal': 10, 'resid': 10}[0m not instance of [1m[32mint[0m.

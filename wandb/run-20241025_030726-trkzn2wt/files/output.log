@@ -1,0 +1,148 @@
+[*********************100%%**********************]  1 of 1 completed
+Date
+2012-05-18     18.373453
+2012-05-21     18.357677
+2012-05-22     18.341912
+2012-05-23     18.326157
+2012-05-24     18.310414
+                 ...
+2023-05-24    161.422808
+2023-05-25    161.480442
+2023-05-26    161.538073
+2023-05-30    161.595700
+2023-05-31    161.653323
+Name: trend, Length: 2776, dtype: float64
+Date
+2012-05-18    -2.037159
+2012-05-21    -1.339884
+2012-05-22    -1.369429
+2012-05-23    -1.131671
+2012-05-24    -1.129775
+                ...
+2023-05-24    -6.710189
+2023-05-25   -10.178092
+2023-05-26   -10.052322
+2023-05-30    -6.308026
+2023-05-31    -3.033640
+Name: season, Length: 2776, dtype: float64
+Date
+2012-05-18    -0.340126
+2012-05-21    -0.089685
+2012-05-22    -0.174362
+2012-05-23     0.013504
+2012-05-24    -0.130674
+                ...
+2023-05-24    16.021970
+2023-05-25    20.574846
+2023-05-26    22.815747
+2023-05-30    20.871795
+2023-05-31    17.490119
+Name: resid, Length: 2776, dtype: float64
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[32m[I 2024-10-25 03:07:31,055][0m A new study created in memory with name: no-name-077fff7e-1901-4883-a9f2-0147c72eb5e7[0m
+/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py:160: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+Epoch 1/100, (Training, Validation)0.899100, 1.320544
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 2/100, (Training, Validation)0.252264, 0.593259
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 3/100, (Training, Validation)0.201381, 0.439945
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 4/100, (Training, Validation)0.174152, 0.386902
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 5/100, (Training, Validation)0.156679, 0.352876
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 6/100, (Training, Validation)0.141522, 0.324474
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 7/100, (Training, Validation)0.126364, 0.303622
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 8/100, (Training, Validation)0.115829, 0.285640
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 9/100, (Training, Validation)0.106710, 0.268479
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 10/100, (Training, Validation)0.097183, 0.255215
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 11/100, (Training, Validation)0.090436, 0.243246
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 12/100, (Training, Validation)0.084654, 0.231601
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 13/100, (Training, Validation)0.078532, 0.222498
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+Epoch 14/100, (Training, Validation)0.074204, 0.214051
+learning_rate: 5.2164776143742074e-05, batch_size: 54, step_size: 3, gamma: 0.8037683684714174, depth: 4, dim: 35
+[33m[W 2024-10-25 03:07:48,853][0m Trial 0 failed with parameters: {'learning_rate': 5.2164776143742074e-05, 'batch_size': 54, 'step_size': 3, 'gamma': 0.8037683684714174, 'depth': 4, 'dim': 35} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 190, in objective
+    model, train_loss, valid_loss = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[33m[W 2024-10-25 03:07:48,859][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <module>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 190, in objective
+    model, train_loss, valid_loss = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <module>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/study.py", line 451, in optimize
+    _optimize(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 62, in _optimize
+    _optimize_sequential(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 159, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 247, in _run_trial
+    raise func_err
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/optuna/study/_optimize.py", line 196, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 197, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=200)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 190, in objective
+    model, train_loss, valid_loss = train(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

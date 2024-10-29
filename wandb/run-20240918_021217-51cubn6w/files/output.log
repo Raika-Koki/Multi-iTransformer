@@ -1,0 +1,26 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/demo.py", line 86, in <module>
+    model, train_loss, valid_loss = train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 15, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 351, in _forward_unimplemented
+    raise NotImplementedError(f"Module [{type(self).__name__}] is missing the required \"forward\" function")
+NotImplementedError: Module [iTransformer] is missing the required "forward" function
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/demo.py", line 86, in <module>
+    model, train_loss, valid_loss = train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 15, in train
+    output = model(data)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/raikakoki/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 351, in _forward_unimplemented
+    raise NotImplementedError(f"Module [{type(self).__name__}] is missing the required \"forward\" function")
+NotImplementedError: Module [iTransformer] is missing the required "forward" function

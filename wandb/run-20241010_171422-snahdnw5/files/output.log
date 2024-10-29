@@ -1,0 +1,179 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+{'AAPL': Date
+2019-12-31     78.597205
+2020-01-02     78.442278
+2020-01-03     78.286151
+2020-01-06     78.128727
+2020-01-07     77.969914
+                 ...
+2023-05-24    173.117857
+2023-05-25    173.456807
+2023-05-26    173.795654
+2023-05-30    174.134459
+2023-05-31    174.473274
+Name: trend, Length: 860, dtype: float64, 'GOOGL': Date
+2019-12-31     66.804085
+2020-01-02     68.264961
+2020-01-03     67.907852
+2020-01-06     69.717865
+2020-01-07     69.583206
+                 ...
+2023-05-24    120.601372
+2023-05-25    123.175003
+2023-05-26    124.302208
+2023-05-30    123.364525
+2023-05-31    122.566505
+Name: Adj Close, Length: 860, dtype: float64, 'META': Date
+2019-12-31    204.633865
+2020-01-02    209.150269
+2020-01-03    208.043610
+2020-01-06    211.961823
+2020-01-07    212.420425
+                 ...
+2023-05-24    248.461929
+2023-05-25    251.931473
+2023-05-26    261.253387
+2023-05-30    261.731964
+2023-05-31    263.925354
+Name: Adj Close, Length: 860, dtype: float64, 'AMZN': Date
+2019-12-31     92.391998
+2020-01-02     94.900497
+2020-01-03     93.748497
+2020-01-06     95.143997
+2020-01-07     95.343002
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: Adj Close, Length: 860, dtype: float64, 'MSFT': Date
+2019-12-31    151.139694
+2020-01-02    153.938202
+2020-01-03    152.021408
+2020-01-06    152.414368
+2020-01-07    151.024673
+                 ...
+2023-05-24    310.853638
+2023-05-25    322.808411
+2023-05-26    329.711853
+2023-05-30    328.047913
+2023-05-31    325.254822
+Name: Adj Close, Length: 860, dtype: float64}
+Dataset created successfully.
+/home/raikakoki/.local/lib/python3.10/site-packages/torch/backends/cuda/__init__.py:342: FutureWarning: torch.backends.cuda.sdp_kernel() is deprecated. In the future, this context manager will be removed. Please see, torch.nn.attention.sdpa_kernel() for the new context manager, with updated signature.
+  warnings.warn(
+Epoch 1/100, Training Loss: 0.5934, Validation Loss: 0.1412
+Epoch 2/100, Training Loss: 0.2182, Validation Loss: 0.1596
+Epoch 3/100, Training Loss: 0.1323, Validation Loss: 0.1789
+Epoch 4/100, Training Loss: 0.1022, Validation Loss: 0.1136
+Epoch 5/100, Training Loss: 0.0744, Validation Loss: 0.0941
+Epoch 6/100, Training Loss: 0.0585, Validation Loss: 0.0990
+Epoch 7/100, Training Loss: 0.0566, Validation Loss: 0.0821
+Epoch 8/100, Training Loss: 0.0495, Validation Loss: 0.0541
+Epoch 9/100, Training Loss: 0.0433, Validation Loss: 0.0592
+Epoch 10/100, Training Loss: 0.0433, Validation Loss: 0.0725
+Epoch 11/100, Training Loss: 0.0340, Validation Loss: 0.0436
+Epoch 12/100, Training Loss: 0.0356, Validation Loss: 0.0484
+Epoch 13/100, Training Loss: 0.0341, Validation Loss: 0.0773
+Epoch 14/100, Training Loss: 0.0375, Validation Loss: 0.0392
+Epoch 15/100, Training Loss: 0.0391, Validation Loss: 0.0465
+Epoch 16/100, Training Loss: 0.0360, Validation Loss: 0.0673
+Epoch 17/100, Training Loss: 0.0279, Validation Loss: 0.0322
+Epoch 18/100, Training Loss: 0.0451, Validation Loss: 0.0986
+Epoch 19/100, Training Loss: 0.0585, Validation Loss: 0.0376
+Epoch 20/100, Training Loss: 0.0377, Validation Loss: 0.0885
+Epoch 21/100, Training Loss: 0.0471, Validation Loss: 0.0389
+Epoch 22/100, Training Loss: 0.0403, Validation Loss: 0.1245
+Epoch 23/100, Training Loss: 0.0501, Validation Loss: 0.0439
+Epoch 24/100, Training Loss: 0.0509, Validation Loss: 0.1791
+Epoch 25/100, Training Loss: 0.0623, Validation Loss: 0.0560
+Epoch 26/100, Training Loss: 0.0558, Validation Loss: 0.1536
+Epoch 27/100, Training Loss: 0.0458, Validation Loss: 0.0435
+Epoch 28/100, Training Loss: 0.0373, Validation Loss: 0.0930
+Epoch 29/100, Training Loss: 0.0284, Validation Loss: 0.0385
+Epoch 30/100, Training Loss: 0.0256, Validation Loss: 0.0635
+Epoch 31/100, Training Loss: 0.0230, Validation Loss: 0.0413
+Epoch 32/100, Training Loss: 0.0218, Validation Loss: 0.0507
+Epoch 33/100, Training Loss: 0.0209, Validation Loss: 0.0424
+Epoch 34/100, Training Loss: 0.0204, Validation Loss: 0.0451
+Epoch 35/100, Training Loss: 0.0200, Validation Loss: 0.0419
+Epoch 36/100, Training Loss: 0.0196, Validation Loss: 0.0424
+Epoch 37/100, Training Loss: 0.0193, Validation Loss: 0.0409
+Epoch 38/100, Training Loss: 0.0190, Validation Loss: 0.0406
+Epoch 39/100, Training Loss: 0.0188, Validation Loss: 0.0399
+Epoch 40/100, Training Loss: 0.0185, Validation Loss: 0.0393
+Epoch 41/100, Training Loss: 0.0183, Validation Loss: 0.0390
+Epoch 42/100, Training Loss: 0.0181, Validation Loss: 0.0384
+Epoch 43/100, Training Loss: 0.0180, Validation Loss: 0.0382
+Epoch 44/100, Training Loss: 0.0177, Validation Loss: 0.0376
+Epoch 45/100, Training Loss: 0.0177, Validation Loss: 0.0376
+Epoch 46/100, Training Loss: 0.0174, Validation Loss: 0.0369
+Epoch 47/100, Training Loss: 0.0174, Validation Loss: 0.0371
+Epoch 48/100, Training Loss: 0.0172, Validation Loss: 0.0363
+Epoch 49/100, Training Loss: 0.0174, Validation Loss: 0.0368
+Epoch 50/100, Training Loss: 0.0173, Validation Loss: 0.0357
+Epoch 51/100, Training Loss: 0.0180, Validation Loss: 0.0370
+Epoch 52/100, Training Loss: 0.0182, Validation Loss: 0.0354
+Epoch 53/100, Training Loss: 0.0204, Validation Loss: 0.0378
+Epoch 54/100, Training Loss: 0.0218, Validation Loss: 0.0354
+Epoch 55/100, Training Loss: 0.0264, Validation Loss: 0.0386
+Epoch 56/100, Training Loss: 0.0261, Validation Loss: 0.0346
+Epoch 57/100, Training Loss: 0.0276, Validation Loss: 0.0373
+Epoch 58/100, Training Loss: 0.0220, Validation Loss: 0.0346
+Epoch 59/100, Training Loss: 0.0198, Validation Loss: 0.0356
+Epoch 60/100, Training Loss: 0.0172, Validation Loss: 0.0347
+Epoch 61/100, Training Loss: 0.0166, Validation Loss: 0.0347
+Epoch 62/100, Training Loss: 0.0162, Validation Loss: 0.0344
+Epoch 63/100, Training Loss: 0.0161, Validation Loss: 0.0343
+Epoch 64/100, Training Loss: 0.0160, Validation Loss: 0.0341
+Epoch 65/100, Training Loss: 0.0160, Validation Loss: 0.0340
+Epoch 66/100, Training Loss: 0.0159, Validation Loss: 0.0338
+Epoch 67/100, Training Loss: 0.0159, Validation Loss: 0.0337
+Epoch 68/100, Training Loss: 0.0158, Validation Loss: 0.0336
+Epoch 69/100, Training Loss: 0.0158, Validation Loss: 0.0335
+Epoch 70/100, Training Loss: 0.0157, Validation Loss: 0.0334
+Epoch 71/100, Training Loss: 0.0157, Validation Loss: 0.0333
+Epoch 72/100, Training Loss: 0.0156, Validation Loss: 0.0332
+Epoch 73/100, Training Loss: 0.0156, Validation Loss: 0.0331
+Epoch 74/100, Training Loss: 0.0156, Validation Loss: 0.0330
+Epoch 75/100, Training Loss: 0.0155, Validation Loss: 0.0329
+Epoch 76/100, Training Loss: 0.0155, Validation Loss: 0.0329
+Epoch 77/100, Training Loss: 0.0155, Validation Loss: 0.0328
+Epoch 78/100, Training Loss: 0.0155, Validation Loss: 0.0327
+Epoch 79/100, Training Loss: 0.0154, Validation Loss: 0.0327
+Epoch 80/100, Training Loss: 0.0154, Validation Loss: 0.0326
+Epoch 81/100, Training Loss: 0.0154, Validation Loss: 0.0325
+Epoch 82/100, Training Loss: 0.0154, Validation Loss: 0.0325
+Epoch 83/100, Training Loss: 0.0153, Validation Loss: 0.0324
+Epoch 84/100, Training Loss: 0.0153, Validation Loss: 0.0324
+Epoch 85/100, Training Loss: 0.0153, Validation Loss: 0.0324
+Epoch 86/100, Training Loss: 0.0153, Validation Loss: 0.0323
+Epoch 87/100, Training Loss: 0.0153, Validation Loss: 0.0323
+Epoch 88/100, Training Loss: 0.0152, Validation Loss: 0.0322
+Epoch 89/100, Training Loss: 0.0152, Validation Loss: 0.0322
+Epoch 90/100, Training Loss: 0.0152, Validation Loss: 0.0322
+Epoch 91/100, Training Loss: 0.0152, Validation Loss: 0.0321
+Epoch 92/100, Training Loss: 0.0152, Validation Loss: 0.0321
+Epoch 93/100, Training Loss: 0.0152, Validation Loss: 0.0321
+Epoch 94/100, Training Loss: 0.0152, Validation Loss: 0.0320
+Epoch 95/100, Training Loss: 0.0151, Validation Loss: 0.0320
+Epoch 96/100, Training Loss: 0.0151, Validation Loss: 0.0320
+Epoch 97/100, Training Loss: 0.0151, Validation Loss: 0.0319
+Epoch 98/100, Training Loss: 0.0151, Validation Loss: 0.0319
+Epoch 99/100, Training Loss: 0.0151, Validation Loss: 0.0319
+Epoch 100/100, Training Loss: 0.0151, Validation Loss: 0.0319
+/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py:259: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_selected_stock_price = predicted_selected_stock_price.cpu().numpy().flatten() * std_list[0] + mean_list[0]  # Using AAPL normalization factors
+['2023-05-17', '2023-05-18', '2023-05-19', '2023-05-22', '2023-05-23', '2023-05-24', '2023-05-25', '2023-05-26', '2023-05-30', '2023-05-31']
+[169.4349316]
+[171.41884503 171.7595371  172.09967555 172.43937452 172.77873871
+ 173.11785697 173.45680703 173.79565378 174.13445882 169.4349316 ]
+[171.41884503 171.7595371  172.09967555 172.43937452 172.77873871
+ 173.11785697 173.45680703 173.79565378 174.13445882 174.47327387]
+/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py:291: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()

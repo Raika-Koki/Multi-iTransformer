@@ -1,0 +1,21 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 132, in <module>
+    train_data_trend, valid_data_trend = create_multivariate_dataset(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/data_create.py", line 39, in create_multivariate_dataset
+    inout_data = [(torch.tensor(data, dtype=torch.float32).to(device),
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/data_create.py", line 39, in <listcomp>
+    inout_data = [(torch.tensor(data, dtype=torch.float32).to(device),
+ValueError: could not determine the shape of object type 'DataFrame'
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/STLdemo.py", line 132, in <module>
+    train_data_trend, valid_data_trend = create_multivariate_dataset(
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/data_create.py", line 39, in create_multivariate_dataset
+    inout_data = [(torch.tensor(data, dtype=torch.float32).to(device),
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/data_create.py", line 39, in <listcomp>
+    inout_data = [(torch.tensor(data, dtype=torch.float32).to(device),
+ValueError: could not determine the shape of object type 'DataFrame'

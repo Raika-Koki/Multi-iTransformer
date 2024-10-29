@@ -1,0 +1,18 @@
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+[*********************100%%**********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/demo.py", line 82, in <module>
+    model, train_loss, valid_loss = train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 24, in train
+    data, targets = get_batch(train_data, i, batch_size, observation_period_num)
+NameError: name 'get_batch' is not defined
+Traceback (most recent call last):
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/demo.py", line 82, in <module>
+    model, train_loss, valid_loss = train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num)
+  File "/mnt/c/Users/RAIKA KOKI/B4研究/Multi_iTransformer/src/train.py", line 24, in train
+    data, targets = get_batch(train_data, i, batch_size, observation_period_num)
+NameError: name 'get_batch' is not defined
+Dataset created successfully.
