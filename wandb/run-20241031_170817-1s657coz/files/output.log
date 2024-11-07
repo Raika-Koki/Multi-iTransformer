@@ -1,0 +1,73 @@
+[*********************100%***********************]  1 of 1 completed
+Date
+2012-05-18 00:00:00+00:00     19.149640
+2012-05-21 00:00:00+00:00     19.128526
+2012-05-22 00:00:00+00:00     19.107413
+2012-05-23 00:00:00+00:00     19.086299
+2012-05-24 00:00:00+00:00     19.065186
+                                ...
+2023-05-24 00:00:00+00:00    159.754313
+2023-05-25 00:00:00+00:00    159.792547
+2023-05-26 00:00:00+00:00    159.830779
+2023-05-30 00:00:00+00:00    159.869008
+2023-05-31 00:00:00+00:00    159.907235
+Name: trend, Length: 2776, dtype: float64
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     19.149640
+2012-05-21 00:00:00+00:00     19.128526
+2012-05-22 00:00:00+00:00     19.107413
+2012-05-23 00:00:00+00:00     19.086299
+2012-05-24 00:00:00+00:00     19.065186
+                                ...
+2023-05-24 00:00:00+00:00    159.754313
+2023-05-25 00:00:00+00:00    159.792547
+2023-05-26 00:00:00+00:00    159.830779
+2023-05-30 00:00:00+00:00    159.869008
+2023-05-31 00:00:00+00:00    159.907235
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.321537
+2012-05-21 00:00:00+00:00    -1.658394
+2012-05-22 00:00:00+00:00    -1.695487
+2012-05-23 00:00:00+00:00    -1.482387
+2012-05-24 00:00:00+00:00    -1.460784
+                               ...
+2023-05-24 00:00:00+00:00    -9.252377
+2023-05-25 00:00:00+00:00   -12.698437
+2023-05-26 00:00:00+00:00   -12.319674
+2023-05-30 00:00:00+00:00    -9.726733
+2023-05-31 00:00:00+00:00    -7.141799
+Name: season, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -0.831936
+2012-05-21 00:00:00+00:00    -0.542022
+2012-05-22 00:00:00+00:00    -0.613811
+2012-05-23 00:00:00+00:00    -0.395916
+2012-05-24 00:00:00+00:00    -0.554453
+                               ...
+2023-05-24 00:00:00+00:00    20.232667
+2023-05-25 00:00:00+00:00    24.783103
+2023-05-26 00:00:00+00:00    26.790378
+2023-05-30 00:00:00+00:00    26.017195
+2023-05-31 00:00:00+00:00    23.344351
+Name: resid, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "optunademo.py", line 67, in <module>
+    combined_df_trend = pd.DataFrame(dataframes_trend)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 614, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 465, in dict_to_mgr
+    arrays, data_names, index, columns, dtype=dtype, typ=typ, consolidate=copy
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 124, in arrays_to_mgr
+    arrays = _homogenize(arrays, index, dtype)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 590, in _homogenize
+    val, index, dtype=dtype, copy=False, raise_cast_failure=False
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/construction.py", line 576, in sanitize_array
+    subarr = _sanitize_ndim(subarr, data, dtype, index, allow_2d=allow_2d)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/construction.py", line 627, in _sanitize_ndim
+    raise ValueError("Data must be 1-dimensional")
+ValueError: Data must be 1-dimensional

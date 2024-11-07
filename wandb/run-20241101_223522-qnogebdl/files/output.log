@@ -1,0 +1,126 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373451
+2012-05-21 00:00:00+00:00     18.357675
+2012-05-22 00:00:00+00:00     18.341910
+2012-05-23 00:00:00+00:00     18.326155
+2012-05-24 00:00:00+00:00     18.310412
+                                ...
+2023-05-24 00:00:00+00:00    161.422832
+2023-05-25 00:00:00+00:00    161.480467
+2023-05-26 00:00:00+00:00    161.538098
+2023-05-30 00:00:00+00:00    161.595725
+2023-05-31 00:00:00+00:00    161.653348
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037157
+2012-05-21 00:00:00+00:00    -1.339880
+2012-05-22 00:00:00+00:00    -1.369432
+2012-05-23 00:00:00+00:00    -1.131668
+2012-05-24 00:00:00+00:00    -1.129776
+                               ...
+2023-05-24 00:00:00+00:00    -6.710180
+2023-05-25 00:00:00+00:00   -10.178081
+2023-05-26 00:00:00+00:00   -10.052274
+2023-05-30 00:00:00+00:00    -6.308013
+2023-05-31 00:00:00+00:00    -3.033314
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+GOOGL
+[*********************100%***********************]  1 of 1 completed
+META
+[*********************100%***********************]  1 of 1 completed
+AMZN
+[*********************100%***********************]  1 of 1 completed
+MSFT
+[32m[I 2024-11-01 22:35:29,896][0m A new study created in memory with name: no-name-c9b9ec62-02a5-4299-a052-27f1c5d5a0ed[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:91: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/contextlib.py:109: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-01 22:35:30,866][0m Trial 0 finished with value: 2.2135458744845344 and parameters: {'learning_rate': 3.3497132875767082e-06, 'batch_size': 172, 'step_size': 7, 'gamma': 0.8807698471846589, 'depth': 6, 'dim': 64}. Best is trial 0 with value: 2.2135458744845344.[0m
+[32m[I 2024-11-01 22:35:30,866][0m A new study created in memory with name: no-name-393421d5-81a8-43c0-b718-184668aaef41[0m
+[32m[I 2024-11-01 22:35:31,670][0m Trial 0 finished with value: 1.3631732649016148 and parameters: {'learning_rate': 4.267272990148572e-05, 'batch_size': 245, 'step_size': 7, 'gamma': 0.7887280755391091, 'depth': 3, 'dim': 140}. Best is trial 0 with value: 1.3631732649016148.[0m
+[32m[I 2024-11-01 22:35:31,671][0m A new study created in memory with name: no-name-d2e66afa-c367-4a96-8e1e-57db7931fc83[0m
+[32m[I 2024-11-01 22:35:32,257][0m Trial 0 finished with value: 4.392088710104377 and parameters: {'learning_rate': 6.122800877523728e-05, 'batch_size': 243, 'step_size': 10, 'gamma': 0.8987412709884018, 'depth': 2, 'dim': 138}. Best is trial 0 with value: 4.392088710104377.[0m
+Best hyperparameters (trend): {'learning_rate': 3.3497132875767082e-06, 'batch_size': 172, 'step_size': 7, 'gamma': 0.8807698471846589, 'depth': 6, 'dim': 64}
+Best hyperparameters (seasonal): {'learning_rate': 4.267272990148572e-05, 'batch_size': 245, 'step_size': 7, 'gamma': 0.7887280755391091, 'depth': 3, 'dim': 140}
+Best hyperparameters (resid): {'learning_rate': 6.122800877523728e-05, 'batch_size': 243, 'step_size': 10, 'gamma': 0.8987412709884018, 'depth': 2, 'dim': 138}
+Epoch 1/100, Trend Loss: 0.6986, Seasonal Loss: 1.3583, Residual Loss: 1.8896
+Epoch 2/100, Trend Loss: 0.6356, Seasonal Loss: 0.5911, Residual Loss: 0.7553
+Epoch 3/100, Trend Loss: 0.5868, Seasonal Loss: 0.3980, Residual Loss: 0.3674
+Epoch 4/100, Trend Loss: 0.5430, Seasonal Loss: 0.3219, Residual Loss: 0.2560
+Epoch 5/100, Trend Loss: 0.5034, Seasonal Loss: 0.2786, Residual Loss: 0.2184
+Epoch 6/100, Trend Loss: 0.4676, Seasonal Loss: 0.2561, Residual Loss: 0.1953
+Epoch 7/100, Trend Loss: 0.4351, Seasonal Loss: 0.2369, Residual Loss: 0.1753
+Epoch 8/100, Trend Loss: 0.4074, Seasonal Loss: 0.2193, Residual Loss: 0.1578
+Epoch 9/100, Trend Loss: 0.3836, Seasonal Loss: 0.2056, Residual Loss: 0.1437
+Epoch 10/100, Trend Loss: 0.3617, Seasonal Loss: 0.1934, Residual Loss: 0.1320
+Epoch 11/100, Trend Loss: 0.3415, Seasonal Loss: 0.1826, Residual Loss: 0.1222
+Epoch 12/100, Trend Loss: 0.3229, Seasonal Loss: 0.1731, Residual Loss: 0.1147
+Epoch 13/100, Trend Loss: 0.3058, Seasonal Loss: 0.1647, Residual Loss: 0.1083
+Epoch 14/100, Trend Loss: 0.2899, Seasonal Loss: 0.1572, Residual Loss: 0.1030
+Epoch 15/100, Trend Loss: 0.2763, Seasonal Loss: 0.1507, Residual Loss: 0.0985
+Epoch 16/100, Trend Loss: 0.2643, Seasonal Loss: 0.1460, Residual Loss: 0.0947
+Epoch 17/100, Trend Loss: 0.2531, Seasonal Loss: 0.1415, Residual Loss: 0.0915
+Epoch 18/100, Trend Loss: 0.2426, Seasonal Loss: 0.1374, Residual Loss: 0.0887
+Epoch 19/100, Trend Loss: 0.2328, Seasonal Loss: 0.1336, Residual Loss: 0.0861
+Epoch 20/100, Trend Loss: 0.2237, Seasonal Loss: 0.1301, Residual Loss: 0.0838
+Epoch 21/100, Trend Loss: 0.2151, Seasonal Loss: 0.1268, Residual Loss: 0.0815
+Epoch 22/100, Trend Loss: 0.2077, Seasonal Loss: 0.1237, Residual Loss: 0.0796
+Epoch 23/100, Trend Loss: 0.2010, Seasonal Loss: 0.1214, Residual Loss: 0.0778
+Epoch 24/100, Trend Loss: 0.1947, Seasonal Loss: 0.1192, Residual Loss: 0.0761
+Epoch 25/100, Trend Loss: 0.1888, Seasonal Loss: 0.1171, Residual Loss: 0.0744
+Epoch 26/100, Trend Loss: 0.1832, Seasonal Loss: 0.1150, Residual Loss: 0.0727
+Epoch 27/100, Trend Loss: 0.1779, Seasonal Loss: 0.1131, Residual Loss: 0.0712
+Epoch 28/100, Trend Loss: 0.1730, Seasonal Loss: 0.1112, Residual Loss: 0.0696
+Epoch 29/100, Trend Loss: 0.1686, Seasonal Loss: 0.1094, Residual Loss: 0.0682
+Epoch 30/100, Trend Loss: 0.1647, Seasonal Loss: 0.1080, Residual Loss: 0.0667
+Epoch 31/100, Trend Loss: 0.1610, Seasonal Loss: 0.1066, Residual Loss: 0.0652
+Epoch 32/100, Trend Loss: 0.1574, Seasonal Loss: 0.1053, Residual Loss: 0.0640
+Epoch 33/100, Trend Loss: 0.1540, Seasonal Loss: 0.1040, Residual Loss: 0.0628
+Epoch 34/100, Trend Loss: 0.1508, Seasonal Loss: 0.1028, Residual Loss: 0.0616
+Epoch 35/100, Trend Loss: 0.1478, Seasonal Loss: 0.1016, Residual Loss: 0.0605
+Epoch 36/100, Trend Loss: 0.1451, Seasonal Loss: 0.1004, Residual Loss: 0.0593
+Epoch 37/100, Trend Loss: 0.1427, Seasonal Loss: 0.0995, Residual Loss: 0.0582
+Epoch 38/100, Trend Loss: 0.1403, Seasonal Loss: 0.0986, Residual Loss: 0.0571
+Epoch 39/100, Trend Loss: 0.1381, Seasonal Loss: 0.0977, Residual Loss: 0.0560
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 209, in <module>
+    model_seasonal, train_loss_seasonal, valid_loss_seasonal = train(
+                                                               ~~~~~^
+        model_seasonal, train_data_seasonal, valid_data_seasonal, optimizer_seasonal, criterion, scheduler_seasonal, best_params_seasonal['batch_size'], observation_period_num)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 39, in train
+    loss.backward()  # 逆伝播
+    ~~~~~~~~~~~~~^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+KeyboardInterrupt

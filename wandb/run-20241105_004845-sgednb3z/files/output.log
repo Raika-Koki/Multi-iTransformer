@@ -1,0 +1,61 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373451
+2012-05-21 00:00:00+00:00     18.357675
+2012-05-22 00:00:00+00:00     18.341910
+2012-05-23 00:00:00+00:00     18.326155
+2012-05-24 00:00:00+00:00     18.310412
+                                ...
+2023-05-24 00:00:00+00:00    161.422818
+2023-05-25 00:00:00+00:00    161.480453
+2023-05-26 00:00:00+00:00    161.538084
+2023-05-30 00:00:00+00:00    161.595711
+2023-05-31 00:00:00+00:00    161.653334
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037156
+2012-05-21 00:00:00+00:00    -1.339881
+2012-05-22 00:00:00+00:00    -1.369427
+2012-05-23 00:00:00+00:00    -1.131666
+2012-05-24 00:00:00+00:00    -1.129783
+                               ...
+2023-05-24 00:00:00+00:00    -6.710217
+2023-05-25 00:00:00+00:00   -10.178086
+2023-05-26 00:00:00+00:00   -10.052310
+2023-05-30 00:00:00+00:00    -6.308016
+2023-05-31 00:00:00+00:00    -3.033509
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+GOOGL
+[*********************100%***********************]  1 of 1 completed
+META
+[*********************100%***********************]  1 of 1 completed
+AMZN
+[*********************100%***********************]  1 of 1 completed
+MSFT
+[32m[I 2024-11-05 00:48:52,801][0m A new study created in memory with name: no-name-947a9277-83df-40c5-ba39-37ac6960c8ef[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:100: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-05 00:48:53,470][0m Trial 0 finished with value: 2.7855888920501597 and parameters: {'learning_rate': 3.085709860334273e-06, 'batch_size': 175, 'step_size': 9, 'gamma': 0.8183018833687739, 'depth': 5, 'dim': 30}. Best is trial 0 with value: 2.7855888920501597.[0m
+[32m[I 2024-11-05 00:48:53,471][0m A new study created in memory with name: no-name-ed5c841a-b496-455c-9ec4-1cf099fdb4c7[0m
+[32m[I 2024-11-05 00:48:55,530][0m Trial 0 finished with value: 1.199245306473334 and parameters: {'learning_rate': 0.000768124496624333, 'batch_size': 166, 'step_size': 7, 'gamma': 0.9164444688993811, 'depth': 5, 'dim': 209}. Best is trial 0 with value: 1.199245306473334.[0m
+[32m[I 2024-11-05 00:48:55,531][0m A new study created in memory with name: no-name-9a520f2b-485b-4c16-ba8f-367581b90653[0m
+[32m[I 2024-11-05 00:48:56,116][0m Trial 0 finished with value: 1.282306406683135 and parameters: {'learning_rate': 0.0001410356282021616, 'batch_size': 197, 'step_size': 4, 'gamma': 0.7855163269408781, 'depth': 3, 'dim': 48}. Best is trial 0 with value: 1.282306406683135.[0m
+Best hyperparameters (trend): {'learning_rate': 3.085709860334273e-06, 'batch_size': 175, 'step_size': 9, 'gamma': 0.8183018833687739, 'depth': 5, 'dim': 30}
+Best hyperparameters (seasonal): {'learning_rate': 0.000768124496624333, 'batch_size': 166, 'step_size': 7, 'gamma': 0.9164444688993811, 'depth': 5, 'dim': 209}
+Best hyperparameters (resid): {'learning_rate': 0.0001410356282021616, 'batch_size': 197, 'step_size': 4, 'gamma': 0.7855163269408781, 'depth': 3, 'dim': 48}
+Epoch 1/1, (Training | Validation) Trend Loss: 0.5461 | 1.2303, Seasonal Loss: 1.5815 | 1.5459, Residual Loss: 0.3183 | 0.9726
+torch.Size([1, 1, 5])
+<class 'dict'>
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 284, in <module>
+    predicted_dates_tmp = combined_df.index[-output_date:].strftime('%Y-%m-%d')
+                          ^^^^^^^^^^^
+NameError: name 'combined_df' is not defined

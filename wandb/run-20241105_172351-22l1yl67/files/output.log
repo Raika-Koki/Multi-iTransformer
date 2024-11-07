@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "optunademo.py", line 22, in <module>
+    device = torch.device("GPU:0" if torch.cuda.is_available() else "cpu")
+RuntimeError: Expected one of cpu, cuda, mkldnn, opengl, opencl, ideep, hip, msnpu device type at start of device string: GPU

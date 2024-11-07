@@ -1,0 +1,152 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373452
+2012-05-21 00:00:00+00:00     18.357677
+2012-05-22 00:00:00+00:00     18.341911
+2012-05-23 00:00:00+00:00     18.326157
+2012-05-24 00:00:00+00:00     18.310413
+                                ...
+2023-05-24 00:00:00+00:00    161.422810
+2023-05-25 00:00:00+00:00    161.480445
+2023-05-26 00:00:00+00:00    161.538076
+2023-05-30 00:00:00+00:00    161.595703
+2023-05-31 00:00:00+00:00    161.653326
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037157
+2012-05-21 00:00:00+00:00    -1.339880
+2012-05-22 00:00:00+00:00    -1.369426
+2012-05-23 00:00:00+00:00    -1.131664
+2012-05-24 00:00:00+00:00    -1.129781
+                               ...
+2023-05-24 00:00:00+00:00    -6.710207
+2023-05-25 00:00:00+00:00   -10.178109
+2023-05-26 00:00:00+00:00   -10.052300
+2023-05-30 00:00:00+00:00    -6.308022
+2023-05-31 00:00:00+00:00    -3.033254
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+GOOGL
+[*********************100%***********************]  1 of 1 completed
+META
+[*********************100%***********************]  1 of 1 completed
+AMZN
+[*********************100%***********************]  1 of 1 completed
+MSFT
+[32m[I 2024-11-01 22:46:08,996][0m A new study created in memory with name: no-name-77aedb4c-1c83-4ed5-b1f9-9a147897ff58[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:93: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/contextlib.py:109: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-01 22:48:56,768][0m Trial 0 finished with value: 0.022947423087740407 and parameters: {'learning_rate': 0.00017282186566833352, 'batch_size': 153, 'step_size': 8, 'gamma': 0.7681383382263433, 'depth': 6, 'dim': 180}. Best is trial 0 with value: 0.022947423087740407.[0m
+[32m[I 2024-11-01 22:48:56,768][0m A new study created in memory with name: no-name-5d27b84a-6126-4495-a3f8-3557416f7ace[0m
+[33m[W 2024-11-01 22:50:30,942][0m Trial 0 failed with parameters: {'learning_rate': 3.0709929137833436e-06, 'batch_size': 173, 'step_size': 6, 'gamma': 0.7933539004660726, 'depth': 3, 'dim': 235} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 133, in <lambda>
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 123, in objective
+    for epoch in range(epochs):
+
+        model, train_loss, valid_loss = train(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 60, in train
+    output = model(data)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fd7fb7c7d80>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 189, in forward
+    x = attn_post_norm(x)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/normalization.py", line 217, in forward
+    return F.layer_norm(
+           ~~~~~~~~~~~~^
+        input, self.normalized_shape, self.weight, self.bias, self.eps
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/functional.py", line 2900, in layer_norm
+    return torch.layer_norm(
+           ~~~~~~~~~~~~~~~~^
+        input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+KeyboardInterrupt
+[33m[W 2024-11-01 22:50:30,957][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 133, in <module>
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+    ~~~~~~~~~^
+        study=self,
+        ^^^^^^^^^^^
+    ...<7 lines>...
+        show_progress_bar=show_progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+    ~~~~~~~~~~~~~~~~~~~~^
+        study,
+        ^^^^^^
+    ...<8 lines>...
+        progress_bar=progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 133, in <lambda>
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 123, in objective
+    for epoch in range(epochs):
+
+        model, train_loss, valid_loss = train(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 60, in train
+    output = model(data)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fd7fb7c7d80>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 189, in forward
+    x = attn_post_norm(x)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/modules/normalization.py", line 217, in forward
+    return F.layer_norm(
+           ~~~~~~~~~~~~^
+        input, self.normalized_shape, self.weight, self.bias, self.eps
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/nn/functional.py", line 2900, in layer_norm
+    return torch.layer_norm(
+           ~~~~~~~~~~~~~~~~^
+        input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+KeyboardInterrupt

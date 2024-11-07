@@ -1,0 +1,21 @@
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "optunademo.py", line 57, in <module>
+    combined_df_trend = pd.DataFrame(dataframes_trend)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 614, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 465, in dict_to_mgr
+    arrays, data_names, index, columns, dtype=dtype, typ=typ, consolidate=copy
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 124, in arrays_to_mgr
+    arrays = _homogenize(arrays, index, dtype)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 590, in _homogenize
+    val, index, dtype=dtype, copy=False, raise_cast_failure=False
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/construction.py", line 576, in sanitize_array
+    subarr = _sanitize_ndim(subarr, data, dtype, index, allow_2d=allow_2d)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/construction.py", line 627, in _sanitize_ndim
+    raise ValueError("Data must be 1-dimensional")
+ValueError: Data must be 1-dimensional

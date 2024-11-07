@@ -1,0 +1,29 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Using device: cpu
+[*********************100%***********************]  1 of 1 completed
+Ticker                           AAPL
+Date
+2012-05-18 00:00:00+00:00   15.996168
+2012-05-21 00:00:00+00:00   16.928108
+2012-05-22 00:00:00+00:00   16.798124
+2012-05-23 00:00:00+00:00   17.207998
+2012-05-24 00:00:00+00:00   17.049963
+...                               ...
+2023-05-24 00:00:00+00:00  170.734589
+2023-05-25 00:00:00+00:00  171.877197
+2023-05-26 00:00:00+00:00  174.301498
+2023-05-30 00:00:00+00:00  176.159470
+2023-05-31 00:00:00+00:00  176.109802
+
+[2776 rows x 1 columns]
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 47, in <module>
+    stl_series = stl.fit()
+                 ^^^^^^^^^
+  File "statsmodels/tsa/stl/_stl.pyx", line 347, in statsmodels.tsa.stl._stl.STL.fit
+  File "statsmodels/tsa/stl/_stl.pyx", line 640, in statsmodels.tsa.stl._stl.STL._rwts
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/numpy/_core/fromnumeric.py", line 754, in _partition_dispatcher
+    def _partition_dispatcher(a, kth, axis=None, kind=None, order=None):
+
+KeyboardInterrupt

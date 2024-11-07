@@ -1,0 +1,71 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373451
+2012-05-21 00:00:00+00:00     18.357675
+2012-05-22 00:00:00+00:00     18.341910
+2012-05-23 00:00:00+00:00     18.326156
+2012-05-24 00:00:00+00:00     18.310412
+                                ...
+2023-05-24 00:00:00+00:00    161.422835
+2023-05-25 00:00:00+00:00    161.480470
+2023-05-26 00:00:00+00:00    161.538101
+2023-05-30 00:00:00+00:00    161.595728
+2023-05-31 00:00:00+00:00    161.653352
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037157
+2012-05-21 00:00:00+00:00    -1.339880
+2012-05-22 00:00:00+00:00    -1.369425
+2012-05-23 00:00:00+00:00    -1.131665
+2012-05-24 00:00:00+00:00    -1.129781
+                               ...
+2023-05-24 00:00:00+00:00    -6.710194
+2023-05-25 00:00:00+00:00   -10.178113
+2023-05-26 00:00:00+00:00   -10.052306
+2023-05-30 00:00:00+00:00    -6.308030
+2023-05-31 00:00:00+00:00    -3.033309
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+GOOGL
+[*********************100%***********************]  1 of 1 completed
+META
+[*********************100%***********************]  1 of 1 completed
+AMZN
+[*********************100%***********************]  1 of 1 completed
+MSFT
+[32m[I 2024-11-05 00:51:58,844][0m A new study created in memory with name: no-name-b8568384-78aa-4455-8a90-257519a0e96c[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:100: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-05 00:52:00,193][0m Trial 0 finished with value: 0.7383752382785371 and parameters: {'learning_rate': 0.0002851920379264102, 'batch_size': 28, 'step_size': 3, 'gamma': 0.7957648221917969, 'depth': 2, 'dim': 174}. Best is trial 0 with value: 0.7383752382785371.[0m
+[32m[I 2024-11-05 00:52:00,194][0m A new study created in memory with name: no-name-65fb46e3-e357-40b5-96d2-3142229dbdd4[0m
+[32m[I 2024-11-05 00:52:01,760][0m Trial 0 finished with value: 1.0181724760428215 and parameters: {'learning_rate': 8.118813939880237e-05, 'batch_size': 233, 'step_size': 14, 'gamma': 0.9158432003920884, 'depth': 6, 'dim': 127}. Best is trial 0 with value: 1.0181724760428215.[0m
+[32m[I 2024-11-05 00:52:01,760][0m A new study created in memory with name: no-name-ca86b7ea-5806-42c7-84c1-9808ab24d9b2[0m
+[32m[I 2024-11-05 00:52:03,131][0m Trial 0 finished with value: 0.7699039289456548 and parameters: {'learning_rate': 1.985496003282827e-05, 'batch_size': 97, 'step_size': 14, 'gamma': 0.9235007574945808, 'depth': 5, 'dim': 126}. Best is trial 0 with value: 0.7699039289456548.[0m
+Best hyperparameters (trend): {'learning_rate': 0.0002851920379264102, 'batch_size': 28, 'step_size': 3, 'gamma': 0.7957648221917969, 'depth': 2, 'dim': 174}
+Best hyperparameters (seasonal): {'learning_rate': 8.118813939880237e-05, 'batch_size': 233, 'step_size': 14, 'gamma': 0.9158432003920884, 'depth': 6, 'dim': 127}
+Best hyperparameters (resid): {'learning_rate': 1.985496003282827e-05, 'batch_size': 97, 'step_size': 14, 'gamma': 0.9235007574945808, 'depth': 5, 'dim': 126}
+Epoch 1/1, (Training | Validation) Trend Loss: 0.1725 | 0.6663, Seasonal Loss: 1.1675 | 2.8532, Residual Loss: 0.4167 | 1.3314
+torch.Size([1, 1, 5])
+<class 'dict'>
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 289, in <module>
+    plt.plot(predicted_dates, final_predicted_aapl, linestyle='dotted', color='red', label='Predicted Price')
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/matplotlib/pyplot.py", line 3794, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/matplotlib/axes/_axes.py", line 1779, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 296, in __call__
+    yield from self._plot_args(
+               ^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 486, in _plot_args
+    raise ValueError(f"x and y must have same first dimension, but "
+ValueError: x and y must have same first dimension, but have shapes (10,) and (5,)

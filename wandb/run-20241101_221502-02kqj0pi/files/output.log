@@ -1,0 +1,7 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/STLdemo.py", line 26, in <module>
+    df_stock = yf.download(stock_code, start=start_date, end=end_date)
+                           ^^^^^^^^^^
+NameError: name 'stock_code' is not defined

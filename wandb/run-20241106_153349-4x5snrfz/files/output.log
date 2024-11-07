@@ -1,0 +1,174 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker                           AAPL
+Date
+2012-05-18 00:00:00+00:00   15.996173
+2012-05-21 00:00:00+00:00   16.928114
+2012-05-22 00:00:00+00:00   16.798122
+2012-05-23 00:00:00+00:00   17.207991
+2012-05-24 00:00:00+00:00   17.049957
+...                               ...
+2023-05-24 00:00:00+00:00  170.734589
+2023-05-25 00:00:00+00:00  171.877197
+2023-05-26 00:00:00+00:00  174.301498
+2023-05-30 00:00:00+00:00  176.159470
+2023-05-31 00:00:00+00:00  176.109818
+
+[2776 rows x 1 columns]
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[32m[I 2024-11-06 15:34:01,454][0m A new study created in memory with name: no-name-2373fd8e-a9c9-4a7e-bdec-bb9b82f7c90a[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:118: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+> /data/student/k2110261/Multi-iTransformer/src/train.py(33)train()
+-> output = model(data)
+iTransformer(
+  (layers): ModuleList(
+    (0-3): 4 x ModuleList(
+      (0): Attention(
+        (to_qkv): Sequential(
+          (0): Linear(in_features=157, out_features=384, bias=False)
+          (1): Rearrange('b n (qkv h d) -> qkv b h n d', qkv=3, h=4)
+        )
+        (to_v_gates): Sequential(
+          (0): Linear(in_features=157, out_features=4, bias=False)
+          (1): Sigmoid()
+          (2): Rearrange('b n h -> b h n 1', h=4)
+        )
+        (attend): Attend(
+          (attn_dropout): Dropout(p=0.0, inplace=False)
+        )
+        (to_out): Sequential(
+          (0): Rearrange('b h n d -> b n (h d)')
+          (1): Linear(in_features=128, out_features=157, bias=False)
+          (2): Dropout(p=0.0, inplace=False)
+        )
+      )
+      (1): LayerNorm((157,), eps=1e-05, elementwise_affine=True)
+      (2): Sequential(
+        (0): Linear(in_features=157, out_features=836, bias=True)
+        (1): GEGLU()
+        (2): Dropout(p=0.0, inplace=False)
+        (3): Linear(in_features=418, out_features=157, bias=True)
+      )
+      (3): LayerNorm((157,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (mlp_in): Sequential(
+    (0): Linear(in_features=30, out_features=157, bias=True)
+    (1): Rearrange('b v (n d) -> b (v n) d', n=1)
+    (2): LayerNorm((157,), eps=1e-05, elementwise_affine=True)
+  )
+  (pred_heads): ModuleList(
+    (0): Sequential(
+      (0): Rearrange('b (v n) d -> b v (n d)', n=1)
+      (1): Linear(in_features=157, out_features=1, bias=True)
+      (2): Rearrange('b v n -> b n v')
+    )
+  )
+)
+tensor([[[-0.8964, -1.2295, -1.2946, -1.1432, -0.9966],
+         [-0.8967, -1.2198, -1.3433, -1.1392, -0.9925],
+         [-0.8970, -1.2292, -1.3785, -1.1418, -0.9924],
+         ...,
+         [-0.9051, -1.2514, -1.3642, -1.1321, -0.9889],
+         [-0.9055, -1.2549, -1.3743, -1.1361, -0.9911],
+         [-0.9058, -1.2438, -1.3774, -1.1295, -0.9852]],
+
+        [[-0.8967, -1.2198, -1.3433, -1.1392, -0.9925],
+         [-0.8970, -1.2292, -1.3785, -1.1418, -0.9924],
+         [-0.8973, -1.2231, -1.3669, -1.1399, -0.9980],
+         ...,
+         [-0.9055, -1.2549, -1.3743, -1.1361, -0.9911],
+         [-0.9058, -1.2438, -1.3774, -1.1295, -0.9852],
+         [-0.9061, -1.2435, -1.3812, -1.1286, -0.9855]],
+
+        [[-0.8970, -1.2292, -1.3785, -1.1418, -0.9924],
+         [-0.8973, -1.2231, -1.3669, -1.1399, -0.9980],
+         [-0.8977, -1.2272, -1.3549, -1.1419, -0.9983],
+         ...,
+         [-0.9058, -1.2438, -1.3774, -1.1295, -0.9852],
+         [-0.9061, -1.2435, -1.3812, -1.1286, -0.9855],
+         [-0.9064, -1.2383, -1.3762, -1.1284, -0.9838]],
+
+        ...,
+
+        [[-0.9425, -1.1593, -1.4376, -1.1136, -1.0166],
+         [-0.9428, -1.1541, -1.4294, -1.1083, -1.0152],
+         [-0.9431, -1.1429, -1.4133, -1.1022, -1.0072],
+         ...,
+         [-0.9497, -1.1072, -1.4058, -1.0995, -1.0102],
+         [-0.9500, -1.0992, -1.4070, -1.0978, -1.0079],
+         [-0.9502, -1.1012, -1.4103, -1.1023, -1.0052]],
+
+        [[-0.9428, -1.1541, -1.4294, -1.1083, -1.0152],
+         [-0.9431, -1.1429, -1.4133, -1.1022, -1.0072],
+         [-0.9433, -1.1426, -1.4160, -1.1011, -1.0105],
+         ...,
+         [-0.9500, -1.0992, -1.4070, -1.0978, -1.0079],
+         [-0.9502, -1.1012, -1.4103, -1.1023, -1.0052],
+         [-0.9505, -1.1025, -1.4207, -1.1009, -1.0050]],
+
+        [[-0.9431, -1.1429, -1.4133, -1.1022, -1.0072],
+         [-0.9433, -1.1426, -1.4160, -1.1011, -1.0105],
+         [-0.9436, -1.1326, -1.4045, -1.1005, -1.0149],
+         ...,
+         [-0.9502, -1.1012, -1.4103, -1.1023, -1.0052],
+         [-0.9505, -1.1025, -1.4207, -1.1009, -1.0050],
+         [-0.9507, -1.1009, -1.4144, -1.0907, -1.0037]]], device='cuda:0')
+[33m[W 2024-11-06 15:38:26,607][0m Trial 0 failed with parameters: {'learning_rate': 0.00016358985710861372, 'batch_size': 156, 'step_size': 15, 'gamma': 0.9398482793795766, 'depth': 4, 'dim': 157} because of the following error: BdbQuit().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 161, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=100)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 149, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 33, in train
+    output = model(data)
+             ^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit
+[33m[W 2024-11-06 15:38:26,685][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 161, in <module>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=100)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 161, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=100)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 149, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 33, in train
+    output = model(data)
+             ^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

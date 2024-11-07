@@ -1,0 +1,59 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373451
+2012-05-21 00:00:00+00:00     18.357675
+2012-05-22 00:00:00+00:00     18.341910
+2012-05-23 00:00:00+00:00     18.326155
+2012-05-24 00:00:00+00:00     18.310412
+                                ...
+2023-05-24 00:00:00+00:00    161.422801
+2023-05-25 00:00:00+00:00    161.480436
+2023-05-26 00:00:00+00:00    161.538067
+2023-05-30 00:00:00+00:00    161.595694
+2023-05-31 00:00:00+00:00    161.653317
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037155
+2012-05-21 00:00:00+00:00    -1.339880
+2012-05-22 00:00:00+00:00    -1.369427
+2012-05-23 00:00:00+00:00    -1.131668
+2012-05-24 00:00:00+00:00    -1.129782
+                               ...
+2023-05-24 00:00:00+00:00    -6.710209
+2023-05-25 00:00:00+00:00   -10.178072
+2023-05-26 00:00:00+00:00   -10.052282
+2023-05-30 00:00:00+00:00    -6.308065
+2023-05-31 00:00:00+00:00    -3.033457
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+GOOGL
+[*********************100%***********************]  1 of 1 completed
+META
+[*********************100%***********************]  1 of 1 completed
+AMZN
+[*********************100%***********************]  1 of 1 completed
+MSFT
+[32m[I 2024-11-01 22:32:59,725][0m A new study created in memory with name: no-name-994db0a1-5920-487d-ba1d-6b11de2fcb68[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:91: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/contextlib.py:109: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-01 22:33:01,495][0m Trial 0 finished with value: 3.4635607710162413 and parameters: {'learning_rate': 1.2609941079010259e-05, 'batch_size': 240, 'step_size': 13, 'gamma': 0.7701898833002742, 'depth': 4, 'dim': 220}. Best is trial 0 with value: 3.4635607710162413.[0m
+[32m[I 2024-11-01 22:33:01,496][0m A new study created in memory with name: no-name-c9ba41d3-a9a8-40cd-802c-dba37478ff4a[0m
+[32m[I 2024-11-01 22:33:03,053][0m Trial 0 finished with value: 0.8421183540983107 and parameters: {'learning_rate': 0.00011525450288541428, 'batch_size': 174, 'step_size': 12, 'gamma': 0.8655444868004751, 'depth': 4, 'dim': 207}. Best is trial 0 with value: 0.8421183540983107.[0m
+[32m[I 2024-11-01 22:33:03,054][0m A new study created in memory with name: no-name-eca7492c-aefc-41bb-af23-46563d0a7ac0[0m
+[32m[I 2024-11-01 22:33:03,471][0m Trial 0 finished with value: 1.3159889415340515 and parameters: {'learning_rate': 1.8961095312687884e-05, 'batch_size': 87, 'step_size': 7, 'gamma': 0.8771929636604634, 'depth': 2, 'dim': 20}. Best is trial 0 with value: 1.3159889415340515.[0m
+Best hyperparameters (trend): {'learning_rate': 1.2609941079010259e-05, 'batch_size': 240, 'step_size': 13, 'gamma': 0.7701898833002742, 'depth': 4, 'dim': 220}
+Best hyperparameters (seasonal): {'learning_rate': 0.00011525450288541428, 'batch_size': 174, 'step_size': 12, 'gamma': 0.8655444868004751, 'depth': 4, 'dim': 207}
+Best hyperparameters (resid): {'learning_rate': 1.8961095312687884e-05, 'batch_size': 87, 'step_size': 7, 'gamma': 0.8771929636604634, 'depth': 2, 'dim': 20}
+Epoch 1/100, Trend Loss: 0.4800, Seasonal Loss: 0.8754, Residual Loss: 2.0729
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 227, in <module>
+    EarlyStopping(valid_loss_resid, model_resid)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: EarlyStopping.__init__() takes from 1 to 2 positional arguments but 3 were given

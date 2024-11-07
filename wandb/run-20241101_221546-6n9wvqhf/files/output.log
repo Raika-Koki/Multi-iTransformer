@@ -1,0 +1,16 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/STLdemo.py", line 49, in <module>
+    trend_dataframes[predict_stock_code] = df_stl_components[stock_trend]
+                                           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/frame.py", line 4108, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6200, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 6249, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index([ 78.59720324505787,  78.44227713971128,  78.28615033998277,\n        78.12872638772072,    77.969913347377,  77.80960844323741,\n        77.64770166723595,  77.48409420033943,  77.31870052547865,\n        77.15143940786291,\n       ...\n       171.41884809590962,  171.7595400622248, 172.09967840819942,\n       172.43937728626526, 172.77874137420963, 173.11785953291303,\n        173.4568095024071,  173.7956561543809,  174.1344611099068,\n       174.47327607011283],\n      dtype='float64', length=860)] are in the [columns]"

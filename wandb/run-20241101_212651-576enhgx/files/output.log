@@ -1,0 +1,67 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373452
+2012-05-21 00:00:00+00:00     18.357676
+2012-05-22 00:00:00+00:00     18.341911
+2012-05-23 00:00:00+00:00     18.326157
+2012-05-24 00:00:00+00:00     18.310413
+                                ...
+2023-05-24 00:00:00+00:00    161.422826
+2023-05-25 00:00:00+00:00    161.480460
+2023-05-26 00:00:00+00:00    161.538091
+2023-05-30 00:00:00+00:00    161.595718
+2023-05-31 00:00:00+00:00    161.653342
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037158
+2012-05-21 00:00:00+00:00    -1.339878
+2012-05-22 00:00:00+00:00    -1.369430
+2012-05-23 00:00:00+00:00    -1.131668
+2012-05-24 00:00:00+00:00    -1.129781
+                               ...
+2023-05-24 00:00:00+00:00    -6.710200
+2023-05-25 00:00:00+00:00   -10.178080
+2023-05-26 00:00:00+00:00   -10.052286
+2023-05-30 00:00:00+00:00    -6.308016
+2023-05-31 00:00:00+00:00    -3.033220
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+AAPL: (2776,)
+GOOGL: (2776,)
+META: (2776,)
+AMZN: (2776,)
+MSFT: (2776,)
+[32m[I 2024-11-01 21:26:59,209][0m A new study created in memory with name: no-name-7d6170bc-d6f0-448e-9c5a-094ade2f0004[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:92: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/contextlib.py:109: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-01 21:27:01,675][0m Trial 0 finished with value: 0.36287079158338525 and parameters: {'learning_rate': 7.031400159826696e-05, 'batch_size': 67, 'step_size': 14, 'gamma': 0.980749406390063, 'depth': 2, 'dim': 247}. Best is trial 0 with value: 0.36287079158338525.[0m
+[32m[I 2024-11-01 21:27:01,675][0m A new study created in memory with name: no-name-4c7d6eb9-d86d-4ec2-a62e-92f95e5e2e34[0m
+[32m[I 2024-11-01 21:27:02,743][0m Trial 0 finished with value: 3.841919030958009 and parameters: {'learning_rate': 5.692118786148005e-05, 'batch_size': 140, 'step_size': 12, 'gamma': 0.8301487256218334, 'depth': 2, 'dim': 244}. Best is trial 0 with value: 3.841919030958009.[0m
+[32m[I 2024-11-01 21:27:02,743][0m A new study created in memory with name: no-name-25801ce3-6765-4b4c-a6a5-b348e1c91f9a[0m
+[32m[I 2024-11-01 21:27:03,595][0m Trial 0 finished with value: 0.8160962559355115 and parameters: {'learning_rate': 4.907259739547847e-06, 'batch_size': 125, 'step_size': 1, 'gamma': 0.7842259959089642, 'depth': 6, 'dim': 49}. Best is trial 0 with value: 0.8160962559355115.[0m
+Best hyperparameters (trend): {'learning_rate': 7.031400159826696e-05, 'batch_size': 67, 'step_size': 14, 'gamma': 0.980749406390063, 'depth': 2, 'dim': 247}
+Best hyperparameters (seasonal): {'learning_rate': 5.692118786148005e-05, 'batch_size': 140, 'step_size': 12, 'gamma': 0.8301487256218334, 'depth': 2, 'dim': 244}
+Best hyperparameters (resid): {'learning_rate': 4.907259739547847e-06, 'batch_size': 125, 'step_size': 1, 'gamma': 0.7842259959089642, 'depth': 6, 'dim': 49}
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 145, in <module>
+    model_trend = iTransformer(
+                  ~~~~~~~~~~~~^
+        num_variates=len(tickers),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        pred_length=predict_period_num
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ).to(device)
+    ^
+  File "<@beartype(src.model.iTransformer.__init__) at 0x7ff6f7f2eca0>", line 42, in __init__
+beartype.roar.BeartypeCallHintParamViolation: Method[1m[35m src.model.iTransformer.__init__()[0m parameter [1m[34mlookback_len[0m=[1m[31m{'trend': 30, 'seasonal': 30, 'resid': 30}[0m violates type hint [1m[32m<class 'int'>[0m, as [1m[33mdict [0m[1m[31m{'trend': 30, 'seasonal': 30, 'resid': 30}[0m not instance of [1m[32mint[0m.

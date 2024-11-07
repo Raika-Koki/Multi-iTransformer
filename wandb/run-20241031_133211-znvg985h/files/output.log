@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "STLdemo.py", line 27, in <module>
+    stl = STL(predict_stock_code, period=30, robust=True)
+  File "statsmodels/tsa/_stl.pyx", line 206, in statsmodels.tsa._stl.STL.__init__
+  File "/usr/local/anaconda3/lib/python3.7/site-packages/numpy/core/_asarray.py", line 179, in ascontiguousarray
+    return array(a, dtype, copy=False, order='C', ndmin=1)
+ValueError: could not convert string to float: 'AAPL'

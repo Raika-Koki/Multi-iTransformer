@@ -1,0 +1,27 @@
+2024-11-05 00:51:48,060 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-11-05 00:51:48,060 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Configure stats pid to 714953
+2024-11-05 00:51:48,060 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Loading settings from /home2/y2021/k2110261/.config/wandb/settings
+2024-11-05 00:51:48,061 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Loading settings from /data/student/k2110261/Multi-iTransformer/wandb/settings
+2024-11-05 00:51:48,062 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-11-05 00:51:48,064 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2024-11-05 00:51:48,065 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'optunademo.py', 'program_abspath': '/data/student/k2110261/Multi-iTransformer/optunademo.py', 'program': '/data/student/k2110261/Multi-iTransformer/optunademo.py'}
+2024-11-05 00:51:48,065 INFO    MainThread:714953 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-05 00:51:48,067 INFO    MainThread:714953 [wandb_init.py:_log_setup():534] Logging user logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20241105_005148-3ig4ix5u/logs/debug.log
+2024-11-05 00:51:48,068 INFO    MainThread:714953 [wandb_init.py:_log_setup():535] Logging internal logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20241105_005148-3ig4ix5u/logs/debug-internal.log
+2024-11-05 00:51:48,070 INFO    MainThread:714953 [wandb_init.py:init():621] calling init triggers
+2024-11-05 00:51:48,072 INFO    MainThread:714953 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {}
+2024-11-05 00:51:48,072 INFO    MainThread:714953 [wandb_init.py:init():671] starting backend
+2024-11-05 00:51:48,073 INFO    MainThread:714953 [wandb_init.py:init():675] sending inform_init request
+2024-11-05 00:51:48,075 INFO    MainThread:714953 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-11-05 00:51:48,076 INFO    MainThread:714953 [wandb_init.py:init():688] backend started and connected
+2024-11-05 00:51:48,083 INFO    MainThread:714953 [wandb_init.py:init():783] updated telemetry
+2024-11-05 00:51:48,142 INFO    MainThread:714953 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-11-05 00:51:49,433 INFO    MainThread:714953 [wandb_init.py:init():867] starting run threads in backend
+2024-11-05 00:51:50,459 INFO    MainThread:714953 [wandb_run.py:_console_start():2463] atexit reg
+2024-11-05 00:51:50,459 INFO    MainThread:714953 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-11-05 00:51:50,462 INFO    MainThread:714953 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-11-05 00:51:50,462 INFO    MainThread:714953 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-11-05 00:51:50,477 INFO    MainThread:714953 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-05 00:52:03,161 INFO    MainThread:714953 [wandb_run.py:_config_callback():1390] config_cb None None {'learning_rate_trend': 0.0002851920379264102, 'learning_rate_seasonal': 8.118813939880237e-05, 'learning_rate_resid': 1.985496003282827e-05, 'epochs': 1, 'batch_size_trend': 28, 'batch_size_seasonal': 233, 'batch_size_resid': 97, 'observation_period_num': {'trend': 30, 'seasonal': 30, 'resid': 30}, 'predict_period_num': 1}
+2024-11-05 00:52:07,353 WARNING MsgRouterThr:714953 [router.py:message_loop():77] message_loop has been closed

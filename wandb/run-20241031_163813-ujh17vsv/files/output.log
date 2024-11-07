@@ -1,0 +1,69 @@
+[*********************100%***********************]  1 of 1 completed
+Date
+2012-05-18 00:00:00+00:00     19.149640
+2012-05-21 00:00:00+00:00     19.128527
+2012-05-22 00:00:00+00:00     19.107413
+2012-05-23 00:00:00+00:00     19.086300
+2012-05-24 00:00:00+00:00     19.065187
+                                ...
+2023-05-24 00:00:00+00:00    159.754300
+2023-05-25 00:00:00+00:00    159.792533
+2023-05-26 00:00:00+00:00    159.830765
+2023-05-30 00:00:00+00:00    159.868994
+2023-05-31 00:00:00+00:00    159.907221
+Name: trend, Length: 2776, dtype: float64
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+/data/student/k2110261/Multi-iTransformer/src/data_create.py:9: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  mean_list = df.mean()
+/data/student/k2110261/Multi-iTransformer/src/data_create.py:10: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  std_list = df.std()
+/data/student/k2110261/Multi-iTransformer/src/data_create.py:9: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  mean_list = df.mean()
+/data/student/k2110261/Multi-iTransformer/src/data_create.py:10: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  std_list = df.std()
+/data/student/k2110261/Multi-iTransformer/src/data_create.py:9: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  mean_list = df.mean()
+/data/student/k2110261/Multi-iTransformer/src/data_create.py:10: FutureWarning: Dropping of nuisance columns in DataFrame reductions (with 'numeric_only=None') is deprecated; in a future version this will raise TypeError.  Select only valid columns before calling the reduction.
+  std_list = df.std()
+[32m[I 2024-10-31 16:38:22,006][0m A new study created in memory with name: no-name-c7e0ac0f-6361-4374-afa6-e297ebfa1815[0m
+optunademo.py:84: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+[33m[W 2024-10-31 16:38:22,192][0m Trial 0 failed with parameters: {'learning_rate': 0.0005860863814745763, 'batch_size': 90, 'step_size': 10, 'gamma': 0.8602170021609504, 'depth': 4, 'dim': 59} because of the following error: TypeError("can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, int64, int32, int16, int8, uint8, and bool.").[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "optunademo.py", line 118, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=1)
+  File "optunademo.py", line 94, in objective
+    df_normalized_trend, observation_period_num["trend"], predict_period_num, train_rates["trend"], device)
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 39, in create_multivariate_dataset
+    torch.tensor(label, dtype=torch.float32).to(device)) for data, label in inout_data]
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 39, in <listcomp>
+    torch.tensor(label, dtype=torch.float32).to(device)) for data, label in inout_data]
+TypeError: can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, int64, int32, int16, int8, uint8, and bool.
+[33m[W 2024-10-31 16:38:22,204][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "optunademo.py", line 118, in <module>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=1)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/optuna/study/study.py", line 484, in optimize
+    show_progress_bar=show_progress_bar,
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/optuna/study/_optimize.py", line 73, in _optimize
+    progress_bar=progress_bar,
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+  File "optunademo.py", line 118, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=1)
+  File "optunademo.py", line 94, in objective
+    df_normalized_trend, observation_period_num["trend"], predict_period_num, train_rates["trend"], device)
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 39, in create_multivariate_dataset
+    torch.tensor(label, dtype=torch.float32).to(device)) for data, label in inout_data]
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 39, in <listcomp>
+    torch.tensor(label, dtype=torch.float32).to(device)) for data, label in inout_data]
+TypeError: can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, int64, int32, int16, int8, uint8, and bool.

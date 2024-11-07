@@ -1,0 +1,72 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373451
+2012-05-21 00:00:00+00:00     18.357675
+2012-05-22 00:00:00+00:00     18.341910
+2012-05-23 00:00:00+00:00     18.326156
+2012-05-24 00:00:00+00:00     18.310412
+                                ...
+2023-05-24 00:00:00+00:00    161.422808
+2023-05-25 00:00:00+00:00    161.480443
+2023-05-26 00:00:00+00:00    161.538074
+2023-05-30 00:00:00+00:00    161.595701
+2023-05-31 00:00:00+00:00    161.653324
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037155
+2012-05-21 00:00:00+00:00    -1.339880
+2012-05-22 00:00:00+00:00    -1.369429
+2012-05-23 00:00:00+00:00    -1.131662
+2012-05-24 00:00:00+00:00    -1.129780
+                               ...
+2023-05-24 00:00:00+00:00    -6.710189
+2023-05-25 00:00:00+00:00   -10.178091
+2023-05-26 00:00:00+00:00   -10.052319
+2023-05-30 00:00:00+00:00    -6.308023
+2023-05-31 00:00:00+00:00    -3.033606
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+GOOGL
+[*********************100%***********************]  1 of 1 completed
+META
+[*********************100%***********************]  1 of 1 completed
+AMZN
+[*********************100%***********************]  1 of 1 completed
+MSFT
+[32m[I 2024-11-02 15:24:29,568][0m A new study created in memory with name: no-name-7a966edb-39cc-4c58-a2e2-f328572331d1[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:94: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/contextlib.py:109: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-02 15:24:32,158][0m Trial 0 finished with value: 0.7037051839446559 and parameters: {'learning_rate': 2.1710675749196836e-06, 'batch_size': 55, 'step_size': 12, 'gamma': 0.9569119033663276, 'depth': 5, 'dim': 224}. Best is trial 0 with value: 0.7037051839446559.[0m
+[32m[I 2024-11-02 15:24:32,158][0m A new study created in memory with name: no-name-b28eb2f0-8171-4887-a85f-6f77e7643762[0m
+[32m[I 2024-11-02 15:24:34,320][0m Trial 0 finished with value: 3.1968807664889733 and parameters: {'learning_rate': 2.2074772342615454e-06, 'batch_size': 155, 'step_size': 8, 'gamma': 0.9086807734866322, 'depth': 5, 'dim': 230}. Best is trial 0 with value: 3.1968807664889733.[0m
+[32m[I 2024-11-02 15:24:34,320][0m A new study created in memory with name: no-name-5e903283-05c3-4453-b7b0-44b22fdbd3f5[0m
+[32m[I 2024-11-02 15:24:34,751][0m Trial 0 finished with value: 3.9168560261865264 and parameters: {'learning_rate': 6.979884393164731e-05, 'batch_size': 174, 'step_size': 10, 'gamma': 0.958317157174616, 'depth': 2, 'dim': 70}. Best is trial 0 with value: 3.9168560261865264.[0m
+Best hyperparameters (trend): {'learning_rate': 2.1710675749196836e-06, 'batch_size': 55, 'step_size': 12, 'gamma': 0.9569119033663276, 'depth': 5, 'dim': 224}
+Best hyperparameters (seasonal): {'learning_rate': 2.2074772342615454e-06, 'batch_size': 155, 'step_size': 8, 'gamma': 0.9086807734866322, 'depth': 5, 'dim': 230}
+Best hyperparameters (resid): {'learning_rate': 6.979884393164731e-05, 'batch_size': 174, 'step_size': 10, 'gamma': 0.958317157174616, 'depth': 2, 'dim': 70}
+Epoch 1/1, (Training | Validation) Trend Loss: 3.7031 | 4.3419, Seasonal Loss: 0.3559 | 1.4018, Residual Loss: 0.8740 | 1.8399
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 249, in <module>
+    torch.save(model_trend.state_dict(), 'gafam_stock_price_trend_model.pth')
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/serialization.py", line 850, in save
+    _save(
+    ~~~~~^
+        obj,
+        ^^^^
+    ...<3 lines>...
+        _disable_byteorder_record,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/serialization.py", line 1087, in _save
+    pickler.persistent_id = persistent_id
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_pickle.Pickler' object attribute 'persistent_id' is read-only

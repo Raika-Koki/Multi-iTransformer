@@ -23,8 +23,14 @@ tickers = ['GOOGL', 'META', 'AMZN', 'MSFT']
 start_date = '2019-12-31'
 end_date = '2023-06-01'
 
+df_stock = yf.download(predict_stock_code, start=start_date, end=end_date)
+if len(df_stock) == 0:
+    raise Exception("No data fetched for the given stock code and date range.")
+
+data = df_stock['Adj Close']
+
 # Apply STL decomposition to AAPL stock data
-stl = STL(predict_stock_code, period=30, robust=True)
+stl = STL(data, period=30, robust=True)
 stl_series = stl.fit()
 
 # Extract trend, seasonal, and residual components
@@ -67,11 +73,11 @@ train_rate = 0.8
 
 # Create datasets for each component (trend, seasonal, residual)
 train_data_trend, valid_data_trend = create_multivariate_dataset(
-    df_stl_normalized[['stock_trend']], observation_period_num, predict_period_num, train_rate, device)
+    df_normalized[['stock_trend']], observation_period_num, predict_period_num, train_rate, device)
 train_data_seasonal, valid_data_seasonal = create_multivariate_dataset(
-    df_stl_normalized[['stock_seasonal']], observation_period_num, predict_period_num, train_rate, device)
+    df_normalized[['stock_seasonal']], observation_period_num, predict_period_num, train_rate, device)
 train_data_resid, valid_data_resid = create_multivariate_dataset(
-    df_stl_normalized[['stock_resid']], observation_period_num, predict_period_num, train_rate, device)
+    df_normalized[['stock_resid']], observation_period_num, predict_period_num, train_rate, device)
 
 # Set model parameters
 epochs = 100
@@ -153,6 +159,8 @@ with torch.no_grad():
     predicted_trend = model_trend(last_batch_data_trend)
     predicted_seasonal = model_seasonal(last_batch_data_seasonal)
     predicted_resid = model_resid(last_batch_data_resid)
+
+    
 
     # Select AAPL predictions
     predicted_trend_aapl = predicted_trend[0, :, 0].cpu().numpy().flatten() * stl_std_list[0] + stl_mean_list[0]

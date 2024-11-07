@@ -1,0 +1,34 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker                           AAPL
+Date
+2012-05-18 00:00:00+00:00   15.996175
+2012-05-21 00:00:00+00:00   16.928108
+2012-05-22 00:00:00+00:00   16.798115
+2012-05-23 00:00:00+00:00   17.207996
+2012-05-24 00:00:00+00:00   17.049961
+...                               ...
+2023-05-24 00:00:00+00:00  170.734604
+2023-05-25 00:00:00+00:00  171.877197
+2023-05-26 00:00:00+00:00  174.301483
+2023-05-30 00:00:00+00:00  176.159485
+2023-05-31 00:00:00+00:00  176.109802
+
+[2776 rows x 1 columns]
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[32m[I 2024-11-07 13:20:59,084][0m A new study created in memory with name: no-name-67ddfdf0-f2dc-4347-83a5-4d93bf6ef7c7[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:110: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-07 13:21:16,196][0m Trial 0 finished with value: 1.3568179607391357 and parameters: {'learning_rate': 4.04895027417004e-06, 'batch_size': 194, 'step_size': 10, 'gamma': 0.800029197688486, 'depth': 2, 'dim': 39}. Best is trial 0 with value: 1.3568179607391357.[0m
+[32m[I 2024-11-07 13:21:36,836][0m Trial 1 finished with value: 0.3550896942615509 and parameters: {'learning_rate': 2.35157710226025e-06, 'batch_size': 255, 'step_size': 13, 'gamma': 0.9439328607682529, 'depth': 4, 'dim': 122}. Best is trial 1 with value: 0.3550896942615509.[0m
+[32m[I 2024-11-07 13:22:17,117][0m Trial 2 finished with value: 0.024303872138261795 and parameters: {'learning_rate': 8.895534016855086e-06, 'batch_size': 119, 'step_size': 12, 'gamma': 0.9783189027848898, 'depth': 4, 'dim': 212}. Best is trial 2 with value: 0.024303872138261795.[0m
+[32m[I 2024-11-07 13:22:45,549][0m Trial 3 finished with value: 0.0070816464722156525 and parameters: {'learning_rate': 0.00016215730530365344, 'batch_size': 226, 'step_size': 2, 'gamma': 0.9530544459627732, 'depth': 5, 'dim': 160}. Best is trial 3 with value: 0.0070816464722156525.[0m
+[32m[I 2024-11-07 13:23:56,976][0m Trial 4 finished with value: 0.01015111431479454 and parameters: {'learning_rate': 0.0001421760661839918, 'batch_size': 81, 'step_size': 14, 'gamma': 0.9556576269248814, 'depth': 5, 'dim': 136}. Best is trial 3 with value: 0.0070816464722156525.[0m
+[32m[I 2024-11-07 13:25:01,415][0m Trial 5 finished with value: 0.005928053054958582 and parameters: {'learning_rate': 0.00028391640107533315, 'batch_size': 90, 'step_size': 4, 'gamma': 0.8905278421864505, 'depth': 5, 'dim': 204}. Best is trial 5 with value: 0.005928053054958582.[0m
+[32m[I 2024-11-07 13:25:47,178][0m Trial 6 finished with value: 0.036782123148441315 and parameters: {'learning_rate': 1.146130565038404e-05, 'batch_size': 107, 'step_size': 14, 'gamma': 0.8953430263300779, 'depth': 4, 'dim': 120}. Best is trial 5 with value: 0.005928053054958582.[0m

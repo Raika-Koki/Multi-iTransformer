@@ -1,0 +1,126 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+(2776,)
+(2776,)
+(2776,)
+{'AAPL': Date
+2012-05-18 00:00:00+00:00     18.373451
+2012-05-21 00:00:00+00:00     18.357675
+2012-05-22 00:00:00+00:00     18.341910
+2012-05-23 00:00:00+00:00     18.326156
+2012-05-24 00:00:00+00:00     18.310412
+                                ...
+2023-05-24 00:00:00+00:00    161.422809
+2023-05-25 00:00:00+00:00    161.480444
+2023-05-26 00:00:00+00:00    161.538075
+2023-05-30 00:00:00+00:00    161.595702
+2023-05-31 00:00:00+00:00    161.653325
+Name: trend, Length: 2776, dtype: float64}
+{'AAPL': Date
+2012-05-18 00:00:00+00:00    -2.037160
+2012-05-21 00:00:00+00:00    -1.339882
+2012-05-22 00:00:00+00:00    -1.369427
+2012-05-23 00:00:00+00:00    -1.131669
+2012-05-24 00:00:00+00:00    -1.129779
+                               ...
+2023-05-24 00:00:00+00:00    -6.710181
+2023-05-25 00:00:00+00:00   -10.178102
+2023-05-26 00:00:00+00:00   -10.052312
+2023-05-30 00:00:00+00:00    -6.308037
+2023-05-31 00:00:00+00:00    -3.033727
+Name: season, Length: 2776, dtype: float64}
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 69, in <module>
+    df_normalized_trend, mean_list_trend, std_list_trend = data_Normalization(combined_df_trend)
+                                                           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 9, in data_Normalization
+    mean_list = df.mean()
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/frame.py", line 11693, in mean
+    result = super().mean(axis, skipna, numeric_only, **kwargs)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/generic.py", line 12420, in mean
+    return self._stat_function(
+           ~~~~~~~~~~~~~~~~~~~^
+        "mean", nanops.nanmean, axis, skipna, numeric_only, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/generic.py", line 12377, in _stat_function
+    return self._reduce(
+           ~~~~~~~~~~~~^
+        func, name=name, axis=axis, skipna=skipna, numeric_only=numeric_only
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/frame.py", line 11562, in _reduce
+    res = df._mgr.reduce(blk_func)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/internals/managers.py", line 1500, in reduce
+    nbs = blk.reduce(func)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/internals/blocks.py", line 404, in reduce
+    result = func(self.values)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/frame.py", line 11481, in blk_func
+    return op(values, axis=axis, skipna=skipna, **kwds)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/nanops.py", line 147, in f
+    result = alt(values, axis=axis, skipna=skipna, **kwds)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/nanops.py", line 404, in new_func
+    result = func(values, axis=axis, skipna=skipna, mask=mask, **kwargs)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/nanops.py", line 720, in nanmean
+    the_sum = _ensure_numeric(the_sum)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.13/site-packages/pandas/core/nanops.py", line 1686, in _ensure_numeric
+    raise TypeError(f"Could not convert {x} to numeric")
+TypeError: Could not convert [Date
+ 2012-05-18 00:00:00+00:00     14.987913
+ 2012-05-21 00:00:00+00:00     15.330159
+ 2012-05-22 00:00:00+00:00     14.997898
+ 2012-05-23 00:00:00+00:00     15.214079
+ 2012-05-24 00:00:00+00:00     15.069293
+                                 ...
+ 2023-05-24 00:00:00+00:00    120.601372
+ 2023-05-25 00:00:00+00:00    123.175003
+ 2023-05-26 00:00:00+00:00    124.302208
+ 2023-05-30 00:00:00+00:00    123.364532
+ 2023-05-31 00:00:00+00:00    122.566513
+ Name: GOOGL, Length: 2776, dtype: float64
+ Date
+ 2012-05-18 00:00:00+00:00     38.115242
+ 2012-05-21 00:00:00+00:00     33.927845
+ 2012-05-22 00:00:00+00:00     30.906942
+ 2012-05-23 00:00:00+00:00     31.903942
+ 2012-05-24 00:00:00+00:00     32.930851
+                                 ...
+ 2023-05-24 00:00:00+00:00    248.461914
+ 2023-05-25 00:00:00+00:00    251.931458
+ 2023-05-26 00:00:00+00:00    261.253387
+ 2023-05-30 00:00:00+00:00    261.731964
+ 2023-05-31 00:00:00+00:00    263.925354
+ Name: META, Length: 2776, dtype: float64
+ Date
+ 2012-05-18 00:00:00+00:00     10.692500
+ 2012-05-21 00:00:00+00:00     10.905500
+ 2012-05-22 00:00:00+00:00     10.766500
+ 2012-05-23 00:00:00+00:00     10.864000
+ 2012-05-24 00:00:00+00:00     10.762000
+                                 ...
+ 2023-05-24 00:00:00+00:00    116.750000
+ 2023-05-25 00:00:00+00:00    115.000000
+ 2023-05-26 00:00:00+00:00    120.110001
+ 2023-05-30 00:00:00+00:00    121.660004
+ 2023-05-31 00:00:00+00:00    120.580002
+ Name: AMZN, Length: 2776, dtype: float64
+ Date
+ 2012-05-18 00:00:00+00:00     23.443838
+ 2012-05-21 00:00:00+00:00     23.828299
+ 2012-05-22 00:00:00+00:00     23.836300
+ 2012-05-23 00:00:00+00:00     23.315683
+ 2012-05-24 00:00:00+00:00     23.283649
+                                 ...
+ 2023-05-24 00:00:00+00:00    310.853668
+ 2023-05-25 00:00:00+00:00    322.808411
+ 2023-05-26 00:00:00+00:00    329.711884
+ 2023-05-30 00:00:00+00:00    328.047882
+ 2023-05-31 00:00:00+00:00    325.254822
+ Name: MSFT, Length: 2776, dtype: float64] to numeric

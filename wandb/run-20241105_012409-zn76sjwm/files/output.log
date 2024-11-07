@@ -1,0 +1,37 @@
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11000). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+[*********************100%***********************]  1 of 1 completed
+Ticker                           AAPL
+Date
+2012-05-18 00:00:00+00:00   15.996170
+2012-05-21 00:00:00+00:00   16.928112
+2012-05-22 00:00:00+00:00   16.798120
+2012-05-23 00:00:00+00:00   17.207989
+2012-05-24 00:00:00+00:00   17.049953
+...                               ...
+2023-05-24 00:00:00+00:00  170.734604
+2023-05-25 00:00:00+00:00  171.877228
+2023-05-26 00:00:00+00:00  174.301483
+2023-05-30 00:00:00+00:00  176.159470
+2023-05-31 00:00:00+00:00  176.109802
+
+[2776 rows x 1 columns]
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[32m[I 2024-11-05 01:24:18,728][0m A new study created in memory with name: no-name-6b05e60d-af19-42d7-88b2-4a01d803ec39[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:101: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-05 01:24:19,457][0m Trial 0 finished with value: 2.2581937081605483 and parameters: {'learning_rate': 0.00030988389552584483, 'batch_size': 236, 'step_size': 10, 'gamma': 0.7532840076613022, 'depth': 3, 'dim': 103}. Best is trial 0 with value: 2.2581937081605483.[0m
+[32m[I 2024-11-05 01:24:19,457][0m A new study created in memory with name: no-name-06374c52-39ab-4e8d-9c06-9581dcbc291c[0m
+[32m[I 2024-11-05 01:24:20,201][0m Trial 0 finished with value: 3.8713426514736655 and parameters: {'learning_rate': 1.0989355540338298e-05, 'batch_size': 229, 'step_size': 1, 'gamma': 0.9113922308604471, 'depth': 2, 'dim': 140}. Best is trial 0 with value: 3.8713426514736655.[0m
+[32m[I 2024-11-05 01:24:20,201][0m A new study created in memory with name: no-name-89b490e9-679e-4c78-9da8-62c4c41d4d1d[0m
+[32m[I 2024-11-05 01:24:21,414][0m Trial 0 finished with value: 2.3119426167126997 and parameters: {'learning_rate': 2.1558447191411173e-05, 'batch_size': 162, 'step_size': 11, 'gamma': 0.8449412265256918, 'depth': 4, 'dim': 158}. Best is trial 0 with value: 2.3119426167126997.[0m
+Best hyperparameters (trend): {'learning_rate': 0.00030988389552584483, 'batch_size': 236, 'step_size': 10, 'gamma': 0.7532840076613022, 'depth': 3, 'dim': 103}
+Best hyperparameters (seasonal): {'learning_rate': 1.0989355540338298e-05, 'batch_size': 229, 'step_size': 1, 'gamma': 0.9113922308604471, 'depth': 2, 'dim': 140}
+Best hyperparameters (resid): {'learning_rate': 2.1558447191411173e-05, 'batch_size': 162, 'step_size': 11, 'gamma': 0.8449412265256918, 'depth': 4, 'dim': 158}
+Epoch 1/1, (Training | Validation) Trend Loss: 0.2430 | 0.6760, Seasonal Loss: 1.2781 | 3.0427, Residual Loss: 0.8368 | 2.4988
+[104.78249673]

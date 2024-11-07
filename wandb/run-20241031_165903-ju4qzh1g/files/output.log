@@ -1,0 +1,98 @@
+[*********************100%***********************]  1 of 1 completed
+Date
+2012-05-18 00:00:00+00:00     19.149640
+2012-05-21 00:00:00+00:00     19.128526
+2012-05-22 00:00:00+00:00     19.107412
+2012-05-23 00:00:00+00:00     19.086299
+2012-05-24 00:00:00+00:00     19.065186
+                                ...
+2023-05-24 00:00:00+00:00    159.754306
+2023-05-25 00:00:00+00:00    159.792540
+2023-05-26 00:00:00+00:00    159.830772
+2023-05-30 00:00:00+00:00    159.869001
+2023-05-31 00:00:00+00:00    159.907228
+Name: trend, Length: 2776, dtype: float64
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+{'AAPL': 0        19.149640
+1        19.128526
+2        19.107412
+3        19.086299
+4        19.065186
+           ...
+2771    159.754306
+2772    159.792540
+2773    159.830772
+2774    159.869001
+2775    159.907228
+Name: trend, Length: 2776, dtype: float64, 'GOOGL': Ticker       GOOGL
+0        14.987913
+1        15.330159
+2        14.997898
+3        15.214079
+4        15.069293
+...            ...
+2771    120.601372
+2772    123.175003
+2773    124.302208
+2774    123.364532
+2775    122.566513
+
+[2776 rows x 1 columns], 'META': Ticker        META
+0        38.115238
+1        33.927845
+2        30.906942
+3        31.903942
+4        32.930851
+...            ...
+2771    248.461929
+2772    251.931473
+2773    261.253387
+2774    261.731964
+2775    263.925354
+
+[2776 rows x 1 columns], 'AMZN': Ticker        AMZN
+0        10.692500
+1        10.905500
+2        10.766500
+3        10.864000
+4        10.762000
+...            ...
+2771    116.750000
+2772    115.000000
+2773    120.110001
+2774    121.660004
+2775    120.580002
+
+[2776 rows x 1 columns], 'MSFT': Ticker        MSFT
+0        23.443851
+1        23.828297
+2        23.836308
+3        23.315687
+4        23.283651
+...            ...
+2771    310.853638
+2772    322.808411
+2773    329.711884
+2774    328.047913
+2775    325.254822
+
+[2776 rows x 1 columns]}
+Traceback (most recent call last):
+  File "optunademo.py", line 63, in <module>
+    combined_df_trend = pd.DataFrame(dataframes_trend)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 614, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 465, in dict_to_mgr
+    arrays, data_names, index, columns, dtype=dtype, typ=typ, consolidate=copy
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 124, in arrays_to_mgr
+    arrays = _homogenize(arrays, index, dtype)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/internals/construction.py", line 590, in _homogenize
+    val, index, dtype=dtype, copy=False, raise_cast_failure=False
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/construction.py", line 576, in sanitize_array
+    subarr = _sanitize_ndim(subarr, data, dtype, index, allow_2d=allow_2d)
+  File "/home2/y2021/k2110261/.local/lib/python3.7/site-packages/pandas/core/construction.py", line 627, in _sanitize_ndim
+    raise ValueError("Data must be 1-dimensional")
+ValueError: Data must be 1-dimensional
