@@ -1,0 +1,405 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker                           AAPL
+Date
+2012-05-18 00:00:00+00:00   15.978592
+2012-05-21 00:00:00+00:00   16.909504
+2012-05-22 00:00:00+00:00   16.779663
+2012-05-23 00:00:00+00:00   17.189085
+2012-05-24 00:00:00+00:00   17.031219
+...                               ...
+2023-05-24 00:00:00+00:00  170.546951
+2023-05-25 00:00:00+00:00  171.688309
+2023-05-26 00:00:00+00:00  174.109940
+2023-05-30 00:00:00+00:00  175.965897
+2023-05-31 00:00:00+00:00  175.916260
+
+[2776 rows x 1 columns]
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[32m[I 2024-11-12 16:57:02,915][0m A new study created in memory with name: no-name-5b490608-fc5d-4e03-ab93-5d73ebd7adad[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:110: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-12 16:57:06,730][0m Trial 0 finished with value: 3.225391983985901 and parameters: {'learning_rate': 1.5154513767406993e-06, 'batch_size': 21, 'step_size': 4, 'gamma': 0.9684999016276084, 'depth': 3, 'dim': 140}. Best is trial 0 with value: 3.225391983985901.[0m
+[32m[I 2024-11-12 16:57:06,730][0m A new study created in memory with name: no-name-19ae5f98-da64-4ff0-bb25-cf5d930ca8d7[0m
+[32m[I 2024-11-12 16:57:07,585][0m Trial 0 finished with value: 0.5263566374778748 and parameters: {'learning_rate': 0.000583258689573812, 'batch_size': 112, 'step_size': 2, 'gamma': 0.8631157806127255, 'depth': 3, 'dim': 42}. Best is trial 0 with value: 0.5263566374778748.[0m
+[32m[I 2024-11-12 16:57:07,586][0m A new study created in memory with name: no-name-7c0fc9d2-655d-400b-b0d3-d52cdb5f7cfc[0m
+[32m[I 2024-11-12 16:57:08,959][0m Trial 0 finished with value: 1.8436168432235718 and parameters: {'learning_rate': 1.4922822659384853e-05, 'batch_size': 68, 'step_size': 2, 'gamma': 0.9730903890254599, 'depth': 4, 'dim': 109}. Best is trial 0 with value: 1.8436168432235718.[0m
+Best hyperparameters (trend): {'learning_rate': 1.5154513767406993e-06, 'batch_size': 21, 'step_size': 4, 'gamma': 0.9684999016276084, 'depth': 3, 'dim': 140}
+Best hyperparameters (seasonal): {'learning_rate': 0.000583258689573812, 'batch_size': 112, 'step_size': 2, 'gamma': 0.8631157806127255, 'depth': 3, 'dim': 42}
+Best hyperparameters (resid): {'learning_rate': 1.4922822659384853e-05, 'batch_size': 68, 'step_size': 2, 'gamma': 0.9730903890254599, 'depth': 4, 'dim': 109}
+Epoch 1/1000, (Training | Validation) Trend Loss: 0.2985 | 0.5598, Seasonal Loss: 0.8048 | 0.3727, Residual Loss: 0.5296 | 0.4937
+Epoch 2/1000, (Training | Validation) Trend Loss: 0.1751 | 0.4613, Seasonal Loss: 0.7438 | 1.5951, Residual Loss: 0.1930 | 0.4570
+Epoch 3/1000, (Training | Validation) Trend Loss: 0.1482 | 0.1245, Seasonal Loss: 0.7142 | 1.3190, Residual Loss: 0.2569 | 0.2768
+Epoch 4/1000, (Training | Validation) Trend Loss: 0.1053 | 0.0780, Seasonal Loss: 0.9025 | 0.1691, Residual Loss: 0.1692 | 0.2661
+Epoch 5/1000, (Training | Validation) Trend Loss: 0.1120 | 0.0498, Seasonal Loss: 0.5033 | 0.2776, Residual Loss: 0.2181 | 0.5684
+Epoch 6/1000, (Training | Validation) Trend Loss: 0.1004 | 0.1019, Seasonal Loss: 0.1586 | 0.1615, Residual Loss: 0.1717 | 0.1933
+Epoch 7/1000, (Training | Validation) Trend Loss: 0.0304 | 0.0546, Seasonal Loss: 0.1263 | 0.1635, Residual Loss: 0.1090 | 0.1391
+Epoch 8/1000, (Training | Validation) Trend Loss: 0.0147 | 0.0231, Seasonal Loss: 0.1032 | 0.1127, Residual Loss: 0.0893 | 0.0316
+Epoch 9/1000, (Training | Validation) Trend Loss: 0.0135 | 0.0190, Seasonal Loss: 0.0954 | 0.1445, Residual Loss: 0.0780 | 0.0416
+Epoch 10/1000, (Training | Validation) Trend Loss: 0.0115 | 0.0167, Seasonal Loss: 0.0749 | 0.1441, Residual Loss: 0.0839 | 0.0654
+Epoch 11/1000, (Training | Validation) Trend Loss: 0.0104 | 0.0184, Seasonal Loss: 0.0728 | 0.0978, Residual Loss: 0.0658 | 0.0442
+Epoch 12/1000, (Training | Validation) Trend Loss: 0.0095 | 0.0160, Seasonal Loss: 0.0541 | 0.0917, Residual Loss: 0.0757 | 0.0655
+Epoch 13/1000, (Training | Validation) Trend Loss: 0.0088 | 0.0149, Seasonal Loss: 0.0551 | 0.1104, Residual Loss: 0.0825 | 0.0799
+Epoch 14/1000, (Training | Validation) Trend Loss: 0.0083 | 0.0149, Seasonal Loss: 0.0629 | 0.2091, Residual Loss: 0.1254 | 0.1286
+Epoch 15/1000, (Training | Validation) Trend Loss: 0.0080 | 0.0166, Seasonal Loss: 0.0402 | 0.1555, Residual Loss: 0.1597 | 0.0710
+Epoch 16/1000, (Training | Validation) Trend Loss: 0.0086 | 0.0185, Seasonal Loss: 0.0366 | 0.0742, Residual Loss: 0.1821 | 0.0645
+Epoch 17/1000, (Training | Validation) Trend Loss: 0.0116 | 0.0190, Seasonal Loss: 0.0492 | 0.1409, Residual Loss: 0.1674 | 0.0877
+Epoch 18/1000, (Training | Validation) Trend Loss: 0.0189 | 0.0215, Seasonal Loss: 0.0723 | 0.0610, Residual Loss: 0.1485 | 0.1157
+Epoch 19/1000, (Training | Validation) Trend Loss: 0.0219 | 0.0286, Seasonal Loss: 0.1088 | 0.2492, Residual Loss: 0.1659 | 0.1590
+Epoch 20/1000, (Training | Validation) Trend Loss: 0.0153 | 0.0130, Seasonal Loss: 0.0741 | 0.1006, Residual Loss: 0.2138 | 0.1980
+Epoch 21/1000, (Training | Validation) Trend Loss: 0.0097 | 0.0058, Seasonal Loss: 0.0891 | 0.2151, Residual Loss: 0.1746 | 0.0855
+Epoch 22/1000, (Training | Validation) Trend Loss: 0.0063 | 0.0052, Seasonal Loss: 0.0995 | 0.1910, Residual Loss: 0.1357 | 0.0226
+Epoch 23/1000, (Training | Validation) Trend Loss: 0.0049 | 0.0057, Seasonal Loss: 0.0875 | 0.3059, Residual Loss: 0.0730 | 0.0264
+Epoch 24/1000, (Training | Validation) Trend Loss: 0.0040 | 0.0055, Seasonal Loss: 0.1494 | 0.4744, Residual Loss: 0.0682 | 0.0402
+Epoch 25/1000, (Training | Validation) Trend Loss: 0.0040 | 0.0050, Seasonal Loss: 0.1900 | 0.2419, Residual Loss: 0.0811 | 0.0328
+Epoch 26/1000, (Training | Validation) Trend Loss: 0.0051 | 0.0060, Seasonal Loss: 0.1774 | 0.1468, Residual Loss: 0.1052 | 0.0503
+Epoch 27/1000, (Training | Validation) Trend Loss: 0.0074 | 0.0091, Seasonal Loss: 0.2259 | 0.3653, Residual Loss: 0.1158 | 0.0280
+Epoch 28/1000, (Training | Validation) Trend Loss: 0.0122 | 0.0141, Seasonal Loss: 0.1352 | 0.4867, Residual Loss: 0.1356 | 0.0300
+Epoch 29/1000, (Training | Validation) Trend Loss: 0.0208 | 0.0110, Seasonal Loss: 0.0550 | 0.1507, Residual Loss: 0.0967 | 0.0215
+Epoch 30/1000, (Training | Validation) Trend Loss: 0.0282 | 0.0233, Seasonal Loss: 0.1261 | 0.3270, Residual Loss: 0.0799 | 0.0196
+Epoch 31/1000, (Training | Validation) Trend Loss: 0.0170 | 0.0554, Seasonal Loss: 0.1457 | 0.2375, Residual Loss: 0.0711 | 0.0177
+Epoch 32/1000, (Training | Validation) Trend Loss: 0.0041 | 0.0144, Seasonal Loss: 0.1306 | 0.1644, Residual Loss: 0.0609 | 0.0194
+Epoch 33/1000, (Training | Validation) Trend Loss: 0.0033 | 0.0094, Seasonal Loss: 0.2570 | 0.2137, Residual Loss: 0.0553 | 0.0173
+Epoch 34/1000, (Training | Validation) Trend Loss: 0.0030 | 0.0077, Seasonal Loss: 0.2371 | 0.1668, Residual Loss: 0.0540 | 0.0153
+Epoch 35/1000, (Training | Validation) Trend Loss: 0.0027 | 0.0067, Seasonal Loss: 0.2595 | 0.0968, Residual Loss: 0.0487 | 0.0152
+Epoch 36/1000, (Training | Validation) Trend Loss: 0.0026 | 0.0052, Seasonal Loss: 0.1127 | 0.1092, Residual Loss: 0.0450 | 0.0139
+Epoch 37/1000, (Training | Validation) Trend Loss: 0.0026 | 0.0050, Seasonal Loss: 0.1480 | 0.1146, Residual Loss: 0.0425 | 0.0145
+Epoch 38/1000, (Training | Validation) Trend Loss: 0.0025 | 0.0047, Seasonal Loss: 0.1359 | 0.1075, Residual Loss: 0.0407 | 0.0134
+Epoch 39/1000, (Training | Validation) Trend Loss: 0.0025 | 0.0044, Seasonal Loss: 0.1794 | 0.0890, Residual Loss: 0.0401 | 0.0145
+Epoch 40/1000, (Training | Validation) Trend Loss: 0.0024 | 0.0041, Seasonal Loss: 0.1454 | 0.1107, Residual Loss: 0.0402 | 0.0135
+Epoch 41/1000, (Training | Validation) Trend Loss: 0.0024 | 0.0035, Seasonal Loss: 0.1395 | 0.0911, Residual Loss: 0.0404 | 0.0141
+Epoch 42/1000, (Training | Validation) Trend Loss: 0.0022 | 0.0038, Seasonal Loss: 0.0900 | 0.0792, Residual Loss: 0.0420 | 0.0139
+Epoch 43/1000, (Training | Validation) Trend Loss: 0.0021 | 0.0038, Seasonal Loss: 0.0657 | 0.0771, Residual Loss: 0.0422 | 0.0135
+Epoch 44/1000, (Training | Validation) Trend Loss: 0.0021 | 0.0037, Seasonal Loss: 0.0359 | 0.0757, Residual Loss: 0.0430 | 0.0146
+Epoch 45/1000, (Training | Validation) Trend Loss: 0.0022 | 0.0036, Seasonal Loss: 0.0379 | 0.0670, Residual Loss: 0.0421 | 0.0136
+Epoch 46/1000, (Training | Validation) Trend Loss: 0.0022 | 0.0031, Seasonal Loss: 0.0492 | 0.0866, Residual Loss: 0.0418 | 0.0147
+Epoch 47/1000, (Training | Validation) Trend Loss: 0.0020 | 0.0033, Seasonal Loss: 0.0653 | 0.0738, Residual Loss: 0.0395 | 0.0131
+Epoch 48/1000, (Training | Validation) Trend Loss: 0.0020 | 0.0034, Seasonal Loss: 0.0804 | 0.0794, Residual Loss: 0.0386 | 0.0139
+Epoch 49/1000, (Training | Validation) Trend Loss: 0.0020 | 0.0034, Seasonal Loss: 0.0918 | 0.0757, Residual Loss: 0.0371 | 0.0127
+Epoch 50/1000, (Training | Validation) Trend Loss: 0.0020 | 0.0033, Seasonal Loss: 0.0817 | 0.0781, Residual Loss: 0.0361 | 0.0138
+Epoch 51/1000, (Training | Validation) Trend Loss: 0.0020 | 0.0029, Seasonal Loss: 0.0645 | 0.0664, Residual Loss: 0.0351 | 0.0128
+Epoch 52/1000, (Training | Validation) Trend Loss: 0.0019 | 0.0031, Seasonal Loss: 0.0499 | 0.0695, Residual Loss: 0.0344 | 0.0138
+Epoch 53/1000, (Training | Validation) Trend Loss: 0.0018 | 0.0031, Seasonal Loss: 0.0400 | 0.0607, Residual Loss: 0.0336 | 0.0126
+Epoch 54/1000, (Training | Validation) Trend Loss: 0.0018 | 0.0032, Seasonal Loss: 0.0402 | 0.0697, Residual Loss: 0.0332 | 0.0134
+Epoch 55/1000, (Training | Validation) Trend Loss: 0.0019 | 0.0032, Seasonal Loss: 0.0400 | 0.0583, Residual Loss: 0.0327 | 0.0125
+Epoch 56/1000, (Training | Validation) Trend Loss: 0.0019 | 0.0027, Seasonal Loss: 0.0449 | 0.0624, Residual Loss: 0.0323 | 0.0134
+Epoch 57/1000, (Training | Validation) Trend Loss: 0.0018 | 0.0029, Seasonal Loss: 0.0422 | 0.0572, Residual Loss: 0.0319 | 0.0126
+Epoch 58/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0030, Seasonal Loss: 0.0430 | 0.0598, Residual Loss: 0.0317 | 0.0134
+Epoch 59/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0030, Seasonal Loss: 0.0399 | 0.0562, Residual Loss: 0.0313 | 0.0125
+Epoch 60/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0030, Seasonal Loss: 0.0404 | 0.0604, Residual Loss: 0.0311 | 0.0132
+Epoch 61/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0027, Seasonal Loss: 0.0365 | 0.0549, Residual Loss: 0.0307 | 0.0125
+Epoch 62/1000, (Training | Validation) Trend Loss: 0.0016 | 0.0029, Seasonal Loss: 0.0327 | 0.0576, Residual Loss: 0.0306 | 0.0132
+Epoch 63/1000, (Training | Validation) Trend Loss: 0.0016 | 0.0029, Seasonal Loss: 0.0284 | 0.0526, Residual Loss: 0.0303 | 0.0126
+Epoch 64/1000, (Training | Validation) Trend Loss: 0.0016 | 0.0029, Seasonal Loss: 0.0275 | 0.0588, Residual Loss: 0.0302 | 0.0131
+Epoch 65/1000, (Training | Validation) Trend Loss: 0.0016 | 0.0030, Seasonal Loss: 0.0263 | 0.0498, Residual Loss: 0.0298 | 0.0125
+Epoch 66/1000, (Training | Validation) Trend Loss: 0.0016 | 0.0027, Seasonal Loss: 0.0267 | 0.0570, Residual Loss: 0.0298 | 0.0130
+Epoch 67/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0029, Seasonal Loss: 0.0245 | 0.0490, Residual Loss: 0.0295 | 0.0125
+Epoch 68/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0029, Seasonal Loss: 0.0243 | 0.0569, Residual Loss: 0.0294 | 0.0130
+Epoch 69/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0030, Seasonal Loss: 0.0239 | 0.0472, Residual Loss: 0.0292 | 0.0126
+Epoch 70/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0030, Seasonal Loss: 0.0256 | 0.0574, Residual Loss: 0.0291 | 0.0129
+Epoch 71/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0029, Seasonal Loss: 0.0257 | 0.0472, Residual Loss: 0.0289 | 0.0125
+Epoch 72/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0030, Seasonal Loss: 0.0256 | 0.0530, Residual Loss: 0.0289 | 0.0128
+Epoch 73/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0030, Seasonal Loss: 0.0244 | 0.0468, Residual Loss: 0.0287 | 0.0125
+Epoch 74/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0030, Seasonal Loss: 0.0251 | 0.0523, Residual Loss: 0.0287 | 0.0127
+Epoch 75/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0030, Seasonal Loss: 0.0248 | 0.0462, Residual Loss: 0.0285 | 0.0126
+Epoch 76/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0033, Seasonal Loss: 0.0248 | 0.0496, Residual Loss: 0.0286 | 0.0127
+Epoch 77/1000, (Training | Validation) Trend Loss: 0.0019 | 0.0035, Seasonal Loss: 0.0216 | 0.0476, Residual Loss: 0.0282 | 0.0126
+Epoch 78/1000, (Training | Validation) Trend Loss: 0.0024 | 0.0039, Seasonal Loss: 0.0201 | 0.0496, Residual Loss: 0.0283 | 0.0126
+Epoch 79/1000, (Training | Validation) Trend Loss: 0.0031 | 0.0046, Seasonal Loss: 0.0186 | 0.0465, Residual Loss: 0.0280 | 0.0126
+Epoch 80/1000, (Training | Validation) Trend Loss: 0.0040 | 0.0058, Seasonal Loss: 0.0184 | 0.0501, Residual Loss: 0.0280 | 0.0125
+Epoch 81/1000, (Training | Validation) Trend Loss: 0.0039 | 0.0114, Seasonal Loss: 0.0173 | 0.0466, Residual Loss: 0.0279 | 0.0126
+Epoch 82/1000, (Training | Validation) Trend Loss: 0.0020 | 0.0069, Seasonal Loss: 0.0162 | 0.0485, Residual Loss: 0.0278 | 0.0124
+Epoch 83/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0046, Seasonal Loss: 0.0151 | 0.0455, Residual Loss: 0.0277 | 0.0125
+Epoch 84/1000, (Training | Validation) Trend Loss: 0.0015 | 0.0035, Seasonal Loss: 0.0150 | 0.0486, Residual Loss: 0.0278 | 0.0124
+Epoch 85/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0030, Seasonal Loss: 0.0149 | 0.0441, Residual Loss: 0.0276 | 0.0126
+Epoch 86/1000, (Training | Validation) Trend Loss: 0.0018 | 0.0025, Seasonal Loss: 0.0148 | 0.0472, Residual Loss: 0.0278 | 0.0123
+Epoch 87/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0026, Seasonal Loss: 0.0140 | 0.0445, Residual Loss: 0.0274 | 0.0126
+Epoch 88/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0025, Seasonal Loss: 0.0137 | 0.0468, Residual Loss: 0.0273 | 0.0123
+Epoch 89/1000, (Training | Validation) Trend Loss: 0.0017 | 0.0025, Seasonal Loss: 0.0136 | 0.0435, Residual Loss: 0.0271 | 0.0126
+Epoch 90/1000, (Training | Validation) Trend Loss: 0.0016 | 0.0025, Seasonal Loss: 0.0141 | 0.0468, Residual Loss: 0.0271 | 0.0123
+Epoch 91/1000, (Training | Validation) Trend Loss: 0.0016 | 0.0023, Seasonal Loss: 0.0139 | 0.0440, Residual Loss: 0.0270 | 0.0125
+Epoch 92/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0025, Seasonal Loss: 0.0135 | 0.0450, Residual Loss: 0.0269 | 0.0123
+Epoch 93/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0025, Seasonal Loss: 0.0130 | 0.0435, Residual Loss: 0.0269 | 0.0124
+Epoch 94/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0025, Seasonal Loss: 0.0130 | 0.0447, Residual Loss: 0.0268 | 0.0123
+Epoch 95/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0025, Seasonal Loss: 0.0130 | 0.0428, Residual Loss: 0.0267 | 0.0124
+Epoch 96/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0024, Seasonal Loss: 0.0129 | 0.0433, Residual Loss: 0.0267 | 0.0123
+Epoch 97/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0025, Seasonal Loss: 0.0119 | 0.0437, Residual Loss: 0.0266 | 0.0124
+Epoch 98/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0026, Seasonal Loss: 0.0114 | 0.0432, Residual Loss: 0.0266 | 0.0123
+Epoch 99/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0026, Seasonal Loss: 0.0110 | 0.0430, Residual Loss: 0.0265 | 0.0123
+Epoch 100/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0026, Seasonal Loss: 0.0110 | 0.0431, Residual Loss: 0.0265 | 0.0123
+Epoch 101/1000, (Training | Validation) Trend Loss: 0.0014 | 0.0025, Seasonal Loss: 0.0105 | 0.0433, Residual Loss: 0.0264 | 0.0123
+Epoch 102/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0100 | 0.0421, Residual Loss: 0.0264 | 0.0123
+Epoch 103/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0095 | 0.0426, Residual Loss: 0.0263 | 0.0123
+Epoch 104/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0094 | 0.0420, Residual Loss: 0.0263 | 0.0123
+Epoch 105/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0092 | 0.0418, Residual Loss: 0.0263 | 0.0123
+Epoch 106/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0025, Seasonal Loss: 0.0090 | 0.0411, Residual Loss: 0.0262 | 0.0123
+Epoch 107/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0086 | 0.0420, Residual Loss: 0.0262 | 0.0123
+Epoch 108/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0084 | 0.0409, Residual Loss: 0.0261 | 0.0123
+Epoch 109/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0083 | 0.0413, Residual Loss: 0.0261 | 0.0123
+Epoch 110/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0083 | 0.0407, Residual Loss: 0.0261 | 0.0123
+Epoch 111/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0081 | 0.0414, Residual Loss: 0.0260 | 0.0123
+Epoch 112/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0079 | 0.0399, Residual Loss: 0.0260 | 0.0123
+Epoch 113/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0077 | 0.0408, Residual Loss: 0.0260 | 0.0123
+Epoch 114/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0077 | 0.0396, Residual Loss: 0.0259 | 0.0123
+Epoch 115/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0076 | 0.0402, Residual Loss: 0.0259 | 0.0123
+Epoch 116/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0075 | 0.0388, Residual Loss: 0.0259 | 0.0123
+Epoch 117/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0072 | 0.0404, Residual Loss: 0.0258 | 0.0123
+Epoch 118/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0072 | 0.0387, Residual Loss: 0.0258 | 0.0123
+Epoch 119/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0070 | 0.0398, Residual Loss: 0.0258 | 0.0123
+Epoch 120/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0027, Seasonal Loss: 0.0071 | 0.0385, Residual Loss: 0.0258 | 0.0123
+Epoch 121/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0069 | 0.0399, Residual Loss: 0.0257 | 0.0123
+Epoch 122/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0067 | 0.0378, Residual Loss: 0.0257 | 0.0123
+Epoch 123/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0065 | 0.0394, Residual Loss: 0.0257 | 0.0123
+Epoch 124/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0065 | 0.0377, Residual Loss: 0.0257 | 0.0123
+Epoch 125/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0064 | 0.0388, Residual Loss: 0.0256 | 0.0123
+Epoch 126/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0064 | 0.0371, Residual Loss: 0.0256 | 0.0123
+Epoch 127/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0061 | 0.0388, Residual Loss: 0.0256 | 0.0123
+Epoch 128/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0061 | 0.0371, Residual Loss: 0.0256 | 0.0123
+Epoch 129/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0060 | 0.0383, Residual Loss: 0.0255 | 0.0123
+Epoch 130/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0026, Seasonal Loss: 0.0060 | 0.0369, Residual Loss: 0.0255 | 0.0123
+Epoch 131/1000, (Training | Validation) Trend Loss: 0.0013 | 0.0025, Seasonal Loss: 0.0058 | 0.0382, Residual Loss: 0.0255 | 0.0123
+Epoch 132/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0057 | 0.0365, Residual Loss: 0.0255 | 0.0123
+Epoch 133/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0056 | 0.0377, Residual Loss: 0.0255 | 0.0123
+Epoch 134/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0056 | 0.0364, Residual Loss: 0.0254 | 0.0123
+Epoch 135/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0055 | 0.0373, Residual Loss: 0.0254 | 0.0123
+Epoch 136/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0055 | 0.0361, Residual Loss: 0.0254 | 0.0123
+Epoch 137/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0054 | 0.0371, Residual Loss: 0.0254 | 0.0123
+Epoch 138/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0053 | 0.0360, Residual Loss: 0.0254 | 0.0123
+Epoch 139/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0053 | 0.0367, Residual Loss: 0.0254 | 0.0123
+Epoch 140/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0052 | 0.0359, Residual Loss: 0.0253 | 0.0123
+Epoch 141/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0052 | 0.0365, Residual Loss: 0.0253 | 0.0123
+Epoch 142/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0051 | 0.0357, Residual Loss: 0.0253 | 0.0123
+Epoch 143/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0051 | 0.0362, Residual Loss: 0.0253 | 0.0123
+Epoch 144/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0051 | 0.0356, Residual Loss: 0.0253 | 0.0123
+Epoch 145/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0050 | 0.0359, Residual Loss: 0.0253 | 0.0123
+Epoch 146/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0050 | 0.0354, Residual Loss: 0.0253 | 0.0123
+Epoch 147/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0049 | 0.0357, Residual Loss: 0.0252 | 0.0123
+Epoch 148/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0049 | 0.0353, Residual Loss: 0.0252 | 0.0123
+Epoch 149/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0049 | 0.0354, Residual Loss: 0.0252 | 0.0123
+Epoch 150/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0049 | 0.0351, Residual Loss: 0.0252 | 0.0123
+Epoch 151/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0048 | 0.0352, Residual Loss: 0.0252 | 0.0123
+Epoch 152/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0048 | 0.0350, Residual Loss: 0.0252 | 0.0123
+Epoch 153/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0048 | 0.0350, Residual Loss: 0.0252 | 0.0123
+Epoch 154/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0048 | 0.0349, Residual Loss: 0.0252 | 0.0123
+Epoch 155/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0047 | 0.0349, Residual Loss: 0.0252 | 0.0123
+Epoch 156/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0047 | 0.0347, Residual Loss: 0.0251 | 0.0123
+Epoch 157/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0047 | 0.0347, Residual Loss: 0.0251 | 0.0123
+Epoch 158/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0047 | 0.0346, Residual Loss: 0.0251 | 0.0123
+Epoch 159/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0046 | 0.0346, Residual Loss: 0.0251 | 0.0123
+Epoch 160/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0046 | 0.0345, Residual Loss: 0.0251 | 0.0123
+Epoch 161/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0046 | 0.0344, Residual Loss: 0.0251 | 0.0123
+Epoch 162/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0046 | 0.0343, Residual Loss: 0.0251 | 0.0123
+Epoch 163/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0046 | 0.0343, Residual Loss: 0.0251 | 0.0123
+Epoch 164/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0045 | 0.0342, Residual Loss: 0.0251 | 0.0123
+Epoch 165/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0045 | 0.0342, Residual Loss: 0.0251 | 0.0123
+Epoch 166/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0045 | 0.0341, Residual Loss: 0.0251 | 0.0123
+Epoch 167/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0045 | 0.0341, Residual Loss: 0.0250 | 0.0123
+Epoch 168/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0045 | 0.0340, Residual Loss: 0.0250 | 0.0123
+Epoch 169/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0045 | 0.0340, Residual Loss: 0.0250 | 0.0123
+Epoch 170/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0044 | 0.0339, Residual Loss: 0.0250 | 0.0123
+Epoch 171/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0044 | 0.0339, Residual Loss: 0.0250 | 0.0123
+Epoch 172/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0044 | 0.0338, Residual Loss: 0.0250 | 0.0123
+Epoch 173/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0044 | 0.0338, Residual Loss: 0.0250 | 0.0123
+Epoch 174/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0044 | 0.0337, Residual Loss: 0.0250 | 0.0123
+Epoch 175/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0044 | 0.0337, Residual Loss: 0.0250 | 0.0123
+Epoch 176/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0044 | 0.0336, Residual Loss: 0.0250 | 0.0123
+Epoch 177/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0336, Residual Loss: 0.0250 | 0.0123
+Epoch 178/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0335, Residual Loss: 0.0250 | 0.0123
+Epoch 179/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0335, Residual Loss: 0.0250 | 0.0123
+Epoch 180/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0335, Residual Loss: 0.0250 | 0.0123
+Epoch 181/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0334, Residual Loss: 0.0250 | 0.0123
+Epoch 182/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0334, Residual Loss: 0.0249 | 0.0123
+Epoch 183/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0334, Residual Loss: 0.0249 | 0.0123
+Epoch 184/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0043 | 0.0333, Residual Loss: 0.0249 | 0.0123
+Epoch 185/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0333, Residual Loss: 0.0249 | 0.0123
+Epoch 186/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0332, Residual Loss: 0.0249 | 0.0123
+Epoch 187/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0332, Residual Loss: 0.0249 | 0.0123
+Epoch 188/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0332, Residual Loss: 0.0249 | 0.0123
+Epoch 189/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0331, Residual Loss: 0.0249 | 0.0123
+Epoch 190/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0331, Residual Loss: 0.0249 | 0.0123
+Epoch 191/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0331, Residual Loss: 0.0249 | 0.0123
+Epoch 192/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0331, Residual Loss: 0.0249 | 0.0123
+Epoch 193/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0042 | 0.0330, Residual Loss: 0.0249 | 0.0123
+Epoch 194/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0330, Residual Loss: 0.0249 | 0.0123
+Epoch 195/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0330, Residual Loss: 0.0249 | 0.0123
+Epoch 196/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0329, Residual Loss: 0.0249 | 0.0123
+Epoch 197/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0329, Residual Loss: 0.0249 | 0.0123
+Epoch 198/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0329, Residual Loss: 0.0249 | 0.0123
+Epoch 199/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0329, Residual Loss: 0.0249 | 0.0123
+Epoch 200/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0041 | 0.0328, Residual Loss: 0.0249 | 0.0123
+Epoch 201/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0328, Residual Loss: 0.0249 | 0.0123
+Epoch 202/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0328, Residual Loss: 0.0249 | 0.0123
+Epoch 203/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0041 | 0.0328, Residual Loss: 0.0249 | 0.0123
+Epoch 204/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0041 | 0.0327, Residual Loss: 0.0249 | 0.0123
+Epoch 205/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0041 | 0.0327, Residual Loss: 0.0249 | 0.0123
+Epoch 206/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0040 | 0.0327, Residual Loss: 0.0248 | 0.0123
+Epoch 207/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0040 | 0.0327, Residual Loss: 0.0248 | 0.0123
+Epoch 208/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0327, Residual Loss: 0.0248 | 0.0123
+Epoch 209/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0326, Residual Loss: 0.0248 | 0.0123
+Epoch 210/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0326, Residual Loss: 0.0248 | 0.0123
+Epoch 211/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0326, Residual Loss: 0.0248 | 0.0123
+Epoch 212/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0026, Seasonal Loss: 0.0040 | 0.0326, Residual Loss: 0.0248 | 0.0123
+Epoch 213/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0326, Residual Loss: 0.0248 | 0.0123
+Epoch 214/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0325, Residual Loss: 0.0248 | 0.0123
+Epoch 215/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0325, Residual Loss: 0.0248 | 0.0123
+Epoch 216/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0325, Residual Loss: 0.0248 | 0.0123
+Epoch 217/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0325, Residual Loss: 0.0248 | 0.0123
+Epoch 218/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0325, Residual Loss: 0.0248 | 0.0123
+Epoch 219/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0040 | 0.0325, Residual Loss: 0.0248 | 0.0123
+Epoch 220/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0324, Residual Loss: 0.0248 | 0.0123
+Epoch 221/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0324, Residual Loss: 0.0248 | 0.0123
+Epoch 222/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0324, Residual Loss: 0.0248 | 0.0123
+Epoch 223/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0324, Residual Loss: 0.0248 | 0.0123
+Epoch 224/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0324, Residual Loss: 0.0248 | 0.0123
+Epoch 225/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0324, Residual Loss: 0.0248 | 0.0123
+Epoch 226/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0323, Residual Loss: 0.0248 | 0.0123
+Epoch 227/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0323, Residual Loss: 0.0248 | 0.0123
+Epoch 228/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0323, Residual Loss: 0.0248 | 0.0123
+Epoch 229/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0323, Residual Loss: 0.0248 | 0.0123
+Epoch 230/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0323, Residual Loss: 0.0248 | 0.0123
+Epoch 231/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0323, Residual Loss: 0.0248 | 0.0123
+Epoch 232/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0323, Residual Loss: 0.0248 | 0.0123
+Epoch 233/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 234/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 235/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 236/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 237/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 238/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 239/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 240/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0039 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 241/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0322, Residual Loss: 0.0248 | 0.0123
+Epoch 242/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 243/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 244/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 245/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 246/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 247/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 248/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 249/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 250/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 251/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0321, Residual Loss: 0.0248 | 0.0123
+Epoch 252/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 253/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 254/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 255/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 256/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 257/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 258/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 259/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 260/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 261/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 262/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 263/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0320, Residual Loss: 0.0248 | 0.0123
+Epoch 264/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0248 | 0.0123
+Epoch 265/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0248 | 0.0123
+Epoch 266/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 267/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 268/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 269/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 270/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 271/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 272/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0038 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 273/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 274/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 275/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 276/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 277/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 278/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 279/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0319, Residual Loss: 0.0247 | 0.0123
+Epoch 280/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0123
+Epoch 281/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 282/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 283/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 284/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 285/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 286/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 287/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 288/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 289/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 290/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 291/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 292/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 293/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 294/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 295/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 296/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 297/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 298/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 299/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 300/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 301/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0318, Residual Loss: 0.0247 | 0.0124
+Epoch 302/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 303/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 304/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 305/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 306/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 307/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 308/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 309/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 310/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 311/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 312/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 313/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 314/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 315/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 316/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 317/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 318/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 319/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 320/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 321/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 322/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 323/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 324/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 325/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 326/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 327/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 328/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 329/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 330/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 331/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 332/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 333/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 334/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 335/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 336/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 337/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 338/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 339/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0317, Residual Loss: 0.0247 | 0.0124
+Epoch 340/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 341/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 342/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 343/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 344/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 345/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 346/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 347/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 348/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 349/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 350/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 351/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0037 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 352/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 353/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 354/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 355/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 356/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 357/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 358/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 359/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 360/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 361/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Epoch 362/1000, (Training | Validation) Trend Loss: 0.0012 | 0.0025, Seasonal Loss: 0.0036 | 0.0316, Residual Loss: 0.0247 | 0.0124
+Early stopping
+[172.3357379]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:317: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_trend_stock_price": stock_trend[-1],
+/data/student/k2110261/Multi-iTransformer/optunademo.py:318: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_seasonal_stock_price": stock_seasonal[-1],
+/data/student/k2110261/Multi-iTransformer/optunademo.py:319: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_resid_stock_price": stock_resid[-1],

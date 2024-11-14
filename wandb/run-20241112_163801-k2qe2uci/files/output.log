@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 22, in <module>
+    device = torch.device("cuda: 0" if torch.cuda.is_available() else "cpu")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Invalid device string: 'cuda: 0'

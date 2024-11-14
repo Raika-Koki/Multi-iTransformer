@@ -92,14 +92,14 @@ stl_std_list = [std_list_trend[stock_code], std_list_seasonal[stock_code], std_l
 predict_period_num = 1
 epochs = 1000
 observation_period_num = {
-    "trend": 30,
-    "seasonal": 10,
-    "resid": 30
+    "trend": 6,
+    "seasonal": 48,
+    "resid": 5
 }
 train_rates = {
-    "trend": 0.99,
-    "seasonal": 0.99,
-    "resid": 0.99
+    "trend": 0.9762874828359611,
+    "seasonal": 0.9807915886962829,
+    "resid": 0.9769493683518011
 }
 
 
@@ -136,7 +136,7 @@ def objective(trial, component):
 
 
     # Train model
-    epochs = 100
+    epochs = 1
     for epoch in range(epochs):
         model, train_loss, valid_loss = train(
             model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num[component])
@@ -150,13 +150,13 @@ def objective(trial, component):
 
 # Optimize for each component
 study_trend = optuna.create_study(direction='minimize')
-study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=100)
+study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=1)
 
 study_seasonal = optuna.create_study(direction='minimize')
-study_seasonal.optimize(lambda trial: objective(trial, "seasonal"), n_trials=100)
+study_seasonal.optimize(lambda trial: objective(trial, "seasonal"), n_trials=1)
 
 study_resid = optuna.create_study(direction='minimize')
-study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=100)
+study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=1)
 
 # Log best hyperparameters
 print("Best hyperparameters (trend):", study_trend.best_params)
@@ -170,26 +170,36 @@ best_params_resid = study_resid.best_params
 
 # Initialize separate models for trend, seasonal, and residual components using optimized parameters
 model_trend = iTransformer(
+    #num_variates=len(tickers),
+    #lookback_len=observation_period_num['trend'],
+    #depth=best_params_trend['depth'],
+    #dim=best_params_trend['dim'],
+    #pred_length=predict_period_num,
     num_variates=len(tickers),
     lookback_len=observation_period_num['trend'],
-    depth=best_params_trend['depth'],
-    dim=best_params_trend['dim'],
+    depth=4,
+    dim=78,
     pred_length=predict_period_num
 ).to(device)
 
 model_seasonal = iTransformer(
+    #num_variates=len(tickers),
+    #lookback_len=observation_period_num['seasonal'],
+    #depth=best_params_seasonal['depth'],
+    #dim=best_params_seasonal['dim'],
+    #pred_length=predict_period_num
     num_variates=len(tickers),
     lookback_len=observation_period_num['seasonal'],
-    depth=best_params_seasonal['depth'],
-    dim=best_params_seasonal['dim'],
+    depth=4,
+    dim=206,
     pred_length=predict_period_num
 ).to(device)
 
 model_resid = iTransformer(
     num_variates=len(tickers),
     lookback_len=observation_period_num['resid'],
-    depth=best_params_resid['depth'],
-    dim=best_params_resid['dim'],
+    depth=3,
+    dim=195,
     pred_length=predict_period_num
 ).to(device)
 
@@ -197,7 +207,7 @@ model_resid = iTransformer(
 criterion = nn.MSELoss()
 
 # Define separate optimizers and schedulers for each model based on optimized parameters
-optimizer_trend = torch.optim.AdamW(model_trend.parameters(), lr=best_params_trend['learning_rate'])
+"""optimizer_trend = torch.optim.AdamW(model_trend.parameters(), lr=best_params_trend['learning_rate'])
 scheduler_trend = torch.optim.lr_scheduler.StepLR(optimizer_trend, step_size=best_params_trend['step_size'], gamma=best_params_trend['gamma'])
 
 optimizer_seasonal = torch.optim.AdamW(model_seasonal.parameters(), lr=best_params_seasonal['learning_rate'])
@@ -205,6 +215,15 @@ scheduler_seasonal = torch.optim.lr_scheduler.StepLR(optimizer_seasonal, step_si
 
 optimizer_resid = torch.optim.AdamW(model_resid.parameters(), lr=best_params_resid['learning_rate'])
 scheduler_resid = torch.optim.lr_scheduler.StepLR(optimizer_resid, step_size=best_params_resid['step_size'], gamma=best_params_resid['gamma'])
+"""
+optimizer_trend = torch.optim.AdamW(model_trend.parameters(), lr=0.00012140392508989015)
+scheduler_trend = torch.optim.lr_scheduler.StepLR(optimizer_trend, step_size=5, gamma=0.8897669510547245)
+
+optimizer_seasonal = torch.optim.AdamW(model_seasonal.parameters(), lr=0.0005435662922956095)
+scheduler_seasonal = torch.optim.lr_scheduler.StepLR(optimizer_seasonal, step_size=5, gamma=0.8915401169867296)
+
+optimizer_resid = torch.optim.AdamW(model_resid.parameters(), lr=0.0005701440641415547)
+scheduler_resid = torch.optim.lr_scheduler.StepLR(optimizer_resid, step_size=3, gamma=0.9236096428708981)
 
 earlystopping = EarlyStopping(patience=5)
 
@@ -233,15 +252,19 @@ train_data_resid, valid_data_resid = create_multivariate_dataset(
 for epoch in range(epochs):
     # Train trend model
     model_trend, train_loss_trend, valid_loss_trend = train(
-        model_trend, train_data_trend, valid_data_trend, optimizer_trend, criterion, scheduler_trend, best_params_trend['batch_size'], observation_period_num['trend'])
+        #model_trend, train_data_trend, valid_data_trend, optimizer_trend, criterion, scheduler_trend, """best_params_trend['batch_size']"""39, observation_period_num['trend'])
+        model_trend, train_data_trend, valid_data_trend, optimizer_trend, criterion, scheduler_trend, 39, observation_period_num['trend'])
     
     # Train seasonal model
     model_seasonal, train_loss_seasonal, valid_loss_seasonal = train(
-        model_seasonal, train_data_seasonal, valid_data_seasonal, optimizer_seasonal, criterion, scheduler_seasonal, best_params_seasonal['batch_size'], observation_period_num['seasonal'])
+        #model_seasonal, train_data_seasonal, valid_data_seasonal, optimizer_seasonal, criterion, scheduler_seasonal, """best_params_seasonal['batch_size']"""139, observation_period_num['seasonal'])
+        model_seasonal, train_data_seasonal, valid_data_seasonal, optimizer_seasonal, criterion, scheduler_seasonal, 139, observation_period_num['seasonal'])
     
     # Train residual model
     model_resid, train_loss_resid, valid_loss_resid = train(
-        model_resid, train_data_resid, valid_data_resid, optimizer_resid, criterion, scheduler_resid, best_params_resid['batch_size'], observation_period_num['resid'])
+        #model_resid, train_data_resid, valid_data_resid, optimizer_resid, criterion, scheduler_resid, """best_params_resid['batch_size']"""179, observation_period_num['resid'])
+        model_resid, train_data_resid, valid_data_resid, optimizer_resid, criterion, scheduler_resid, 179, observation_period_num['resid'])
+
 
     print(f"Epoch {epoch+1}/{epochs}, (Training | Validation) Trend Loss: {train_loss_trend:.4f} | {valid_loss_trend:.4f}, "
       f"Seasonal Loss: {train_loss_seasonal:.4f} | {valid_loss_seasonal:.4f}, "
@@ -287,6 +310,10 @@ with torch.no_grad():
     predicted_seasonal_stock_price = predicted_seasonal[1][0, :, 0].cpu().numpy().flatten() * stl_std_list[1] + stl_mean_list[1]
     predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * stl_std_list[2] + stl_mean_list[2]
 
+print(predicted_trend_stock_price)
+print(predicted_seasonal_stock_price)
+print(predicted_resid_stock_price)
+
 # Sum the components to get the final predicted stock price
 final_predicted_stock_price = predicted_trend_stock_price + predicted_seasonal_stock_price + predicted_resid_stock_price
 print(final_predicted_stock_price)
@@ -296,7 +323,8 @@ wandb.log({
     "real_resid_stock_price": stock_resid[-1],
     "predicted_trend_stock_price": predicted_trend_stock_price,
     "predicted_seasonal_stock_price": predicted_seasonal_stock_price,
-    "predicted_resid_stock_price": predicted_resid_stock_price,
+    "predicted_resid_stock_price":
+      predicted_resid_stock_price,
     "final_predicted_stock_price": final_predicted_stock_price
 })
 

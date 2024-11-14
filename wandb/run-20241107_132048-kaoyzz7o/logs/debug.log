@@ -23,3 +23,11 @@ config: {}
 2024-11-07 13:20:50,344 INFO    MainThread:846828 [wandb_run.py:_redirect():2376] Wrapping output streams.
 2024-11-07 13:20:50,345 INFO    MainThread:846828 [wandb_run.py:_redirect():2401] Redirects installed.
 2024-11-07 13:20:50,351 INFO    MainThread:846828 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-07 20:26:02,862 INFO    MainThread:846828 [wandb_run.py:_config_callback():1390] config_cb None None {'learning_rate_trend': 0.00018697733739906337, 'learning_rate_seasonal': 0.0005809199397484135, 'learning_rate_resid': 4.826375118149669e-05, 'epochs': 1000, 'batch_size_trend': 50, 'batch_size_seasonal': 17, 'batch_size_resid': 70, 'observation_period_num': {'trend': 30, 'seasonal': 10, 'resid': 30}, 'predict_period_num': 1}
+2024-11-07 21:02:56,131 INFO    MainThread:846828 [wandb_run.py:_finish():2158] finishing run raika-koki/gafam-stock-price-prediction/kaoyzz7o
+2024-11-07 21:02:56,132 INFO    MainThread:846828 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2024-11-07 21:02:56,133 INFO    MainThread:846828 [wandb_run.py:_restore():2408] restore
+2024-11-07 21:02:56,133 INFO    MainThread:846828 [wandb_run.py:_restore():2414] restore done
+2024-11-07 21:02:58,730 INFO    MainThread:846828 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2024-11-07 21:02:58,732 INFO    MainThread:846828 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2024-11-07 21:02:58,748 INFO    MainThread:846828 [wandb_run.py:_footer_sync_info():3934] logging synced files

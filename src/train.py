@@ -23,6 +23,7 @@ def train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_
 
         # バッチデータを取得
         data, targets = get_batch(train_data, i, batch_size, observation_period_num)
+        #print(data.shape)
 
         # 勾配の初期化
         optimizer.zero_grad()
@@ -70,3 +71,5 @@ def train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_
     total_loss_valid = total_loss_valid / len(valid_data)
 
     return model, total_loss_train, total_loss_valid
+
+
