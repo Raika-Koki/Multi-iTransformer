@@ -1,9 +1,6 @@
 import optuna
 import pandas as pd
 import torch
-from src.model import iTransformer, EarlyStopping
-from src.data_create import data_Normalization, create_multivariate_dataset
-from src.train import train
 import yfinance as yf   
 from torch import nn
 import numpy as np
@@ -11,6 +8,13 @@ import wandb
 import matplotlib.pyplot as plt
 import time
 from statsmodels.tsa.seasonal import STL # STL分解
+from fredapi import Fred
+from dotenv import load_dotenv
+import ta
+import os
+from src.model import iTransformer, EarlyStopping
+from src.data_create import data_Normalization, create_multivariate_dataset
+from src.train import train
 
 # WandB initialization
 wandb.init(project="gafam-stock-price-prediction")
@@ -29,9 +33,15 @@ def check_device(tensor):
     else:
         print("Tensor is on CPU.")
 
-# Download GAFAM stock data (Google, Apple, Facebook, Amazon, Microsoft)
+# .envファイルからAPIキーを読み込む
+load_dotenv("fred_api.env")
+api_key = os.getenv("API_KEY")
+#print(f"API Key: {api_key}")  # 確認用の出力
+# APIキーを渡してFREDクライアントを作成
+fred = Fred(api_key=api_key)
+
+# Download stock data
 stock_code = 'AAPL'
-tickers = ['GOOGL', 'META', 'AMZN', 'MSFT']
 start_date = '2012-05-18'
 end_date = '2023-06-01'
 
@@ -39,10 +49,12 @@ df_stock = yf.download(stock_code, start=start_date, end=end_date)
 if len(df_stock) == 0:
     raise Exception("No data fetched for the given stock code and date range.")
 
+df_stock.index = df_stock.index.tz_localize(None)
+
 data = df_stock['Adj Close']
 print(data)
 
-# Apply STL decomposition to AAPL stock data
+# stock STL decomposition to stock data
 stl = STL(data, period=252, robust=True)
 stl_series = stl.fit()
 
@@ -50,7 +62,6 @@ stl_series = stl.fit()
 stock_trend = stl_series.trend
 stock_seasonal = stl_series.seasonal
 stock_resid = stl_series.resid
-
 
 """print(stock_trend.shape)
 print(stock_seasonal.shape)
@@ -63,16 +74,115 @@ dataframes_resid = {stock_code: stock_resid}
 """print(dataframes_trend)
 print(dataframes_seasonal)"""
 
-for ticker in tickers:
-    df = yf.download(ticker, start=start_date, end=end_date)
+fred_tickers = ['DTWEXBGS', 'VIXCLS', 'DFII10', 'T10Y2Y']  # FRED tickers
+tech_indicator = ['Volume', 'BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200'] # Technical indicators
+
+for ticker in fred_tickers:
+    # FREDデータの取得
+    df = fred.get_series(ticker, observation_start=start_date, observation_end=end_date)
     if len(df) == 0:
         raise Exception(f"No data fetched for {ticker} for the given date range.")
-    dataframes_trend[ticker] = df['Adj Close'].squeeze()
-    """print(ticker)"""
-    dataframes_seasonal[ticker] = df['Adj Close'].squeeze()
-    dataframes_resid[ticker] = df['Adj Close'].squeeze()
+    
+    # タイムゾーン解除
+    df.index = df.index.tz_localize(None)
+    # 欠損データ削除（取得後の前処理）
+    df = df.dropna()
+    # 全営業日範囲を作成
+    full_date_range = pd.date_range(start=df_stock.index.min(), end=df_stock.index.max(), freq='B')
+    # 再インデックスで欠損日付を挿入（NaNで埋まる）
+    df = df.reindex(full_date_range)
+    # 補完処理: 中間値を補完
+    df = df.interpolate(method='linear')  # 線形補完（前日と後日の中間値）
+    # 補完後も残るNaN（後日がない場合）は前日のデータで補完
+    df = df.fillna(method='ffill')  # 前日のデータを使用して補完
+    # stock_codeの日付と一致させる
+    df = df.loc[df_stock.index]
+    # 日付順に整列
+    df = df.sort_index()
 
-tickers = [stock_code] + tickers
+    # 結果を保存
+    dataframes_trend[ticker] = df
+    dataframes_seasonal[ticker] = df
+    dataframes_resid[ticker] = df
+
+#print(dataframes_trend)
+
+"""# AAPLの日付が他のデータ1にない場合
+missing_in_other_1 = df_stock.index.difference(dataframes_trend['DTWEXBGS'].index)
+print("AAPLにあるが他のデータ1にはない日付:", missing_in_other_1)
+
+# 他のデータ1の日付がAAPLにない場合
+missing_in_aapl = dataframes_trend['DTWEXBGS'].index.difference(df_stock.index)
+print("他のデータ1にあるがAAPLにはない日付:", missing_in_aapl)"""
+
+close_data = data.iloc[:, 0]
+
+# 念のため、データが 1 次元であることを確認
+if not isinstance(close_data, pd.Series):
+    raise ValueError("close_data must be a pandas.Series")
+
+# ボリンジャーバンド
+bb_indicator = ta.volatility.BollingerBands(close=close_data, window=20, window_dev=2)
+df_stock['BB_Upper'] = bb_indicator.bollinger_hband()
+df_stock['BB_Lower'] = bb_indicator.bollinger_lband()
+df_stock['BB_Middle'] = bb_indicator.bollinger_mavg()
+
+# MACD
+macd_indicator = ta.trend.MACD(close=close_data)
+df_stock['MACD'] = macd_indicator.macd()
+df_stock['MACD_Signal'] = macd_indicator.macd_signal()
+df_stock['MACD_Diff'] = macd_indicator.macd_diff()
+
+# RSI (14日)
+rsi_indicator = ta.momentum.RSIIndicator(close=close_data, window=14)
+df_stock['RSI'] = rsi_indicator.rsi()
+
+# 移動平均 (50日と200日)
+df_stock['SMA_50'] = close_data.rolling(window=50).mean()
+df_stock['SMA_200'] = close_data.rolling(window=200).mean()
+
+# 結果の確認
+print(df_stock[['BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200']].tail())
+
+tickers = [stock_code] + fred_tickers + tech_indicator
+
+#print(tickers)
+
+for ticker in tech_indicator:
+    if ticker == 'Volume':
+        dataframes_trend[ticker] = df_stock[ticker].iloc[:, 0]
+        dataframes_seasonal[ticker] = df_stock[ticker].iloc[:, 0]
+        dataframes_resid[ticker] = df_stock[ticker].iloc[:, 0]
+    else:
+        dataframes_trend[ticker] = df_stock[ticker]
+        dataframes_seasonal[ticker] = df_stock[ticker]
+        dataframes_resid[ticker] = df_stock[ticker]
+
+# dataframes_trend の各データフレームから先頭200行を削除
+#print("dataframes_trend:", dataframes_trend.items())
+for ticker, df in dataframes_trend.items():
+    dataframes_trend[ticker] = df.iloc[199:]  # 先頭200行を削除
+
+for ticker, df in dataframes_seasonal.items():
+    dataframes_seasonal[ticker] = df.iloc[199:]  # 先頭200行を削除
+
+for ticker, df in dataframes_resid.items():
+    dataframes_resid[ticker] = df.iloc[199:]  # 先頭200行を削除
+
+#print("dataframes_trend:", dataframes_trend.items())
+
+"""print(dataframes_trend.items())
+print(dataframes_seasonal.items())
+print(dataframes_resid.items())
+"""
+
+"""print(dataframes_trend)
+
+missing_in_other_1 = dataframes_trend['AAPL'].index.difference(dataframes_trend['SMA_200'].index)
+print("AAPLにあるが他のデータ1にはない日付:", missing_in_other_1)
+"""
+for ticker, df in dataframes_trend.items():
+    print(f"{ticker} null values:\n{df.isnull().sum()}")
 
 # Combine the stock data into a single DataFrame
 combined_df_trend = pd.DataFrame(dataframes_trend)
@@ -90,57 +200,45 @@ stl_std_list = [std_list_trend[stock_code], std_list_seasonal[stock_code], std_l
 
 # Create multivariate dataset for each component
 predict_period_num = 1
-epochs = 1000
-observation_period_num = {
-    "trend": 6,
-    "seasonal": 48,
-    "resid": 5
-}
-train_rates = {
-    "trend": 0.9762874828359611,
-    "seasonal": 0.9807915886962829,
-    "resid": 0.9769493683518011
-}
-
-
+epochs = 100
 
 # Optuna objective function for hyperparameter tuning
 def objective(trial, component):
-    # Suggest hyperparameters
-    learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+    # ハイパーパラメータの提案
+    observation_period = trial.suggest_int('observation_period_num', 5, 252)
+    train_rates = trial.suggest_float('train_rates', 0.6, 0.99)
+    learning_rate = trial.suggest_float('learning_rate', 1e-6, 1e-3, log=True)
     batch_size = trial.suggest_int('batch_size', 16, 256)
     step_size = trial.suggest_int('step_size', 1, 15)
     gamma = trial.suggest_float('gamma', 0.75, 0.99)
     depth = trial.suggest_int('depth', 2, 6)
     dim = trial.suggest_int('dim', 16, 256)
 
-    # Define the dataset and model for the component
+    # データとモデルの設定
     if component == "trend":
+        #print(tickers)
         train_data, valid_data = create_multivariate_dataset(
-            df_normalized_trend, observation_period_num["trend"], predict_period_num, train_rates["trend"], device)
-        model = iTransformer(num_variates=len(tickers), lookback_len=observation_period_num["trend"], depth=depth, dim=dim, pred_length=predict_period_num).to(device)
+            df_normalized_trend, observation_period, predict_period_num, train_rates, device)
+        model = iTransformer(num_variates=len(tickers), lookback_len=observation_period, depth=depth, dim=dim, pred_length=predict_period_num).to(device)
     elif component == "seasonal":
         train_data, valid_data = create_multivariate_dataset(
-            df_normalized_seasonal, observation_period_num["seasonal"], predict_period_num, train_rates["seasonal"], device)
-        model = iTransformer(num_variates=len(tickers), lookback_len=observation_period_num["seasonal"], depth=depth, dim=dim, pred_length=predict_period_num).to(device)
+            df_normalized_seasonal, observation_period, predict_period_num, train_rates, device)
+        model = iTransformer(num_variates=len(tickers), lookback_len=observation_period, depth=depth, dim=dim, pred_length=predict_period_num).to(device)
     else:
         train_data, valid_data = create_multivariate_dataset(
-            df_normalized_resid, observation_period_num["resid"], predict_period_num, train_rates["resid"], device)
-        model = iTransformer(num_variates=len(tickers), lookback_len=observation_period_num["resid"], depth=depth, dim=dim, pred_length=predict_period_num).to(device)
+            df_normalized_resid, observation_period, predict_period_num, train_rates, device)
+        model = iTransformer(num_variates=len(tickers), lookback_len=observation_period, depth=depth, dim=dim, pred_length=predict_period_num).to(device)
 
-    # Define optimizer and scheduler
+    # オプティマイザとスケジューラの定義
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=step_size, gamma=gamma)
     criterion = nn.MSELoss()
     earlystopping = EarlyStopping(patience=5)
 
-
-    # Train model
-    epochs = 1
-    for epoch in range(epochs):
+    # モデルのトレーニング
+    for epoch in range(1):
         model, train_loss, valid_loss = train(
-            model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num[component])
-            # Early stopping based on residual validation loss
+            model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period)
         earlystopping(valid_loss, model)
         if earlystopping.early_stop:
             print("Early stopping")
@@ -170,36 +268,26 @@ best_params_resid = study_resid.best_params
 
 # Initialize separate models for trend, seasonal, and residual components using optimized parameters
 model_trend = iTransformer(
-    #num_variates=len(tickers),
-    #lookback_len=observation_period_num['trend'],
-    #depth=best_params_trend['depth'],
-    #dim=best_params_trend['dim'],
-    #pred_length=predict_period_num,
     num_variates=len(tickers),
-    lookback_len=observation_period_num['trend'],
-    depth=4,
-    dim=78,
-    pred_length=predict_period_num
+    lookback_len=best_params_trend['observation_period_num'],
+    depth=best_params_trend['depth'],
+    dim=best_params_trend['dim'],
+    pred_length=predict_period_num,
 ).to(device)
 
 model_seasonal = iTransformer(
-    #num_variates=len(tickers),
-    #lookback_len=observation_period_num['seasonal'],
-    #depth=best_params_seasonal['depth'],
-    #dim=best_params_seasonal['dim'],
-    #pred_length=predict_period_num
     num_variates=len(tickers),
-    lookback_len=observation_period_num['seasonal'],
-    depth=4,
-    dim=206,
+    lookback_len=best_params_seasonal['observation_period_num'],
+    depth=best_params_seasonal['depth'],
+    dim=best_params_seasonal['dim'],
     pred_length=predict_period_num
-).to(device)
+    ).to(device)
 
 model_resid = iTransformer(
     num_variates=len(tickers),
-    lookback_len=observation_period_num['resid'],
-    depth=3,
-    dim=195,
+    lookback_len=best_params_resid['observation_period_num'],
+    depth=best_params_resid['depth'],
+    dim=best_params_resid['dim'],
     pred_length=predict_period_num
 ).to(device)
 
@@ -207,7 +295,7 @@ model_resid = iTransformer(
 criterion = nn.MSELoss()
 
 # Define separate optimizers and schedulers for each model based on optimized parameters
-"""optimizer_trend = torch.optim.AdamW(model_trend.parameters(), lr=best_params_trend['learning_rate'])
+optimizer_trend = torch.optim.AdamW(model_trend.parameters(), lr=best_params_trend['learning_rate'])
 scheduler_trend = torch.optim.lr_scheduler.StepLR(optimizer_trend, step_size=best_params_trend['step_size'], gamma=best_params_trend['gamma'])
 
 optimizer_seasonal = torch.optim.AdamW(model_seasonal.parameters(), lr=best_params_seasonal['learning_rate'])
@@ -215,15 +303,6 @@ scheduler_seasonal = torch.optim.lr_scheduler.StepLR(optimizer_seasonal, step_si
 
 optimizer_resid = torch.optim.AdamW(model_resid.parameters(), lr=best_params_resid['learning_rate'])
 scheduler_resid = torch.optim.lr_scheduler.StepLR(optimizer_resid, step_size=best_params_resid['step_size'], gamma=best_params_resid['gamma'])
-"""
-optimizer_trend = torch.optim.AdamW(model_trend.parameters(), lr=0.00012140392508989015)
-scheduler_trend = torch.optim.lr_scheduler.StepLR(optimizer_trend, step_size=5, gamma=0.8897669510547245)
-
-optimizer_seasonal = torch.optim.AdamW(model_seasonal.parameters(), lr=0.0005435662922956095)
-scheduler_seasonal = torch.optim.lr_scheduler.StepLR(optimizer_seasonal, step_size=5, gamma=0.8915401169867296)
-
-optimizer_resid = torch.optim.AdamW(model_resid.parameters(), lr=0.0005701440641415547)
-scheduler_resid = torch.optim.lr_scheduler.StepLR(optimizer_resid, step_size=3, gamma=0.9236096428708981)
 
 earlystopping = EarlyStopping(patience=5)
 
@@ -236,35 +315,33 @@ wandb.config.update({
     "batch_size_trend": best_params_trend['batch_size'],
     "batch_size_seasonal": best_params_seasonal['batch_size'],
     "batch_size_resid": best_params_resid['batch_size'],
-    "observation_period_num": observation_period_num,
+    "observation_period_num": best_params_trend['observation_period_num'],
+    "observation_period_num": best_params_seasonal['observation_period_num'],
+    "observation_period_num": best_params_resid['observation_period_num'],
     "predict_period_num": predict_period_num
 })
 
 # Create datasets for each component (trend, seasonal, residual)
 train_data_trend, valid_data_trend = create_multivariate_dataset(
-    df_normalized_trend, observation_period_num["trend"], predict_period_num, train_rates["trend"], device)
+    df_normalized_trend, best_params_trend['observation_period_num'], predict_period_num, best_params_trend['train_rates'], device)
 train_data_seasonal, valid_data_seasonal = create_multivariate_dataset(
-    df_normalized_seasonal, observation_period_num["seasonal"], predict_period_num, train_rates["seasonal"], device)
+    df_normalized_seasonal, best_params_seasonal['observation_period_num'], predict_period_num, best_params_seasonal['train_rates'], device)
 train_data_resid, valid_data_resid = create_multivariate_dataset(
-    df_normalized_resid, observation_period_num["resid"], predict_period_num, train_rates["resid"], device)
+    df_normalized_resid, best_params_resid['observation_period_num'], predict_period_num, best_params_resid['train_rates'], device)
 
 # Training loop
 for epoch in range(epochs):
     # Train trend model
     model_trend, train_loss_trend, valid_loss_trend = train(
-        #model_trend, train_data_trend, valid_data_trend, optimizer_trend, criterion, scheduler_trend, """best_params_trend['batch_size']"""39, observation_period_num['trend'])
-        model_trend, train_data_trend, valid_data_trend, optimizer_trend, criterion, scheduler_trend, 39, observation_period_num['trend'])
+        model_trend, train_data_trend, valid_data_trend, optimizer_trend, criterion, scheduler_trend, best_params_trend['batch_size'], best_params_trend['observation_period_num'])
     
     # Train seasonal model
     model_seasonal, train_loss_seasonal, valid_loss_seasonal = train(
-        #model_seasonal, train_data_seasonal, valid_data_seasonal, optimizer_seasonal, criterion, scheduler_seasonal, """best_params_seasonal['batch_size']"""139, observation_period_num['seasonal'])
-        model_seasonal, train_data_seasonal, valid_data_seasonal, optimizer_seasonal, criterion, scheduler_seasonal, 139, observation_period_num['seasonal'])
+        model_seasonal, train_data_seasonal, valid_data_seasonal, optimizer_seasonal, criterion, scheduler_seasonal, best_params_seasonal['batch_size'], best_params_seasonal['observation_period_num'])
     
     # Train residual model
     model_resid, train_loss_resid, valid_loss_resid = train(
-        #model_resid, train_data_resid, valid_data_resid, optimizer_resid, criterion, scheduler_resid, """best_params_resid['batch_size']"""179, observation_period_num['resid'])
-        model_resid, train_data_resid, valid_data_resid, optimizer_resid, criterion, scheduler_resid, 179, observation_period_num['resid'])
-
+        model_resid, train_data_resid, valid_data_resid, optimizer_resid, criterion, scheduler_resid, best_params_resid['batch_size'], best_params_resid['observation_period_num'])
 
     print(f"Epoch {epoch+1}/{epochs}, (Training | Validation) Trend Loss: {train_loss_trend:.4f} | {valid_loss_trend:.4f}, "
       f"Seasonal Loss: {train_loss_seasonal:.4f} | {valid_loss_seasonal:.4f}, "

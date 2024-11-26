@@ -1,0 +1,374 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978591
+2012-05-21   16.909506
+2012-05-22   16.779655
+2012-05-23   17.189083
+2012-05-24   17.031218
+...                ...
+2023-05-24  170.546951
+2023-05-25  171.688324
+2023-05-26  174.109955
+2023-05-30  175.965866
+2023-05-31  175.916260
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:104: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用
+{'AAPL': Date
+2012-05-18     18.353259
+2012-05-21     18.337501
+2012-05-22     18.321753
+2012-05-23     18.306016
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245419
+2023-05-25    161.302991
+2023-05-26    161.360558
+2023-05-30    161.418122
+2023-05-31    161.475682
+Name: trend, Length: 2776, dtype: float64, 'DTWEXBGS': Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64, 'VIXCLS': Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64, 'DFII10': Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64, 'T10Y2Y': Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64}
+AAPLにあるが他のデータ1にはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+他のデータ1にあるがAAPLにはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+Price      BB_Upper BB_Lower BB_Middle MACD MACD_Signal MACD_Diff RSI SMA_50 SMA_200
+Ticker
+Date
+2012-05-18      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-21      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-22      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-23      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-24      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+dict_items([('AAPL', Date
+2012-05-18     18.353259
+2012-05-21     18.337501
+2012-05-22     18.321753
+2012-05-23     18.306016
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245419
+2023-05-25    161.302991
+2023-05-26    161.360558
+2023-05-30    161.418122
+2023-05-31    161.475682
+Name: trend, Length: 2776, dtype: float64), ('DTWEXBGS', Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64), ('VIXCLS', Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64), ('DFII10', Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64), ('T10Y2Y', Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64)])
+{'AAPL': Date
+2013-03-07     15.555098
+2013-03-08     15.542718
+2013-03-11     15.530341
+2013-03-12     15.517967
+2013-03-13     15.505595
+                 ...
+2023-05-24    161.245419
+2023-05-25    161.302991
+2023-05-26    161.360558
+2023-05-30    161.418122
+2023-05-31    161.475682
+Name: trend, Length: 2577, dtype: float64, 'DTWEXBGS': Date
+2013-03-07     92.5462
+2013-03-08     92.6252
+2013-03-11     92.5351
+2013-03-12     92.3853
+2013-03-13     92.4709
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2577, dtype: float64, 'VIXCLS': Date
+2013-03-07    13.06
+2013-03-08    12.59
+2013-03-11    11.56
+2013-03-12    12.27
+2013-03-13    11.83
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2577, dtype: float64, 'DFII10': Date
+2013-03-07   -0.56
+2013-03-08   -0.50
+2013-03-11   -0.50
+2013-03-12   -0.52
+2013-03-13   -0.52
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2577, dtype: float64, 'T10Y2Y': Date
+2013-03-07    1.75
+2013-03-08    1.79
+2013-03-11    1.80
+2013-03-12    1.76
+2013-03-13    1.77
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2577, dtype: float64, 'BB_Upper': Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    175.360198
+2023-05-25    175.401887
+2023-05-26    175.825128
+2023-05-30    176.541933
+2023-05-31    177.020403
+Name: BB_Upper, Length: 2776, dtype: float64, 'BB_Lower': Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    165.081602
+2023-05-25    165.517555
+2023-05-26    165.688249
+2023-05-30    165.759890
+2023-05-31    166.168970
+Name: BB_Lower, Length: 2776, dtype: float64, 'BB_Middle': Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    170.220900
+2023-05-25    170.459721
+2023-05-26    170.756689
+2023-05-30    171.150912
+2023-05-31    171.594687
+Name: BB_Middle, Length: 2776, dtype: float64, 'MACD': Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24    2.332940
+2023-05-25    2.209844
+2023-05-26    2.281396
+2023-05-30    2.459506
+2023-05-31    2.567066
+Name: MACD, Length: 2776, dtype: float64, 'MACD_Signal': Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24    2.724340
+2023-05-25    2.621441
+2023-05-26    2.553432
+2023-05-30    2.534647
+2023-05-31    2.541131
+Name: MACD_Signal, Length: 2776, dtype: float64, 'MACD_Diff': Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24   -0.391400
+2023-05-25   -0.411597
+2023-05-26   -0.272036
+2023-05-30   -0.075140
+2023-05-31    0.025935
+Name: MACD_Diff, Length: 2776, dtype: float64, 'RSI': Date
+2012-05-18          NaN
+2012-05-21          NaN
+2012-05-22          NaN
+2012-05-23          NaN
+2012-05-24          NaN
+                ...
+2023-05-24    55.867139
+2023-05-25    58.637803
+2023-05-26    63.826701
+2023-05-30    67.220653
+2023-05-31    67.039597
+Name: RSI, Length: 2776, dtype: float64, 'SMA_50': Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    164.409243
+2023-05-25    164.810428
+2023-05-26    165.203355
+2023-05-30    165.650248
+2023-05-31    166.048577
+Name: SMA_50, Length: 2776, dtype: float64, 'SMA_200': Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    150.685262
+2023-05-25    150.729036
+2023-05-26    150.763579
+2023-05-30    150.811106
+2023-05-31    150.840552
+Name: SMA_200, Length: 2776, dtype: float64}
+AAPLにあるが他のデータ1にはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+AAPL null values:
+0
+DTWEXBGS null values:
+0
+VIXCLS null values:
+0
+DFII10 null values:
+0
+T10Y2Y null values:
+0
+BB_Upper null values:
+19
+BB_Lower null values:
+19
+BB_Middle null values:
+19
+MACD null values:
+25
+MACD_Signal null values:
+33
+MACD_Diff null values:
+33
+RSI null values:
+13
+SMA_50 null values:
+49
+SMA_200 null values:
+199
+[32m[I 2024-11-17 16:55:45,036][0m A new study created in memory with name: no-name-50513dd2-b111-49f5-9a31-f3ce827d6329[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[33m[W 2024-11-17 16:55:48,417][0m Trial 0 failed with parameters: {'observation_period_num': 103, 'train_rates': 0.7644135033927846, 'learning_rate': 0.0001649115873444314, 'batch_size': 18, 'step_size': 4, 'gamma': 0.8175631066396842, 'depth': 2, 'dim': 182} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 16:55:48,417][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-17 16:55:48,418][0m A new study created in memory with name: no-name-5e9f5968-7784-453d-9a9d-d31ac0d09b0c[0m
+[33m[W 2024-11-17 16:55:49,416][0m Trial 0 failed with parameters: {'observation_period_num': 72, 'train_rates': 0.8565863509567342, 'learning_rate': 1.621639720275796e-06, 'batch_size': 234, 'step_size': 5, 'gamma': 0.7796921567818565, 'depth': 6, 'dim': 203} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 16:55:49,417][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-17 16:55:49,417][0m A new study created in memory with name: no-name-a231d86c-1a02-4402-acd1-7b3f4c962991[0m
+[33m[W 2024-11-17 16:55:53,094][0m Trial 0 failed with parameters: {'observation_period_num': 152, 'train_rates': 0.8827918619665317, 'learning_rate': 2.3803282186248363e-05, 'batch_size': 18, 'step_size': 13, 'gamma': 0.9052592093085617, 'depth': 6, 'dim': 127} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 16:55:53,094][0m Trial 0 failed with value nan.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 261, in <module>
+    print("Best hyperparameters (trend):", study_trend.best_params)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 119, in best_params
+    return self.best_trial.params
+           ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 162, in best_trial
+    best_trial = self._storage.get_best_trial(self._study_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/storages/_in_memory.py", line 232, in get_best_trial
+    raise ValueError("No trials are completed yet.")
+ValueError: No trials are completed yet.

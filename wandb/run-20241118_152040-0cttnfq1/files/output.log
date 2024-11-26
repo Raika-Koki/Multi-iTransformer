@@ -1,0 +1,118 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978595
+2012-05-21   16.909502
+2012-05-22   16.779661
+2012-05-23   17.189083
+2012-05-24   17.031221
+...                ...
+2023-05-24  170.546967
+2023-05-25  171.688309
+2023-05-26  174.109955
+2023-05-30  175.965881
+2023-05-31  175.916260
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:97: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用して補完
+Price         BB_Upper    BB_Lower   BB_Middle      MACD MACD_Signal MACD_Diff        RSI      SMA_50     SMA_200
+Ticker
+Date
+2023-05-24  175.360194  165.081599  170.220896  2.332939    2.724338 -0.391399  55.867178  164.409242  150.685265
+2023-05-25  175.401885  165.517545  170.459715  2.209842    2.621439 -0.411597  58.637764  164.810426  150.729039
+2023-05-26  175.825127  165.688240  170.756683  2.281395    2.553430 -0.272035  63.826691  165.203353  150.763581
+2023-05-30  176.541936  165.759878  171.150907  2.459507    2.534646 -0.075138  67.220664  165.650247  150.811108
+2023-05-31  177.020406  166.168960  171.594683  2.567067    2.541130  0.025937  67.039553  166.048575  150.840554
+AAPL null values:
+0
+DTWEXBGS null values:
+0
+VIXCLS null values:
+0
+DFII10 null values:
+0
+T10Y2Y null values:
+0
+Volume null values:
+0
+BB_Upper null values:
+0
+BB_Lower null values:
+0
+BB_Middle null values:
+0
+MACD null values:
+0
+MACD_Signal null values:
+0
+MACD_Diff null values:
+0
+RSI null values:
+0
+SMA_50 null values:
+0
+SMA_200 null values:
+0
+[32m[I 2024-11-18 15:20:49,295][0m A new study created in memory with name: no-name-f78506a9-9048-444e-bd42-59d8ebaa88c6[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-18 15:20:53,719][0m Trial 0 finished with value: 3.0520842586244856 and parameters: {'observation_period_num': 203, 'train_rates': 0.9768141064545518, 'learning_rate': 3.346263443943587e-06, 'batch_size': 25, 'step_size': 7, 'gamma': 0.8061345115668148, 'depth': 5, 'dim': 30}. Best is trial 0 with value: 3.0520842586244856.[0m
+[32m[I 2024-11-18 15:20:53,720][0m A new study created in memory with name: no-name-070d5b8a-8db9-41e9-af0f-bb46dc902464[0m
+[33m[W 2024-11-18 15:20:54,851][0m Trial 0 failed with parameters: {'observation_period_num': 116, 'train_rates': 0.9621968274216871, 'learning_rate': 0.0008036963925474177, 'batch_size': 156, 'step_size': 9, 'gamma': 0.8681959723455313, 'depth': 3, 'dim': 248} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 254, in <lambda>
+    study_seasonal.optimize(lambda trial: objective(trial, "seasonal"), n_trials=1)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 240, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2024-11-18 15:20:54,856][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 254, in <module>
+    study_seasonal.optimize(lambda trial: objective(trial, "seasonal"), n_trials=1)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 254, in <lambda>
+    study_seasonal.optimize(lambda trial: objective(trial, "seasonal"), n_trials=1)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 240, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

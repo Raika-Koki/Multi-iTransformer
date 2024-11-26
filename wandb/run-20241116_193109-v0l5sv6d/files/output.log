@@ -1,0 +1,37 @@
+Using device: cuda
+API Key: e97e29275507b84c5aa4ebd93c7ea613
+[*********************100%***********************]  1 of 1 completed
+Ticker                           AAPL
+Date
+2012-05-18 00:00:00+00:00   15.978588
+2012-05-21 00:00:00+00:00   16.909512
+2012-05-22 00:00:00+00:00   16.779659
+2012-05-23 00:00:00+00:00   17.189085
+2012-05-24 00:00:00+00:00   17.031218
+...                               ...
+2023-05-24 00:00:00+00:00  170.546967
+2023-05-25 00:00:00+00:00  171.688293
+2023-05-26 00:00:00+00:00  174.109955
+2023-05-30 00:00:00+00:00  175.965881
+2023-05-31 00:00:00+00:00  175.916229
+
+[2776 rows x 1 columns]
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 92, in <module>
+    combined_df_trend = pd.DataFrame(dataframes_trend)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/frame.py", line 778, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 503, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 114, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/construction.py", line 670, in _extract_index
+    index = union_indexes(indexes)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/api.py", line 295, in union_indexes
+    raise TypeError("Cannot join tz-naive with tz-aware DatetimeIndex")
+TypeError: Cannot join tz-naive with tz-aware DatetimeIndex

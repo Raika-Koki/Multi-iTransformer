@@ -1,0 +1,493 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978598
+2012-05-21   16.909510
+2012-05-22   16.779657
+2012-05-23   17.189085
+2012-05-24   17.031218
+...                ...
+2023-05-24  170.546967
+2023-05-25  171.688293
+2023-05-26  174.109940
+2023-05-30  175.965866
+2023-05-31  175.916275
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:104: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用
+{'AAPL': Date
+2012-05-18     18.353259
+2012-05-21     18.337500
+2012-05-22     18.321752
+2012-05-23     18.306015
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245435
+2023-05-25    161.303007
+2023-05-26    161.360574
+2023-05-30    161.418138
+2023-05-31    161.475698
+Name: trend, Length: 2776, dtype: float64, 'DTWEXBGS': Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64, 'VIXCLS': Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64, 'DFII10': Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64, 'T10Y2Y': Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64}
+AAPLにあるが他のデータ1にはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+他のデータ1にあるがAAPLにはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+Price      BB_Upper BB_Lower BB_Middle MACD MACD_Signal MACD_Diff RSI SMA_50 SMA_200
+Ticker
+Date
+2012-05-18      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-21      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-22      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-23      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-24      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+dict_items([('AAPL', Date
+2012-05-18     18.353259
+2012-05-21     18.337500
+2012-05-22     18.321752
+2012-05-23     18.306015
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245435
+2023-05-25    161.303007
+2023-05-26    161.360574
+2023-05-30    161.418138
+2023-05-31    161.475698
+Name: trend, Length: 2776, dtype: float64), ('DTWEXBGS', Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64), ('VIXCLS', Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64), ('DFII10', Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64), ('T10Y2Y', Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64), ('BB_Upper', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    175.360192
+2023-05-25    175.401880
+2023-05-26    175.825120
+2023-05-30    176.541928
+2023-05-31    177.020401
+Name: BB_Upper, Length: 2776, dtype: float64), ('BB_Lower', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    165.081601
+2023-05-25    165.517550
+2023-05-26    165.688242
+2023-05-30    165.759878
+2023-05-31    166.168961
+Name: BB_Lower, Length: 2776, dtype: float64), ('BB_Middle', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    170.220896
+2023-05-25    170.459715
+2023-05-26    170.756681
+2023-05-30    171.150903
+2023-05-31    171.594681
+Name: BB_Middle, Length: 2776, dtype: float64), ('MACD', Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24    2.332939
+2023-05-25    2.209841
+2023-05-26    2.281393
+2023-05-30    2.459504
+2023-05-31    2.567066
+Name: MACD, Length: 2776, dtype: float64), ('MACD_Signal', Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24    2.724337
+2023-05-25    2.621438
+2023-05-26    2.553429
+2023-05-30    2.534644
+2023-05-31    2.541128
+Name: MACD_Signal, Length: 2776, dtype: float64), ('MACD_Diff', Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24   -0.391398
+2023-05-25   -0.411597
+2023-05-26   -0.272036
+2023-05-30   -0.075140
+2023-05-31    0.025937
+Name: MACD_Diff, Length: 2776, dtype: float64), ('RSI', Date
+2012-05-18          NaN
+2012-05-21          NaN
+2012-05-22          NaN
+2012-05-23          NaN
+2012-05-24          NaN
+                ...
+2023-05-24    55.867185
+2023-05-25    58.637739
+2023-05-26    63.826678
+2023-05-30    67.220658
+2023-05-31    67.039658
+Name: RSI, Length: 2776, dtype: float64), ('SMA_50', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    164.409243
+2023-05-25    164.810427
+2023-05-26    165.203353
+2023-05-30    165.650247
+2023-05-31    166.048576
+Name: SMA_50, Length: 2776, dtype: float64), ('SMA_200', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    150.685263
+2023-05-25    150.729037
+2023-05-26    150.763579
+2023-05-30    150.811106
+2023-05-31    150.840552
+Name: SMA_200, Length: 2776, dtype: float64)])
+{'AAPL': Date
+2013-03-07     15.555098
+2013-03-08     15.542718
+2013-03-11     15.530341
+2013-03-12     15.517967
+2013-03-13     15.505595
+                 ...
+2023-05-24    161.245435
+2023-05-25    161.303007
+2023-05-26    161.360574
+2023-05-30    161.418138
+2023-05-31    161.475698
+Name: trend, Length: 2577, dtype: float64, 'DTWEXBGS': Date
+2013-03-07     92.5462
+2013-03-08     92.6252
+2013-03-11     92.5351
+2013-03-12     92.3853
+2013-03-13     92.4709
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2577, dtype: float64, 'VIXCLS': Date
+2013-03-07    13.06
+2013-03-08    12.59
+2013-03-11    11.56
+2013-03-12    12.27
+2013-03-13    11.83
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2577, dtype: float64, 'DFII10': Date
+2013-03-07   -0.56
+2013-03-08   -0.50
+2013-03-11   -0.50
+2013-03-12   -0.52
+2013-03-13   -0.52
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2577, dtype: float64, 'T10Y2Y': Date
+2013-03-07    1.75
+2013-03-08    1.79
+2013-03-11    1.80
+2013-03-12    1.76
+2013-03-13    1.77
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2577, dtype: float64, 'BB_Upper': Date
+2013-03-07     14.800103
+2013-03-08     14.740505
+2013-03-11     14.622185
+2013-03-12     14.451162
+2013-03-13     14.346884
+                 ...
+2023-05-24    175.360192
+2023-05-25    175.401880
+2023-05-26    175.825120
+2023-05-30    176.541928
+2023-05-31    177.020401
+Name: BB_Upper, Length: 2577, dtype: float64, 'BB_Lower': Date
+2013-03-07     12.732895
+2013-03-08     12.680908
+2013-03-11     12.685778
+2013-03-12     12.699359
+2013-03-13     12.682727
+                 ...
+2023-05-24    165.081601
+2023-05-25    165.517550
+2023-05-26    165.688242
+2023-05-30    165.759878
+2023-05-31    166.168961
+Name: BB_Lower, Length: 2577, dtype: float64, 'BB_Middle': Date
+2013-03-07     13.766499
+2013-03-08     13.710706
+2013-03-11     13.653981
+2013-03-12     13.575260
+2013-03-13     13.514806
+                 ...
+2023-05-24    170.220896
+2023-05-25    170.459715
+2023-05-26    170.756681
+2023-05-30    171.150903
+2023-05-31    171.594681
+Name: BB_Middle, Length: 2577, dtype: float64, 'MACD': Date
+2013-03-07   -0.411427
+2013-03-08   -0.396536
+2013-03-11   -0.365352
+2013-03-12   -0.359778
+2013-03-13   -0.351506
+                ...
+2023-05-24    2.332939
+2023-05-25    2.209841
+2023-05-26    2.281393
+2023-05-30    2.459504
+2023-05-31    2.567066
+Name: MACD, Length: 2577, dtype: float64, 'MACD_Signal': Date
+2013-03-07   -0.389184
+2013-03-08   -0.390654
+2013-03-11   -0.385594
+2013-03-12   -0.380430
+2013-03-13   -0.374646
+                ...
+2023-05-24    2.724337
+2023-05-25    2.621438
+2023-05-26    2.553429
+2023-05-30    2.534644
+2023-05-31    2.541128
+Name: MACD_Signal, Length: 2577, dtype: float64, 'MACD_Diff': Date
+2013-03-07   -0.022243
+2013-03-08   -0.005882
+2013-03-11    0.020242
+2013-03-12    0.020653
+2013-03-13    0.023140
+                ...
+2023-05-24   -0.391398
+2023-05-25   -0.411597
+2023-05-26   -0.272036
+2023-05-30   -0.075140
+2023-05-31    0.025937
+Name: MACD_Diff, Length: 2577, dtype: float64, 'RSI': Date
+2013-03-07    38.423615
+2013-03-08    39.155837
+2013-03-11    43.087738
+2013-03-12    38.929247
+2013-03-13    38.894982
+                ...
+2023-05-24    55.867185
+2023-05-25    58.637739
+2023-05-26    63.826678
+2023-05-30    67.220658
+2023-05-31    67.039658
+Name: RSI, Length: 2577, dtype: float64, 'SMA_50': Date
+2013-03-07     14.536961
+2013-03-08     14.484723
+2013-03-11     14.440604
+2013-03-12     14.389461
+2013-03-13     14.341594
+                 ...
+2023-05-24    164.409243
+2023-05-25    164.810427
+2023-05-26    165.203353
+2023-05-30    165.650247
+2023-05-31    166.048576
+Name: SMA_50, Length: 2577, dtype: float64, 'SMA_200': Date
+2013-03-07     17.349991
+2013-03-08     17.336089
+2013-03-11     17.318473
+2013-03-12     17.300063
+2013-03-13     17.279594
+                 ...
+2023-05-24    150.685263
+2023-05-25    150.729037
+2023-05-26    150.763579
+2023-05-30    150.811106
+2023-05-31    150.840552
+Name: SMA_200, Length: 2577, dtype: float64}
+AAPLにあるが他のデータ1にはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+[32m[I 2024-11-17 03:15:42,705][0m A new study created in memory with name: no-name-1de7559f-76f6-4399-8e86-9e92dcadb0cc[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-17 03:16:10,354][0m Trial 0 finished with value: 1.1507849590909993 and parameters: {'observation_period_num': 169, 'train_rates': 0.9324241811389422, 'learning_rate': 1.9941704529653222e-06, 'batch_size': 133, 'step_size': 13, 'gamma': 0.868126213720075, 'depth': 3, 'dim': 67}. Best is trial 0 with value: 1.1507849590909993.[0m
+[32m[I 2024-11-17 03:16:10,354][0m A new study created in memory with name: no-name-4865c3e1-e9bc-4647-9801-be11dbab4d07[0m
+[33m[W 2024-11-17 03:16:46,058][0m Trial 0 failed with parameters: {'observation_period_num': 45, 'train_rates': 0.9614681626596049, 'learning_rate': 6.1930033958734455e-06, 'batch_size': 76, 'step_size': 13, 'gamma': 0.9779497965133034, 'depth': 2, 'dim': 60} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 03:16:46,058][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-17 03:16:46,059][0m A new study created in memory with name: no-name-f763e848-f5df-489e-95e1-0274235ea2c7[0m
+[33m[W 2024-11-17 03:16:49,752][0m Trial 0 failed with parameters: {'observation_period_num': 199, 'train_rates': 0.7854881440723471, 'learning_rate': 0.00020717560165587186, 'batch_size': 66, 'step_size': 10, 'gamma': 0.9245488786681069, 'depth': 6, 'dim': 35} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 245, in <lambda>
+    study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=1)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 228, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2024-11-17 03:16:49,762][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 245, in <module>
+    study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=1)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 245, in <lambda>
+    study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=1)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 228, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

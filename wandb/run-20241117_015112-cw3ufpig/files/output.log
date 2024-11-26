@@ -1,0 +1,125 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978591
+2012-05-21   16.909496
+2012-05-22   16.779661
+2012-05-23   17.189077
+2012-05-24   17.031219
+...                ...
+2023-05-24  170.546967
+2023-05-25  171.688309
+2023-05-26  174.109955
+2023-05-30  175.965881
+2023-05-31  175.916245
+
+[2776 rows x 1 columns]
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+2023-06-01    120.2628
+Length: 2744, dtype: float64
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-26    17.95
+2023-05-29    17.46
+2023-05-30    17.46
+2023-05-31    17.94
+2023-06-01    15.65
+Length: 2785, dtype: float64
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+2023-06-01    1.45
+Length: 2760, dtype: float64
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+2023-06-01   -0.72
+Length: 2760, dtype: float64
+AAPLにあるが他のデータ1にはない日付:
+DatetimeIndex(['2012-10-08', '2012-11-12', '2013-03-06', '2013-10-14',
+               '2013-11-11', '2013-12-10', '2014-02-13', '2014-02-21',
+               '2014-03-03', '2014-03-17', '2014-10-13', '2014-11-11',
+               '2014-12-26', '2015-02-17', '2015-03-05', '2015-10-12',
+               '2015-11-11', '2016-01-22', '2016-01-25', '2016-01-26',
+               '2016-10-10', '2016-11-11', '2017-01-20', '2017-10-09',
+               '2017-11-10', '2018-03-02', '2018-03-21', '2018-10-08',
+               '2018-11-12', '2019-01-14', '2019-02-20', '2019-10-14',
+               '2019-11-11', '2019-12-24', '2020-10-12', '2020-11-11',
+               '2020-11-27', '2020-12-24', '2021-01-20', '2021-10-11',
+               '2021-11-11', '2021-12-31', '2022-10-10', '2022-11-11'],
+              dtype='datetime64[ns]', freq=None)
+Traceback (most recent call last):
+  File "index.pyx", line 609, in pandas._libs.index.DatetimeEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2606, in pandas._libs.hashtable.Int64HashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2630, in pandas._libs.hashtable.Int64HashTable.get_item
+KeyError: 1349654400000000000
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 577, in pandas._libs.index.DatetimeEngine.get_loc
+  File "index.pyx", line 611, in pandas._libs.index.DatetimeEngine.get_loc
+KeyError: Timestamp('2012-10-08 00:00:00')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/datetimes.py", line 630, in get_loc
+    return Index.get_loc(self, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: Timestamp('2012-10-08 00:00:00')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 99, in <module>
+    print(dataframes_trend['DTWEXBGS'].loc['2012-10-08'])
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1191, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1431, in _getitem_axis
+    return self._get_label(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1381, in _get_label
+    return self.obj.xs(label, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/generic.py", line 4301, in xs
+    loc = index.get_loc(key)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/datetimes.py", line 632, in get_loc
+    raise KeyError(orig_key) from err
+KeyError: '2012-10-08'

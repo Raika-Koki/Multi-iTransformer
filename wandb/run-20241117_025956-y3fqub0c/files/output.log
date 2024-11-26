@@ -1,0 +1,501 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978596
+2012-05-21   16.909512
+2012-05-22   16.779663
+2012-05-23   17.189085
+2012-05-24   17.031219
+...                ...
+2023-05-24  170.546951
+2023-05-25  171.688324
+2023-05-26  174.109955
+2023-05-30  175.965881
+2023-05-31  175.916245
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:104: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用
+{'AAPL': Date
+2012-05-18     18.353259
+2012-05-21     18.337500
+2012-05-22     18.321752
+2012-05-23     18.306015
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245450
+2023-05-25    161.303022
+2023-05-26    161.360590
+2023-05-30    161.418154
+2023-05-31    161.475714
+Name: trend, Length: 2776, dtype: float64, 'DTWEXBGS': Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64, 'VIXCLS': Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64, 'DFII10': Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64, 'T10Y2Y': Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64}
+AAPLにあるが他のデータ1にはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+他のデータ1にあるがAAPLにはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+Price        BB_Upper   BB_Lower  BB_Middle      MACD MACD_Signal MACD_Diff        RSI     SMA_50    SMA_200
+Ticker
+Date
+2012-05-18        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-21        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-22        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-23        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-24        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+...               ...        ...        ...       ...         ...       ...        ...        ...        ...
+2013-03-01  14.677094  13.140850  13.908972 -0.369112   -0.353563 -0.015549  33.353502  14.770323        NaN
+2013-03-04  14.759455  12.963897  13.861676 -0.410699   -0.364990 -0.045709  29.978297  14.702603        NaN
+2013-03-05  14.777594  12.919413  13.848504 -0.411556   -0.374303 -0.037252  37.255726  14.646278        NaN
+2013-03-06  14.800249  12.806490  13.803370 -0.420901   -0.383623 -0.037278  35.303236  14.589387        NaN
+2013-03-07  14.800106  12.732895  13.766501 -0.411427   -0.389184 -0.022244  38.423464  14.536962  17.349992
+
+[200 rows x 9 columns]
+dict_items([('AAPL', Date
+2012-05-18     18.353259
+2012-05-21     18.337500
+2012-05-22     18.321752
+2012-05-23     18.306015
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245450
+2023-05-25    161.303022
+2023-05-26    161.360590
+2023-05-30    161.418154
+2023-05-31    161.475714
+Name: trend, Length: 2776, dtype: float64), ('DTWEXBGS', Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64), ('VIXCLS', Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64), ('DFII10', Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64), ('T10Y2Y', Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64), ('BB_Upper', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    175.360193
+2023-05-25    175.401883
+2023-05-26    175.825126
+2023-05-30    176.541935
+2023-05-31    177.020403
+Name: BB_Upper, Length: 2776, dtype: float64), ('BB_Lower', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    165.081599
+2023-05-25    165.517552
+2023-05-26    165.688243
+2023-05-30    165.759881
+2023-05-31    166.168961
+Name: BB_Lower, Length: 2776, dtype: float64), ('BB_Middle', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    170.220896
+2023-05-25    170.459718
+2023-05-26    170.756684
+2023-05-30    171.150908
+2023-05-31    171.594682
+Name: BB_Middle, Length: 2776, dtype: float64), ('MACD', Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24    2.332938
+2023-05-25    2.209843
+2023-05-26    2.281395
+2023-05-30    2.459508
+2023-05-31    2.567066
+Name: MACD, Length: 2776, dtype: float64), ('MACD_Signal', Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24    2.724338
+2023-05-25    2.621439
+2023-05-26    2.553430
+2023-05-30    2.534646
+2023-05-31    2.541130
+Name: MACD_Signal, Length: 2776, dtype: float64), ('MACD_Diff', Date
+2012-05-18         NaN
+2012-05-21         NaN
+2012-05-22         NaN
+2012-05-23         NaN
+2012-05-24         NaN
+                ...
+2023-05-24   -0.391400
+2023-05-25   -0.411597
+2023-05-26   -0.272035
+2023-05-30   -0.075138
+2023-05-31    0.025936
+Name: MACD_Diff, Length: 2776, dtype: float64), ('RSI', Date
+2012-05-18          NaN
+2012-05-21          NaN
+2012-05-22          NaN
+2012-05-23          NaN
+2012-05-24          NaN
+                ...
+2023-05-24    55.867134
+2023-05-25    58.637790
+2023-05-26    63.826676
+2023-05-30    67.220648
+2023-05-31    67.039481
+Name: RSI, Length: 2776, dtype: float64), ('SMA_50', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    164.409241
+2023-05-25    164.810426
+2023-05-26    165.203353
+2023-05-30    165.650247
+2023-05-31    166.048575
+Name: SMA_50, Length: 2776, dtype: float64), ('SMA_200', Date
+2012-05-18           NaN
+2012-05-21           NaN
+2012-05-22           NaN
+2012-05-23           NaN
+2012-05-24           NaN
+                 ...
+2023-05-24    150.685263
+2023-05-25    150.729037
+2023-05-26    150.763579
+2023-05-30    150.811106
+2023-05-31    150.840553
+Name: SMA_200, Length: 2776, dtype: float64)])
+{'AAPL': Date
+2013-03-07     15.555098
+2013-03-08     15.542718
+2013-03-11     15.530342
+2013-03-12     15.517967
+2013-03-13     15.505595
+                 ...
+2023-05-24    161.245450
+2023-05-25    161.303022
+2023-05-26    161.360590
+2023-05-30    161.418154
+2023-05-31    161.475714
+Name: trend, Length: 2577, dtype: float64, 'DTWEXBGS': Date
+2013-03-07     92.5462
+2013-03-08     92.6252
+2013-03-11     92.5351
+2013-03-12     92.3853
+2013-03-13     92.4709
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2577, dtype: float64, 'VIXCLS': Date
+2013-03-07    13.06
+2013-03-08    12.59
+2013-03-11    11.56
+2013-03-12    12.27
+2013-03-13    11.83
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2577, dtype: float64, 'DFII10': Date
+2013-03-07   -0.56
+2013-03-08   -0.50
+2013-03-11   -0.50
+2013-03-12   -0.52
+2013-03-13   -0.52
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2577, dtype: float64, 'T10Y2Y': Date
+2013-03-07    1.75
+2013-03-08    1.79
+2013-03-11    1.80
+2013-03-12    1.76
+2013-03-13    1.77
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2577, dtype: float64, 'BB_Upper': Date
+2013-03-07     14.800106
+2013-03-08     14.740508
+2013-03-11     14.622187
+2013-03-12     14.451164
+2013-03-13     14.346887
+                 ...
+2023-05-24    175.360193
+2023-05-25    175.401883
+2023-05-26    175.825126
+2023-05-30    176.541935
+2023-05-31    177.020403
+Name: BB_Upper, Length: 2577, dtype: float64, 'BB_Lower': Date
+2013-03-07     12.732895
+2013-03-08     12.680908
+2013-03-11     12.685777
+2013-03-12     12.699358
+2013-03-13     12.682726
+                 ...
+2023-05-24    165.081599
+2023-05-25    165.517552
+2023-05-26    165.688243
+2023-05-30    165.759881
+2023-05-31    166.168961
+Name: BB_Lower, Length: 2577, dtype: float64, 'BB_Middle': Date
+2013-03-07     13.766501
+2013-03-08     13.710708
+2013-03-11     13.653982
+2013-03-12     13.575261
+2013-03-13     13.514806
+                 ...
+2023-05-24    170.220896
+2023-05-25    170.459718
+2023-05-26    170.756684
+2023-05-30    171.150908
+2023-05-31    171.594682
+Name: BB_Middle, Length: 2577, dtype: float64, 'MACD': Date
+2013-03-07   -0.411427
+2013-03-08   -0.396536
+2013-03-11   -0.365352
+2013-03-12   -0.359779
+2013-03-13   -0.351507
+                ...
+2023-05-24    2.332938
+2023-05-25    2.209843
+2023-05-26    2.281395
+2023-05-30    2.459508
+2023-05-31    2.567066
+Name: MACD, Length: 2577, dtype: float64, 'MACD_Signal': Date
+2013-03-07   -0.389184
+2013-03-08   -0.390654
+2013-03-11   -0.385594
+2013-03-12   -0.380431
+2013-03-13   -0.374646
+                ...
+2023-05-24    2.724338
+2023-05-25    2.621439
+2023-05-26    2.553430
+2023-05-30    2.534646
+2023-05-31    2.541130
+Name: MACD_Signal, Length: 2577, dtype: float64, 'MACD_Diff': Date
+2013-03-07   -0.022244
+2013-03-08   -0.005882
+2013-03-11    0.020241
+2013-03-12    0.020652
+2013-03-13    0.023139
+                ...
+2023-05-24   -0.391400
+2023-05-25   -0.411597
+2023-05-26   -0.272035
+2023-05-30   -0.075138
+2023-05-31    0.025936
+Name: MACD_Diff, Length: 2577, dtype: float64, 'RSI': Date
+2013-03-07    38.423464
+2013-03-08    39.155735
+2013-03-11    43.087509
+2013-03-12    38.929083
+2013-03-13    38.894830
+                ...
+2023-05-24    55.867134
+2023-05-25    58.637790
+2023-05-26    63.826676
+2023-05-30    67.220648
+2023-05-31    67.039481
+Name: RSI, Length: 2577, dtype: float64, 'SMA_50': Date
+2013-03-07     14.536962
+2013-03-08     14.484724
+2013-03-11     14.440605
+2013-03-12     14.389462
+2013-03-13     14.341595
+                 ...
+2023-05-24    164.409241
+2023-05-25    164.810426
+2023-05-26    165.203353
+2023-05-30    165.650247
+2023-05-31    166.048575
+Name: SMA_50, Length: 2577, dtype: float64, 'SMA_200': Date
+2013-03-07     17.349992
+2013-03-08     17.336090
+2013-03-11     17.318474
+2013-03-12     17.300064
+2013-03-13     17.279595
+                 ...
+2023-05-24    150.685263
+2023-05-25    150.729037
+2023-05-26    150.763579
+2023-05-30    150.811106
+2023-05-31    150.840553
+Name: SMA_200, Length: 2577, dtype: float64}
+[32m[I 2024-11-17 03:00:05,631][0m A new study created in memory with name: no-name-ec13945a-c539-42c1-88bc-19dbb344a6d8[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:204: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[33m[W 2024-11-17 03:00:07,719][0m Trial 0 failed with parameters: {'learning_rate': 4.320657102733511e-06, 'batch_size': 166, 'step_size': 10, 'gamma': 0.8447637522625346, 'depth': 5, 'dim': 251} because of the following error: AssertionError().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 247, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=1)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 235, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fa136e954e0>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 167, in forward
+    assert x.shape[1:] == (self.lookback_len, self.num_variates)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+[33m[W 2024-11-17 03:00:07,723][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 247, in <module>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=1)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 247, in <lambda>
+    study_trend.optimize(lambda trial: objective(trial, "trend"), n_trials=1)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 235, in objective
+    model, train_loss, valid_loss = train(
+                                    ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fa136e954e0>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 167, in forward
+    assert x.shape[1:] == (self.lookback_len, self.num_variates)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

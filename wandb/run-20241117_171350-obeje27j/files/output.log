@@ -1,0 +1,205 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978589
+2012-05-21   16.909504
+2012-05-22   16.779667
+2012-05-23   17.189083
+2012-05-24   17.031223
+...                ...
+2023-05-24  170.546951
+2023-05-25  171.688309
+2023-05-26  174.109940
+2023-05-30  175.965897
+2023-05-31  175.916260
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:104: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用
+{'AAPL': Date
+2012-05-18     18.353260
+2012-05-21     18.337501
+2012-05-22     18.321753
+2012-05-23     18.306016
+2012-05-24     18.290290
+                 ...
+2023-05-24    161.245424
+2023-05-25    161.302996
+2023-05-26    161.360563
+2023-05-30    161.418127
+2023-05-31    161.475687
+Name: trend, Length: 2776, dtype: float64, 'DTWEXBGS': Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64, 'VIXCLS': Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64, 'DFII10': Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64, 'T10Y2Y': Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64}
+AAPLにあるが他のデータ1にはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+他のデータ1にあるがAAPLにはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+Price      BB_Upper BB_Lower BB_Middle MACD MACD_Signal MACD_Diff RSI SMA_50 SMA_200
+Ticker
+Date
+2012-05-18      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-21      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-22      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-23      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+2012-05-24      NaN      NaN       NaN  NaN         NaN       NaN NaN    NaN     NaN
+['AAPL', 'DTWEXBGS', 'VIXCLS', 'DFII10', 'T10Y2Y', 'BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200']
+dataframes_trend: dict_items([('AAPL', Date
+2012-05-18     18.353260
+2012-05-21     18.337501
+2012-05-22     18.321753
+2012-05-23     18.306016
+2012-05-24     18.290290
+                 ...
+2023-05-24    161.245424
+2023-05-25    161.302996
+2023-05-26    161.360563
+2023-05-30    161.418127
+2023-05-31    161.475687
+Name: trend, Length: 2776, dtype: float64), ('DTWEXBGS', Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64), ('VIXCLS', Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64), ('DFII10', Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64), ('T10Y2Y', Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64)])
+AAPL null values:
+0
+DTWEXBGS null values:
+0
+VIXCLS null values:
+0
+DFII10 null values:
+0
+T10Y2Y null values:
+0
+BB_Upper null values:
+19
+BB_Lower null values:
+19
+BB_Middle null values:
+19
+MACD null values:
+25
+MACD_Signal null values:
+33
+MACD_Diff null values:
+33
+RSI null values:
+13
+SMA_50 null values:
+49
+SMA_200 null values:
+199
+[32m[I 2024-11-17 17:14:00,751][0m A new study created in memory with name: no-name-eac8e59a-bd06-4e49-9cd8-6773bd631b7e[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[33m[W 2024-11-17 17:14:03,439][0m Trial 0 failed with parameters: {'observation_period_num': 121, 'train_rates': 0.892704854502228, 'learning_rate': 0.0002166412660883676, 'batch_size': 97, 'step_size': 6, 'gamma': 0.9382682013222012, 'depth': 4, 'dim': 77} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 17:14:03,440][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-17 17:14:03,440][0m A new study created in memory with name: no-name-a01f54c7-8c17-4a33-a8f5-3027f3c7c796[0m
+[33m[W 2024-11-17 17:14:04,147][0m Trial 0 failed with parameters: {'observation_period_num': 122, 'train_rates': 0.6534623485955972, 'learning_rate': 0.0006860653298236683, 'batch_size': 152, 'step_size': 6, 'gamma': 0.8944656615268606, 'depth': 2, 'dim': 248} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 17:14:04,147][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-17 17:14:04,148][0m A new study created in memory with name: no-name-971282ac-5acd-4cff-9bdf-b7e2aa251033[0m
+[33m[W 2024-11-17 17:14:04,866][0m Trial 0 failed with parameters: {'observation_period_num': 173, 'train_rates': 0.9556167915157974, 'learning_rate': 8.10920958949235e-05, 'batch_size': 176, 'step_size': 12, 'gamma': 0.9114029895704913, 'depth': 2, 'dim': 115} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 17:14:04,867][0m Trial 0 failed with value nan.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 263, in <module>
+    print("Best hyperparameters (trend):", study_trend.best_params)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 119, in best_params
+    return self.best_trial.params
+           ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 162, in best_trial
+    best_trial = self._storage.get_best_trial(self._study_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/storages/_in_memory.py", line 232, in get_best_trial
+    raise ValueError("No trials are completed yet.")
+ValueError: No trials are completed yet.

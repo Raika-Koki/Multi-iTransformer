@@ -1,0 +1,88 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978591
+2012-05-21   16.909506
+2012-05-22   16.779657
+2012-05-23   17.189081
+2012-05-24   17.031223
+...                ...
+2023-05-24  170.546967
+2023-05-25  171.688293
+2023-05-26  174.109955
+2023-05-30  175.965881
+2023-05-31  175.916260
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:97: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用して補完
+Price         BB_Upper    BB_Lower   BB_Middle      MACD MACD_Signal MACD_Diff        RSI      SMA_50     SMA_200
+Ticker
+Date
+2023-05-24  175.360190  165.081602  170.220896  2.332940    2.724338 -0.391398  55.867199  164.409242  150.685262
+2023-05-25  175.401879  165.517552  170.459715  2.209841    2.621439 -0.411597  58.637757  164.810426  150.729036
+2023-05-26  175.825121  165.688244  170.756683  2.281395    2.553430 -0.272035  63.826732  165.203353  150.763578
+2023-05-30  176.541932  165.759879  171.150906  2.459507    2.534645 -0.075138  67.220711  165.650247  150.811105
+2023-05-31  177.020402  166.168961  171.594682  2.567067    2.541130  0.025937  67.039599  166.048575  150.840552
+AAPL null values:
+0
+DTWEXBGS null values:
+0
+VIXCLS null values:
+0
+DFII10 null values:
+0
+T10Y2Y null values:
+0
+Volume null values:
+0
+BB_Upper null values:
+0
+BB_Lower null values:
+0
+BB_Middle null values:
+0
+MACD null values:
+0
+MACD_Signal null values:
+0
+MACD_Diff null values:
+0
+RSI null values:
+0
+SMA_50 null values:
+0
+SMA_200 null values:
+0
+[32m[I 2024-11-17 19:11:36,418][0m A new study created in memory with name: no-name-2be17ad6-fb39-404c-aaea-b7dda35ea48a[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-17 19:11:39,633][0m Trial 0 finished with value: 1.4628775008889132 and parameters: {'observation_period_num': 33, 'train_rates': 0.9663355762854414, 'learning_rate': 8.475802147259675e-06, 'batch_size': 73, 'step_size': 8, 'gamma': 0.888265754232338, 'depth': 4, 'dim': 196}. Best is trial 0 with value: 1.4628775008889132.[0m
+[32m[I 2024-11-17 19:11:39,634][0m A new study created in memory with name: no-name-a6e3d985-daba-4a67-98a4-909679668bd2[0m
+[32m[I 2024-11-17 19:11:40,854][0m Trial 0 finished with value: 2.1427742104910332 and parameters: {'observation_period_num': 108, 'train_rates': 0.8427173516615194, 'learning_rate': 1.6409433402676847e-05, 'batch_size': 228, 'step_size': 3, 'gamma': 0.9251434993908105, 'depth': 4, 'dim': 84}. Best is trial 0 with value: 2.1427742104910332.[0m
+[32m[I 2024-11-17 19:11:40,855][0m A new study created in memory with name: no-name-f98e036b-6d84-44e4-ab3e-84e186a2fa44[0m
+[32m[I 2024-11-17 19:11:42,116][0m Trial 0 finished with value: 1.185616030978228 and parameters: {'observation_period_num': 54, 'train_rates': 0.7149200726202682, 'learning_rate': 0.0007102756436844812, 'batch_size': 206, 'step_size': 13, 'gamma': 0.9441222903227531, 'depth': 4, 'dim': 45}. Best is trial 0 with value: 1.185616030978228.[0m
+Best hyperparameters (trend): {'observation_period_num': 33, 'train_rates': 0.9663355762854414, 'learning_rate': 8.475802147259675e-06, 'batch_size': 73, 'step_size': 8, 'gamma': 0.888265754232338, 'depth': 4, 'dim': 196}
+Best hyperparameters (seasonal): {'observation_period_num': 108, 'train_rates': 0.8427173516615194, 'learning_rate': 1.6409433402676847e-05, 'batch_size': 228, 'step_size': 3, 'gamma': 0.9251434993908105, 'depth': 4, 'dim': 84}
+Best hyperparameters (resid): {'observation_period_num': 54, 'train_rates': 0.7149200726202682, 'learning_rate': 0.0007102756436844812, 'batch_size': 206, 'step_size': 13, 'gamma': 0.9441222903227531, 'depth': 4, 'dim': 45}
+Epoch 1/100, (Training | Validation) Trend Loss: 0.6680 | 1.4735, Seasonal Loss: 1.8493 | 3.9439, Residual Loss: 0.4805 | 0.9497
+Epoch 2/100, (Training | Validation) Trend Loss: 0.4018 | 0.8346, Seasonal Loss: 1.3745 | 3.4268, Residual Loss: 0.2465 | 0.7015
+Epoch 3/100, (Training | Validation) Trend Loss: 0.3397 | 0.6435, Seasonal Loss: 1.0232 | 2.9734, Residual Loss: 0.1824 | 0.5062
+Epoch 4/100, (Training | Validation) Trend Loss: 0.2954 | 0.5438, Seasonal Loss: 0.7775 | 2.6177, Residual Loss: 0.1465 | 0.4532
+Epoch 5/100, (Training | Validation) Trend Loss: 0.2635 | 0.4692, Seasonal Loss: 0.6188 | 2.3207, Residual Loss: 0.1446 | 0.3864
+Epoch 6/100, (Training | Validation) Trend Loss: 0.2405 | 0.4123, Seasonal Loss: 0.5154 | 2.0765, Residual Loss: 0.1173 | 0.3493
+Epoch 7/100, (Training | Validation) Trend Loss: 0.2237 | 0.3695, Seasonal Loss: 0.4517 | 1.8920, Residual Loss: 0.1116 | 0.3169
+Epoch 8/100, (Training | Validation) Trend Loss: 0.2110 | 0.3368, Seasonal Loss: 0.4126 | 1.7411, Residual Loss: 0.1007 | 0.2903
+Epoch 9/100, (Training | Validation) Trend Loss: 0.2010 | 0.3130, Seasonal Loss: 0.3861 | 1.6178, Residual Loss: 0.0938 | 0.2692
+Epoch 10/100, (Training | Validation) Trend Loss: 0.1933 | 0.2948, Seasonal Loss: 0.3678 | 1.5244, Residual Loss: 0.0877 | 0.2513
+Epoch 11/100, (Training | Validation) Trend Loss: 0.1866 | 0.2796, Seasonal Loss: 0.3547 | 1.4472, Residual Loss: 0.0796 | 0.2355
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 335, in <module>
+    model_trend, train_loss_trend, valid_loss_trend = train(
+                                                      ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 43, in train
+    total_loss_train += loss.item() * data.size(0)
+                        ^^^^^^^^^^^
+KeyboardInterrupt

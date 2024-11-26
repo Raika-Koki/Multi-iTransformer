@@ -1,0 +1,141 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978592
+2012-05-21   16.909506
+2012-05-22   16.779667
+2012-05-23   17.189081
+2012-05-24   17.031221
+...                ...
+2023-05-24  170.546951
+2023-05-25  171.688309
+2023-05-26  174.109940
+2023-05-30  175.965866
+2023-05-31  175.916245
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:103: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用
+{'AAPL': Date
+2012-05-18     18.353259
+2012-05-21     18.337501
+2012-05-22     18.321753
+2012-05-23     18.306016
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245415
+2023-05-25    161.302986
+2023-05-26    161.360554
+2023-05-30    161.418117
+2023-05-31    161.475677
+Name: trend, Length: 2776, dtype: float64, 'DTWEXBGS': Date
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2776, dtype: float64, 'VIXCLS': Date
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64, 'DFII10': Date
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2776, dtype: float64, 'T10Y2Y': Date
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2776, dtype: float64}
+AAPLにあるが他のデータ1にはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+他のデータ1にあるがAAPLにはない日付: DatetimeIndex([], dtype='datetime64[ns]', name='Date', freq=None)
+Price        BB_Upper   BB_Lower  BB_Middle      MACD MACD_Signal MACD_Diff        RSI     SMA_50    SMA_200
+Ticker
+Date
+2012-05-18        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-21        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-22        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-23        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+2012-05-24        NaN        NaN        NaN       NaN         NaN       NaN        NaN        NaN        NaN
+...               ...        ...        ...       ...         ...       ...        ...        ...        ...
+2013-03-01  14.677092  13.140850  13.908971 -0.369111   -0.353563 -0.015549  33.353598  14.770321        NaN
+2013-03-04  14.759454  12.963897  13.861675 -0.410699   -0.364990 -0.045709  29.978345  14.702602        NaN
+2013-03-05  14.777592  12.919415  13.848504 -0.411555   -0.374303 -0.037252  37.255894  14.646277        NaN
+2013-03-06  14.800247  12.806491  13.803369 -0.420900   -0.383622 -0.037278  35.303320  14.589385        NaN
+2013-03-07  14.800104  12.732896  13.766500 -0.411427   -0.389183 -0.022243  38.423579  14.536961  17.349991
+
+[200 rows x 9 columns]
+[32m[I 2024-11-17 02:38:44,892][0m A new study created in memory with name: no-name-124ec2f8-939e-48e3-8939-896294fdb37d[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:193: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-17 02:38:47,467][0m Trial 0 finished with value: 0.4350361227989197 and parameters: {'learning_rate': 8.866220804298829e-05, 'batch_size': 164, 'step_size': 14, 'gamma': 0.9402464197825037, 'depth': 5, 'dim': 149}. Best is trial 0 with value: 0.4350361227989197.[0m
+[32m[I 2024-11-17 02:38:47,467][0m A new study created in memory with name: no-name-28912f7b-fd59-4a4b-ab3e-e131445d28d6[0m
+[32m[I 2024-11-17 02:38:48,410][0m Trial 0 finished with value: 0.47936031222343445 and parameters: {'learning_rate': 0.00018118651407324088, 'batch_size': 212, 'step_size': 8, 'gamma': 0.8241888373381462, 'depth': 2, 'dim': 228}. Best is trial 0 with value: 0.47936031222343445.[0m
+[32m[I 2024-11-17 02:38:48,411][0m A new study created in memory with name: no-name-678d66b5-80cd-4332-b78a-1026edda02d0[0m
+[32m[I 2024-11-17 02:38:49,782][0m Trial 0 finished with value: 0.06957274675369263 and parameters: {'learning_rate': 0.00038404672674002805, 'batch_size': 95, 'step_size': 15, 'gamma': 0.9570255321203027, 'depth': 6, 'dim': 129}. Best is trial 0 with value: 0.06957274675369263.[0m
+Best hyperparameters (trend): {'learning_rate': 8.866220804298829e-05, 'batch_size': 164, 'step_size': 14, 'gamma': 0.9402464197825037, 'depth': 5, 'dim': 149}
+Best hyperparameters (seasonal): {'learning_rate': 0.00018118651407324088, 'batch_size': 212, 'step_size': 8, 'gamma': 0.8241888373381462, 'depth': 2, 'dim': 228}
+Best hyperparameters (resid): {'learning_rate': 0.00038404672674002805, 'batch_size': 95, 'step_size': 15, 'gamma': 0.9570255321203027, 'depth': 6, 'dim': 129}
+Epoch 1/1000, (Training | Validation) Trend Loss: 0.3161 | 0.1584, Seasonal Loss: 0.6312 | 0.3810, Residual Loss: 0.5162 | 0.1774
+Epoch 2/1000, (Training | Validation) Trend Loss: 0.1079 | 0.0816, Seasonal Loss: 0.3206 | 0.2329, Residual Loss: 0.2300 | 0.0840
+Epoch 3/1000, (Training | Validation) Trend Loss: 0.0762 | 0.0491, Seasonal Loss: 0.2225 | 0.1458, Residual Loss: 0.1513 | 0.0671
+Epoch 4/1000, (Training | Validation) Trend Loss: 0.0630 | 0.0344, Seasonal Loss: 0.1734 | 0.1231, Residual Loss: 0.1060 | 0.0470
+Epoch 5/1000, (Training | Validation) Trend Loss: 0.0551 | 0.0297, Seasonal Loss: 0.1498 | 0.1289, Residual Loss: 0.0852 | 0.0300
+Epoch 6/1000, (Training | Validation) Trend Loss: 0.0489 | 0.0272, Seasonal Loss: 0.1572 | 0.1252, Residual Loss: 0.0747 | 0.0275
+Epoch 7/1000, (Training | Validation) Trend Loss: 0.0431 | 0.0289, Seasonal Loss: 0.1532 | 0.1487, Residual Loss: 0.0734 | 0.0279
+Epoch 8/1000, (Training | Validation) Trend Loss: 0.0394 | 0.0297, Seasonal Loss: 0.1555 | 0.1170, Residual Loss: 0.0699 | 0.0293
+Epoch 9/1000, (Training | Validation) Trend Loss: 0.0362 | 0.0298, Seasonal Loss: 0.1129 | 0.0907, Residual Loss: 0.0668 | 0.0295
+Epoch 10/1000, (Training | Validation) Trend Loss: 0.0337 | 0.0303, Seasonal Loss: 0.1230 | 0.1484, Residual Loss: 0.0679 | 0.0490
+Epoch 11/1000, (Training | Validation) Trend Loss: 0.0320 | 0.0375, Seasonal Loss: 0.1548 | 0.1365, Residual Loss: 0.1030 | 0.0540
+Epoch 12/1000, (Training | Validation) Trend Loss: 0.0315 | 0.0368, Seasonal Loss: 0.1079 | 0.0922, Residual Loss: 0.0729 | 0.0277
+Epoch 13/1000, (Training | Validation) Trend Loss: 0.0299 | 0.0360, Seasonal Loss: 0.0818 | 0.0752, Residual Loss: 0.0591 | 0.0326
+Epoch 14/1000, (Training | Validation) Trend Loss: 0.0284 | 0.0340, Seasonal Loss: 0.0865 | 0.0969, Residual Loss: 0.0558 | 0.0244
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 337, in <module>
+    model_trend, train_loss_trend, valid_loss_trend = train(
+                                                      ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

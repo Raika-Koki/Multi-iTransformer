@@ -1,0 +1,112 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978590
+2012-05-21   16.909502
+2012-05-22   16.779657
+2012-05-23   17.189081
+2012-05-24   17.031221
+...                ...
+2023-05-24  170.546967
+2023-05-25  171.688309
+2023-05-26  174.109955
+2023-05-30  175.965866
+2023-05-31  175.916260
+
+[2776 rows x 1 columns]
+/data/student/k2110261/Multi-iTransformer/optunademo.py:97: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method='ffill')  # 前日のデータを使用して補完
+Price         BB_Upper    BB_Lower   BB_Middle      MACD MACD_Signal MACD_Diff        RSI      SMA_50     SMA_200
+Ticker
+Date
+2023-05-24  175.360194  165.081606  170.220900  2.332941    2.724340 -0.391399  55.867177  164.409243  150.685264
+2023-05-25  175.401884  165.517556  170.459720  2.209843    2.621440 -0.411597  58.637766  164.810427  150.729038
+2023-05-26  175.825125  165.688249  170.756687  2.281396    2.553431 -0.272036  63.826699  165.203354  150.763580
+2023-05-30  176.541930  165.759890  171.150910  2.459506    2.534646 -0.075140  67.220651  165.650247  150.811107
+2023-05-31  177.020401  166.168970  171.594685  2.567066    2.541130  0.025936  67.039595  166.048575  150.840554
+AAPL null values:
+0
+DTWEXBGS null values:
+0
+VIXCLS null values:
+0
+DFII10 null values:
+0
+T10Y2Y null values:
+0
+Volume null values:
+0
+BB_Upper null values:
+0
+BB_Lower null values:
+0
+BB_Middle null values:
+0
+MACD null values:
+0
+MACD_Signal null values:
+0
+MACD_Diff null values:
+0
+RSI null values:
+0
+SMA_50 null values:
+0
+SMA_200 null values:
+0
+[32m[I 2024-11-17 19:19:00,928][0m A new study created in memory with name: no-name-aea594b8-119a-4417-9350-dad3e867b983[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-11-17 19:19:03,852][0m Trial 0 finished with value: 1.1392655156821672 and parameters: {'observation_period_num': 175, 'train_rates': 0.6425518677296229, 'learning_rate': 4.5631806319719256e-05, 'batch_size': 69, 'step_size': 1, 'gamma': 0.7668853689072453, 'depth': 2, 'dim': 226}. Best is trial 0 with value: 1.1392655156821672.[0m
+[32m[I 2024-11-17 19:19:03,853][0m A new study created in memory with name: no-name-5beeb2a2-46ca-408c-8327-1a76210a44ed[0m
+[32m[I 2024-11-17 19:19:05,326][0m Trial 0 finished with value: 1.294046339010581 and parameters: {'observation_period_num': 175, 'train_rates': 0.9188753521568415, 'learning_rate': 1.6917402979079357e-05, 'batch_size': 86, 'step_size': 7, 'gamma': 0.9494250552337957, 'depth': 4, 'dim': 186}. Best is trial 0 with value: 1.294046339010581.[0m
+[32m[I 2024-11-17 19:19:05,327][0m A new study created in memory with name: no-name-064c608e-c211-4984-9c5c-5307b269580b[0m
+[33m[W 2024-11-17 19:19:05,722][0m Trial 0 failed with parameters: {'observation_period_num': 113, 'train_rates': 0.818807810684816, 'learning_rate': 9.528380011310757e-05, 'batch_size': 52, 'step_size': 5, 'gamma': 0.7573227589595266, 'depth': 2, 'dim': 144} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 257, in <lambda>
+    study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=1)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 228, in objective
+    train_data, valid_data = create_multivariate_dataset(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 28, in create_multivariate_dataset
+    data = data_norm.iloc[i:i + observation_period_num].values  # [観測期間, 銘柄数]
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1176, in __getitem__
+    @final
+
+KeyboardInterrupt
+[33m[W 2024-11-17 19:19:05,726][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 257, in <module>
+    study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=1)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 257, in <lambda>
+    study_resid.optimize(lambda trial: objective(trial, "resid"), n_trials=1)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 228, in objective
+    train_data, valid_data = create_multivariate_dataset(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 28, in create_multivariate_dataset
+    data = data_norm.iloc[i:i + observation_period_num].values  # [観測期間, 銘柄数]
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1176, in __getitem__
+    @final
+
+KeyboardInterrupt

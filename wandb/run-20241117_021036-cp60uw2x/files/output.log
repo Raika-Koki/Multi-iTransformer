@@ -1,0 +1,111 @@
+Using device: cuda
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978589
+2012-05-21   16.909502
+2012-05-22   16.779659
+2012-05-23   17.189077
+2012-05-24   17.031219
+...                ...
+2023-05-24  170.546951
+2023-05-25  171.688309
+2023-05-26  174.109940
+2023-05-30  175.965866
+2023-05-31  175.916275
+
+[2776 rows x 1 columns]
+{'AAPL': Date
+2012-05-18     18.353259
+2012-05-21     18.337500
+2012-05-22     18.321752
+2012-05-23     18.306015
+2012-05-24     18.290289
+                 ...
+2023-05-24    161.245427
+2023-05-25    161.302998
+2023-05-26    161.360566
+2023-05-30    161.418129
+2023-05-31    161.475689
+Name: trend, Length: 2776, dtype: float64, 'DTWEXBGS': 2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-24    120.6481
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+Length: 2753, dtype: float64, 'VIXCLS': 2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-24    20.03
+2023-05-25    19.14
+2023-05-26    17.95
+2023-05-30    17.46
+2023-05-31    17.94
+Length: 2776, dtype: float64, 'DFII10': 2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-24    1.48
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+Length: 2761, dtype: float64, 'T10Y2Y': 2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-24   -0.58
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+Length: 2761, dtype: float64}
+AAPLにあるが他のデータ1にはない日付:
+DatetimeIndex(['2012-10-08', '2012-11-12', '2013-10-14', '2013-11-11',
+               '2014-03-03', '2014-03-17', '2014-10-13', '2014-12-26',
+               '2015-02-17', '2015-10-12', '2016-01-25', '2016-01-26',
+               '2016-10-10', '2017-10-09', '2018-10-08', '2018-11-12',
+               '2019-01-14', '2019-10-14', '2019-11-11', '2020-10-12',
+               '2020-11-27', '2021-10-11', '2022-10-10'],
+              dtype='datetime64[ns]', freq=None)
+他のデータ1にあるがAAPLにはない日付:
+DatetimeIndex([], dtype='datetime64[ns]', freq=None)
+[32m[I 2024-11-17 02:10:45,375][0m A new study created in memory with name: no-name-15c49ee5-1501-44d5-afb5-f91b8d2c4567[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:160: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[33m[W 2024-11-17 02:10:49,255][0m Trial 0 failed with parameters: {'learning_rate': 2.4171841352524332e-06, 'batch_size': 52, 'step_size': 7, 'gamma': 0.8666953421569453, 'depth': 5, 'dim': 40} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 02:10:49,255][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-17 02:10:49,256][0m A new study created in memory with name: no-name-d5885eda-4455-42ac-a1e6-c2ac6dd662e4[0m
+[33m[W 2024-11-17 02:10:52,353][0m Trial 0 failed with parameters: {'learning_rate': 6.202941577986305e-05, 'batch_size': 28, 'step_size': 3, 'gamma': 0.966242282445888, 'depth': 6, 'dim': 165} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 02:10:52,354][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-17 02:10:52,354][0m A new study created in memory with name: no-name-94e9d1ba-b2bb-4697-91ae-3b6e30dd3c64[0m
+[33m[W 2024-11-17 02:10:54,855][0m Trial 0 failed with parameters: {'learning_rate': 1.977977629370316e-06, 'batch_size': 17, 'step_size': 8, 'gamma': 0.9757206058417072, 'depth': 2, 'dim': 102} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-17 02:10:54,855][0m Trial 0 failed with value nan.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 212, in <module>
+    print("Best hyperparameters (trend):", study_trend.best_params)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 119, in best_params
+    return self.best_trial.params
+           ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 162, in best_trial
+    best_trial = self._storage.get_best_trial(self._study_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/storages/_in_memory.py", line 232, in get_best_trial
+    raise ValueError("No trials are completed yet.")
+ValueError: No trials are completed yet.

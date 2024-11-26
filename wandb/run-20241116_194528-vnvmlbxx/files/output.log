@@ -1,0 +1,31 @@
+Using device: cuda
+API Key: e97e29275507b84c5aa4ebd93c7ea613
+[*********************100%***********************]  1 of 1 completed
+Ticker                           AAPL
+Date
+2012-05-18 00:00:00+00:00   15.978591
+2012-05-21 00:00:00+00:00   16.909510
+2012-05-22 00:00:00+00:00   16.779665
+2012-05-23 00:00:00+00:00   17.189081
+2012-05-24 00:00:00+00:00   17.031212
+...                               ...
+2023-05-24 00:00:00+00:00  170.546967
+2023-05-25 00:00:00+00:00  171.688309
+2023-05-26 00:00:00+00:00  174.109955
+2023-05-30 00:00:00+00:00  175.965881
+2023-05-31 00:00:00+00:00  175.916245
+
+[2776 rows x 1 columns]
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 84, in <module>
+    df = df.dt.tz_localize(None)
+         ^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/accessor.py", line 224, in __get__
+    accessor_obj = self._accessor(obj)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/accessors.py", line 643, in __new__
+    raise AttributeError("Can only use .dt accessor with datetimelike values")
+AttributeError: Can only use .dt accessor with datetimelike values

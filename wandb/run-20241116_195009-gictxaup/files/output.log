@@ -1,0 +1,105 @@
+Using device: cuda
+API Key: e97e29275507b84c5aa4ebd93c7ea613
+[*********************100%***********************]  1 of 1 completed
+Ticker            AAPL
+Date
+2012-05-18   15.978584
+2012-05-21   16.909502
+2012-05-22   16.779665
+2012-05-23   17.189085
+2012-05-24   17.031212
+...                ...
+2023-05-24  170.546951
+2023-05-25  171.688293
+2023-05-26  174.109955
+2023-05-30  175.965881
+2023-05-31  175.916245
+
+[2776 rows x 1 columns]
+2012-05-18     93.1395
+2012-05-21     93.0945
+2012-05-22     93.1113
+2012-05-23     93.8855
+2012-05-24     93.8027
+                ...
+2023-05-25    121.0126
+2023-05-26    120.8022
+2023-05-30    120.7387
+2023-05-31    121.1527
+2023-06-01    120.2628
+Length: 2744, dtype: float64
+2012-05-18    25.10
+2012-05-21    22.01
+2012-05-22    22.48
+2012-05-23    22.33
+2012-05-24    21.54
+              ...
+2023-05-26    17.95
+2023-05-29    17.46
+2023-05-30    17.46
+2023-05-31    17.94
+2023-06-01    15.65
+Length: 2785, dtype: float64
+2012-05-18   -0.39
+2012-05-21   -0.41
+2012-05-22   -0.38
+2012-05-23   -0.41
+2012-05-24   -0.37
+              ...
+2023-05-25    1.58
+2023-05-26    1.57
+2023-05-30    1.47
+2023-05-31    1.46
+2023-06-01    1.45
+Length: 2760, dtype: float64
+2012-05-18    1.39
+2012-05-21    1.45
+2012-05-22    1.49
+2012-05-23    1.45
+2012-05-24    1.48
+              ...
+2023-05-25   -0.67
+2023-05-26   -0.74
+2023-05-30   -0.77
+2023-05-31   -0.76
+2023-06-01   -0.72
+Length: 2760, dtype: float64
+2012-05-23    0.16
+2012-05-30    0.15
+2012-06-06    0.16
+2012-06-13    0.17
+2012-06-20    0.17
+              ...
+2023-05-03    4.83
+2023-05-10    5.08
+2023-05-17    5.08
+2023-05-24    5.08
+2023-05-31    5.08
+Length: 576, dtype: float64
+[32m[I 2024-11-16 19:50:18,099][0m A new study created in memory with name: no-name-42bdbb18-6605-4f30-bf09-0264c68d4ce3[0m
+/data/student/k2110261/Multi-iTransformer/optunademo.py:129: FutureWarning: suggest_loguniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float(..., log=True) instead.
+  learning_rate = trial.suggest_loguniform('learning_rate', 1e-6, 1e-3)
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[33m[W 2024-11-16 19:50:20,807][0m Trial 0 failed with parameters: {'learning_rate': 1.1271434894234038e-05, 'batch_size': 121, 'step_size': 9, 'gamma': 0.8205809482337479, 'depth': 6, 'dim': 165} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-16 19:50:20,807][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-16 19:50:20,808][0m A new study created in memory with name: no-name-f473b8a9-b81a-4bd2-b033-8b057879efcc[0m
+[33m[W 2024-11-16 19:50:21,948][0m Trial 0 failed with parameters: {'learning_rate': 0.00041702795022466663, 'batch_size': 112, 'step_size': 3, 'gamma': 0.844963821059116, 'depth': 2, 'dim': 68} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-16 19:50:21,948][0m Trial 0 failed with value nan.[0m
+[32m[I 2024-11-16 19:50:21,949][0m A new study created in memory with name: no-name-2789d0d6-34e3-4be8-98d6-f0c5a55cb92b[0m
+[33m[W 2024-11-16 19:50:23,706][0m Trial 0 failed with parameters: {'learning_rate': 7.922678337696223e-05, 'batch_size': 65, 'step_size': 1, 'gamma': 0.9722642294292229, 'depth': 6, 'dim': 221} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-11-16 19:50:23,706][0m Trial 0 failed with value nan.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/optunademo.py", line 181, in <module>
+    print("Best hyperparameters (trend):", study_trend.best_params)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 119, in best_params
+    return self.best_trial.params
+           ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 162, in best_trial
+    best_trial = self._storage.get_best_trial(self._study_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/storages/_in_memory.py", line 232, in get_best_trial
+    raise ValueError("No trials are completed yet.")
+ValueError: No trials are completed yet.
