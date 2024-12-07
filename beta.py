@@ -6,7 +6,7 @@ from scipy.stats import beta
 # パラメータ設定
 alpha = 8
 beta_param = 3
-weight = 0.5
+weight = 0.8
 start_date = '2023-01-01'
 end_date = '2023-06-01'
 
@@ -25,11 +25,11 @@ interest_levels = pd.DataFrame({"Date": date_range, "Interest_Level": 0.0})
 # 各CPI発表日の関心度を計算
 for release_date in cpi_release_dates:
     # 発表日の前後5日間の範囲
-    day_offsets = (interest_levels["Date"] - release_date).dt.days
-    within_range = day_offsets.between(-3, 7)
+    day_offsets = (interest_levels["Date"] - release_date ).dt.days
+    within_range = day_offsets.between(-7, 3)
     
     # ベータ分布のスケールとシフトを適用
-    x_values = (day_offsets[within_range] + 5) / 10  # 発表日 (-5, +5) を (0, 1) に変換
+    x_values = (day_offsets[within_range] + 8) / 10  # 発表日 (-5, +5) を (0, 1) に変換
 
     # ベータ分布に基づいて関心度を計算
     beta_values = beta.pdf(x_values, alpha, beta_param)
@@ -39,8 +39,9 @@ for release_date in cpi_release_dates:
     interest_levels.loc[within_range, "Interest_Level"] += beta_values
 
 # 結果を表示
+#print(interest_levels.head(20))  # 最初の20行を表示
 non_zero_interest = interest_levels[interest_levels["Interest_Level"] > 0]
-print(non_zero_interest.head(20))  # 関心度が非ゼロの日付のみ表示
+print(non_zero_interest)  # 関心度が非ゼロの日付のみ表示
 
 # プロット
 plt.figure(figsize=(15, 6))
@@ -52,3 +53,4 @@ plt.ylabel("Interest Level")
 plt.legend()
 plt.grid()
 plt.show()
+plt.savefig("output.png")

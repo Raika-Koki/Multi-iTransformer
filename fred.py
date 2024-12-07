@@ -48,8 +48,8 @@ import ta
 import os
 
 # .envファイルからAPIキーを読み込む
-load_dotenv("fred_api.env")
-api_key = os.getenv("API_KEY")
+load_dotenv("api_key.env")
+api_key = os.getenv("FRED_API")
 print(f"API Key: {api_key}")  # 確認用の出力
 # APIキーを渡してFREDクライアントを作成
 fred = Fred(api_key=api_key)
@@ -88,7 +88,7 @@ dataframes_resid = {stock_code: stock_resid}
 print(dataframes_seasonal)"""
 
 
-fred_tickers = ['CPIAUCSL','DTWEXBGS', 'VIXCLS', 'DFII10', 'T10Y2Y'] # FRED tickers
+fred_tickers = ['DTWEXBGS', 'VIXCLS', 'DFII10', 'T10Y2Y'] # FRED tickers
 
 for ticker in fred_tickers:
     print(f"Fetching data for {ticker}...")
@@ -136,4 +136,37 @@ df_stock['SMA_200'] = close_data.rolling(window=200).mean()
 
 # 結果の確認
 print(df_stock[['BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200']].head(200))
+
+from pandas.tseries.offsets import BDay
+
+# DTWEXBGSのデータを取得
+from datetime import datetime
+
+end_date_dt = datetime.strptime(end_date, '%Y-%m-%d')
+start_date_dt = datetime.strptime(start_date, '%Y-%m-%d')
+dtwexbgs_data = fred.get_series('DTWEXBGS', observation_start=start_date_dt + BDay(1), observation_end=end_date_dt + BDay(1))
+
+# NaNを含む行を削除
+dtwexbgs_data = dtwexbgs_data.dropna()
+if len(dtwexbgs_data) == 0:
+    raise Exception("No data fetched for DTWEXBGS for the given date range.")
+
+# 日付を前の営業日に変更
+shifted_dtwexbgs = dtwexbgs_data.copy()
+shifted_dtwexbgs.index = shifted_dtwexbgs.index - BDay(1)
+
+dtwexbgs_data = fred.get_series('DTWEXBGS', observation_start=start_date, observation_end=end_date)
+
+# 元のデータと日付を変更したデータを確認
+print("Original DTWEXBGS Data:")
+print(dtwexbgs_data)
+
+print("\nShifted DTWEXBGS Data:")
+print(shifted_dtwexbgs)
+
+# 元のdataframes_trendのDTWEXBGSデータを更新
+dataframes_trend['DTWEXBGS'] = shifted_dtwexbgs
+
+
+
 
