@@ -106,12 +106,12 @@ def objective(trial, component):
     criterion = nn.MSELoss()
     earlystopping = EarlyStopping(patience=5)
 
-    for _ in range(5):  # 'epoch' を使用しないため '_' に変更
+    for epoch in range(100):  # 100エポック回すように変更
         model, _, valid_loss = train(
             model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period)
         earlystopping(valid_loss, model)
         if earlystopping.early_stop:
-            print("Early stopping")
+            print(f"Early stopping at epoch {epoch}")
             break
 
     return valid_loss
@@ -168,17 +168,24 @@ def calculate_interest_levels(release_dates, date_range, alpha, beta_param, weig
 # 初期設定
 start_date = '2012-05-18'
 initial_end_date = datetime.strptime('2023-06-01', '%Y-%m-%d')
-file_name = "best_hyperparameters_AAPL_1.json"
+file_name = "best_hyperparameters_AMZN.json"
 predict_period_num = 1
 
 #beta関数のパラメータ設定
 alpha = 8
 beta_param = 3
-weight = 0.5
+weights = {
+    'CPI_Dates': 0.9,
+    'PCE_Dates': 0.8,
+    'PPI_Dates': 0.7,
+    'Unemployment_Rate_Dates': 0.8,
+    'Nonfarm_Payrolls_Release_Dates': 0.9,
+    'Monetary_Base_Data_Dates': 0.6
+}
 
 # 1営業日ずつエンド日を伸ばして最適化を実施
 while True:
-    stock_code = 'AAPL'
+    stock_code = 'AMZN'
 
     # 現在の end_date を文字列として設定
     end_date = initial_end_date.strftime('%Y-%m-%d')
@@ -241,9 +248,9 @@ while True:
     #print(f"aaa", dataframes_trend)
 
 
-    indicator_release_days = ['CPI', 'PCE', 'PPI', 'Unemployment_Rate', 'Nonfarm_Payrolls_Release_Dates', 'Monetary_Base_Data', 'Federal_Funds_Rate_Release_Dates']
+    indicator_release_days = ['CPI_Dates', 'PCE_Dates', 'PPI_Dates', 'Unemployment_Rate_Dates', 'Nonfarm_Payrolls_Release_Dates', 'Monetary_Base_Data_Dates']#, 'Federal_Funds_Rate_Release_Dates']
     fred_tickers = ['DTWEXBGS', 'VIXCLS', 'DFII10', 'T10Y2Y']  # FRED tickers
-    tech_indicator = ['Volume', 'BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200'] # Technical indicators
+    tech_indicator = ['Volume', 'BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200', 'SMA_200-50'] # Technical indicators
 
     # JSONファイルからデータを読み込む
     with open('Release_Dates.json', 'r') as file:
@@ -271,8 +278,9 @@ while True:
 
         if pre_start_date_release_date:
             release_dates.append(pre_start_date_release_date)
-
+            release_dates = [ (pd.to_datetime(date) - pd.Timedelta(days=1)).strftime('%Y-%m-%d') for date in release_dates ]
         release_dates = pd.to_datetime(release_dates)
+        weight = weights[indicator]
         interest_levels = calculate_interest_levels(release_dates, date_range, alpha, beta_param, weight)
 
         # 'Date'列を日付型に変換してインデックスに設定
@@ -282,12 +290,6 @@ while True:
         # interest_levels のデータをフィルタリングして df_stock の日付に一致するものだけ残す
         interest_levels = interest_levels.loc[interest_levels.index.intersection(df_stock.index.tz_localize(None))]
         interest_levels = interest_levels.iloc[:, 0]  # 1列目のみ残す
-        #print(interest_levels.shape)
-
-        """# 結果を表示
-        non_zero_interest = interest_levels[interest_levels["Interest_Level"] > 0]
-        print(f"Interest levels for {indicator}:")
-        print(non_zero_interest.head(20))  # 関心度が非ゼロの日付のみ表示"""
 
         # 結果を保存
         dataframes_trend[indicator] = interest_levels
@@ -296,6 +298,61 @@ while True:
         dataframes_seasonal_2[indicator] = interest_levels
         dataframes_seasonal_3[indicator] = interest_levels
         dataframes_resid[indicator] = interest_levels
+
+        # FRED APIからデータを取得するためのマッピング
+        indicator_to_fred_mapping = {
+            'CPI_Dates': ['CPIAUCSL', 'CPILFESL'],
+            'PCE_Dates': ['PCEPI', 'PCEPILFE'],
+            'PPI_Dates': ['PPIACO', 'WPSFD4131'],
+            'Unemployment_Rate_Dates': ['UNRATE'],
+            'Nonfarm_Payrolls_Release_Dates': ['PAYEMS'],
+            'Monetary_Base_Data_Dates': ['BOGMBASE']#,
+            #'Federal_Funds_Rate_Release_Dates': ['FEDFUNDS']
+        }
+
+        # indicator_release_daysの各指標についてFREDからデータを取得
+        fred_keys = indicator_to_fred_mapping.get(indicator, [])
+        for fred_key in fred_keys:
+            # start_dateの前の月までデータを取得
+            start_date_extended = (pd.to_datetime(start_date) - pd.DateOffset(months=1)).strftime('%Y-%m-%d')
+            indicator_data = fred.get_series(fred_key, observation_start=start_date_extended, observation_end=end_date)
+            if len(indicator_data) == 0:
+                raise Exception(f"No data fetched for {fred_key} for the given date range.")
+            
+            # indicator_dataの日付をRelease_Dates.jsonの日付に変更
+            new_index = []
+            for date in indicator_data.index:
+                year = date.strftime('%Y')
+                month = date.strftime('%B')
+                if year in release_dates_data[indicator]:
+                    if month in release_dates_data[indicator][year]:
+                        release_date_str = release_dates_data[indicator][year][month]
+                        release_date = pd.to_datetime(release_date_str)
+                        new_index.append(release_date)
+                    else:
+                        new_index.append(date)
+                else:
+                    new_index.append(date)
+            indicator_data.index = pd.to_datetime(new_index)
+            indicator_data.index -= pd.Timedelta(days=1)
+
+            # print(f'{fred_key}', indicator_data)
+            # タイムゾーン解除
+            indicator_data.index = indicator_data.index.tz_localize(None)
+            # Reindex indicator_data to match df_stock's dates and forward fill values
+            indicator_data = indicator_data.reindex(df_stock.index.tz_localize(None), method='ffill')
+            
+            #print(f'{fred_key}', indicator_data)
+
+            # 結果を保存
+            dataframes_trend[f"{indicator}_{fred_key}"] = indicator_data
+            dataframes_seasonal_0[f"{indicator}_{fred_key}"] = indicator_data
+            dataframes_seasonal_1[f"{indicator}_{fred_key}"] = indicator_data
+            dataframes_seasonal_2[f"{indicator}_{fred_key}"] = indicator_data
+            dataframes_seasonal_3[f"{indicator}_{fred_key}"] = indicator_data
+            dataframes_resid[f"{indicator}_{fred_key}"] = indicator_data
+
+    #print(dataframes_trend)
 
 
     for ticker in fred_tickers:
@@ -360,11 +417,20 @@ while True:
     # 移動平均 (50日と200日)
     df_stock['SMA_50'] = close_data.rolling(window=50).mean()
     df_stock['SMA_200'] = close_data.rolling(window=200).mean()
+    df_stock['SMA_200-50'] = df_stock['SMA_200'] - df_stock['SMA_50']
 
     # 結果の確認
-    print(df_stock[['Volume', 'BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200']].tail())
+    print(df_stock[['Volume', 'BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200', 'SMA_200-50']].tail())
 
-    tickers = [stock_code] + ['open'] + indicator_release_days + fred_tickers + tech_indicator 
+    tickers = [
+        'Adj Close', 'Open',
+        'CPI_Dates', 'CPIAUCSL', 'CPILFESL',
+        'PCE_Dates', 'PCEPI', 'PCEPILFE',
+        'PPI_Dates', 'PPIACO', 'WPSFD4131',
+        'Unemployment_Rate_Dates', 'UNRATE',
+        'Nonfarm_Payrolls_Release_Dates', 'PAYEMS',
+        'Monetary_Base_Data_Dates', 'BOGMBASE'
+    ] + fred_tickers + tech_indicator
 
     #print(tickers)
 
@@ -430,7 +496,7 @@ while True:
     for component, study_name in zip(["trend", "seasonal_0", "seasonal_1", "seasonal_2", "seasonal_3", "resid"], ["study_trend", "study_seasonal_0", "study_seasonal_1", "study_seasonal_2", "study_seasonal_3", "study_resid"]):
         print(f"最適化対象: {component}")
         study = optuna.create_study(direction='minimize')
-        study.optimize(lambda trial: objective(trial, component), n_trials=1) #ここを変えた
+        study.optimize(lambda trial: objective(trial, component), n_trials=100) 
 
         # 最適なハイパーパラメータを辞書に保存
         best_params[component] = study.best_params

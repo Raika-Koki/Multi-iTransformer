@@ -4786,5 +4786,131 @@
                 "dim": 182
             }
         }
+    },
+    "2012-05-18_to_2023-11-08": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2023-11-08"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 14,
+                "train_rates": 0.9388276760125687,
+                "learning_rate": 0.00032205933278994965,
+                "batch_size": 57,
+                "step_size": 3,
+                "gamma": 0.9215092373147256,
+                "depth": 2,
+                "dim": 92
+            }
+        },
+        "seasonal": {
+            "best_params": {
+                "observation_period_num": 28,
+                "train_rates": 0.961917102074729,
+                "learning_rate": 0.00027671362839549584,
+                "batch_size": 38,
+                "step_size": 2,
+                "gamma": 0.9342734724467034,
+                "depth": 5,
+                "dim": 256
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 10,
+                "train_rates": 0.9899059663252503,
+                "learning_rate": 0.00016762755040054835,
+                "batch_size": 115,
+                "step_size": 5,
+                "gamma": 0.9141005590773335,
+                "depth": 4,
+                "dim": 227
+            }
+        }
+    },
+    "2012-05-18_to_2023-11-09": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2023-11-09"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 5,
+                "train_rates": 0.9319272889696857,
+                "learning_rate": 0.00012979603900809396,
+                "batch_size": 59,
+                "step_size": 4,
+                "gamma": 0.8640279871565922,
+                "depth": 4,
+                "dim": 232
+            }
+        },
+        "seasonal": {
+            "best_params": {
+                "observation_period_num": 9,
+                "train_rates": 0.989730078808152,
+                "learning_rate": 0.00015488170060423735,
+                "batch_size": 254,
+                "step_size": 12,
+                "gamma": 0.7868071333549171,
+                "depth": 3,
+                "dim": 118
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 15,
+                "train_rates": 0.982694864146296,
+                "learning_rate": 5.258671953810915e-05,
+                "batch_size": 38,
+                "step_size": 5,
+                "gamma": 0.78330410510742,
+                "depth": 2,
+                "dim": 170
+            }
+        }
+    },
+    "2012-05-18_to_2023-11-10": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2023-11-10"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 29,
+                "train_rates": 0.9008359124080706,
+                "learning_rate": 0.00012814025509304313,
+                "batch_size": 37,
+                "step_size": 8,
+                "gamma": 0.7951467313431986,
+                "depth": 4,
+                "dim": 221
+            }
+        },
+        "seasonal": {
+            "best_params": {
+                "observation_period_num": 28,
+                "train_rates": 0.9612159819349669,
+                "learning_rate": 0.00027969011370512775,
+                "batch_size": 19,
+                "step_size": 15,
+                "gamma": 0.8442620781439438,
+                "depth": 2,
+                "dim": 251
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 31,
+                "train_rates": 0.9896337859409983,
+                "learning_rate": 0.00033054108709795044,
+                "batch_size": 77,
+                "step_size": 6,
+                "gamma": 0.8834588726806618,
+                "depth": 2,
+                "dim": 138
+            }
+        }
     }
 }
