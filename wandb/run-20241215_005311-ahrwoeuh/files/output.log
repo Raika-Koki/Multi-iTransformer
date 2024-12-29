@@ -1,0 +1,6 @@
+Runtime (seconds): 66.46025323867798
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 540, in <module>
+    last_batch_data_seasonal_0 = valid_data_dict['seasonal_0'][-2][0].unsqueeze(0)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'seasonal_0'

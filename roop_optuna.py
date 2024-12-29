@@ -7,7 +7,9 @@ import torch
 import torch.nn as nn
 import ta
 import os
+import wandb
 import numpy as np
+import matplotlib.pyplot as plt
 from datetime import datetime
 from pandas.tseries.offsets import BDay  # 1営業日単位で増加
 from scipy.stats import beta
@@ -17,8 +19,9 @@ from src.model import iTransformer, EarlyStopping
 from src.data_create import data_Normalization, create_multivariate_dataset
 from src.train import train
 from statsmodels.tsa.seasonal import MSTL
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '1' #check
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
@@ -69,7 +72,7 @@ def save_best_hyperparameters(file_name, best_params, start_date, end_date):
 
 
 # Optuna での最適化対象の関数
-def objective(trial, component):
+def objective(trial, component, depth, dim):
     # ハイパーパラメータの提案
     observation_period = trial.suggest_int('observation_period_num', 5, 252)
     train_rates = trial.suggest_float('train_rates', 0.6, 0.99)
@@ -77,8 +80,8 @@ def objective(trial, component):
     batch_size = trial.suggest_int('batch_size', 16, 256)
     step_size = trial.suggest_int('step_size', 1, 15)
     gamma = trial.suggest_float('gamma', 0.75, 0.99)
-    depth = trial.suggest_int('depth', 2, 6)
-    dim = trial.suggest_int('dim', 16, 256)
+    #depth = trial.suggest_int('depth', 2, 6)
+    #dim = trial.suggest_int('dim', 16, 256)
 
     # データとモデルの設定
     dataset_mapping = {
@@ -106,7 +109,7 @@ def objective(trial, component):
     criterion = nn.MSELoss()
     earlystopping = EarlyStopping(patience=5)
 
-    for epoch in range(100):  # 100エポック回すように変更
+    for epoch in range(100):  # 100エポック回すように変更 #check
         model, _, valid_loss = train(
             model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period)
         earlystopping(valid_loss, model)
@@ -165,11 +168,29 @@ def calculate_interest_levels(release_dates, date_range, alpha, beta_param, weig
 
     return interest_levels
 
+# モデルの定義
+def create_model(params, num_variates, predict_period_num, depth, dim):
+    model = iTransformer(
+        num_variates=num_variates,
+        lookback_len=params['observation_period_num'],
+        #depth=params['depth'],
+        #dim=params['dim'],
+        depth = depth,
+        dim=dim,
+        pred_length=predict_period_num
+    ).to(device)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=params['learning_rate'])
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=params['step_size'], gamma=params['gamma'])
+    return model, optimizer, scheduler
+
 # 初期設定
 start_date = '2012-05-18'
-initial_end_date = datetime.strptime('2023-06-01', '%Y-%m-%d')
-file_name = "best_hyperparameters_AMZN.json"
+initial_end_date = datetime.strptime('2024-11-07', '%Y-%m-%d')
+stock_code = 'AAPL' #check
+file_name = f"best_hyperparameters_{stock_code}_iTransformer.json"  # check
 predict_period_num = 1
+depth = 32 
+dim = 64
 
 #beta関数のパラメータ設定
 alpha = 8
@@ -178,6 +199,7 @@ weights = {
     'CPI_Dates': 0.9,
     'PCE_Dates': 0.8,
     'PPI_Dates': 0.7,
+    'GDP_Dates': 0.6,
     'Unemployment_Rate_Dates': 0.8,
     'Nonfarm_Payrolls_Release_Dates': 0.9,
     'Monetary_Base_Data_Dates': 0.6
@@ -185,8 +207,6 @@ weights = {
 
 # 1営業日ずつエンド日を伸ばして最適化を実施
 while True:
-    stock_code = 'AMZN'
-
     # 現在の end_date を文字列として設定
     end_date = initial_end_date.strftime('%Y-%m-%d')
     print(f"最適化対象のエンド日: {end_date}")
@@ -216,7 +236,7 @@ while True:
     # MSTLによる分解
     periods = [252, 504, 756, 1260]
     iterate = 3
-    stl_kwargs = {"seasonal_deg": 0, "inner_iter": 3, "outer_iter": 1}
+    stl_kwargs = {"seasonal_deg": 0, "inner_iter": 3, "outer_iter": 0}
 
     mstl_series = decompose_stock_data(data_Adj_close, periods, iterate, stl_kwargs)
     mstl_series_open = decompose_stock_data(data_open, periods, iterate, stl_kwargs)
@@ -237,18 +257,33 @@ while True:
     ]
     stock_resid_open = mstl_series_open.resid.tz_localize(None)
 
+    
+    get_ticker = yf.Ticker(stock_code)
+    splits = get_ticker.splits
+    splits.index = splits.index.tz_localize(None)
+    #print(f"splits:\n{splits}")
+    splits.index = splits.index - BDay(1)
+    #print(f"splits:\n{splits}")
+
+    splits = splits.reindex(df_stock.tz_localize(None).index, fill_value=0)
+
+    """# 非ゼロデータのみを抽出
+    non_zero_splits = splits[splits != 0]
+    print(f"splits:\n{splits}")
+    print(non_zero_splits)"""
+
     # 現在の end_date に基づいたデータフレームを更新
-    dataframes_trend = {"Adj_close": stock_trend, "open": stock_trend_open}
-    dataframes_seasonal_0 = {"Adj_close": stock_seasonal_0, "open": stock_seasonal_0_open}
-    dataframes_seasonal_1 = {"Adj_close": stock_seasonal_1, "open": stock_seasonal_1_open}
-    dataframes_seasonal_2 = {"Adj_close": stock_seasonal_2, "open": stock_seasonal_2_open}
-    dataframes_seasonal_3 = {"Adj_close": stock_seasonal_3, "open": stock_seasonal_3_open}
-    dataframes_resid = {"Adj_close": stock_resid, "open": stock_resid_open}
+    dataframes_trend = {"Adj_close": stock_trend, "open": stock_trend_open, "splits": splits}
+    dataframes_seasonal_0 = {"Adj_close": stock_seasonal_0, "open": stock_seasonal_0_open, "splits": splits}
+    dataframes_seasonal_1 = {"Adj_close": stock_seasonal_1, "open": stock_seasonal_1_open, "splits": splits}
+    dataframes_seasonal_2 = {"Adj_close": stock_seasonal_2, "open": stock_seasonal_2_open, "splits": splits}
+    dataframes_seasonal_3 = {"Adj_close": stock_seasonal_3, "open": stock_seasonal_3_open, "splits": splits}
+    dataframes_resid = {"Adj_close": stock_resid, "open": stock_resid_open, "splits": splits}
 
     #print(f"aaa", dataframes_trend)
 
 
-    indicator_release_days = ['CPI_Dates', 'PCE_Dates', 'PPI_Dates', 'Unemployment_Rate_Dates', 'Nonfarm_Payrolls_Release_Dates', 'Monetary_Base_Data_Dates']#, 'Federal_Funds_Rate_Release_Dates']
+    indicator_release_days = ['GDP_Dates', 'CPI_Dates', 'PCE_Dates', 'PPI_Dates', 'Unemployment_Rate_Dates', 'Nonfarm_Payrolls_Release_Dates', 'Monetary_Base_Data_Dates']#, 'Federal_Funds_Rate_Release_Dates']
     fred_tickers = ['DTWEXBGS', 'VIXCLS', 'DFII10', 'T10Y2Y']  # FRED tickers
     tech_indicator = ['Volume', 'BB_Upper', 'BB_Lower', 'BB_Middle', 'MACD', 'MACD_Signal', 'MACD_Diff', 'RSI', 'SMA_50', 'SMA_200', 'SMA_200-50'] # Technical indicators
 
@@ -261,6 +296,7 @@ while True:
 
     # 指標ごとに関心度を計算して出力
     for indicator in indicator_release_days:
+        #print(indicator)
         release_dates = []
         found_post_end_date = False
         pre_start_date_release_date = None
@@ -301,6 +337,7 @@ while True:
 
         # FRED APIからデータを取得するためのマッピング
         indicator_to_fred_mapping = {
+            'GDP_Dates': ['GDP'],
             'CPI_Dates': ['CPIAUCSL', 'CPILFESL'],
             'PCE_Dates': ['PCEPI', 'PCEPILFE'],
             'PPI_Dates': ['PPIACO', 'WPSFD4131'],
@@ -336,10 +373,14 @@ while True:
             indicator_data.index = pd.to_datetime(new_index)
             indicator_data.index -= pd.Timedelta(days=1)
 
+            #print(f'{fred_key}', indicator_data)
+            
             # print(f'{fred_key}', indicator_data)
             # タイムゾーン解除
             indicator_data.index = indicator_data.index.tz_localize(None)
             # Reindex indicator_data to match df_stock's dates and forward fill values
+            df_stock = df_stock.sort_index()
+            indicator_data = indicator_data.sort_index()
             indicator_data = indicator_data.reindex(df_stock.index.tz_localize(None), method='ffill')
             
             #print(f'{fred_key}', indicator_data)
@@ -361,7 +402,6 @@ while True:
         if len(df) == 0:
             raise Exception(f"No data fetched for {ticker} for the given date range.")
         
-        
         # タイムゾーン解除
         df.index = df.index.tz_localize(None)
         # 欠損データ削除（取得後の前処理）
@@ -381,6 +421,8 @@ while True:
         # 日付順に整列
         #df = df.sort_index()
 
+        #print(f'{ticker}', df)
+
         # 結果を保存
         dataframes_trend[ticker] = df
         dataframes_seasonal_0[ticker] = df
@@ -392,7 +434,7 @@ while True:
     close_data = df_stock['Adj Close']  # pandas.Series
     close_data = close_data.iloc[:, 0]
     close_data = close_data.tz_localize(None)
-    print(close_data)
+    #print(close_data)
 
     # 念のため、データが 1 次元であることを確認
     if not isinstance(close_data, pd.Series):
@@ -424,6 +466,8 @@ while True:
 
     tickers = [
         'Adj Close', 'Open',
+        'splits',
+        'GDP_Dates', 'GDP',
         'CPI_Dates', 'CPIAUCSL', 'CPILFESL',
         'PCE_Dates', 'PCEPI', 'PCEPILFE',
         'PPI_Dates', 'PPIACO', 'WPSFD4131',
@@ -474,6 +518,7 @@ while True:
         print(f"{ticker} null values:\n{df.isnull().sum()}")"""
     
 
+
     # 複数のデータフレームを結合
     combined_df_trend = pd.DataFrame(dataframes_trend)
     combined_df_seasonal_0 = pd.DataFrame(dataframes_seasonal_0)
@@ -490,13 +535,22 @@ while True:
     df_normalized_seasonal_3, mean_list_seasonal_3, std_list_seasonal_3 = data_Normalization(combined_df_seasonal_3)
     df_normalized_resid, mean_list_resid, std_list_resid = data_Normalization(combined_df_resid)
 
+    # WandBの初期化
+    wandb.init(
+        project=f"{stock_code}-stock-price-prediction-by-iTransformer",
+        name=f"{dataframes_trend['Adj_close'].index[0].strftime('%Y%m%d')}_{dataframes_trend['Adj_close'].index[-1].strftime('%Y%m%d')}[{start_date}_{end_date}]"
+    )
+
     # 最適化と結果の保存
     best_params = { "trend": {}, "seasonal_0": {}, "seasonal_1": {}, "seasonal_2": {}, "seasonal_3": {}, "resid": {} }  # ここで毎回初期化
 
     for component, study_name in zip(["trend", "seasonal_0", "seasonal_1", "seasonal_2", "seasonal_3", "resid"], ["study_trend", "study_seasonal_0", "study_seasonal_1", "study_seasonal_2", "study_seasonal_3", "study_resid"]):
         print(f"最適化対象: {component}")
         study = optuna.create_study(direction='minimize')
-        study.optimize(lambda trial: objective(trial, component), n_trials=100) 
+        study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=30) #check
+        if len(study.trials) == 0 or all([t.state != optuna.trial.TrialState.COMPLETE for t in study.trials]):
+            print(f"No completed trials for {component}. Skipping.")
+            continue
 
         # 最適なハイパーパラメータを辞書に保存
         best_params[component] = study.best_params
@@ -506,6 +560,197 @@ while True:
     # 最適なハイパーパラメータと日付範囲をファイルに保存
     save_best_hyperparameters(file_name, best_params, start_date, end_date)
     print(f"最適ハイパーパラメータが {file_name} に保存されました")
+
+
+
+    predict_period_num = 1
+    criterion = nn.MSELoss()
+    epochs = 300
+
+    # トレーニングループ
+    models = {}
+    optimizers = {}
+    schedulers = {}
+    mean_lists = {}
+    std_lists = {}
+    train_data_dict = {}
+    valid_data_dict = {}
+    dataframes = {
+        'trend': dataframes_trend,
+        'seasonal_0': dataframes_seasonal_0,
+        'seasonal_1': dataframes_seasonal_1,
+        'seasonal_2': dataframes_seasonal_2,
+        'seasonal_3': dataframes_seasonal_3,
+        'resid': dataframes_resid
+    }
+
+    # 学習時間の計測
+    start_time = time.time()
+
+    components = ['trend', 'seasonal_0', 'seasonal_1', 'seasonal_2', 'seasonal_3', 'resid']
+    for comp in components:
+        params = best_params[comp]
+        print(f"Training {comp} component with params: {params}")
+
+        # モデル、オプティマイザ、スケジューラの作成
+        num_variates = len(tickers)
+        model, optimizer, scheduler = create_model(params, num_variates, predict_period_num, depth, dim)
+        models[comp] = model
+        optimizers[comp] = optimizer
+        schedulers[comp] = scheduler
+
+        # データの正規化とデータセットの作成
+        combined_df = pd.DataFrame(dataframes[comp])
+        df_normalized, mean_list, std_list = data_Normalization(combined_df)
+
+        mean_lists[comp] = mean_list
+        std_lists[comp] = std_list
+        train_data, valid_data = create_multivariate_dataset(
+            df_normalized, params['observation_period_num'], predict_period_num, params['train_rates'], device)
+        train_data_dict[comp] = train_data
+        valid_data_dict[comp] = valid_data
+
+        # エポックごとのトレーニング
+        earlystopping = EarlyStopping(patience=5)
+        for epoch in range(epochs):
+            models[comp], train_loss, valid_loss = train(
+                models[comp], train_data, valid_data, optimizer, criterion, scheduler,
+                params['batch_size'], params['observation_period_num'])
+            print(f"Epoch {epoch+1}/{epochs}, {comp} Loss: {train_loss:.4f} | {valid_loss:.4f}")
+            earlystopping(valid_loss, models[comp])
+            if earlystopping.early_stop:
+                print(f"Early stopping for {comp}")
+                break
+            scheduler.step()
+
+            # WandBにログを記録
+            wandb.log({f"{comp}_train_loss": train_loss, f"{comp}_valid_loss": valid_loss})
+
+        # 学習済みモデルの保存
+        torch.save(models[comp].state_dict(), f'amzn_stock_price_{comp}_model.pth')
+
+
+    end_time = time.time()
+    runtime_seconds = end_time - start_time
+    print(f"Runtime (seconds): {runtime_seconds}")
+
+    # Update wandb configuration with hyperparameters
+    wandb.config.update({
+        "learning_rate_trend": best_params['trend']['learning_rate'],
+        "learning_rate_seasonal_0": best_params['seasonal_0']['learning_rate'],
+        "learning_rate_seasonal_1": best_params['seasonal_1']['learning_rate'],
+        "learning_rate_seasonal_2": best_params['seasonal_2']['learning_rate'],
+        "learning_rate_seasonal_3": best_params['seasonal_3']['learning_rate'],
+        "learning_rate_resid": best_params['resid']['learning_rate'],
+        "epochs": epochs,
+        "batch_size_trend": best_params['trend']['batch_size'],
+        "batch_size_seasonal_0": best_params['seasonal_0']['batch_size'],
+        "batch_size_seasonal_1": best_params['seasonal_1']['batch_size'],
+        "batch_size_seasonal_2": best_params['seasonal_2']['batch_size'],
+        "batch_size_seasonal_3": best_params['seasonal_3']['batch_size'],
+        "batch_size_resid": best_params['resid']['batch_size'],
+        "observation_period_trend": best_params['trend']['observation_period_num'],
+        "observation_period_seasonal_0": best_params['seasonal_0']['observation_period_num'],
+        "observation_period_seasonal_1": best_params['seasonal_1']['observation_period_num'],
+        "observation_period_seasonal_2": best_params['seasonal_2']['observation_period_num'],
+        "observation_period_seasonal_3": best_params['seasonal_3']['observation_period_num'],
+        "observation_period_resid": best_params['resid']['observation_period_num'],
+        "predict_period_num": predict_period_num
+    })
+
+    with torch.no_grad():
+        # Prediction for trend, seasonal, and residual components
+        last_batch_data_trend = valid_data_dict['trend'][-2][0].unsqueeze(0)
+        last_batch_data_seasonal_0 = valid_data_dict['seasonal_0'][-2][0].unsqueeze(0)
+        last_batch_data_seasonal_1 = valid_data_dict['seasonal_1'][-2][0].unsqueeze(0)
+        last_batch_data_seasonal_2 = valid_data_dict['seasonal_2'][-2][0].unsqueeze(0)
+        last_batch_data_seasonal_3 = valid_data_dict['seasonal_3'][-2][0].unsqueeze(0)
+        last_batch_data_resid = valid_data_dict['resid'][-2][0].unsqueeze(0)
+
+        predicted_trend = models['trend'](last_batch_data_trend)
+        predicted_seasonal_0 = models['seasonal_0'](last_batch_data_seasonal_0)
+        predicted_seasonal_1 = models['seasonal_1'](last_batch_data_seasonal_1)
+        predicted_seasonal_2 = models['seasonal_2'](last_batch_data_seasonal_2)
+        predicted_seasonal_3 = models['seasonal_3'](last_batch_data_seasonal_3)
+        predicted_resid = models['resid'](last_batch_data_resid)
+
+        # Select AMZN predictions
+        predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+        predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+        predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+        predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+        predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+        predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+
+
+    print(predicted_trend_stock_price)
+    print(predicted_seasonal_0_stock_price)
+    print(predicted_seasonal_1_stock_price)
+    print(predicted_seasonal_2_stock_price)
+    print(predicted_seasonal_3_stock_price)
+    print(predicted_resid_stock_price)
+
+    # Sum the components to get the final predicted stock price
+    final_predicted_stock_price = predicted_trend_stock_price + predicted_seasonal_0_stock_price + predicted_seasonal_1_stock_price + predicted_seasonal_2_stock_price + predicted_seasonal_3_stock_price + predicted_resid_stock_price
+    
+    # Prepare actual and predicted stock prices
+    actual_stock_price = close_data[-predict_period_num:].values  # Actual stock price
+    predicted_stock_price = final_predicted_stock_price  # Predicted stock price
+    # Calculate MSE, RMSE, MAE, and R-squared
+    mse = mean_squared_error(actual_stock_price, predicted_stock_price)
+    rmse = np.sqrt(mse)
+    mae = mean_absolute_error(actual_stock_price, predicted_stock_price)
+    r2 = r2_score(actual_stock_price, predicted_stock_price)
+
+    # Print the results
+    print(f"MSE: {mse}")
+    print(f"RMSE: {rmse}")
+    print(f"MAE: {mae}")
+    print(f"R-squared: {r2}")
+    print(final_predicted_stock_price)
+    wandb.log({
+        "real_trend_stock_price": stock_trend.iloc[-1],
+        "real_seasonal_0_stock_price": stock_seasonal_0.iloc[-1],
+        "real_seasonal_1_stock_price": stock_seasonal_1.iloc[-1],
+        "real_seasonal_2_stock_price": stock_seasonal_2.iloc[-1],
+        "real_seasonal_3_stock_price": stock_seasonal_3.iloc[-1],
+        "real_resid_stock_price": stock_resid.iloc[-1],
+        "predicted_trend_stock_price": predicted_trend_stock_price,
+        "predicted_seasonal_0_stock_price": predicted_seasonal_0_stock_price,
+        "predicted_seasonal_1_stock_price": predicted_seasonal_1_stock_price,
+        "predicted_seasonal_2_stock_price": predicted_seasonal_2_stock_price,
+        "predicted_seasonal_3_stock_price": predicted_seasonal_3_stock_price,
+        "predicted_resid_stock_price": predicted_resid_stock_price,
+        "final_predicted_stock_price": final_predicted_stock_price,
+        "real_stock_price": close_data[-1]
+    })
+
+    output_date = 10
+    add_predicted_stock_price = np.append(close_data[-output_date:-predict_period_num].values, final_predicted_stock_price)
+    # Plot the final result
+    predicted_dates_tmp = close_data.index[-output_date:].strftime('%Y-%m-%d')
+    predicted_dates = predicted_dates_tmp.tolist()
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(predicted_dates, close_data[-output_date:].values, linestyle='dashdot', color='blue', label='Actual Price')
+    plt.plot(predicted_dates, add_predicted_stock_price, linestyle='dotted', color='red', label='Predicted Price')
+    plt.plot(predicted_dates, close_data[-output_date:-1].values, color='black', label='learning data')
+    plt.xlabel('Date', fontsize=16)
+    plt.ylabel('Stock Price', fontsize=16)
+    plt.legend(fontsize=14)
+    plt.title(f'{stock_code} Stock Price Prediction by iTransformer', fontsize=18) #check
+
+    # Save and log to WandB
+    plt.savefig(f'{stock_code.lower()}_stock_price_prediction_MSTL.png') #check
+    wandb.log({f"{stock_code} Stock Price Prediction by iTransformer": wandb.Image(f'{stock_code.lower()}_stock_price_prediction_by_iTransformer.png')}) #check
+
+    plt.show()
+
+    # Log runtime to WandB
+    wandb.log({"Runtime (seconds)": runtime_seconds})
+
+    # WandB finish
+    wandb.finish()
 
     # 次の営業日に移行
     initial_end_date += BDay(1)  # 1営業日進める

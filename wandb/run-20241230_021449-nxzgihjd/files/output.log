@@ -1,0 +1,7 @@
+最適化対象: trend
+[32m[I 2024-12-30 02:14:50,857][0m A new study created in memory with name: no-name-66ddd0dd-0fa0-485c-a26a-7a826a95f99d[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-12-30 02:17:48,942][0m Trial 0 finished with value: 0.15129127562409495 and parameters: {'observation_period_num': 105, 'train_rates': 0.8843825951553976, 'learning_rate': 0.0008162629605617071, 'batch_size': 132, 'step_size': 14, 'gamma': 0.915900701205027}. Best is trial 0 with value: 0.15129127562409495.[0m
+[32m[I 2024-12-30 02:21:49,072][0m Trial 1 finished with value: 0.14129543578774362 and parameters: {'observation_period_num': 177, 'train_rates': 0.8269310208508157, 'learning_rate': 0.0003331557620312564, 'batch_size': 82, 'step_size': 1, 'gamma': 0.9521130958923696}. Best is trial 1 with value: 0.14129543578774362.[0m

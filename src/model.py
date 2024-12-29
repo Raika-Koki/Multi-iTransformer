@@ -34,7 +34,7 @@ class Attention(Module):
         self,
         dim,
         dim_head = 32,
-        heads = 4,
+        heads =64, #4
         dropout = 0.,
         flash = True
     ):
@@ -99,7 +99,7 @@ class iTransformer(Module):
         num_tokens_per_variate = 1,
         pred_length: Union[int, Tuple[int, ...]],
         dim_head = 32,
-        heads = 4,
+        heads = 4, 
         attn_dropout = 0.,
         ff_mult = 4,
         ff_dropout = 0.,

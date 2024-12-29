@@ -1,0 +1,17 @@
+[*********************100%***********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 658, in <module>
+    dataframes[comp] = pd.concat([mstl_series.seasonal.iloc[:, idx], mstl_series_open.seasonal.iloc[:, idx]], axis=1)
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1184, in __getitem__
+    return self._getitem_tuple(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1690, in _getitem_tuple
+    tup = self._validate_tuple_indexer(tup)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 962, in _validate_tuple_indexer
+    key = self._validate_key_length(key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexing.py", line 1001, in _validate_key_length
+    raise IndexingError("Too many indexers")
+pandas.errors.IndexingError: Too many indexers

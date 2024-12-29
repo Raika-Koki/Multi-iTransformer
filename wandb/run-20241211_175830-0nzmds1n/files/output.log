@@ -1,0 +1,35 @@
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Date
+2012-05-18     10.692500
+2012-05-21     10.905500
+2012-05-22     10.766500
+2012-05-23     10.864000
+2012-05-24     10.762000
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: AMZN, Length: 2776, dtype: float64
+Price         Volume    BB_Upper    BB_Lower   BB_Middle      MACD MACD_Signal MACD_Diff        RSI    SMA_50    SMA_200 SMA_200-50
+Ticker          AMZN
+Date
+2023-05-24  63487900  120.005693  100.053308  110.029501  3.584615    3.109054  0.475561  66.184276  104.7736  105.39470    0.62110
+2023-05-25  66496700  120.495777  100.081225  110.288501  3.450388    3.177321  0.273067  61.346390  105.1496  105.28055    0.13095
+2023-05-26  96779900  121.821939  100.221062  111.021501  3.713539    3.284565  0.428975  68.570791  105.5510  105.16765   -0.38335
+2023-05-30  64314800  122.926375  101.077627  112.002001  4.001039    3.427859  0.573180  70.379232  106.0052  105.07275   -0.93245
+2023-05-31  72800800  123.673883  102.025119  112.849501  4.094538    3.561195  0.533343  67.466273  106.4626  104.95790   -1.50470
+{'observation_period_num': 5, 'train_rates': 0.9674192065835944, 'learning_rate': 0.0006703481785402301, 'batch_size': 197, 'step_size': 5, 'gamma': 0.9119241664414688, 'depth': 4, 'dim': 123}
+{0: {'observation_period_num': 14, 'train_rates': 0.9534530255286052, 'learning_rate': 2.383027942061777e-05, 'batch_size': 24, 'step_size': 6, 'gamma': 0.9343469177823375, 'depth': 5, 'dim': 162}, 1: {'observation_period_num': 10, 'train_rates': 0.7859430649262442, 'learning_rate': 0.00011626904101397289, 'batch_size': 75, 'step_size': 7, 'gamma': 0.9591926500011835, 'depth': 5, 'dim': 221}, 2: {'observation_period_num': 5, 'train_rates': 0.9881973682668941, 'learning_rate': 0.0008599253544665889, 'batch_size': 46, 'step_size': 2, 'gamma': 0.8332821730513479, 'depth': 5, 'dim': 127}, 3: {'observation_period_num': 11, 'train_rates': 0.9524554300989908, 'learning_rate': 0.00011007906140572895, 'batch_size': 50, 'step_size': 8, 'gamma': 0.9320524916302059, 'depth': 6, 'dim': 145}}
+{'observation_period_num': 13, 'train_rates': 0.8047176482675613, 'learning_rate': 0.0007766732022188664, 'batch_size': 128, 'step_size': 2, 'gamma': 0.925182630519391, 'depth': 4, 'dim': 228}
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 1041, in <module>
+    df_normalized = data_Normalization(dataframes[comp])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 9, in data_Normalization
+    mean_list = df.mean()
+                ^^^^^^^
+AttributeError: 'dict' object has no attribute 'mean'

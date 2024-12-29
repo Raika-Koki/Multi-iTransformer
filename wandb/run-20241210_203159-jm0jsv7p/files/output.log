@@ -1,0 +1,6 @@
+[*********************100%***********************]  1 of 1 completed
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 692, in <module>
+    df_stock_dt = yf.download(stock_code, start=start_date+BDay(1), end=end_date+BDay(1))
+                                                ~~~~~~~~~~^~~~~~~~
+TypeError: can only concatenate str (not "pandas._libs.tslibs.offsets.BusinessDay") to str

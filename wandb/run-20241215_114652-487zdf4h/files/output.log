@@ -1,0 +1,98 @@
+comp trend
+Training trend component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+trend Epoch [10/100], Train Loss: 0.0092, Valid Loss: 0.0170
+trend Epoch [20/100], Train Loss: 0.0077, Valid Loss: 0.0210
+trend Epoch [30/100], Train Loss: 0.0071, Valid Loss: 0.0136
+trend Epoch [40/100], Train Loss: 0.0050, Valid Loss: 0.0144
+trend Epoch [50/100], Train Loss: 0.0045, Valid Loss: 0.0155
+trend Epoch [60/100], Train Loss: 0.0041, Valid Loss: 0.0152
+trend Epoch [70/100], Train Loss: 0.0039, Valid Loss: 0.0152
+trend Epoch [80/100], Train Loss: 0.0038, Valid Loss: 0.0155
+trend Epoch [90/100], Train Loss: 0.0038, Valid Loss: 0.0151
+trend Epoch [100/100], Train Loss: 0.0038, Valid Loss: 0.0152
+comp seasonal_0
+Training seasonal_0 component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+seasonal_0 Epoch [10/100], Train Loss: 0.0090, Valid Loss: 0.0175
+seasonal_0 Epoch [20/100], Train Loss: 0.0076, Valid Loss: 0.0210
+seasonal_0 Epoch [30/100], Train Loss: 0.0058, Valid Loss: 0.0219
+seasonal_0 Epoch [40/100], Train Loss: 0.0038, Valid Loss: 0.0191
+seasonal_0 Epoch [50/100], Train Loss: 0.0035, Valid Loss: 0.0173
+seasonal_0 Epoch [60/100], Train Loss: 0.0032, Valid Loss: 0.0166
+seasonal_0 Epoch [70/100], Train Loss: 0.0030, Valid Loss: 0.0172
+seasonal_0 Epoch [80/100], Train Loss: 0.0030, Valid Loss: 0.0174
+seasonal_0 Epoch [90/100], Train Loss: 0.0030, Valid Loss: 0.0173
+seasonal_0 Epoch [100/100], Train Loss: 0.0029, Valid Loss: 0.0172
+comp seasonal_1
+Training seasonal_1 component with params: {}
+seasonal_1 Epoch [10/100], Train Loss: 0.0087, Valid Loss: 0.0143
+seasonal_1 Epoch [20/100], Train Loss: 0.0075, Valid Loss: 0.0147
+seasonal_1 Epoch [30/100], Train Loss: 0.0064, Valid Loss: 0.0146
+seasonal_1 Epoch [40/100], Train Loss: 0.0040, Valid Loss: 0.0126
+seasonal_1 Epoch [50/100], Train Loss: 0.0037, Valid Loss: 0.0130
+seasonal_1 Epoch [60/100], Train Loss: 0.0034, Valid Loss: 0.0108
+seasonal_1 Epoch [70/100], Train Loss: 0.0032, Valid Loss: 0.0116
+seasonal_1 Epoch [80/100], Train Loss: 0.0031, Valid Loss: 0.0114
+seasonal_1 Epoch [90/100], Train Loss: 0.0031, Valid Loss: 0.0117
+seasonal_1 Epoch [100/100], Train Loss: 0.0031, Valid Loss: 0.0116
+comp seasonal_2
+Training seasonal_2 component with params: {}
+seasonal_2 Epoch [10/100], Train Loss: 0.0086, Valid Loss: 0.0170
+seasonal_2 Epoch [20/100], Train Loss: 0.0082, Valid Loss: 0.0191
+seasonal_2 Epoch [30/100], Train Loss: 0.0072, Valid Loss: 0.0221
+seasonal_2 Epoch [40/100], Train Loss: 0.0061, Valid Loss: 0.0170
+seasonal_2 Epoch [50/100], Train Loss: 0.0056, Valid Loss: 0.0164
+seasonal_2 Epoch [60/100], Train Loss: 0.0051, Valid Loss: 0.0166
+seasonal_2 Epoch [70/100], Train Loss: 0.0049, Valid Loss: 0.0167
+seasonal_2 Epoch [80/100], Train Loss: 0.0048, Valid Loss: 0.0170
+seasonal_2 Epoch [90/100], Train Loss: 0.0048, Valid Loss: 0.0168
+seasonal_2 Epoch [100/100], Train Loss: 0.0047, Valid Loss: 0.0168
+comp seasonal_3
+Training seasonal_3 component with params: {}
+seasonal_3 Epoch [10/100], Train Loss: 0.0088, Valid Loss: 0.0208
+seasonal_3 Epoch [20/100], Train Loss: 0.0073, Valid Loss: 0.0163
+seasonal_3 Epoch [30/100], Train Loss: 0.0064, Valid Loss: 0.0144
+seasonal_3 Epoch [40/100], Train Loss: 0.0043, Valid Loss: 0.0143
+seasonal_3 Epoch [50/100], Train Loss: 0.0039, Valid Loss: 0.0130
+seasonal_3 Epoch [60/100], Train Loss: 0.0036, Valid Loss: 0.0135
+seasonal_3 Epoch [70/100], Train Loss: 0.0034, Valid Loss: 0.0127
+seasonal_3 Epoch [80/100], Train Loss: 0.0033, Valid Loss: 0.0128
+seasonal_3 Epoch [90/100], Train Loss: 0.0033, Valid Loss: 0.0129
+seasonal_3 Epoch [100/100], Train Loss: 0.0033, Valid Loss: 0.0129
+comp resid
+Training resid component with params: {}
+resid Epoch [10/100], Train Loss: 0.0094, Valid Loss: 0.0246
+resid Epoch [20/100], Train Loss: 0.0084, Valid Loss: 0.0131
+resid Epoch [30/100], Train Loss: 0.0074, Valid Loss: 0.0165
+resid Epoch [40/100], Train Loss: 0.0065, Valid Loss: 0.0144
+resid Epoch [50/100], Train Loss: 0.0061, Valid Loss: 0.0149
+resid Epoch [60/100], Train Loss: 0.0057, Valid Loss: 0.0132
+resid Epoch [70/100], Train Loss: 0.0055, Valid Loss: 0.0141
+resid Epoch [80/100], Train Loss: 0.0054, Valid Loss: 0.0139
+resid Epoch [90/100], Train Loss: 0.0054, Valid Loss: 0.0143
+resid Epoch [100/100], Train Loss: 0.0054, Valid Loss: 0.0141
+Runtime (seconds): 6065.366649866104
+/data/student/k2110261/Multi-iTransformer/Transformer.py:563: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/Transformer.py:564: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/Transformer.py:565: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+/data/student/k2110261/Multi-iTransformer/Transformer.py:566: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_2_stock_price = predicted_seasonal_2[0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+/data/student/k2110261/Multi-iTransformer/Transformer.py:567: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_3_stock_price = predicted_seasonal_3[0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+/data/student/k2110261/Multi-iTransformer/Transformer.py:568: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_resid_stock_price = predicted_resid[0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+[155.26362657]
+[3.9496271]
+[-3.78516975]
+[-12.96412496]
+[-20.15398836]
+[-23.39624621]
+[98.91372439]
+/data/student/k2110261/Multi-iTransformer/Transformer.py:594: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_stock_price": close_data[-1]

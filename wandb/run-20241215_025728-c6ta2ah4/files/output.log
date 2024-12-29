@@ -1,0 +1,22 @@
+comp trend
+Training trend component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+comp seasonal_0
+Training seasonal_0 component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+comp seasonal_1
+Training seasonal_1 component with params: {}
+comp seasonal_2
+Training seasonal_2 component with params: {}
+comp seasonal_3
+Training seasonal_3 component with params: {}
+comp resid
+Training resid component with params: {}
+Runtime (seconds): 69.05902671813965
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 558, in <module>
+    predicted_trend_stock_price = predicted_trend[0][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+                                  ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2

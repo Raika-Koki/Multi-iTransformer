@@ -107,18 +107,47 @@ if len(df_stock) == 0:
 
 data = df_stock['Adj Close']
 
+
+# 配当金データを取得
+ticker = yf.Ticker(stock_code)
+dividends = ticker.dividends
+splits = ticker.splits.tz_localize(None)
+
+# 元の splits データを表示
+print("Original splits:")
+print(splits)
+
+
+# 株価データのインデックスに基づいて補完（非ゼロデータは保持）
+df_splits = splits.reindex(df_stock.tz_localize(None).index, fill_value=0)
+
+# 非ゼロデータのみを抽出
+non_zero_splits = df_splits[df_splits != 0]
+print("\nNon-zero splits:")
+print(non_zero_splits)
+print(df_splits)
+
+
+# 株式分割データを取得
+#splits = yf.Ticker(stock_code).splits
+#splits.index = splits.index.map(lambda x: df_stock.index[df_stock.index.get_loc(x, method='pad')])
+#print("\n株式分割データ:")
+#print(splits)
+exit()
+
 # MSTLによる分解
 periods = [252, 504, 756, 1260]
 iterate = 3
-stl_kwargs = {"seasonal_deg": 0, "inner_iter": 3, "outer_iter": 1}
+stl_kwargs = {"seasonal_deg": 0, "inner_iter": 3, "outer_iter": 0}
 
 result = decompose_stock_data(data, periods, iterate, stl_kwargs)
 
 # 分解結果のプロット
-print(result.trend)
+print(result.resid)
+print(result.resid.max()-result.resid.min())
 # 季節性成分の1つ目の周期の表示
-print(f"Seasonal Component ({periods[0]} days):")
-print(result.seasonal.iloc[:, 3])  # .ilocで列を指定
+#print(f"Seasonal Component ({periods[0]} days):")
+#print(result.seasonal.iloc[:, 3])  # .ilocで列を指定
 
 
 # 分解結果のプロット
@@ -150,3 +179,21 @@ axes[6].set_title('Residual Component')
 plt.tight_layout()
 plt.show()
 plt.savefig("output.png")
+
+
+
+"""    # NaNが含まれているかを確認し、含まれている場合はその部分を出力
+    def check_for_nan(dataframes):
+        for name, df in dataframes.items():
+            if df.isnull().values.any():
+                print(f"NaN values found in {name}:")
+                print(df.isnull().sum())
+
+    # 各データフレームでNaNのチェックを実行
+    check_for_nan(dataframes_trend)
+    check_for_nan(dataframes_seasonal_0)
+    check_for_nan(dataframes_seasonal_1)
+    check_for_nan(dataframes_seasonal_2)
+    check_for_nan(dataframes_seasonal_3)
+    check_for_nan(dataframes_resid)
+    break"""

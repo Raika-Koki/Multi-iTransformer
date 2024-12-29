@@ -1,0 +1,60 @@
+Training trend component with params: {'observation_period_num': 80, 'train_rates': 0.8445747513115585, 'learning_rate': 0.00020966568439055082, 'batch_size': 125, 'step_size': 8, 'gamma': 0.9074785692390387, 'depth': 5, 'dim': 92}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, trend Loss: 0.7825 | 1.3491
+Epoch 2/5, trend Loss: 0.4320 | 0.9269
+Epoch 3/5, trend Loss: 0.2981 | 0.9338
+Epoch 4/5, trend Loss: 0.2686 | 0.7041
+Epoch 5/5, trend Loss: 0.2409 | 0.7198
+Training seasonal_0 component with params: {'observation_period_num': 17, 'train_rates': 0.7312015326404051, 'learning_rate': 0.0002792513290629619, 'batch_size': 125, 'step_size': 10, 'gamma': 0.9617517799008246, 'depth': 3, 'dim': 118}
+Epoch 1/5, seasonal_0 Loss: 0.4121 | 0.5197
+Epoch 2/5, seasonal_0 Loss: 0.2032 | 0.4198
+Epoch 3/5, seasonal_0 Loss: 0.1717 | 0.3708
+Epoch 4/5, seasonal_0 Loss: 0.1283 | 0.3430
+Epoch 5/5, seasonal_0 Loss: 0.1275 | 0.3353
+Training seasonal_1 component with params: {'observation_period_num': 6, 'train_rates': 0.7678558083466835, 'learning_rate': 0.0001799731348007104, 'batch_size': 226, 'step_size': 5, 'gamma': 0.8365812905166796, 'depth': 3, 'dim': 213}
+Epoch 1/5, seasonal_1 Loss: 0.2445 | 0.3792
+Epoch 2/5, seasonal_1 Loss: 0.1612 | 0.3515
+Epoch 3/5, seasonal_1 Loss: 0.1367 | 0.3221
+Epoch 4/5, seasonal_1 Loss: 0.1072 | 0.3030
+Epoch 5/5, seasonal_1 Loss: 0.1179 | 0.2829
+Training seasonal_2 component with params: {'observation_period_num': 172, 'train_rates': 0.9284378555971083, 'learning_rate': 4.8772869408199974e-05, 'batch_size': 169, 'step_size': 8, 'gamma': 0.9807905890424803, 'depth': 5, 'dim': 179}
+Epoch 1/5, seasonal_2 Loss: 0.7713 | 0.8234
+Epoch 2/5, seasonal_2 Loss: 0.6227 | 0.7414
+Epoch 3/5, seasonal_2 Loss: 0.4790 | 0.7246
+Epoch 4/5, seasonal_2 Loss: 0.4407 | 0.5856
+Epoch 5/5, seasonal_2 Loss: 0.3858 | 0.5628
+Training seasonal_3 component with params: {'observation_period_num': 17, 'train_rates': 0.8104859979039114, 'learning_rate': 7.084074136980957e-05, 'batch_size': 64, 'step_size': 13, 'gamma': 0.9796931332800368, 'depth': 3, 'dim': 133}
+Epoch 1/5, seasonal_3 Loss: 0.6013 | 0.9025
+Epoch 2/5, seasonal_3 Loss: 0.2128 | 0.5769
+Epoch 3/5, seasonal_3 Loss: 0.1601 | 0.4863
+Epoch 4/5, seasonal_3 Loss: 0.1376 | 0.4477
+Epoch 5/5, seasonal_3 Loss: 0.1246 | 0.4149
+Training resid component with params: {'observation_period_num': 63, 'train_rates': 0.7456134680241998, 'learning_rate': 0.0003154346460077453, 'batch_size': 16, 'step_size': 5, 'gamma': 0.7520074738095717, 'depth': 4, 'dim': 91}
+Epoch 1/5, resid Loss: 0.2125 | 0.4546
+Epoch 2/5, resid Loss: 0.1184 | 0.3806
+Epoch 3/5, resid Loss: 0.0871 | 0.3700
+Epoch 4/5, resid Loss: 0.0821 | 0.2878
+Epoch 5/5, resid Loss: 0.0798 | 0.2784
+Runtime (seconds): 30.199445247650146
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:663: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:664: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:665: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:666: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:667: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:668: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+[138.30940628]
+[1.09896368]
+[-1.13772393]
+[-8.62580477]
+[-11.3015077]
+[-26.556964]
+[91.78636954]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:695: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_stock_price": close_data[-1]

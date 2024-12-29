@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 1023, in <module>
+    model, optimizer, scheduler = create_model(params, len(tickers), predict_period_num)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 658, in create_model
+    depth=params['depth'],
+          ~~~~~~^^^^^^^^^
+KeyError: 'depth'

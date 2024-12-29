@@ -1,0 +1,34 @@
+// Training and Evaluation Workflow
+digraph {
+	A [label="Start Training"]
+	B [label="Split Train Data into Mini-Batches"]
+	C [label="Forward Pass"]
+	D [label="Calculate Loss (MSE)"]
+	E [label="Backward Pass (Gradient Calculation)"]
+	F [label="Update Parameters"]
+	G [label="End of Epoch/Trial"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G1 [label="Use Valid Data to Calculate Loss (MSE)"]
+	G2 [label="Check if Validation Loss is Minimum"]
+	G3 [label="Save Optimal Model Parameters"]
+	G4 [label="Continue Training or Stop"]
+	G -> G1
+	G1 -> G2
+	G2 -> G3 [label=Yes]
+	G2 -> F [label=No]
+	G3 -> G4
+	G4 -> A [label=Continue]
+	H [label="Load Optimal Model"]
+	I [label="Perform Inference on Test/Prediction Data"]
+	J [label="Compare with Actual Stock Prices"]
+	K [label="Calculate Evaluation Metrics (MSE)"]
+	G4 -> H
+	H -> I
+	I -> J
+	J -> K
+}

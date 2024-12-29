@@ -1,0 +1,28 @@
+comp trend
+Training trend component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+trend Epoch [100/100], Train Loss: 0.0217, Valid Loss: 0.0810
+comp seasonal_0
+Training seasonal_0 component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+seasonal_0 Epoch [100/100], Train Loss: 0.0222, Valid Loss: 0.0778
+comp seasonal_1
+Training seasonal_1 component with params: {}
+seasonal_1 Epoch [100/100], Train Loss: 0.0224, Valid Loss: 0.0770
+comp seasonal_2
+Training seasonal_2 component with params: {}
+seasonal_2 Epoch [100/100], Train Loss: 0.0226, Valid Loss: 0.0765
+comp seasonal_3
+Training seasonal_3 component with params: {}
+seasonal_3 Epoch [100/100], Train Loss: 0.0220, Valid Loss: 0.0784
+comp resid
+Training resid component with params: {}
+resid Epoch [100/100], Train Loss: 0.0222, Valid Loss: 0.0775
+Runtime (seconds): 4934.99876666069
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 559, in <module>
+    predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+                                  ~~~~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1

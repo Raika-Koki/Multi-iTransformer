@@ -1,0 +1,55 @@
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, trend Loss: 1.5133 | 0.5055
+Epoch 2/5, trend Loss: 0.4593 | 0.3847
+Epoch 3/5, trend Loss: 0.3494 | 0.4517
+Epoch 4/5, trend Loss: 0.6714 | 0.7683
+Epoch 5/5, trend Loss: 0.4817 | 0.4143
+Epoch 1/5, seasonal_0 Loss: 0.6325 | 0.7635
+Epoch 2/5, seasonal_0 Loss: 0.2723 | 0.5391
+Epoch 3/5, seasonal_0 Loss: 0.2692 | 0.4660
+Epoch 4/5, seasonal_0 Loss: 0.2235 | 0.4202
+Epoch 5/5, seasonal_0 Loss: 0.1838 | 0.3790
+Epoch 1/5, seasonal_1 Loss: 2.2267 | 3.4588
+Epoch 2/5, seasonal_1 Loss: 0.9586 | 2.0730
+Epoch 3/5, seasonal_1 Loss: 0.5653 | 1.4634
+Epoch 4/5, seasonal_1 Loss: 0.5553 | 1.2629
+Epoch 5/5, seasonal_1 Loss: 0.4952 | 1.2867
+Epoch 1/5, seasonal_2 Loss: 0.6054 | 0.7870
+Epoch 2/5, seasonal_2 Loss: 0.4257 | 0.7089
+Epoch 3/5, seasonal_2 Loss: 0.3375 | 0.5049
+Epoch 4/5, seasonal_2 Loss: 0.6270 | 0.5617
+Epoch 5/5, seasonal_2 Loss: 0.3739 | 0.4740
+Epoch 1/5, seasonal_3 Loss: 1.3718 | 1.3442
+Epoch 2/5, seasonal_3 Loss: 0.5635 | 0.7827
+Epoch 3/5, seasonal_3 Loss: 0.3596 | 0.6823
+Epoch 4/5, seasonal_3 Loss: 0.3539 | 1.0880
+Epoch 5/5, seasonal_3 Loss: 0.2747 | 1.2639
+Epoch 1/5, resid Loss: 0.5160 | 0.4676
+Epoch 2/5, resid Loss: 0.2407 | 0.4190
+Epoch 3/5, resid Loss: 0.2052 | 0.3687
+Epoch 4/5, resid Loss: 0.2000 | 0.3047
+Epoch 5/5, resid Loss: 0.1698 | 0.3400
+Runtime (seconds): 135.114670753479
+/data/student/k2110261/Multi-iTransformer/main.py:1105: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1106: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1107: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1108: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1109: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1110: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+[141.17050561]
+[1.16868468]
+[-2.59970271]
+[-10.9178993]
+[-10.5779812]
+[-22.25371178]
+[95.9898953]
+/data/student/k2110261/Multi-iTransformer/main.py:1137: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_stock_price": close_data[-1]

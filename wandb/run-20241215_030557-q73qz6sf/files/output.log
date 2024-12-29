@@ -1,0 +1,70 @@
+comp trend
+Training trend component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+trend Epoch [10/100], Train Loss: 0.0220, Valid Loss: 0.0815
+trend Epoch [20/100], Train Loss: 0.0218, Valid Loss: 0.0793
+trend Epoch [30/100], Train Loss: 0.0218, Valid Loss: 0.0805
+trend Epoch [40/100], Train Loss: 0.0218, Valid Loss: 0.0806
+trend Epoch [50/100], Train Loss: 0.0218, Valid Loss: 0.0805
+trend Epoch [60/100], Train Loss: 0.0218, Valid Loss: 0.0805
+trend Epoch [70/100], Train Loss: 0.0218, Valid Loss: 0.0805
+trend Epoch [80/100], Train Loss: 0.0217, Valid Loss: 0.0804
+trend Epoch [90/100], Train Loss: 0.0217, Valid Loss: 0.0805
+trend Epoch [100/100], Train Loss: 0.0217, Valid Loss: 0.0805
+comp seasonal_0
+Training seasonal_0 component with params: {}
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+seasonal_0 Epoch [10/100], Train Loss: 0.0226, Valid Loss: 0.0766
+seasonal_0 Epoch [20/100], Train Loss: 0.0225, Valid Loss: 0.0774
+seasonal_0 Epoch [30/100], Train Loss: 0.0224, Valid Loss: 0.0770
+seasonal_0 Epoch [40/100], Train Loss: 0.0223, Valid Loss: 0.0771
+seasonal_0 Epoch [50/100], Train Loss: 0.0224, Valid Loss: 0.0771
+seasonal_0 Epoch [60/100], Train Loss: 0.0224, Valid Loss: 0.0774
+seasonal_0 Epoch [70/100], Train Loss: 0.0223, Valid Loss: 0.0772
+seasonal_0 Epoch [80/100], Train Loss: 0.0223, Valid Loss: 0.0771
+seasonal_0 Epoch [90/100], Train Loss: 0.0223, Valid Loss: 0.0772
+seasonal_0 Epoch [100/100], Train Loss: 0.0223, Valid Loss: 0.0772
+comp seasonal_1
+Training seasonal_1 component with params: {}
+seasonal_1 Epoch [10/100], Train Loss: 0.0227, Valid Loss: 0.0778
+seasonal_1 Epoch [20/100], Train Loss: 0.0226, Valid Loss: 0.0751
+seasonal_1 Epoch [30/100], Train Loss: 0.0226, Valid Loss: 0.0785
+seasonal_1 Epoch [40/100], Train Loss: 0.0225, Valid Loss: 0.0764
+seasonal_1 Epoch [50/100], Train Loss: 0.0225, Valid Loss: 0.0765
+seasonal_1 Epoch [60/100], Train Loss: 0.0225, Valid Loss: 0.0767
+seasonal_1 Epoch [70/100], Train Loss: 0.0225, Valid Loss: 0.0766
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 522, in <module>
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/Transformer_model.py", line 23, in forward
+    src = src.permute(1, 0, 2)   # (lookback_len, batch_size, dim)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 511, in forward
+    output = mod(
+             ^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 902, in forward
+    x = self.norm1(
+        ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1732, in _wrapped_call_impl
+    def _wrapped_call_impl(self, *args, **kwargs):
+
+KeyboardInterrupt

@@ -1,0 +1,23 @@
+[*********************100%***********************]  1 of 1 completed
+Only one seasonal component available, skipping seasonal_1.
+Only one seasonal component available, skipping seasonal_2.
+Only one seasonal component available, skipping seasonal_3.
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 739, in <module>
+    df_stock['Adj Close']).bollinger_mavg()
+                           ^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/ta/volatility.py", line 108, in bollinger_mavg
+    return pd.Series(mavg, name="mavg")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/series.py", line 584, in __init__
+    data = sanitize_array(data, index, dtype, copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/construction.py", line 633, in sanitize_array
+    return sanitize_array(
+           ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/construction.py", line 659, in sanitize_array
+    subarr = _sanitize_ndim(subarr, data, dtype, index, allow_2d=allow_2d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/construction.py", line 718, in _sanitize_ndim
+    raise ValueError(
+ValueError: Data must be 1-dimensional, got ndarray of shape (2776, 1) instead

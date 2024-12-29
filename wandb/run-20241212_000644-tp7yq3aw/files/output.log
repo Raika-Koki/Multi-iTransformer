@@ -1,0 +1,91 @@
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Date
+2012-05-18     10.692500
+2012-05-21     10.905500
+2012-05-22     10.766500
+2012-05-23     10.864000
+2012-05-24     10.762000
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: AMZN, Length: 2776, dtype: float64
+Price         Volume    BB_Upper    BB_Lower   BB_Middle      MACD MACD_Signal MACD_Diff        RSI    SMA_50    SMA_200 SMA_200-50
+Ticker          AMZN
+Date
+2023-05-24  63487900  120.005693  100.053308  110.029501  3.584615    3.109054  0.475561  66.184276  104.7736  105.39470    0.62110
+2023-05-25  66496700  120.495777  100.081225  110.288501  3.450388    3.177321  0.273067  61.346390  105.1496  105.28055    0.13095
+2023-05-26  96779900  121.821939  100.221062  111.021501  3.713539    3.284565  0.428975  68.570791  105.5510  105.16765   -0.38335
+2023-05-30  64314800  122.926375  101.077627  112.002001  4.001039    3.427859  0.573180  70.379232  106.0052  105.07275   -0.93245
+2023-05-31  72800800  123.673883  102.025119  112.849501  4.094538    3.561195  0.533343  67.466273  106.4626  104.95790   -1.50470
+{'observation_period_num': 5, 'train_rates': 0.9674192065835944, 'learning_rate': 0.0006703481785402301, 'batch_size': 197, 'step_size': 5, 'gamma': 0.9119241664414688, 'depth': 4, 'dim': 123}
+{0: {'observation_period_num': 14, 'train_rates': 0.9534530255286052, 'learning_rate': 2.383027942061777e-05, 'batch_size': 24, 'step_size': 6, 'gamma': 0.9343469177823375, 'depth': 5, 'dim': 162}, 1: {'observation_period_num': 10, 'train_rates': 0.7859430649262442, 'learning_rate': 0.00011626904101397289, 'batch_size': 75, 'step_size': 7, 'gamma': 0.9591926500011835, 'depth': 5, 'dim': 221}, 2: {'observation_period_num': 5, 'train_rates': 0.9881973682668941, 'learning_rate': 0.0008599253544665889, 'batch_size': 46, 'step_size': 2, 'gamma': 0.8332821730513479, 'depth': 5, 'dim': 127}, 3: {'observation_period_num': 11, 'train_rates': 0.9524554300989908, 'learning_rate': 0.00011007906140572895, 'batch_size': 50, 'step_size': 8, 'gamma': 0.9320524916302059, 'depth': 6, 'dim': 145}}
+{'observation_period_num': 13, 'train_rates': 0.8047176482675613, 'learning_rate': 0.0007766732022188664, 'batch_size': 128, 'step_size': 2, 'gamma': 0.925182630519391, 'depth': 4, 'dim': 228}
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, trend Loss: 0.9767 | 0.3172
+Epoch 2/5, trend Loss: 0.3008 | 0.2180
+Epoch 3/5, trend Loss: 0.1957 | 0.2919
+Epoch 4/5, trend Loss: 0.1775 | 0.2096
+Epoch 5/5, trend Loss: 0.1436 | 0.1200
+Epoch 1/5, seasonal_0 Loss: 0.3461 | 0.2316
+Epoch 2/5, seasonal_0 Loss: 0.1578 | 0.1585
+Epoch 3/5, seasonal_0 Loss: 0.1234 | 0.1277
+Epoch 4/5, seasonal_0 Loss: 0.1066 | 0.1054
+Epoch 5/5, seasonal_0 Loss: 0.0979 | 0.0897
+Epoch 1/5, seasonal_1 Loss: 0.3404 | 0.3232
+Epoch 2/5, seasonal_1 Loss: 0.1290 | 0.2359
+Epoch 3/5, seasonal_1 Loss: 0.1243 | 0.1932
+Epoch 4/5, seasonal_1 Loss: 0.1078 | 0.1548
+Epoch 5/5, seasonal_1 Loss: 0.0951 | 0.1296
+Epoch 1/5, seasonal_2 Loss: 0.2613 | 0.0814
+Epoch 2/5, seasonal_2 Loss: 0.0872 | 0.0591
+Epoch 3/5, seasonal_2 Loss: 0.0753 | 0.0517
+Epoch 4/5, seasonal_2 Loss: 0.0692 | 0.0477
+Epoch 5/5, seasonal_2 Loss: 0.0654 | 0.0541
+Epoch 1/5, seasonal_3 Loss: 0.3453 | 0.1662
+Epoch 2/5, seasonal_3 Loss: 0.1289 | 0.1086
+Epoch 3/5, seasonal_3 Loss: 0.1030 | 0.0799
+Epoch 4/5, seasonal_3 Loss: 0.0898 | 0.0688
+Epoch 5/5, seasonal_3 Loss: 0.0826 | 0.0655
+Epoch 1/5, resid Loss: 0.7520 | 0.3426
+Epoch 2/5, resid Loss: 0.1565 | 0.2414
+Epoch 3/5, resid Loss: 0.1268 | 0.1660
+Epoch 4/5, resid Loss: 0.1050 | 0.1493
+Epoch 5/5, resid Loss: 0.0867 | 0.1501
+Runtime (seconds): 83.46903705596924
+/data/student/k2110261/Multi-iTransformer/main.py:1100: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1101: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1102: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'seasonal_2'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 1103, in <module>
+    predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_list['seasonal_2'] + mean_list['seasonal_2']
+                                                                                                  ~~~~~~~~^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'seasonal_2'

@@ -1,0 +1,95 @@
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Date
+2012-05-18     10.692500
+2012-05-21     10.905500
+2012-05-22     10.766500
+2012-05-23     10.864000
+2012-05-24     10.762000
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: AMZN, Length: 2776, dtype: float64
+Price         Volume    BB_Upper    BB_Lower   BB_Middle      MACD MACD_Signal MACD_Diff        RSI    SMA_50    SMA_200 SMA_200-50
+Ticker          AMZN
+Date
+2023-05-24  63487900  120.005693  100.053308  110.029501  3.584615    3.109054  0.475561  66.184276  104.7736  105.39470    0.62110
+2023-05-25  66496700  120.495777  100.081225  110.288501  3.450388    3.177321  0.273067  61.346390  105.1496  105.28055    0.13095
+2023-05-26  96779900  121.821939  100.221062  111.021501  3.713539    3.284565  0.428975  68.570791  105.5510  105.16765   -0.38335
+2023-05-30  64314800  122.926375  101.077627  112.002001  4.001039    3.427859  0.573180  70.379232  106.0052  105.07275   -0.93245
+2023-05-31  72800800  123.673883  102.025119  112.849501  4.094538    3.561195  0.533343  67.466273  106.4626  104.95790   -1.50470
+{'observation_period_num': 5, 'train_rates': 0.9674192065835944, 'learning_rate': 0.0006703481785402301, 'batch_size': 197, 'step_size': 5, 'gamma': 0.9119241664414688, 'depth': 4, 'dim': 123}
+{0: {'observation_period_num': 14, 'train_rates': 0.9534530255286052, 'learning_rate': 2.383027942061777e-05, 'batch_size': 24, 'step_size': 6, 'gamma': 0.9343469177823375, 'depth': 5, 'dim': 162}, 1: {'observation_period_num': 10, 'train_rates': 0.7859430649262442, 'learning_rate': 0.00011626904101397289, 'batch_size': 75, 'step_size': 7, 'gamma': 0.9591926500011835, 'depth': 5, 'dim': 221}, 2: {'observation_period_num': 5, 'train_rates': 0.9881973682668941, 'learning_rate': 0.0008599253544665889, 'batch_size': 46, 'step_size': 2, 'gamma': 0.8332821730513479, 'depth': 5, 'dim': 127}, 3: {'observation_period_num': 11, 'train_rates': 0.9524554300989908, 'learning_rate': 0.00011007906140572895, 'batch_size': 50, 'step_size': 8, 'gamma': 0.9320524916302059, 'depth': 6, 'dim': 145}}
+{'observation_period_num': 13, 'train_rates': 0.8047176482675613, 'learning_rate': 0.0007766732022188664, 'batch_size': 128, 'step_size': 2, 'gamma': 0.925182630519391, 'depth': 4, 'dim': 228}
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, trend Loss: 0.3512 | 0.2631
+Epoch 2/5, trend Loss: 0.1811 | 0.2376
+Epoch 3/5, trend Loss: 0.2026 | 0.1152
+Epoch 4/5, trend Loss: 0.2641 | 0.4332
+Epoch 5/5, trend Loss: 0.2688 | 0.3394
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, seasonal_0 Loss: 0.3880 | 0.2456
+Epoch 2/5, seasonal_0 Loss: 0.1603 | 0.1611
+Epoch 3/5, seasonal_0 Loss: 0.1265 | 0.1280
+Epoch 4/5, seasonal_0 Loss: 0.1090 | 0.1061
+Epoch 5/5, seasonal_0 Loss: 0.0986 | 0.0901
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, seasonal_1 Loss: 0.3082 | 0.2441
+Epoch 2/5, seasonal_1 Loss: 0.1152 | 0.1742
+Epoch 3/5, seasonal_1 Loss: 0.1033 | 0.1478
+Epoch 4/5, seasonal_1 Loss: 0.0928 | 0.1301
+Epoch 5/5, seasonal_1 Loss: 0.0865 | 0.1191
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, seasonal_2 Loss: 0.2660 | 0.0804
+Epoch 2/5, seasonal_2 Loss: 0.0895 | 0.0566
+Epoch 3/5, seasonal_2 Loss: 0.0759 | 0.0495
+Epoch 4/5, seasonal_2 Loss: 0.0700 | 0.0503
+Epoch 5/5, seasonal_2 Loss: 0.0656 | 0.0683
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, seasonal_3 Loss: 0.3341 | 0.1694
+Epoch 2/5, seasonal_3 Loss: 0.1308 | 0.1011
+Epoch 3/5, seasonal_3 Loss: 0.1024 | 0.0788
+Epoch 4/5, seasonal_3 Loss: 0.0913 | 0.0793
+Epoch 5/5, seasonal_3 Loss: 0.0857 | 0.0724
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, resid Loss: 0.4879 | 0.3795
+Epoch 2/5, resid Loss: 0.1395 | 0.2021
+Epoch 3/5, resid Loss: 0.1182 | 0.1439
+Epoch 4/5, resid Loss: 0.0846 | 0.1167
+Epoch 5/5, resid Loss: 0.0765 | 0.1103
+Runtime (seconds): 82.84191751480103
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'trend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/main.py", line 1098, in <module>
+    predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_list['trend'] + mean_list['trend']
+                                                                                        ~~~~~~~~^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'trend'

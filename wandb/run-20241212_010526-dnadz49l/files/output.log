@@ -1,0 +1,82 @@
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+Date
+2012-05-18     10.692500
+2012-05-21     10.905500
+2012-05-22     10.766500
+2012-05-23     10.864000
+2012-05-24     10.762000
+                 ...
+2023-05-24    116.750000
+2023-05-25    115.000000
+2023-05-26    120.110001
+2023-05-30    121.660004
+2023-05-31    120.580002
+Name: AMZN, Length: 2776, dtype: float64
+Price         Volume    BB_Upper    BB_Lower   BB_Middle      MACD MACD_Signal MACD_Diff        RSI    SMA_50    SMA_200 SMA_200-50
+Ticker          AMZN
+Date
+2023-05-24  63487900  120.005693  100.053308  110.029501  3.584615    3.109054  0.475561  66.184276  104.7736  105.39470    0.62110
+2023-05-25  66496700  120.495777  100.081225  110.288501  3.450388    3.177321  0.273067  61.346390  105.1496  105.28055    0.13095
+2023-05-26  96779900  121.821939  100.221062  111.021501  3.713539    3.284565  0.428975  68.570791  105.5510  105.16765   -0.38335
+2023-05-30  64314800  122.926375  101.077627  112.002001  4.001039    3.427859  0.573180  70.379232  106.0052  105.07275   -0.93245
+2023-05-31  72800800  123.673883  102.025119  112.849501  4.094538    3.561195  0.533343  67.466273  106.4626  104.95790   -1.50470
+{'observation_period_num': 5, 'train_rates': 0.9674192065835944, 'learning_rate': 0.0006703481785402301, 'batch_size': 197, 'step_size': 5, 'gamma': 0.9119241664414688, 'depth': 4, 'dim': 123}
+{0: {'observation_period_num': 14, 'train_rates': 0.9534530255286052, 'learning_rate': 2.383027942061777e-05, 'batch_size': 24, 'step_size': 6, 'gamma': 0.9343469177823375, 'depth': 5, 'dim': 162}, 1: {'observation_period_num': 10, 'train_rates': 0.7859430649262442, 'learning_rate': 0.00011626904101397289, 'batch_size': 75, 'step_size': 7, 'gamma': 0.9591926500011835, 'depth': 5, 'dim': 221}, 2: {'observation_period_num': 5, 'train_rates': 0.9881973682668941, 'learning_rate': 0.0008599253544665889, 'batch_size': 46, 'step_size': 2, 'gamma': 0.8332821730513479, 'depth': 5, 'dim': 127}, 3: {'observation_period_num': 11, 'train_rates': 0.9524554300989908, 'learning_rate': 0.00011007906140572895, 'batch_size': 50, 'step_size': 8, 'gamma': 0.9320524916302059, 'depth': 6, 'dim': 145}}
+{'observation_period_num': 13, 'train_rates': 0.8047176482675613, 'learning_rate': 0.0007766732022188664, 'batch_size': 128, 'step_size': 2, 'gamma': 0.925182630519391, 'depth': 4, 'dim': 228}
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+Epoch 1/5, trend Loss: 0.8313 | 0.3233
+Epoch 2/5, trend Loss: 0.3247 | 0.3664
+Epoch 3/5, trend Loss: 0.1879 | 0.1642
+Epoch 4/5, trend Loss: 0.1630 | 0.1756
+Epoch 5/5, trend Loss: 0.1377 | 0.1248
+Epoch 1/5, seasonal_0 Loss: 0.2680 | 0.1852
+Epoch 2/5, seasonal_0 Loss: 0.1429 | 0.1448
+Epoch 3/5, seasonal_0 Loss: 0.1175 | 0.1161
+Epoch 4/5, seasonal_0 Loss: 0.1038 | 0.0965
+Epoch 5/5, seasonal_0 Loss: 0.0967 | 0.0842
+Epoch 1/5, seasonal_1 Loss: 0.2845 | 0.2781
+Epoch 2/5, seasonal_1 Loss: 0.1225 | 0.1995
+Epoch 3/5, seasonal_1 Loss: 0.1139 | 0.1668
+Epoch 4/5, seasonal_1 Loss: 0.1090 | 0.1567
+Epoch 5/5, seasonal_1 Loss: 0.0987 | 0.1483
+Epoch 1/5, seasonal_2 Loss: 0.2524 | 0.0799
+Epoch 2/5, seasonal_2 Loss: 0.0895 | 0.0600
+Epoch 3/5, seasonal_2 Loss: 0.0757 | 0.0567
+Epoch 4/5, seasonal_2 Loss: 0.0701 | 0.0487
+Epoch 5/5, seasonal_2 Loss: 0.0673 | 0.0443
+Epoch 1/5, seasonal_3 Loss: 0.2834 | 0.1488
+Epoch 2/5, seasonal_3 Loss: 0.1228 | 0.0946
+Epoch 3/5, seasonal_3 Loss: 0.0979 | 0.0779
+Epoch 4/5, seasonal_3 Loss: 0.0877 | 0.0715
+Epoch 5/5, seasonal_3 Loss: 0.0820 | 0.0656
+Epoch 1/5, resid Loss: 0.7466 | 0.3430
+Epoch 2/5, resid Loss: 0.1854 | 0.2912
+Epoch 3/5, resid Loss: 0.1818 | 0.1991
+Epoch 4/5, resid Loss: 0.1369 | 0.1876
+Epoch 5/5, resid Loss: 0.1552 | 0.2201
+Runtime (seconds): 82.91783714294434
+/data/student/k2110261/Multi-iTransformer/main.py:1100: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1101: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1102: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1103: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1104: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+/data/student/k2110261/Multi-iTransformer/main.py:1105: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+tensor([1.6635], device='cuda:0')
+[1.663535]
+aaaaa tensor([1.6635], device='cuda:0')
+[158.30912012]
+[3.63350249]
+[-3.70985528]
+[-1.34249427]
+[-5.68516304]
+[-19.63700934]
+[131.56810067]
