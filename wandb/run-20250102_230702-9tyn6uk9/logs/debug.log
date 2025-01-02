@@ -1,0 +1,30 @@
+2025-01-02 23:07:02,651 INFO    MainThread:2050815 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2025-01-02 23:07:02,651 INFO    MainThread:2050815 [wandb_setup.py:_flush():68] Configure stats pid to 2050815
+2025-01-02 23:07:02,651 INFO    MainThread:2050815 [wandb_setup.py:_flush():68] Loading settings from /home2/y2021/k2110261/.config/wandb/settings
+2025-01-02 23:07:02,651 INFO    MainThread:2050815 [wandb_setup.py:_flush():68] Loading settings from /data/student/k2110261/Multi-iTransformer/wandb/settings
+2025-01-02 23:07:02,652 INFO    MainThread:2050815 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-02 23:07:02,652 INFO    MainThread:2050815 [wandb_init.py:_log_setup():528] Logging user logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20250102_230702-9tyn6uk9/logs/debug.log
+2025-01-02 23:07:02,653 INFO    MainThread:2050815 [wandb_init.py:_log_setup():529] Logging internal logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20250102_230702-9tyn6uk9/logs/debug-internal.log
+2025-01-02 23:07:02,653 INFO    MainThread:2050815 [wandb_init.py:init():644] calling init triggers
+2025-01-02 23:07:02,653 INFO    MainThread:2050815 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {}
+2025-01-02 23:07:02,654 INFO    MainThread:2050815 [wandb_init.py:init():680] starting backend
+2025-01-02 23:07:02,654 INFO    MainThread:2050815 [wandb_init.py:init():684] sending inform_init request
+2025-01-02 23:07:02,666 INFO    MainThread:2050815 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-02 23:07:02,667 INFO    MainThread:2050815 [wandb_init.py:init():697] backend started and connected
+2025-01-02 23:07:02,670 INFO    MainThread:2050815 [wandb_init.py:init():790] updated telemetry
+2025-01-02 23:07:02,683 INFO    MainThread:2050815 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2025-01-02 23:07:03,306 INFO    MainThread:2050815 [wandb_init.py:init():874] starting run threads in backend
+2025-01-02 23:07:03,657 INFO    MainThread:2050815 [wandb_run.py:_console_start():2374] atexit reg
+2025-01-02 23:07:03,658 INFO    MainThread:2050815 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2025-01-02 23:07:03,658 INFO    MainThread:2050815 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2025-01-02 23:07:03,658 INFO    MainThread:2050815 [wandb_run.py:_redirect():2314] Redirects installed.
+2025-01-02 23:07:03,665 INFO    MainThread:2050815 [wandb_init.py:init():916] run started, returning control to user process
+2025-01-02 23:08:12,129 INFO    MainThread:2050815 [wandb_run.py:_config_callback():1279] config_cb None None {'learning_rate_trend': 3.702707093580336e-05, 'batch_size_trend': 65, 'observation_period_trend': 35, 'learning_rate_seasonal_0': 4.343336468066393e-05, 'batch_size_seasonal_0': 129, 'observation_period_seasonal_0': 54, 'learning_rate_seasonal_1': 0.00026667971109254474, 'batch_size_seasonal_1': 163, 'observation_period_seasonal_1': 78, 'learning_rate_seasonal_2': 2.490963990657516e-06, 'batch_size_seasonal_2': 235, 'observation_period_seasonal_2': 194, 'learning_rate_seasonal_3': 0.0004014886706587739, 'batch_size_seasonal_3': 34, 'observation_period_seasonal_3': 91, 'learning_rate_resid': 1.2449362655271535e-05, 'batch_size_resid': 251, 'observation_period_resid': 122, 'epochs': 1, 'predict_period_num': 1}
+2025-01-02 23:08:12,901 INFO    MainThread:2050815 [wandb_run.py:_finish():2100] finishing run raika-koki/AMZN-stock-price-prediction-by-iTransformer/9tyn6uk9
+2025-01-02 23:08:12,902 INFO    MainThread:2050815 [wandb_run.py:_atexit_cleanup():2339] got exitcode: 0
+2025-01-02 23:08:12,902 INFO    MainThread:2050815 [wandb_run.py:_restore():2321] restore
+2025-01-02 23:08:12,903 INFO    MainThread:2050815 [wandb_run.py:_restore():2327] restore done
+2025-01-02 23:08:15,299 INFO    MainThread:2050815 [wandb_run.py:_footer_history_summary_info():3892] rendering history
+2025-01-02 23:08:15,300 INFO    MainThread:2050815 [wandb_run.py:_footer_history_summary_info():3924] rendering summary
+2025-01-02 23:08:15,329 INFO    MainThread:2050815 [wandb_run.py:_footer_sync_info():3853] logging synced files

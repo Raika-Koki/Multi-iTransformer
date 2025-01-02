@@ -1,0 +1,43 @@
+最適化対象: trend
+[32m[I 2025-01-02 05:33:41,153][0m A new study created in memory with name: no-name-09d12e7f-30e6-4587-8364-c56487b0b0cc[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-02 05:33:50,547][0m Trial 0 finished with value: 0.5290828347206116 and parameters: {'observation_period_num': 210, 'train_rates': 0.952187452578543, 'learning_rate': 7.804697948997715e-05, 'batch_size': 200, 'step_size': 10, 'gamma': 0.7875598086249281}. Best is trial 0 with value: 0.5290828347206116.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-02 05:33:50,548][0m A new study created in memory with name: no-name-e4018cd9-533f-47e1-8886-40a9f6372496[0m
+[32m[I 2025-01-02 05:33:58,221][0m Trial 0 finished with value: 0.32413251686756794 and parameters: {'observation_period_num': 222, 'train_rates': 0.8540486630622676, 'learning_rate': 3.4030982870906135e-05, 'batch_size': 109, 'step_size': 2, 'gamma': 0.9712830913967211}. Best is trial 0 with value: 0.32413251686756794.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-02 05:33:58,223][0m A new study created in memory with name: no-name-07d0073f-b30e-45ac-8076-54fef5500c20[0m
+[32m[I 2025-01-02 05:34:03,576][0m Trial 0 finished with value: 0.2061951607465744 and parameters: {'observation_period_num': 8, 'train_rates': 0.9259356431403796, 'learning_rate': 3.177485444266313e-05, 'batch_size': 234, 'step_size': 11, 'gamma': 0.907895697303246}. Best is trial 0 with value: 0.2061951607465744.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-02 05:34:03,577][0m A new study created in memory with name: no-name-9fca9cc9-0730-4e88-ade3-0cb9a08dbb21[0m
+[32m[I 2025-01-02 05:34:10,046][0m Trial 0 finished with value: 0.39768442288041117 and parameters: {'observation_period_num': 145, 'train_rates': 0.8138602759042025, 'learning_rate': 0.00014379567838725813, 'batch_size': 233, 'step_size': 12, 'gamma': 0.7832963304220067}. Best is trial 0 with value: 0.39768442288041117.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-02 05:34:10,047][0m A new study created in memory with name: no-name-d51976f7-2433-4e3a-9945-f9d832a49ea8[0m
+[32m[I 2025-01-02 05:34:15,625][0m Trial 0 finished with value: 2.5124085588685308 and parameters: {'observation_period_num': 110, 'train_rates': 0.6046015049023449, 'learning_rate': 1.6711374438474255e-06, 'batch_size': 168, 'step_size': 7, 'gamma': 0.8620834563634393}. Best is trial 0 with value: 2.5124085588685308.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-02 05:34:15,626][0m A new study created in memory with name: no-name-09f9f286-2a72-4555-8a4a-159f34fa5bb1[0m
+[32m[I 2025-01-02 05:34:23,334][0m Trial 0 finished with value: 0.6717508508048895 and parameters: {'observation_period_num': 224, 'train_rates': 0.9518708324250741, 'learning_rate': 4.431303132254966e-06, 'batch_size': 118, 'step_size': 14, 'gamma': 0.8989160385808171}. Best is trial 0 with value: 0.6717508508048895.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 210, 'train_rates': 0.952187452578543, 'learning_rate': 7.804697948997715e-05, 'batch_size': 200, 'step_size': 10, 'gamma': 0.7875598086249281}
+Epoch 1/1, trend Loss: 1.1137 | 0.4880
+Training seasonal_0 component with params: {'observation_period_num': 222, 'train_rates': 0.8540486630622676, 'learning_rate': 3.4030982870906135e-05, 'batch_size': 109, 'step_size': 2, 'gamma': 0.9712830913967211}
+Epoch 1/1, seasonal_0 Loss: 0.5007 | 0.3292
+Training seasonal_1 component with params: {'observation_period_num': 8, 'train_rates': 0.9259356431403796, 'learning_rate': 3.177485444266313e-05, 'batch_size': 234, 'step_size': 11, 'gamma': 0.907895697303246}
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 616, in <module>
+    models[comp], train_loss, valid_loss = train(
+                                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

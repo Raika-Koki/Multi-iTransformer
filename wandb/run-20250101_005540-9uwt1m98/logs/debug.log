@@ -1,0 +1,27 @@
+2025-01-01 00:55:40,808 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2025-01-01 00:55:40,809 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Configure stats pid to 548171
+2025-01-01 00:55:40,810 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Loading settings from /home2/y2021/k2110261/.config/wandb/settings
+2025-01-01 00:55:40,812 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Loading settings from /data/student/k2110261/Multi-iTransformer/wandb/settings
+2025-01-01 00:55:40,813 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2025-01-01 00:55:40,815 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2025-01-01 00:55:40,816 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'roop_optuna_change.py', 'program_abspath': '/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py', 'program': '/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py'}
+2025-01-01 00:55:40,817 INFO    MainThread:548171 [wandb_setup.py:_flush():79] Applying login settings: {}
+2025-01-01 00:55:40,819 INFO    MainThread:548171 [wandb_init.py:_log_setup():534] Logging user logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20250101_005540-9uwt1m98/logs/debug.log
+2025-01-01 00:55:40,821 INFO    MainThread:548171 [wandb_init.py:_log_setup():535] Logging internal logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20250101_005540-9uwt1m98/logs/debug-internal.log
+2025-01-01 00:55:40,822 INFO    MainThread:548171 [wandb_init.py:init():621] calling init triggers
+2025-01-01 00:55:40,823 INFO    MainThread:548171 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {}
+2025-01-01 00:55:40,825 INFO    MainThread:548171 [wandb_init.py:init():671] starting backend
+2025-01-01 00:55:40,826 INFO    MainThread:548171 [wandb_init.py:init():675] sending inform_init request
+2025-01-01 00:55:40,830 INFO    MainThread:548171 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-01 00:55:40,831 INFO    MainThread:548171 [wandb_init.py:init():688] backend started and connected
+2025-01-01 00:55:40,837 INFO    MainThread:548171 [wandb_init.py:init():783] updated telemetry
+2025-01-01 00:55:40,856 INFO    MainThread:548171 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2025-01-01 00:55:41,665 INFO    MainThread:548171 [wandb_init.py:init():867] starting run threads in backend
+2025-01-01 00:55:41,980 INFO    MainThread:548171 [wandb_run.py:_console_start():2463] atexit reg
+2025-01-01 00:55:41,981 INFO    MainThread:548171 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2025-01-01 00:55:41,981 INFO    MainThread:548171 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2025-01-01 00:55:41,982 INFO    MainThread:548171 [wandb_run.py:_redirect():2401] Redirects installed.
+2025-01-01 00:55:41,986 INFO    MainThread:548171 [wandb_init.py:init():911] run started, returning control to user process
+2025-01-01 00:56:32,871 INFO    MainThread:548171 [wandb_run.py:_config_callback():1390] config_cb None None {'learning_rate_trend': 3.2711011872171566e-05, 'learning_rate_seasonal_0': 2.136796883365021e-06, 'learning_rate_seasonal_1': 0.00014192503871737053, 'learning_rate_seasonal_2': 1.1341716354670438e-06, 'learning_rate_seasonal_3': 1.039512893692502e-05, 'learning_rate_resid': 0.00011619989245963331, 'epochs': 1, 'batch_size_trend': 209, 'batch_size_seasonal_0': 82, 'batch_size_seasonal_1': 225, 'batch_size_seasonal_2': 72, 'batch_size_seasonal_3': 63, 'batch_size_resid': 239, 'observation_period_trend': 182, 'observation_period_seasonal_0': 169, 'observation_period_seasonal_1': 191, 'observation_period_seasonal_2': 56, 'observation_period_seasonal_3': 130, 'observation_period_resid': 194, 'predict_period_num': 1}
+2025-01-01 00:56:33,444 WARNING MsgRouterThr:548171 [router.py:message_loop():77] message_loop has been closed

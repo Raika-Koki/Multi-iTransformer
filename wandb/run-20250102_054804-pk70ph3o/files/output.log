@@ -1,0 +1,50 @@
+最適化対象: trend
+[32m[I 2025-01-02 05:48:06,485][0m A new study created in memory with name: no-name-c02cec54-73be-4fdb-bf11-0ae0e634cf22[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-02 05:48:13,581][0m Trial 0 finished with value: 0.3941621780395508 and parameters: {'observation_period_num': 154, 'train_rates': 0.9597569124270924, 'learning_rate': 2.799394450408178e-05, 'batch_size': 166, 'step_size': 7, 'gamma': 0.9076792295990337}. Best is trial 0 with value: 0.3941621780395508.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-02 05:48:13,582][0m A new study created in memory with name: no-name-7cd298bf-0980-40cf-a98d-8a02b85f8240[0m
+[32m[I 2025-01-02 05:48:18,486][0m Trial 0 finished with value: 0.6162881607689509 and parameters: {'observation_period_num': 92, 'train_rates': 0.7409885281971981, 'learning_rate': 3.990950551041235e-05, 'batch_size': 171, 'step_size': 12, 'gamma': 0.7643858061550519}. Best is trial 0 with value: 0.6162881607689509.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-02 05:48:18,487][0m A new study created in memory with name: no-name-a556a56d-9670-4477-a96b-281cb57440d8[0m
+[32m[I 2025-01-02 05:48:23,329][0m Trial 0 finished with value: 1.292856156459447 and parameters: {'observation_period_num': 65, 'train_rates': 0.7172836223391589, 'learning_rate': 3.6683497955473785e-06, 'batch_size': 226, 'step_size': 14, 'gamma': 0.8204386927141005}. Best is trial 0 with value: 1.292856156459447.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-02 05:48:23,330][0m A new study created in memory with name: no-name-05b1570c-a9ca-4919-aca7-9e4358162f8e[0m
+[32m[I 2025-01-02 05:48:31,420][0m Trial 0 finished with value: 1.3613020733601786 and parameters: {'observation_period_num': 161, 'train_rates': 0.6887995043725768, 'learning_rate': 0.0005986182967392702, 'batch_size': 23, 'step_size': 12, 'gamma': 0.93309750189406}. Best is trial 0 with value: 1.3613020733601786.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-02 05:48:31,421][0m A new study created in memory with name: no-name-a2f55dac-aedb-4e0e-b7fa-6957ea8487ea[0m
+[32m[I 2025-01-02 05:48:36,675][0m Trial 0 finished with value: 0.5706248268902039 and parameters: {'observation_period_num': 136, 'train_rates': 0.7576984912754032, 'learning_rate': 5.642814924116213e-05, 'batch_size': 96, 'step_size': 12, 'gamma': 0.8350922622381838}. Best is trial 0 with value: 0.5706248268902039.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-02 05:48:36,676][0m A new study created in memory with name: no-name-d4412ae3-449c-4eb6-8eeb-bf687e631643[0m
+[32m[I 2025-01-02 05:48:41,741][0m Trial 0 finished with value: 0.4806431428744243 and parameters: {'observation_period_num': 80, 'train_rates': 0.8091848285955265, 'learning_rate': 2.3575488710680293e-05, 'batch_size': 231, 'step_size': 11, 'gamma': 0.9143450717075932}. Best is trial 0 with value: 0.4806431428744243.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 154, 'train_rates': 0.9597569124270924, 'learning_rate': 2.799394450408178e-05, 'batch_size': 166, 'step_size': 7, 'gamma': 0.9076792295990337}
+Epoch 1/1, trend Loss: 0.5638 | 0.3855
+Training seasonal_0 component with params: {'observation_period_num': 92, 'train_rates': 0.7409885281971981, 'learning_rate': 3.990950551041235e-05, 'batch_size': 171, 'step_size': 12, 'gamma': 0.7643858061550519}
+Epoch 1/1, seasonal_0 Loss: 0.6660 | 0.6969
+Training seasonal_1 component with params: {'observation_period_num': 65, 'train_rates': 0.7172836223391589, 'learning_rate': 3.6683497955473785e-06, 'batch_size': 226, 'step_size': 14, 'gamma': 0.8204386927141005}
+Epoch 1/1, seasonal_1 Loss: 0.8184 | 0.9686
+Training seasonal_2 component with params: {'observation_period_num': 161, 'train_rates': 0.6887995043725768, 'learning_rate': 0.0005986182967392702, 'batch_size': 23, 'step_size': 12, 'gamma': 0.93309750189406}
+Epoch 1/1, seasonal_2 Loss: 0.7392 | 0.5024
+Training seasonal_3 component with params: {'observation_period_num': 136, 'train_rates': 0.7576984912754032, 'learning_rate': 5.642814924116213e-05, 'batch_size': 96, 'step_size': 12, 'gamma': 0.8350922622381838}
+Epoch 1/1, seasonal_3 Loss: 0.5673 | 0.4955
+Training resid component with params: {'observation_period_num': 80, 'train_rates': 0.8091848285955265, 'learning_rate': 2.3575488710680293e-05, 'batch_size': 231, 'step_size': 11, 'gamma': 0.9143450717075932}
+Epoch 1/1, resid Loss: 1.0436 | 0.5346
+Runtime (seconds): 37.83543348312378
+2.799394450408178e-05
+[170.80466]
+[0.6062032]
+[3.3060684]
+[9.155649]
+[-1.6215762]
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 683, in <module>
+    print(predicted_resid_stock_price)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'predicted_resid_stock_price' is not defined

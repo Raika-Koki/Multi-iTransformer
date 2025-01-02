@@ -4,3 +4,99 @@ Non-A100 GPU detected, using math or mem efficient attention if input tensor is 
 /home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
   self.gen = func(*args, **kwds)
 [32m[I 2024-12-30 02:24:03,583][0m Trial 0 finished with value: 0.8210955978883592 and parameters: {'observation_period_num': 226, 'train_rates': 0.6803869214299232, 'learning_rate': 5.569014594420439e-06, 'batch_size': 229, 'step_size': 7, 'gamma': 0.8829534609200262}. Best is trial 0 with value: 0.8210955978883592.[0m
+[32m[I 2024-12-30 02:29:47,192][0m Trial 1 finished with value: 0.30106193480452254 and parameters: {'observation_period_num': 155, 'train_rates': 0.7173390373276634, 'learning_rate': 0.0007816028081385532, 'batch_size': 51, 'step_size': 5, 'gamma': 0.977582433901149}. Best is trial 1 with value: 0.30106193480452254.[0m
+[32m[I 2024-12-30 02:33:49,887][0m Trial 2 finished with value: 0.16294917156381056 and parameters: {'observation_period_num': 235, 'train_rates': 0.9553087411741471, 'learning_rate': 0.0003194816339387647, 'batch_size': 92, 'step_size': 5, 'gamma': 0.9079498269922299}. Best is trial 2 with value: 0.16294917156381056.[0m
+[32m[I 2024-12-30 02:36:47,699][0m Trial 3 finished with value: 0.7954402897223786 and parameters: {'observation_period_num': 241, 'train_rates': 0.6247293609957353, 'learning_rate': 2.4655446649366594e-06, 'batch_size': 96, 'step_size': 10, 'gamma': 0.9627410520148924}. Best is trial 2 with value: 0.16294917156381056.[0m
+[32m[I 2024-12-30 02:39:25,224][0m Trial 4 finished with value: 0.12733336582840582 and parameters: {'observation_period_num': 77, 'train_rates': 0.8286164066240229, 'learning_rate': 0.000838788570138522, 'batch_size': 177, 'step_size': 3, 'gamma': 0.9576265373961742}. Best is trial 4 with value: 0.12733336582840582.[0m
+[32m[I 2024-12-30 02:41:53,926][0m Trial 5 finished with value: 0.22983429729938507 and parameters: {'observation_period_num': 207, 'train_rates': 0.8590262832251513, 'learning_rate': 3.614319413947169e-05, 'batch_size': 241, 'step_size': 10, 'gamma': 0.950683405440965}. Best is trial 4 with value: 0.12733336582840582.[0m
+[33m[W 2024-12-30 02:45:51,651][0m Trial 6 failed with parameters: {'observation_period_num': 145, 'train_rates': 0.7715521567474739, 'learning_rate': 1.5095567163961312e-05, 'batch_size': 41, 'step_size': 13, 'gamma': 0.9236341175399012} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    depth = 4
+
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fa341fe1080>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 188, in forward
+    x = attn(x) + x
+        ^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 70, in forward
+    return self.to_out(out)
+           ^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1740, in _call_impl
+    def _call_impl(self, *args, **kwargs):
+
+KeyboardInterrupt
+[33m[W 2024-12-30 02:45:51,654][0m Trial 6 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <module>
+    depth = 4
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    depth = 4
+
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fa341fe1080>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 188, in forward
+    x = attn(x) + x
+        ^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 70, in forward
+    return self.to_out(out)
+           ^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1740, in _call_impl
+    def _call_impl(self, *args, **kwargs):
+
+KeyboardInterrupt

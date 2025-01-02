@@ -1,0 +1,92 @@
+最適化対象: trend
+[32m[I 2025-01-03 01:22:15,205][0m A new study created in memory with name: no-name-6381352d-8f57-43dd-97c6-862f552d5bf1[0m
+[32m[I 2025-01-03 01:22:20,034][0m Trial 0 finished with value: 2.0802133782769285 and parameters: {'observation_period_num': 154, 'train_rates': 0.7350694839932568, 'learning_rate': 1.2555052541035969e-06, 'batch_size': 85, 'step_size': 10, 'gamma': 0.9776047511858004}. Best is trial 0 with value: 2.0802133782769285.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-03 01:22:20,035][0m A new study created in memory with name: no-name-93efcf4f-ebac-4259-8856-b7f5d829d214[0m
+[32m[I 2025-01-03 01:22:22,902][0m Trial 0 finished with value: 0.9731612205505371 and parameters: {'observation_period_num': 120, 'train_rates': 0.9745027348819996, 'learning_rate': 0.00048159122406624496, 'batch_size': 172, 'step_size': 3, 'gamma': 0.9700598316460339}. Best is trial 0 with value: 0.9731612205505371.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-03 01:22:22,903][0m A new study created in memory with name: no-name-e5ce408a-6437-4345-b875-197e4c4ba8d4[0m
+[32m[I 2025-01-03 01:22:27,177][0m Trial 0 finished with value: 1.905969992760689 and parameters: {'observation_period_num': 216, 'train_rates': 0.8180794971885021, 'learning_rate': 2.746568446689003e-05, 'batch_size': 228, 'step_size': 1, 'gamma': 0.9079742689194247}. Best is trial 0 with value: 1.905969992760689.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-03 01:22:27,178][0m A new study created in memory with name: no-name-ae5affb7-b6de-45b1-8a30-4674f5052d4f[0m
+[32m[I 2025-01-03 01:22:29,637][0m Trial 0 finished with value: 1.4056001793064712 and parameters: {'observation_period_num': 103, 'train_rates': 0.7986597217087539, 'learning_rate': 0.000832907558177577, 'batch_size': 106, 'step_size': 2, 'gamma': 0.9384100169869332}. Best is trial 0 with value: 1.4056001793064712.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-03 01:22:29,638][0m A new study created in memory with name: no-name-e1e64337-b558-4293-b3d1-1eb58fc6fef7[0m
+[32m[I 2025-01-03 01:22:31,844][0m Trial 0 finished with value: 1.8479562321923815 and parameters: {'observation_period_num': 102, 'train_rates': 0.6264025454647852, 'learning_rate': 7.492360943561212e-05, 'batch_size': 119, 'step_size': 10, 'gamma': 0.9094205942410288}. Best is trial 0 with value: 1.8479562321923815.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-03 01:22:31,844][0m A new study created in memory with name: no-name-ed83f458-7f21-4a97-a0bf-56adf677f3da[0m
+[32m[I 2025-01-03 01:22:33,855][0m Trial 0 finished with value: 1.1748933119726885 and parameters: {'observation_period_num': 5, 'train_rates': 0.8616076712303056, 'learning_rate': 0.0004532689476531153, 'batch_size': 55, 'step_size': 1, 'gamma': 0.8259035051659709}. Best is trial 0 with value: 1.1748933119726885.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_Transformer.json に保存されました
+Training trend component with params: {'observation_period_num': 154, 'train_rates': 0.7350694839932568, 'learning_rate': 1.2555052541035969e-06, 'batch_size': 85, 'step_size': 10, 'gamma': 0.9776047511858004}
+Epoch 1/1, trend Loss: 1.0413 | 2.0784
+Training seasonal_0 component with params: {'observation_period_num': 120, 'train_rates': 0.9745027348819996, 'learning_rate': 0.00048159122406624496, 'batch_size': 172, 'step_size': 3, 'gamma': 0.9700598316460339}
+Epoch 1/1, seasonal_0 Loss: 0.9441 | 1.0373
+Training seasonal_1 component with params: {'observation_period_num': 216, 'train_rates': 0.8180794971885021, 'learning_rate': 2.746568446689003e-05, 'batch_size': 228, 'step_size': 1, 'gamma': 0.9079742689194247}
+Epoch 1/1, seasonal_1 Loss: 1.0775 | 1.7624
+Training seasonal_2 component with params: {'observation_period_num': 103, 'train_rates': 0.7986597217087539, 'learning_rate': 0.000832907558177577, 'batch_size': 106, 'step_size': 2, 'gamma': 0.9384100169869332}
+Epoch 1/1, seasonal_2 Loss: 0.8745 | 1.2663
+Training seasonal_3 component with params: {'observation_period_num': 102, 'train_rates': 0.6264025454647852, 'learning_rate': 7.492360943561212e-05, 'batch_size': 119, 'step_size': 10, 'gamma': 0.9094205942410288}
+Epoch 1/1, seasonal_3 Loss: 0.7390 | 1.6723
+Training resid component with params: {'observation_period_num': 5, 'train_rates': 0.8616076712303056, 'learning_rate': 0.0004532689476531153, 'batch_size': 55, 'step_size': 1, 'gamma': 0.8259035051659709}
+Epoch 1/1, resid Loss: 0.6855 | 1.1991
+Runtime (seconds): 18.39299750328064
+1.2555052541035969e-06
+[134.99521  112.556305  44.480164 117.782936 124.748795  33.753963
+  59.285645  72.953995  76.54717   84.85907   61.038666 104.45371
+  77.93828  120.0289    42.585133  66.62921   58.135334 101.695595
+ 128.08829    5.297989 101.80295   79.57853  100.83352   12.101135
+  83.577705  36.197945  89.256615  78.80658   24.2114   134.6176
+ 118.58852   59.285767  87.49316   10.993561  71.38294 ]
+[-1.336167    0.5823795  -0.64669305  0.76378787  5.4830046  -2.939296
+  3.8677795   3.7388692  -2.3918812   3.7549002   3.6787896   2.1083293
+  5.5697665   6.4660845   0.3567842  -2.370318   -1.5532886   2.5444124
+  1.1630121   2.9171243   3.6490297   1.1797028   1.7879965  -3.9442642
+ -1.7546911   3.9821122   1.0583904   2.8852177  -0.13313782  0.14202371
+ -0.9575686  -0.12030121  0.96496123  2.3758924   2.2005222 ]
+[ 2.1448739   2.20445     1.7757471  -0.94087297  0.430591   -0.7735174
+  3.4714646  -0.31952655  1.3472264  -2.5035114  -0.15036178  0.64084
+  1.4990089  -0.6161295  -1.1382785   1.4058354   2.448249   -1.5367062
+  2.5601852  -1.0382639  -2.638218    1.2805636   3.5397902   3.2995062
+ -2.5585315   1.6508117   1.5949823  -0.3532338   1.4415954   5.4747543
+  1.7190522  -2.1394315   3.6600218   2.39395     1.9839046 ]
+[ 0.08120112  7.4247565   0.2047597  -2.3077123   9.251151    2.1689084
+  2.2731526  10.240797    2.0483716   6.8041344   6.478568   -0.69421613
+  3.7154531   3.9258604  -3.9891639   4.22047    -2.3059216  -3.7009804
+  2.4504406  12.882978    3.1871967   5.8022027  -9.355539   -4.574056
+  2.0416214  13.268534   16.439384   13.089447   -6.904748    0.8800934
+  1.104773   -3.276618   13.6541815  13.200121    1.847665  ]
+[ 4.667395   -0.9764482  -3.9266405  -8.16261     0.5595273   6.8128033
+  6.5435658   8.829316   -5.2082334   1.3217602   3.7928467   4.9629045
+ -3.081598   -6.6243205   8.837046    7.5886354   8.001502    1.9380487
+  7.330981   -3.2040648   3.9009833   5.941788    1.2475964  -7.4508424
+ 13.866432   -2.9932952   4.8471837   7.176911   -1.3410192   7.531246
+  0.42531994 -3.1666417  12.351746   -4.0246625   0.97768223]
+[-8.107557   -2.337655    5.781116    5.083288    5.8617134  -7.3919325
+  9.068205    4.725962   11.891258    9.772408    8.691282   -0.69678015
+ 11.009586   10.053663    0.61972785 -3.584504   -2.0849562   8.881372
+ -5.504096   11.832323   -2.3487399  -7.3440466  -1.4125724  -5.280227
+ -6.0552793   2.4809058   5.182662    1.052602   11.451336    0.74410427
+ 11.332773    8.575851   -1.8173823  13.773241   12.215384  ]
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 716, in <module>
+    mse = mean_squared_error(actual_stock_price, predicted_stock_price)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 565, in mean_squared_error
+    _check_reg_targets_with_floating_dtype(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 198, in _check_reg_targets_with_floating_dtype
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+                                          ^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 104, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/validation.py", line 475, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 35]

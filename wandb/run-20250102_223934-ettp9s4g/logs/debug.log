@@ -1,0 +1,33 @@
+2025-01-02 22:39:34,917 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2025-01-02 22:39:34,917 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Configure stats pid to 2047928
+2025-01-02 22:39:34,917 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Loading settings from /home2/y2021/k2110261/.config/wandb/settings
+2025-01-02 22:39:34,917 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Loading settings from /data/student/k2110261/Multi-iTransformer/wandb/settings
+2025-01-02 22:39:34,917 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2025-01-02 22:39:34,917 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2025-01-02 22:39:34,917 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': 'roop_optuna.py', 'program_abspath': '/data/student/k2110261/Multi-iTransformer/roop_optuna.py', 'program': '/data/student/k2110261/Multi-iTransformer/roop_optuna.py'}
+2025-01-02 22:39:34,918 INFO    MainThread:2047928 [wandb_setup.py:_flush():79] Applying login settings: {}
+2025-01-02 22:39:34,918 INFO    MainThread:2047928 [wandb_init.py:_log_setup():534] Logging user logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20250102_223934-ettp9s4g/logs/debug.log
+2025-01-02 22:39:34,918 INFO    MainThread:2047928 [wandb_init.py:_log_setup():535] Logging internal logs to /data/student/k2110261/Multi-iTransformer/wandb/run-20250102_223934-ettp9s4g/logs/debug-internal.log
+2025-01-02 22:39:34,918 INFO    MainThread:2047928 [wandb_init.py:init():621] calling init triggers
+2025-01-02 22:39:34,918 INFO    MainThread:2047928 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {}
+2025-01-02 22:39:34,919 INFO    MainThread:2047928 [wandb_init.py:init():671] starting backend
+2025-01-02 22:39:34,919 INFO    MainThread:2047928 [wandb_init.py:init():675] sending inform_init request
+2025-01-02 22:39:34,920 INFO    MainThread:2047928 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-02 22:39:34,921 INFO    MainThread:2047928 [wandb_init.py:init():688] backend started and connected
+2025-01-02 22:39:34,923 INFO    MainThread:2047928 [wandb_init.py:init():783] updated telemetry
+2025-01-02 22:39:34,937 INFO    MainThread:2047928 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2025-01-02 22:39:35,406 INFO    MainThread:2047928 [wandb_init.py:init():867] starting run threads in backend
+2025-01-02 22:39:35,873 INFO    MainThread:2047928 [wandb_run.py:_console_start():2463] atexit reg
+2025-01-02 22:39:35,874 INFO    MainThread:2047928 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2025-01-02 22:39:35,874 INFO    MainThread:2047928 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2025-01-02 22:39:35,874 INFO    MainThread:2047928 [wandb_run.py:_redirect():2401] Redirects installed.
+2025-01-02 22:39:35,875 INFO    MainThread:2047928 [wandb_init.py:init():911] run started, returning control to user process
+2025-01-02 22:41:01,550 INFO    MainThread:2047928 [wandb_run.py:_config_callback():1390] config_cb None None {'learning_rate_trend': 1.4976902240995215e-05, 'batch_size_trend': 18, 'observation_period_trend': 6, 'learning_rate_seasonal_0': 1.477511178084069e-05, 'batch_size_seasonal_0': 150, 'observation_period_seasonal_0': 26, 'learning_rate_seasonal_1': 0.0002853304835929357, 'batch_size_seasonal_1': 150, 'observation_period_seasonal_1': 236, 'learning_rate_seasonal_2': 0.00021715187683430537, 'batch_size_seasonal_2': 71, 'observation_period_seasonal_2': 160, 'learning_rate_seasonal_3': 0.00018878839602053346, 'batch_size_seasonal_3': 114, 'observation_period_seasonal_3': 49, 'learning_rate_resid': 7.960034787688269e-05, 'batch_size_resid': 25, 'observation_period_resid': 201, 'epochs': 1, 'predict_period_num': 1}
+2025-01-02 22:41:01,923 INFO    MainThread:2047928 [wandb_run.py:_finish():2158] finishing run raika-koki/AMZN-stock-price-prediction-by-iTransformer/ettp9s4g
+2025-01-02 22:41:01,923 INFO    MainThread:2047928 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2025-01-02 22:41:01,923 INFO    MainThread:2047928 [wandb_run.py:_restore():2408] restore
+2025-01-02 22:41:01,924 INFO    MainThread:2047928 [wandb_run.py:_restore():2414] restore done
+2025-01-02 22:41:04,344 INFO    MainThread:2047928 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2025-01-02 22:41:04,346 INFO    MainThread:2047928 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2025-01-02 22:41:04,362 INFO    MainThread:2047928 [wandb_run.py:_footer_sync_info():3934] logging synced files

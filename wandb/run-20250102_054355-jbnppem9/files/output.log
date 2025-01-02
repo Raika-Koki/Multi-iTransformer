@@ -1,0 +1,67 @@
+最適化対象: trend
+[32m[I 2025-01-02 05:43:56,573][0m A new study created in memory with name: no-name-6417ac19-d69a-4f7d-bf7c-466d1550abd3[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-02 05:44:02,935][0m Trial 0 finished with value: 0.9319093268284198 and parameters: {'observation_period_num': 245, 'train_rates': 0.7080283284521306, 'learning_rate': 8.858195598455485e-06, 'batch_size': 88, 'step_size': 5, 'gamma': 0.8876607508046059}. Best is trial 0 with value: 0.9319093268284198.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-02 05:44:02,937][0m A new study created in memory with name: no-name-189e193e-3976-48b3-bd5e-77830d782abc[0m
+[32m[I 2025-01-02 05:44:07,200][0m Trial 0 finished with value: 0.9702891262864449 and parameters: {'observation_period_num': 130, 'train_rates': 0.6149219178362101, 'learning_rate': 0.00010202986623639238, 'batch_size': 235, 'step_size': 3, 'gamma': 0.7818668728128314}. Best is trial 0 with value: 0.9702891262864449.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-02 05:44:07,201][0m A new study created in memory with name: no-name-16013faf-b769-4f65-9335-09fe10f7fcf5[0m
+[32m[I 2025-01-02 05:44:11,416][0m Trial 0 finished with value: 1.5211982703374656 and parameters: {'observation_period_num': 206, 'train_rates': 0.6317368203125758, 'learning_rate': 2.5513837376934693e-06, 'batch_size': 235, 'step_size': 2, 'gamma': 0.8711609512506833}. Best is trial 0 with value: 1.5211982703374656.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-02 05:44:11,417][0m A new study created in memory with name: no-name-fd10c098-2003-4c6b-a4ca-ee9e9e285725[0m
+[32m[I 2025-01-02 05:44:16,048][0m Trial 0 finished with value: 1.038258292209143 and parameters: {'observation_period_num': 39, 'train_rates': 0.6101740678378986, 'learning_rate': 1.106044101493269e-06, 'batch_size': 104, 'step_size': 7, 'gamma': 0.8628932940584678}. Best is trial 0 with value: 1.038258292209143.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-02 05:44:16,049][0m A new study created in memory with name: no-name-c1bb5b4c-1967-4241-b4fd-f69ec6f7742d[0m
+[32m[I 2025-01-02 05:44:20,650][0m Trial 0 finished with value: 0.624392911770605 and parameters: {'observation_period_num': 241, 'train_rates': 0.7395390143589636, 'learning_rate': 3.390227999452088e-05, 'batch_size': 186, 'step_size': 4, 'gamma': 0.8854308562319406}. Best is trial 0 with value: 0.624392911770605.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-02 05:44:20,651][0m A new study created in memory with name: no-name-b93c6b9b-f569-4c17-89bf-7e4b754f9b40[0m
+[32m[I 2025-01-02 05:44:26,797][0m Trial 0 finished with value: 0.5790312980676626 and parameters: {'observation_period_num': 168, 'train_rates': 0.8613681213439006, 'learning_rate': 1.8307621625440396e-06, 'batch_size': 46, 'step_size': 4, 'gamma': 0.7648700886529018}. Best is trial 0 with value: 0.5790312980676626.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 245, 'train_rates': 0.7080283284521306, 'learning_rate': 8.858195598455485e-06, 'batch_size': 88, 'step_size': 5, 'gamma': 0.8876607508046059}
+Epoch 1/1, trend Loss: 0.6175 | 0.9079
+Training seasonal_0 component with params: {'observation_period_num': 130, 'train_rates': 0.6149219178362101, 'learning_rate': 0.00010202986623639238, 'batch_size': 235, 'step_size': 3, 'gamma': 0.7818668728128314}
+Epoch 1/1, seasonal_0 Loss: 1.6660 | 1.1235
+Training seasonal_1 component with params: {'observation_period_num': 206, 'train_rates': 0.6317368203125758, 'learning_rate': 2.5513837376934693e-06, 'batch_size': 235, 'step_size': 2, 'gamma': 0.8711609512506833}
+Epoch 1/1, seasonal_1 Loss: 0.7418 | 1.5472
+Training seasonal_2 component with params: {'observation_period_num': 39, 'train_rates': 0.6101740678378986, 'learning_rate': 1.106044101493269e-06, 'batch_size': 104, 'step_size': 7, 'gamma': 0.8628932940584678}
+Epoch 1/1, seasonal_2 Loss: 0.7089 | 1.1109
+Training seasonal_3 component with params: {'observation_period_num': 241, 'train_rates': 0.7395390143589636, 'learning_rate': 3.390227999452088e-05, 'batch_size': 186, 'step_size': 4, 'gamma': 0.8854308562319406}
+Epoch 1/1, seasonal_3 Loss: 0.7877 | 0.7598
+Training resid component with params: {'observation_period_num': 168, 'train_rates': 0.8613681213439006, 'learning_rate': 1.8307621625440396e-06, 'batch_size': 46, 'step_size': 4, 'gamma': 0.7648700886529018}
+Epoch 1/1, resid Loss: 0.5882 | 0.4999
+Runtime (seconds): 33.42203402519226
+8.858195598455485e-06
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:680: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:681: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:682: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:683: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:684: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:685: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+[124.57265]
+[-4.4937534]
+[0.18487112]
+[3.7554915]
+[-4.167323]
+[13.484552]
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py:1266: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+MSE: 5439.580166735686
+RMSE: 73.75350952148438
+MAE: 73.75350952148438
+R-squared: nan
+[133.33649]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:727: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_stock_price": close_data[-1]

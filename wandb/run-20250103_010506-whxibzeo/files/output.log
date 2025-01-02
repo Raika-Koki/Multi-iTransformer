@@ -1,0 +1,44 @@
+最適化対象: trend
+[32m[I 2025-01-03 01:05:08,069][0m A new study created in memory with name: no-name-0c2a602f-152f-4a59-8dc6-2f5c2dab2801[0m
+[32m[I 2025-01-03 01:05:11,503][0m Trial 0 finished with value: 2.792397561754499 and parameters: {'observation_period_num': 48, 'train_rates': 0.8789846920400706, 'learning_rate': 1.978178638569523e-06, 'batch_size': 212, 'step_size': 14, 'gamma': 0.9190366017775611}. Best is trial 0 with value: 2.792397561754499.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-03 01:05:11,504][0m A new study created in memory with name: no-name-3c498fe3-71fd-4fed-9357-438a00b1c627[0m
+[32m[I 2025-01-03 01:05:15,200][0m Trial 0 finished with value: 1.6913263499736786 and parameters: {'observation_period_num': 135, 'train_rates': 0.9458542122843946, 'learning_rate': 5.524384191917722e-06, 'batch_size': 19, 'step_size': 11, 'gamma': 0.9522471147086463}. Best is trial 0 with value: 1.6913263499736786.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-03 01:05:15,201][0m A new study created in memory with name: no-name-9b11b62c-42ae-4f1e-813c-e03d4fe8900d[0m
+[32m[I 2025-01-03 01:05:17,435][0m Trial 0 finished with value: 1.3118423713496858 and parameters: {'observation_period_num': 81, 'train_rates': 0.8289923426055875, 'learning_rate': 0.00018050563789830963, 'batch_size': 192, 'step_size': 2, 'gamma': 0.9197153294719718}. Best is trial 0 with value: 1.3118423713496858.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-03 01:05:17,436][0m A new study created in memory with name: no-name-5d59bc38-f52f-4cf3-a57e-0029c578e6d3[0m
+[32m[I 2025-01-03 01:05:19,087][0m Trial 0 finished with value: 1.126686805920885 and parameters: {'observation_period_num': 32, 'train_rates': 0.9483322503721752, 'learning_rate': 0.0007732997743705071, 'batch_size': 117, 'step_size': 15, 'gamma': 0.8777534388374104}. Best is trial 0 with value: 1.126686805920885.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-03 01:05:19,088][0m A new study created in memory with name: no-name-25a6bf46-3deb-4a65-b5d4-443b55b62bbb[0m
+[32m[I 2025-01-03 01:05:23,840][0m Trial 0 finished with value: 0.5011458412597054 and parameters: {'observation_period_num': 220, 'train_rates': 0.9512771436726202, 'learning_rate': 0.0008122108271136922, 'batch_size': 29, 'step_size': 10, 'gamma': 0.924845475088657}. Best is trial 0 with value: 0.5011458412597054.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-03 01:05:23,841][0m A new study created in memory with name: no-name-862f1a3a-46d9-41cf-991d-e280488ddddc[0m
+[32m[I 2025-01-03 01:05:25,450][0m Trial 0 finished with value: 1.7844330531694157 and parameters: {'observation_period_num': 34, 'train_rates': 0.8409749441377593, 'learning_rate': 1.452320896312142e-06, 'batch_size': 164, 'step_size': 12, 'gamma': 0.8949505174921396}. Best is trial 0 with value: 1.7844330531694157.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_Transformer.json に保存されました
+Training trend component with params: {'observation_period_num': 48, 'train_rates': 0.8789846920400706, 'learning_rate': 1.978178638569523e-06, 'batch_size': 212, 'step_size': 14, 'gamma': 0.9190366017775611}
+Epoch 1/1, trend Loss: 1.1627 | 1.8455
+Training seasonal_0 component with params: {'observation_period_num': 135, 'train_rates': 0.9458542122843946, 'learning_rate': 5.524384191917722e-06, 'batch_size': 19, 'step_size': 11, 'gamma': 0.9522471147086463}
+Epoch 1/1, seasonal_0 Loss: 1.1370 | 1.7218
+Training seasonal_1 component with params: {'observation_period_num': 81, 'train_rates': 0.8289923426055875, 'learning_rate': 0.00018050563789830963, 'batch_size': 192, 'step_size': 2, 'gamma': 0.9197153294719718}
+Epoch 1/1, seasonal_1 Loss: 0.9814 | 1.4170
+Training seasonal_2 component with params: {'observation_period_num': 32, 'train_rates': 0.9483322503721752, 'learning_rate': 0.0007732997743705071, 'batch_size': 117, 'step_size': 15, 'gamma': 0.8777534388374104}
+Epoch 1/1, seasonal_2 Loss: 1.0111 | 1.2413
+Training seasonal_3 component with params: {'observation_period_num': 220, 'train_rates': 0.9512771436726202, 'learning_rate': 0.0008122108271136922, 'batch_size': 29, 'step_size': 10, 'gamma': 0.924845475088657}
+Epoch 1/1, seasonal_3 Loss: 0.6347 | 0.4075
+Training resid component with params: {'observation_period_num': 34, 'train_rates': 0.8409749441377593, 'learning_rate': 1.452320896312142e-06, 'batch_size': 164, 'step_size': 12, 'gamma': 0.8949505174921396}
+Epoch 1/1, resid Loss: 1.2939 | 2.0357
+Runtime (seconds): 16.265350103378296
+1.978178638569523e-06
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 695, in <module>
+    predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'].iloc[0] + mean_lists['trend'].iloc[0]
+                                  ~~~~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1

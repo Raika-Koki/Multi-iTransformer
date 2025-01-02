@@ -1,0 +1,57 @@
+最適化対象: trend
+[32m[I 2025-01-02 05:37:25,517][0m A new study created in memory with name: no-name-457a9fc5-91d3-4e9a-ba00-a9a8004a53bf[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-02 05:37:33,052][0m Trial 0 finished with value: 0.4647858716223551 and parameters: {'observation_period_num': 148, 'train_rates': 0.8681325118978767, 'learning_rate': 0.0008402389845395501, 'batch_size': 52, 'step_size': 2, 'gamma': 0.8967757610441345}. Best is trial 0 with value: 0.4647858716223551.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-02 05:37:33,053][0m A new study created in memory with name: no-name-a486dc15-ff66-41f6-9da6-989d43f110f9[0m
+[32m[I 2025-01-02 05:37:37,765][0m Trial 0 finished with value: 0.8518546720758019 and parameters: {'observation_period_num': 39, 'train_rates': 0.667730621166689, 'learning_rate': 2.346813122243224e-06, 'batch_size': 139, 'step_size': 5, 'gamma': 0.9128169379816852}. Best is trial 0 with value: 0.8518546720758019.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-02 05:37:37,766][0m A new study created in memory with name: no-name-103bcce2-2bc0-4fe1-9890-e88282c43a1d[0m
+[32m[I 2025-01-02 05:37:43,473][0m Trial 0 finished with value: 0.6762262809015539 and parameters: {'observation_period_num': 197, 'train_rates': 0.95026737924646, 'learning_rate': 2.396868569959637e-06, 'batch_size': 74, 'step_size': 14, 'gamma': 0.855069438618024}. Best is trial 0 with value: 0.6762262809015539.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-02 05:37:43,474][0m A new study created in memory with name: no-name-760f8fb1-794b-4ee5-a36d-7c05c9278c4f[0m
+[33m[W 2025-01-02 05:37:45,245][0m Trial 0 failed with parameters: {'observation_period_num': 57, 'train_rates': 0.8625523150461614, 'learning_rate': 7.7164298529674e-06, 'batch_size': 130, 'step_size': 9, 'gamma': 0.7987836652682174} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 43, in train
+    total_loss_train += loss.item() * data.size(0)
+                        ^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-01-02 05:37:45,257][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 43, in train
+    total_loss_train += loss.item() * data.size(0)
+                        ^^^^^^^^^^^
+KeyboardInterrupt

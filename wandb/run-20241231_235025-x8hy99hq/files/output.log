@@ -1,0 +1,43 @@
+最適化対象: trend
+[32m[I 2024-12-31 23:50:26,614][0m A new study created in memory with name: no-name-6014c9bd-5d38-42e6-b135-ef9798a09d35[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[33m[W 2024-12-31 23:50:31,756][0m Trial 0 failed with parameters: {'observation_period_num': 62, 'train_rates': 0.7237897949925629, 'learning_rate': 0.00023753592305149256, 'batch_size': 239, 'step_size': 7, 'gamma': 0.7981851295648603} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-31 23:50:31,757][0m Trial 0 failed with value nan.[0m
+No completed trials for trend. Skipping.
+最適化対象: seasonal_0
+[32m[I 2024-12-31 23:50:31,758][0m A new study created in memory with name: no-name-79559c72-dbab-42ad-9dfe-956e5f9a5465[0m
+[33m[W 2024-12-31 23:50:34,217][0m Trial 0 failed with parameters: {'observation_period_num': 83, 'train_rates': 0.8258000768401416, 'learning_rate': 2.671505331376165e-06, 'batch_size': 198, 'step_size': 10, 'gamma': 0.9443275992858058} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-31 23:50:34,218][0m Trial 0 failed with value nan.[0m
+No completed trials for seasonal_0. Skipping.
+最適化対象: seasonal_1
+[32m[I 2024-12-31 23:50:34,219][0m A new study created in memory with name: no-name-7039bc8c-b3c4-42f3-8f36-2190e9f36131[0m
+[33m[W 2024-12-31 23:50:37,024][0m Trial 0 failed with parameters: {'observation_period_num': 26, 'train_rates': 0.7901491671467639, 'learning_rate': 0.0007163832857755593, 'batch_size': 182, 'step_size': 9, 'gamma': 0.8974334559384076} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-31 23:50:37,024][0m Trial 0 failed with value nan.[0m
+No completed trials for seasonal_1. Skipping.
+最適化対象: seasonal_2
+[32m[I 2024-12-31 23:50:37,025][0m A new study created in memory with name: no-name-8cca4fe2-d68a-45eb-800b-703b60213db8[0m
+[33m[W 2024-12-31 23:50:39,521][0m Trial 0 failed with parameters: {'observation_period_num': 186, 'train_rates': 0.707277173834763, 'learning_rate': 2.565011110234857e-06, 'batch_size': 166, 'step_size': 4, 'gamma': 0.7964834381980789} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-31 23:50:39,522][0m Trial 0 failed with value nan.[0m
+No completed trials for seasonal_2. Skipping.
+最適化対象: seasonal_3
+[32m[I 2024-12-31 23:50:39,522][0m A new study created in memory with name: no-name-c87c3a4c-3387-4030-81f4-cb79f3efd114[0m
+[33m[W 2024-12-31 23:50:42,021][0m Trial 0 failed with parameters: {'observation_period_num': 43, 'train_rates': 0.6452774220759231, 'learning_rate': 3.400502336756059e-05, 'batch_size': 222, 'step_size': 5, 'gamma': 0.8486749147951839} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-31 23:50:42,021][0m Trial 0 failed with value nan.[0m
+No completed trials for seasonal_3. Skipping.
+最適化対象: resid
+[32m[I 2024-12-31 23:50:42,022][0m A new study created in memory with name: no-name-0cfbd41a-d5ff-460b-ab0b-7694884d1633[0m
+[33m[W 2024-12-31 23:50:45,935][0m Trial 0 failed with parameters: {'observation_period_num': 237, 'train_rates': 0.7877272000369125, 'learning_rate': 0.0009742659655732034, 'batch_size': 85, 'step_size': 5, 'gamma': 0.8886332748990552} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-31 23:50:45,936][0m Trial 0 failed with value nan.[0m
+No completed trials for resid. Skipping.
+最適ハイパーパラメータが best_hyperparameters_MSFT_iTransformer.json に保存されました
+Training trend component with params: {}
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 597, in <module>
+    model, optimizer, scheduler = create_model(params, num_variates, predict_period_num, depth, dim)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 175, in create_model
+    lookback_len=params['observation_period_num'],
+                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'observation_period_num'

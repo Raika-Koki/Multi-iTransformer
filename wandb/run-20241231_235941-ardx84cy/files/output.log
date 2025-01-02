@@ -1,0 +1,80 @@
+最適化対象: trend
+[32m[I 2024-12-31 23:59:42,082][0m A new study created in memory with name: no-name-113fec4e-f5f3-4a17-8920-083ffee76a7c[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[32m[I 2024-12-31 23:59:47,596][0m Trial 0 finished with value: 3.576874713428685 and parameters: {'observation_period_num': 214, 'train_rates': 0.8664578571542405, 'learning_rate': 3.7941074073528435e-06, 'batch_size': 166, 'step_size': 2, 'gamma': 0.9168042721788907}. Best is trial 0 with value: 3.576874713428685.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2024-12-31 23:59:47,597][0m A new study created in memory with name: no-name-e171e056-d65d-4ebe-a011-6bcd356a081c[0m
+[32m[I 2024-12-31 23:59:50,316][0m Trial 0 finished with value: 0.4321865386476642 and parameters: {'observation_period_num': 59, 'train_rates': 0.8424950753157274, 'learning_rate': 0.0003694478343494853, 'batch_size': 183, 'step_size': 10, 'gamma': 0.8489619282822645}. Best is trial 0 with value: 0.4321865386476642.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2024-12-31 23:59:50,318][0m A new study created in memory with name: no-name-d2e27c4b-348f-4483-87fc-84cd916c3abf[0m
+[32m[I 2024-12-31 23:59:56,535][0m Trial 0 finished with value: 0.5837004026141736 and parameters: {'observation_period_num': 236, 'train_rates': 0.8800090778048362, 'learning_rate': 1.1687463096883237e-05, 'batch_size': 45, 'step_size': 1, 'gamma': 0.9619521364890665}. Best is trial 0 with value: 0.5837004026141736.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2024-12-31 23:59:56,536][0m A new study created in memory with name: no-name-e34ef8a1-a3db-4692-bbd7-124189184da0[0m
+[32m[I 2024-12-31 23:59:59,322][0m Trial 0 finished with value: 1.6180810928344727 and parameters: {'observation_period_num': 63, 'train_rates': 0.9424073400921438, 'learning_rate': 1.1722369793092572e-06, 'batch_size': 199, 'step_size': 3, 'gamma': 0.8363778882651679}. Best is trial 0 with value: 1.6180810928344727.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2024-12-31 23:59:59,324][0m A new study created in memory with name: no-name-0954f755-57a8-498d-a5d9-a2173297d19d[0m
+[32m[I 2025-01-01 00:00:01,645][0m Trial 0 finished with value: 0.8149760434754096 and parameters: {'observation_period_num': 195, 'train_rates': 0.747680610160633, 'learning_rate': 1.258101439376411e-05, 'batch_size': 233, 'step_size': 4, 'gamma': 0.9017135372942665}. Best is trial 0 with value: 0.8149760434754096.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-01 00:00:01,646][0m A new study created in memory with name: no-name-7d14c0a0-be7b-4447-a073-2e03b59f761f[0m
+[32m[I 2025-01-01 00:00:04,633][0m Trial 0 finished with value: 5.308605194091797 and parameters: {'observation_period_num': 151, 'train_rates': 0.9491684261600706, 'learning_rate': 3.209271405682977e-06, 'batch_size': 171, 'step_size': 6, 'gamma': 0.836277601117644}. Best is trial 0 with value: 5.308605194091797.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AAPL_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 214, 'train_rates': 0.8664578571542405, 'learning_rate': 3.7941074073528435e-06, 'batch_size': 166, 'step_size': 2, 'gamma': 0.9168042721788907}
+Epoch 1/1, trend Loss: 0.7034 | 1.7898
+Training seasonal_0 component with params: {'observation_period_num': 59, 'train_rates': 0.8424950753157274, 'learning_rate': 0.0003694478343494853, 'batch_size': 183, 'step_size': 10, 'gamma': 0.8489619282822645}
+Epoch 1/1, seasonal_0 Loss: 0.8046 | 0.3633
+Training seasonal_1 component with params: {'observation_period_num': 236, 'train_rates': 0.8800090778048362, 'learning_rate': 1.1687463096883237e-05, 'batch_size': 45, 'step_size': 1, 'gamma': 0.9619521364890665}
+Epoch 1/1, seasonal_1 Loss: 0.7059 | 0.5486
+Training seasonal_2 component with params: {'observation_period_num': 63, 'train_rates': 0.9424073400921438, 'learning_rate': 1.1722369793092572e-06, 'batch_size': 199, 'step_size': 3, 'gamma': 0.8363778882651679}
+Epoch 1/1, seasonal_2 Loss: 0.9468 | 1.7913
+Training seasonal_3 component with params: {'observation_period_num': 195, 'train_rates': 0.747680610160633, 'learning_rate': 1.258101439376411e-05, 'batch_size': 233, 'step_size': 4, 'gamma': 0.9017135372942665}
+Epoch 1/1, seasonal_3 Loss: 0.6112 | 1.0673
+Training resid component with params: {'observation_period_num': 151, 'train_rates': 0.9491684261600706, 'learning_rate': 3.209271405682977e-06, 'batch_size': 171, 'step_size': 6, 'gamma': 0.836277601117644}
+Epoch 1/1, resid Loss: 0.6636 | 1.1325
+Runtime (seconds): 23.993581533432007
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:678: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:679: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:680: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:681: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:682: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:683: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+[96.2290183]
+[0.63121448]
+[0.480172]
+[2.49152686]
+[-0.61732848]
+[1.16278194]
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py:1266: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+MSE: 18756.019227230263
+RMSE: 136.9526167228296
+MAE: 136.9526167228296
+R-squared: nan
+[100.37738511]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:725: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_stock_price": close_data[-1]
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 745, in <module>
+    wandb.log({f"{stock_code} Stock Price Prediction by iTransformer": wandb.Image(f'{stock_code.lower()}_stock_price_prediction_by_iTransformer.png')}) #check
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/wandb/sdk/data_types/image.py", line 178, in __init__
+    self._initialize_from_path(data_or_path)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/wandb/sdk/data_types/image.py", line 276, in _initialize_from_path
+    self._set_file(path, is_tmp=False)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/wandb/sdk/data_types/base_types/media.py", line 65, in _set_file
+    with open(self._path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'aapl_stock_price_prediction_by_iTransformer.png'

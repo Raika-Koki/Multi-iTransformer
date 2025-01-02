@@ -21,7 +21,7 @@ from src.train import train
 from statsmodels.tsa.seasonal import MSTL
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1' #check
+os.environ['CUDA_VISIBLE_DEVICES'] = '0' #check
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
@@ -109,7 +109,7 @@ def objective(trial, component, depth, dim):
     criterion = nn.MSELoss()
     earlystopping = EarlyStopping(patience=5)
 
-    for epoch in range(100):  # 100エポック回すように変更 #check
+    for epoch in range(1):  # 100エポック回すように変更 #check
         model, _, valid_loss = train(
             model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period)
         earlystopping(valid_loss, model)
@@ -186,11 +186,11 @@ def create_model(params, num_variates, predict_period_num, depth, dim):
 # 初期設定
 start_date = '2012-05-18'
 initial_end_date = datetime.strptime('2024-11-07', '%Y-%m-%d')
-stock_code = 'AAPL' #check
+stock_code = 'AMZN' #check
 file_name = f"best_hyperparameters_{stock_code}_iTransformer.json"  # check
 predict_period_num = 1
 depth = 32 
-dim = 64
+dim = 256
 
 #beta関数のパラメータ設定
 alpha = 8
@@ -547,7 +547,7 @@ while True:
     for component, study_name in zip(["trend", "seasonal_0", "seasonal_1", "seasonal_2", "seasonal_3", "resid"], ["study_trend", "study_seasonal_0", "study_seasonal_1", "study_seasonal_2", "study_seasonal_3", "study_resid"]):
         print(f"最適化対象: {component}")
         study = optuna.create_study(direction='minimize')
-        study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=30) #check
+        study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
         if len(study.trials) == 0 or all([t.state != optuna.trial.TrialState.COMPLETE for t in study.trials]):
             print(f"No completed trials for {component}. Skipping.")
             continue
@@ -565,7 +565,7 @@ while True:
 
     predict_period_num = 1
     criterion = nn.MSELoss()
-    epochs = 300
+    epochs = 1 #check
 
     # トレーニングループ
     models = {}
@@ -627,36 +627,30 @@ while True:
             wandb.log({f"{comp}_train_loss": train_loss, f"{comp}_valid_loss": valid_loss})
 
         # 学習済みモデルの保存
-        torch.save(models[comp].state_dict(), f'amzn_stock_price_{comp}_model.pth')
+        torch.save(models[comp].state_dict(), f'{stock_code}_stock_price_{comp}_model.pth')
 
 
     end_time = time.time()
     runtime_seconds = end_time - start_time
     print(f"Runtime (seconds): {runtime_seconds}")
 
+    print(best_params['trend']['learning_rate'])
+
     # Update wandb configuration with hyperparameters
-    wandb.config.update({
-        "learning_rate_trend": best_params['trend']['learning_rate'],
-        "learning_rate_seasonal_0": best_params['seasonal_0']['learning_rate'],
-        "learning_rate_seasonal_1": best_params['seasonal_1']['learning_rate'],
-        "learning_rate_seasonal_2": best_params['seasonal_2']['learning_rate'],
-        "learning_rate_seasonal_3": best_params['seasonal_3']['learning_rate'],
-        "learning_rate_resid": best_params['resid']['learning_rate'],
-        "epochs": epochs,
-        "batch_size_trend": best_params['trend']['batch_size'],
-        "batch_size_seasonal_0": best_params['seasonal_0']['batch_size'],
-        "batch_size_seasonal_1": best_params['seasonal_1']['batch_size'],
-        "batch_size_seasonal_2": best_params['seasonal_2']['batch_size'],
-        "batch_size_seasonal_3": best_params['seasonal_3']['batch_size'],
-        "batch_size_resid": best_params['resid']['batch_size'],
-        "observation_period_trend": best_params['trend']['observation_period_num'],
-        "observation_period_seasonal_0": best_params['seasonal_0']['observation_period_num'],
-        "observation_period_seasonal_1": best_params['seasonal_1']['observation_period_num'],
-        "observation_period_seasonal_2": best_params['seasonal_2']['observation_period_num'],
-        "observation_period_seasonal_3": best_params['seasonal_3']['observation_period_num'],
-        "observation_period_resid": best_params['resid']['observation_period_num'],
-        "predict_period_num": predict_period_num
-    })
+    config_updates = {}
+    components = ['trend', 'seasonal_0', 'seasonal_1', 'seasonal_2', 'seasonal_3', 'resid']
+    for comp in components:
+        if best_params.get(comp):
+            config_updates.update({
+                f"learning_rate_{comp}": best_params[comp].get('learning_rate', None),
+                f"batch_size_{comp}": best_params[comp].get('batch_size', None),
+                f"observation_period_{comp}": best_params[comp].get('observation_period_num', None)
+            })
+    
+    config_updates["epochs"] = epochs
+    config_updates["predict_period_num"] = predict_period_num
+    
+    wandb.config.update(config_updates)
 
     with torch.no_grad():
         # Prediction for trend, seasonal, and residual components
@@ -674,14 +668,12 @@ while True:
         predicted_seasonal_3 = models['seasonal_3'](last_batch_data_seasonal_3)
         predicted_resid = models['resid'](last_batch_data_resid)
 
-        # Select AMZN predictions
-        predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
-        predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
-        predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
-        predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
-        predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
-        predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
-
+        predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'].iloc[0] + mean_lists['trend'].iloc[0]
+        predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'].iloc[0] + mean_lists['seasonal_0'].iloc[0]
+        predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'].iloc[0] + mean_lists['seasonal_1'].iloc[0]
+        predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'].iloc[0] + mean_lists['seasonal_2'].iloc[0]
+        predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'].iloc[0] + mean_lists['seasonal_3'].iloc[0]
+        predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'].iloc[0] + mean_lists['resid'].iloc[0]
 
     print(predicted_trend_stock_price)
     print(predicted_seasonal_0_stock_price)
@@ -722,7 +714,10 @@ while True:
         "predicted_seasonal_3_stock_price": predicted_seasonal_3_stock_price,
         "predicted_resid_stock_price": predicted_resid_stock_price,
         "final_predicted_stock_price": final_predicted_stock_price,
-        "real_stock_price": close_data[-1]
+        "real_stock_price": close_data.iloc[-1],
+        "mse": mse,
+        "rmse": rmse,
+        "mae": mae
     })
 
     output_date = 10
@@ -731,19 +726,29 @@ while True:
     predicted_dates_tmp = close_data.index[-output_date:].strftime('%Y-%m-%d')
     predicted_dates = predicted_dates_tmp.tolist()
 
+    # Plotの作成
     plt.figure(figsize=(10, 6))
     plt.plot(predicted_dates, close_data[-output_date:].values, linestyle='dashdot', color='blue', label='Actual Price')
     plt.plot(predicted_dates, add_predicted_stock_price, linestyle='dotted', color='red', label='Predicted Price')
-    plt.plot(predicted_dates, close_data[-output_date:-1].values, color='black', label='learning data')
+    plt.plot(predicted_dates, close_data[-output_date:].values, color='black', label='Learning Data')
     plt.xlabel('Date', fontsize=16)
     plt.ylabel('Stock Price', fontsize=16)
     plt.legend(fontsize=14)
-    plt.title(f'{stock_code} Stock Price Prediction by iTransformer', fontsize=18) #check
+    # ファイル名の設定
+    file_path = f'{stock_code.lower()}_stock_price_prediction_by_iTransformer.png'
+    # グラフを保存
+    plt.savefig(file_path)
 
-    # Save and log to WandB
-    plt.savefig(f'{stock_code.lower()}_stock_price_prediction_MSTL.png') #check
-    wandb.log({f"{stock_code} Stock Price Prediction by iTransformer": wandb.Image(f'{stock_code.lower()}_stock_price_prediction_by_iTransformer.png')}) #check
+    # ファイルの存在確認
+    if os.path.exists(file_path):
+        print(f"File {file_path} exists. Logging to WandB.")
+        wandb.log({
+            "Stock_Price_Prediction": wandb.Image(file_path)
+        })
+    else:
+        print(f"Error: {file_path} does not exist.")
 
+    # グラフを表示
     plt.show()
 
     # Log runtime to WandB

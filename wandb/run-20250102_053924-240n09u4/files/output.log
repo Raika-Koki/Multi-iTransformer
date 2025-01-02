@@ -1,0 +1,67 @@
+最適化対象: trend
+[32m[I 2025-01-02 05:39:26,474][0m A new study created in memory with name: no-name-78b4122b-42b9-4140-923a-7d9a94dd6acc[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-02 05:39:33,670][0m Trial 0 finished with value: 0.18421891370757681 and parameters: {'observation_period_num': 13, 'train_rates': 0.8958244776089199, 'learning_rate': 6.302122249600298e-05, 'batch_size': 116, 'step_size': 6, 'gamma': 0.8484539304049009}. Best is trial 0 with value: 0.18421891370757681.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-02 05:39:33,671][0m A new study created in memory with name: no-name-8cf77cf4-2d86-41df-a0d9-81cfb17f79d1[0m
+[32m[I 2025-01-02 05:39:42,450][0m Trial 0 finished with value: 0.9495788386369393 and parameters: {'observation_period_num': 227, 'train_rates': 0.6983511376320282, 'learning_rate': 1.5008592774149393e-06, 'batch_size': 21, 'step_size': 1, 'gamma': 0.8936338906723569}. Best is trial 0 with value: 0.9495788386369393.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-02 05:39:42,451][0m A new study created in memory with name: no-name-fc62e018-b981-405d-8418-558979ac141d[0m
+[32m[I 2025-01-02 05:39:51,320][0m Trial 0 finished with value: 0.21799285013390624 and parameters: {'observation_period_num': 102, 'train_rates': 0.9028503202670493, 'learning_rate': 1.1357800172124427e-05, 'batch_size': 25, 'step_size': 10, 'gamma': 0.8120366038409593}. Best is trial 0 with value: 0.21799285013390624.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-02 05:39:51,321][0m A new study created in memory with name: no-name-6500efc9-d795-4bb2-9db9-6d53aa61e2dc[0m
+[32m[I 2025-01-02 05:39:55,899][0m Trial 0 finished with value: 0.6199178623700239 and parameters: {'observation_period_num': 187, 'train_rates': 0.732404247734595, 'learning_rate': 0.00048117041939268123, 'batch_size': 212, 'step_size': 4, 'gamma': 0.9376644154519801}. Best is trial 0 with value: 0.6199178623700239.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-02 05:39:55,900][0m A new study created in memory with name: no-name-e482b312-2814-49ed-8b8e-52010d0cfeec[0m
+[32m[I 2025-01-02 05:40:00,360][0m Trial 0 finished with value: 0.5144564045257256 and parameters: {'observation_period_num': 44, 'train_rates': 0.6208068099268643, 'learning_rate': 0.00011202890513586023, 'batch_size': 198, 'step_size': 14, 'gamma': 0.9431530292028285}. Best is trial 0 with value: 0.5144564045257256.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-02 05:40:00,361][0m A new study created in memory with name: no-name-8e24081b-4a98-4bfc-8eba-bd00aa11b470[0m
+[32m[I 2025-01-02 05:40:10,106][0m Trial 0 finished with value: 0.8007337115748482 and parameters: {'observation_period_num': 218, 'train_rates': 0.6851605296123129, 'learning_rate': 1.8847612124133729e-06, 'batch_size': 18, 'step_size': 3, 'gamma': 0.8468531951962432}. Best is trial 0 with value: 0.8007337115748482.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 13, 'train_rates': 0.8958244776089199, 'learning_rate': 6.302122249600298e-05, 'batch_size': 116, 'step_size': 6, 'gamma': 0.8484539304049009}
+Epoch 1/1, trend Loss: 0.7110 | 0.1413
+Training seasonal_0 component with params: {'observation_period_num': 227, 'train_rates': 0.6983511376320282, 'learning_rate': 1.5008592774149393e-06, 'batch_size': 21, 'step_size': 1, 'gamma': 0.8936338906723569}
+Epoch 1/1, seasonal_0 Loss: 0.6414 | 1.0135
+Training seasonal_1 component with params: {'observation_period_num': 102, 'train_rates': 0.9028503202670493, 'learning_rate': 1.1357800172124427e-05, 'batch_size': 25, 'step_size': 10, 'gamma': 0.8120366038409593}
+Epoch 1/1, seasonal_1 Loss: 0.3637 | 0.2512
+Training seasonal_2 component with params: {'observation_period_num': 187, 'train_rates': 0.732404247734595, 'learning_rate': 0.00048117041939268123, 'batch_size': 212, 'step_size': 4, 'gamma': 0.9376644154519801}
+Epoch 1/1, seasonal_2 Loss: 3.1305 | 0.7054
+Training seasonal_3 component with params: {'observation_period_num': 44, 'train_rates': 0.6208068099268643, 'learning_rate': 0.00011202890513586023, 'batch_size': 198, 'step_size': 14, 'gamma': 0.9431530292028285}
+Epoch 1/1, seasonal_3 Loss: 1.3951 | 0.5362
+Training resid component with params: {'observation_period_num': 218, 'train_rates': 0.6851605296123129, 'learning_rate': 1.8847612124133729e-06, 'batch_size': 18, 'step_size': 3, 'gamma': 0.8468531951962432}
+Epoch 1/1, resid Loss: 0.5622 | 0.7160
+Runtime (seconds): 47.55231690406799
+6.302122249600298e-05
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:680: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'][0] + mean_lists['trend'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:681: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_0_stock_price = predicted_seasonal_0[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_0'][0] + mean_lists['seasonal_0'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:682: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_1_stock_price = predicted_seasonal_1[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_1'][0] + mean_lists['seasonal_1'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:683: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_2_stock_price = predicted_seasonal_2[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_2'][0] + mean_lists['seasonal_2'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:684: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_seasonal_3_stock_price = predicted_seasonal_3[1][0, :, 0].cpu().numpy().flatten() * std_lists['seasonal_3'][0] + mean_lists['seasonal_3'][0]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:685: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  predicted_resid_stock_price = predicted_resid[1][0, :, 0].cpu().numpy().flatten() * std_lists['resid'][0] + mean_lists['resid'][0]
+[163.2142]
+[2.0852652]
+[4.313381]
+[7.4796233]
+[-3.2474866]
+[9.8324375]
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py:1266: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+MSE: 548.1475855282042
+RMSE: 23.412551879882812
+MAE: 23.412551879882812
+R-squared: nan
+[183.67744]
+/data/student/k2110261/Multi-iTransformer/roop_optuna.py:727: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  "real_stock_price": close_data[-1]

@@ -1,0 +1,53 @@
+最適化対象: trend
+[32m[I 2025-01-02 22:58:17,045][0m A new study created in memory with name: no-name-791e5a17-8f52-4c15-bd09-8a28e2f59c14[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-02 22:58:23,341][0m Trial 0 finished with value: 0.3933452296036261 and parameters: {'observation_period_num': 15, 'train_rates': 0.6954802630071386, 'learning_rate': 5.4296443830651976e-05, 'batch_size': 231, 'step_size': 1, 'gamma': 0.8107116288496571}. Best is trial 0 with value: 0.3933452296036261.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-02 22:58:23,342][0m A new study created in memory with name: no-name-c576bc82-e808-4095-80f3-d63cacc4ab96[0m
+[32m[I 2025-01-02 22:58:28,732][0m Trial 0 finished with value: 0.28019208935875967 and parameters: {'observation_period_num': 170, 'train_rates': 0.9303984693970393, 'learning_rate': 9.233842764273799e-05, 'batch_size': 132, 'step_size': 11, 'gamma': 0.9658548941299808}. Best is trial 0 with value: 0.28019208935875967.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-02 22:58:28,733][0m A new study created in memory with name: no-name-6bfca529-a070-410f-94bf-ae1f28fe6b39[0m
+[32m[I 2025-01-02 22:58:33,773][0m Trial 0 finished with value: 0.49688902856287037 and parameters: {'observation_period_num': 176, 'train_rates': 0.810975167241222, 'learning_rate': 0.000101265691144934, 'batch_size': 91, 'step_size': 9, 'gamma': 0.820266054458409}. Best is trial 0 with value: 0.49688902856287037.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-02 22:58:33,774][0m A new study created in memory with name: no-name-ad0ca4f4-2740-4771-a844-3f2904c95479[0m
+[32m[I 2025-01-02 22:58:39,050][0m Trial 0 finished with value: 0.2983138261143557 and parameters: {'observation_period_num': 110, 'train_rates': 0.8231460184422952, 'learning_rate': 8.810184366186577e-05, 'batch_size': 97, 'step_size': 11, 'gamma': 0.8268925248318376}. Best is trial 0 with value: 0.2983138261143557.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-02 22:58:39,051][0m A new study created in memory with name: no-name-7ea98cf2-e6d6-4e11-89bd-b0a7f9acee77[0m
+[32m[I 2025-01-02 22:58:43,906][0m Trial 0 finished with value: 1.3273228368480345 and parameters: {'observation_period_num': 185, 'train_rates': 0.7580596050938422, 'learning_rate': 3.899019225014661e-06, 'batch_size': 117, 'step_size': 5, 'gamma': 0.7591496033978481}. Best is trial 0 with value: 1.3273228368480345.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-02 22:58:43,907][0m A new study created in memory with name: no-name-aaef43d2-d30b-4c39-bdfa-116a252be215[0m
+[32m[I 2025-01-02 22:58:49,066][0m Trial 0 finished with value: 0.328915016211041 and parameters: {'observation_period_num': 197, 'train_rates': 0.8510701278575252, 'learning_rate': 8.320889949647646e-05, 'batch_size': 112, 'step_size': 2, 'gamma': 0.8872371725465469}. Best is trial 0 with value: 0.328915016211041.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 15, 'train_rates': 0.6954802630071386, 'learning_rate': 5.4296443830651976e-05, 'batch_size': 231, 'step_size': 1, 'gamma': 0.8107116288496571}
+Epoch 1/1, trend Loss: 0.9099 | 0.4335
+Training seasonal_0 component with params: {'observation_period_num': 170, 'train_rates': 0.9303984693970393, 'learning_rate': 9.233842764273799e-05, 'batch_size': 132, 'step_size': 11, 'gamma': 0.9658548941299808}
+Epoch 1/1, seasonal_0 Loss: 0.9213 | 0.3266
+Training seasonal_1 component with params: {'observation_period_num': 176, 'train_rates': 0.810975167241222, 'learning_rate': 0.000101265691144934, 'batch_size': 91, 'step_size': 9, 'gamma': 0.820266054458409}
+Epoch 1/1, seasonal_1 Loss: 0.9823 | 0.4918
+Training seasonal_2 component with params: {'observation_period_num': 110, 'train_rates': 0.8231460184422952, 'learning_rate': 8.810184366186577e-05, 'batch_size': 97, 'step_size': 11, 'gamma': 0.8268925248318376}
+Epoch 1/1, seasonal_2 Loss: 0.9167 | 0.3197
+Training seasonal_3 component with params: {'observation_period_num': 185, 'train_rates': 0.7580596050938422, 'learning_rate': 3.899019225014661e-06, 'batch_size': 117, 'step_size': 5, 'gamma': 0.7591496033978481}
+Epoch 1/1, seasonal_3 Loss: 0.6800 | 1.1263
+Training resid component with params: {'observation_period_num': 197, 'train_rates': 0.8510701278575252, 'learning_rate': 8.320889949647646e-05, 'batch_size': 112, 'step_size': 2, 'gamma': 0.8872371725465469}
+Epoch 1/1, resid Loss: 0.9499 | 0.4403
+Runtime (seconds): 35.185632944107056
+5.4296443830651976e-05
+[138.33844]
+[-1.857437]
+[3.9991484]
+[14.754941]
+[4.3546705]
+[6.3144617]
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py:1266: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+MSE: 1696.2668678024784
+RMSE: 41.185760498046875
+MAE: 41.185760498046875
+R-squared: nan
+[165.90424]

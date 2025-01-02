@@ -1,0 +1,391 @@
+最適化対象: trend
+[32m[I 2024-12-30 03:22:17,622][0m A new study created in memory with name: no-name-e66353ea-6d41-4da5-a5d5-03f213e72123[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/contextlib.py:105: FutureWarning: `torch.backends.cuda.sdp_kernel()` is deprecated. In the future, this context manager will be removed. Please see `torch.nn.attention.sdpa_kernel()` for the new context manager, with updated signature.
+  self.gen = func(*args, **kwds)
+[33m[W 2024-12-30 03:22:49,217][0m Trial 0 failed with parameters: {'observation_period_num': 20, 'train_rates': 0.7836078775030928, 'learning_rate': 4.496712947013326e-05, 'batch_size': 181, 'step_size': 15, 'gamma': 0.7527866704480805} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:22:49,218][0m Trial 0 failed with value nan.[0m
+[33m[W 2024-12-30 03:24:03,030][0m Trial 1 failed with parameters: {'observation_period_num': 26, 'train_rates': 0.9343430565022839, 'learning_rate': 4.686576360107481e-06, 'batch_size': 78, 'step_size': 8, 'gamma': 0.8660128820785172} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:24:03,031][0m Trial 1 failed with value nan.[0m
+[33m[W 2024-12-30 03:24:30,357][0m Trial 2 failed with parameters: {'observation_period_num': 171, 'train_rates': 0.6532956597736085, 'learning_rate': 1.3580831953579386e-06, 'batch_size': 169, 'step_size': 1, 'gamma': 0.852801636211167} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:24:30,358][0m Trial 2 failed with value nan.[0m
+[33m[W 2024-12-30 03:25:11,912][0m Trial 3 failed with parameters: {'observation_period_num': 245, 'train_rates': 0.6221203346684469, 'learning_rate': 3.0262792872851856e-05, 'batch_size': 99, 'step_size': 6, 'gamma': 0.814913405811493} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:25:11,913][0m Trial 3 failed with value nan.[0m
+[33m[W 2024-12-30 03:27:18,820][0m Trial 4 failed with parameters: {'observation_period_num': 181, 'train_rates': 0.9281521895607001, 'learning_rate': 1.2030298090440623e-05, 'batch_size': 42, 'step_size': 13, 'gamma': 0.9478075962894896} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:27:18,821][0m Trial 4 failed with value nan.[0m
+[33m[W 2024-12-30 03:27:41,421][0m Trial 5 failed with parameters: {'observation_period_num': 24, 'train_rates': 0.6388183313913589, 'learning_rate': 2.864920959562637e-05, 'batch_size': 229, 'step_size': 15, 'gamma': 0.9569892039119017} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:27:41,422][0m Trial 5 failed with value nan.[0m
+[33m[W 2024-12-30 03:29:12,287][0m Trial 6 failed with parameters: {'observation_period_num': 148, 'train_rates': 0.6045741500129883, 'learning_rate': 0.0007351262314433121, 'batch_size': 45, 'step_size': 12, 'gamma': 0.9032860864472592} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:29:12,288][0m Trial 6 failed with value nan.[0m
+[33m[W 2024-12-30 03:29:37,965][0m Trial 7 failed with parameters: {'observation_period_num': 212, 'train_rates': 0.7509813635759768, 'learning_rate': 0.00017826814996737425, 'batch_size': 199, 'step_size': 4, 'gamma': 0.7973177340511426} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:29:37,965][0m Trial 7 failed with value nan.[0m
+[33m[W 2024-12-30 03:30:49,784][0m Trial 8 failed with parameters: {'observation_period_num': 60, 'train_rates': 0.8248276949119893, 'learning_rate': 0.0003127172572262105, 'batch_size': 72, 'step_size': 11, 'gamma': 0.9895080033337759} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:30:49,785][0m Trial 8 failed with value nan.[0m
+[33m[W 2024-12-30 03:31:16,643][0m Trial 9 failed with parameters: {'observation_period_num': 243, 'train_rates': 0.9102405604087076, 'learning_rate': 4.312375313231174e-06, 'batch_size': 216, 'step_size': 7, 'gamma': 0.8715747306706597} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:31:16,644][0m Trial 9 failed with value nan.[0m
+[33m[W 2024-12-30 03:32:45,686][0m Trial 10 failed with parameters: {'observation_period_num': 237, 'train_rates': 0.6831030481685632, 'learning_rate': 1.3201977474441638e-06, 'batch_size': 48, 'step_size': 8, 'gamma': 0.7573512798423707} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:32:45,687][0m Trial 10 failed with value nan.[0m
+[33m[W 2024-12-30 03:33:07,820][0m Trial 11 failed with parameters: {'observation_period_num': 230, 'train_rates': 0.6483492601281249, 'learning_rate': 9.559834371411623e-05, 'batch_size': 198, 'step_size': 13, 'gamma': 0.8958205376428847} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:33:07,821][0m Trial 11 failed with value nan.[0m
+[33m[W 2024-12-30 03:34:55,878][0m Trial 12 failed with parameters: {'observation_period_num': 47, 'train_rates': 0.9574249830722283, 'learning_rate': 2.5668321156564042e-06, 'batch_size': 53, 'step_size': 2, 'gamma': 0.9064066326318851} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:34:55,879][0m Trial 12 failed with value nan.[0m
+[33m[W 2024-12-30 03:35:20,647][0m Trial 13 failed with parameters: {'observation_period_num': 163, 'train_rates': 0.9412223270742072, 'learning_rate': 0.0005215968880012092, 'batch_size': 248, 'step_size': 6, 'gamma': 0.8523251494697275} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:35:20,647][0m Trial 13 failed with value nan.[0m
+[33m[W 2024-12-30 03:36:10,521][0m Trial 14 failed with parameters: {'observation_period_num': 194, 'train_rates': 0.7212131332878166, 'learning_rate': 2.906689047279932e-06, 'batch_size': 92, 'step_size': 6, 'gamma': 0.8992417405885146} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:36:10,522][0m Trial 14 failed with value nan.[0m
+[33m[W 2024-12-30 03:37:06,488][0m Trial 15 failed with parameters: {'observation_period_num': 99, 'train_rates': 0.841249520073994, 'learning_rate': 0.00017032021076524438, 'batch_size': 95, 'step_size': 10, 'gamma': 0.9351790499166388} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:37:06,489][0m Trial 15 failed with value nan.[0m
+[33m[W 2024-12-30 03:37:31,026][0m Trial 16 failed with parameters: {'observation_period_num': 38, 'train_rates': 0.9296556254508938, 'learning_rate': 0.00044834724534109367, 'batch_size': 251, 'step_size': 14, 'gamma': 0.9435486957690169} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:37:31,026][0m Trial 16 failed with value nan.[0m
+[33m[W 2024-12-30 03:38:24,991][0m Trial 17 failed with parameters: {'observation_period_num': 69, 'train_rates': 0.6442554348883035, 'learning_rate': 3.362410866068507e-06, 'batch_size': 81, 'step_size': 11, 'gamma': 0.8511630876964742} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:38:24,992][0m Trial 17 failed with value nan.[0m
+[33m[W 2024-12-30 03:40:12,566][0m Trial 18 failed with parameters: {'observation_period_num': 163, 'train_rates': 0.9222675373037306, 'learning_rate': 3.286741084193642e-06, 'batch_size': 50, 'step_size': 11, 'gamma': 0.8027505812379492} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:40:12,567][0m Trial 18 failed with value nan.[0m
+[33m[W 2024-12-30 03:40:47,275][0m Trial 19 failed with parameters: {'observation_period_num': 114, 'train_rates': 0.9800050181534065, 'learning_rate': 5.067536862038953e-06, 'batch_size': 177, 'step_size': 14, 'gamma': 0.949238226714354} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:40:47,275][0m Trial 19 failed with value nan.[0m
+[33m[W 2024-12-30 03:41:26,635][0m Trial 20 failed with parameters: {'observation_period_num': 96, 'train_rates': 0.8933464090360919, 'learning_rate': 2.6605172275647365e-05, 'batch_size': 149, 'step_size': 9, 'gamma': 0.8272106981833647} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:41:26,636][0m Trial 20 failed with value nan.[0m
+[33m[W 2024-12-30 03:42:00,655][0m Trial 21 failed with parameters: {'observation_period_num': 79, 'train_rates': 0.9600200140648366, 'learning_rate': 3.478202689013371e-05, 'batch_size': 173, 'step_size': 11, 'gamma': 0.850674130866728} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:42:00,656][0m Trial 21 failed with value nan.[0m
+[33m[W 2024-12-30 03:43:46,184][0m Trial 22 failed with parameters: {'observation_period_num': 33, 'train_rates': 0.6642029168019937, 'learning_rate': 1.137173827355428e-06, 'batch_size': 42, 'step_size': 9, 'gamma': 0.9836334714952975} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:43:46,184][0m Trial 22 failed with value nan.[0m
+[33m[W 2024-12-30 03:44:12,022][0m Trial 23 failed with parameters: {'observation_period_num': 22, 'train_rates': 0.7186082843879449, 'learning_rate': 3.60435550834451e-05, 'batch_size': 206, 'step_size': 11, 'gamma': 0.8018185702982868} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:44:12,023][0m Trial 23 failed with value nan.[0m
+[33m[W 2024-12-30 03:44:34,857][0m Trial 24 failed with parameters: {'observation_period_num': 184, 'train_rates': 0.8244330422248708, 'learning_rate': 8.449613599193418e-05, 'batch_size': 242, 'step_size': 7, 'gamma': 0.9153646717878368} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:44:34,858][0m Trial 24 failed with value nan.[0m
+[33m[W 2024-12-30 03:45:14,097][0m Trial 25 failed with parameters: {'observation_period_num': 136, 'train_rates': 0.7142501285408679, 'learning_rate': 4.151081753466804e-05, 'batch_size': 122, 'step_size': 9, 'gamma': 0.9867905519905235} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:45:14,097][0m Trial 25 failed with value nan.[0m
+[33m[W 2024-12-30 03:46:35,818][0m Trial 26 failed with parameters: {'observation_period_num': 249, 'train_rates': 0.9229458226502485, 'learning_rate': 0.0004754396154223349, 'batch_size': 64, 'step_size': 14, 'gamma': 0.8423461520096647} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:46:35,819][0m Trial 26 failed with value nan.[0m
+[33m[W 2024-12-30 03:47:06,318][0m Trial 27 failed with parameters: {'observation_period_num': 236, 'train_rates': 0.7816990339825736, 'learning_rate': 1.6350105521570015e-05, 'batch_size': 165, 'step_size': 5, 'gamma': 0.9480672623036323} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:47:06,318][0m Trial 27 failed with value nan.[0m
+[33m[W 2024-12-30 03:47:58,034][0m Trial 28 failed with parameters: {'observation_period_num': 29, 'train_rates': 0.9128326992350928, 'learning_rate': 2.9287395481128988e-05, 'batch_size': 114, 'step_size': 6, 'gamma': 0.8084550228312125} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:47:58,035][0m Trial 28 failed with value nan.[0m
+[33m[W 2024-12-30 03:48:23,849][0m Trial 29 failed with parameters: {'observation_period_num': 138, 'train_rates': 0.7547575287296009, 'learning_rate': 0.0006325299660490107, 'batch_size': 206, 'step_size': 11, 'gamma': 0.8264913128435453} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:48:23,850][0m Trial 29 failed with value nan.[0m
+No completed trials for trend. Skipping.
+最適化対象: seasonal_0
+[32m[I 2024-12-30 03:48:23,856][0m A new study created in memory with name: no-name-0d2694ea-21a3-46b3-bdbc-c4ef36e7cc42[0m
+[33m[W 2024-12-30 03:50:48,959][0m Trial 0 failed with parameters: {'observation_period_num': 244, 'train_rates': 0.7284512870021442, 'learning_rate': 5.424907309973403e-06, 'batch_size': 156, 'step_size': 5, 'gamma': 0.9307464723651611} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:50:48,960][0m Trial 0 failed with value nan.[0m
+[33m[W 2024-12-30 03:53:23,691][0m Trial 1 failed with parameters: {'observation_period_num': 191, 'train_rates': 0.7036357027208966, 'learning_rate': 2.2434944527441902e-05, 'batch_size': 141, 'step_size': 1, 'gamma': 0.9090515164069735} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:53:23,691][0m Trial 1 failed with value nan.[0m
+[33m[W 2024-12-30 03:58:32,103][0m Trial 2 failed with parameters: {'observation_period_num': 19, 'train_rates': 0.6474256941344516, 'learning_rate': 1.9127677991458293e-06, 'batch_size': 70, 'step_size': 4, 'gamma': 0.9840549876380755} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 03:58:32,104][0m Trial 2 failed with value nan.[0m
+[33m[W 2024-12-30 04:13:40,670][0m Trial 3 failed with parameters: {'observation_period_num': 244, 'train_rates': 0.8225935193470502, 'learning_rate': 1.9639359957750116e-06, 'batch_size': 25, 'step_size': 8, 'gamma': 0.7739217607543012} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:13:40,670][0m Trial 3 failed with value nan.[0m
+[33m[W 2024-12-30 04:18:11,897][0m Trial 4 failed with parameters: {'observation_period_num': 59, 'train_rates': 0.8952269274273679, 'learning_rate': 3.366824656232992e-05, 'batch_size': 97, 'step_size': 9, 'gamma': 0.9259636488223724} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:18:11,898][0m Trial 4 failed with value nan.[0m
+[33m[W 2024-12-30 04:20:29,419][0m Trial 5 failed with parameters: {'observation_period_num': 180, 'train_rates': 0.7738922015925134, 'learning_rate': 0.00031610152842282785, 'batch_size': 193, 'step_size': 3, 'gamma': 0.8286503811002829} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:20:29,419][0m Trial 5 failed with value nan.[0m
+[33m[W 2024-12-30 04:23:09,789][0m Trial 6 failed with parameters: {'observation_period_num': 120, 'train_rates': 0.8096844519108143, 'learning_rate': 0.0005458614525932942, 'batch_size': 161, 'step_size': 6, 'gamma': 0.94814630780812} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:23:09,789][0m Trial 6 failed with value nan.[0m
+[33m[W 2024-12-30 04:25:48,880][0m Trial 7 failed with parameters: {'observation_period_num': 135, 'train_rates': 0.6788008139674289, 'learning_rate': 2.3226330503526115e-05, 'batch_size': 143, 'step_size': 8, 'gamma': 0.9429359093846169} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:25:48,880][0m Trial 7 failed with value nan.[0m
+[33m[W 2024-12-30 04:29:57,556][0m Trial 8 failed with parameters: {'observation_period_num': 40, 'train_rates': 0.8237710998809873, 'learning_rate': 0.0003986378013778913, 'batch_size': 100, 'step_size': 7, 'gamma': 0.9324679344182105} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:29:57,556][0m Trial 8 failed with value nan.[0m
+[33m[W 2024-12-30 04:32:17,616][0m Trial 9 failed with parameters: {'observation_period_num': 224, 'train_rates': 0.9462299572150924, 'learning_rate': 5.107370696682824e-05, 'batch_size': 198, 'step_size': 5, 'gamma': 0.7839799653153003} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:32:17,616][0m Trial 9 failed with value nan.[0m
+[33m[W 2024-12-30 04:34:27,898][0m Trial 10 failed with parameters: {'observation_period_num': 154, 'train_rates': 0.8551586012484444, 'learning_rate': 3.922544810040922e-05, 'batch_size': 227, 'step_size': 2, 'gamma': 0.9470479842879261} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:34:27,899][0m Trial 10 failed with value nan.[0m
+[33m[W 2024-12-30 04:40:25,108][0m Trial 11 failed with parameters: {'observation_period_num': 95, 'train_rates': 0.8343440608771429, 'learning_rate': 0.0005038662801243762, 'batch_size': 69, 'step_size': 5, 'gamma': 0.9737608017767803} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:40:25,109][0m Trial 11 failed with value nan.[0m
+[33m[W 2024-12-30 04:44:09,671][0m Trial 12 failed with parameters: {'observation_period_num': 31, 'train_rates': 0.7833149472800973, 'learning_rate': 1.4195609545854136e-06, 'batch_size': 112, 'step_size': 12, 'gamma': 0.7811582466606083} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:44:09,672][0m Trial 12 failed with value nan.[0m
+[33m[W 2024-12-30 04:56:01,280][0m Trial 13 failed with parameters: {'observation_period_num': 99, 'train_rates': 0.7552274766889665, 'learning_rate': 1.7626097994818384e-06, 'batch_size': 32, 'step_size': 3, 'gamma': 0.8854242594947787} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 04:56:01,281][0m Trial 13 failed with value nan.[0m
+[33m[W 2024-12-30 05:03:57,912][0m Trial 14 failed with parameters: {'observation_period_num': 23, 'train_rates': 0.6944861284133843, 'learning_rate': 7.829616686130036e-06, 'batch_size': 48, 'step_size': 5, 'gamma': 0.869203960480822} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:03:57,912][0m Trial 14 failed with value nan.[0m
+[33m[W 2024-12-30 05:06:34,442][0m Trial 15 failed with parameters: {'observation_period_num': 192, 'train_rates': 0.8372520792055372, 'learning_rate': 0.0008369093144133007, 'batch_size': 164, 'step_size': 2, 'gamma': 0.9861011128445152} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:06:34,443][0m Trial 15 failed with value nan.[0m
+[33m[W 2024-12-30 05:08:24,274][0m Trial 16 failed with parameters: {'observation_period_num': 65, 'train_rates': 0.6542299589522765, 'learning_rate': 6.122212293172678e-06, 'batch_size': 238, 'step_size': 1, 'gamma': 0.837977830814268} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:08:24,274][0m Trial 16 failed with value nan.[0m
+[33m[W 2024-12-30 05:10:20,637][0m Trial 17 failed with parameters: {'observation_period_num': 96, 'train_rates': 0.6232156955527286, 'learning_rate': 5.5544317226604904e-05, 'batch_size': 206, 'step_size': 2, 'gamma': 0.8909665583201138} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:10:20,638][0m Trial 17 failed with value nan.[0m
+[33m[W 2024-12-30 05:13:59,248][0m Trial 18 failed with parameters: {'observation_period_num': 143, 'train_rates': 0.9489782482732645, 'learning_rate': 4.039874097473991e-05, 'batch_size': 125, 'step_size': 14, 'gamma': 0.953314265278303} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:13:59,249][0m Trial 18 failed with value nan.[0m
+[33m[W 2024-12-30 05:17:19,503][0m Trial 19 failed with parameters: {'observation_period_num': 120, 'train_rates': 0.9505204136514063, 'learning_rate': 0.0004268556564200497, 'batch_size': 134, 'step_size': 14, 'gamma': 0.8637203004762227} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:17:19,503][0m Trial 19 failed with value nan.[0m
+[33m[W 2024-12-30 05:32:37,723][0m Trial 20 failed with parameters: {'observation_period_num': 162, 'train_rates': 0.9552032863016879, 'learning_rate': 1.906666423385429e-06, 'batch_size': 28, 'step_size': 11, 'gamma': 0.8729293347911946} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:32:37,724][0m Trial 20 failed with value nan.[0m
+[33m[W 2024-12-30 05:35:55,254][0m Trial 21 failed with parameters: {'observation_period_num': 216, 'train_rates': 0.9654568296399645, 'learning_rate': 0.0002541488704778474, 'batch_size': 137, 'step_size': 10, 'gamma': 0.7712213265719026} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:35:55,255][0m Trial 21 failed with value nan.[0m
+[33m[W 2024-12-30 05:38:54,748][0m Trial 22 failed with parameters: {'observation_period_num': 130, 'train_rates': 0.6991573757363705, 'learning_rate': 4.991205590377086e-06, 'batch_size': 125, 'step_size': 14, 'gamma': 0.8940209257237144} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:38:54,748][0m Trial 22 failed with value nan.[0m
+[33m[W 2024-12-30 05:46:52,051][0m Trial 23 failed with parameters: {'observation_period_num': 225, 'train_rates': 0.9822433977365213, 'learning_rate': 7.765181135690414e-05, 'batch_size': 54, 'step_size': 6, 'gamma': 0.9469745213685818} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:46:52,052][0m Trial 23 failed with value nan.[0m
+[33m[W 2024-12-30 05:49:02,305][0m Trial 24 failed with parameters: {'observation_period_num': 97, 'train_rates': 0.7459837072877865, 'learning_rate': 1.0405119566079842e-05, 'batch_size': 205, 'step_size': 7, 'gamma': 0.9282663636356736} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:49:02,306][0m Trial 24 failed with value nan.[0m
+[33m[W 2024-12-30 05:50:49,750][0m Trial 25 failed with parameters: {'observation_period_num': 163, 'train_rates': 0.6324237475749213, 'learning_rate': 0.0003538874990375095, 'batch_size': 224, 'step_size': 12, 'gamma': 0.8259710876753033} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 05:50:49,751][0m Trial 25 failed with value nan.[0m
+[33m[W 2024-12-30 06:01:27,961][0m Trial 26 failed with parameters: {'observation_period_num': 33, 'train_rates': 0.6083815809524911, 'learning_rate': 1.8017009643879256e-06, 'batch_size': 33, 'step_size': 9, 'gamma': 0.9503891982683048} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:01:27,961][0m Trial 26 failed with value nan.[0m
+[33m[W 2024-12-30 06:08:05,628][0m Trial 27 failed with parameters: {'observation_period_num': 127, 'train_rates': 0.8393159961603698, 'learning_rate': 1.9121752623048287e-05, 'batch_size': 62, 'step_size': 12, 'gamma': 0.881064955373162} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:08:05,629][0m Trial 27 failed with value nan.[0m
+[33m[W 2024-12-30 06:16:53,528][0m Trial 28 failed with parameters: {'observation_period_num': 15, 'train_rates': 0.9375829452948937, 'learning_rate': 0.000867585104404779, 'batch_size': 51, 'step_size': 11, 'gamma': 0.8322472676708688} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:16:53,529][0m Trial 28 failed with value nan.[0m
+[33m[W 2024-12-30 06:19:19,230][0m Trial 29 failed with parameters: {'observation_period_num': 59, 'train_rates': 0.7504606956405045, 'learning_rate': 0.0007026895926443436, 'batch_size': 169, 'step_size': 14, 'gamma': 0.954286956489454} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:19:19,231][0m Trial 29 failed with value nan.[0m
+No completed trials for seasonal_0. Skipping.
+最適化対象: seasonal_1
+[32m[I 2024-12-30 06:19:19,235][0m A new study created in memory with name: no-name-7db2c0ee-dc5f-4a58-8824-b3feb0d9c8ba[0m
+[33m[W 2024-12-30 06:21:32,858][0m Trial 0 failed with parameters: {'observation_period_num': 217, 'train_rates': 0.9309932998593722, 'learning_rate': 2.0811579914569132e-05, 'batch_size': 214, 'step_size': 13, 'gamma': 0.8857188679992662} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:21:32,859][0m Trial 0 failed with value nan.[0m
+[33m[W 2024-12-30 06:23:56,972][0m Trial 1 failed with parameters: {'observation_period_num': 15, 'train_rates': 0.9464562808759783, 'learning_rate': 3.202398900496626e-06, 'batch_size': 217, 'step_size': 15, 'gamma': 0.8107576254672885} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:23:56,973][0m Trial 1 failed with value nan.[0m
+[33m[W 2024-12-30 06:26:24,879][0m Trial 2 failed with parameters: {'observation_period_num': 10, 'train_rates': 0.7446086720753249, 'learning_rate': 0.0007510674992430759, 'batch_size': 174, 'step_size': 11, 'gamma': 0.9430701921282758} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:26:24,879][0m Trial 2 failed with value nan.[0m
+[33m[W 2024-12-30 06:31:49,013][0m Trial 3 failed with parameters: {'observation_period_num': 73, 'train_rates': 0.6794105194623354, 'learning_rate': 0.0002510846095971044, 'batch_size': 68, 'step_size': 2, 'gamma': 0.7557505988325782} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:31:49,014][0m Trial 3 failed with value nan.[0m
+[33m[W 2024-12-30 06:35:53,738][0m Trial 4 failed with parameters: {'observation_period_num': 56, 'train_rates': 0.6201748808621017, 'learning_rate': 2.7220903036144428e-05, 'batch_size': 88, 'step_size': 15, 'gamma': 0.9674335154850382} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:35:53,739][0m Trial 4 failed with value nan.[0m
+[33m[W 2024-12-30 06:41:40,823][0m Trial 5 failed with parameters: {'observation_period_num': 55, 'train_rates': 0.7336181722776263, 'learning_rate': 0.0002877894223584524, 'batch_size': 68, 'step_size': 14, 'gamma': 0.9433626244937233} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:41:40,824][0m Trial 5 failed with value nan.[0m
+[33m[W 2024-12-30 06:44:46,961][0m Trial 6 failed with parameters: {'observation_period_num': 5, 'train_rates': 0.7336556491636907, 'learning_rate': 0.0001904884456856254, 'batch_size': 134, 'step_size': 10, 'gamma': 0.7674103774968689} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:44:46,962][0m Trial 6 failed with value nan.[0m
+[33m[W 2024-12-30 06:48:20,652][0m Trial 7 failed with parameters: {'observation_period_num': 177, 'train_rates': 0.9109813651056993, 'learning_rate': 3.367327831203769e-05, 'batch_size': 122, 'step_size': 14, 'gamma': 0.9029987320254428} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:48:20,652][0m Trial 7 failed with value nan.[0m
+[33m[W 2024-12-30 06:50:27,185][0m Trial 8 failed with parameters: {'observation_period_num': 27, 'train_rates': 0.7449443705035435, 'learning_rate': 3.9953100245674394e-05, 'batch_size': 230, 'step_size': 11, 'gamma': 0.7658399440832306} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:50:27,185][0m Trial 8 failed with value nan.[0m
+[33m[W 2024-12-30 06:52:37,689][0m Trial 9 failed with parameters: {'observation_period_num': 146, 'train_rates': 0.8359888853897671, 'learning_rate': 0.00017350772891018527, 'batch_size': 229, 'step_size': 7, 'gamma': 0.809842263194103} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 06:52:37,689][0m Trial 9 failed with value nan.[0m
+[33m[W 2024-12-30 07:06:33,688][0m Trial 10 failed with parameters: {'observation_period_num': 139, 'train_rates': 0.6350472238817322, 'learning_rate': 1.7937311380173576e-06, 'batch_size': 25, 'step_size': 8, 'gamma': 0.8360096726579688} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:06:33,689][0m Trial 10 failed with value nan.[0m
+[33m[W 2024-12-30 07:08:35,641][0m Trial 11 failed with parameters: {'observation_period_num': 82, 'train_rates': 0.7429283631884724, 'learning_rate': 1.153604218193168e-05, 'batch_size': 216, 'step_size': 4, 'gamma': 0.9813558218432828} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:08:35,641][0m Trial 11 failed with value nan.[0m
+[33m[W 2024-12-30 07:14:50,316][0m Trial 12 failed with parameters: {'observation_period_num': 108, 'train_rates': 0.6962115241675092, 'learning_rate': 0.00043607513199228956, 'batch_size': 59, 'step_size': 4, 'gamma': 0.8999170005940416} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:14:50,317][0m Trial 12 failed with value nan.[0m
+[33m[W 2024-12-30 07:17:12,526][0m Trial 13 failed with parameters: {'observation_period_num': 79, 'train_rates': 0.8125224432849193, 'learning_rate': 0.0003777306387743427, 'batch_size': 184, 'step_size': 11, 'gamma': 0.8234228295216722} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:17:12,527][0m Trial 13 failed with value nan.[0m
+[33m[W 2024-12-30 07:19:50,406][0m Trial 14 failed with parameters: {'observation_period_num': 118, 'train_rates': 0.8376788112507052, 'learning_rate': 3.366661837601827e-05, 'batch_size': 168, 'step_size': 1, 'gamma': 0.8373909430953178} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:19:50,407][0m Trial 14 failed with value nan.[0m
+[33m[W 2024-12-30 07:33:31,714][0m Trial 15 failed with parameters: {'observation_period_num': 61, 'train_rates': 0.7359895491716086, 'learning_rate': 1.679861077478242e-05, 'batch_size': 28, 'step_size': 3, 'gamma': 0.7613198920396086} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:33:31,715][0m Trial 15 failed with value nan.[0m
+[33m[W 2024-12-30 07:35:10,549][0m Trial 16 failed with parameters: {'observation_period_num': 179, 'train_rates': 0.6058019786204416, 'learning_rate': 0.00013588162149586383, 'batch_size': 249, 'step_size': 8, 'gamma': 0.9101950733652572} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:35:10,550][0m Trial 16 failed with value nan.[0m
+[33m[W 2024-12-30 07:37:27,656][0m Trial 17 failed with parameters: {'observation_period_num': 145, 'train_rates': 0.7597626041010678, 'learning_rate': 4.403495964501419e-05, 'batch_size': 191, 'step_size': 8, 'gamma': 0.8920721186453573} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:37:27,657][0m Trial 17 failed with value nan.[0m
+[33m[W 2024-12-30 07:52:52,996][0m Trial 18 failed with parameters: {'observation_period_num': 93, 'train_rates': 0.7791545117947298, 'learning_rate': 1.4943872937655538e-05, 'batch_size': 25, 'step_size': 13, 'gamma': 0.7843489304289389} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 07:52:52,997][0m Trial 18 failed with value nan.[0m
+[33m[W 2024-12-30 08:01:05,358][0m Trial 19 failed with parameters: {'observation_period_num': 156, 'train_rates': 0.7034984907290613, 'learning_rate': 1.834343608343296e-06, 'batch_size': 44, 'step_size': 11, 'gamma': 0.8745726126129602} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:01:05,358][0m Trial 19 failed with value nan.[0m
+[33m[W 2024-12-30 08:03:43,130][0m Trial 20 failed with parameters: {'observation_period_num': 86, 'train_rates': 0.924028637280934, 'learning_rate': 2.726774478635847e-05, 'batch_size': 181, 'step_size': 2, 'gamma': 0.9713230709226601} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:03:43,131][0m Trial 20 failed with value nan.[0m
+[33m[W 2024-12-30 08:06:36,751][0m Trial 21 failed with parameters: {'observation_period_num': 201, 'train_rates': 0.8614522294318316, 'learning_rate': 3.2675710966149904e-06, 'batch_size': 140, 'step_size': 11, 'gamma': 0.8196030654379483} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:06:36,752][0m Trial 21 failed with value nan.[0m
+[33m[W 2024-12-30 08:17:48,370][0m Trial 22 failed with parameters: {'observation_period_num': 79, 'train_rates': 0.938365669348636, 'learning_rate': 1.114927377864808e-05, 'batch_size': 39, 'step_size': 8, 'gamma': 0.9465920294886534} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:17:48,370][0m Trial 22 failed with value nan.[0m
+[33m[W 2024-12-30 08:25:08,669][0m Trial 23 failed with parameters: {'observation_period_num': 118, 'train_rates': 0.6323975971187235, 'learning_rate': 0.00014288753196699903, 'batch_size': 47, 'step_size': 13, 'gamma': 0.7514930759807302} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:25:08,670][0m Trial 23 failed with value nan.[0m
+[33m[W 2024-12-30 08:42:22,214][0m Trial 24 failed with parameters: {'observation_period_num': 85, 'train_rates': 0.8052286563955976, 'learning_rate': 6.266305483505934e-06, 'batch_size': 23, 'step_size': 14, 'gamma': 0.9283484574053951} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:42:22,214][0m Trial 24 failed with value nan.[0m
+[33m[W 2024-12-30 08:44:38,535][0m Trial 25 failed with parameters: {'observation_period_num': 7, 'train_rates': 0.8226704381935639, 'learning_rate': 0.0005460585614848797, 'batch_size': 240, 'step_size': 8, 'gamma': 0.8154613944991264} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:44:38,535][0m Trial 25 failed with value nan.[0m
+[33m[W 2024-12-30 08:54:42,663][0m Trial 26 failed with parameters: {'observation_period_num': 236, 'train_rates': 0.887650427720273, 'learning_rate': 5.4030883207673185e-05, 'batch_size': 40, 'step_size': 9, 'gamma': 0.8909748998759989} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:54:42,664][0m Trial 26 failed with value nan.[0m
+[33m[W 2024-12-30 08:56:52,108][0m Trial 27 failed with parameters: {'observation_period_num': 145, 'train_rates': 0.7764206797054907, 'learning_rate': 1.6142736178692981e-06, 'batch_size': 202, 'step_size': 10, 'gamma': 0.8610574466978982} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 08:56:52,109][0m Trial 27 failed with value nan.[0m
+[33m[W 2024-12-30 09:03:02,918][0m Trial 28 failed with parameters: {'observation_period_num': 128, 'train_rates': 0.7725865827113328, 'learning_rate': 0.0002352210691452184, 'batch_size': 62, 'step_size': 7, 'gamma': 0.9256065664142912} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:03:02,918][0m Trial 28 failed with value nan.[0m
+[33m[W 2024-12-30 09:05:35,030][0m Trial 29 failed with parameters: {'observation_period_num': 110, 'train_rates': 0.7896906511576092, 'learning_rate': 8.31845701970833e-05, 'batch_size': 161, 'step_size': 5, 'gamma': 0.9219003243635994} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:05:35,031][0m Trial 29 failed with value nan.[0m
+No completed trials for seasonal_1. Skipping.
+最適化対象: seasonal_2
+[32m[I 2024-12-30 09:05:35,036][0m A new study created in memory with name: no-name-04afbccb-1d62-4176-a23f-8da281be99b4[0m
+[33m[W 2024-12-30 09:08:40,071][0m Trial 0 failed with parameters: {'observation_period_num': 36, 'train_rates': 0.7429703347004168, 'learning_rate': 0.0001085166374128662, 'batch_size': 132, 'step_size': 9, 'gamma': 0.8041258515000158} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:08:40,071][0m Trial 0 failed with value nan.[0m
+[33m[W 2024-12-30 09:11:02,262][0m Trial 1 failed with parameters: {'observation_period_num': 10, 'train_rates': 0.6535256910101224, 'learning_rate': 0.000523113017649078, 'batch_size': 168, 'step_size': 8, 'gamma': 0.8046571409705221} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:11:02,263][0m Trial 1 failed with value nan.[0m
+[33m[W 2024-12-30 09:13:52,991][0m Trial 2 failed with parameters: {'observation_period_num': 118, 'train_rates': 0.8954044816224896, 'learning_rate': 0.00016063550071768255, 'batch_size': 152, 'step_size': 8, 'gamma': 0.7531498999070829} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:13:52,992][0m Trial 2 failed with value nan.[0m
+[33m[W 2024-12-30 09:16:56,732][0m Trial 3 failed with parameters: {'observation_period_num': 220, 'train_rates': 0.878470495654415, 'learning_rate': 5.088785931274868e-06, 'batch_size': 139, 'step_size': 3, 'gamma': 0.9555012884865678} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:16:56,733][0m Trial 3 failed with value nan.[0m
+[33m[W 2024-12-30 09:19:11,003][0m Trial 4 failed with parameters: {'observation_period_num': 211, 'train_rates': 0.8202413238954367, 'learning_rate': 0.00027090126482524424, 'batch_size': 194, 'step_size': 12, 'gamma': 0.7569387999502449} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:19:11,004][0m Trial 4 failed with value nan.[0m
+[33m[W 2024-12-30 09:22:03,949][0m Trial 5 failed with parameters: {'observation_period_num': 126, 'train_rates': 0.9074186687772947, 'learning_rate': 0.00046911518978812145, 'batch_size': 159, 'step_size': 15, 'gamma': 0.7873158133427494} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:22:03,950][0m Trial 5 failed with value nan.[0m
+[33m[W 2024-12-30 09:26:13,008][0m Trial 6 failed with parameters: {'observation_period_num': 218, 'train_rates': 0.899770595166643, 'learning_rate': 5.211281872367809e-05, 'batch_size': 98, 'step_size': 2, 'gamma': 0.9255028406201921} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:26:13,009][0m Trial 6 failed with value nan.[0m
+[33m[W 2024-12-30 09:28:12,929][0m Trial 7 failed with parameters: {'observation_period_num': 87, 'train_rates': 0.723963075312707, 'learning_rate': 3.6006068796265765e-06, 'batch_size': 255, 'step_size': 3, 'gamma': 0.986594473163575} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:28:12,930][0m Trial 7 failed with value nan.[0m
+[33m[W 2024-12-30 09:42:52,267][0m Trial 8 failed with parameters: {'observation_period_num': 243, 'train_rates': 0.7195354982462747, 'learning_rate': 2.719650857956809e-06, 'batch_size': 24, 'step_size': 6, 'gamma': 0.7870884101217488} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:42:52,267][0m Trial 8 failed with value nan.[0m
+[33m[W 2024-12-30 09:45:09,118][0m Trial 9 failed with parameters: {'observation_period_num': 121, 'train_rates': 0.8187362424728788, 'learning_rate': 0.0004677160276465922, 'batch_size': 204, 'step_size': 3, 'gamma': 0.9611983830424492} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:45:09,119][0m Trial 9 failed with value nan.[0m
+[33m[W 2024-12-30 09:47:06,728][0m Trial 10 failed with parameters: {'observation_period_num': 101, 'train_rates': 0.7734069410693103, 'learning_rate': 0.00022580587613202813, 'batch_size': 256, 'step_size': 14, 'gamma': 0.7783587479000417} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:47:06,729][0m Trial 10 failed with value nan.[0m
+[33m[W 2024-12-30 09:49:34,287][0m Trial 11 failed with parameters: {'observation_period_num': 170, 'train_rates': 0.9382676823427765, 'learning_rate': 1.7031421201184194e-05, 'batch_size': 190, 'step_size': 9, 'gamma': 0.9378516201561726} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:49:34,288][0m Trial 11 failed with value nan.[0m
+[33m[W 2024-12-30 09:52:40,989][0m Trial 12 failed with parameters: {'observation_period_num': 181, 'train_rates': 0.6504401583387114, 'learning_rate': 2.4961592378135413e-05, 'batch_size': 117, 'step_size': 12, 'gamma': 0.8895786872677588} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:52:40,990][0m Trial 12 failed with value nan.[0m
+[33m[W 2024-12-30 09:54:42,588][0m Trial 13 failed with parameters: {'observation_period_num': 214, 'train_rates': 0.6581187956322447, 'learning_rate': 2.675695258284343e-06, 'batch_size': 184, 'step_size': 15, 'gamma': 0.7964730134761799} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:54:42,589][0m Trial 13 failed with value nan.[0m
+[33m[W 2024-12-30 09:57:01,098][0m Trial 14 failed with parameters: {'observation_period_num': 225, 'train_rates': 0.9407196536641302, 'learning_rate': 9.984207953394608e-06, 'batch_size': 229, 'step_size': 8, 'gamma': 0.9575339212937999} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:57:01,099][0m Trial 14 failed with value nan.[0m
+[33m[W 2024-12-30 09:59:24,604][0m Trial 15 failed with parameters: {'observation_period_num': 200, 'train_rates': 0.7978352573595795, 'learning_rate': 7.360980566224486e-06, 'batch_size': 177, 'step_size': 6, 'gamma': 0.9807882559647867} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 09:59:24,605][0m Trial 15 failed with value nan.[0m
+[33m[W 2024-12-30 10:05:00,015][0m Trial 16 failed with parameters: {'observation_period_num': 182, 'train_rates': 0.7289742482374906, 'learning_rate': 4.2715427853100076e-05, 'batch_size': 65, 'step_size': 13, 'gamma': 0.9101750336456436} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:05:00,016][0m Trial 16 failed with value nan.[0m
+[33m[W 2024-12-30 10:08:05,337][0m Trial 17 failed with parameters: {'observation_period_num': 82, 'train_rates': 0.640220161405425, 'learning_rate': 8.382240247508037e-05, 'batch_size': 118, 'step_size': 7, 'gamma': 0.8867172742452658} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:08:05,338][0m Trial 17 failed with value nan.[0m
+[33m[W 2024-12-30 10:15:40,654][0m Trial 18 failed with parameters: {'observation_period_num': 44, 'train_rates': 0.9132844116910858, 'learning_rate': 8.368866433827213e-05, 'batch_size': 58, 'step_size': 14, 'gamma': 0.7649059518586072} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:15:40,655][0m Trial 18 failed with value nan.[0m
+[33m[W 2024-12-30 10:17:57,552][0m Trial 19 failed with parameters: {'observation_period_num': 240, 'train_rates': 0.9099568377784494, 'learning_rate': 3.5455057792853075e-05, 'batch_size': 208, 'step_size': 4, 'gamma': 0.8042728799414735} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:17:57,553][0m Trial 19 failed with value nan.[0m
+[33m[W 2024-12-30 10:20:18,150][0m Trial 20 failed with parameters: {'observation_period_num': 100, 'train_rates': 0.9694130555228088, 'learning_rate': 7.072629864638512e-06, 'batch_size': 231, 'step_size': 1, 'gamma': 0.8264328915575844} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:20:18,151][0m Trial 20 failed with value nan.[0m
+[33m[W 2024-12-30 10:38:11,546][0m Trial 21 failed with parameters: {'observation_period_num': 121, 'train_rates': 0.9349862816881978, 'learning_rate': 0.0002642702923714991, 'batch_size': 24, 'step_size': 8, 'gamma': 0.770870455303438} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:38:11,546][0m Trial 21 failed with value nan.[0m
+[33m[W 2024-12-30 10:40:23,965][0m Trial 22 failed with parameters: {'observation_period_num': 211, 'train_rates': 0.9118187245083387, 'learning_rate': 6.704509031930122e-06, 'batch_size': 234, 'step_size': 14, 'gamma': 0.9172003052453687} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:40:23,966][0m Trial 22 failed with value nan.[0m
+[33m[W 2024-12-30 10:42:35,433][0m Trial 23 failed with parameters: {'observation_period_num': 54, 'train_rates': 0.8549012579817714, 'learning_rate': 0.00032029975253693334, 'batch_size': 232, 'step_size': 3, 'gamma': 0.9155344824263825} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:42:35,434][0m Trial 23 failed with value nan.[0m
+[33m[W 2024-12-30 10:46:21,725][0m Trial 24 failed with parameters: {'observation_period_num': 175, 'train_rates': 0.867075517959532, 'learning_rate': 0.00047220663282486995, 'batch_size': 111, 'step_size': 4, 'gamma': 0.9539634050927035} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:46:21,726][0m Trial 24 failed with value nan.[0m
+[33m[W 2024-12-30 10:53:39,177][0m Trial 25 failed with parameters: {'observation_period_num': 104, 'train_rates': 0.6913078518389741, 'learning_rate': 1.404448944791158e-05, 'batch_size': 51, 'step_size': 3, 'gamma': 0.9515070576885005} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 10:53:39,178][0m Trial 25 failed with value nan.[0m
+[33m[W 2024-12-30 11:04:01,902][0m Trial 26 failed with parameters: {'observation_period_num': 238, 'train_rates': 0.8099558319554793, 'learning_rate': 0.0003865555822817407, 'batch_size': 37, 'step_size': 14, 'gamma': 0.9342768919671897} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:04:01,903][0m Trial 26 failed with value nan.[0m
+[33m[W 2024-12-30 11:06:04,370][0m Trial 27 failed with parameters: {'observation_period_num': 235, 'train_rates': 0.8624267672065838, 'learning_rate': 3.2313588463555744e-05, 'batch_size': 234, 'step_size': 6, 'gamma': 0.7716805220964692} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:06:04,370][0m Trial 27 failed with value nan.[0m
+[33m[W 2024-12-30 11:08:20,060][0m Trial 28 failed with parameters: {'observation_period_num': 39, 'train_rates': 0.7521970274124941, 'learning_rate': 1.3091563628825622e-06, 'batch_size': 182, 'step_size': 7, 'gamma': 0.8499371095711367} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:08:20,061][0m Trial 28 failed with value nan.[0m
+[33m[W 2024-12-30 11:12:06,285][0m Trial 29 failed with parameters: {'observation_period_num': 74, 'train_rates': 0.9867638086228929, 'learning_rate': 1.7611352518607232e-06, 'batch_size': 128, 'step_size': 15, 'gamma': 0.7829118019225684} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:12:06,285][0m Trial 29 failed with value nan.[0m
+No completed trials for seasonal_2. Skipping.
+最適化対象: seasonal_3
+[32m[I 2024-12-30 11:12:06,290][0m A new study created in memory with name: no-name-8fb025b8-84ce-4aff-88f9-4be1f96cd0c0[0m
+[33m[W 2024-12-30 11:14:07,683][0m Trial 0 failed with parameters: {'observation_period_num': 52, 'train_rates': 0.666503126282479, 'learning_rate': 1.2781739000781994e-06, 'batch_size': 193, 'step_size': 6, 'gamma': 0.8605432139577349} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:14:07,684][0m Trial 0 failed with value nan.[0m
+[33m[W 2024-12-30 11:16:34,502][0m Trial 1 failed with parameters: {'observation_period_num': 153, 'train_rates': 0.7280513962340311, 'learning_rate': 6.413094536487344e-06, 'batch_size': 167, 'step_size': 5, 'gamma': 0.8297157634559859} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:16:34,503][0m Trial 1 failed with value nan.[0m
+[33m[W 2024-12-30 11:19:42,912][0m Trial 2 failed with parameters: {'observation_period_num': 234, 'train_rates': 0.7647089178728896, 'learning_rate': 6.764757646472583e-06, 'batch_size': 126, 'step_size': 10, 'gamma': 0.9627970801542625} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:19:42,913][0m Trial 2 failed with value nan.[0m
+[33m[W 2024-12-30 11:32:28,376][0m Trial 3 failed with parameters: {'observation_period_num': 240, 'train_rates': 0.6769146032243172, 'learning_rate': 2.8909295839351992e-05, 'batch_size': 27, 'step_size': 9, 'gamma': 0.8632084406386233} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:32:28,377][0m Trial 3 failed with value nan.[0m
+[33m[W 2024-12-30 11:43:42,888][0m Trial 4 failed with parameters: {'observation_period_num': 216, 'train_rates': 0.7948229962080076, 'learning_rate': 0.0007163015424565626, 'batch_size': 34, 'step_size': 9, 'gamma': 0.7980687290509692} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:43:42,889][0m Trial 4 failed with value nan.[0m
+[33m[W 2024-12-30 11:47:05,130][0m Trial 5 failed with parameters: {'observation_period_num': 192, 'train_rates': 0.7432788901180072, 'learning_rate': 3.719850381899621e-06, 'batch_size': 114, 'step_size': 14, 'gamma': 0.934368045998119} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:47:05,131][0m Trial 5 failed with value nan.[0m
+[33m[W 2024-12-30 11:49:52,651][0m Trial 6 failed with parameters: {'observation_period_num': 82, 'train_rates': 0.8693286401766636, 'learning_rate': 0.0005684316827784234, 'batch_size': 160, 'step_size': 9, 'gamma': 0.8167023887845338} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:49:52,652][0m Trial 6 failed with value nan.[0m
+[33m[W 2024-12-30 11:54:24,393][0m Trial 7 failed with parameters: {'observation_period_num': 119, 'train_rates': 0.6814600182758166, 'learning_rate': 0.0007614112717070072, 'batch_size': 82, 'step_size': 15, 'gamma': 0.766168215799055} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:54:24,394][0m Trial 7 failed with value nan.[0m
+[33m[W 2024-12-30 11:57:14,914][0m Trial 8 failed with parameters: {'observation_period_num': 168, 'train_rates': 0.6308188939003995, 'learning_rate': 9.89629295447502e-06, 'batch_size': 127, 'step_size': 14, 'gamma': 0.9314814617762436} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:57:14,915][0m Trial 8 failed with value nan.[0m
+[33m[W 2024-12-30 11:59:52,371][0m Trial 9 failed with parameters: {'observation_period_num': 182, 'train_rates': 0.8603700166905637, 'learning_rate': 1.821741260212846e-06, 'batch_size': 165, 'step_size': 9, 'gamma': 0.7932954340948493} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 11:59:52,372][0m Trial 9 failed with value nan.[0m
+[33m[W 2024-12-30 12:03:25,319][0m Trial 10 failed with parameters: {'observation_period_num': 177, 'train_rates': 0.89025667139769, 'learning_rate': 0.0001184090746433884, 'batch_size': 119, 'step_size': 8, 'gamma': 0.8651553961620769} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:03:25,320][0m Trial 10 failed with value nan.[0m
+[33m[W 2024-12-30 12:06:04,342][0m Trial 11 failed with parameters: {'observation_period_num': 116, 'train_rates': 0.7000741942174165, 'learning_rate': 3.457842247889637e-05, 'batch_size': 147, 'step_size': 12, 'gamma': 0.8617911059346376} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:06:04,343][0m Trial 11 failed with value nan.[0m
+[33m[W 2024-12-30 12:11:33,233][0m Trial 12 failed with parameters: {'observation_period_num': 206, 'train_rates': 0.7182388536483861, 'learning_rate': 7.14890635206559e-05, 'batch_size': 66, 'step_size': 7, 'gamma': 0.8054142410531301} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:11:33,234][0m Trial 12 failed with value nan.[0m
+[33m[W 2024-12-30 12:13:36,973][0m Trial 13 failed with parameters: {'observation_period_num': 201, 'train_rates': 0.8880018817306015, 'learning_rate': 0.0006777749295878383, 'batch_size': 252, 'step_size': 4, 'gamma': 0.790963953769649} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:13:36,974][0m Trial 13 failed with value nan.[0m
+[33m[W 2024-12-30 12:19:01,564][0m Trial 14 failed with parameters: {'observation_period_num': 204, 'train_rates': 0.933131412270843, 'learning_rate': 1.3536763764869961e-05, 'batch_size': 78, 'step_size': 14, 'gamma': 0.8143921355199905} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:19:01,564][0m Trial 14 failed with value nan.[0m
+[33m[W 2024-12-30 12:22:21,444][0m Trial 15 failed with parameters: {'observation_period_num': 220, 'train_rates': 0.7842197284747394, 'learning_rate': 0.0009012742312093604, 'batch_size': 118, 'step_size': 12, 'gamma': 0.823244906499077} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:22:21,444][0m Trial 15 failed with value nan.[0m
+[33m[W 2024-12-30 12:24:37,671][0m Trial 16 failed with parameters: {'observation_period_num': 192, 'train_rates': 0.8346787356927183, 'learning_rate': 3.311967730831398e-06, 'batch_size': 199, 'step_size': 7, 'gamma': 0.9120752959205396} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:24:37,671][0m Trial 16 failed with value nan.[0m
+[33m[W 2024-12-30 12:26:43,209][0m Trial 17 failed with parameters: {'observation_period_num': 109, 'train_rates': 0.864813161743405, 'learning_rate': 4.998360823762031e-05, 'batch_size': 256, 'step_size': 9, 'gamma': 0.7828909806132176} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:26:43,210][0m Trial 17 failed with value nan.[0m
+[33m[W 2024-12-30 12:28:44,893][0m Trial 18 failed with parameters: {'observation_period_num': 134, 'train_rates': 0.7447344446841684, 'learning_rate': 2.9194997827767128e-05, 'batch_size': 216, 'step_size': 10, 'gamma': 0.9401753370561747} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:28:44,893][0m Trial 18 failed with value nan.[0m
+[33m[W 2024-12-30 12:30:40,401][0m Trial 19 failed with parameters: {'observation_period_num': 134, 'train_rates': 0.6358367357182368, 'learning_rate': 0.00023906333850929535, 'batch_size': 213, 'step_size': 4, 'gamma': 0.8240922410163432} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:30:40,402][0m Trial 19 failed with value nan.[0m
+[33m[W 2024-12-30 12:40:18,169][0m Trial 20 failed with parameters: {'observation_period_num': 182, 'train_rates': 0.9346001700973724, 'learning_rate': 0.00025056653490443474, 'batch_size': 45, 'step_size': 11, 'gamma': 0.9371751251188258} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 12:40:18,170][0m Trial 20 failed with value nan.[0m
+[33m[W 2024-12-30 13:01:53,187][0m Trial 21 failed with parameters: {'observation_period_num': 67, 'train_rates': 0.6875205275391963, 'learning_rate': 2.377491720018434e-06, 'batch_size': 17, 'step_size': 13, 'gamma': 0.7816604191878954} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:01:53,187][0m Trial 21 failed with value nan.[0m
+[33m[W 2024-12-30 13:04:24,168][0m Trial 22 failed with parameters: {'observation_period_num': 192, 'train_rates': 0.6641833885006594, 'learning_rate': 0.000618009849859617, 'batch_size': 142, 'step_size': 3, 'gamma': 0.9224025449318959} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:04:24,168][0m Trial 22 failed with value nan.[0m
+[33m[W 2024-12-30 13:17:35,834][0m Trial 23 failed with parameters: {'observation_period_num': 205, 'train_rates': 0.7665522875916151, 'learning_rate': 7.045980130235146e-06, 'batch_size': 28, 'step_size': 15, 'gamma': 0.884790655120464} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:17:35,835][0m Trial 23 failed with value nan.[0m
+[33m[W 2024-12-30 13:36:59,620][0m Trial 24 failed with parameters: {'observation_period_num': 234, 'train_rates': 0.8483163058515669, 'learning_rate': 4.269571115246575e-05, 'batch_size': 20, 'step_size': 12, 'gamma': 0.7920500837422361} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:36:59,621][0m Trial 24 failed with value nan.[0m
+[33m[W 2024-12-30 13:40:01,941][0m Trial 25 failed with parameters: {'observation_period_num': 166, 'train_rates': 0.7896421496759743, 'learning_rate': 6.384973103138538e-06, 'batch_size': 130, 'step_size': 5, 'gamma': 0.7772846605800108} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:40:01,942][0m Trial 25 failed with value nan.[0m
+[33m[W 2024-12-30 13:48:52,241][0m Trial 26 failed with parameters: {'observation_period_num': 76, 'train_rates': 0.7218171493970962, 'learning_rate': 0.00010099541897652812, 'batch_size': 43, 'step_size': 8, 'gamma': 0.9043625227707555} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:48:52,242][0m Trial 26 failed with value nan.[0m
+[33m[W 2024-12-30 13:51:55,999][0m Trial 27 failed with parameters: {'observation_period_num': 130, 'train_rates': 0.8841130124648122, 'learning_rate': 0.0008845426199353845, 'batch_size': 138, 'step_size': 9, 'gamma': 0.7757074023115608} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:51:56,000][0m Trial 27 failed with value nan.[0m
+[33m[W 2024-12-30 13:54:07,721][0m Trial 28 failed with parameters: {'observation_period_num': 46, 'train_rates': 0.8557064048044606, 'learning_rate': 1.0441625347566977e-06, 'batch_size': 233, 'step_size': 13, 'gamma': 0.8478513657745864} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 13:54:07,722][0m Trial 28 failed with value nan.[0m
+[33m[W 2024-12-30 14:00:40,940][0m Trial 29 failed with parameters: {'observation_period_num': 36, 'train_rates': 0.6648432665461746, 'learning_rate': 0.00027694433041615304, 'batch_size': 56, 'step_size': 7, 'gamma': 0.9655117659551029} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:00:40,941][0m Trial 29 failed with value nan.[0m
+No completed trials for seasonal_3. Skipping.
+最適化対象: resid
+[32m[I 2024-12-30 14:00:40,946][0m A new study created in memory with name: no-name-d8605478-9f33-4ca3-b5f5-a43b23f5bf63[0m
+[33m[W 2024-12-30 14:02:33,455][0m Trial 0 failed with parameters: {'observation_period_num': 35, 'train_rates': 0.659930811444903, 'learning_rate': 7.53109564363727e-05, 'batch_size': 243, 'step_size': 11, 'gamma': 0.9796196810618891} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:02:33,456][0m Trial 0 failed with value nan.[0m
+[33m[W 2024-12-30 14:07:26,233][0m Trial 1 failed with parameters: {'observation_period_num': 6, 'train_rates': 0.9357354262575707, 'learning_rate': 5.0323815167274765e-05, 'batch_size': 95, 'step_size': 9, 'gamma': 0.8394683275368671} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:07:26,234][0m Trial 1 failed with value nan.[0m
+[33m[W 2024-12-30 14:12:51,099][0m Trial 2 failed with parameters: {'observation_period_num': 249, 'train_rates': 0.7080369254814766, 'learning_rate': 3.806245307936734e-06, 'batch_size': 67, 'step_size': 7, 'gamma': 0.8748513791589025} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:12:51,100][0m Trial 2 failed with value nan.[0m
+[33m[W 2024-12-30 14:20:15,840][0m Trial 3 failed with parameters: {'observation_period_num': 101, 'train_rates': 0.9158720344948794, 'learning_rate': 5.840667811383196e-06, 'batch_size': 58, 'step_size': 15, 'gamma': 0.9414671842636548} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:20:15,840][0m Trial 3 failed with value nan.[0m
+[33m[W 2024-12-30 14:22:32,855][0m Trial 4 failed with parameters: {'observation_period_num': 87, 'train_rates': 0.7038268808923329, 'learning_rate': 0.00012178607399313692, 'batch_size': 175, 'step_size': 12, 'gamma': 0.8704628777473291} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:22:32,856][0m Trial 4 failed with value nan.[0m
+[33m[W 2024-12-30 14:24:18,245][0m Trial 5 failed with parameters: {'observation_period_num': 142, 'train_rates': 0.6147565211936781, 'learning_rate': 6.921241106766454e-05, 'batch_size': 219, 'step_size': 2, 'gamma': 0.907104277675427} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:24:18,246][0m Trial 5 failed with value nan.[0m
+[33m[W 2024-12-30 14:26:23,339][0m Trial 6 failed with parameters: {'observation_period_num': 78, 'train_rates': 0.6847829124092157, 'learning_rate': 0.0009114252703038722, 'batch_size': 213, 'step_size': 10, 'gamma': 0.8106065429865746} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:26:23,340][0m Trial 6 failed with value nan.[0m
+[33m[W 2024-12-30 14:30:37,281][0m Trial 7 failed with parameters: {'observation_period_num': 121, 'train_rates': 0.7873765932221699, 'learning_rate': 8.414060199289558e-06, 'batch_size': 95, 'step_size': 9, 'gamma': 0.7647963068786341} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:30:37,281][0m Trial 7 failed with value nan.[0m
+[33m[W 2024-12-30 14:41:04,906][0m Trial 8 failed with parameters: {'observation_period_num': 30, 'train_rates': 0.6191604571711075, 'learning_rate': 1.1235972061190387e-05, 'batch_size': 34, 'step_size': 11, 'gamma': 0.8827238243841713} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:41:04,906][0m Trial 8 failed with value nan.[0m
+[33m[W 2024-12-30 14:46:43,900][0m Trial 9 failed with parameters: {'observation_period_num': 67, 'train_rates': 0.7946229653929908, 'learning_rate': 3.585917860087159e-06, 'batch_size': 72, 'step_size': 14, 'gamma': 0.8826458518965785} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:46:43,901][0m Trial 9 failed with value nan.[0m
+[33m[W 2024-12-30 14:56:36,952][0m Trial 10 failed with parameters: {'observation_period_num': 171, 'train_rates': 0.7681945851486058, 'learning_rate': 0.00034236653636328623, 'batch_size': 39, 'step_size': 6, 'gamma': 0.7846525586778176} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:56:36,953][0m Trial 10 failed with value nan.[0m
+[33m[W 2024-12-30 14:59:15,855][0m Trial 11 failed with parameters: {'observation_period_num': 63, 'train_rates': 0.9622224846054299, 'learning_rate': 5.7777732822730815e-05, 'batch_size': 190, 'step_size': 9, 'gamma': 0.798642931836773} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 14:59:15,856][0m Trial 11 failed with value nan.[0m
+[33m[W 2024-12-30 15:19:08,339][0m Trial 12 failed with parameters: {'observation_period_num': 22, 'train_rates': 0.7599203461188335, 'learning_rate': 2.2455133295317395e-05, 'batch_size': 20, 'step_size': 15, 'gamma': 0.8398716911623166} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:19:08,340][0m Trial 12 failed with value nan.[0m
+[33m[W 2024-12-30 15:21:47,827][0m Trial 13 failed with parameters: {'observation_period_num': 156, 'train_rates': 0.6852007053097782, 'learning_rate': 1.9335114695968857e-06, 'batch_size': 141, 'step_size': 5, 'gamma': 0.983977204654973} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:21:47,828][0m Trial 13 failed with value nan.[0m
+[33m[W 2024-12-30 15:24:18,327][0m Trial 14 failed with parameters: {'observation_period_num': 21, 'train_rates': 0.9520374276732684, 'learning_rate': 7.378384928614596e-06, 'batch_size': 201, 'step_size': 14, 'gamma': 0.7872216391262202} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:24:18,327][0m Trial 14 failed with value nan.[0m
+[33m[W 2024-12-30 15:26:06,414][0m Trial 15 failed with parameters: {'observation_period_num': 169, 'train_rates': 0.6354309449337247, 'learning_rate': 1.4278409053965799e-05, 'batch_size': 236, 'step_size': 10, 'gamma': 0.9045013689078762} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:26:06,415][0m Trial 15 failed with value nan.[0m
+[33m[W 2024-12-30 15:28:01,918][0m Trial 16 failed with parameters: {'observation_period_num': 34, 'train_rates': 0.7455106858958794, 'learning_rate': 5.8160257693048946e-05, 'batch_size': 247, 'step_size': 12, 'gamma': 0.7974895368670253} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:28:01,919][0m Trial 16 failed with value nan.[0m
+[33m[W 2024-12-30 15:32:37,923][0m Trial 17 failed with parameters: {'observation_period_num': 250, 'train_rates': 0.8471515272401942, 'learning_rate': 7.089053846732662e-06, 'batch_size': 85, 'step_size': 13, 'gamma': 0.7762594636737159} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:32:37,924][0m Trial 17 failed with value nan.[0m
+[33m[W 2024-12-30 15:35:00,413][0m Trial 18 failed with parameters: {'observation_period_num': 158, 'train_rates': 0.8796847773545271, 'learning_rate': 0.0002918470353734646, 'batch_size': 198, 'step_size': 11, 'gamma': 0.9638978309358996} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:35:00,414][0m Trial 18 failed with value nan.[0m
+[33m[W 2024-12-30 15:43:02,884][0m Trial 19 failed with parameters: {'observation_period_num': 101, 'train_rates': 0.6082467782374835, 'learning_rate': 8.768696805318117e-06, 'batch_size': 43, 'step_size': 11, 'gamma': 0.905494165488693} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:43:02,885][0m Trial 19 failed with value nan.[0m
+[33m[W 2024-12-30 15:45:37,415][0m Trial 20 failed with parameters: {'observation_period_num': 247, 'train_rates': 0.9032438598721028, 'learning_rate': 0.00046064380731304004, 'batch_size': 168, 'step_size': 3, 'gamma': 0.9521704801123636} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:45:37,416][0m Trial 20 failed with value nan.[0m
+[33m[W 2024-12-30 15:47:39,938][0m Trial 21 failed with parameters: {'observation_period_num': 95, 'train_rates': 0.6604387650709009, 'learning_rate': 5.653556497088839e-06, 'batch_size': 199, 'step_size': 12, 'gamma': 0.7787712091832789} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:47:39,939][0m Trial 21 failed with value nan.[0m
+[33m[W 2024-12-30 15:49:57,117][0m Trial 22 failed with parameters: {'observation_period_num': 130, 'train_rates': 0.7930868453711037, 'learning_rate': 0.0001502965864064998, 'batch_size': 188, 'step_size': 12, 'gamma': 0.9675617640860417} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:49:57,118][0m Trial 22 failed with value nan.[0m
+[33m[W 2024-12-30 15:55:04,458][0m Trial 23 failed with parameters: {'observation_period_num': 35, 'train_rates': 0.6961302507489459, 'learning_rate': 1.3066968506490542e-06, 'batch_size': 74, 'step_size': 14, 'gamma': 0.781385656929665} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 15:55:04,459][0m Trial 23 failed with value nan.[0m
+[33m[W 2024-12-30 16:11:45,536][0m Trial 24 failed with parameters: {'observation_period_num': 249, 'train_rates': 0.6333411974689357, 'learning_rate': 3.818875773081881e-06, 'batch_size': 20, 'step_size': 9, 'gamma': 0.9366213698326018} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 16:11:45,537][0m Trial 24 failed with value nan.[0m
+[33m[W 2024-12-30 16:32:27,475][0m Trial 25 failed with parameters: {'observation_period_num': 203, 'train_rates': 0.6982059833439944, 'learning_rate': 3.6754571389937495e-05, 'batch_size': 17, 'step_size': 3, 'gamma': 0.9212093414212857} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 16:32:27,476][0m Trial 25 failed with value nan.[0m
+[33m[W 2024-12-30 16:40:25,187][0m Trial 26 failed with parameters: {'observation_period_num': 132, 'train_rates': 0.7233312554524486, 'learning_rate': 0.00012988412099493548, 'batch_size': 47, 'step_size': 7, 'gamma': 0.7591296496531714} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 16:40:25,188][0m Trial 26 failed with value nan.[0m
+[33m[W 2024-12-30 16:42:29,458][0m Trial 27 failed with parameters: {'observation_period_num': 224, 'train_rates': 0.8829364690520595, 'learning_rate': 1.965808842807083e-05, 'batch_size': 255, 'step_size': 6, 'gamma': 0.9809977779816912} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 16:42:29,459][0m Trial 27 failed with value nan.[0m
+[33m[W 2024-12-30 16:45:50,504][0m Trial 28 failed with parameters: {'observation_period_num': 245, 'train_rates': 0.6446181705508195, 'learning_rate': 6.672016151251761e-06, 'batch_size': 106, 'step_size': 1, 'gamma': 0.9049617257843762} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 16:45:50,505][0m Trial 28 failed with value nan.[0m
+[33m[W 2024-12-30 16:49:55,907][0m Trial 29 failed with parameters: {'observation_period_num': 19, 'train_rates': 0.9391230947833892, 'learning_rate': 5.75034154345732e-05, 'batch_size': 118, 'step_size': 4, 'gamma': 0.8378583411870202} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2024-12-30 16:49:55,908][0m Trial 29 failed with value nan.[0m
+No completed trials for resid. Skipping.
+最適ハイパーパラメータが best_hyperparameters_MSFT_iTransformer.json に保存されました
+Training trend component with params: {}
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 610, in <module>
+    model, optimizer, scheduler = create_model(params, num_variates, predict_period_num, depth, dim)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 175, in create_model
+    lookback_len=params['observation_period_num'],
+                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'observation_period_num'
