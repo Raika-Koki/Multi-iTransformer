@@ -1,0 +1,26 @@
+最適化対象: trend
+[32m[I 2025-01-03 01:50:13,764][0m A new study created in memory with name: no-name-a0adb850-8fba-41e7-9245-1bb2b8653a4e[0m
+[32m[I 2025-01-03 01:50:18,824][0m Trial 0 finished with value: 0.4669749139788303 and parameters: {'observation_period_num': 66, 'train_rates': 0.6729955081362643, 'learning_rate': 0.00033524985265372906, 'batch_size': 77, 'step_size': 10, 'gamma': 0.8532986297016935}. Best is trial 0 with value: 0.4669749139788303.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-03 01:50:18,825][0m A new study created in memory with name: no-name-3ea39165-2482-4b56-b3ae-d2fb8ab91204[0m
+[32m[I 2025-01-03 01:50:24,107][0m Trial 0 finished with value: 0.3963054184044081 and parameters: {'observation_period_num': 95, 'train_rates': 0.6454952002297834, 'learning_rate': 6.05530775499337e-05, 'batch_size': 44, 'step_size': 9, 'gamma': 0.935889434183806}. Best is trial 0 with value: 0.3963054184044081.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-03 01:50:24,108][0m A new study created in memory with name: no-name-b306adc1-d997-4832-b353-42d2f8b1926d[0m
+[32m[I 2025-01-03 01:50:28,446][0m Trial 0 finished with value: 0.9403315264338458 and parameters: {'observation_period_num': 127, 'train_rates': 0.602611346525415, 'learning_rate': 1.4297421303325413e-06, 'batch_size': 128, 'step_size': 2, 'gamma': 0.9370539928181535}. Best is trial 0 with value: 0.9403315264338458.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-03 01:50:28,447][0m A new study created in memory with name: no-name-f81ac9af-2ac8-4551-9df1-489005469e20[0m
+[32m[I 2025-01-03 01:50:33,738][0m Trial 0 finished with value: 0.913957173279733 and parameters: {'observation_period_num': 29, 'train_rates': 0.8768754192181791, 'learning_rate': 4.940252231726212e-06, 'batch_size': 155, 'step_size': 4, 'gamma': 0.9056428373151898}. Best is trial 0 with value: 0.913957173279733.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-03 01:50:33,739][0m A new study created in memory with name: no-name-b90f3e71-3ca0-421c-89f8-444e58a8b018[0m
+[32m[I 2025-01-03 01:50:38,228][0m Trial 0 finished with value: 1.3490590128568138 and parameters: {'observation_period_num': 94, 'train_rates': 0.6452963871577486, 'learning_rate': 0.0009561177060157212, 'batch_size': 132, 'step_size': 14, 'gamma': 0.8124336288311097}. Best is trial 0 with value: 1.3490590128568138.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-03 01:50:38,229][0m A new study created in memory with name: no-name-a80b6fcd-d4fe-44ca-9e23-f17900fe85ef[0m
+[32m[I 2025-01-03 01:50:43,107][0m Trial 0 finished with value: 0.6492293870957323 and parameters: {'observation_period_num': 234, 'train_rates': 0.714118481058369, 'learning_rate': 0.0002059937574633695, 'batch_size': 75, 'step_size': 7, 'gamma': 0.7502431504274143}. Best is trial 0 with value: 0.6492293870957323.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 66, 'train_rates': 0.6729955081362643, 'learning_rate': 0.00033524985265372906, 'batch_size': 77, 'step_size': 10, 'gamma': 0.8532986297016935}
