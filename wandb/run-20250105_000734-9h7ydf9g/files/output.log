@@ -1,0 +1,12 @@
+[32m[I 2025-01-05 00:07:34,920][0m A new study created in memory with name: no-name-f9c0c575-7d8b-441a-99be-661bc94aac4c[0m
+[32m[I 2025-01-05 00:07:39,909][0m Trial 0 finished with value: 1.8451231786907625 and parameters: {'observation_period_num': 150, 'train_rates': 0.8828427355314554, 'learning_rate': 3.990637924103087e-06, 'batch_size': 66, 'step_size': 14, 'gamma': 0.8340055430522908}. Best is trial 0 with value: 1.8451231786907625.[0m
+最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_Transformer.json に保存されました
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 478, in <module>
+    model, optimizer, scheduler = create_model(best_params, len(tickers), predict_period_num, depth, dim)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 174, in create_model
+    lookback_len=params['observation_period_num'],
+                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable

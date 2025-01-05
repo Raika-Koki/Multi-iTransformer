@@ -1,0 +1,141 @@
+[32m[I 2025-01-04 16:18:32,220][0m A new study created in memory with name: no-name-7cacac2f-8da5-405b-8166-f5b691455ca5[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 16:18:37,220][0m Trial 0 finished with value: 1.6413305996003165 and parameters: {'observation_period_num': 107, 'train_rates': 0.7731295355841821, 'learning_rate': 6.859954993405322e-06, 'batch_size': 227, 'step_size': 10, 'gamma': 0.97110355665393}. Best is trial 0 with value: 1.6413305996003165.[0m
+最適ハイパーパラメータが見つかりました
+最適なハイパーパラメータが best_hyperparameters_AAPL_iTransformer_noMSTL.json に保存されました
+Epoch 1/1, Loss: 0.6768 | 1.5410
+Runtime (seconds): 2.106421947479248
+predicted type: <class 'dict'>
+predicted content: {1: tensor([[[ 0.2806,  0.2686,  0.0613,  0.2268,  0.2703, -0.5409,  0.2702,
+           0.2683, -0.7375,  0.2696,  0.2684, -0.3835,  0.2976,  0.2710,
+           0.6428, -0.1684,  0.6428,  0.2667, -0.0156,  0.2870,  0.2212,
+           0.0573,  0.2834, -0.2780,  0.0788,  0.2798,  0.2590,  0.2699,
+           0.5210,  0.5808,  0.0466, -0.0546,  0.2753,  0.2635, -0.1103]]],
+       device='cuda:0')}
+0.28057647
+[0.28057647]
+Adj_close                                6.506029e+01
+open                                     6.461392e+01
+splits                                   1.483662e-01
+GDP_Dates                                1.122825e-01
+GDP_Dates_GDP                            3.804140e+03
+CPI_Dates                                2.571865e-01
+CPI_Dates_CPIAUCSL                       2.636664e+01
+CPI_Dates_CPILFESL                       2.621434e+01
+PCE_Dates                                2.278134e-01
+PCE_Dates_PCEPI                          8.965570e+00
+PCE_Dates_PCEPILFE                       8.770295e+00
+PPI_Dates                                2.037459e-01
+PPI_Dates_PPIACO                         2.754043e+01
+PPI_Dates_WPSFD4131                      2.158956e+01
+Unemployment_Rate_Dates                  2.419630e-01
+Unemployment_Rate_Dates_UNRATE           1.780524e+00
+Nonfarm_Payrolls_Release_Dates           2.722083e-01
+Nonfarm_Payrolls_Release_Dates_PAYEMS    6.664848e+03
+Monetary_Base_Data_Dates                 1.400848e-01
+Monetary_Base_Data_Dates_BOGMBASE        1.008829e+03
+DTWEXBGS                                 9.029818e+00
+VIXCLS                                   6.930468e+00
+DFII10                                   8.322486e-01
+T10Y2Y                                   8.547401e-01
+Volume                                   1.092800e+08
+BB_Upper                                 6.807678e+01
+BB_Lower                                 6.114094e+01
+BB_Middle                                6.456296e+01
+MACD                                     1.883019e+00
+MACD_Signal                              1.771144e+00
+MACD_Diff                                5.722489e-01
+RSI                                      1.287483e+01
+SMA_50                                   6.374021e+01
+SMA_200                                  6.008762e+01
+SMA_200-50                               8.461077e+00
+dtype: float64
+Adj_close                                8.111234e+01
+open                                     8.328723e+01
+splits                                   3.726287e-03
+GDP_Dates                                2.836261e-02
+GDP_Dates_GDP                            2.173074e+04
+CPI_Dates                                1.098653e-01
+CPI_Dates_CPIAUCSL                       2.614011e+02
+CPI_Dates_CPILFESL                       2.665945e+02
+PCE_Dates                                1.045333e-01
+PCE_Dates_PCEPI                          1.054670e+02
+PCE_Dates_PCEPILFE                       1.049006e+02
+PPI_Dates                                9.020546e-02
+PPI_Dates_PPIACO                         2.144198e+02
+PPI_Dates_WPSFD4131                      2.112665e+02
+Unemployment_Rate_Dates                  1.188458e-01
+Unemployment_Rate_Dates_UNRATE           5.002405e+00
+Nonfarm_Payrolls_Release_Dates           1.337015e-01
+Nonfarm_Payrolls_Release_Dates_PAYEMS    1.469972e+05
+Monetary_Base_Data_Dates                 5.122262e-02
+Monetary_Base_Data_Dates_BOGMBASE        4.441204e+03
+DTWEXBGS                                 1.123083e+02
+VIXCLS                                   1.766265e+01
+DFII10                                   4.569851e-01
+T10Y2Y                                   7.354268e-01
+Volume                                   1.473179e+08
+BB_Upper                                 8.498911e+01
+BB_Lower                                 7.585853e+01
+BB_Middle                                8.042382e+01
+MACD                                     5.057719e-01
+MACD_Signal                              5.054248e-01
+MACD_Diff                                3.471184e-04
+RSI                                      5.543559e+01
+SMA_50                                   7.933502e+01
+SMA_200                                  7.435960e+01
+SMA_200-50                              -4.975417e+00
+dtype: float64
+Adj_close                                9.936673e+01
+open                                     1.014164e+02
+splits                                   4.535436e-02
+GDP_Dates                                5.986644e-02
+GDP_Dates_GDP                            2.279809e+04
+CPI_Dates                                1.820258e-01
+CPI_Dates_CPIAUCSL                       2.687989e+02
+CPI_Dates_CPILFESL                       2.739497e+02
+PCE_Dates                                1.684524e-01
+PCE_Dates_PCEPI                          1.079825e+02
+PCE_Dates_PCEPILFE                       1.073613e+02
+PPI_Dates                                1.473718e-01
+PPI_Dates_PPIACO                         2.221470e+02
+PPI_Dates_WPSFD4131                      2.173240e+02
+Unemployment_Rate_Dates                  1.867349e-01
+Unemployment_Rate_Dates_UNRATE           5.501978e+00
+Nonfarm_Payrolls_Release_Dates           2.100768e-01
+Nonfarm_Payrolls_Release_Dates_PAYEMS    1.488672e+05
+Monetary_Base_Data_Dates                 9.052711e-02
+Monetary_Base_Data_Dates_BOGMBASE        4.724258e+03
+DTWEXBGS                                 1.148418e+02
+VIXCLS                                   1.960718e+01
+DFII10                                   6.904945e-01
+T10Y2Y                                   9.752468e-01
+Volume                                   1.779793e+08
+BB_Upper                                 1.040898e+02
+BB_Lower                                 9.301324e+01
+BB_Middle                                9.853867e+01
+MACD                                     1.034103e+00
+MACD_Signal                              1.002366e+00
+MACD_Diff                                1.609067e-01
+RSI                                      5.904796e+01
+SMA_50                                   9.721902e+01
+SMA_200                                  9.121877e+01
+SMA_200-50                              -2.601438e+00
+dtype: float64
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/nomstl.py", line 496, in <module>
+    mse = mean_squared_error(actual_stock_price, predicted_stock_price)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 565, in mean_squared_error
+    _check_reg_targets_with_floating_dtype(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 198, in _check_reg_targets_with_floating_dtype
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+                                          ^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 104, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/validation.py", line 475, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 35]

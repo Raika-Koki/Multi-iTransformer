@@ -1,0 +1,98 @@
+[32m[I 2025-01-04 16:19:30,499][0m A new study created in memory with name: no-name-6bade7d1-8bdf-4c92-a280-685488fc99ec[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 16:19:35,870][0m Trial 0 finished with value: 0.19880699279127179 and parameters: {'observation_period_num': 7, 'train_rates': 0.8348520769041897, 'learning_rate': 0.0005053696014496182, 'batch_size': 240, 'step_size': 3, 'gamma': 0.9349535923381094}. Best is trial 0 with value: 0.19880699279127179.[0m
+最適ハイパーパラメータが見つかりました
+最適なハイパーパラメータが best_hyperparameters_AAPL_iTransformer_noMSTL.json に保存されました
+Epoch 1/1, Loss: 0.3591 | 0.1949
+Runtime (seconds): 2.155379056930542
+predicted type: <class 'dict'>
+predicted content: {1: tensor([[[ 1.5237,  1.5260, -0.3929, -0.5272,  1.5047, -0.3791,  1.5100,
+           1.5131, -0.6585,  1.5103,  1.5125, -0.3696,  1.4299,  1.5026,
+          -0.6841, -0.6554, -0.6841,  1.4911, -0.5393,  1.3481,  1.4740,
+           0.0970,  1.4883, -0.8665, -0.9816,  1.5100,  1.5281,  1.5191,
+          -0.4245, -0.7855,  1.3212, -0.0762,  1.5238,  1.5158, -1.1675]]],
+       device='cuda:0')}
+1.5237397
+[1.5237397]
+Adj_close                                6.506029e+01
+open                                     6.461392e+01
+splits                                   1.483662e-01
+GDP_Dates                                1.122825e-01
+GDP_Dates_GDP                            3.804140e+03
+CPI_Dates                                2.571865e-01
+CPI_Dates_CPIAUCSL                       2.636664e+01
+CPI_Dates_CPILFESL                       2.621434e+01
+PCE_Dates                                2.278134e-01
+PCE_Dates_PCEPI                          8.965570e+00
+PCE_Dates_PCEPILFE                       8.770295e+00
+PPI_Dates                                2.037459e-01
+PPI_Dates_PPIACO                         2.754043e+01
+PPI_Dates_WPSFD4131                      2.158956e+01
+Unemployment_Rate_Dates                  2.419630e-01
+Unemployment_Rate_Dates_UNRATE           1.780524e+00
+Nonfarm_Payrolls_Release_Dates           2.722083e-01
+Nonfarm_Payrolls_Release_Dates_PAYEMS    6.664848e+03
+Monetary_Base_Data_Dates                 1.400848e-01
+Monetary_Base_Data_Dates_BOGMBASE        1.008829e+03
+DTWEXBGS                                 9.029818e+00
+VIXCLS                                   6.930468e+00
+DFII10                                   8.322486e-01
+T10Y2Y                                   8.547401e-01
+Volume                                   1.092800e+08
+BB_Upper                                 6.807678e+01
+BB_Lower                                 6.114094e+01
+BB_Middle                                6.456296e+01
+MACD                                     1.883019e+00
+MACD_Signal                              1.771144e+00
+MACD_Diff                                5.722489e-01
+RSI                                      1.287484e+01
+SMA_50                                   6.374021e+01
+SMA_200                                  6.008762e+01
+SMA_200-50                               8.461077e+00
+dtype: float64
+Adj_close                                8.111234e+01
+open                                     8.328723e+01
+splits                                   3.726287e-03
+GDP_Dates                                2.836261e-02
+GDP_Dates_GDP                            2.173074e+04
+CPI_Dates                                1.098653e-01
+CPI_Dates_CPIAUCSL                       2.614011e+02
+CPI_Dates_CPILFESL                       2.665945e+02
+PCE_Dates                                1.045333e-01
+PCE_Dates_PCEPI                          1.054670e+02
+PCE_Dates_PCEPILFE                       1.049006e+02
+PPI_Dates                                9.020546e-02
+PPI_Dates_PPIACO                         2.144198e+02
+PPI_Dates_WPSFD4131                      2.112665e+02
+Unemployment_Rate_Dates                  1.188458e-01
+Unemployment_Rate_Dates_UNRATE           5.002405e+00
+Nonfarm_Payrolls_Release_Dates           1.337015e-01
+Nonfarm_Payrolls_Release_Dates_PAYEMS    1.469972e+05
+Monetary_Base_Data_Dates                 5.122262e-02
+Monetary_Base_Data_Dates_BOGMBASE        4.441204e+03
+DTWEXBGS                                 1.123083e+02
+VIXCLS                                   1.766265e+01
+DFII10                                   4.569851e-01
+T10Y2Y                                   7.354268e-01
+Volume                                   1.473179e+08
+BB_Upper                                 8.498911e+01
+BB_Lower                                 7.585853e+01
+BB_Middle                                8.042382e+01
+MACD                                     5.057719e-01
+MACD_Signal                              5.054248e-01
+MACD_Diff                                3.471179e-04
+RSI                                      5.543559e+01
+SMA_50                                   7.933502e+01
+SMA_200                                  7.435960e+01
+SMA_200-50                              -4.975417e+00
+dtype: float64
+180.2472840095528
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/nomstl.py", line 496, in <module>
+    mse = mean_squared_error(actual_stock_price, predicted_stock_price)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 206, in wrapper
+    validate_parameter_constraints(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 98, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'y_pred' parameter of mean_squared_error must be an array-like. Got 180.2472840095528 instead.

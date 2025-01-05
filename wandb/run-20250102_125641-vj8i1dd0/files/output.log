@@ -169,3 +169,79 @@ seasonal_2 の最適ハイパーパラメータが見つかりました
 seasonal_3 の最適ハイパーパラメータが見つかりました
 最適化対象: resid
 [32m[I 2025-01-03 01:48:16,632][0m A new study created in memory with name: no-name-52c905d2-5ef1-47b8-a230-cc2967bb515f[0m
+[32m[I 2025-01-03 01:52:18,875][0m Trial 0 finished with value: 2.287841493433172 and parameters: {'observation_period_num': 7, 'train_rates': 0.9256177939157335, 'learning_rate': 0.000943748255460452, 'batch_size': 200, 'step_size': 11, 'gamma': 0.8531771288130768}. Best is trial 0 with value: 2.287841493433172.[0m
+[32m[I 2025-01-03 01:55:48,230][0m Trial 1 finished with value: 0.1798368455227757 and parameters: {'observation_period_num': 210, 'train_rates': 0.8611877493127789, 'learning_rate': 0.0002052587892870068, 'batch_size': 216, 'step_size': 3, 'gamma': 0.8639034486862202}. Best is trial 1 with value: 0.1798368455227757.[0m
+[32m[I 2025-01-03 02:06:45,173][0m Trial 2 finished with value: 0.2817274665702944 and parameters: {'observation_period_num': 229, 'train_rates': 0.7975962816891194, 'learning_rate': 5.7798563711377154e-06, 'batch_size': 36, 'step_size': 1, 'gamma': 0.887487611581563}. Best is trial 1 with value: 0.1798368455227757.[0m
+[32m[I 2025-01-03 02:11:50,575][0m Trial 3 finished with value: 0.17722538005549382 and parameters: {'observation_period_num': 208, 'train_rates': 0.8798011011864579, 'learning_rate': 1.234471863661627e-05, 'batch_size': 88, 'step_size': 2, 'gamma': 0.9669692963333465}. Best is trial 3 with value: 0.17722538005549382.[0m
+[33m[W 2025-01-03 02:12:02,020][0m Trial 4 failed with parameters: {'observation_period_num': 89, 'train_rates': 0.8756269761967159, 'learning_rate': 5.788737130092338e-06, 'batch_size': 106, 'step_size': 14, 'gamma': 0.9890753545138814} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 41, in train
+    optimizer.step()  # 重みの更新
+    ^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/lr_scheduler.py", line 137, in wrapper
+    # Just check if there were two first lr_scheduler.step() calls before optimizer.step()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/optimizer.py", line 487, in wrapper
+    raise NotImplementedError
+                  ^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    implementation when the tensors are all on CUDA. For example, if the user specifies
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/adamw.py", line 209, in step
+    &\textbf{for} \: t=1 \: \textbf{to} \: \ldots \: \textbf{do}                         \\
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/adamw.py", line 124, in _init_group
+    p, memory_format=torch.preserve_format
+       ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-01-03 02:12:02,082][0m Trial 4 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 41, in train
+    optimizer.step()  # 重みの更新
+    ^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/lr_scheduler.py", line 137, in wrapper
+    # Just check if there were two first lr_scheduler.step() calls before optimizer.step()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/optimizer.py", line 487, in wrapper
+    raise NotImplementedError
+                  ^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    implementation when the tensors are all on CUDA. For example, if the user specifies
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/adamw.py", line 209, in step
+    &\textbf{for} \: t=1 \: \textbf{to} \: \ldots \: \textbf{do}                         \\
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/optim/adamw.py", line 124, in _init_group
+    p, memory_format=torch.preserve_format
+       ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

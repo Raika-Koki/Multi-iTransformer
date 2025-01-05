@@ -1,0 +1,62 @@
+最適化対象: trend
+[32m[I 2025-01-04 00:52:27,331][0m A new study created in memory with name: no-name-fbb91adc-3305-40f8-a47e-566eb2e2356b[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 00:53:20,586][0m Trial 0 finished with value: 0.12460438162088394 and parameters: {'observation_period_num': 143, 'train_rates': 0.96287519309144, 'learning_rate': 0.0003648784207039237, 'batch_size': 109, 'step_size': 14, 'gamma': 0.9304068472585555}. Best is trial 0 with value: 0.12460438162088394.[0m
+[32m[I 2025-01-04 00:53:44,621][0m Trial 1 finished with value: 0.19714911822549266 and parameters: {'observation_period_num': 11, 'train_rates': 0.7820115212811458, 'learning_rate': 6.402469866324284e-05, 'batch_size': 238, 'step_size': 8, 'gamma': 0.9514396333978565}. Best is trial 0 with value: 0.12460438162088394.[0m
+[32m[I 2025-01-04 00:54:25,060][0m Trial 2 finished with value: 0.3721343638761988 and parameters: {'observation_period_num': 46, 'train_rates': 0.7629213234485392, 'learning_rate': 4.260700134040619e-06, 'batch_size': 130, 'step_size': 6, 'gamma': 0.9376347873458963}. Best is trial 0 with value: 0.12460438162088394.[0m
+[32m[I 2025-01-04 00:56:05,534][0m Trial 3 finished with value: 0.11983165384403296 and parameters: {'observation_period_num': 223, 'train_rates': 0.8462110061440691, 'learning_rate': 0.00034117912660617427, 'batch_size': 50, 'step_size': 11, 'gamma': 0.8024194088582015}. Best is trial 3 with value: 0.11983165384403296.[0m
+[32m[I 2025-01-04 00:56:29,278][0m Trial 4 finished with value: 0.37802626830690045 and parameters: {'observation_period_num': 213, 'train_rates': 0.6895971065962044, 'learning_rate': 3.453631011140321e-05, 'batch_size': 198, 'step_size': 12, 'gamma': 0.8122943342792811}. Best is trial 3 with value: 0.11983165384403296.[0m
+[32m[I 2025-01-04 00:57:58,772][0m Trial 5 finished with value: 0.09903645579631512 and parameters: {'observation_period_num': 178, 'train_rates': 0.882812605216332, 'learning_rate': 0.00013260054956855676, 'batch_size': 58, 'step_size': 12, 'gamma': 0.9557158284068792}. Best is trial 5 with value: 0.09903645579631512.[0m
+[32m[I 2025-01-04 00:58:27,195][0m Trial 6 finished with value: 0.16056405007839203 and parameters: {'observation_period_num': 146, 'train_rates': 0.9666408854182067, 'learning_rate': 3.1706649341914823e-05, 'batch_size': 210, 'step_size': 14, 'gamma': 0.8150361748564948}. Best is trial 5 with value: 0.09903645579631512.[0m
+[32m[I 2025-01-04 00:59:22,352][0m Trial 7 finished with value: 0.25590423689438746 and parameters: {'observation_period_num': 222, 'train_rates': 0.8812091931302839, 'learning_rate': 5.274235568344772e-06, 'batch_size': 95, 'step_size': 15, 'gamma': 0.9456799333278433}. Best is trial 5 with value: 0.09903645579631512.[0m
+[32m[I 2025-01-04 00:59:41,669][0m Trial 8 finished with value: 0.27898655403891703 and parameters: {'observation_period_num': 250, 'train_rates': 0.6741833298448299, 'learning_rate': 0.000277593349712876, 'batch_size': 240, 'step_size': 12, 'gamma': 0.8746293576823462}. Best is trial 5 with value: 0.09903645579631512.[0m
+[33m[W 2025-01-04 01:00:20,519][0m Trial 9 failed with parameters: {'observation_period_num': 48, 'train_rates': 0.6524918746410517, 'learning_rate': 4.883923559076121e-06, 'batch_size': 97, 'step_size': 15, 'gamma': 0.8527057923768308} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[33m[W 2025-01-04 01:00:20,533][0m Trial 9 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

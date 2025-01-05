@@ -1,0 +1,12 @@
+[32m[I 2025-01-04 15:39:49,591][0m A new study created in memory with name: no-name-8895d8cf-8fa2-4910-a060-c2a982d8b0da[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 15:39:54,922][0m Trial 0 finished with value: 2.5583241075277328 and parameters: {'observation_period_num': 235, 'train_rates': 0.8822035635084035, 'learning_rate': 2.4383592783953934e-06, 'batch_size': 108, 'step_size': 15, 'gamma': 0.9686985785557976}. Best is trial 0 with value: 2.5583241075277328.[0m
+最適ハイパーパラメータが見つかりました
+最適なハイパーパラメータが best_hyperparameters_AAPL_iTransformer_noMSTL.json に保存されました
+Epoch 1/1, Loss: 0.6036 | 1.0744
+Runtime (seconds): 2.772799015045166
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/nomstl.py", line 479, in <module>
+    print(predicted.shape)
+          ^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'shape'

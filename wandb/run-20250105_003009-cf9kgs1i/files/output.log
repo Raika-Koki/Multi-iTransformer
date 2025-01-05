@@ -1,0 +1,53 @@
+[32m[I 2025-01-05 00:30:10,338][0m A new study created in memory with name: no-name-85e7a6b2-5411-4caf-a877-78213a3b98e9[0m
+[32m[I 2025-01-05 00:41:47,428][0m Trial 0 finished with value: 1.0426649110657829 and parameters: {'observation_period_num': 235, 'train_rates': 0.8196269899352273, 'learning_rate': 1.6991784474012025e-06, 'batch_size': 68, 'step_size': 14, 'gamma': 0.9082264221316064}. Best is trial 0 with value: 1.0426649110657829.[0m
+[32m[I 2025-01-05 00:44:01,125][0m Trial 1 finished with value: 0.3029110957705785 and parameters: {'observation_period_num': 40, 'train_rates': 0.891878179809138, 'learning_rate': 1.1620418843739296e-05, 'batch_size': 151, 'step_size': 14, 'gamma': 0.7729715124524412}. Best is trial 1 with value: 0.3029110957705785.[0m
+[33m[W 2025-01-05 00:45:02,846][0m Trial 2 failed with parameters: {'observation_period_num': 18, 'train_rates': 0.7797431457472705, 'learning_rate': 0.00042092836148136995, 'batch_size': 25, 'step_size': 13, 'gamma': 0.970771638407186} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 381, in <lambda>
+    study.optimize(lambda trial: objective(trial, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 67, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[33m[W 2025-01-05 00:45:02,939][0m Trial 2 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 381, in <module>
+    study.optimize(lambda trial: objective(trial, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 381, in <lambda>
+    study.optimize(lambda trial: objective(trial, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 67, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

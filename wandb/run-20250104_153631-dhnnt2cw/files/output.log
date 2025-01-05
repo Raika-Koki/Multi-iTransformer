@@ -1,0 +1,12 @@
+[32m[I 2025-01-04 15:36:32,683][0m A new study created in memory with name: no-name-a142991c-c138-4a93-81a4-81439b0c3315[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 15:36:37,599][0m Trial 0 finished with value: 1.4221990241231146 and parameters: {'observation_period_num': 249, 'train_rates': 0.6579803257387631, 'learning_rate': 6.08003314012897e-05, 'batch_size': 109, 'step_size': 2, 'gamma': 0.8965912552488607}. Best is trial 0 with value: 1.4221990241231146.[0m
+最適ハイパーパラメータが見つかりました
+最適なハイパーパラメータが best_hyperparameters_AAPL_iTransformer_noMSTL.json に保存されました
+Epoch 1/1, Loss: 0.6425 | 1.1461
+Runtime (seconds): 2.469496488571167
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/nomstl.py", line 481, in <module>
+    predicted_stock_price = predicted[0].cpu().numpy().flatten() * std_list + mean_list
+                            ~~~~~~~~~^^^
+KeyError: 0

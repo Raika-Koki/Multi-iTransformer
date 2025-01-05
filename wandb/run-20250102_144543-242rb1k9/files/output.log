@@ -126,3 +126,61 @@ Early stopping at epoch 81
 [32m[I 2025-01-03 01:28:25,575][0m Trial 19 finished with value: 0.15098679631418865 and parameters: {'observation_period_num': 32, 'train_rates': 0.788449058456507, 'learning_rate': 1.8621970749775375e-06, 'batch_size': 82, 'step_size': 5, 'gamma': 0.8172853976425158}. Best is trial 12 with value: 0.05249108815963828.[0m
 [32m[I 2025-01-03 01:33:00,149][0m Trial 20 finished with value: 0.08892020272711913 and parameters: {'observation_period_num': 81, 'train_rates': 0.8958620249215028, 'learning_rate': 6.417042161660295e-05, 'batch_size': 125, 'step_size': 13, 'gamma': 0.7502664222200552}. Best is trial 12 with value: 0.05249108815963828.[0m
 [32m[I 2025-01-03 01:45:35,704][0m Trial 21 finished with value: 0.07014508649968264 and parameters: {'observation_period_num': 41, 'train_rates': 0.8633517371954428, 'learning_rate': 1.1249112333370435e-06, 'batch_size': 35, 'step_size': 11, 'gamma': 0.7826641246859632}. Best is trial 12 with value: 0.05249108815963828.[0m
+[32m[I 2025-01-03 01:55:28,794][0m Trial 22 finished with value: 0.0519795218675301 and parameters: {'observation_period_num': 29, 'train_rates': 0.8515640448915046, 'learning_rate': 7.889602798102973e-06, 'batch_size': 45, 'step_size': 12, 'gamma': 0.7756434414381559}. Best is trial 22 with value: 0.0519795218675301.[0m
+[32m[I 2025-01-03 02:04:43,021][0m Trial 23 finished with value: 0.042421084800044626 and parameters: {'observation_period_num': 17, 'train_rates': 0.8120139714281319, 'learning_rate': 7.841817284775931e-06, 'batch_size': 47, 'step_size': 10, 'gamma': 0.773909210833332}. Best is trial 23 with value: 0.042421084800044626.[0m
+[32m[I 2025-01-03 02:15:36,094][0m Trial 24 finished with value: 0.04364248515546193 and parameters: {'observation_period_num': 21, 'train_rates': 0.8425747226754908, 'learning_rate': 8.957524576334478e-06, 'batch_size': 41, 'step_size': 9, 'gamma': 0.8154690923383054}. Best is trial 23 with value: 0.042421084800044626.[0m
+[32m[I 2025-01-03 02:20:36,607][0m Trial 25 finished with value: 0.06832921595495438 and parameters: {'observation_period_num': 54, 'train_rates': 0.8527807528914725, 'learning_rate': 9.717933542519162e-06, 'batch_size': 92, 'step_size': 9, 'gamma': 0.8163350034125827}. Best is trial 23 with value: 0.042421084800044626.[0m
+[33m[W 2025-01-03 02:23:55,892][0m Trial 26 failed with parameters: {'observation_period_num': 142, 'train_rates': 0.925647730463501, 'learning_rate': 1.1480927704884892e-05, 'batch_size': 61, 'step_size': 7, 'gamma': 0.8721039752469035} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 556, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    Returned Tensor shares the same storage with the original one.
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _pop_saved_tensors_default_hooks,
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+KeyboardInterrupt
+[33m[W 2025-01-03 02:23:55,916][0m Trial 26 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 556, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 556, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 40, in train
+    loss.backward()  # 逆伝播
+    ^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/_tensor.py", line 581, in backward
+    Returned Tensor shares the same storage with the original one.
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _pop_saved_tensors_default_hooks,
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+KeyboardInterrupt

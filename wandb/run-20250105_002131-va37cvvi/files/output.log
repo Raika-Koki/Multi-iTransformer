@@ -1,0 +1,11 @@
+[32m[I 2025-01-05 00:21:32,546][0m A new study created in memory with name: no-name-78ea6379-0399-4e4a-bfb5-3fb424c17ca6[0m
+[32m[I 2025-01-05 00:21:48,386][0m Trial 0 finished with value: 2.0426634375615556 and parameters: {'observation_period_num': 149, 'train_rates': 0.607290590282749, 'learning_rate': 0.0001902298984959754, 'batch_size': 219, 'step_size': 12, 'gamma': 0.767760702878285}. Best is trial 0 with value: 2.0426634375615556.[0m
+最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AMZN_Transformer(nomstl).json に保存されました
+Epoch 1/1, Loss: 0.8581 | 2.0761
+Runtime (seconds): 6.483699560165405
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 451, in <module>
+    predicted_stock_price = predicted[1][0, :, 0].cpu().numpy() * std_list.iloc[0] + mean_list.iloc[0]
+                            ~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1

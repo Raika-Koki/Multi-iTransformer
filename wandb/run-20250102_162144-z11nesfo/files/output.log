@@ -152,3 +152,96 @@ seasonal_2 の最適ハイパーパラメータが見つかりました
 [32m[I 2025-01-03 01:38:53,457][0m Trial 12 finished with value: 0.0575808547437191 and parameters: {'observation_period_num': 5, 'train_rates': 0.983293185690484, 'learning_rate': 8.320553171095576e-06, 'batch_size': 250, 'step_size': 15, 'gamma': 0.8330336639569897}. Best is trial 10 with value: 0.04291345551609993.[0m
 [32m[I 2025-01-03 01:42:57,287][0m Trial 13 finished with value: 0.05698219686746597 and parameters: {'observation_period_num': 13, 'train_rates': 0.976273548648264, 'learning_rate': 6.922223617009767e-06, 'batch_size': 254, 'step_size': 15, 'gamma': 0.8385348093836648}. Best is trial 10 with value: 0.04291345551609993.[0m
 [32m[I 2025-01-03 01:47:28,731][0m Trial 14 finished with value: 0.05845074675767776 and parameters: {'observation_period_num': 41, 'train_rates': 0.9146378549839389, 'learning_rate': 1.6823838369571443e-05, 'batch_size': 130, 'step_size': 14, 'gamma': 0.9053016160100971}. Best is trial 10 with value: 0.04291345551609993.[0m
+[32m[I 2025-01-03 01:51:20,720][0m Trial 15 finished with value: 0.14262844622135162 and parameters: {'observation_period_num': 49, 'train_rates': 0.9529526619024044, 'learning_rate': 3.5187665171155227e-06, 'batch_size': 217, 'step_size': 13, 'gamma': 0.8063505400519848}. Best is trial 10 with value: 0.04291345551609993.[0m
+Early stopping at epoch 65
+[32m[I 2025-01-03 01:54:04,630][0m Trial 16 finished with value: 0.3300233989869569 and parameters: {'observation_period_num': 50, 'train_rates': 0.8785033517276509, 'learning_rate': 2.748176426190893e-06, 'batch_size': 157, 'step_size': 1, 'gamma': 0.8507818265882885}. Best is trial 10 with value: 0.04291345551609993.[0m
+[32m[I 2025-01-03 01:57:57,111][0m Trial 17 finished with value: 0.10897349566221237 and parameters: {'observation_period_num': 85, 'train_rates': 0.9392364728500009, 'learning_rate': 3.299247605236675e-05, 'batch_size': 225, 'step_size': 5, 'gamma': 0.8593115013773762}. Best is trial 10 with value: 0.04291345551609993.[0m
+[32m[I 2025-01-03 02:02:40,775][0m Trial 18 finished with value: 0.05305210488503358 and parameters: {'observation_period_num': 23, 'train_rates': 0.8776772862761234, 'learning_rate': 1.2733075140786407e-05, 'batch_size': 110, 'step_size': 14, 'gamma': 0.9042122848585186}. Best is trial 10 with value: 0.04291345551609993.[0m
+[32m[I 2025-01-03 02:05:36,787][0m Trial 19 finished with value: 0.46883422618322146 and parameters: {'observation_period_num': 135, 'train_rates': 0.6164569923379614, 'learning_rate': 3.4616065264237145e-06, 'batch_size': 227, 'step_size': 8, 'gamma': 0.7958160519456434}. Best is trial 10 with value: 0.04291345551609993.[0m
+[32m[I 2025-01-03 02:09:51,169][0m Trial 20 finished with value: 0.18733257055282593 and parameters: {'observation_period_num': 65, 'train_rates': 0.9848874175827061, 'learning_rate': 0.00022313570723048008, 'batch_size': 169, 'step_size': 13, 'gamma': 0.8832233219865833}. Best is trial 10 with value: 0.04291345551609993.[0m
+[33m[W 2025-01-03 02:14:18,298][0m Trial 21 failed with parameters: {'observation_period_num': 25, 'train_rates': 0.8667765832026737, 'learning_rate': 1.3423442051835488e-05, 'batch_size': 104, 'step_size': 15, 'gamma': 0.9145949690467495} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 556, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    T_destination = TypeVar('T_destination', bound=Dict[str, Any])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    # Also remove the logic for arg parsing together.
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fe6228b1080>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 190, in forward
+    x = ff(x) + x
+        ^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    T_destination = TypeVar('T_destination', bound=Dict[str, Any])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    # Also remove the logic for arg parsing together.
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/container.py", line 250, in forward
+    class ModuleList(Module):
+                        ^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1732, in _wrapped_call_impl
+    destination[extra_state_key] = self.get_extra_state()
+
+KeyboardInterrupt
+[33m[W 2025-01-03 02:14:18,323][0m Trial 21 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 556, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 556, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna_change.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    T_destination = TypeVar('T_destination', bound=Dict[str, Any])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    # Also remove the logic for arg parsing together.
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7fe6228b1080>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 190, in forward
+    x = ff(x) + x
+        ^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    T_destination = TypeVar('T_destination', bound=Dict[str, Any])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    # Also remove the logic for arg parsing together.
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/container.py", line 250, in forward
+    class ModuleList(Module):
+                        ^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1732, in _wrapped_call_impl
+    destination[extra_state_key] = self.get_extra_state()
+
+KeyboardInterrupt

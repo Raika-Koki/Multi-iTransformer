@@ -1,5 +1,10 @@
-import torch
-print(torch.cuda.is_available())
-print(torch.version.cuda)
-print(torch.cuda.current_device())
-print(torch.cuda.get_device_name(torch.cuda.current_device()))
+import yfinance as yf
+
+# ティッカーシンボルを指定
+ticker = "AMZN"
+
+# データを取得
+data = yf.download(ticker, start="2024-11-20", end="2025-01-01")  # 必要な範囲を指定
+
+# Adj Closeのデータを表示
+print(data["Adj Close"])

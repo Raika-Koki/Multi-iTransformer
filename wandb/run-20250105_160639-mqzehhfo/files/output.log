@@ -1,0 +1,50 @@
+最適化対象: trend
+[32m[I 2025-01-05 16:06:40,034][0m A new study created in memory with name: no-name-ee708cba-7d9d-4980-8024-df8976f5f1aa[0m
+[32m[I 2025-01-05 16:11:04,538][0m Trial 0 finished with value: 1.1963844327395683 and parameters: {'observation_period_num': 151, 'train_rates': 0.6666666193918989, 'learning_rate': 7.0574329351474e-06, 'batch_size': 48, 'step_size': 14, 'gamma': 0.7854733851068675}. Best is trial 0 with value: 1.1963844327395683.[0m
+[32m[I 2025-01-05 16:14:01,922][0m Trial 1 finished with value: 0.33766589773391564 and parameters: {'observation_period_num': 94, 'train_rates': 0.8428037811588414, 'learning_rate': 6.250514830512831e-05, 'batch_size': 89, 'step_size': 12, 'gamma': 0.8903358807826686}. Best is trial 1 with value: 0.33766589773391564.[0m
+[32m[I 2025-01-05 16:19:49,001][0m Trial 2 finished with value: 1.1060357334637883 and parameters: {'observation_period_num': 223, 'train_rates': 0.6007768424917818, 'learning_rate': 0.0006995119645216364, 'batch_size': 196, 'step_size': 10, 'gamma': 0.769763132320252}. Best is trial 1 with value: 0.33766589773391564.[0m
+[32m[I 2025-01-05 16:22:21,677][0m Trial 3 finished with value: 1.5712125002567774 and parameters: {'observation_period_num': 85, 'train_rates': 0.7301514207176332, 'learning_rate': 1.2100110052668855e-06, 'batch_size': 124, 'step_size': 8, 'gamma': 0.9208668091595941}. Best is trial 1 with value: 0.33766589773391564.[0m
+[32m[I 2025-01-05 16:25:05,671][0m Trial 4 finished with value: 0.6190896806197727 and parameters: {'observation_period_num': 91, 'train_rates': 0.8781869017124138, 'learning_rate': 0.0008439937378233354, 'batch_size': 208, 'step_size': 11, 'gamma': 0.758117718829855}. Best is trial 1 with value: 0.33766589773391564.[0m
+[32m[I 2025-01-05 16:30:59,872][0m Trial 5 finished with value: 1.0623911232561678 and parameters: {'observation_period_num': 216, 'train_rates': 0.6347454566284763, 'learning_rate': 0.0009033019093648122, 'batch_size': 198, 'step_size': 10, 'gamma': 0.8499367046349524}. Best is trial 1 with value: 0.33766589773391564.[0m
+[33m[W 2025-01-05 16:32:52,891][0m Trial 6 failed with parameters: {'observation_period_num': 180, 'train_rates': 0.6704357982691763, 'learning_rate': 3.805217806891189e-05, 'batch_size': 136, 'step_size': 9, 'gamma': 0.896369260131491} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 575, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 110, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 43, in train
+    total_loss_train += loss.item() * data.size(0)
+                        ^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-01-05 16:32:52,894][0m Trial 6 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 575, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 575, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 110, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 43, in train
+    total_loss_train += loss.item() * data.size(0)
+                        ^^^^^^^^^^^
+KeyboardInterrupt

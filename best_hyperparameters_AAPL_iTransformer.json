@@ -72,62 +72,458 @@
         },
         "trend": {
             "best_params": {
-                "observation_period_num": 32,
-                "train_rates": 0.9798386135172115,
-                "learning_rate": 0.000526584722822022,
-                "batch_size": 75,
-                "step_size": 2,
-                "gamma": 0.7785059907043095
+                "observation_period_num": 27,
+                "train_rates": 0.9893599021095496,
+                "learning_rate": 0.00011341307324445398,
+                "batch_size": 33,
+                "step_size": 14,
+                "gamma": 0.9570948286432536
             }
         },
         "seasonal_0": {
             "best_params_0": {
-                "observation_period_num": 19,
-                "train_rates": 0.7772800192127557,
-                "learning_rate": 0.00011737604349302378,
-                "batch_size": 111,
-                "step_size": 7,
-                "gamma": 0.862666786763731
+                "observation_period_num": 8,
+                "train_rates": 0.9889566067833049,
+                "learning_rate": 0.00015500514411775907,
+                "batch_size": 20,
+                "step_size": 12,
+                "gamma": 0.8029146535851374
             }
         },
         "seasonal_1": {
             "best_params_1": {
-                "observation_period_num": 6,
-                "train_rates": 0.9814556772826397,
-                "learning_rate": 0.000395421552749755,
-                "batch_size": 169,
-                "step_size": 10,
-                "gamma": 0.7958827426774355
+                "observation_period_num": 16,
+                "train_rates": 0.8700404739420563,
+                "learning_rate": 9.320639022296683e-05,
+                "batch_size": 36,
+                "step_size": 8,
+                "gamma": 0.7825574255273182
             }
         },
         "seasonal_2": {
             "best_params_2": {
-                "observation_period_num": 13,
-                "train_rates": 0.8475154583232505,
-                "learning_rate": 2.5680886257621353e-05,
-                "batch_size": 67,
-                "step_size": 9,
-                "gamma": 0.7972804212966633
+                "observation_period_num": 16,
+                "train_rates": 0.8586086135426391,
+                "learning_rate": 0.00071731686769784,
+                "batch_size": 81,
+                "step_size": 1,
+                "gamma": 0.9487245629432022
             }
         },
         "seasonal_3": {
             "best_params_3": {
-                "observation_period_num": 6,
-                "train_rates": 0.8323132365578858,
-                "learning_rate": 0.00029132810931718875,
-                "batch_size": 189,
-                "step_size": 15,
-                "gamma": 0.7506119892602038
+                "observation_period_num": 37,
+                "train_rates": 0.867330621222478,
+                "learning_rate": 0.00027141777063759126,
+                "batch_size": 56,
+                "step_size": 3,
+                "gamma": 0.9444974498560493
             }
         },
         "resid": {
             "best_params": {
-                "observation_period_num": 8,
-                "train_rates": 0.8386830071300575,
-                "learning_rate": 6.663482248047781e-05,
-                "batch_size": 146,
+                "observation_period_num": 5,
+                "train_rates": 0.8773392884416733,
+                "learning_rate": 8.352850816800337e-05,
+                "batch_size": 55,
+                "step_size": 15,
+                "gamma": 0.9288429339945826
+            }
+        }
+    },
+    "2012-05-18_to_2024-11-07": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2024-11-07"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 190,
+                "train_rates": 0.7526811762746463,
+                "learning_rate": 0.00016666086975752626,
+                "batch_size": 236,
+                "step_size": 10,
+                "gamma": 0.7602469308174411
+            }
+        },
+        "seasonal_0": {
+            "best_params_0": {
+                "observation_period_num": 182,
+                "train_rates": 0.7684277365048731,
+                "learning_rate": 5.79018635488639e-05,
+                "batch_size": 135,
+                "step_size": 10,
+                "gamma": 0.8951447423104171
+            }
+        },
+        "seasonal_1": {
+            "best_params_1": {
+                "observation_period_num": 126,
+                "train_rates": 0.7328644275855684,
+                "learning_rate": 0.00026126476283345806,
+                "batch_size": 94,
+                "step_size": 14,
+                "gamma": 0.8281683819015863
+            }
+        },
+        "seasonal_2": {
+            "best_params_2": {
+                "observation_period_num": 126,
+                "train_rates": 0.6329487340600681,
+                "learning_rate": 0.0006294061504333757,
+                "batch_size": 150,
+                "step_size": 4,
+                "gamma": 0.7935157854547479
+            }
+        },
+        "seasonal_3": {
+            "best_params_3": {
+                "observation_period_num": 82,
+                "train_rates": 0.6502314946954247,
+                "learning_rate": 7.430860035429233e-06,
+                "batch_size": 213,
+                "step_size": 14,
+                "gamma": 0.8130251375352989
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 194,
+                "train_rates": 0.8024282221540625,
+                "learning_rate": 4.755135455380705e-05,
+                "batch_size": 248,
+                "step_size": 2,
+                "gamma": 0.8201844284230391
+            }
+        }
+    },
+    "2012-05-18_to_2024-11-25": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2024-11-25"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 17,
+                "train_rates": 0.8834213065517028,
+                "learning_rate": 0.00010200149933914854,
+                "batch_size": 16,
+                "step_size": 13,
+                "gamma": 0.8418145174823586
+            }
+        },
+        "seasonal_0": {
+            "best_params_0": {
+                "observation_period_num": 13,
+                "train_rates": 0.8600698039412418,
+                "learning_rate": 0.0006958915694883756,
+                "batch_size": 211,
+                "step_size": 14,
+                "gamma": 0.8001465552215162
+            }
+        },
+        "seasonal_1": {
+            "best_params_1": {
+                "observation_period_num": 10,
+                "train_rates": 0.7775837457530692,
+                "learning_rate": 9.050481338274824e-05,
+                "batch_size": 18,
+                "step_size": 11,
+                "gamma": 0.9040870623989773
+            }
+        },
+        "seasonal_2": {
+            "best_params_2": {
+                "observation_period_num": 5,
+                "train_rates": 0.9132472828948074,
+                "learning_rate": 0.000951410109049033,
+                "batch_size": 81,
                 "step_size": 6,
-                "gamma": 0.8653758507117125
+                "gamma": 0.7680415425559964
+            }
+        },
+        "seasonal_3": {
+            "best_params_3": {
+                "observation_period_num": 16,
+                "train_rates": 0.9892018627975194,
+                "learning_rate": 0.0006470870502252402,
+                "batch_size": 195,
+                "step_size": 10,
+                "gamma": 0.7517125055085089
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 5,
+                "train_rates": 0.9867856155777148,
+                "learning_rate": 0.00019211171180108288,
+                "batch_size": 16,
+                "step_size": 15,
+                "gamma": 0.9446066996476656
+            }
+        }
+    },
+    "2012-05-18_to_2024-11-26": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2024-11-26"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 10,
+                "train_rates": 0.9893632335324659,
+                "learning_rate": 0.00017030802740725277,
+                "batch_size": 34,
+                "step_size": 13,
+                "gamma": 0.8167557500582184
+            }
+        },
+        "seasonal_0": {
+            "best_params_0": {
+                "observation_period_num": 7,
+                "train_rates": 0.9888345190812218,
+                "learning_rate": 0.0005065208855896543,
+                "batch_size": 66,
+                "step_size": 12,
+                "gamma": 0.8671270107279989
+            }
+        },
+        "seasonal_1": {
+            "best_params_1": {
+                "observation_period_num": 15,
+                "train_rates": 0.9136040382929589,
+                "learning_rate": 0.0005554523333265239,
+                "batch_size": 91,
+                "step_size": 10,
+                "gamma": 0.9777060915216246
+            }
+        },
+        "seasonal_2": {
+            "best_params_2": {
+                "observation_period_num": 8,
+                "train_rates": 0.9741517312878949,
+                "learning_rate": 0.0002149535490773464,
+                "batch_size": 85,
+                "step_size": 8,
+                "gamma": 0.9818500054033034
+            }
+        },
+        "seasonal_3": {
+            "best_params_3": {
+                "observation_period_num": 21,
+                "train_rates": 0.9860033460337184,
+                "learning_rate": 0.0006475033857525854,
+                "batch_size": 130,
+                "step_size": 8,
+                "gamma": 0.821796322650269
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 5,
+                "train_rates": 0.88160448450886,
+                "learning_rate": 0.00011461454332786872,
+                "batch_size": 22,
+                "step_size": 6,
+                "gamma": 0.8652707023637851
+            }
+        }
+    },
+    "2012-05-18_to_2024-11-27": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2024-11-27"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 5,
+                "train_rates": 0.8335554633803406,
+                "learning_rate": 0.00021076009161061788,
+                "batch_size": 84,
+                "step_size": 15,
+                "gamma": 0.9429049476971336
+            }
+        },
+        "seasonal_0": {
+            "best_params_0": {
+                "observation_period_num": 8,
+                "train_rates": 0.8038893514060613,
+                "learning_rate": 0.0005217407621398729,
+                "batch_size": 117,
+                "step_size": 6,
+                "gamma": 0.8402733809863824
+            }
+        },
+        "seasonal_1": {
+            "best_params_1": {
+                "observation_period_num": 5,
+                "train_rates": 0.8405577022438272,
+                "learning_rate": 0.0007176526017094414,
+                "batch_size": 42,
+                "step_size": 4,
+                "gamma": 0.8829341221158721
+            }
+        },
+        "seasonal_2": {
+            "best_params_2": {
+                "observation_period_num": 5,
+                "train_rates": 0.9026006185269891,
+                "learning_rate": 0.0009955194884617193,
+                "batch_size": 140,
+                "step_size": 7,
+                "gamma": 0.7509599369041723
+            }
+        },
+        "seasonal_3": {
+            "best_params_3": {
+                "observation_period_num": 9,
+                "train_rates": 0.8708618541456006,
+                "learning_rate": 0.00030616573778462805,
+                "batch_size": 28,
+                "step_size": 13,
+                "gamma": 0.811757314516297
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 13,
+                "train_rates": 0.8822491081365356,
+                "learning_rate": 0.0005717771653074142,
+                "batch_size": 122,
+                "step_size": 8,
+                "gamma": 0.7856123044786605
+            }
+        }
+    },
+    "2012-05-18_to_2024-11-28": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2024-11-28"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 15,
+                "train_rates": 0.8140686602762969,
+                "learning_rate": 0.0007921628563370255,
+                "batch_size": 123,
+                "step_size": 5,
+                "gamma": 0.7903514646206479
+            }
+        },
+        "seasonal_0": {
+            "best_params_0": {
+                "observation_period_num": 6,
+                "train_rates": 0.7100998910289729,
+                "learning_rate": 0.0009858622658821053,
+                "batch_size": 45,
+                "step_size": 5,
+                "gamma": 0.751237745001437
+            }
+        },
+        "seasonal_1": {
+            "best_params_1": {
+                "observation_period_num": 10,
+                "train_rates": 0.7000764669856001,
+                "learning_rate": 0.00026984471152186615,
+                "batch_size": 88,
+                "step_size": 10,
+                "gamma": 0.9517658142664869
+            }
+        },
+        "seasonal_2": {
+            "best_params_2": {
+                "observation_period_num": 6,
+                "train_rates": 0.7809809320208144,
+                "learning_rate": 0.0006941066410276456,
+                "batch_size": 188,
+                "step_size": 3,
+                "gamma": 0.9758549682493445
+            }
+        },
+        "seasonal_3": {
+            "best_params_3": {
+                "observation_period_num": 16,
+                "train_rates": 0.7834365500910144,
+                "learning_rate": 0.0003969604373374693,
+                "batch_size": 120,
+                "step_size": 7,
+                "gamma": 0.7954024805642811
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 6,
+                "train_rates": 0.8487170940076432,
+                "learning_rate": 0.000980050418692611,
+                "batch_size": 81,
+                "step_size": 7,
+                "gamma": 0.7899606003514623
+            }
+        }
+    },
+    "2012-05-18_to_2024-11-29": {
+        "dates": {
+            "start_date": "2012-05-18",
+            "end_date": "2024-11-29"
+        },
+        "trend": {
+            "best_params": {
+                "observation_period_num": 17,
+                "train_rates": 0.9697992514871054,
+                "learning_rate": 0.0002900878964956585,
+                "batch_size": 62,
+                "step_size": 8,
+                "gamma": 0.9284884961277896
+            }
+        },
+        "seasonal_0": {
+            "best_params_0": {
+                "observation_period_num": 5,
+                "train_rates": 0.9250931976262937,
+                "learning_rate": 0.0008850397661873524,
+                "batch_size": 52,
+                "step_size": 15,
+                "gamma": 0.8487874204480693
+            }
+        },
+        "seasonal_1": {
+            "best_params_1": {
+                "observation_period_num": 17,
+                "train_rates": 0.8890777208359977,
+                "learning_rate": 0.0005780688306891082,
+                "batch_size": 133,
+                "step_size": 7,
+                "gamma": 0.8989667503112131
+            }
+        },
+        "seasonal_2": {
+            "best_params_2": {
+                "observation_period_num": 20,
+                "train_rates": 0.987381978164134,
+                "learning_rate": 0.000210758885676157,
+                "batch_size": 112,
+                "step_size": 12,
+                "gamma": 0.9408787578946637
+            }
+        },
+        "seasonal_3": {
+            "best_params_3": {
+                "observation_period_num": 11,
+                "train_rates": 0.8476500194098459,
+                "learning_rate": 0.0007373980961353831,
+                "batch_size": 129,
+                "step_size": 9,
+                "gamma": 0.768137220851108
+            }
+        },
+        "resid": {
+            "best_params": {
+                "observation_period_num": 29,
+                "train_rates": 0.9791351857336593,
+                "learning_rate": 0.0008694013886418433,
+                "batch_size": 89,
+                "step_size": 3,
+                "gamma": 0.927533561677686
             }
         }
     }

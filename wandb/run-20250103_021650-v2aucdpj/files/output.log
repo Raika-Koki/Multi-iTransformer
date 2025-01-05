@@ -1,0 +1,57 @@
+最適化対象: trend
+[32m[I 2025-01-03 02:16:51,686][0m A new study created in memory with name: no-name-25586c67-8bb2-4b18-b929-9571533ceeba[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-03 02:16:57,173][0m Trial 0 finished with value: 1.4612219292133009 and parameters: {'observation_period_num': 156, 'train_rates': 0.9280959735891391, 'learning_rate': 7.033220167922938e-06, 'batch_size': 34, 'step_size': 12, 'gamma': 0.822178911392444}. Best is trial 0 with value: 1.4612219292133009.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-03 02:16:57,175][0m A new study created in memory with name: no-name-9ce225a5-4039-40d4-8ed9-ed4c6bf04f96[0m
+[32m[I 2025-01-03 02:16:58,893][0m Trial 0 finished with value: 1.4589621852273527 and parameters: {'observation_period_num': 165, 'train_rates': 0.8350707715027721, 'learning_rate': 5.088872419441246e-05, 'batch_size': 239, 'step_size': 15, 'gamma': 0.9689751330882259}. Best is trial 0 with value: 1.4589621852273527.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-03 02:16:58,894][0m A new study created in memory with name: no-name-d47c8b92-9308-41cd-a351-ed7283d13914[0m
+[32m[I 2025-01-03 02:17:00,379][0m Trial 0 finished with value: 2.1695255189554237 and parameters: {'observation_period_num': 62, 'train_rates': 0.644251722338696, 'learning_rate': 1.1126124376432317e-05, 'batch_size': 254, 'step_size': 3, 'gamma': 0.9723798318702395}. Best is trial 0 with value: 2.1695255189554237.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-03 02:17:00,381][0m A new study created in memory with name: no-name-cb86ecb0-c9ac-47ad-b28e-57ca7898d3f7[0m
+[32m[I 2025-01-03 02:17:02,571][0m Trial 0 finished with value: 0.813852443628841 and parameters: {'observation_period_num': 20, 'train_rates': 0.6315736384716384, 'learning_rate': 3.290378729309523e-06, 'batch_size': 39, 'step_size': 6, 'gamma': 0.8628686991521957}. Best is trial 0 with value: 0.813852443628841.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-03 02:17:02,572][0m A new study created in memory with name: no-name-549a6c74-c37e-41cc-adf6-6930ad2993aa[0m
+[32m[I 2025-01-03 02:17:03,986][0m Trial 0 finished with value: 1.5644287444927074 and parameters: {'observation_period_num': 243, 'train_rates': 0.6011748430879151, 'learning_rate': 3.903302637111924e-06, 'batch_size': 160, 'step_size': 5, 'gamma': 0.9707951117960593}. Best is trial 0 with value: 1.5644287444927074.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-03 02:17:03,988][0m A new study created in memory with name: no-name-bef38458-84ea-4117-be57-0d8e09eccc0c[0m
+[32m[I 2025-01-03 02:17:05,594][0m Trial 0 finished with value: 0.38465457804062786 and parameters: {'observation_period_num': 44, 'train_rates': 0.6025286626837849, 'learning_rate': 0.00031867073849312533, 'batch_size': 143, 'step_size': 3, 'gamma': 0.8037824650028875}. Best is trial 0 with value: 0.38465457804062786.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AAPL_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 156, 'train_rates': 0.9280959735891391, 'learning_rate': 7.033220167922938e-06, 'batch_size': 34, 'step_size': 12, 'gamma': 0.822178911392444}
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 616, in <module>
+    models[comp], train_loss, valid_loss = train(
+                                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7f7227a8c0e0>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 188, in forward
+    x = attn(x) + x
+        ^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 67, in forward
+    out = self.attend(q, k, v)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/attend.py", line 123, in forward
+    return self.flash_attn(q, k, v)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/attend.py", line 98, in flash_attn
+    out = F.scaled_dot_product_attention(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

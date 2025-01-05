@@ -1,0 +1,19 @@
+[32m[I 2025-01-04 16:06:30,312][0m A new study created in memory with name: no-name-c8fe92fa-6aad-4fed-ab5f-48bfe47d4cdd[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 16:06:35,830][0m Trial 0 finished with value: 0.8502618332686122 and parameters: {'observation_period_num': 150, 'train_rates': 0.6015661391737016, 'learning_rate': 0.00013707275646308062, 'batch_size': 238, 'step_size': 6, 'gamma': 0.776891633907787}. Best is trial 0 with value: 0.8502618332686122.[0m
+最適ハイパーパラメータが見つかりました
+最適なハイパーパラメータが best_hyperparameters_AAPL_iTransformer_noMSTL.json に保存されました
+Epoch 1/1, Loss: 0.4251 | 0.9514
+Runtime (seconds): 2.364001750946045
+predicted type: <class 'dict'>
+predicted content: {1: tensor([[[ 0.3166,  0.3089,  0.2359,  0.0898,  0.3182,  0.0662,  0.3103,
+           0.3195,  0.3924,  0.3106,  0.3144, -0.2972,  0.2344,  0.3140,
+          -0.5794, -0.5433, -0.5794,  0.3112,  0.1943,  0.2323,  0.2656,
+          -0.3513,  0.2242, -0.5513, -0.3145,  0.3287,  0.3719,  0.3491,
+          -0.5190, -0.4874, -0.2572, -0.2595,  0.3959,  0.3470, -0.3594]]],
+       device='cuda:0')}
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/nomstl.py", line 483, in <module>
+    predicted_stock_price = predicted[1][0, 0, 0].cpu().numpy() * std_list['Adj_close'].iloc[0] + mean_list['Adj_close'].iloc[0]
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.float64' object has no attribute 'iloc'

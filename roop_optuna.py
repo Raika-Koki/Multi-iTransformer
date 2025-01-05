@@ -109,7 +109,7 @@ def objective(trial, component, depth, dim):
     criterion = nn.MSELoss()
     earlystopping = EarlyStopping(patience=5)
 
-    for epoch in range(1):  # 100エポック回すように変更 #check
+    for epoch in range(100):  # 100エポック回すように変更 #check
         model, _, valid_loss = train(
             model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period)
         earlystopping(valid_loss, model)
@@ -185,12 +185,12 @@ def create_model(params, num_variates, predict_period_num, depth, dim):
 
 # 初期設定
 start_date = '2012-05-18'
-initial_end_date = datetime.strptime('2024-11-07', '%Y-%m-%d')
+initial_end_date = datetime.strptime('2024-11-26', '%Y-%m-%d')
 stock_code = 'AMZN' #check
 file_name = f"best_hyperparameters_{stock_code}_iTransformer.json"  # check
 predict_period_num = 1
-depth = 32 
-dim = 256
+depth = 4 
+dim = 128
 
 #beta関数のパラメータ設定
 alpha = 8
@@ -234,7 +234,7 @@ while True:
     data_open = preprocess_open_data(data_open, df_stock.index)
 
     # MSTLによる分解
-    periods = [252, 504, 756, 1260]
+    periods = [63, 126, 252, 504]
     iterate = 3
     stl_kwargs = {"seasonal_deg": 0, "inner_iter": 3, "outer_iter": 0}
 
@@ -547,7 +547,7 @@ while True:
     for component, study_name in zip(["trend", "seasonal_0", "seasonal_1", "seasonal_2", "seasonal_3", "resid"], ["study_trend", "study_seasonal_0", "study_seasonal_1", "study_seasonal_2", "study_seasonal_3", "study_resid"]):
         print(f"最適化対象: {component}")
         study = optuna.create_study(direction='minimize')
-        study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+        study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
         if len(study.trials) == 0 or all([t.state != optuna.trial.TrialState.COMPLETE for t in study.trials]):
             print(f"No completed trials for {component}. Skipping.")
             continue
@@ -565,7 +565,7 @@ while True:
 
     predict_period_num = 1
     criterion = nn.MSELoss()
-    epochs = 1 #check
+    epochs = 300 #check
 
     # トレーニングループ
     models = {}
@@ -717,7 +717,10 @@ while True:
         "real_stock_price": close_data.iloc[-1],
         "mse": mse,
         "rmse": rmse,
-        "mae": mae
+        "mae": mae,
+        "depth": depth,
+        "dim": dim,
+        "periods": periods
     })
 
     output_date = 10
@@ -725,30 +728,25 @@ while True:
     # Plot the final result
     predicted_dates_tmp = close_data.index[-output_date:].strftime('%Y-%m-%d')
     predicted_dates = predicted_dates_tmp.tolist()
+    learning_dates_tmp = close_data.index[-output_date:-1].strftime('%Y-%m-%d')
+    learning_dates = learning_dates_tmp.tolist()
 
-    # Plotの作成
     plt.figure(figsize=(10, 6))
-    plt.plot(predicted_dates, close_data[-output_date:].values, linestyle='dashdot', color='blue', label='Actual Price')
+    plt.plot(predicted_dates, close_data[-output_date:].values, linestyle='dashdot', color='green', label='Actual Price')
     plt.plot(predicted_dates, add_predicted_stock_price, linestyle='dotted', color='red', label='Predicted Price')
-    plt.plot(predicted_dates, close_data[-output_date:].values, color='black', label='Learning Data')
+    plt.plot(learning_dates, close_data[-output_date:-1].values, color='black', label='learning data')
     plt.xlabel('Date', fontsize=16)
     plt.ylabel('Stock Price', fontsize=16)
     plt.legend(fontsize=14)
-    # ファイル名の設定
-    file_path = f'{stock_code.lower()}_stock_price_prediction_by_iTransformer.png'
-    # グラフを保存
-    plt.savefig(file_path)
+    plt.title(f'{stock_code} Stock Price Prediction by iTransformer', fontsize=18) #check
 
-    # ファイルの存在確認
-    if os.path.exists(file_path):
-        print(f"File {file_path} exists. Logging to WandB.")
-        wandb.log({
-            "Stock_Price_Prediction": wandb.Image(file_path)
-        })
-    else:
-        print(f"Error: {file_path} does not exist.")
+    # 保存するファイル名を一致させる
+    plt.savefig(f'{stock_code.lower()}_stock_price_prediction_by_iTransformer.png') # 修正
+    # WandBにログを送信
+    wandb.log({
+        f"{stock_code} Stock Price Prediction by iTransformer": wandb.Image(f'{stock_code.lower()}_stock_price_prediction_by_iTransformer.png') # 修正
+    })
 
-    # グラフを表示
     plt.show()
 
     # Log runtime to WandB

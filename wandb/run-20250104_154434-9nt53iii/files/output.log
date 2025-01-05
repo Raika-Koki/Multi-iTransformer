@@ -1,0 +1,67 @@
+[32m[I 2025-01-04 15:44:35,689][0m A new study created in memory with name: no-name-f6c37648-5d23-4dd9-8193-52fa607a67f2[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 15:44:40,933][0m Trial 0 finished with value: 0.3074280390905779 and parameters: {'observation_period_num': 180, 'train_rates': 0.875947765570781, 'learning_rate': 0.0006379925504253916, 'batch_size': 80, 'step_size': 9, 'gamma': 0.7650157766126723}. Best is trial 0 with value: 0.3074280390905779.[0m
+最適ハイパーパラメータが見つかりました
+最適なハイパーパラメータが best_hyperparameters_AAPL_iTransformer_noMSTL.json に保存されました
+Epoch 1/1, Loss: 0.4071 | 0.2903
+Runtime (seconds): 2.3988585472106934
+predicted type: <class 'dict'>
+predicted content: {1: tensor([[[ 1.6454,  1.6364, -0.0359, -0.4329,  1.5109, -0.5575,  1.5106,
+           1.5259, -0.6204,  1.5139,  1.5259, -0.4688,  1.4268,  1.5143,
+          -0.6974, -0.9038, -0.6974,  1.5115,  0.1226,  1.3371,  1.6260,
+          -0.1077,  1.4833, -0.8397, -1.0323,  1.6265,  1.6770,  1.6512,
+           0.2753,  0.3486, -0.1193, -0.3320,  1.6553,  1.5707, -1.3299]]],
+       device='cuda:0')}
+Adj_close                                1.881614e+02
+open                                     1.890223e+02
+splits                                  -1.596474e-03
+GDP_Dates                               -2.024257e-02
+GDP_Dates_GDP                            2.747859e+04
+CPI_Dates                               -3.352856e-02
+CPI_Dates_CPIAUCSL                       3.012292e+02
+CPI_Dates_CPILFESL                       3.065943e+02
+PCE_Dates                               -3.679512e-02
+PCE_Dates_PCEPI                          1.190401e+02
+PCE_Dates_PCEPILFE                       1.182830e+02
+PPI_Dates                               -5.308961e-03
+PPI_Dates_PPIACO                         2.537147e+02
+PPI_Dates_WPSFD4131                      2.439601e+02
+Unemployment_Rate_Dates                 -4.990822e-02
+Unemployment_Rate_Dates_UNRATE           3.393197e+00
+Nonfarm_Payrolls_Release_Dates          -5.614675e-02
+Nonfarm_Payrolls_Release_Dates_PAYEMS    1.570711e+05
+Monetary_Base_Data_Dates                 6.840028e-02
+Monetary_Base_Data_Dates_BOGMBASE        5.790143e+03
+DTWEXBGS                                 1.269907e+02
+VIXCLS                                   1.691657e+01
+DFII10                                   1.691430e+00
+T10Y2Y                                   1.766926e-02
+Volume                                   3.450770e+07
+BB_Upper                                 1.957188e+02
+BB_Lower                                 1.783926e+02
+BB_Middle                                1.870289e+02
+MACD                                     1.024140e+00
+MACD_Signal                              1.122828e+00
+MACD_Diff                               -6.792649e-02
+RSI                                      5.116177e+01
+SMA_50                                   1.848455e+02
+SMA_200                                  1.687393e+02
+SMA_200-50                              -1.622782e+01
+dtype: float64
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/nomstl.py", line 492, in <module>
+    mse = mean_squared_error(actual_stock_price, predicted_stock_price)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 565, in mean_squared_error
+    _check_reg_targets_with_floating_dtype(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 198, in _check_reg_targets_with_floating_dtype
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+                                          ^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py", line 104, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/utils/validation.py", line 475, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [1, 35]

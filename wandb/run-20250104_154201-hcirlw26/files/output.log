@@ -1,0 +1,19 @@
+[32m[I 2025-01-04 15:42:02,626][0m A new study created in memory with name: no-name-6246e5bf-bc2d-45f0-8491-d429ea5cb843[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-04 15:42:07,422][0m Trial 0 finished with value: 0.807775397962551 and parameters: {'observation_period_num': 75, 'train_rates': 0.7923384175761718, 'learning_rate': 0.00019786158763936387, 'batch_size': 210, 'step_size': 3, 'gamma': 0.87314613371184}. Best is trial 0 with value: 0.807775397962551.[0m
+最適ハイパーパラメータが見つかりました
+最適なハイパーパラメータが best_hyperparameters_AAPL_iTransformer_noMSTL.json に保存されました
+Epoch 1/1, Loss: 0.5796 | 0.7606
+Runtime (seconds): 2.163804531097412
+predicted type: <class 'dict'>
+predicted content: {1: tensor([[[ 0.8370,  0.8314,  0.1169,  0.9051,  0.8053, -1.0174,  0.8167,
+           0.8207, -0.2308,  0.8084,  0.8101, -0.7008,  0.7917,  0.8083,
+          -0.6564, -0.4819, -0.6564,  0.8002,  0.8864,  0.7594,  0.8332,
+          -0.3084,  0.8668, -0.5022, -0.5883,  0.8067,  0.8190,  0.8128,
+           0.7021,  0.3221,  0.3294,  0.4078,  0.8164,  0.8166, -0.5969]]],
+       device='cuda:0')}
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/nomstl.py", line 483, in <module>
+    predicted_stock_price = predicted[0, :, 0].cpu().numpy().flatten() * std_list + mean_list
+                            ~~~~~~~~~^^^^^^^^^
+TypeError: unhashable type: 'slice'

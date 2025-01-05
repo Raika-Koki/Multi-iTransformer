@@ -1,0 +1,10 @@
+[32m[I 2025-01-05 00:05:27,159][0m A new study created in memory with name: no-name-65abd473-f906-4134-9d76-0605e5ed571c[0m
+[32m[I 2025-01-05 00:05:31,635][0m Trial 0 finished with value: 2.1563809979451847 and parameters: {'observation_period_num': 113, 'train_rates': 0.845917093730869, 'learning_rate': 1.220503957022136e-06, 'batch_size': 159, 'step_size': 14, 'gamma': 0.907794632965075}. Best is trial 0 with value: 2.1563809979451847.[0m
+最適ハイパーパラメータが見つかりました
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 484, in <module>
+    save_best_hyperparameters(file_name, best_params, start_date, end_date)
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 48, in save_best_hyperparameters
+    "best_params": best_params["trend"]
+                   ~~~~~~~~~~~^^^^^^^^^
+KeyError: 'trend'

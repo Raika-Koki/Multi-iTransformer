@@ -24,3 +24,30 @@ seasonal_3 の最適ハイパーパラメータが見つかりました
 resid の最適ハイパーパラメータが見つかりました
 最適ハイパーパラメータが best_hyperparameters_AMZN_iTransformer.json に保存されました
 Training trend component with params: {'observation_period_num': 66, 'train_rates': 0.6729955081362643, 'learning_rate': 0.00033524985265372906, 'batch_size': 77, 'step_size': 10, 'gamma': 0.8532986297016935}
+Epoch 1/1, trend Loss: 0.9025 | 0.6203
+Training seasonal_0 component with params: {'observation_period_num': 95, 'train_rates': 0.6454952002297834, 'learning_rate': 6.05530775499337e-05, 'batch_size': 44, 'step_size': 9, 'gamma': 0.935889434183806}
+Epoch 1/1, seasonal_0 Loss: 0.4117 | 0.4193
+Training seasonal_1 component with params: {'observation_period_num': 127, 'train_rates': 0.602611346525415, 'learning_rate': 1.4297421303325413e-06, 'batch_size': 128, 'step_size': 2, 'gamma': 0.9370539928181535}
+Epoch 1/1, seasonal_1 Loss: 0.8390 | 1.4267
+Training seasonal_2 component with params: {'observation_period_num': 29, 'train_rates': 0.8768754192181791, 'learning_rate': 4.940252231726212e-06, 'batch_size': 155, 'step_size': 4, 'gamma': 0.9056428373151898}
+Epoch 1/1, seasonal_2 Loss: 0.5701 | 0.5296
+Training seasonal_3 component with params: {'observation_period_num': 94, 'train_rates': 0.6452963871577486, 'learning_rate': 0.0009561177060157212, 'batch_size': 132, 'step_size': 14, 'gamma': 0.8124336288311097}
+Epoch 1/1, seasonal_3 Loss: 3.4522 | 1.2574
+Training resid component with params: {'observation_period_num': 234, 'train_rates': 0.714118481058369, 'learning_rate': 0.0002059937574633695, 'batch_size': 75, 'step_size': 7, 'gamma': 0.7502431504274143}
+Epoch 1/1, resid Loss: 0.9424 | 0.6910
+Runtime (seconds): 34.87274622917175
+0.00033524985265372906
+[119.36836]
+[-2.0430608]
+[-1.1055082]
+[9.633736]
+[5.0355015]
+[4.426427]
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py:1266: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+MSE: 5309.24009217415
+RMSE: 72.86453247070312
+MAE: 72.86453247070312
+R-squared: nan
+[135.31546]
+File amzn_stock_price_prediction_by_iTransformer.png exists. Logging to WandB.
