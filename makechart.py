@@ -9,27 +9,36 @@ categories = [
     "Real Stock Price"
 ]
 values = [
-    222.0615234375,
-    225.5749969482422,
-    228.17929077148438,
-    229.91355895996094,
-    229.8699951171875
+    191.370,
+    199.041,
+    193.519,
+    197.254,
+    197.120
 ]
+
+# マーカーと色の定義
+markers = ['o', 's', '^', 'D', 'x']
+colors = ['blue', 'green', 'red', 'purple', 'orange']
 
 # グラフの作成
 plt.figure(figsize=(10, 6))
-plt.bar(categories, values, color='skyblue')
 
-# グラフの装飾
-plt.title("Comparison of Stock Price Predictions and Real Price", fontsize=14)
-plt.ylabel("Price", fontsize=12)
-plt.xlabel("Model", fontsize=12)
-plt.xticks(rotation=20, fontsize=10)
-plt.yticks(fontsize=10)
+for i, (category, value) in enumerate(zip(categories, values)):
+    plt.scatter(i, value, color=colors[i], marker=markers[i], label=category)
+    if category in ["iTransformer"]:
+        plt.text(i, value - 0.8, f"{value:.2f}", ha='center', fontsize=14)
+    else:
+        plt.text(i, value + 0.5, f"{value:.2f}", ha='center', fontsize=14)
 
-# 値をバーの上に表示
-for i, value in enumerate(values):
-    plt.text(i, value + 0.5, f"{value:.2f}", ha='center', fontsize=10)
+# 軸の設定
+plt.title("Comparison of Stock Price Predictions and Real Price (AMZN 22/11/2024)", fontsize=18, pad=10)
+plt.ylabel("Price ($)", fontsize=17)
+plt.xlabel("Model", fontsize=17)
+plt.xticks(range(len(categories)), categories, rotation=20, fontsize=14)  # フォントサイズを14に変更
+plt.yticks(fontsize=14)
+
+# 凡例の追加
+plt.legend(fontsize=13) 
 
 # グラフの表示
 plt.tight_layout()

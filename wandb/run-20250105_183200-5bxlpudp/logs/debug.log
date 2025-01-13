@@ -20,3 +20,11 @@ config: {}
 2025-01-05 18:32:01,063 INFO    MainThread:623031 [wandb_run.py:_redirect():2289] Wrapping output streams.
 2025-01-05 18:32:01,063 INFO    MainThread:623031 [wandb_run.py:_redirect():2314] Redirects installed.
 2025-01-05 18:32:01,067 INFO    MainThread:623031 [wandb_init.py:init():916] run started, returning control to user process
+2025-01-06 03:11:25,034 INFO    MainThread:623031 [wandb_run.py:_config_callback():1279] config_cb None None {'learning_rate_trend': 0.00015232656498093876, 'batch_size_trend': 91, 'observation_period_trend': 18, 'learning_rate_seasonal_0': 0.0003478936498117362, 'batch_size_seasonal_0': 99, 'observation_period_seasonal_0': 14, 'learning_rate_seasonal_1': 0.000703155254653984, 'batch_size_seasonal_1': 92, 'observation_period_seasonal_1': 8, 'learning_rate_seasonal_2': 0.0002238292292963187, 'batch_size_seasonal_2': 153, 'observation_period_seasonal_2': 21, 'learning_rate_seasonal_3': 0.0006805468475422376, 'batch_size_seasonal_3': 103, 'observation_period_seasonal_3': 6, 'learning_rate_resid': 0.0009171296532336576, 'batch_size_resid': 23, 'observation_period_resid': 5, 'epochs': 300, 'predict_period_num': 1}
+2025-01-06 03:11:25,701 INFO    MainThread:623031 [wandb_run.py:_finish():2100] finishing run raika-koki/AAPL-stock-price-prediction-by-iTransformer/5bxlpudp
+2025-01-06 03:11:25,702 INFO    MainThread:623031 [wandb_run.py:_atexit_cleanup():2339] got exitcode: 0
+2025-01-06 03:11:25,702 INFO    MainThread:623031 [wandb_run.py:_restore():2321] restore
+2025-01-06 03:11:25,703 INFO    MainThread:623031 [wandb_run.py:_restore():2327] restore done
+2025-01-06 03:11:28,116 INFO    MainThread:623031 [wandb_run.py:_footer_history_summary_info():3892] rendering history
+2025-01-06 03:11:28,118 INFO    MainThread:623031 [wandb_run.py:_footer_history_summary_info():3924] rendering summary
+2025-01-06 03:11:28,132 INFO    MainThread:623031 [wandb_run.py:_footer_sync_info():3853] logging synced files

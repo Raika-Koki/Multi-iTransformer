@@ -20,3 +20,11 @@ config: {}
 2025-01-05 19:53:50,700 INFO    MainThread:2116175 [wandb_run.py:_redirect():2289] Wrapping output streams.
 2025-01-05 19:53:50,700 INFO    MainThread:2116175 [wandb_run.py:_redirect():2314] Redirects installed.
 2025-01-05 19:53:50,701 INFO    MainThread:2116175 [wandb_init.py:init():916] run started, returning control to user process
+2025-01-05 23:43:29,612 INFO    MainThread:2116175 [wandb_run.py:_config_callback():1279] config_cb None None {'learning_rate': 0.00014681452572895155, 'batch_size': 58, 'observation_period_num': 212, 'epochs': 300, 'predict_period_num': 1, 'depth': 4, 'dim': 128}
+2025-01-05 23:43:29,907 INFO    MainThread:2116175 [wandb_run.py:_finish():2100] finishing run raika-koki/AMZN-stock-price-prediction-notMSTL-by-Transformer/1by27jrs
+2025-01-05 23:43:29,908 INFO    MainThread:2116175 [wandb_run.py:_atexit_cleanup():2339] got exitcode: 0
+2025-01-05 23:43:29,908 INFO    MainThread:2116175 [wandb_run.py:_restore():2321] restore
+2025-01-05 23:43:29,908 INFO    MainThread:2116175 [wandb_run.py:_restore():2327] restore done
+2025-01-05 23:43:32,383 INFO    MainThread:2116175 [wandb_run.py:_footer_history_summary_info():3892] rendering history
+2025-01-05 23:43:32,383 INFO    MainThread:2116175 [wandb_run.py:_footer_history_summary_info():3924] rendering summary
+2025-01-05 23:43:32,433 INFO    MainThread:2116175 [wandb_run.py:_footer_sync_info():3853] logging synced files

@@ -20,3 +20,11 @@ config: {}
 2025-01-05 18:32:54,128 INFO    MainThread:623379 [wandb_run.py:_redirect():2289] Wrapping output streams.
 2025-01-05 18:32:54,128 INFO    MainThread:623379 [wandb_run.py:_redirect():2314] Redirects installed.
 2025-01-05 18:32:54,131 INFO    MainThread:623379 [wandb_init.py:init():916] run started, returning control to user process
+2025-01-06 02:59:32,301 INFO    MainThread:623379 [wandb_run.py:_config_callback():1279] config_cb None None {'learning_rate_trend': 0.00022729458521905302, 'batch_size_trend': 17, 'observation_period_trend': 5, 'learning_rate_seasonal_0': 0.000641763897711025, 'batch_size_seasonal_0': 90, 'observation_period_seasonal_0': 15, 'learning_rate_seasonal_1': 0.0006149944215370888, 'batch_size_seasonal_1': 120, 'observation_period_seasonal_1': 20, 'learning_rate_seasonal_2': 0.00032732087233840765, 'batch_size_seasonal_2': 63, 'observation_period_seasonal_2': 18, 'learning_rate_seasonal_3': 0.0003945828479062341, 'batch_size_seasonal_3': 103, 'observation_period_seasonal_3': 5, 'learning_rate_resid': 0.0005821071483316139, 'batch_size_resid': 168, 'observation_period_resid': 21, 'epochs': 300, 'predict_period_num': 1}
+2025-01-06 02:59:33,152 INFO    MainThread:623379 [wandb_run.py:_finish():2100] finishing run raika-koki/AMZN-stock-price-prediction-by-iTransformer/ykvygwfg
+2025-01-06 02:59:33,152 INFO    MainThread:623379 [wandb_run.py:_atexit_cleanup():2339] got exitcode: 0
+2025-01-06 02:59:33,152 INFO    MainThread:623379 [wandb_run.py:_restore():2321] restore
+2025-01-06 02:59:33,153 INFO    MainThread:623379 [wandb_run.py:_restore():2327] restore done
+2025-01-06 02:59:35,507 INFO    MainThread:623379 [wandb_run.py:_footer_history_summary_info():3892] rendering history
+2025-01-06 02:59:35,510 INFO    MainThread:623379 [wandb_run.py:_footer_history_summary_info():3924] rendering summary
+2025-01-06 02:59:35,527 INFO    MainThread:623379 [wandb_run.py:_footer_sync_info():3853] logging synced files

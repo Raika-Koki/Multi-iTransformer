@@ -1,0 +1,93 @@
+最適化対象: trend
+[32m[I 2025-01-09 14:10:36,113][0m A new study created in memory with name: no-name-1bf3b087-1aa3-408f-9ed8-4b6ad6fe4659[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-09 14:10:40,258][0m Trial 0 finished with value: 0.8645361742578951 and parameters: {'observation_period_num': 148, 'train_rates': 0.8578910963217794, 'learning_rate': 3.66999982448773e-05, 'batch_size': 246, 'step_size': 14, 'gamma': 0.8454950771545908}. Best is trial 0 with value: 0.8645361742578951.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-09 14:10:40,259][0m A new study created in memory with name: no-name-8e5c43bf-36c0-4f25-bcd1-33953e8171c3[0m
+[32m[I 2025-01-09 14:10:41,942][0m Trial 0 finished with value: 0.7469422808633401 and parameters: {'observation_period_num': 193, 'train_rates': 0.6230659509356509, 'learning_rate': 0.0004165001805086607, 'batch_size': 95, 'step_size': 13, 'gamma': 0.8956014382991331}. Best is trial 0 with value: 0.7469422808633401.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-09 14:10:41,943][0m A new study created in memory with name: no-name-d7fac647-8637-4657-9730-fe28e307cd6b[0m
+[32m[I 2025-01-09 14:10:43,381][0m Trial 0 finished with value: 0.9415668077743091 and parameters: {'observation_period_num': 221, 'train_rates': 0.7706868238415738, 'learning_rate': 0.0001267520309894218, 'batch_size': 208, 'step_size': 5, 'gamma': 0.7996137132402009}. Best is trial 0 with value: 0.9415668077743091.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-09 14:10:43,382][0m A new study created in memory with name: no-name-278fb781-3461-4b11-ae43-bdf0bb09d869[0m
+[33m[W 2025-01-09 14:10:43,924][0m Trial 0 failed with parameters: {'observation_period_num': 29, 'train_rates': 0.9013843428231869, 'learning_rate': 0.0009876171316455175, 'batch_size': 170, 'step_size': 1, 'gamma': 0.9521502810129742} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_VMD.py", line 552, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_VMD.py", line 97, in objective
+    train_data, valid_data = create_multivariate_dataset(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 28, in create_multivariate_dataset
+    data = data_norm.iloc[i:i + observation_period_num].values  # [観測期間, 銘柄数]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/frame.py", line 12664, in values
+    return self._mgr.as_array()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1694, in as_array
+    arr = self._interleave(dtype=dtype, na_value=na_value)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1729, in _interleave
+    itemmask = np.zeros(self.shape[0])
+                        ^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/base.py", line 84, in shape
+    return tuple(len(ax) for ax in self.axes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/base.py", line 84, in <genexpr>
+    return tuple(len(ax) for ax in self.axes)
+                 ^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 909, in __len__
+    def __len__(self) -> int:
+
+KeyboardInterrupt
+[33m[W 2025-01-09 14:10:43,967][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_VMD.py", line 552, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_VMD.py", line 552, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=1) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_VMD.py", line 97, in objective
+    train_data, valid_data = create_multivariate_dataset(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 28, in create_multivariate_dataset
+    data = data_norm.iloc[i:i + observation_period_num].values  # [観測期間, 銘柄数]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/frame.py", line 12664, in values
+    return self._mgr.as_array()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1694, in as_array
+    arr = self._interleave(dtype=dtype, na_value=na_value)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1729, in _interleave
+    itemmask = np.zeros(self.shape[0])
+                        ^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/base.py", line 84, in shape
+    return tuple(len(ax) for ax in self.axes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/base.py", line 84, in <genexpr>
+    return tuple(len(ax) for ax in self.axes)
+                 ^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 909, in __len__
+    def __len__(self) -> int:
+
+KeyboardInterrupt

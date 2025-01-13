@@ -1,0 +1,109 @@
+[32m[I 2025-01-08 16:08:48,240][0m A new study created in memory with name: no-name-6bc6deaa-4e65-4047-851f-8ee68e2dd4e8[0m
+[32m[I 2025-01-08 16:13:44,257][0m Trial 0 finished with value: 0.8536072068169925 and parameters: {'observation_period_num': 241, 'train_rates': 0.6671359910214995, 'learning_rate': 3.0095105911197725e-05, 'batch_size': 203, 'step_size': 10, 'gamma': 0.8163104710757739}. Best is trial 0 with value: 0.8536072068169925.[0m
+[32m[I 2025-01-08 16:17:06,833][0m Trial 1 finished with value: 0.28919447289179945 and parameters: {'observation_period_num': 150, 'train_rates': 0.8330222645292331, 'learning_rate': 0.0001495224637861703, 'batch_size': 78, 'step_size': 11, 'gamma': 0.7633338049870235}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:18:47,222][0m Trial 2 finished with value: 1.0584537166063903 and parameters: {'observation_period_num': 77, 'train_rates': 0.8949322859027018, 'learning_rate': 1.184868791294285e-06, 'batch_size': 233, 'step_size': 6, 'gamma': 0.9591363605213528}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:23:04,389][0m Trial 3 finished with value: 0.7150013819336891 and parameters: {'observation_period_num': 189, 'train_rates': 0.8451792297638621, 'learning_rate': 1.5546959091456017e-05, 'batch_size': 162, 'step_size': 4, 'gamma': 0.7869877732211962}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:27:01,115][0m Trial 4 finished with value: 1.008052110671997 and parameters: {'observation_period_num': 161, 'train_rates': 0.9574402974356033, 'learning_rate': 3.5625389461165096e-06, 'batch_size': 244, 'step_size': 9, 'gamma': 0.828484549493218}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:30:23,733][0m Trial 5 finished with value: 0.6253084616582901 and parameters: {'observation_period_num': 175, 'train_rates': 0.6733600533151269, 'learning_rate': 5.259039704490631e-05, 'batch_size': 186, 'step_size': 12, 'gamma': 0.924306102029123}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:32:03,715][0m Trial 6 finished with value: 1.371244692802429 and parameters: {'observation_period_num': 82, 'train_rates': 0.7859438724544969, 'learning_rate': 1.060652991713051e-06, 'batch_size': 141, 'step_size': 12, 'gamma': 0.9532483534825217}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:33:16,429][0m Trial 7 finished with value: 0.6355694181502414 and parameters: {'observation_period_num': 58, 'train_rates': 0.7392474525117554, 'learning_rate': 0.0004407211905503997, 'batch_size': 72, 'step_size': 15, 'gamma': 0.8760683729999668}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:36:01,103][0m Trial 8 finished with value: 0.33190295624900873 and parameters: {'observation_period_num': 117, 'train_rates': 0.9256384210424438, 'learning_rate': 7.068785600649888e-06, 'batch_size': 57, 'step_size': 10, 'gamma': 0.8499291928624111}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:40:38,988][0m Trial 9 finished with value: 0.5779116924862014 and parameters: {'observation_period_num': 215, 'train_rates': 0.7270677541740105, 'learning_rate': 0.00033968371718130715, 'batch_size': 83, 'step_size': 2, 'gamma': 0.798834941295399}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:41:10,522][0m Trial 10 finished with value: 0.966964846045613 and parameters: {'observation_period_num': 21, 'train_rates': 0.6009902071849378, 'learning_rate': 0.00012368901886686644, 'batch_size': 106, 'step_size': 15, 'gamma': 0.7567827647057163}. Best is trial 1 with value: 0.28919447289179945.[0m
+[32m[I 2025-01-08 16:44:51,456][0m Trial 11 finished with value: 0.14013027772307396 and parameters: {'observation_period_num': 122, 'train_rates': 0.9860624277568824, 'learning_rate': 8.411615512030756e-06, 'batch_size': 20, 'step_size': 11, 'gamma': 0.8692476574054869}. Best is trial 11 with value: 0.14013027772307396.[0m
+[33m[W 2025-01-08 16:45:45,927][0m Trial 12 failed with parameters: {'observation_period_num': 130, 'train_rates': 0.8588145188795718, 'learning_rate': 0.0001419080452113062, 'batch_size': 18, 'step_size': 7, 'gamma': 0.8829645032214544} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 381, in <lambda>
+    study.optimize(lambda trial: objective(trial, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 67, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 61, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/Transformer_model.py", line 24, in forward
+    output = self.transformer_encoder(src)  # (lookback_len, batch_size, dim)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 315, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 592, in forward
+    x = self.norm2(x + self._ff_block(x))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    return F.layer_norm(
+           ^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/functional.py", line 2515, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-01-08 16:45:45,940][0m Trial 12 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 381, in <module>
+    study.optimize(lambda trial: objective(trial, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 381, in <lambda>
+    study.optimize(lambda trial: objective(trial, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer_nomstl.py", line 67, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 61, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/Transformer_model.py", line 24, in forward
+    output = self.transformer_encoder(src)  # (lookback_len, batch_size, dim)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 315, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 592, in forward
+    x = self.norm2(x + self._ff_block(x))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    return F.layer_norm(
+           ^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/functional.py", line 2515, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,2081 @@
+最適化対象: trend
+[32m[I 2025-01-06 13:21:26,813][0m A new study created in memory with name: no-name-79b64dbd-8eeb-43aa-821c-e7f1aaafd833[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[32m[I 2025-01-06 13:21:53,031][0m Trial 0 finished with value: 0.27986715045411575 and parameters: {'observation_period_num': 199, 'train_rates': 0.6067874012134159, 'learning_rate': 0.00017192717278695388, 'batch_size': 200, 'step_size': 11, 'gamma': 0.8134366630642127}. Best is trial 0 with value: 0.27986715045411575.[0m
+[32m[I 2025-01-06 13:23:19,477][0m Trial 1 finished with value: 0.3380984628901762 and parameters: {'observation_period_num': 227, 'train_rates': 0.7880493907897522, 'learning_rate': 1.009315335469419e-05, 'batch_size': 54, 'step_size': 7, 'gamma': 0.8595106265567516}. Best is trial 0 with value: 0.27986715045411575.[0m
+[32m[I 2025-01-06 13:24:19,048][0m Trial 2 finished with value: 0.26970178388022437 and parameters: {'observation_period_num': 148, 'train_rates': 0.9276252657646837, 'learning_rate': 1.1240126217245644e-05, 'batch_size': 93, 'step_size': 8, 'gamma': 0.8833621642100026}. Best is trial 2 with value: 0.26970178388022437.[0m
+[32m[I 2025-01-06 13:24:54,583][0m Trial 3 finished with value: 0.8897111133847918 and parameters: {'observation_period_num': 107, 'train_rates': 0.6923162917949774, 'learning_rate': 2.9263798333053487e-06, 'batch_size': 232, 'step_size': 11, 'gamma': 0.7625727057875418}. Best is trial 2 with value: 0.26970178388022437.[0m
+[32m[I 2025-01-06 13:25:23,862][0m Trial 4 finished with value: 0.8971336403502089 and parameters: {'observation_period_num': 127, 'train_rates': 0.7562527011493559, 'learning_rate': 3.286053892173418e-06, 'batch_size': 251, 'step_size': 9, 'gamma': 0.9100410398362353}. Best is trial 2 with value: 0.26970178388022437.[0m
+[32m[I 2025-01-06 13:25:59,039][0m Trial 5 finished with value: 0.1751559909245267 and parameters: {'observation_period_num': 209, 'train_rates': 0.6168958964481136, 'learning_rate': 0.00012522774561855857, 'batch_size': 124, 'step_size': 10, 'gamma': 0.9436709572335937}. Best is trial 5 with value: 0.1751559909245267.[0m
+[32m[I 2025-01-06 13:26:28,981][0m Trial 6 finished with value: 0.6384825320310996 and parameters: {'observation_period_num': 101, 'train_rates': 0.775944736377362, 'learning_rate': 6.69653652164063e-06, 'batch_size': 252, 'step_size': 7, 'gamma': 0.8731022432449292}. Best is trial 5 with value: 0.1751559909245267.[0m
+Early stopping at epoch 62
+[32m[I 2025-01-06 13:26:58,371][0m Trial 7 finished with value: 0.6490805942064141 and parameters: {'observation_period_num': 5, 'train_rates': 0.8840245931108535, 'learning_rate': 2.9205191302981462e-06, 'batch_size': 167, 'step_size': 1, 'gamma': 0.8406284924809864}. Best is trial 5 with value: 0.1751559909245267.[0m
+[32m[I 2025-01-06 13:27:31,586][0m Trial 8 finished with value: 0.2302518920108462 and parameters: {'observation_period_num': 241, 'train_rates': 0.6143122774947642, 'learning_rate': 0.0005636806548914144, 'batch_size': 195, 'step_size': 13, 'gamma': 0.9527127567404227}. Best is trial 5 with value: 0.1751559909245267.[0m
+[32m[I 2025-01-06 13:28:24,075][0m Trial 9 finished with value: 0.02670538169486627 and parameters: {'observation_period_num': 7, 'train_rates': 0.6423501770586361, 'learning_rate': 0.0005219853339379502, 'batch_size': 95, 'step_size': 15, 'gamma': 0.956477095892929}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:32:24,248][0m Trial 10 finished with value: 0.051077538065766016 and parameters: {'observation_period_num': 16, 'train_rates': 0.6862928068912297, 'learning_rate': 0.0009311253640813585, 'batch_size': 19, 'step_size': 15, 'gamma': 0.9855345729970566}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:36:40,778][0m Trial 11 finished with value: 0.035480518120058466 and parameters: {'observation_period_num': 6, 'train_rates': 0.697792104466981, 'learning_rate': 0.000991599095615805, 'batch_size': 18, 'step_size': 15, 'gamma': 0.9899103731140714}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:37:43,672][0m Trial 12 finished with value: 0.06981398392882612 and parameters: {'observation_period_num': 51, 'train_rates': 0.7019779709567802, 'learning_rate': 0.0002511142504938478, 'batch_size': 76, 'step_size': 15, 'gamma': 0.9769180190252672}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:39:20,535][0m Trial 13 finished with value: 0.06807572669146288 and parameters: {'observation_period_num': 51, 'train_rates': 0.6761055350273157, 'learning_rate': 5.2915867167463254e-05, 'batch_size': 47, 'step_size': 4, 'gamma': 0.9209555314972844}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:40:03,484][0m Trial 14 finished with value: 0.10640810689073987 and parameters: {'observation_period_num': 56, 'train_rates': 0.7347363548865576, 'learning_rate': 0.0005513653235911652, 'batch_size': 123, 'step_size': 13, 'gamma': 0.9871992141558658}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:41:04,536][0m Trial 15 finished with value: 0.08815709979866039 and parameters: {'observation_period_num': 31, 'train_rates': 0.8797032403672763, 'learning_rate': 3.992184945653649e-05, 'batch_size': 95, 'step_size': 13, 'gamma': 0.9483492780288532}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:46:04,674][0m Trial 16 finished with value: 0.1830304754512714 and parameters: {'observation_period_num': 80, 'train_rates': 0.8367376286705571, 'learning_rate': 0.0003394396087262994, 'batch_size': 17, 'step_size': 15, 'gamma': 0.9137848881931416}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:46:44,332][0m Trial 17 finished with value: 0.26204215938119385 and parameters: {'observation_period_num': 169, 'train_rates': 0.6462887006345583, 'learning_rate': 7.347078152116511e-05, 'batch_size': 154, 'step_size': 5, 'gamma': 0.9579816039853953}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:48:38,505][0m Trial 18 finished with value: 0.1051662489771843 and parameters: {'observation_period_num': 78, 'train_rates': 0.9835310315274083, 'learning_rate': 0.000956219426145162, 'batch_size': 50, 'step_size': 12, 'gamma': 0.7871652042860064}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:49:28,730][0m Trial 19 finished with value: 0.07042597665947305 and parameters: {'observation_period_num': 31, 'train_rates': 0.7304044306987306, 'learning_rate': 1.957763876587416e-05, 'batch_size': 99, 'step_size': 14, 'gamma': 0.8970649292083862}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:50:32,814][0m Trial 20 finished with value: 0.053852052454917934 and parameters: {'observation_period_num': 7, 'train_rates': 0.6612703798061543, 'learning_rate': 9.42138567764388e-05, 'batch_size': 73, 'step_size': 2, 'gamma': 0.9372402466480044}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:54:23,436][0m Trial 21 finished with value: 0.035210978771959035 and parameters: {'observation_period_num': 22, 'train_rates': 0.7132203568535247, 'learning_rate': 0.0009255073854055865, 'batch_size': 20, 'step_size': 15, 'gamma': 0.9757340325852135}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:56:54,710][0m Trial 22 finished with value: 0.05628687362460529 and parameters: {'observation_period_num': 29, 'train_rates': 0.6451861441990907, 'learning_rate': 0.0004528273524737707, 'batch_size': 33, 'step_size': 14, 'gamma': 0.97011439766238}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 13:58:22,499][0m Trial 23 finished with value: 0.09230907202357112 and parameters: {'observation_period_num': 69, 'train_rates': 0.7197040917124538, 'learning_rate': 0.00022827291730911228, 'batch_size': 64, 'step_size': 12, 'gamma': 0.9895133005600395}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:01:13,081][0m Trial 24 finished with value: 0.03192938181498652 and parameters: {'observation_period_num': 34, 'train_rates': 0.8209557581694632, 'learning_rate': 0.0009887332541659618, 'batch_size': 33, 'step_size': 15, 'gamma': 0.9319624456321006}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:03:47,150][0m Trial 25 finished with value: 0.060400954066691076 and parameters: {'observation_period_num': 39, 'train_rates': 0.8189473562525308, 'learning_rate': 0.00040152936993752584, 'batch_size': 37, 'step_size': 14, 'gamma': 0.9294687104190995}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:04:51,140][0m Trial 26 finished with value: 0.5126368347115404 and parameters: {'observation_period_num': 86, 'train_rates': 0.8228684929217563, 'learning_rate': 1.3570589754683155e-06, 'batch_size': 112, 'step_size': 12, 'gamma': 0.961106242074685}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:06:12,420][0m Trial 27 finished with value: 0.09861096628842224 and parameters: {'observation_period_num': 58, 'train_rates': 0.8607482751857009, 'learning_rate': 0.0005533079978651275, 'batch_size': 80, 'step_size': 14, 'gamma': 0.9040988642528487}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:07:04,766][0m Trial 28 finished with value: 0.035775250478806 and parameters: {'observation_period_num': 25, 'train_rates': 0.7629823477054076, 'learning_rate': 0.0001604950515963635, 'batch_size': 146, 'step_size': 10, 'gamma': 0.9320273802816184}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:09:12,101][0m Trial 29 finished with value: 0.22886795699817492 and parameters: {'observation_period_num': 184, 'train_rates': 0.6346145879816083, 'learning_rate': 0.00024500221168147717, 'batch_size': 37, 'step_size': 11, 'gamma': 0.9621966985605835}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:10:44,240][0m Trial 30 finished with value: 0.09620094417136374 and parameters: {'observation_period_num': 101, 'train_rates': 0.8080917709583629, 'learning_rate': 0.0006542876531162842, 'batch_size': 63, 'step_size': 13, 'gamma': 0.8389829600382365}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:15:41,461][0m Trial 31 finished with value: 0.028059336336814133 and parameters: {'observation_period_num': 15, 'train_rates': 0.7146861207986291, 'learning_rate': 0.0009155143337801799, 'batch_size': 16, 'step_size': 15, 'gamma': 0.97300381476134}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:17:35,198][0m Trial 32 finished with value: 0.10129318756599245 and parameters: {'observation_period_num': 43, 'train_rates': 0.6007725335612578, 'learning_rate': 0.00031731182921225965, 'batch_size': 37, 'step_size': 15, 'gamma': 0.9705502357142068}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:20:27,773][0m Trial 33 finished with value: 0.03282559839172814 and parameters: {'observation_period_num': 20, 'train_rates': 0.7873368318625713, 'learning_rate': 0.0006963538385961165, 'batch_size': 29, 'step_size': 14, 'gamma': 0.8871753209480471}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:21:59,510][0m Trial 34 finished with value: 0.04290652843329403 and parameters: {'observation_period_num': 17, 'train_rates': 0.7918163352522555, 'learning_rate': 0.00015818205669713327, 'batch_size': 56, 'step_size': 14, 'gamma': 0.8934386106595185}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:24:37,681][0m Trial 35 finished with value: 0.15612074193500336 and parameters: {'observation_period_num': 131, 'train_rates': 0.8510241542324517, 'learning_rate': 0.0007295936291057253, 'batch_size': 32, 'step_size': 11, 'gamma': 0.8510618750323058}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:25:40,286][0m Trial 36 finished with value: 0.09788367523188717 and parameters: {'observation_period_num': 67, 'train_rates': 0.7507930087347693, 'learning_rate': 0.00038018439793020055, 'batch_size': 80, 'step_size': 13, 'gamma': 0.9205449404529616}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:27:17,869][0m Trial 37 finished with value: 0.04388698871370475 and parameters: {'observation_period_num': 38, 'train_rates': 0.7818118760800953, 'learning_rate': 0.0006825237513579498, 'batch_size': 51, 'step_size': 9, 'gamma': 0.8189851884487852}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:27:44,762][0m Trial 38 finished with value: 0.04812941731712253 and parameters: {'observation_period_num': 19, 'train_rates': 0.6690927566928472, 'learning_rate': 0.00020556967804571572, 'batch_size': 184, 'step_size': 12, 'gamma': 0.8773443571185351}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:28:36,161][0m Trial 39 finished with value: 0.04736988297628082 and parameters: {'observation_period_num': 43, 'train_rates': 0.9100617869812022, 'learning_rate': 0.00010981048214583656, 'batch_size': 108, 'step_size': 6, 'gamma': 0.8617379621955943}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:29:48,488][0m Trial 40 finished with value: 0.1205490335319819 and parameters: {'observation_period_num': 114, 'train_rates': 0.7490422493941549, 'learning_rate': 2.0360114601822682e-05, 'batch_size': 66, 'step_size': 14, 'gamma': 0.892454874089811}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:33:00,900][0m Trial 41 finished with value: 0.03487323731647439 and parameters: {'observation_period_num': 17, 'train_rates': 0.7151900931607122, 'learning_rate': 0.0007750570245823128, 'batch_size': 24, 'step_size': 15, 'gamma': 0.9461141158933997}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:33:27,841][0m Trial 42 finished with value: 0.03192610148001801 and parameters: {'observation_period_num': 11, 'train_rates': 0.7755106941389815, 'learning_rate': 0.000495002696988103, 'batch_size': 222, 'step_size': 15, 'gamma': 0.9434274172841158}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:33:58,024][0m Trial 43 finished with value: 0.03341680600415522 and parameters: {'observation_period_num': 8, 'train_rates': 0.7971993072535921, 'learning_rate': 0.00046765329613119357, 'batch_size': 210, 'step_size': 14, 'gamma': 0.9423004389829539}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:34:28,259][0m Trial 44 finished with value: 0.03572768902328486 and parameters: {'observation_period_num': 6, 'train_rates': 0.8369601747534077, 'learning_rate': 0.0002893275733148376, 'batch_size': 235, 'step_size': 15, 'gamma': 0.927539535360389}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:35:02,103][0m Trial 45 finished with value: 0.05548218183140769 and parameters: {'observation_period_num': 35, 'train_rates': 0.772658700393009, 'learning_rate': 0.0004809445484838325, 'batch_size': 167, 'step_size': 13, 'gamma': 0.9102557284694041}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:35:28,487][0m Trial 46 finished with value: 0.27270390658543026 and parameters: {'observation_period_num': 46, 'train_rates': 0.8005191088353131, 'learning_rate': 6.5022437693540005e-06, 'batch_size': 220, 'step_size': 15, 'gamma': 0.9540152024420481}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:36:07,811][0m Trial 47 finished with value: 0.07633623678997803 and parameters: {'observation_period_num': 65, 'train_rates': 0.7675569615569178, 'learning_rate': 0.0006677709482972133, 'batch_size': 131, 'step_size': 14, 'gamma': 0.9673420106027306}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:37:01,876][0m Trial 48 finished with value: 0.17707680617445926 and parameters: {'observation_period_num': 209, 'train_rates': 0.7425750312801143, 'learning_rate': 0.00037435690758665525, 'batch_size': 87, 'step_size': 13, 'gamma': 0.8817318076350081}. Best is trial 9 with value: 0.02670538169486627.[0m
+[32m[I 2025-01-06 14:38:44,689][0m Trial 49 finished with value: 0.06252044101660079 and parameters: {'observation_period_num': 25, 'train_rates': 0.6895962363695066, 'learning_rate': 0.000914345175434878, 'batch_size': 45, 'step_size': 8, 'gamma': 0.9804592077608049}. Best is trial 9 with value: 0.02670538169486627.[0m
+trend の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_0
+[32m[I 2025-01-06 14:38:44,699][0m A new study created in memory with name: no-name-3cc138cb-4a22-4b84-aeec-8b3fffc4a9ff[0m
+[32m[I 2025-01-06 14:40:20,447][0m Trial 0 finished with value: 0.08358240052508488 and parameters: {'observation_period_num': 32, 'train_rates': 0.7210528289909554, 'learning_rate': 0.0001894279690799316, 'batch_size': 49, 'step_size': 10, 'gamma': 0.8037074096100042}. Best is trial 0 with value: 0.08358240052508488.[0m
+[32m[I 2025-01-06 14:41:19,458][0m Trial 1 finished with value: 0.12891514716630287 and parameters: {'observation_period_num': 236, 'train_rates': 0.8268823303411832, 'learning_rate': 0.000109245258432906, 'batch_size': 82, 'step_size': 14, 'gamma': 0.801961749486243}. Best is trial 0 with value: 0.08358240052508488.[0m
+[32m[I 2025-01-06 14:42:28,093][0m Trial 2 finished with value: 0.06887805107582236 and parameters: {'observation_period_num': 68, 'train_rates': 0.8868787423519687, 'learning_rate': 0.00020228918610302885, 'batch_size': 79, 'step_size': 2, 'gamma': 0.9704227873246882}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:42:55,439][0m Trial 3 finished with value: 0.10815294635295868 and parameters: {'observation_period_num': 65, 'train_rates': 0.8703330685493378, 'learning_rate': 5.355976895185826e-05, 'batch_size': 222, 'step_size': 10, 'gamma': 0.9496133571764964}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:45:17,937][0m Trial 4 finished with value: 0.7047165027734908 and parameters: {'observation_period_num': 166, 'train_rates': 0.6840608273136558, 'learning_rate': 8.522156878299702e-06, 'batch_size': 30, 'step_size': 1, 'gamma': 0.8955496415551086}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:45:42,266][0m Trial 5 finished with value: 1.0950964562918828 and parameters: {'observation_period_num': 190, 'train_rates': 0.6669149959263524, 'learning_rate': 1.752276975097319e-05, 'batch_size': 225, 'step_size': 3, 'gamma': 0.7981155258367663}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:46:11,562][0m Trial 6 finished with value: 0.4968685507774353 and parameters: {'observation_period_num': 190, 'train_rates': 0.9255894180699364, 'learning_rate': 3.914470530292799e-06, 'batch_size': 206, 'step_size': 13, 'gamma': 0.8738683909212045}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:46:52,312][0m Trial 7 finished with value: 0.24747350811958313 and parameters: {'observation_period_num': 223, 'train_rates': 0.985593680320487, 'learning_rate': 1.5028491224719305e-05, 'batch_size': 144, 'step_size': 11, 'gamma': 0.9324607137424175}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:47:22,355][0m Trial 8 finished with value: 0.27063692510128023 and parameters: {'observation_period_num': 141, 'train_rates': 0.824089292696834, 'learning_rate': 4.993948876986647e-05, 'batch_size': 187, 'step_size': 5, 'gamma': 0.7690266961102435}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:47:55,598][0m Trial 9 finished with value: 0.19555792142854672 and parameters: {'observation_period_num': 203, 'train_rates': 0.922423366865008, 'learning_rate': 0.00038417619535607573, 'batch_size': 171, 'step_size': 2, 'gamma': 0.8431292549287197}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:48:50,191][0m Trial 10 finished with value: 0.11420985454260701 and parameters: {'observation_period_num': 90, 'train_rates': 0.757708902501085, 'learning_rate': 0.0008986784012983025, 'batch_size': 92, 'step_size': 6, 'gamma': 0.9833148727674761}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:52:36,299][0m Trial 11 finished with value: 0.07950236433516106 and parameters: {'observation_period_num': 9, 'train_rates': 0.7472344394821804, 'learning_rate': 0.00020830938430001355, 'batch_size': 21, 'step_size': 8, 'gamma': 0.8405254528110762}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:56:37,441][0m Trial 12 finished with value: 0.12411098639456045 and parameters: {'observation_period_num': 9, 'train_rates': 0.6159566375971091, 'learning_rate': 0.0003110980550828739, 'batch_size': 17, 'step_size': 7, 'gamma': 0.8480222885099732}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:57:44,010][0m Trial 13 finished with value: 0.8955908866103636 and parameters: {'observation_period_num': 80, 'train_rates': 0.7724076961454548, 'learning_rate': 1.235875730524009e-06, 'batch_size': 78, 'step_size': 4, 'gamma': 0.9023634591231043}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 14:58:32,919][0m Trial 14 finished with value: 0.08850794716013802 and parameters: {'observation_period_num': 36, 'train_rates': 0.8919499652234432, 'learning_rate': 9.729621980279085e-05, 'batch_size': 119, 'step_size': 8, 'gamma': 0.9887888781229364}. Best is trial 2 with value: 0.06887805107582236.[0m
+Early stopping at epoch 85
+[32m[I 2025-01-06 14:59:54,901][0m Trial 15 finished with value: 0.09484527075981647 and parameters: {'observation_period_num': 104, 'train_rates': 0.8500779749775422, 'learning_rate': 0.0006931820001780832, 'batch_size': 55, 'step_size': 1, 'gamma': 0.8378124103561264}. Best is trial 2 with value: 0.06887805107582236.[0m
+[32m[I 2025-01-06 15:00:48,858][0m Trial 16 finished with value: 0.06209268420934677 and parameters: {'observation_period_num': 54, 'train_rates': 0.9809723639894198, 'learning_rate': 0.00014503940956648713, 'batch_size': 114, 'step_size': 12, 'gamma': 0.9379252873714294}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:01:40,014][0m Trial 17 finished with value: 0.08784867078065872 and parameters: {'observation_period_num': 129, 'train_rates': 0.988424414425995, 'learning_rate': 9.666672958289105e-05, 'batch_size': 123, 'step_size': 15, 'gamma': 0.9483128456921878}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:02:15,781][0m Trial 18 finished with value: 0.1292041689157486 and parameters: {'observation_period_num': 57, 'train_rates': 0.9501107817479573, 'learning_rate': 3.641800542792311e-05, 'batch_size': 255, 'step_size': 11, 'gamma': 0.9212266595189588}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:02:55,023][0m Trial 19 finished with value: 0.14010435312546488 and parameters: {'observation_period_num': 111, 'train_rates': 0.9047838081781118, 'learning_rate': 0.00038183833923879944, 'batch_size': 155, 'step_size': 12, 'gamma': 0.9654406815101036}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:03:50,302][0m Trial 20 finished with value: 0.07119693458080292 and parameters: {'observation_period_num': 44, 'train_rates': 0.9537716770165421, 'learning_rate': 0.00015510777222943787, 'batch_size': 108, 'step_size': 9, 'gamma': 0.9120073264129105}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:04:43,040][0m Trial 21 finished with value: 0.0961648556475456 and parameters: {'observation_period_num': 47, 'train_rates': 0.9554542873789514, 'learning_rate': 0.0001533211847533892, 'batch_size': 113, 'step_size': 10, 'gamma': 0.9175986793760639}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:05:39,911][0m Trial 22 finished with value: 0.07998823122583705 and parameters: {'observation_period_num': 76, 'train_rates': 0.951651657396615, 'learning_rate': 6.519592856645404e-05, 'batch_size': 100, 'step_size': 9, 'gamma': 0.9584660491245225}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:07:04,000][0m Trial 23 finished with value: 0.07969638094624977 and parameters: {'observation_period_num': 32, 'train_rates': 0.8880117675976595, 'learning_rate': 0.0004832163161026316, 'batch_size': 65, 'step_size': 13, 'gamma': 0.8792566704441883}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:07:49,546][0m Trial 24 finished with value: 0.0794091522693634 and parameters: {'observation_period_num': 94, 'train_rates': 0.9646649918578274, 'learning_rate': 0.00024232718724476025, 'batch_size': 137, 'step_size': 6, 'gamma': 0.9343663787503292}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:08:43,655][0m Trial 25 finished with value: 0.09697915855199779 and parameters: {'observation_period_num': 59, 'train_rates': 0.9244073069851757, 'learning_rate': 2.327519915018649e-05, 'batch_size': 109, 'step_size': 12, 'gamma': 0.901823089506151}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:09:58,880][0m Trial 26 finished with value: 0.06625327720774887 and parameters: {'observation_period_num': 22, 'train_rates': 0.8682453928078451, 'learning_rate': 0.00014870609536482858, 'batch_size': 74, 'step_size': 8, 'gamma': 0.961637793632115}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:12:06,031][0m Trial 27 finished with value: 0.06922941002672518 and parameters: {'observation_period_num': 20, 'train_rates': 0.8030518439340658, 'learning_rate': 0.000549129461706035, 'batch_size': 40, 'step_size': 4, 'gamma': 0.970546809343637}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:13:11,649][0m Trial 28 finished with value: 0.08039254547571237 and parameters: {'observation_period_num': 118, 'train_rates': 0.8505428028252171, 'learning_rate': 7.431636100904514e-05, 'batch_size': 82, 'step_size': 7, 'gamma': 0.9403251117929134}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:14:47,472][0m Trial 29 finished with value: 0.07538181040436029 and parameters: {'observation_period_num': 24, 'train_rates': 0.8702327482019291, 'learning_rate': 0.0001475824060252646, 'batch_size': 57, 'step_size': 15, 'gamma': 0.9699995917911737}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:15:58,181][0m Trial 30 finished with value: 0.11000501912862516 and parameters: {'observation_period_num': 149, 'train_rates': 0.7893481952342362, 'learning_rate': 0.0002503544732669123, 'batch_size': 70, 'step_size': 4, 'gamma': 0.978153356176225}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:18:09,505][0m Trial 31 finished with value: 0.07432276738670238 and parameters: {'observation_period_num': 5, 'train_rates': 0.8206685880027411, 'learning_rate': 0.0005907754851768603, 'batch_size': 40, 'step_size': 3, 'gamma': 0.9637514075403643}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:20:06,974][0m Trial 32 finished with value: 0.07979538829647735 and parameters: {'observation_period_num': 21, 'train_rates': 0.8019072763064506, 'learning_rate': 0.0008039367776817364, 'batch_size': 43, 'step_size': 2, 'gamma': 0.9881701757724619}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:21:03,843][0m Trial 33 finished with value: 0.06963692578758919 and parameters: {'observation_period_num': 68, 'train_rates': 0.8550068280784712, 'learning_rate': 0.0004641839451117958, 'batch_size': 91, 'step_size': 5, 'gamma': 0.9570091402308243}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:22:54,132][0m Trial 34 finished with value: 0.09208444018596373 and parameters: {'observation_period_num': 46, 'train_rates': 0.726374964482852, 'learning_rate': 0.00011844714640244427, 'batch_size': 40, 'step_size': 2, 'gamma': 0.9460072712609867}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:24:09,196][0m Trial 35 finished with value: 0.06790995948105694 and parameters: {'observation_period_num': 24, 'train_rates': 0.8285777223601328, 'learning_rate': 0.00027851393635159314, 'batch_size': 69, 'step_size': 3, 'gamma': 0.9743527050700124}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:25:27,136][0m Trial 36 finished with value: 0.08751791111628214 and parameters: {'observation_period_num': 55, 'train_rates': 0.8707105871190551, 'learning_rate': 3.970100448446769e-05, 'batch_size': 71, 'step_size': 3, 'gamma': 0.931366720003104}. Best is trial 16 with value: 0.06209268420934677.[0m
+[32m[I 2025-01-06 15:26:12,423][0m Trial 37 finished with value: 0.05833686418404245 and parameters: {'observation_period_num': 31, 'train_rates': 0.8389234942528127, 'learning_rate': 0.0002832544601522812, 'batch_size': 127, 'step_size': 1, 'gamma': 0.974868271384059}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:26:55,006][0m Trial 38 finished with value: 0.06171428941888735 and parameters: {'observation_period_num': 30, 'train_rates': 0.8246716676473953, 'learning_rate': 0.0002733706346754428, 'batch_size': 131, 'step_size': 1, 'gamma': 0.9754904936912864}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:27:29,374][0m Trial 39 finished with value: 0.19939918009018295 and parameters: {'observation_period_num': 42, 'train_rates': 0.715118311597484, 'learning_rate': 0.00017983688737624318, 'batch_size': 154, 'step_size': 1, 'gamma': 0.8859813200649644}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:28:15,916][0m Trial 40 finished with value: 0.2169171289817707 and parameters: {'observation_period_num': 30, 'train_rates': 0.9115310326402505, 'learning_rate': 8.528412825225131e-06, 'batch_size': 131, 'step_size': 14, 'gamma': 0.8577726628764644}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:28:50,873][0m Trial 41 finished with value: 0.06553428005082897 and parameters: {'observation_period_num': 21, 'train_rates': 0.8339072750103846, 'learning_rate': 0.0002860000088238368, 'batch_size': 163, 'step_size': 1, 'gamma': 0.9785521824520953}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:29:23,610][0m Trial 42 finished with value: 0.06655039714233389 and parameters: {'observation_period_num': 16, 'train_rates': 0.8245229247191554, 'learning_rate': 0.0003417924448357313, 'batch_size': 175, 'step_size': 1, 'gamma': 0.9530953189720116}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:29:58,221][0m Trial 43 finished with value: 0.2109148774278878 and parameters: {'observation_period_num': 243, 'train_rates': 0.8397873987242921, 'learning_rate': 8.052598112645664e-05, 'batch_size': 152, 'step_size': 1, 'gamma': 0.9799740667403789}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:30:31,179][0m Trial 44 finished with value: 0.08530405389099587 and parameters: {'observation_period_num': 71, 'train_rates': 0.7864655179999451, 'learning_rate': 0.00012034385326465, 'batch_size': 197, 'step_size': 2, 'gamma': 0.9564535331275731}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:31:06,549][0m Trial 45 finished with value: 0.07962090989144949 and parameters: {'observation_period_num': 34, 'train_rates': 0.8665536007233035, 'learning_rate': 0.000244482801017921, 'batch_size': 171, 'step_size': 5, 'gamma': 0.8226595678694322}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:31:48,431][0m Trial 46 finished with value: 0.07668407426457363 and parameters: {'observation_period_num': 15, 'train_rates': 0.7663682256368197, 'learning_rate': 0.00019232458037516043, 'batch_size': 132, 'step_size': 2, 'gamma': 0.9260623026595407}. Best is trial 37 with value: 0.05833686418404245.[0m
+Early stopping at epoch 57
+[32m[I 2025-01-06 15:32:09,338][0m Trial 47 finished with value: 0.15735884204616846 and parameters: {'observation_period_num': 88, 'train_rates': 0.8107732810667562, 'learning_rate': 0.0009476529996735941, 'batch_size': 161, 'step_size': 1, 'gamma': 0.7809980655290271}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:32:44,104][0m Trial 48 finished with value: 0.10918442795916301 and parameters: {'observation_period_num': 54, 'train_rates': 0.6462172130770905, 'learning_rate': 0.0004024360163264651, 'batch_size': 140, 'step_size': 9, 'gamma': 0.9893166589863299}. Best is trial 37 with value: 0.05833686418404245.[0m
+[32m[I 2025-01-06 15:33:25,416][0m Trial 49 finished with value: 0.16170873252916534 and parameters: {'observation_period_num': 173, 'train_rates': 0.7418170237921088, 'learning_rate': 5.729576559266565e-05, 'batch_size': 121, 'step_size': 11, 'gamma': 0.9418260572167062}. Best is trial 37 with value: 0.05833686418404245.[0m
+seasonal_0 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_1
+[32m[I 2025-01-06 15:33:25,427][0m A new study created in memory with name: no-name-b3980604-9e87-4295-8bb2-d648d0f66e21[0m
+[32m[I 2025-01-06 15:34:02,863][0m Trial 0 finished with value: 0.17714884579181672 and parameters: {'observation_period_num': 232, 'train_rates': 0.9047039269039381, 'learning_rate': 9.156167169578858e-05, 'batch_size': 148, 'step_size': 12, 'gamma': 0.9316650768213146}. Best is trial 0 with value: 0.17714884579181672.[0m
+[32m[I 2025-01-06 15:34:38,378][0m Trial 1 finished with value: 1.453736900920926 and parameters: {'observation_period_num': 59, 'train_rates': 0.7726478609580936, 'learning_rate': 1.005976748588271e-06, 'batch_size': 155, 'step_size': 12, 'gamma': 0.8920405152519373}. Best is trial 0 with value: 0.17714884579181672.[0m
+[32m[I 2025-01-06 15:35:03,262][0m Trial 2 finished with value: 0.12185154565743038 and parameters: {'observation_period_num': 157, 'train_rates': 0.7493929443468466, 'learning_rate': 0.0003312866441236661, 'batch_size': 213, 'step_size': 3, 'gamma': 0.8744952896870607}. Best is trial 2 with value: 0.12185154565743038.[0m
+[32m[I 2025-01-06 15:35:32,747][0m Trial 3 finished with value: 0.17524614930152893 and parameters: {'observation_period_num': 153, 'train_rates': 0.9560655102603612, 'learning_rate': 7.652576489123018e-05, 'batch_size': 221, 'step_size': 12, 'gamma': 0.9465550724592154}. Best is trial 2 with value: 0.12185154565743038.[0m
+[32m[I 2025-01-06 15:36:15,015][0m Trial 4 finished with value: 1.2145720258733141 and parameters: {'observation_period_num': 174, 'train_rates': 0.730357119595322, 'learning_rate': 1.0298684173290653e-06, 'batch_size': 113, 'step_size': 7, 'gamma': 0.8563916244706302}. Best is trial 2 with value: 0.12185154565743038.[0m
+[32m[I 2025-01-06 15:36:52,803][0m Trial 5 finished with value: 0.13153215968957194 and parameters: {'observation_period_num': 43, 'train_rates': 0.7351768603301483, 'learning_rate': 2.814898314381736e-05, 'batch_size': 141, 'step_size': 9, 'gamma': 0.7812302076961912}. Best is trial 2 with value: 0.12185154565743038.[0m
+[32m[I 2025-01-06 15:37:16,543][0m Trial 6 finished with value: 0.7232062930930151 and parameters: {'observation_period_num': 178, 'train_rates': 0.6049973304306557, 'learning_rate': 4.354718389462973e-05, 'batch_size': 192, 'step_size': 13, 'gamma': 0.9146314255634964}. Best is trial 2 with value: 0.12185154565743038.[0m
+Early stopping at epoch 85
+[32m[I 2025-01-06 15:40:30,050][0m Trial 7 finished with value: 0.17646944304125026 and parameters: {'observation_period_num': 22, 'train_rates': 0.7396602708241214, 'learning_rate': 2.9117192156790004e-05, 'batch_size': 21, 'step_size': 1, 'gamma': 0.8090488164115087}. Best is trial 2 with value: 0.12185154565743038.[0m
+[32m[I 2025-01-06 15:41:02,246][0m Trial 8 finished with value: 0.9051768695530684 and parameters: {'observation_period_num': 181, 'train_rates': 0.8340071333333889, 'learning_rate': 3.121941446641842e-06, 'batch_size': 175, 'step_size': 1, 'gamma': 0.9310818576125994}. Best is trial 2 with value: 0.12185154565743038.[0m
+[32m[I 2025-01-06 15:41:38,121][0m Trial 9 finished with value: 0.08962228139307325 and parameters: {'observation_period_num': 212, 'train_rates': 0.8899300861261392, 'learning_rate': 0.0003906331737528002, 'batch_size': 154, 'step_size': 2, 'gamma': 0.9590840094025427}. Best is trial 9 with value: 0.08962228139307325.[0m
+[32m[I 2025-01-06 15:42:44,706][0m Trial 10 finished with value: 0.21276742219924927 and parameters: {'observation_period_num': 245, 'train_rates': 0.9878118154374944, 'learning_rate': 0.0006707277514530678, 'batch_size': 84, 'step_size': 5, 'gamma': 0.9866758516613867}. Best is trial 9 with value: 0.08962228139307325.[0m
+[32m[I 2025-01-06 15:43:09,920][0m Trial 11 finished with value: 0.06656400027724219 and parameters: {'observation_period_num': 106, 'train_rates': 0.8505075033844617, 'learning_rate': 0.0008070188187424949, 'batch_size': 255, 'step_size': 4, 'gamma': 0.8577771999909645}. Best is trial 11 with value: 0.06656400027724219.[0m
+[32m[I 2025-01-06 15:43:38,272][0m Trial 12 finished with value: 0.061839487306295834 and parameters: {'observation_period_num': 99, 'train_rates': 0.8525933936946017, 'learning_rate': 0.0009852079332593273, 'batch_size': 236, 'step_size': 4, 'gamma': 0.8276327615782747}. Best is trial 12 with value: 0.061839487306295834.[0m
+[32m[I 2025-01-06 15:44:05,026][0m Trial 13 finished with value: 0.058278336355211395 and parameters: {'observation_period_num': 94, 'train_rates': 0.8367945694345041, 'learning_rate': 0.0009642198537080008, 'batch_size': 241, 'step_size': 5, 'gamma': 0.8282818378183767}. Best is trial 13 with value: 0.058278336355211395.[0m
+[32m[I 2025-01-06 15:44:31,567][0m Trial 14 finished with value: 0.07918175271307805 and parameters: {'observation_period_num': 100, 'train_rates': 0.8239826421115762, 'learning_rate': 0.00019772530702087004, 'batch_size': 249, 'step_size': 6, 'gamma': 0.8200211562881935}. Best is trial 13 with value: 0.058278336355211395.[0m
+[32m[I 2025-01-06 15:44:54,907][0m Trial 15 finished with value: 0.45645376112986735 and parameters: {'observation_period_num': 91, 'train_rates': 0.6446643514415313, 'learning_rate': 1.2831483463363356e-05, 'batch_size': 221, 'step_size': 9, 'gamma': 0.7538480620318354}. Best is trial 13 with value: 0.058278336355211395.[0m
+[32m[I 2025-01-06 15:45:48,829][0m Trial 16 finished with value: 0.05325545814168246 and parameters: {'observation_period_num': 73, 'train_rates': 0.8798534853325906, 'learning_rate': 0.0009712407654034887, 'batch_size': 102, 'step_size': 8, 'gamma': 0.8238967762993827}. Best is trial 16 with value: 0.05325545814168246.[0m
+[32m[I 2025-01-06 15:47:13,099][0m Trial 17 finished with value: 0.04739216207435318 and parameters: {'observation_period_num': 65, 'train_rates': 0.9116152305375811, 'learning_rate': 0.00018066648372507023, 'batch_size': 67, 'step_size': 15, 'gamma': 0.7940210330963694}. Best is trial 17 with value: 0.04739216207435318.[0m
+[32m[I 2025-01-06 15:49:00,300][0m Trial 18 finished with value: 0.050953799943355 and parameters: {'observation_period_num': 57, 'train_rates': 0.9241203737051564, 'learning_rate': 0.00016555130886884977, 'batch_size': 53, 'step_size': 15, 'gamma': 0.7855912074962632}. Best is trial 17 with value: 0.04739216207435318.[0m
+[32m[I 2025-01-06 15:51:29,390][0m Trial 19 finished with value: 0.02774444305234485 and parameters: {'observation_period_num': 5, 'train_rates': 0.9634440601671468, 'learning_rate': 0.00014910485011765924, 'batch_size': 40, 'step_size': 15, 'gamma': 0.7536108338451725}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 15:56:09,751][0m Trial 20 finished with value: 0.05383466207422316 and parameters: {'observation_period_num': 13, 'train_rates': 0.9838625308829047, 'learning_rate': 9.004268248288813e-06, 'batch_size': 22, 'step_size': 15, 'gamma': 0.7502580761732011}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 15:57:53,287][0m Trial 21 finished with value: 0.050462492134260094 and parameters: {'observation_period_num': 44, 'train_rates': 0.9367490463538148, 'learning_rate': 0.00015783055204492632, 'batch_size': 56, 'step_size': 15, 'gamma': 0.7838185687496538}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 15:59:32,058][0m Trial 22 finished with value: 0.04166698038098541 and parameters: {'observation_period_num': 34, 'train_rates': 0.9308874688482229, 'learning_rate': 0.00012370461708213805, 'batch_size': 59, 'step_size': 14, 'gamma': 0.7824938653630922}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 16:01:15,324][0m Trial 23 finished with value: 0.04944421012293209 and parameters: {'observation_period_num': 26, 'train_rates': 0.9664150787668858, 'learning_rate': 7.017678430593401e-05, 'batch_size': 62, 'step_size': 13, 'gamma': 0.7719121286120739}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 16:02:31,844][0m Trial 24 finished with value: 0.032142804684648245 and parameters: {'observation_period_num': 12, 'train_rates': 0.9345197066438276, 'learning_rate': 0.000285880133372493, 'batch_size': 79, 'step_size': 14, 'gamma': 0.7987108492267704}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 16:04:56,405][0m Trial 25 finished with value: 0.037072341661991144 and parameters: {'observation_period_num': 13, 'train_rates': 0.9441634867661611, 'learning_rate': 0.00036492640847121444, 'batch_size': 42, 'step_size': 10, 'gamma': 0.7621478494369336}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 16:07:33,059][0m Trial 26 finished with value: 0.03680864717892331 and parameters: {'observation_period_num': 6, 'train_rates': 0.9610054208710253, 'learning_rate': 0.0004370358565012008, 'batch_size': 38, 'step_size': 10, 'gamma': 0.7665418117375372}. Best is trial 19 with value: 0.02774444305234485.[0m
+[32m[I 2025-01-06 16:08:42,986][0m Trial 27 finished with value: 0.027405826868409783 and parameters: {'observation_period_num': 8, 'train_rates': 0.8808473104433712, 'learning_rate': 0.0004522100711655023, 'batch_size': 85, 'step_size': 11, 'gamma': 0.8010836297234085}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:09:54,654][0m Trial 28 finished with value: 0.02985479890670269 and parameters: {'observation_period_num': 5, 'train_rates': 0.8837265952077777, 'learning_rate': 0.0002703513133252662, 'batch_size': 89, 'step_size': 11, 'gamma': 0.8008942941579874}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:10:46,972][0m Trial 29 finished with value: 0.07031633444996767 and parameters: {'observation_period_num': 125, 'train_rates': 0.8785527623430838, 'learning_rate': 9.286897339345624e-05, 'batch_size': 106, 'step_size': 11, 'gamma': 0.8380440617953502}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:11:32,670][0m Trial 30 finished with value: 0.03671786018599898 and parameters: {'observation_period_num': 38, 'train_rates': 0.7975740100186728, 'learning_rate': 0.0004999942008067727, 'batch_size': 120, 'step_size': 11, 'gamma': 0.8067213332112287}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:12:43,331][0m Trial 31 finished with value: 0.031884040062626205 and parameters: {'observation_period_num': 7, 'train_rates': 0.904467378668323, 'learning_rate': 0.00025994748949309526, 'batch_size': 82, 'step_size': 13, 'gamma': 0.8019047091140425}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:13:50,182][0m Trial 32 finished with value: 0.030899754166603087 and parameters: {'observation_period_num': 6, 'train_rates': 0.9015567152793627, 'learning_rate': 0.0002167758232979901, 'batch_size': 87, 'step_size': 13, 'gamma': 0.8428909664445141}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:14:47,232][0m Trial 33 finished with value: 0.05010681303187472 and parameters: {'observation_period_num': 55, 'train_rates': 0.873612377133921, 'learning_rate': 5.6447482286050265e-05, 'batch_size': 99, 'step_size': 12, 'gamma': 0.8436018087048464}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:15:29,538][0m Trial 34 finished with value: 0.03991801242253422 and parameters: {'observation_period_num': 32, 'train_rates': 0.8065820553788828, 'learning_rate': 0.00011256304325898874, 'batch_size': 131, 'step_size': 11, 'gamma': 0.8711182424448052}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:16:28,680][0m Trial 35 finished with value: 0.08045802508409207 and parameters: {'observation_period_num': 81, 'train_rates': 0.7736973731058377, 'learning_rate': 0.0005751502971628047, 'batch_size': 87, 'step_size': 12, 'gamma': 0.8911861410008988}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:19:16,791][0m Trial 36 finished with value: 0.06435886502731591 and parameters: {'observation_period_num': 50, 'train_rates': 0.9009675291058717, 'learning_rate': 0.00022571642238731338, 'batch_size': 33, 'step_size': 14, 'gamma': 0.8492123363387302}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:20:14,779][0m Trial 37 finished with value: 0.08397849127143418 and parameters: {'observation_period_num': 24, 'train_rates': 0.6988428973712928, 'learning_rate': 1.8738886769032383e-05, 'batch_size': 96, 'step_size': 13, 'gamma': 0.8814791674738424}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:21:13,013][0m Trial 38 finished with value: 0.05218371131615959 and parameters: {'observation_period_num': 23, 'train_rates': 0.8576806727167612, 'learning_rate': 4.395812997196267e-05, 'batch_size': 118, 'step_size': 10, 'gamma': 0.812770430596734}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:22:06,675][0m Trial 39 finished with value: 0.03406887765662129 and parameters: {'observation_period_num': 5, 'train_rates': 0.9147835612132551, 'learning_rate': 0.00029519486254821214, 'batch_size': 132, 'step_size': 9, 'gamma': 0.8611718028516231}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:23:29,189][0m Trial 40 finished with value: 0.07675384621067745 and parameters: {'observation_period_num': 147, 'train_rates': 0.9707970046699889, 'learning_rate': 0.00011382879282776886, 'batch_size': 70, 'step_size': 8, 'gamma': 0.7933313478593336}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:24:45,919][0m Trial 41 finished with value: 0.03179936250976098 and parameters: {'observation_period_num': 20, 'train_rates': 0.8955797992391084, 'learning_rate': 0.0002498848622815767, 'batch_size': 76, 'step_size': 13, 'gamma': 0.7725751940495942}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:26:39,084][0m Trial 42 finished with value: 0.038243710380190477 and parameters: {'observation_period_num': 21, 'train_rates': 0.8667291943199485, 'learning_rate': 0.0005133030606890939, 'batch_size': 49, 'step_size': 14, 'gamma': 0.7704675119121915}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:27:55,531][0m Trial 43 finished with value: 0.038339047463604815 and parameters: {'observation_period_num': 40, 'train_rates': 0.8926619215629791, 'learning_rate': 0.0003589847719384811, 'batch_size': 78, 'step_size': 12, 'gamma': 0.7750252141227615}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:28:58,321][0m Trial 44 finished with value: 0.04317784998310755 and parameters: {'observation_period_num': 21, 'train_rates': 0.9504349514314308, 'learning_rate': 0.00014846130438668593, 'batch_size': 96, 'step_size': 13, 'gamma': 0.7571079444749249}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:31:59,652][0m Trial 45 finished with value: 0.04281991793161956 and parameters: {'observation_period_num': 33, 'train_rates': 0.8179816632371568, 'learning_rate': 0.0006779581302042293, 'batch_size': 29, 'step_size': 11, 'gamma': 0.813883903318606}. Best is trial 27 with value: 0.027405826868409783.[0m
+[32m[I 2025-01-06 16:33:19,855][0m Trial 46 finished with value: 0.024909754283726215 and parameters: {'observation_period_num': 5, 'train_rates': 0.8427026185226321, 'learning_rate': 0.00023344724103299152, 'batch_size': 71, 'step_size': 14, 'gamma': 0.917357283496399}. Best is trial 46 with value: 0.024909754283726215.[0m
+[32m[I 2025-01-06 16:33:59,423][0m Trial 47 finished with value: 0.603084899877247 and parameters: {'observation_period_num': 209, 'train_rates': 0.7784714421576198, 'learning_rate': 2.711844841535578e-06, 'batch_size': 144, 'step_size': 14, 'gamma': 0.9206936916414779}. Best is trial 46 with value: 0.024909754283726215.[0m
+[32m[I 2025-01-06 16:35:54,023][0m Trial 48 finished with value: 0.04917174281560228 and parameters: {'observation_period_num': 48, 'train_rates': 0.8354970051178399, 'learning_rate': 7.97365822731159e-05, 'batch_size': 46, 'step_size': 12, 'gamma': 0.946696940566281}. Best is trial 46 with value: 0.024909754283726215.[0m
+[32m[I 2025-01-06 16:36:45,731][0m Trial 49 finished with value: 0.07431572111319174 and parameters: {'observation_period_num': 114, 'train_rates': 0.8476398928159727, 'learning_rate': 0.00021586269840462584, 'batch_size': 112, 'step_size': 15, 'gamma': 0.9109859834800652}. Best is trial 46 with value: 0.024909754283726215.[0m
+seasonal_1 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_2
+[32m[I 2025-01-06 16:36:45,741][0m A new study created in memory with name: no-name-38d18775-6afd-4456-a653-0dbe69613640[0m
+[32m[I 2025-01-06 16:37:41,359][0m Trial 0 finished with value: 0.9791847201168234 and parameters: {'observation_period_num': 11, 'train_rates': 0.9331704327803301, 'learning_rate': 2.080253164384778e-06, 'batch_size': 156, 'step_size': 6, 'gamma': 0.7721829345803809}. Best is trial 0 with value: 0.9791847201168234.[0m
+[32m[I 2025-01-06 16:38:47,157][0m Trial 1 finished with value: 1.5545788454549982 and parameters: {'observation_period_num': 158, 'train_rates': 0.8329480785036535, 'learning_rate': 1.1260389762574432e-06, 'batch_size': 99, 'step_size': 2, 'gamma': 0.8190442872665593}. Best is trial 0 with value: 0.9791847201168234.[0m
+[32m[I 2025-01-06 16:39:36,280][0m Trial 2 finished with value: 0.1369379293483595 and parameters: {'observation_period_num': 190, 'train_rates': 0.7173285574005329, 'learning_rate': 0.00022893708252844723, 'batch_size': 135, 'step_size': 2, 'gamma': 0.9585618265081401}. Best is trial 2 with value: 0.1369379293483595.[0m
+[32m[I 2025-01-06 16:40:15,306][0m Trial 3 finished with value: 0.23691021626083447 and parameters: {'observation_period_num': 215, 'train_rates': 0.6725676312633453, 'learning_rate': 0.0006755112898213959, 'batch_size': 211, 'step_size': 1, 'gamma': 0.9005622426522342}. Best is trial 2 with value: 0.1369379293483595.[0m
+[32m[I 2025-01-06 16:40:54,622][0m Trial 4 finished with value: 0.7802388177405172 and parameters: {'observation_period_num': 219, 'train_rates': 0.8136436711621118, 'learning_rate': 4.4746582095406315e-06, 'batch_size': 255, 'step_size': 5, 'gamma': 0.8327510476555335}. Best is trial 2 with value: 0.1369379293483595.[0m
+[32m[I 2025-01-06 16:41:52,190][0m Trial 5 finished with value: 0.11536445523935539 and parameters: {'observation_period_num': 62, 'train_rates': 0.7668342421248271, 'learning_rate': 2.9240915986974175e-05, 'batch_size': 186, 'step_size': 13, 'gamma': 0.8274634718216445}. Best is trial 5 with value: 0.11536445523935539.[0m
+[32m[I 2025-01-06 16:45:49,818][0m Trial 6 finished with value: 0.06520608357846525 and parameters: {'observation_period_num': 158, 'train_rates': 0.8996236161045901, 'learning_rate': 3.179594944422904e-05, 'batch_size': 23, 'step_size': 12, 'gamma': 0.8062715466081918}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 16:46:43,085][0m Trial 7 finished with value: 0.13868531474992998 and parameters: {'observation_period_num': 190, 'train_rates': 0.7789465253243509, 'learning_rate': 0.0003754593134075743, 'batch_size': 100, 'step_size': 3, 'gamma': 0.9714118114536479}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 16:47:31,396][0m Trial 8 finished with value: 0.5185217015609583 and parameters: {'observation_period_num': 189, 'train_rates': 0.6059860846129577, 'learning_rate': 4.138023562696838e-05, 'batch_size': 99, 'step_size': 1, 'gamma': 0.9170862750917581}. Best is trial 6 with value: 0.06520608357846525.[0m
+Early stopping at epoch 80
+[32m[I 2025-01-06 16:48:04,115][0m Trial 9 finished with value: 0.38906407356262207 and parameters: {'observation_period_num': 156, 'train_rates': 0.9166104278978164, 'learning_rate': 0.00013124329373670552, 'batch_size': 235, 'step_size': 1, 'gamma': 0.8573994678526283}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 16:52:37,558][0m Trial 10 finished with value: 0.0844188588293823 and parameters: {'observation_period_num': 99, 'train_rates': 0.9870690461188407, 'learning_rate': 1.414500947658339e-05, 'batch_size': 21, 'step_size': 13, 'gamma': 0.7505389983022782}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 16:57:57,094][0m Trial 11 finished with value: 0.07475517570972443 and parameters: {'observation_period_num': 92, 'train_rates': 0.9826367166678975, 'learning_rate': 1.0924840749324317e-05, 'batch_size': 18, 'step_size': 13, 'gamma': 0.7545624043051735}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 17:01:50,233][0m Trial 12 finished with value: 0.11506086257734383 and parameters: {'observation_period_num': 93, 'train_rates': 0.8799662821864984, 'learning_rate': 9.104960459980604e-06, 'batch_size': 24, 'step_size': 10, 'gamma': 0.7839240163537753}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 17:03:36,221][0m Trial 13 finished with value: 0.10510541498661041 and parameters: {'observation_period_num': 120, 'train_rates': 0.9892362861494491, 'learning_rate': 7.135541323592318e-05, 'batch_size': 57, 'step_size': 15, 'gamma': 0.7912359953770232}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 17:05:22,584][0m Trial 14 finished with value: 0.12773316956249772 and parameters: {'observation_period_num': 51, 'train_rates': 0.8919264371973941, 'learning_rate': 1.5593023269607207e-05, 'batch_size': 54, 'step_size': 10, 'gamma': 0.7503821799142777}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 17:07:01,360][0m Trial 15 finished with value: 0.33786913898824916 and parameters: {'observation_period_num': 143, 'train_rates': 0.9422499181638953, 'learning_rate': 4.575858578677729e-06, 'batch_size': 57, 'step_size': 10, 'gamma': 0.8052179263063368}. Best is trial 6 with value: 0.06520608357846525.[0m
+[32m[I 2025-01-06 17:11:38,145][0m Trial 16 finished with value: 0.06096241105236027 and parameters: {'observation_period_num': 71, 'train_rates': 0.8499399887582663, 'learning_rate': 4.750287529692998e-05, 'batch_size': 19, 'step_size': 13, 'gamma': 0.8677740077676678}. Best is trial 16 with value: 0.06096241105236027.[0m
+[32m[I 2025-01-06 17:12:49,561][0m Trial 17 finished with value: 0.11729328022761779 and parameters: {'observation_period_num': 250, 'train_rates': 0.878024549247222, 'learning_rate': 7.798706136762463e-05, 'batch_size': 78, 'step_size': 15, 'gamma': 0.8770641415999654}. Best is trial 16 with value: 0.06096241105236027.[0m
+[32m[I 2025-01-06 17:13:35,912][0m Trial 18 finished with value: 0.07946867858520662 and parameters: {'observation_period_num': 47, 'train_rates': 0.8298079067973108, 'learning_rate': 3.6728168876546276e-05, 'batch_size': 134, 'step_size': 8, 'gamma': 0.857265409818746}. Best is trial 16 with value: 0.06096241105236027.[0m
+[32m[I 2025-01-06 17:15:41,767][0m Trial 19 finished with value: 0.09338492066588368 and parameters: {'observation_period_num': 120, 'train_rates': 0.8515160027276879, 'learning_rate': 0.00015811247643771954, 'batch_size': 42, 'step_size': 12, 'gamma': 0.9379599822458642}. Best is trial 16 with value: 0.06096241105236027.[0m
+[32m[I 2025-01-06 17:16:47,744][0m Trial 20 finished with value: 0.03054971542892606 and parameters: {'observation_period_num': 5, 'train_rates': 0.7464142299264174, 'learning_rate': 0.0009440274717430166, 'batch_size': 79, 'step_size': 8, 'gamma': 0.8734496721895422}. Best is trial 20 with value: 0.03054971542892606.[0m
+[32m[I 2025-01-06 17:17:58,592][0m Trial 21 finished with value: 0.029722128843878235 and parameters: {'observation_period_num': 5, 'train_rates': 0.7570898349607914, 'learning_rate': 0.0008649436472810838, 'batch_size': 78, 'step_size': 8, 'gamma': 0.8945679459062693}. Best is trial 21 with value: 0.029722128843878235.[0m
+[32m[I 2025-01-06 17:19:06,281][0m Trial 22 finished with value: 0.02829034141369417 and parameters: {'observation_period_num': 8, 'train_rates': 0.7397271848098861, 'learning_rate': 0.0009481891359050254, 'batch_size': 81, 'step_size': 8, 'gamma': 0.8860548099169184}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:20:14,646][0m Trial 23 finished with value: 0.03524174704156873 and parameters: {'observation_period_num': 6, 'train_rates': 0.734449641753745, 'learning_rate': 0.0009193670233025377, 'batch_size': 78, 'step_size': 7, 'gamma': 0.900571311857918}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:21:06,369][0m Trial 24 finished with value: 0.04746263471159074 and parameters: {'observation_period_num': 29, 'train_rates': 0.6883645217682813, 'learning_rate': 0.0004376955819217659, 'batch_size': 121, 'step_size': 5, 'gamma': 0.8939161156356883}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:22:10,690][0m Trial 25 finished with value: 0.05362561654454927 and parameters: {'observation_period_num': 27, 'train_rates': 0.7461130396956639, 'learning_rate': 0.0009974342572045308, 'batch_size': 82, 'step_size': 9, 'gamma': 0.9323087723106718}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:22:54,946][0m Trial 26 finished with value: 0.051276121132699144 and parameters: {'observation_period_num': 30, 'train_rates': 0.6564770503794889, 'learning_rate': 0.0004385838019131937, 'batch_size': 115, 'step_size': 8, 'gamma': 0.8441185513419311}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:24:05,354][0m Trial 27 finished with value: 0.037542284931987524 and parameters: {'observation_period_num': 8, 'train_rates': 0.7065944749097768, 'learning_rate': 0.00024845550481427677, 'batch_size': 72, 'step_size': 6, 'gamma': 0.8876221652797202}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:24:47,232][0m Trial 28 finished with value: 0.04685031477775839 and parameters: {'observation_period_num': 44, 'train_rates': 0.7895858876787049, 'learning_rate': 0.0005402747958217682, 'batch_size': 170, 'step_size': 9, 'gamma': 0.921293996792533}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:25:30,226][0m Trial 29 finished with value: 0.03988390761361148 and parameters: {'observation_period_num': 23, 'train_rates': 0.7464580838378424, 'learning_rate': 0.0002611196105316794, 'batch_size': 154, 'step_size': 6, 'gamma': 0.9507883107266183}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:27:18,774][0m Trial 30 finished with value: 0.10204431286220514 and parameters: {'observation_period_num': 76, 'train_rates': 0.6408820254353198, 'learning_rate': 0.0007350299182033065, 'batch_size': 42, 'step_size': 7, 'gamma': 0.9868631334627789}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:28:17,933][0m Trial 31 finished with value: 0.0299093781308558 and parameters: {'observation_period_num': 5, 'train_rates': 0.7303241891256533, 'learning_rate': 0.0009833334624248825, 'batch_size': 89, 'step_size': 7, 'gamma': 0.9056138975336998}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:29:17,603][0m Trial 32 finished with value: 0.02941076982329706 and parameters: {'observation_period_num': 16, 'train_rates': 0.7645328393368757, 'learning_rate': 0.0006175268315659512, 'batch_size': 97, 'step_size': 4, 'gamma': 0.9082785187903517}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:30:10,137][0m Trial 33 finished with value: 0.04734480391706576 and parameters: {'observation_period_num': 24, 'train_rates': 0.7146216371859274, 'learning_rate': 0.00033897863030017607, 'batch_size': 96, 'step_size': 3, 'gamma': 0.9184966215606949}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:30:57,381][0m Trial 34 finished with value: 0.03961255455151536 and parameters: {'observation_period_num': 37, 'train_rates': 0.7719003090768692, 'learning_rate': 0.0005927415147637453, 'batch_size': 117, 'step_size': 4, 'gamma': 0.9023312091450455}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:31:56,445][0m Trial 35 finished with value: 0.034324130065524115 and parameters: {'observation_period_num': 19, 'train_rates': 0.7991574637886004, 'learning_rate': 0.00014078579901023427, 'batch_size': 92, 'step_size': 6, 'gamma': 0.8838556748403226}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:32:34,170][0m Trial 36 finished with value: 0.06751977927787854 and parameters: {'observation_period_num': 56, 'train_rates': 0.6963219124102161, 'learning_rate': 0.0006311223784134745, 'batch_size': 146, 'step_size': 5, 'gamma': 0.9144546080314496}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:33:20,265][0m Trial 37 finished with value: 0.03657862371765077 and parameters: {'observation_period_num': 14, 'train_rates': 0.7275880411768728, 'learning_rate': 0.0003002080802618378, 'batch_size': 113, 'step_size': 7, 'gamma': 0.9337490988994184}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:34:42,409][0m Trial 38 finished with value: 0.036872115620784116 and parameters: {'observation_period_num': 40, 'train_rates': 0.8134227403384137, 'learning_rate': 0.00019165197840012054, 'batch_size': 65, 'step_size': 4, 'gamma': 0.9032522048367433}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:35:22,339][0m Trial 39 finished with value: 0.6115364442611563 and parameters: {'observation_period_num': 65, 'train_rates': 0.7590694266682971, 'learning_rate': 2.0490303597106224e-06, 'batch_size': 132, 'step_size': 9, 'gamma': 0.9484823118210628}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:37:11,347][0m Trial 40 finished with value: 0.1282471946960675 and parameters: {'observation_period_num': 79, 'train_rates': 0.6721083885524368, 'learning_rate': 0.0004663884591203833, 'batch_size': 41, 'step_size': 11, 'gamma': 0.8586352152640432}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:38:11,041][0m Trial 41 finished with value: 0.030218566524692708 and parameters: {'observation_period_num': 5, 'train_rates': 0.755823426267337, 'learning_rate': 0.0009978553746333185, 'batch_size': 86, 'step_size': 8, 'gamma': 0.8718491334158087}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:39:02,827][0m Trial 42 finished with value: 0.030625049538653474 and parameters: {'observation_period_num': 16, 'train_rates': 0.79267649544244, 'learning_rate': 0.0007163889459862507, 'batch_size': 105, 'step_size': 8, 'gamma': 0.8419420255911452}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:40:01,990][0m Trial 43 finished with value: 0.03291747405948984 and parameters: {'observation_period_num': 5, 'train_rates': 0.7703374420512942, 'learning_rate': 0.0007484606109412645, 'batch_size': 88, 'step_size': 7, 'gamma': 0.9112715667091992}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:41:16,196][0m Trial 44 finished with value: 0.047700135016082966 and parameters: {'observation_period_num': 34, 'train_rates': 0.7290998484971007, 'learning_rate': 0.0003734078967548341, 'batch_size': 67, 'step_size': 4, 'gamma': 0.8884573130187126}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:42:08,043][0m Trial 45 finished with value: 0.030874124809699713 and parameters: {'observation_period_num': 19, 'train_rates': 0.7585077818116381, 'learning_rate': 0.0009838370275927592, 'batch_size': 107, 'step_size': 9, 'gamma': 0.8618520946097672}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:42:53,164][0m Trial 46 finished with value: 0.04793737277856816 and parameters: {'observation_period_num': 58, 'train_rates': 0.8131343781173589, 'learning_rate': 0.000557768657082384, 'batch_size': 125, 'step_size': 2, 'gamma': 0.8785981137762828}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:43:48,757][0m Trial 47 finished with value: 0.0395117728506841 and parameters: {'observation_period_num': 16, 'train_rates': 0.6943859801831169, 'learning_rate': 0.00010706516603462113, 'batch_size': 90, 'step_size': 11, 'gamma': 0.8453980787430765}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:45:23,530][0m Trial 48 finished with value: 0.12333473702040369 and parameters: {'observation_period_num': 177, 'train_rates': 0.7832915710204699, 'learning_rate': 0.0007224445834815917, 'batch_size': 52, 'step_size': 6, 'gamma': 0.9270311346191781}. Best is trial 22 with value: 0.02829034141369417.[0m
+[32m[I 2025-01-06 17:46:19,890][0m Trial 49 finished with value: 0.05499203433453454 and parameters: {'observation_period_num': 40, 'train_rates': 0.7189242353269185, 'learning_rate': 0.0002101617141479596, 'batch_size': 99, 'step_size': 7, 'gamma': 0.8249169181890758}. Best is trial 22 with value: 0.02829034141369417.[0m
+seasonal_2 の最適ハイパーパラメータが見つかりました
+最適化対象: seasonal_3
+[32m[I 2025-01-06 17:46:19,900][0m A new study created in memory with name: no-name-79ba148f-6c42-43c3-afa2-506d9fc3e3b0[0m
+[32m[I 2025-01-06 17:46:46,889][0m Trial 0 finished with value: 0.11365401696251787 and parameters: {'observation_period_num': 103, 'train_rates': 0.6122812458413577, 'learning_rate': 0.00041110269208227397, 'batch_size': 186, 'step_size': 11, 'gamma': 0.7854596125176158}. Best is trial 0 with value: 0.11365401696251787.[0m
+[32m[I 2025-01-06 17:47:31,230][0m Trial 1 finished with value: 0.30158145099847555 and parameters: {'observation_period_num': 75, 'train_rates': 0.6632356796640121, 'learning_rate': 5.9479790903847e-06, 'batch_size': 110, 'step_size': 6, 'gamma': 0.9268013114573448}. Best is trial 0 with value: 0.11365401696251787.[0m
+[32m[I 2025-01-06 17:47:59,316][0m Trial 2 finished with value: 0.178116178837534 and parameters: {'observation_period_num': 212, 'train_rates': 0.7454404598893675, 'learning_rate': 4.902019971777811e-05, 'batch_size': 222, 'step_size': 11, 'gamma': 0.8380570483404846}. Best is trial 0 with value: 0.11365401696251787.[0m
+[32m[I 2025-01-06 17:48:44,968][0m Trial 3 finished with value: 0.10004331982236797 and parameters: {'observation_period_num': 131, 'train_rates': 0.6863843301962103, 'learning_rate': 0.00016998917309298225, 'batch_size': 102, 'step_size': 5, 'gamma': 0.8972983368168648}. Best is trial 3 with value: 0.10004331982236797.[0m
+[32m[I 2025-01-06 17:50:29,928][0m Trial 4 finished with value: 0.16046642129806393 and parameters: {'observation_period_num': 204, 'train_rates': 0.6800622301475716, 'learning_rate': 6.498865193622161e-05, 'batch_size': 41, 'step_size': 9, 'gamma': 0.7582391755125752}. Best is trial 3 with value: 0.10004331982236797.[0m
+[32m[I 2025-01-06 17:51:00,673][0m Trial 5 finished with value: 0.07110172484096114 and parameters: {'observation_period_num': 17, 'train_rates': 0.70760572392833, 'learning_rate': 6.586213595126542e-05, 'batch_size': 196, 'step_size': 9, 'gamma': 0.8761041158092058}. Best is trial 5 with value: 0.07110172484096114.[0m
+[32m[I 2025-01-06 17:51:26,770][0m Trial 6 finished with value: 0.9118031051208955 and parameters: {'observation_period_num': 175, 'train_rates': 0.6223703115982716, 'learning_rate': 2.7923136677126834e-06, 'batch_size': 247, 'step_size': 6, 'gamma': 0.8523967855093597}. Best is trial 5 with value: 0.07110172484096114.[0m
+[32m[I 2025-01-06 17:52:03,330][0m Trial 7 finished with value: 0.0933346470176685 and parameters: {'observation_period_num': 80, 'train_rates': 0.8728112697431409, 'learning_rate': 0.0009154768712355661, 'batch_size': 225, 'step_size': 8, 'gamma': 0.9407594731095553}. Best is trial 5 with value: 0.07110172484096114.[0m
+[32m[I 2025-01-06 17:52:46,366][0m Trial 8 finished with value: 0.2587754881850959 and parameters: {'observation_period_num': 101, 'train_rates': 0.7235969350767113, 'learning_rate': 1.0734013093207451e-05, 'batch_size': 122, 'step_size': 15, 'gamma': 0.9109358520310732}. Best is trial 5 with value: 0.07110172484096114.[0m
+[32m[I 2025-01-06 17:53:24,584][0m Trial 9 finished with value: 0.19997334480285645 and parameters: {'observation_period_num': 148, 'train_rates': 0.96458933800361, 'learning_rate': 0.00018548969943762422, 'batch_size': 219, 'step_size': 4, 'gamma': 0.7853836606738904}. Best is trial 5 with value: 0.07110172484096114.[0m
+[32m[I 2025-01-06 17:54:05,988][0m Trial 10 finished with value: 0.4644230435997419 and parameters: {'observation_period_num': 9, 'train_rates': 0.8231666635061661, 'learning_rate': 1.2539858279482275e-06, 'batch_size': 168, 'step_size': 2, 'gamma': 0.9824979153481189}. Best is trial 5 with value: 0.07110172484096114.[0m
+[32m[I 2025-01-06 17:54:45,526][0m Trial 11 finished with value: 0.03362321581098643 and parameters: {'observation_period_num': 22, 'train_rates': 0.856332655604034, 'learning_rate': 0.0006924133064415722, 'batch_size': 176, 'step_size': 9, 'gamma': 0.9622516996216115}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 17:55:26,069][0m Trial 12 finished with value: 0.05125286980300625 and parameters: {'observation_period_num': 5, 'train_rates': 0.8825840946018506, 'learning_rate': 2.7147391433665425e-05, 'batch_size': 167, 'step_size': 12, 'gamma': 0.9860373489198476}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 17:56:12,773][0m Trial 13 finished with value: 0.07649755610951356 and parameters: {'observation_period_num': 41, 'train_rates': 0.9230829278017106, 'learning_rate': 1.9200252628362253e-05, 'batch_size': 152, 'step_size': 14, 'gamma': 0.986829862756017}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 17:57:47,028][0m Trial 14 finished with value: 0.052088318428592795 and parameters: {'observation_period_num': 47, 'train_rates': 0.8217086281499572, 'learning_rate': 2.3909779063762552e-05, 'batch_size': 67, 'step_size': 13, 'gamma': 0.962339263871891}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 17:58:36,973][0m Trial 15 finished with value: 0.03984399888295311 and parameters: {'observation_period_num': 42, 'train_rates': 0.8858014062326565, 'learning_rate': 0.00016063400154499928, 'batch_size': 147, 'step_size': 12, 'gamma': 0.9480513097650763}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 17:59:26,856][0m Trial 16 finished with value: 0.05822343751788139 and parameters: {'observation_period_num': 50, 'train_rates': 0.9845208890203713, 'learning_rate': 0.000991779421821339, 'batch_size': 139, 'step_size': 10, 'gamma': 0.9423125358631493}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:00:27,600][0m Trial 17 finished with value: 0.06634925883509514 and parameters: {'observation_period_num': 67, 'train_rates': 0.7640763142691172, 'learning_rate': 0.00020517142734564447, 'batch_size': 86, 'step_size': 8, 'gamma': 0.9543789462010026}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:01:07,852][0m Trial 18 finished with value: 0.14736892017772643 and parameters: {'observation_period_num': 238, 'train_rates': 0.8697872082014675, 'learning_rate': 0.000406034459704714, 'batch_size': 195, 'step_size': 13, 'gamma': 0.8967388523332956}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:01:58,480][0m Trial 19 finished with value: 0.056818616342598986 and parameters: {'observation_period_num': 33, 'train_rates': 0.925031598516635, 'learning_rate': 0.00041778400047457305, 'batch_size': 140, 'step_size': 1, 'gamma': 0.9262419806676792}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:02:35,396][0m Trial 20 finished with value: 0.08141892576112156 and parameters: {'observation_period_num': 102, 'train_rates': 0.8017991037599612, 'learning_rate': 0.0002176155253677504, 'batch_size': 256, 'step_size': 7, 'gamma': 0.8261979091777003}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:03:18,117][0m Trial 21 finished with value: 0.037144678240946055 and parameters: {'observation_period_num': 8, 'train_rates': 0.8670200898593328, 'learning_rate': 9.454968050772301e-05, 'batch_size': 165, 'step_size': 12, 'gamma': 0.9701968822219824}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:04:00,740][0m Trial 22 finished with value: 0.04097266020939073 and parameters: {'observation_period_num': 25, 'train_rates': 0.8561069365849981, 'learning_rate': 8.104723742313822e-05, 'batch_size': 164, 'step_size': 11, 'gamma': 0.95801469586163}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:04:42,040][0m Trial 23 finished with value: 0.12374000961882364 and parameters: {'observation_period_num': 60, 'train_rates': 0.9030803473409978, 'learning_rate': 0.0005690851306423748, 'batch_size': 183, 'step_size': 15, 'gamma': 0.9685004158096742}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:05:42,515][0m Trial 24 finished with value: 0.03655631663640598 and parameters: {'observation_period_num': 28, 'train_rates': 0.8422247637071734, 'learning_rate': 0.0001282057290301968, 'batch_size': 129, 'step_size': 13, 'gamma': 0.940622004065335}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:06:38,519][0m Trial 25 finished with value: 0.03619442014023662 and parameters: {'observation_period_num': 5, 'train_rates': 0.8371544262153919, 'learning_rate': 0.00010549893251935226, 'batch_size': 122, 'step_size': 13, 'gamma': 0.9230525071628742}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:07:36,707][0m Trial 26 finished with value: 0.04047419596009138 and parameters: {'observation_period_num': 29, 'train_rates': 0.7896850068218254, 'learning_rate': 0.00011041392164054413, 'batch_size': 119, 'step_size': 14, 'gamma': 0.9183592558982048}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:08:58,325][0m Trial 27 finished with value: 0.05440264544012278 and parameters: {'observation_period_num': 85, 'train_rates': 0.8328292763017415, 'learning_rate': 0.00027572255280221216, 'batch_size': 85, 'step_size': 10, 'gamma': 0.8752122095794286}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:10:37,076][0m Trial 28 finished with value: 0.0514308826969983 and parameters: {'observation_period_num': 59, 'train_rates': 0.792329728454865, 'learning_rate': 5.123347864285129e-05, 'batch_size': 54, 'step_size': 14, 'gamma': 0.8959847008501304}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:11:44,458][0m Trial 29 finished with value: 0.11588183599235737 and parameters: {'observation_period_num': 130, 'train_rates': 0.8400173809175707, 'learning_rate': 0.0005215274042236218, 'batch_size': 98, 'step_size': 10, 'gamma': 0.9352177384561846}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:15:15,767][0m Trial 30 finished with value: 0.2565959988777133 and parameters: {'observation_period_num': 164, 'train_rates': 0.7645286756877436, 'learning_rate': 0.0003125274126621806, 'batch_size': 23, 'step_size': 13, 'gamma': 0.9130734638051907}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:16:06,487][0m Trial 31 finished with value: 0.04275503580059324 and parameters: {'observation_period_num': 5, 'train_rates': 0.9407544284991535, 'learning_rate': 9.509438480502714e-05, 'batch_size': 127, 'step_size': 12, 'gamma': 0.9719933146343903}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:16:45,928][0m Trial 32 finished with value: 0.040176732233322125 and parameters: {'observation_period_num': 25, 'train_rates': 0.8492718430159971, 'learning_rate': 0.00012293501222702434, 'batch_size': 181, 'step_size': 11, 'gamma': 0.9715274393528462}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:17:29,988][0m Trial 33 finished with value: 0.05894535481686296 and parameters: {'observation_period_num': 20, 'train_rates': 0.8958427676781662, 'learning_rate': 4.3956788488974597e-05, 'batch_size': 157, 'step_size': 12, 'gamma': 0.9330954502459712}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:18:06,195][0m Trial 34 finished with value: 0.11467523766415459 and parameters: {'observation_period_num': 40, 'train_rates': 0.8126761961357913, 'learning_rate': 1.495179452431548e-05, 'batch_size': 207, 'step_size': 13, 'gamma': 0.9495151417353258}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:18:57,282][0m Trial 35 finished with value: 0.08728291969181913 and parameters: {'observation_period_num': 87, 'train_rates': 0.8617513715912419, 'learning_rate': 0.0006953598616862463, 'batch_size': 114, 'step_size': 9, 'gamma': 0.9242709777803689}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:19:34,321][0m Trial 36 finished with value: 0.05819992535089781 and parameters: {'observation_period_num': 15, 'train_rates': 0.7682685550043302, 'learning_rate': 3.65058520308266e-05, 'batch_size': 175, 'step_size': 15, 'gamma': 0.8887860547427417}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:20:35,828][0m Trial 37 finished with value: 0.275517030066228 and parameters: {'observation_period_num': 66, 'train_rates': 0.9131302090275801, 'learning_rate': 7.03254042315772e-06, 'batch_size': 98, 'step_size': 11, 'gamma': 0.8485119329086918}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:21:32,382][0m Trial 38 finished with value: 0.05831005275249481 and parameters: {'observation_period_num': 31, 'train_rates': 0.9506111456401056, 'learning_rate': 6.352754913213826e-05, 'batch_size': 134, 'step_size': 8, 'gamma': 0.909998353541483}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:22:09,107][0m Trial 39 finished with value: 0.061074066915196075 and parameters: {'observation_period_num': 53, 'train_rates': 0.840125872087797, 'learning_rate': 0.0001433756442865647, 'batch_size': 199, 'step_size': 6, 'gamma': 0.8146223769098427}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:22:46,155][0m Trial 40 finished with value: 0.14948056242944288 and parameters: {'observation_period_num': 120, 'train_rates': 0.6013681499837575, 'learning_rate': 0.0002882288850284806, 'batch_size': 130, 'step_size': 4, 'gamma': 0.9748844187955166}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:23:29,351][0m Trial 41 finished with value: 0.03408252603247674 and parameters: {'observation_period_num': 18, 'train_rates': 0.885010104566123, 'learning_rate': 0.0001374502592713503, 'batch_size': 148, 'step_size': 12, 'gamma': 0.9478509458607952}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:24:18,709][0m Trial 42 finished with value: 0.035971642551535274 and parameters: {'observation_period_num': 16, 'train_rates': 0.8725346266439323, 'learning_rate': 7.743954446919961e-05, 'batch_size': 147, 'step_size': 14, 'gamma': 0.9557687780586976}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:25:26,796][0m Trial 43 finished with value: 0.045154215711875854 and parameters: {'observation_period_num': 20, 'train_rates': 0.886749805217929, 'learning_rate': 7.029626635610775e-05, 'batch_size': 147, 'step_size': 14, 'gamma': 0.940470759248206}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:26:29,146][0m Trial 44 finished with value: 0.04826981575671597 and parameters: {'observation_period_num': 36, 'train_rates': 0.8140115853301849, 'learning_rate': 4.703658182789155e-05, 'batch_size': 109, 'step_size': 15, 'gamma': 0.9552337589565629}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:27:18,039][0m Trial 45 finished with value: 0.2064280995492185 and parameters: {'observation_period_num': 193, 'train_rates': 0.9034283257720626, 'learning_rate': 0.00012650538826027832, 'batch_size': 156, 'step_size': 14, 'gamma': 0.8623317932824366}. Best is trial 11 with value: 0.03362321581098643.[0m
+[32m[I 2025-01-06 18:28:04,802][0m Trial 46 finished with value: 0.031977411011854806 and parameters: {'observation_period_num': 15, 'train_rates': 0.8470027130361129, 'learning_rate': 0.00024570407872649013, 'batch_size': 124, 'step_size': 13, 'gamma': 0.9325516019508552}. Best is trial 46 with value: 0.031977411011854806.[0m
+[32m[I 2025-01-06 18:28:49,225][0m Trial 47 finished with value: 0.05856411793442707 and parameters: {'observation_period_num': 18, 'train_rates': 0.6320562136333323, 'learning_rate': 0.0006935869592090345, 'batch_size': 106, 'step_size': 9, 'gamma': 0.9058251622444289}. Best is trial 46 with value: 0.031977411011854806.[0m
+[32m[I 2025-01-06 18:29:55,651][0m Trial 48 finished with value: 0.06068447239623211 and parameters: {'observation_period_num': 73, 'train_rates': 0.9298937826732562, 'learning_rate': 0.00023185882679483788, 'batch_size': 90, 'step_size': 12, 'gamma': 0.9264163981730943}. Best is trial 46 with value: 0.031977411011854806.[0m
+[32m[I 2025-01-06 18:31:12,635][0m Trial 49 finished with value: 0.03537553776065951 and parameters: {'observation_period_num': 13, 'train_rates': 0.8779132852736661, 'learning_rate': 0.00039324279932973985, 'batch_size': 72, 'step_size': 11, 'gamma': 0.9610624159285495}. Best is trial 46 with value: 0.031977411011854806.[0m
+seasonal_3 の最適ハイパーパラメータが見つかりました
+最適化対象: resid
+[32m[I 2025-01-06 18:31:12,645][0m A new study created in memory with name: no-name-77480848-4e8e-47c5-bcd9-1c6aef85c402[0m
+[32m[I 2025-01-06 18:31:46,118][0m Trial 0 finished with value: 0.19791974890884476 and parameters: {'observation_period_num': 123, 'train_rates': 0.929244601534187, 'learning_rate': 0.0003514767023477632, 'batch_size': 197, 'step_size': 14, 'gamma': 0.9556228450236862}. Best is trial 0 with value: 0.19791974890884476.[0m
+[32m[I 2025-01-06 18:32:16,920][0m Trial 1 finished with value: 0.08180357418720251 and parameters: {'observation_period_num': 108, 'train_rates': 0.8098367750253244, 'learning_rate': 0.0006213470145614686, 'batch_size': 239, 'step_size': 12, 'gamma': 0.8363615026692248}. Best is trial 1 with value: 0.08180357418720251.[0m
+[32m[I 2025-01-06 18:34:30,392][0m Trial 2 finished with value: 0.11366188984650832 and parameters: {'observation_period_num': 170, 'train_rates': 0.9766678777135845, 'learning_rate': 7.314918829577177e-05, 'batch_size': 42, 'step_size': 12, 'gamma': 0.929662559076821}. Best is trial 1 with value: 0.08180357418720251.[0m
+[32m[I 2025-01-06 18:37:11,380][0m Trial 3 finished with value: 0.2521999861630259 and parameters: {'observation_period_num': 147, 'train_rates': 0.66068161696556, 'learning_rate': 6.60185704536912e-05, 'batch_size': 27, 'step_size': 6, 'gamma': 0.9571817233507858}. Best is trial 1 with value: 0.08180357418720251.[0m
+[32m[I 2025-01-06 18:37:55,477][0m Trial 4 finished with value: 0.16989360749721527 and parameters: {'observation_period_num': 248, 'train_rates': 0.9607795401854908, 'learning_rate': 0.0001585574720966888, 'batch_size': 213, 'step_size': 12, 'gamma': 0.7935374178806074}. Best is trial 1 with value: 0.08180357418720251.[0m
+[32m[I 2025-01-06 18:39:03,081][0m Trial 5 finished with value: 0.23930916284183854 and parameters: {'observation_period_num': 100, 'train_rates': 0.8555889140410793, 'learning_rate': 1.0896563920625442e-05, 'batch_size': 109, 'step_size': 9, 'gamma': 0.8250557492625012}. Best is trial 1 with value: 0.08180357418720251.[0m
+[32m[I 2025-01-06 18:39:56,768][0m Trial 6 finished with value: 0.08412809974170657 and parameters: {'observation_period_num': 91, 'train_rates': 0.80171742563886, 'learning_rate': 0.00010500201009932517, 'batch_size': 149, 'step_size': 7, 'gamma': 0.8361359246275398}. Best is trial 1 with value: 0.08180357418720251.[0m
+[32m[I 2025-01-06 18:40:38,619][0m Trial 7 finished with value: 0.07602181564509804 and parameters: {'observation_period_num': 67, 'train_rates': 0.6814562823122865, 'learning_rate': 0.00026199917164698326, 'batch_size': 252, 'step_size': 9, 'gamma': 0.9814493855197229}. Best is trial 7 with value: 0.07602181564509804.[0m
+[32m[I 2025-01-06 18:42:38,236][0m Trial 8 finished with value: 0.06469176380949862 and parameters: {'observation_period_num': 67, 'train_rates': 0.9056700038761747, 'learning_rate': 2.57378457289282e-05, 'batch_size': 50, 'step_size': 15, 'gamma': 0.9199304782734848}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:44:40,381][0m Trial 9 finished with value: 0.4815790454072429 and parameters: {'observation_period_num': 143, 'train_rates': 0.7017649793619473, 'learning_rate': 2.6012342618956237e-06, 'batch_size': 40, 'step_size': 8, 'gamma': 0.91535510687534}. Best is trial 8 with value: 0.06469176380949862.[0m
+Early stopping at epoch 99
+[32m[I 2025-01-06 18:45:48,221][0m Trial 10 finished with value: 0.3614641213379566 and parameters: {'observation_period_num': 13, 'train_rates': 0.8919305028242042, 'learning_rate': 8.179063009036691e-06, 'batch_size': 91, 'step_size': 1, 'gamma': 0.8885785469102866}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:46:27,717][0m Trial 11 finished with value: 0.11167873898250762 and parameters: {'observation_period_num': 38, 'train_rates': 0.7399932430323866, 'learning_rate': 1.8517647336168836e-05, 'batch_size': 153, 'step_size': 15, 'gamma': 0.9729804249574242}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:47:22,793][0m Trial 12 finished with value: 0.17887311273564896 and parameters: {'observation_period_num': 61, 'train_rates': 0.601562459457451, 'learning_rate': 0.0009280176228744349, 'batch_size': 80, 'step_size': 4, 'gamma': 0.9874941888114919}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:47:58,516][0m Trial 13 finished with value: 0.13863293694857076 and parameters: {'observation_period_num': 62, 'train_rates': 0.7493162504949108, 'learning_rate': 3.476938313137186e-05, 'batch_size': 256, 'step_size': 10, 'gamma': 0.8980275934047611}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:48:37,229][0m Trial 14 finished with value: 0.6987916880860526 and parameters: {'observation_period_num': 8, 'train_rates': 0.8606036165242977, 'learning_rate': 1.8764517537175044e-06, 'batch_size': 182, 'step_size': 4, 'gamma': 0.9389991080499965}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:49:16,880][0m Trial 15 finished with value: 0.1831183656240287 and parameters: {'observation_period_num': 67, 'train_rates': 0.6173000442018723, 'learning_rate': 0.0002387708976028487, 'batch_size': 120, 'step_size': 10, 'gamma': 0.8751500228781853}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:50:25,134][0m Trial 16 finished with value: 0.399229382860687 and parameters: {'observation_period_num': 178, 'train_rates': 0.674624115701223, 'learning_rate': 5.898589127418895e-06, 'batch_size': 68, 'step_size': 14, 'gamma': 0.9148336743925325}. Best is trial 8 with value: 0.06469176380949862.[0m
+Early stopping at epoch 50
+[32m[I 2025-01-06 18:50:57,693][0m Trial 17 finished with value: 0.6089548573136503 and parameters: {'observation_period_num': 39, 'train_rates': 0.7641069910633006, 'learning_rate': 3.3805397246439925e-05, 'batch_size': 169, 'step_size': 1, 'gamma': 0.7648146543382279}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:51:51,678][0m Trial 18 finished with value: 0.17880366078996465 and parameters: {'observation_period_num': 73, 'train_rates': 0.9144199154575874, 'learning_rate': 1.9440623180596753e-05, 'batch_size': 227, 'step_size': 5, 'gamma': 0.9851925459283839}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:52:44,426][0m Trial 19 finished with value: 0.4515516158412485 and parameters: {'observation_period_num': 224, 'train_rates': 0.8441659990874395, 'learning_rate': 3.7049362545243912e-06, 'batch_size': 131, 'step_size': 11, 'gamma': 0.9402949220252319}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:54:10,230][0m Trial 20 finished with value: 0.44626287228759676 and parameters: {'observation_period_num': 33, 'train_rates': 0.7019656206564151, 'learning_rate': 1.0640564153279657e-06, 'batch_size': 68, 'step_size': 15, 'gamma': 0.8598754539894229}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:55:01,020][0m Trial 21 finished with value: 0.09308495796194263 and parameters: {'observation_period_num': 108, 'train_rates': 0.8026447305540547, 'learning_rate': 0.0006731093493027682, 'batch_size': 253, 'step_size': 13, 'gamma': 0.8469593762637259}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:55:53,339][0m Trial 22 finished with value: 0.14113220536565207 and parameters: {'observation_period_num': 88, 'train_rates': 0.8263450876472153, 'learning_rate': 0.00045558189534004477, 'batch_size': 224, 'step_size': 12, 'gamma': 0.8082537151122042}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:56:42,610][0m Trial 23 finished with value: 0.08965263100770804 and parameters: {'observation_period_num': 118, 'train_rates': 0.8855804117229478, 'learning_rate': 0.0002266779726330506, 'batch_size': 238, 'step_size': 13, 'gamma': 0.8678885163891794}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:57:42,051][0m Trial 24 finished with value: 0.10072403634491942 and parameters: {'observation_period_num': 82, 'train_rates': 0.7836813720153488, 'learning_rate': 0.0009982853083704, 'batch_size': 193, 'step_size': 10, 'gamma': 0.9021108785595499}. Best is trial 8 with value: 0.06469176380949862.[0m
+[32m[I 2025-01-06 18:58:45,448][0m Trial 25 finished with value: 0.05836379528045654 and parameters: {'observation_period_num': 47, 'train_rates': 0.9414354969613222, 'learning_rate': 0.0004265857100950495, 'batch_size': 209, 'step_size': 8, 'gamma': 0.7831350978865096}. Best is trial 25 with value: 0.05836379528045654.[0m
+[32m[I 2025-01-06 18:59:47,129][0m Trial 26 finished with value: 0.12497013807296753 and parameters: {'observation_period_num': 39, 'train_rates': 0.9463894640114379, 'learning_rate': 5.903849351597013e-05, 'batch_size': 207, 'step_size': 8, 'gamma': 0.7564771358304263}. Best is trial 25 with value: 0.05836379528045654.[0m
+[32m[I 2025-01-06 19:00:48,086][0m Trial 27 finished with value: 0.11081336438655853 and parameters: {'observation_period_num': 51, 'train_rates': 0.9871541734055159, 'learning_rate': 0.00012984636833672, 'batch_size': 174, 'step_size': 3, 'gamma': 0.7848772174328678}. Best is trial 25 with value: 0.05836379528045654.[0m
+[32m[I 2025-01-06 19:01:52,606][0m Trial 28 finished with value: 0.043264050598013894 and parameters: {'observation_period_num': 25, 'train_rates': 0.900217761857959, 'learning_rate': 0.00028523769421871185, 'batch_size': 148, 'step_size': 8, 'gamma': 0.9693538202753892}. Best is trial 28 with value: 0.043264050598013894.[0m
+[32m[I 2025-01-06 19:03:09,377][0m Trial 29 finished with value: 0.05115807710178927 and parameters: {'observation_period_num': 20, 'train_rates': 0.930555565488874, 'learning_rate': 0.0003777901184975002, 'batch_size': 101, 'step_size': 7, 'gamma': 0.951844833610355}. Best is trial 28 with value: 0.043264050598013894.[0m
+[32m[I 2025-01-06 19:04:29,141][0m Trial 30 finished with value: 0.04515192484676512 and parameters: {'observation_period_num': 18, 'train_rates': 0.9376139175347269, 'learning_rate': 0.0003867530748234961, 'batch_size': 98, 'step_size': 7, 'gamma': 0.9630294291873174}. Best is trial 28 with value: 0.043264050598013894.[0m
+[32m[I 2025-01-06 19:05:36,080][0m Trial 31 finished with value: 0.047923885163713674 and parameters: {'observation_period_num': 20, 'train_rates': 0.9376214289111641, 'learning_rate': 0.00038869074969624385, 'batch_size': 104, 'step_size': 7, 'gamma': 0.9604427047855184}. Best is trial 28 with value: 0.043264050598013894.[0m
+[32m[I 2025-01-06 19:06:44,323][0m Trial 32 finished with value: 0.07116611289946154 and parameters: {'observation_period_num': 20, 'train_rates': 0.9363462219105851, 'learning_rate': 0.0003340138857548562, 'batch_size': 101, 'step_size': 6, 'gamma': 0.958754933733548}. Best is trial 28 with value: 0.043264050598013894.[0m
+[32m[I 2025-01-06 19:07:33,147][0m Trial 33 finished with value: 0.036682479083538055 and parameters: {'observation_period_num': 19, 'train_rates': 0.8805663295264061, 'learning_rate': 0.0005872443018754975, 'batch_size': 126, 'step_size': 7, 'gamma': 0.9707419165620627}. Best is trial 33 with value: 0.036682479083538055.[0m
+[32m[I 2025-01-06 19:08:21,367][0m Trial 34 finished with value: 0.029034152254462244 and parameters: {'observation_period_num': 5, 'train_rates': 0.8848110231778442, 'learning_rate': 0.0006518619006060567, 'batch_size': 136, 'step_size': 6, 'gamma': 0.9672849338501761}. Best is trial 34 with value: 0.029034152254462244.[0m
+[32m[I 2025-01-06 19:09:10,885][0m Trial 35 finished with value: 0.02644257820141849 and parameters: {'observation_period_num': 6, 'train_rates': 0.8863186428789537, 'learning_rate': 0.0006198364506682433, 'batch_size': 128, 'step_size': 6, 'gamma': 0.9718106993676381}. Best is trial 35 with value: 0.02644257820141849.[0m
+[32m[I 2025-01-06 19:09:56,799][0m Trial 36 finished with value: 0.025417956763368634 and parameters: {'observation_period_num': 9, 'train_rates': 0.8745581644964268, 'learning_rate': 0.0006678737853552279, 'batch_size': 137, 'step_size': 5, 'gamma': 0.9416180577297116}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:10:52,390][0m Trial 37 finished with value: 0.033464093743772294 and parameters: {'observation_period_num': 8, 'train_rates': 0.8764815904287303, 'learning_rate': 0.0005466778246147201, 'batch_size': 128, 'step_size': 5, 'gamma': 0.9409250196671588}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:11:38,187][0m Trial 38 finished with value: 0.03620365032292025 and parameters: {'observation_period_num': 9, 'train_rates': 0.8414341663120112, 'learning_rate': 0.0001695259653406493, 'batch_size': 139, 'step_size': 3, 'gamma': 0.9432419586015867}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:12:22,760][0m Trial 39 finished with value: 0.04152041513265835 and parameters: {'observation_period_num': 51, 'train_rates': 0.8758298965482051, 'learning_rate': 0.000650395650286271, 'batch_size': 161, 'step_size': 5, 'gamma': 0.9296814805801388}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:13:15,995][0m Trial 40 finished with value: 0.039209511189396126 and parameters: {'observation_period_num': 5, 'train_rates': 0.8592908298847288, 'learning_rate': 9.27543001071458e-05, 'batch_size': 117, 'step_size': 5, 'gamma': 0.9312147110982447}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:14:03,493][0m Trial 41 finished with value: 0.03962086158255154 and parameters: {'observation_period_num': 30, 'train_rates': 0.8365582451983558, 'learning_rate': 0.00016762137240728363, 'batch_size': 138, 'step_size': 3, 'gamma': 0.9462148369001607}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:14:57,303][0m Trial 42 finished with value: 0.029732416343429813 and parameters: {'observation_period_num': 11, 'train_rates': 0.8357272804712204, 'learning_rate': 0.0007288715543354175, 'batch_size': 144, 'step_size': 2, 'gamma': 0.9505951330778757}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:15:48,506][0m Trial 43 finished with value: 0.03494395782935967 and parameters: {'observation_period_num': 30, 'train_rates': 0.8239269852072806, 'learning_rate': 0.0007511468652255514, 'batch_size': 144, 'step_size': 2, 'gamma': 0.9223756518725771}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:16:35,990][0m Trial 44 finished with value: 0.03144877867364302 and parameters: {'observation_period_num': 6, 'train_rates': 0.916529455492874, 'learning_rate': 0.0005369549593833243, 'batch_size': 158, 'step_size': 4, 'gamma': 0.9770972277885956}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:17:19,830][0m Trial 45 finished with value: 0.23511086404323578 and parameters: {'observation_period_num': 178, 'train_rates': 0.9644109068192316, 'learning_rate': 0.0008532029067323563, 'batch_size': 162, 'step_size': 6, 'gamma': 0.9782785127325319}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:18:02,256][0m Trial 46 finished with value: 0.04643275768542842 and parameters: {'observation_period_num': 47, 'train_rates': 0.9109992465306624, 'learning_rate': 0.0005085636972038715, 'batch_size': 155, 'step_size': 4, 'gamma': 0.9738558500534523}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:18:56,111][0m Trial 47 finished with value: 0.03567913603262011 and parameters: {'observation_period_num': 7, 'train_rates': 0.9156552408878738, 'learning_rate': 0.00020811280645936523, 'batch_size': 117, 'step_size': 2, 'gamma': 0.9864048640407228}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:19:36,856][0m Trial 48 finished with value: 0.11072653532028198 and parameters: {'observation_period_num': 219, 'train_rates': 0.9627848731932716, 'learning_rate': 0.0009118500351693233, 'batch_size': 188, 'step_size': 2, 'gamma': 0.9538130490664555}. Best is trial 36 with value: 0.025417956763368634.[0m
+[32m[I 2025-01-06 19:20:21,643][0m Trial 49 finished with value: 0.041333908568831935 and parameters: {'observation_period_num': 30, 'train_rates': 0.8649594693263, 'learning_rate': 0.0006023191833295748, 'batch_size': 180, 'step_size': 4, 'gamma': 0.9654795493688634}. Best is trial 36 with value: 0.025417956763368634.[0m
+resid の最適ハイパーパラメータが見つかりました
+最適ハイパーパラメータが best_hyperparameters_AAPL_iTransformer.json に保存されました
+Training trend component with params: {'observation_period_num': 7, 'train_rates': 0.6423501770586361, 'learning_rate': 0.0005219853339379502, 'batch_size': 95, 'step_size': 15, 'gamma': 0.956477095892929}
+Epoch 1/300, trend Loss: 0.3468 | 0.1714
+Epoch 2/300, trend Loss: 0.1625 | 0.1170
+Epoch 3/300, trend Loss: 0.1412 | 0.1321
+Epoch 4/300, trend Loss: 0.1262 | 0.1085
+Epoch 5/300, trend Loss: 0.1145 | 0.0734
+Epoch 6/300, trend Loss: 0.1103 | 0.0680
+Epoch 7/300, trend Loss: 0.1077 | 0.0663
+Epoch 8/300, trend Loss: 0.1096 | 0.0664
+Epoch 9/300, trend Loss: 0.1142 | 0.0717
+Epoch 10/300, trend Loss: 0.1125 | 0.1010
+Epoch 11/300, trend Loss: 0.1254 | 0.0718
+Epoch 12/300, trend Loss: 0.1069 | 0.0566
+Epoch 13/300, trend Loss: 0.0989 | 0.0511
+Epoch 14/300, trend Loss: 0.0951 | 0.0649
+Epoch 15/300, trend Loss: 0.0937 | 0.0610
+Epoch 16/300, trend Loss: 0.0912 | 0.0679
+Epoch 17/300, trend Loss: 0.0907 | 0.0616
+Epoch 18/300, trend Loss: 0.0893 | 0.0621
+Epoch 19/300, trend Loss: 0.0888 | 0.0550
+Epoch 20/300, trend Loss: 0.0874 | 0.0572
+Epoch 21/300, trend Loss: 0.0868 | 0.0521
+Epoch 22/300, trend Loss: 0.0856 | 0.0525
+Epoch 23/300, trend Loss: 0.0856 | 0.0505
+Epoch 24/300, trend Loss: 0.0849 | 0.0484
+Epoch 25/300, trend Loss: 0.0846 | 0.0441
+Epoch 26/300, trend Loss: 0.0852 | 0.0462
+Epoch 27/300, trend Loss: 0.0848 | 0.0424
+Epoch 28/300, trend Loss: 0.0817 | 0.0431
+Epoch 29/300, trend Loss: 0.0807 | 0.0418
+Epoch 30/300, trend Loss: 0.0800 | 0.0412
+Epoch 31/300, trend Loss: 0.0793 | 0.0402
+Epoch 32/300, trend Loss: 0.0786 | 0.0403
+Epoch 33/300, trend Loss: 0.0781 | 0.0402
+Epoch 34/300, trend Loss: 0.0777 | 0.0392
+Epoch 35/300, trend Loss: 0.0772 | 0.0375
+Epoch 36/300, trend Loss: 0.0765 | 0.0359
+Epoch 37/300, trend Loss: 0.0759 | 0.0352
+Epoch 38/300, trend Loss: 0.0755 | 0.0350
+Epoch 39/300, trend Loss: 0.0751 | 0.0345
+Epoch 40/300, trend Loss: 0.0747 | 0.0327
+Epoch 41/300, trend Loss: 0.0743 | 0.0323
+Epoch 42/300, trend Loss: 0.0740 | 0.0320
+Epoch 43/300, trend Loss: 0.0734 | 0.0330
+Epoch 44/300, trend Loss: 0.0732 | 0.0357
+Epoch 45/300, trend Loss: 0.0746 | 0.0360
+Epoch 46/300, trend Loss: 0.0743 | 0.0343
+Epoch 47/300, trend Loss: 0.0733 | 0.0310
+Epoch 48/300, trend Loss: 0.0729 | 0.0313
+Epoch 49/300, trend Loss: 0.0756 | 0.0323
+Epoch 50/300, trend Loss: 0.0737 | 0.0324
+Epoch 51/300, trend Loss: 0.0733 | 0.0294
+Epoch 52/300, trend Loss: 0.0731 | 0.0322
+Epoch 53/300, trend Loss: 0.0724 | 0.0351
+Epoch 54/300, trend Loss: 0.0754 | 0.0340
+Epoch 55/300, trend Loss: 0.0739 | 0.0375
+Epoch 56/300, trend Loss: 0.0724 | 0.0371
+Epoch 57/300, trend Loss: 0.0745 | 0.0405
+Epoch 58/300, trend Loss: 0.0770 | 0.0545
+Epoch 59/300, trend Loss: 0.0774 | 0.0369
+Epoch 60/300, trend Loss: 0.0817 | 0.0415
+Epoch 61/300, trend Loss: 0.0846 | 0.1025
+Epoch 62/300, trend Loss: 0.1017 | 0.0507
+Epoch 63/300, trend Loss: 0.0834 | 0.0496
+Epoch 64/300, trend Loss: 0.0769 | 0.0466
+Epoch 65/300, trend Loss: 0.0751 | 0.0307
+Epoch 66/300, trend Loss: 0.0727 | 0.0346
+Epoch 67/300, trend Loss: 0.0714 | 0.0364
+Epoch 68/300, trend Loss: 0.0702 | 0.0328
+Epoch 69/300, trend Loss: 0.0699 | 0.0324
+Epoch 70/300, trend Loss: 0.0693 | 0.0310
+Epoch 71/300, trend Loss: 0.0691 | 0.0307
+Epoch 72/300, trend Loss: 0.0704 | 0.0325
+Epoch 73/300, trend Loss: 0.0729 | 0.0339
+Epoch 74/300, trend Loss: 0.0750 | 0.0359
+Epoch 75/300, trend Loss: 0.0739 | 0.0472
+Epoch 76/300, trend Loss: 0.0704 | 0.0302
+Epoch 77/300, trend Loss: 0.0681 | 0.0414
+Epoch 78/300, trend Loss: 0.0684 | 0.0294
+Epoch 79/300, trend Loss: 0.0673 | 0.0369
+Epoch 80/300, trend Loss: 0.0684 | 0.0281
+Epoch 81/300, trend Loss: 0.0686 | 0.0433
+Epoch 82/300, trend Loss: 0.0699 | 0.0310
+Epoch 83/300, trend Loss: 0.0703 | 0.0439
+Epoch 84/300, trend Loss: 0.0709 | 0.0293
+Epoch 85/300, trend Loss: 0.0721 | 0.0479
+Epoch 86/300, trend Loss: 0.0724 | 0.0312
+Epoch 87/300, trend Loss: 0.0750 | 0.0434
+Epoch 88/300, trend Loss: 0.0789 | 0.0397
+Epoch 89/300, trend Loss: 0.0735 | 0.0325
+Epoch 90/300, trend Loss: 0.0776 | 0.0323
+Epoch 91/300, trend Loss: 0.0749 | 0.0364
+Epoch 92/300, trend Loss: 0.0754 | 0.0344
+Epoch 93/300, trend Loss: 0.0744 | 0.0483
+Epoch 94/300, trend Loss: 0.0820 | 0.0389
+Epoch 95/300, trend Loss: 0.0709 | 0.0356
+Epoch 96/300, trend Loss: 0.0666 | 0.0291
+Epoch 97/300, trend Loss: 0.0665 | 0.0277
+Epoch 98/300, trend Loss: 0.0646 | 0.0294
+Epoch 99/300, trend Loss: 0.0647 | 0.0276
+Epoch 100/300, trend Loss: 0.0645 | 0.0277
+Epoch 101/300, trend Loss: 0.0644 | 0.0283
+Epoch 102/300, trend Loss: 0.0645 | 0.0285
+Epoch 103/300, trend Loss: 0.0642 | 0.0308
+Epoch 104/300, trend Loss: 0.0644 | 0.0296
+Epoch 105/300, trend Loss: 0.0639 | 0.0335
+Epoch 106/300, trend Loss: 0.0645 | 0.0288
+Epoch 107/300, trend Loss: 0.0622 | 0.0392
+Epoch 108/300, trend Loss: 0.0647 | 0.0317
+Epoch 109/300, trend Loss: 0.0666 | 0.0331
+Epoch 110/300, trend Loss: 0.0653 | 0.0299
+Epoch 111/300, trend Loss: 0.0646 | 0.0370
+Epoch 112/300, trend Loss: 0.0647 | 0.0322
+Epoch 113/300, trend Loss: 0.0691 | 0.0425
+Epoch 114/300, trend Loss: 0.0697 | 0.0313
+Epoch 115/300, trend Loss: 0.0668 | 0.0373
+Epoch 116/300, trend Loss: 0.0658 | 0.0300
+Epoch 117/300, trend Loss: 0.0656 | 0.0350
+Epoch 118/300, trend Loss: 0.0647 | 0.0292
+Epoch 119/300, trend Loss: 0.0637 | 0.0369
+Epoch 120/300, trend Loss: 0.0624 | 0.0294
+Epoch 121/300, trend Loss: 0.0609 | 0.0335
+Epoch 122/300, trend Loss: 0.0645 | 0.0370
+Epoch 123/300, trend Loss: 0.0702 | 0.0338
+Epoch 124/300, trend Loss: 0.0680 | 0.0366
+Epoch 125/300, trend Loss: 0.0655 | 0.0259
+Epoch 126/300, trend Loss: 0.0635 | 0.0298
+Epoch 127/300, trend Loss: 0.0629 | 0.0246
+Epoch 128/300, trend Loss: 0.0625 | 0.0300
+Epoch 129/300, trend Loss: 0.0625 | 0.0251
+Epoch 130/300, trend Loss: 0.0625 | 0.0337
+Epoch 131/300, trend Loss: 0.0634 | 0.0250
+Epoch 132/300, trend Loss: 0.0629 | 0.0354
+Epoch 133/300, trend Loss: 0.0641 | 0.0268
+Epoch 134/300, trend Loss: 0.0637 | 0.0349
+Epoch 135/300, trend Loss: 0.0648 | 0.0273
+Epoch 136/300, trend Loss: 0.0647 | 0.0318
+Epoch 137/300, trend Loss: 0.0656 | 0.0274
+Epoch 138/300, trend Loss: 0.0646 | 0.0325
+Epoch 139/300, trend Loss: 0.0660 | 0.0278
+Epoch 140/300, trend Loss: 0.0646 | 0.0263
+Epoch 141/300, trend Loss: 0.0647 | 0.0283
+Epoch 142/300, trend Loss: 0.0637 | 0.0251
+Epoch 143/300, trend Loss: 0.0636 | 0.0278
+Epoch 144/300, trend Loss: 0.0628 | 0.0249
+Epoch 145/300, trend Loss: 0.0623 | 0.0273
+Epoch 146/300, trend Loss: 0.0617 | 0.0246
+Epoch 147/300, trend Loss: 0.0620 | 0.0269
+Epoch 148/300, trend Loss: 0.0616 | 0.0249
+Epoch 149/300, trend Loss: 0.0623 | 0.0266
+Epoch 150/300, trend Loss: 0.0623 | 0.0260
+Epoch 151/300, trend Loss: 0.0633 | 0.0294
+Epoch 152/300, trend Loss: 0.0625 | 0.0280
+Epoch 153/300, trend Loss: 0.0625 | 0.0275
+Epoch 154/300, trend Loss: 0.0618 | 0.0266
+Epoch 155/300, trend Loss: 0.0627 | 0.0285
+Epoch 156/300, trend Loss: 0.0621 | 0.0271
+Epoch 157/300, trend Loss: 0.0629 | 0.0295
+Epoch 158/300, trend Loss: 0.0623 | 0.0279
+Epoch 159/300, trend Loss: 0.0641 | 0.0308
+Epoch 160/300, trend Loss: 0.0619 | 0.0288
+Epoch 161/300, trend Loss: 0.0613 | 0.0294
+Epoch 162/300, trend Loss: 0.0602 | 0.0269
+Epoch 163/300, trend Loss: 0.0608 | 0.0293
+Epoch 164/300, trend Loss: 0.0599 | 0.0267
+Epoch 165/300, trend Loss: 0.0608 | 0.0291
+Epoch 166/300, trend Loss: 0.0597 | 0.0265
+Epoch 167/300, trend Loss: 0.0602 | 0.0299
+Epoch 168/300, trend Loss: 0.0598 | 0.0265
+Epoch 169/300, trend Loss: 0.0600 | 0.0292
+Epoch 170/300, trend Loss: 0.0595 | 0.0255
+Epoch 171/300, trend Loss: 0.0593 | 0.0283
+Epoch 172/300, trend Loss: 0.0589 | 0.0251
+Epoch 173/300, trend Loss: 0.0584 | 0.0273
+Epoch 174/300, trend Loss: 0.0581 | 0.0252
+Epoch 175/300, trend Loss: 0.0578 | 0.0276
+Epoch 176/300, trend Loss: 0.0577 | 0.0262
+Epoch 177/300, trend Loss: 0.0576 | 0.0277
+Epoch 178/300, trend Loss: 0.0595 | 0.0282
+Epoch 179/300, trend Loss: 0.0600 | 0.0298
+Epoch 180/300, trend Loss: 0.0590 | 0.0279
+Epoch 181/300, trend Loss: 0.0595 | 0.0332
+Epoch 182/300, trend Loss: 0.0598 | 0.0275
+Epoch 183/300, trend Loss: 0.0581 | 0.0286
+Epoch 184/300, trend Loss: 0.0554 | 0.0292
+Epoch 185/300, trend Loss: 0.0548 | 0.0283
+Epoch 186/300, trend Loss: 0.0565 | 0.0302
+Epoch 187/300, trend Loss: 0.0604 | 0.0310
+Epoch 188/300, trend Loss: 0.0624 | 0.0343
+Epoch 189/300, trend Loss: 0.0606 | 0.0333
+Epoch 190/300, trend Loss: 0.0629 | 0.0337
+Epoch 191/300, trend Loss: 0.0598 | 0.0305
+Epoch 192/300, trend Loss: 0.0586 | 0.0298
+Epoch 193/300, trend Loss: 0.0575 | 0.0283
+Epoch 194/300, trend Loss: 0.0566 | 0.0315
+Epoch 195/300, trend Loss: 0.0532 | 0.0281
+Epoch 196/300, trend Loss: 0.0567 | 0.0302
+Epoch 197/300, trend Loss: 0.0518 | 0.0296
+Epoch 198/300, trend Loss: 0.0567 | 0.0301
+Epoch 199/300, trend Loss: 0.0603 | 0.0431
+Epoch 200/300, trend Loss: 0.0649 | 0.0311
+Epoch 201/300, trend Loss: 0.0552 | 0.0302
+Epoch 202/300, trend Loss: 0.0521 | 0.0297
+Epoch 203/300, trend Loss: 0.0556 | 0.0293
+Epoch 204/300, trend Loss: 0.0518 | 0.0279
+Epoch 205/300, trend Loss: 0.0500 | 0.0302
+Epoch 206/300, trend Loss: 0.0494 | 0.0280
+Epoch 207/300, trend Loss: 0.0484 | 0.0291
+Epoch 208/300, trend Loss: 0.0492 | 0.0278
+Epoch 209/300, trend Loss: 0.0541 | 0.0301
+Epoch 210/300, trend Loss: 0.0473 | 0.0280
+Epoch 211/300, trend Loss: 0.0484 | 0.0294
+Epoch 212/300, trend Loss: 0.0470 | 0.0284
+Epoch 213/300, trend Loss: 0.0512 | 0.0351
+Epoch 214/300, trend Loss: 0.0556 | 0.0327
+Epoch 215/300, trend Loss: 0.0581 | 0.0313
+Epoch 216/300, trend Loss: 0.0567 | 0.0281
+Epoch 217/300, trend Loss: 0.0556 | 0.0294
+Epoch 218/300, trend Loss: 0.0529 | 0.0308
+Epoch 219/300, trend Loss: 0.0518 | 0.0302
+Epoch 220/300, trend Loss: 0.0496 | 0.0296
+Epoch 221/300, trend Loss: 0.0483 | 0.0292
+Epoch 222/300, trend Loss: 0.0478 | 0.0287
+Epoch 223/300, trend Loss: 0.0472 | 0.0289
+Epoch 224/300, trend Loss: 0.0469 | 0.0287
+Epoch 225/300, trend Loss: 0.0466 | 0.0286
+Epoch 226/300, trend Loss: 0.0462 | 0.0286
+Epoch 227/300, trend Loss: 0.0461 | 0.0286
+Epoch 228/300, trend Loss: 0.0466 | 0.0297
+Epoch 229/300, trend Loss: 0.0462 | 0.0281
+Epoch 230/300, trend Loss: 0.0464 | 0.0284
+Epoch 231/300, trend Loss: 0.0456 | 0.0283
+Epoch 232/300, trend Loss: 0.0470 | 0.0288
+Epoch 233/300, trend Loss: 0.0465 | 0.0278
+Epoch 234/300, trend Loss: 0.0475 | 0.0311
+Epoch 235/300, trend Loss: 0.0475 | 0.0296
+Epoch 236/300, trend Loss: 0.0467 | 0.0298
+Epoch 237/300, trend Loss: 0.0458 | 0.0293
+Epoch 238/300, trend Loss: 0.0456 | 0.0296
+Epoch 239/300, trend Loss: 0.0451 | 0.0291
+Epoch 240/300, trend Loss: 0.0447 | 0.0298
+Epoch 241/300, trend Loss: 0.0444 | 0.0298
+Epoch 242/300, trend Loss: 0.0448 | 0.0308
+Epoch 243/300, trend Loss: 0.0441 | 0.0300
+Epoch 244/300, trend Loss: 0.0444 | 0.0296
+Epoch 245/300, trend Loss: 0.0469 | 0.0293
+Epoch 246/300, trend Loss: 0.0468 | 0.0292
+Epoch 247/300, trend Loss: 0.0465 | 0.0288
+Epoch 248/300, trend Loss: 0.0465 | 0.0300
+Epoch 249/300, trend Loss: 0.0466 | 0.0288
+Epoch 250/300, trend Loss: 0.0464 | 0.0293
+Epoch 251/300, trend Loss: 0.0462 | 0.0300
+Epoch 252/300, trend Loss: 0.0468 | 0.0306
+Epoch 253/300, trend Loss: 0.0465 | 0.0309
+Epoch 254/300, trend Loss: 0.0460 | 0.0311
+Epoch 255/300, trend Loss: 0.0459 | 0.0304
+Epoch 256/300, trend Loss: 0.0455 | 0.0307
+Epoch 257/300, trend Loss: 0.0454 | 0.0303
+Epoch 258/300, trend Loss: 0.0452 | 0.0307
+Epoch 259/300, trend Loss: 0.0451 | 0.0309
+Epoch 260/300, trend Loss: 0.0476 | 0.0319
+Epoch 261/300, trend Loss: 0.0458 | 0.0317
+Epoch 262/300, trend Loss: 0.0450 | 0.0350
+Epoch 263/300, trend Loss: 0.0445 | 0.0309
+Epoch 264/300, trend Loss: 0.0434 | 0.0351
+Epoch 265/300, trend Loss: 0.0430 | 0.0311
+Epoch 266/300, trend Loss: 0.0416 | 0.0315
+Epoch 267/300, trend Loss: 0.0406 | 0.0307
+Epoch 268/300, trend Loss: 0.0419 | 0.0311
+Epoch 269/300, trend Loss: 0.0441 | 0.0331
+Epoch 270/300, trend Loss: 0.0437 | 0.0343
+Epoch 271/300, trend Loss: 0.0449 | 0.0315
+Epoch 272/300, trend Loss: 0.0425 | 0.0319
+Epoch 273/300, trend Loss: 0.0407 | 0.0325
+Epoch 274/300, trend Loss: 0.0397 | 0.0327
+Epoch 275/300, trend Loss: 0.0392 | 0.0334
+Epoch 276/300, trend Loss: 0.0415 | 0.0327
+Epoch 277/300, trend Loss: 0.0413 | 0.0340
+Epoch 278/300, trend Loss: 0.0422 | 0.0330
+Epoch 279/300, trend Loss: 0.0464 | 0.0356
+Epoch 280/300, trend Loss: 0.0448 | 0.0332
+Epoch 281/300, trend Loss: 0.0441 | 0.0336
+Epoch 282/300, trend Loss: 0.0428 | 0.0332
+Epoch 283/300, trend Loss: 0.0415 | 0.0335
+Epoch 284/300, trend Loss: 0.0407 | 0.0335
+Epoch 285/300, trend Loss: 0.0400 | 0.0332
+Epoch 286/300, trend Loss: 0.0403 | 0.0335
+Epoch 287/300, trend Loss: 0.0407 | 0.0423
+Epoch 288/300, trend Loss: 0.0436 | 0.0330
+Epoch 289/300, trend Loss: 0.0448 | 0.0363
+Epoch 290/300, trend Loss: 0.0444 | 0.0340
+Epoch 291/300, trend Loss: 0.0423 | 0.0331
+Epoch 292/300, trend Loss: 0.0393 | 0.0317
+Epoch 293/300, trend Loss: 0.0386 | 0.0324
+Epoch 294/300, trend Loss: 0.0382 | 0.0319
+Epoch 295/300, trend Loss: 0.0389 | 0.0325
+Epoch 296/300, trend Loss: 0.0385 | 0.0331
+Epoch 297/300, trend Loss: 0.0390 | 0.0335
+Epoch 298/300, trend Loss: 0.0383 | 0.0329
+Epoch 299/300, trend Loss: 0.0389 | 0.0335
+Epoch 300/300, trend Loss: 0.0384 | 0.0331
+Training seasonal_0 component with params: {'observation_period_num': 31, 'train_rates': 0.8389234942528127, 'learning_rate': 0.0002832544601522812, 'batch_size': 127, 'step_size': 1, 'gamma': 0.974868271384059}
+Epoch 1/300, seasonal_0 Loss: 0.5908 | 0.3562
+Epoch 2/300, seasonal_0 Loss: 0.2957 | 0.3893
+Epoch 3/300, seasonal_0 Loss: 0.2684 | 0.4700
+Epoch 4/300, seasonal_0 Loss: 0.2204 | 0.2300
+Epoch 5/300, seasonal_0 Loss: 0.1872 | 0.2007
+Epoch 6/300, seasonal_0 Loss: 0.1905 | 0.1889
+Epoch 7/300, seasonal_0 Loss: 0.1877 | 0.1565
+Epoch 8/300, seasonal_0 Loss: 0.1815 | 0.1499
+Epoch 9/300, seasonal_0 Loss: 0.1487 | 0.1397
+Epoch 10/300, seasonal_0 Loss: 0.1321 | 0.1309
+Epoch 11/300, seasonal_0 Loss: 0.1400 | 0.1304
+Epoch 12/300, seasonal_0 Loss: 0.1355 | 0.1247
+Epoch 13/300, seasonal_0 Loss: 0.1227 | 0.1100
+Epoch 14/300, seasonal_0 Loss: 0.1208 | 0.1083
+Epoch 15/300, seasonal_0 Loss: 0.1205 | 0.1037
+Epoch 16/300, seasonal_0 Loss: 0.1164 | 0.1181
+Epoch 17/300, seasonal_0 Loss: 0.1211 | 0.1601
+Epoch 18/300, seasonal_0 Loss: 0.1181 | 0.1322
+Epoch 19/300, seasonal_0 Loss: 0.1140 | 0.1026
+Epoch 20/300, seasonal_0 Loss: 0.1170 | 0.0934
+Epoch 21/300, seasonal_0 Loss: 0.1087 | 0.1169
+Epoch 22/300, seasonal_0 Loss: 0.1084 | 0.0904
+Epoch 23/300, seasonal_0 Loss: 0.1050 | 0.0868
+Epoch 24/300, seasonal_0 Loss: 0.1015 | 0.0861
+Epoch 25/300, seasonal_0 Loss: 0.0994 | 0.0831
+Epoch 26/300, seasonal_0 Loss: 0.0982 | 0.0818
+Epoch 27/300, seasonal_0 Loss: 0.0974 | 0.0815
+Epoch 28/300, seasonal_0 Loss: 0.0962 | 0.0806
+Epoch 29/300, seasonal_0 Loss: 0.0953 | 0.0789
+Epoch 30/300, seasonal_0 Loss: 0.0947 | 0.0781
+Epoch 31/300, seasonal_0 Loss: 0.0939 | 0.0777
+Epoch 32/300, seasonal_0 Loss: 0.0932 | 0.0770
+Epoch 33/300, seasonal_0 Loss: 0.0926 | 0.0762
+Epoch 34/300, seasonal_0 Loss: 0.0921 | 0.0757
+Epoch 35/300, seasonal_0 Loss: 0.0915 | 0.0752
+Epoch 36/300, seasonal_0 Loss: 0.0910 | 0.0747
+Epoch 37/300, seasonal_0 Loss: 0.0906 | 0.0743
+Epoch 38/300, seasonal_0 Loss: 0.0901 | 0.0739
+Epoch 39/300, seasonal_0 Loss: 0.0897 | 0.0735
+Epoch 40/300, seasonal_0 Loss: 0.0893 | 0.0732
+Epoch 41/300, seasonal_0 Loss: 0.0890 | 0.0729
+Epoch 42/300, seasonal_0 Loss: 0.0886 | 0.0726
+Epoch 43/300, seasonal_0 Loss: 0.0883 | 0.0723
+Epoch 44/300, seasonal_0 Loss: 0.0880 | 0.0720
+Epoch 45/300, seasonal_0 Loss: 0.0878 | 0.0718
+Epoch 46/300, seasonal_0 Loss: 0.0875 | 0.0715
+Epoch 47/300, seasonal_0 Loss: 0.0872 | 0.0713
+Epoch 48/300, seasonal_0 Loss: 0.0870 | 0.0711
+Epoch 49/300, seasonal_0 Loss: 0.0868 | 0.0709
+Epoch 50/300, seasonal_0 Loss: 0.0866 | 0.0708
+Epoch 51/300, seasonal_0 Loss: 0.0864 | 0.0706
+Epoch 52/300, seasonal_0 Loss: 0.0862 | 0.0704
+Epoch 53/300, seasonal_0 Loss: 0.0860 | 0.0703
+Epoch 54/300, seasonal_0 Loss: 0.0858 | 0.0702
+Epoch 55/300, seasonal_0 Loss: 0.0857 | 0.0700
+Epoch 56/300, seasonal_0 Loss: 0.0855 | 0.0699
+Epoch 57/300, seasonal_0 Loss: 0.0854 | 0.0698
+Epoch 58/300, seasonal_0 Loss: 0.0853 | 0.0697
+Epoch 59/300, seasonal_0 Loss: 0.0851 | 0.0696
+Epoch 60/300, seasonal_0 Loss: 0.0850 | 0.0695
+Epoch 61/300, seasonal_0 Loss: 0.0849 | 0.0694
+Epoch 62/300, seasonal_0 Loss: 0.0848 | 0.0693
+Epoch 63/300, seasonal_0 Loss: 0.0847 | 0.0692
+Epoch 64/300, seasonal_0 Loss: 0.0846 | 0.0691
+Epoch 65/300, seasonal_0 Loss: 0.0845 | 0.0691
+Epoch 66/300, seasonal_0 Loss: 0.0844 | 0.0690
+Epoch 67/300, seasonal_0 Loss: 0.0843 | 0.0689
+Epoch 68/300, seasonal_0 Loss: 0.0842 | 0.0689
+Epoch 69/300, seasonal_0 Loss: 0.0841 | 0.0688
+Epoch 70/300, seasonal_0 Loss: 0.0841 | 0.0688
+Epoch 71/300, seasonal_0 Loss: 0.0840 | 0.0687
+Epoch 72/300, seasonal_0 Loss: 0.0839 | 0.0686
+Epoch 73/300, seasonal_0 Loss: 0.0839 | 0.0686
+Epoch 74/300, seasonal_0 Loss: 0.0838 | 0.0686
+Epoch 75/300, seasonal_0 Loss: 0.0838 | 0.0685
+Epoch 76/300, seasonal_0 Loss: 0.0837 | 0.0685
+Epoch 77/300, seasonal_0 Loss: 0.0836 | 0.0684
+Epoch 78/300, seasonal_0 Loss: 0.0836 | 0.0684
+Epoch 79/300, seasonal_0 Loss: 0.0835 | 0.0684
+Epoch 80/300, seasonal_0 Loss: 0.0835 | 0.0683
+Epoch 81/300, seasonal_0 Loss: 0.0835 | 0.0683
+Epoch 82/300, seasonal_0 Loss: 0.0834 | 0.0683
+Epoch 83/300, seasonal_0 Loss: 0.0834 | 0.0682
+Epoch 84/300, seasonal_0 Loss: 0.0833 | 0.0682
+Epoch 85/300, seasonal_0 Loss: 0.0833 | 0.0682
+Epoch 86/300, seasonal_0 Loss: 0.0833 | 0.0681
+Epoch 87/300, seasonal_0 Loss: 0.0832 | 0.0681
+Epoch 88/300, seasonal_0 Loss: 0.0832 | 0.0681
+Epoch 89/300, seasonal_0 Loss: 0.0832 | 0.0681
+Epoch 90/300, seasonal_0 Loss: 0.0832 | 0.0681
+Epoch 91/300, seasonal_0 Loss: 0.0831 | 0.0680
+Epoch 92/300, seasonal_0 Loss: 0.0831 | 0.0680
+Epoch 93/300, seasonal_0 Loss: 0.0831 | 0.0680
+Epoch 94/300, seasonal_0 Loss: 0.0831 | 0.0680
+Epoch 95/300, seasonal_0 Loss: 0.0830 | 0.0680
+Epoch 96/300, seasonal_0 Loss: 0.0830 | 0.0680
+Epoch 97/300, seasonal_0 Loss: 0.0830 | 0.0679
+Epoch 98/300, seasonal_0 Loss: 0.0830 | 0.0679
+Epoch 99/300, seasonal_0 Loss: 0.0830 | 0.0679
+Epoch 100/300, seasonal_0 Loss: 0.0829 | 0.0679
+Epoch 101/300, seasonal_0 Loss: 0.0829 | 0.0679
+Epoch 102/300, seasonal_0 Loss: 0.0829 | 0.0679
+Epoch 103/300, seasonal_0 Loss: 0.0829 | 0.0679
+Epoch 104/300, seasonal_0 Loss: 0.0829 | 0.0679
+Epoch 105/300, seasonal_0 Loss: 0.0829 | 0.0678
+Epoch 106/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 107/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 108/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 109/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 110/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 111/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 112/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 113/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 114/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 115/300, seasonal_0 Loss: 0.0828 | 0.0678
+Epoch 116/300, seasonal_0 Loss: 0.0827 | 0.0678
+Epoch 117/300, seasonal_0 Loss: 0.0827 | 0.0678
+Epoch 118/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 119/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 120/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 121/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 122/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 123/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 124/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 125/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 126/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 127/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 128/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 129/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 130/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 131/300, seasonal_0 Loss: 0.0827 | 0.0677
+Epoch 132/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 133/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 134/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 135/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 136/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 137/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 138/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 139/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 140/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 141/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 142/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 143/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 144/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 145/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 146/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 147/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 148/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 149/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 150/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 151/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 152/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 153/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 154/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 155/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 156/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 157/300, seasonal_0 Loss: 0.0826 | 0.0677
+Epoch 158/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 159/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 160/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 161/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 162/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 163/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 164/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 165/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 166/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 167/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 168/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 169/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 170/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 171/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 172/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 173/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 174/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 175/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 176/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 177/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 178/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 179/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 180/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 181/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 182/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 183/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 184/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 185/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 186/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 187/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 188/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 189/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 190/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 191/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 192/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 193/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 194/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 195/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 196/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 197/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 198/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 199/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 200/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 201/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 202/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 203/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 204/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 205/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 206/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 207/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 208/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 209/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 210/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 211/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 212/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 213/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 214/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 215/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 216/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 217/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 218/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 219/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 220/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 221/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 222/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 223/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 224/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 225/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 226/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 227/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 228/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 229/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 230/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 231/300, seasonal_0 Loss: 0.0826 | 0.0676
+Epoch 232/300, seasonal_0 Loss: 0.0826 | 0.0676
+Early stopping for seasonal_0
+Training seasonal_1 component with params: {'observation_period_num': 5, 'train_rates': 0.8427026185226321, 'learning_rate': 0.00023344724103299152, 'batch_size': 71, 'step_size': 14, 'gamma': 0.917357283496399}
+Epoch 1/300, seasonal_1 Loss: 0.3180 | 0.1681
+Epoch 2/300, seasonal_1 Loss: 0.1403 | 0.1020
+Epoch 3/300, seasonal_1 Loss: 0.1296 | 0.0811
+Epoch 4/300, seasonal_1 Loss: 0.1174 | 0.0703
+Epoch 5/300, seasonal_1 Loss: 0.1107 | 0.0640
+Epoch 6/300, seasonal_1 Loss: 0.1070 | 0.0607
+Epoch 7/300, seasonal_1 Loss: 0.1034 | 0.0583
+Epoch 8/300, seasonal_1 Loss: 0.1003 | 0.0574
+Epoch 9/300, seasonal_1 Loss: 0.0981 | 0.0558
+Epoch 10/300, seasonal_1 Loss: 0.0964 | 0.0545
+Epoch 11/300, seasonal_1 Loss: 0.0956 | 0.0540
+Epoch 12/300, seasonal_1 Loss: 0.0953 | 0.0549
+Epoch 13/300, seasonal_1 Loss: 0.0948 | 0.0568
+Epoch 14/300, seasonal_1 Loss: 0.0948 | 0.0580
+Epoch 15/300, seasonal_1 Loss: 0.0955 | 0.0606
+Epoch 16/300, seasonal_1 Loss: 0.0980 | 0.0613
+Epoch 17/300, seasonal_1 Loss: 0.0949 | 0.0612
+Epoch 18/300, seasonal_1 Loss: 0.0920 | 0.0577
+Epoch 19/300, seasonal_1 Loss: 0.0972 | 0.0506
+Epoch 20/300, seasonal_1 Loss: 0.1019 | 0.0456
+Epoch 21/300, seasonal_1 Loss: 0.0951 | 0.0471
+Epoch 22/300, seasonal_1 Loss: 0.0970 | 0.0512
+Epoch 23/300, seasonal_1 Loss: 0.0913 | 0.0489
+Epoch 24/300, seasonal_1 Loss: 0.0861 | 0.0450
+Epoch 25/300, seasonal_1 Loss: 0.0839 | 0.0454
+Epoch 26/300, seasonal_1 Loss: 0.0828 | 0.0444
+Epoch 27/300, seasonal_1 Loss: 0.0821 | 0.0416
+Epoch 28/300, seasonal_1 Loss: 0.0817 | 0.0406
+Epoch 29/300, seasonal_1 Loss: 0.0813 | 0.0384
+Epoch 30/300, seasonal_1 Loss: 0.0808 | 0.0390
+Epoch 31/300, seasonal_1 Loss: 0.0791 | 0.0381
+Epoch 32/300, seasonal_1 Loss: 0.0769 | 0.0378
+Epoch 33/300, seasonal_1 Loss: 0.0750 | 0.0365
+Epoch 34/300, seasonal_1 Loss: 0.0738 | 0.0361
+Epoch 35/300, seasonal_1 Loss: 0.0732 | 0.0355
+Epoch 36/300, seasonal_1 Loss: 0.0725 | 0.0352
+Epoch 37/300, seasonal_1 Loss: 0.0720 | 0.0348
+Epoch 38/300, seasonal_1 Loss: 0.0715 | 0.0345
+Epoch 39/300, seasonal_1 Loss: 0.0709 | 0.0341
+Epoch 40/300, seasonal_1 Loss: 0.0703 | 0.0338
+Epoch 41/300, seasonal_1 Loss: 0.0697 | 0.0333
+Epoch 42/300, seasonal_1 Loss: 0.0691 | 0.0327
+Epoch 43/300, seasonal_1 Loss: 0.0687 | 0.0326
+Epoch 44/300, seasonal_1 Loss: 0.0685 | 0.0322
+Epoch 45/300, seasonal_1 Loss: 0.0684 | 0.0318
+Epoch 46/300, seasonal_1 Loss: 0.0683 | 0.0315
+Epoch 47/300, seasonal_1 Loss: 0.0681 | 0.0310
+Epoch 48/300, seasonal_1 Loss: 0.0680 | 0.0310
+Epoch 49/300, seasonal_1 Loss: 0.0677 | 0.0307
+Epoch 50/300, seasonal_1 Loss: 0.0673 | 0.0308
+Epoch 51/300, seasonal_1 Loss: 0.0670 | 0.0306
+Epoch 52/300, seasonal_1 Loss: 0.0666 | 0.0305
+Epoch 53/300, seasonal_1 Loss: 0.0662 | 0.0306
+Epoch 54/300, seasonal_1 Loss: 0.0661 | 0.0295
+Epoch 55/300, seasonal_1 Loss: 0.0657 | 0.0295
+Epoch 56/300, seasonal_1 Loss: 0.0673 | 0.0319
+Epoch 57/300, seasonal_1 Loss: 0.0660 | 0.0321
+Epoch 58/300, seasonal_1 Loss: 0.0663 | 0.0312
+Epoch 59/300, seasonal_1 Loss: 0.0659 | 0.0298
+Epoch 60/300, seasonal_1 Loss: 0.0655 | 0.0296
+Epoch 61/300, seasonal_1 Loss: 0.0659 | 0.0297
+Epoch 62/300, seasonal_1 Loss: 0.0671 | 0.0318
+Epoch 63/300, seasonal_1 Loss: 0.0670 | 0.0312
+Epoch 64/300, seasonal_1 Loss: 0.0661 | 0.0294
+Epoch 65/300, seasonal_1 Loss: 0.0658 | 0.0306
+Epoch 66/300, seasonal_1 Loss: 0.0655 | 0.0292
+Epoch 67/300, seasonal_1 Loss: 0.0657 | 0.0303
+Epoch 68/300, seasonal_1 Loss: 0.0643 | 0.0295
+Epoch 69/300, seasonal_1 Loss: 0.0643 | 0.0303
+Epoch 70/300, seasonal_1 Loss: 0.0663 | 0.0323
+Epoch 71/300, seasonal_1 Loss: 0.0668 | 0.0311
+Epoch 72/300, seasonal_1 Loss: 0.0684 | 0.0300
+Epoch 73/300, seasonal_1 Loss: 0.0660 | 0.0289
+Epoch 74/300, seasonal_1 Loss: 0.0654 | 0.0300
+Epoch 75/300, seasonal_1 Loss: 0.0661 | 0.0304
+Epoch 76/300, seasonal_1 Loss: 0.0647 | 0.0282
+Epoch 77/300, seasonal_1 Loss: 0.0630 | 0.0279
+Epoch 78/300, seasonal_1 Loss: 0.0635 | 0.0286
+Epoch 79/300, seasonal_1 Loss: 0.0642 | 0.0283
+Epoch 80/300, seasonal_1 Loss: 0.0659 | 0.0288
+Epoch 81/300, seasonal_1 Loss: 0.0671 | 0.0311
+Epoch 82/300, seasonal_1 Loss: 0.0672 | 0.0294
+Epoch 83/300, seasonal_1 Loss: 0.0651 | 0.0288
+Epoch 84/300, seasonal_1 Loss: 0.0631 | 0.0268
+Epoch 85/300, seasonal_1 Loss: 0.0620 | 0.0285
+Epoch 86/300, seasonal_1 Loss: 0.0614 | 0.0273
+Epoch 87/300, seasonal_1 Loss: 0.0611 | 0.0272
+Epoch 88/300, seasonal_1 Loss: 0.0611 | 0.0272
+Epoch 89/300, seasonal_1 Loss: 0.0608 | 0.0266
+Epoch 90/300, seasonal_1 Loss: 0.0602 | 0.0258
+Epoch 91/300, seasonal_1 Loss: 0.0597 | 0.0255
+Epoch 92/300, seasonal_1 Loss: 0.0595 | 0.0254
+Epoch 93/300, seasonal_1 Loss: 0.0596 | 0.0253
+Epoch 94/300, seasonal_1 Loss: 0.0599 | 0.0265
+Epoch 95/300, seasonal_1 Loss: 0.0604 | 0.0271
+Epoch 96/300, seasonal_1 Loss: 0.0607 | 0.0267
+Epoch 97/300, seasonal_1 Loss: 0.0606 | 0.0258
+Epoch 98/300, seasonal_1 Loss: 0.0605 | 0.0249
+Epoch 99/300, seasonal_1 Loss: 0.0601 | 0.0241
+Epoch 100/300, seasonal_1 Loss: 0.0641 | 0.0306
+Epoch 101/300, seasonal_1 Loss: 0.0616 | 0.0250
+Epoch 102/300, seasonal_1 Loss: 0.0594 | 0.0248
+Epoch 103/300, seasonal_1 Loss: 0.0584 | 0.0245
+Epoch 104/300, seasonal_1 Loss: 0.0579 | 0.0238
+Epoch 105/300, seasonal_1 Loss: 0.0578 | 0.0233
+Epoch 106/300, seasonal_1 Loss: 0.0578 | 0.0232
+Epoch 107/300, seasonal_1 Loss: 0.0581 | 0.0252
+Epoch 108/300, seasonal_1 Loss: 0.0592 | 0.0258
+Epoch 109/300, seasonal_1 Loss: 0.0594 | 0.0241
+Epoch 110/300, seasonal_1 Loss: 0.0589 | 0.0252
+Epoch 111/300, seasonal_1 Loss: 0.0586 | 0.0253
+Epoch 112/300, seasonal_1 Loss: 0.0582 | 0.0247
+Epoch 113/300, seasonal_1 Loss: 0.0576 | 0.0250
+Epoch 114/300, seasonal_1 Loss: 0.0572 | 0.0246
+Epoch 115/300, seasonal_1 Loss: 0.0568 | 0.0241
+Epoch 116/300, seasonal_1 Loss: 0.0566 | 0.0238
+Epoch 117/300, seasonal_1 Loss: 0.0565 | 0.0236
+Epoch 118/300, seasonal_1 Loss: 0.0564 | 0.0234
+Epoch 119/300, seasonal_1 Loss: 0.0564 | 0.0234
+Epoch 120/300, seasonal_1 Loss: 0.0564 | 0.0238
+Epoch 121/300, seasonal_1 Loss: 0.0565 | 0.0240
+Epoch 122/300, seasonal_1 Loss: 0.0563 | 0.0239
+Epoch 123/300, seasonal_1 Loss: 0.0561 | 0.0238
+Epoch 124/300, seasonal_1 Loss: 0.0560 | 0.0240
+Epoch 125/300, seasonal_1 Loss: 0.0559 | 0.0244
+Epoch 126/300, seasonal_1 Loss: 0.0559 | 0.0249
+Epoch 127/300, seasonal_1 Loss: 0.0561 | 0.0240
+Epoch 128/300, seasonal_1 Loss: 0.0562 | 0.0241
+Epoch 129/300, seasonal_1 Loss: 0.0560 | 0.0242
+Epoch 130/300, seasonal_1 Loss: 0.0557 | 0.0239
+Epoch 131/300, seasonal_1 Loss: 0.0555 | 0.0236
+Epoch 132/300, seasonal_1 Loss: 0.0553 | 0.0234
+Epoch 133/300, seasonal_1 Loss: 0.0552 | 0.0231
+Epoch 134/300, seasonal_1 Loss: 0.0550 | 0.0228
+Epoch 135/300, seasonal_1 Loss: 0.0548 | 0.0227
+Epoch 136/300, seasonal_1 Loss: 0.0547 | 0.0227
+Epoch 137/300, seasonal_1 Loss: 0.0546 | 0.0228
+Epoch 138/300, seasonal_1 Loss: 0.0547 | 0.0234
+Epoch 139/300, seasonal_1 Loss: 0.0548 | 0.0240
+Epoch 140/300, seasonal_1 Loss: 0.0549 | 0.0243
+Epoch 141/300, seasonal_1 Loss: 0.0548 | 0.0245
+Epoch 142/300, seasonal_1 Loss: 0.0548 | 0.0243
+Epoch 143/300, seasonal_1 Loss: 0.0546 | 0.0237
+Epoch 144/300, seasonal_1 Loss: 0.0545 | 0.0237
+Epoch 145/300, seasonal_1 Loss: 0.0546 | 0.0239
+Epoch 146/300, seasonal_1 Loss: 0.0547 | 0.0240
+Epoch 147/300, seasonal_1 Loss: 0.0548 | 0.0241
+Epoch 148/300, seasonal_1 Loss: 0.0550 | 0.0242
+Epoch 149/300, seasonal_1 Loss: 0.0551 | 0.0241
+Epoch 150/300, seasonal_1 Loss: 0.0555 | 0.0240
+Epoch 151/300, seasonal_1 Loss: 0.0557 | 0.0237
+Epoch 152/300, seasonal_1 Loss: 0.0558 | 0.0242
+Epoch 153/300, seasonal_1 Loss: 0.0553 | 0.0234
+Epoch 154/300, seasonal_1 Loss: 0.0549 | 0.0234
+Epoch 155/300, seasonal_1 Loss: 0.0551 | 0.0244
+Epoch 156/300, seasonal_1 Loss: 0.0549 | 0.0240
+Epoch 157/300, seasonal_1 Loss: 0.0546 | 0.0235
+Epoch 158/300, seasonal_1 Loss: 0.0547 | 0.0240
+Epoch 159/300, seasonal_1 Loss: 0.0543 | 0.0242
+Epoch 160/300, seasonal_1 Loss: 0.0543 | 0.0240
+Epoch 161/300, seasonal_1 Loss: 0.0545 | 0.0236
+Epoch 162/300, seasonal_1 Loss: 0.0557 | 0.0239
+Epoch 163/300, seasonal_1 Loss: 0.0592 | 0.0275
+Epoch 164/300, seasonal_1 Loss: 0.0554 | 0.0234
+Epoch 165/300, seasonal_1 Loss: 0.0549 | 0.0243
+Epoch 166/300, seasonal_1 Loss: 0.0550 | 0.0236
+Epoch 167/300, seasonal_1 Loss: 0.0544 | 0.0234
+Epoch 168/300, seasonal_1 Loss: 0.0539 | 0.0239
+Epoch 169/300, seasonal_1 Loss: 0.0535 | 0.0239
+Epoch 170/300, seasonal_1 Loss: 0.0531 | 0.0239
+Epoch 171/300, seasonal_1 Loss: 0.0526 | 0.0241
+Epoch 172/300, seasonal_1 Loss: 0.0520 | 0.0241
+Epoch 173/300, seasonal_1 Loss: 0.0513 | 0.0240
+Epoch 174/300, seasonal_1 Loss: 0.0507 | 0.0237
+Epoch 175/300, seasonal_1 Loss: 0.0502 | 0.0236
+Epoch 176/300, seasonal_1 Loss: 0.0498 | 0.0235
+Epoch 177/300, seasonal_1 Loss: 0.0496 | 0.0233
+Epoch 178/300, seasonal_1 Loss: 0.0497 | 0.0239
+Epoch 179/300, seasonal_1 Loss: 0.0500 | 0.0236
+Epoch 180/300, seasonal_1 Loss: 0.0524 | 0.0238
+Epoch 181/300, seasonal_1 Loss: 0.0494 | 0.0231
+Epoch 182/300, seasonal_1 Loss: 0.0492 | 0.0238
+Epoch 183/300, seasonal_1 Loss: 0.0495 | 0.0237
+Epoch 184/300, seasonal_1 Loss: 0.0517 | 0.0238
+Epoch 185/300, seasonal_1 Loss: 0.0491 | 0.0233
+Epoch 186/300, seasonal_1 Loss: 0.0497 | 0.0240
+Epoch 187/300, seasonal_1 Loss: 0.0496 | 0.0236
+Epoch 188/300, seasonal_1 Loss: 0.0508 | 0.0237
+Epoch 189/300, seasonal_1 Loss: 0.0494 | 0.0235
+Epoch 190/300, seasonal_1 Loss: 0.0498 | 0.0242
+Epoch 191/300, seasonal_1 Loss: 0.0494 | 0.0233
+Epoch 192/300, seasonal_1 Loss: 0.0488 | 0.0235
+Epoch 193/300, seasonal_1 Loss: 0.0486 | 0.0235
+Epoch 194/300, seasonal_1 Loss: 0.0486 | 0.0239
+Epoch 195/300, seasonal_1 Loss: 0.0489 | 0.0234
+Epoch 196/300, seasonal_1 Loss: 0.0483 | 0.0236
+Epoch 197/300, seasonal_1 Loss: 0.0480 | 0.0236
+Epoch 198/300, seasonal_1 Loss: 0.0479 | 0.0235
+Epoch 199/300, seasonal_1 Loss: 0.0484 | 0.0234
+Epoch 200/300, seasonal_1 Loss: 0.0478 | 0.0233
+Epoch 201/300, seasonal_1 Loss: 0.0478 | 0.0235
+Epoch 202/300, seasonal_1 Loss: 0.0485 | 0.0243
+Epoch 203/300, seasonal_1 Loss: 0.0487 | 0.0232
+Epoch 204/300, seasonal_1 Loss: 0.0483 | 0.0235
+Epoch 205/300, seasonal_1 Loss: 0.0481 | 0.0235
+Epoch 206/300, seasonal_1 Loss: 0.0478 | 0.0237
+Epoch 207/300, seasonal_1 Loss: 0.0483 | 0.0231
+Epoch 208/300, seasonal_1 Loss: 0.0473 | 0.0233
+Epoch 209/300, seasonal_1 Loss: 0.0471 | 0.0232
+Epoch 210/300, seasonal_1 Loss: 0.0474 | 0.0233
+Epoch 211/300, seasonal_1 Loss: 0.0474 | 0.0236
+Epoch 212/300, seasonal_1 Loss: 0.0479 | 0.0231
+Epoch 213/300, seasonal_1 Loss: 0.0470 | 0.0233
+Epoch 214/300, seasonal_1 Loss: 0.0467 | 0.0233
+Epoch 215/300, seasonal_1 Loss: 0.0471 | 0.0233
+Epoch 216/300, seasonal_1 Loss: 0.0473 | 0.0241
+Epoch 217/300, seasonal_1 Loss: 0.0479 | 0.0231
+Epoch 218/300, seasonal_1 Loss: 0.0471 | 0.0233
+Epoch 219/300, seasonal_1 Loss: 0.0463 | 0.0233
+Epoch 220/300, seasonal_1 Loss: 0.0462 | 0.0232
+Epoch 221/300, seasonal_1 Loss: 0.0466 | 0.0233
+Epoch 222/300, seasonal_1 Loss: 0.0473 | 0.0243
+Epoch 223/300, seasonal_1 Loss: 0.0478 | 0.0232
+Epoch 224/300, seasonal_1 Loss: 0.0470 | 0.0233
+Epoch 225/300, seasonal_1 Loss: 0.0461 | 0.0233
+Epoch 226/300, seasonal_1 Loss: 0.0460 | 0.0234
+Epoch 227/300, seasonal_1 Loss: 0.0465 | 0.0232
+Epoch 228/300, seasonal_1 Loss: 0.0464 | 0.0238
+Epoch 229/300, seasonal_1 Loss: 0.0471 | 0.0231
+Epoch 230/300, seasonal_1 Loss: 0.0458 | 0.0233
+Epoch 231/300, seasonal_1 Loss: 0.0456 | 0.0233
+Epoch 232/300, seasonal_1 Loss: 0.0458 | 0.0232
+Epoch 233/300, seasonal_1 Loss: 0.0461 | 0.0239
+Epoch 234/300, seasonal_1 Loss: 0.0469 | 0.0232
+Epoch 235/300, seasonal_1 Loss: 0.0456 | 0.0233
+Epoch 236/300, seasonal_1 Loss: 0.0454 | 0.0234
+Epoch 237/300, seasonal_1 Loss: 0.0456 | 0.0232
+Epoch 238/300, seasonal_1 Loss: 0.0460 | 0.0241
+Epoch 239/300, seasonal_1 Loss: 0.0468 | 0.0232
+Epoch 240/300, seasonal_1 Loss: 0.0455 | 0.0233
+Epoch 241/300, seasonal_1 Loss: 0.0451 | 0.0234
+Epoch 242/300, seasonal_1 Loss: 0.0453 | 0.0232
+Epoch 243/300, seasonal_1 Loss: 0.0454 | 0.0238
+Epoch 244/300, seasonal_1 Loss: 0.0461 | 0.0232
+Epoch 245/300, seasonal_1 Loss: 0.0450 | 0.0233
+Epoch 246/300, seasonal_1 Loss: 0.0449 | 0.0233
+Epoch 247/300, seasonal_1 Loss: 0.0448 | 0.0233
+Epoch 248/300, seasonal_1 Loss: 0.0448 | 0.0232
+Epoch 249/300, seasonal_1 Loss: 0.0449 | 0.0236
+Epoch 250/300, seasonal_1 Loss: 0.0455 | 0.0232
+Epoch 251/300, seasonal_1 Loss: 0.0449 | 0.0237
+Epoch 252/300, seasonal_1 Loss: 0.0454 | 0.0232
+Epoch 253/300, seasonal_1 Loss: 0.0448 | 0.0236
+Epoch 254/300, seasonal_1 Loss: 0.0451 | 0.0232
+Epoch 255/300, seasonal_1 Loss: 0.0447 | 0.0236
+Epoch 256/300, seasonal_1 Loss: 0.0451 | 0.0232
+Epoch 257/300, seasonal_1 Loss: 0.0446 | 0.0235
+Epoch 258/300, seasonal_1 Loss: 0.0448 | 0.0232
+Epoch 259/300, seasonal_1 Loss: 0.0448 | 0.0239
+Epoch 260/300, seasonal_1 Loss: 0.0453 | 0.0233
+Epoch 261/300, seasonal_1 Loss: 0.0445 | 0.0233
+Epoch 262/300, seasonal_1 Loss: 0.0444 | 0.0234
+Epoch 263/300, seasonal_1 Loss: 0.0444 | 0.0232
+Epoch 264/300, seasonal_1 Loss: 0.0445 | 0.0238
+Epoch 265/300, seasonal_1 Loss: 0.0450 | 0.0233
+Epoch 266/300, seasonal_1 Loss: 0.0443 | 0.0234
+Epoch 267/300, seasonal_1 Loss: 0.0442 | 0.0233
+Epoch 268/300, seasonal_1 Loss: 0.0442 | 0.0233
+Epoch 269/300, seasonal_1 Loss: 0.0441 | 0.0233
+Epoch 270/300, seasonal_1 Loss: 0.0441 | 0.0233
+Epoch 271/300, seasonal_1 Loss: 0.0441 | 0.0233
+Epoch 272/300, seasonal_1 Loss: 0.0441 | 0.0234
+Epoch 273/300, seasonal_1 Loss: 0.0442 | 0.0232
+Epoch 274/300, seasonal_1 Loss: 0.0446 | 0.0243
+Epoch 275/300, seasonal_1 Loss: 0.0452 | 0.0236
+Epoch 276/300, seasonal_1 Loss: 0.0444 | 0.0234
+Epoch 277/300, seasonal_1 Loss: 0.0440 | 0.0233
+Epoch 278/300, seasonal_1 Loss: 0.0440 | 0.0232
+Epoch 279/300, seasonal_1 Loss: 0.0440 | 0.0236
+Epoch 280/300, seasonal_1 Loss: 0.0444 | 0.0232
+Epoch 281/300, seasonal_1 Loss: 0.0440 | 0.0236
+Epoch 282/300, seasonal_1 Loss: 0.0442 | 0.0232
+Epoch 283/300, seasonal_1 Loss: 0.0439 | 0.0235
+Epoch 284/300, seasonal_1 Loss: 0.0440 | 0.0232
+Epoch 285/300, seasonal_1 Loss: 0.0439 | 0.0236
+Epoch 286/300, seasonal_1 Loss: 0.0441 | 0.0232
+Epoch 287/300, seasonal_1 Loss: 0.0438 | 0.0236
+Epoch 288/300, seasonal_1 Loss: 0.0440 | 0.0233
+Epoch 289/300, seasonal_1 Loss: 0.0438 | 0.0235
+Epoch 290/300, seasonal_1 Loss: 0.0438 | 0.0232
+Epoch 291/300, seasonal_1 Loss: 0.0437 | 0.0235
+Epoch 292/300, seasonal_1 Loss: 0.0438 | 0.0232
+Epoch 293/300, seasonal_1 Loss: 0.0437 | 0.0236
+Epoch 294/300, seasonal_1 Loss: 0.0438 | 0.0232
+Epoch 295/300, seasonal_1 Loss: 0.0437 | 0.0235
+Epoch 296/300, seasonal_1 Loss: 0.0438 | 0.0233
+Epoch 297/300, seasonal_1 Loss: 0.0436 | 0.0235
+Epoch 298/300, seasonal_1 Loss: 0.0437 | 0.0233
+Epoch 299/300, seasonal_1 Loss: 0.0436 | 0.0235
+Epoch 300/300, seasonal_1 Loss: 0.0437 | 0.0232
+Training seasonal_2 component with params: {'observation_period_num': 8, 'train_rates': 0.7397271848098861, 'learning_rate': 0.0009481891359050254, 'batch_size': 81, 'step_size': 8, 'gamma': 0.8860548099169184}
+Epoch 1/300, seasonal_2 Loss: 0.3810 | 0.1473
+Epoch 2/300, seasonal_2 Loss: 0.1394 | 0.1119
+Epoch 3/300, seasonal_2 Loss: 0.1315 | 0.0950
+Epoch 4/300, seasonal_2 Loss: 0.1172 | 0.0829
+Epoch 5/300, seasonal_2 Loss: 0.1271 | 0.1005
+Epoch 6/300, seasonal_2 Loss: 0.1108 | 0.0734
+Epoch 7/300, seasonal_2 Loss: 0.1136 | 0.0660
+Epoch 8/300, seasonal_2 Loss: 0.1100 | 0.0722
+Epoch 9/300, seasonal_2 Loss: 0.1146 | 0.0755
+Epoch 10/300, seasonal_2 Loss: 0.1009 | 0.0649
+Epoch 11/300, seasonal_2 Loss: 0.0942 | 0.0653
+Epoch 12/300, seasonal_2 Loss: 0.1017 | 0.0588
+Epoch 13/300, seasonal_2 Loss: 0.0926 | 0.0649
+Epoch 14/300, seasonal_2 Loss: 0.0917 | 0.0655
+Epoch 15/300, seasonal_2 Loss: 0.0856 | 0.1157
+Epoch 16/300, seasonal_2 Loss: 0.0898 | 0.0513
+Epoch 17/300, seasonal_2 Loss: 0.0821 | 0.0807
+Epoch 18/300, seasonal_2 Loss: 0.0803 | 0.0579
+Epoch 19/300, seasonal_2 Loss: 0.0783 | 0.0768
+Epoch 20/300, seasonal_2 Loss: 0.0779 | 0.0530
+Epoch 21/300, seasonal_2 Loss: 0.0760 | 0.0716
+Epoch 22/300, seasonal_2 Loss: 0.0768 | 0.0432
+Epoch 23/300, seasonal_2 Loss: 0.0748 | 0.0714
+Epoch 24/300, seasonal_2 Loss: 0.0767 | 0.0395
+Epoch 25/300, seasonal_2 Loss: 0.0739 | 0.0676
+Epoch 26/300, seasonal_2 Loss: 0.0737 | 0.0412
+Epoch 27/300, seasonal_2 Loss: 0.0723 | 0.0646
+Epoch 28/300, seasonal_2 Loss: 0.0732 | 0.0401
+Epoch 29/300, seasonal_2 Loss: 0.0714 | 0.0610
+Epoch 30/300, seasonal_2 Loss: 0.0721 | 0.0371
+Epoch 31/300, seasonal_2 Loss: 0.0706 | 0.0636
+Epoch 32/300, seasonal_2 Loss: 0.0717 | 0.0379
+Epoch 33/300, seasonal_2 Loss: 0.0696 | 0.0629
+Epoch 34/300, seasonal_2 Loss: 0.0703 | 0.0404
+Epoch 35/300, seasonal_2 Loss: 0.0687 | 0.0630
+Epoch 36/300, seasonal_2 Loss: 0.0699 | 0.0381
+Epoch 37/300, seasonal_2 Loss: 0.0681 | 0.0608
+Epoch 38/300, seasonal_2 Loss: 0.0684 | 0.0364
+Epoch 39/300, seasonal_2 Loss: 0.0679 | 0.0618
+Epoch 40/300, seasonal_2 Loss: 0.0763 | 0.0405
+Epoch 41/300, seasonal_2 Loss: 0.0700 | 0.0502
+Epoch 42/300, seasonal_2 Loss: 0.0688 | 0.0532
+Epoch 43/300, seasonal_2 Loss: 0.0677 | 0.0388
+Epoch 44/300, seasonal_2 Loss: 0.0666 | 0.0458
+Epoch 45/300, seasonal_2 Loss: 0.0666 | 0.0459
+Epoch 46/300, seasonal_2 Loss: 0.0658 | 0.0401
+Epoch 47/300, seasonal_2 Loss: 0.0656 | 0.0439
+Epoch 48/300, seasonal_2 Loss: 0.0653 | 0.0388
+Epoch 49/300, seasonal_2 Loss: 0.0646 | 0.0378
+Epoch 50/300, seasonal_2 Loss: 0.0646 | 0.0373
+Epoch 51/300, seasonal_2 Loss: 0.0642 | 0.0385
+Epoch 52/300, seasonal_2 Loss: 0.0641 | 0.0415
+Epoch 53/300, seasonal_2 Loss: 0.0639 | 0.0377
+Epoch 54/300, seasonal_2 Loss: 0.0637 | 0.0370
+Epoch 55/300, seasonal_2 Loss: 0.0637 | 0.0380
+Epoch 56/300, seasonal_2 Loss: 0.0632 | 0.0364
+Epoch 57/300, seasonal_2 Loss: 0.0632 | 0.0374
+Epoch 58/300, seasonal_2 Loss: 0.0631 | 0.0345
+Epoch 59/300, seasonal_2 Loss: 0.0630 | 0.0371
+Epoch 60/300, seasonal_2 Loss: 0.0627 | 0.0362
+Epoch 61/300, seasonal_2 Loss: 0.0633 | 0.0353
+Epoch 62/300, seasonal_2 Loss: 0.0646 | 0.0415
+Epoch 63/300, seasonal_2 Loss: 0.0738 | 0.0365
+Epoch 64/300, seasonal_2 Loss: 0.0674 | 0.0381
+Epoch 65/300, seasonal_2 Loss: 0.0657 | 0.0413
+Epoch 66/300, seasonal_2 Loss: 0.0653 | 0.0349
+Epoch 67/300, seasonal_2 Loss: 0.0644 | 0.0409
+Epoch 68/300, seasonal_2 Loss: 0.0637 | 0.0348
+Epoch 69/300, seasonal_2 Loss: 0.0627 | 0.0361
+Epoch 70/300, seasonal_2 Loss: 0.0624 | 0.0337
+Epoch 71/300, seasonal_2 Loss: 0.0619 | 0.0379
+Epoch 72/300, seasonal_2 Loss: 0.0617 | 0.0339
+Epoch 73/300, seasonal_2 Loss: 0.0615 | 0.0370
+Epoch 74/300, seasonal_2 Loss: 0.0615 | 0.0351
+Epoch 75/300, seasonal_2 Loss: 0.0614 | 0.0375
+Epoch 76/300, seasonal_2 Loss: 0.0613 | 0.0352
+Epoch 77/300, seasonal_2 Loss: 0.0611 | 0.0370
+Epoch 78/300, seasonal_2 Loss: 0.0610 | 0.0345
+Epoch 79/300, seasonal_2 Loss: 0.0608 | 0.0361
+Epoch 80/300, seasonal_2 Loss: 0.0605 | 0.0338
+Epoch 81/300, seasonal_2 Loss: 0.0604 | 0.0354
+Epoch 82/300, seasonal_2 Loss: 0.0604 | 0.0335
+Epoch 83/300, seasonal_2 Loss: 0.0602 | 0.0344
+Epoch 84/300, seasonal_2 Loss: 0.0600 | 0.0330
+Epoch 85/300, seasonal_2 Loss: 0.0599 | 0.0336
+Epoch 86/300, seasonal_2 Loss: 0.0599 | 0.0327
+Epoch 87/300, seasonal_2 Loss: 0.0598 | 0.0332
+Epoch 88/300, seasonal_2 Loss: 0.0597 | 0.0322
+Epoch 89/300, seasonal_2 Loss: 0.0597 | 0.0325
+Epoch 90/300, seasonal_2 Loss: 0.0597 | 0.0319
+Epoch 91/300, seasonal_2 Loss: 0.0597 | 0.0324
+Epoch 92/300, seasonal_2 Loss: 0.0596 | 0.0316
+Epoch 93/300, seasonal_2 Loss: 0.0596 | 0.0319
+Epoch 94/300, seasonal_2 Loss: 0.0597 | 0.0313
+Epoch 95/300, seasonal_2 Loss: 0.0597 | 0.0318
+Epoch 96/300, seasonal_2 Loss: 0.0596 | 0.0310
+Epoch 97/300, seasonal_2 Loss: 0.0597 | 0.0317
+Epoch 98/300, seasonal_2 Loss: 0.0597 | 0.0312
+Epoch 99/300, seasonal_2 Loss: 0.0596 | 0.0320
+Epoch 100/300, seasonal_2 Loss: 0.0595 | 0.0314
+Epoch 101/300, seasonal_2 Loss: 0.0594 | 0.0328
+Epoch 102/300, seasonal_2 Loss: 0.0593 | 0.0323
+Epoch 103/300, seasonal_2 Loss: 0.0591 | 0.0326
+Epoch 104/300, seasonal_2 Loss: 0.0588 | 0.0324
+Epoch 105/300, seasonal_2 Loss: 0.0587 | 0.0327
+Epoch 106/300, seasonal_2 Loss: 0.0586 | 0.0327
+Epoch 107/300, seasonal_2 Loss: 0.0585 | 0.0324
+Epoch 108/300, seasonal_2 Loss: 0.0584 | 0.0329
+Epoch 109/300, seasonal_2 Loss: 0.0583 | 0.0322
+Epoch 110/300, seasonal_2 Loss: 0.0583 | 0.0327
+Epoch 111/300, seasonal_2 Loss: 0.0582 | 0.0323
+Epoch 112/300, seasonal_2 Loss: 0.0582 | 0.0328
+Epoch 113/300, seasonal_2 Loss: 0.0581 | 0.0322
+Epoch 114/300, seasonal_2 Loss: 0.0581 | 0.0327
+Epoch 115/300, seasonal_2 Loss: 0.0580 | 0.0325
+Epoch 116/300, seasonal_2 Loss: 0.0579 | 0.0329
+Epoch 117/300, seasonal_2 Loss: 0.0579 | 0.0325
+Epoch 118/300, seasonal_2 Loss: 0.0578 | 0.0329
+Epoch 119/300, seasonal_2 Loss: 0.0578 | 0.0328
+Epoch 120/300, seasonal_2 Loss: 0.0577 | 0.0330
+Epoch 121/300, seasonal_2 Loss: 0.0577 | 0.0327
+Epoch 122/300, seasonal_2 Loss: 0.0576 | 0.0329
+Epoch 123/300, seasonal_2 Loss: 0.0576 | 0.0329
+Epoch 124/300, seasonal_2 Loss: 0.0576 | 0.0330
+Epoch 125/300, seasonal_2 Loss: 0.0576 | 0.0329
+Epoch 126/300, seasonal_2 Loss: 0.0576 | 0.0330
+Epoch 127/300, seasonal_2 Loss: 0.0578 | 0.0331
+Epoch 128/300, seasonal_2 Loss: 0.0584 | 0.0339
+Epoch 129/300, seasonal_2 Loss: 0.0602 | 0.0350
+Epoch 130/300, seasonal_2 Loss: 0.0584 | 0.0324
+Epoch 131/300, seasonal_2 Loss: 0.0580 | 0.0327
+Epoch 132/300, seasonal_2 Loss: 0.0577 | 0.0329
+Epoch 133/300, seasonal_2 Loss: 0.0575 | 0.0325
+Epoch 134/300, seasonal_2 Loss: 0.0573 | 0.0326
+Epoch 135/300, seasonal_2 Loss: 0.0572 | 0.0325
+Epoch 136/300, seasonal_2 Loss: 0.0572 | 0.0326
+Epoch 137/300, seasonal_2 Loss: 0.0571 | 0.0326
+Epoch 138/300, seasonal_2 Loss: 0.0571 | 0.0327
+Epoch 139/300, seasonal_2 Loss: 0.0570 | 0.0327
+Epoch 140/300, seasonal_2 Loss: 0.0569 | 0.0328
+Epoch 141/300, seasonal_2 Loss: 0.0569 | 0.0328
+Epoch 142/300, seasonal_2 Loss: 0.0568 | 0.0329
+Epoch 143/300, seasonal_2 Loss: 0.0567 | 0.0330
+Epoch 144/300, seasonal_2 Loss: 0.0567 | 0.0330
+Epoch 145/300, seasonal_2 Loss: 0.0566 | 0.0329
+Epoch 146/300, seasonal_2 Loss: 0.0566 | 0.0328
+Epoch 147/300, seasonal_2 Loss: 0.0566 | 0.0328
+Epoch 148/300, seasonal_2 Loss: 0.0566 | 0.0327
+Epoch 149/300, seasonal_2 Loss: 0.0566 | 0.0326
+Epoch 150/300, seasonal_2 Loss: 0.0566 | 0.0326
+Epoch 151/300, seasonal_2 Loss: 0.0565 | 0.0326
+Epoch 152/300, seasonal_2 Loss: 0.0565 | 0.0327
+Epoch 153/300, seasonal_2 Loss: 0.0565 | 0.0327
+Epoch 154/300, seasonal_2 Loss: 0.0564 | 0.0327
+Epoch 155/300, seasonal_2 Loss: 0.0564 | 0.0327
+Epoch 156/300, seasonal_2 Loss: 0.0564 | 0.0328
+Epoch 157/300, seasonal_2 Loss: 0.0564 | 0.0328
+Epoch 158/300, seasonal_2 Loss: 0.0563 | 0.0328
+Epoch 159/300, seasonal_2 Loss: 0.0563 | 0.0328
+Epoch 160/300, seasonal_2 Loss: 0.0563 | 0.0328
+Epoch 161/300, seasonal_2 Loss: 0.0563 | 0.0328
+Epoch 162/300, seasonal_2 Loss: 0.0563 | 0.0328
+Epoch 163/300, seasonal_2 Loss: 0.0563 | 0.0328
+Epoch 164/300, seasonal_2 Loss: 0.0562 | 0.0328
+Epoch 165/300, seasonal_2 Loss: 0.0562 | 0.0328
+Epoch 166/300, seasonal_2 Loss: 0.0562 | 0.0328
+Epoch 167/300, seasonal_2 Loss: 0.0562 | 0.0328
+Epoch 168/300, seasonal_2 Loss: 0.0562 | 0.0328
+Epoch 169/300, seasonal_2 Loss: 0.0562 | 0.0328
+Epoch 170/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 171/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 172/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 173/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 174/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 175/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 176/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 177/300, seasonal_2 Loss: 0.0561 | 0.0328
+Epoch 178/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 179/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 180/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 181/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 182/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 183/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 184/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 185/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 186/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 187/300, seasonal_2 Loss: 0.0560 | 0.0328
+Epoch 188/300, seasonal_2 Loss: 0.0559 | 0.0328
+Epoch 189/300, seasonal_2 Loss: 0.0559 | 0.0328
+Epoch 190/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 191/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 192/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 193/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 194/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 195/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 196/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 197/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 198/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 199/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 200/300, seasonal_2 Loss: 0.0559 | 0.0329
+Epoch 201/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 202/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 203/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 204/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 205/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 206/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 207/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 208/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 209/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 210/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 211/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 212/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 213/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 214/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 215/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 216/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 217/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 218/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 219/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 220/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 221/300, seasonal_2 Loss: 0.0558 | 0.0329
+Epoch 222/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 223/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 224/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 225/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 226/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 227/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 228/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 229/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 230/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 231/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 232/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 233/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 234/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 235/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 236/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 237/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 238/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 239/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 240/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 241/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 242/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 243/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 244/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 245/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 246/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 247/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 248/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 249/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 250/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 251/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 252/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 253/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 254/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 255/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 256/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 257/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 258/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 259/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 260/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 261/300, seasonal_2 Loss: 0.0557 | 0.0329
+Epoch 262/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 263/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 264/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 265/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 266/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 267/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 268/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 269/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 270/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 271/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 272/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 273/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 274/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 275/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 276/300, seasonal_2 Loss: 0.0557 | 0.0330
+Epoch 277/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 278/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 279/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 280/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 281/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 282/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 283/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 284/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 285/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 286/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 287/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 288/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 289/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 290/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 291/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 292/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 293/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 294/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 295/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 296/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 297/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 298/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 299/300, seasonal_2 Loss: 0.0556 | 0.0330
+Epoch 300/300, seasonal_2 Loss: 0.0556 | 0.0330
+Training seasonal_3 component with params: {'observation_period_num': 15, 'train_rates': 0.8470027130361129, 'learning_rate': 0.00024570407872649013, 'batch_size': 124, 'step_size': 13, 'gamma': 0.9325516019508552}
+Epoch 1/300, seasonal_3 Loss: 0.3215 | 0.2186
+Epoch 2/300, seasonal_3 Loss: 0.1714 | 0.1881
+Epoch 3/300, seasonal_3 Loss: 0.1429 | 0.1525
+Epoch 4/300, seasonal_3 Loss: 0.1462 | 0.1675
+Epoch 5/300, seasonal_3 Loss: 0.1392 | 0.1874
+Epoch 6/300, seasonal_3 Loss: 0.1249 | 0.1684
+Epoch 7/300, seasonal_3 Loss: 0.1304 | 0.1118
+Epoch 8/300, seasonal_3 Loss: 0.1662 | 0.0990
+Epoch 9/300, seasonal_3 Loss: 0.1361 | 0.0960
+Epoch 10/300, seasonal_3 Loss: 0.1265 | 0.0788
+Epoch 11/300, seasonal_3 Loss: 0.1139 | 0.0671
+Epoch 12/300, seasonal_3 Loss: 0.1087 | 0.0658
+Epoch 13/300, seasonal_3 Loss: 0.1111 | 0.0789
+Epoch 14/300, seasonal_3 Loss: 0.1068 | 0.0665
+Epoch 15/300, seasonal_3 Loss: 0.1004 | 0.0581
+Epoch 16/300, seasonal_3 Loss: 0.1058 | 0.0603
+Epoch 17/300, seasonal_3 Loss: 0.1168 | 0.0905
+Epoch 18/300, seasonal_3 Loss: 0.1236 | 0.1555
+Epoch 19/300, seasonal_3 Loss: 0.1220 | 0.0940
+Epoch 20/300, seasonal_3 Loss: 0.1055 | 0.0618
+Epoch 21/300, seasonal_3 Loss: 0.1182 | 0.1008
+Epoch 22/300, seasonal_3 Loss: 0.1092 | 0.0671
+Epoch 23/300, seasonal_3 Loss: 0.0936 | 0.0507
+Epoch 24/300, seasonal_3 Loss: 0.0961 | 0.0565
+Epoch 25/300, seasonal_3 Loss: 0.0976 | 0.0497
+Epoch 26/300, seasonal_3 Loss: 0.0890 | 0.0452
+Epoch 27/300, seasonal_3 Loss: 0.0847 | 0.0445
+Epoch 28/300, seasonal_3 Loss: 0.0837 | 0.0430
+Epoch 29/300, seasonal_3 Loss: 0.0825 | 0.0416
+Epoch 30/300, seasonal_3 Loss: 0.0811 | 0.0404
+Epoch 31/300, seasonal_3 Loss: 0.0799 | 0.0394
+Epoch 32/300, seasonal_3 Loss: 0.0787 | 0.0386
+Epoch 33/300, seasonal_3 Loss: 0.0778 | 0.0379
+Epoch 34/300, seasonal_3 Loss: 0.0771 | 0.0381
+Epoch 35/300, seasonal_3 Loss: 0.0769 | 0.0395
+Epoch 36/300, seasonal_3 Loss: 0.0774 | 0.0429
+Epoch 37/300, seasonal_3 Loss: 0.0786 | 0.0450
+Epoch 38/300, seasonal_3 Loss: 0.0793 | 0.0423
+Epoch 39/300, seasonal_3 Loss: 0.0784 | 0.0392
+Epoch 40/300, seasonal_3 Loss: 0.0776 | 0.0374
+Epoch 41/300, seasonal_3 Loss: 0.0766 | 0.0354
+Epoch 42/300, seasonal_3 Loss: 0.0769 | 0.0362
+Epoch 43/300, seasonal_3 Loss: 0.0837 | 0.0432
+Epoch 44/300, seasonal_3 Loss: 0.0998 | 0.0493
+Epoch 45/300, seasonal_3 Loss: 0.0893 | 0.0415
+Epoch 46/300, seasonal_3 Loss: 0.0784 | 0.0395
+Epoch 47/300, seasonal_3 Loss: 0.0781 | 0.0470
+Epoch 48/300, seasonal_3 Loss: 0.0794 | 0.0534
+Epoch 49/300, seasonal_3 Loss: 0.0770 | 0.0423
+Epoch 50/300, seasonal_3 Loss: 0.0750 | 0.0366
+Epoch 51/300, seasonal_3 Loss: 0.0741 | 0.0341
+Epoch 52/300, seasonal_3 Loss: 0.0731 | 0.0340
+Epoch 53/300, seasonal_3 Loss: 0.0718 | 0.0343
+Epoch 54/300, seasonal_3 Loss: 0.0713 | 0.0339
+Epoch 55/300, seasonal_3 Loss: 0.0706 | 0.0333
+Epoch 56/300, seasonal_3 Loss: 0.0702 | 0.0335
+Epoch 57/300, seasonal_3 Loss: 0.0703 | 0.0346
+Epoch 58/300, seasonal_3 Loss: 0.0706 | 0.0360
+Epoch 59/300, seasonal_3 Loss: 0.0706 | 0.0354
+Epoch 60/300, seasonal_3 Loss: 0.0694 | 0.0335
+Epoch 61/300, seasonal_3 Loss: 0.0686 | 0.0322
+Epoch 62/300, seasonal_3 Loss: 0.0699 | 0.0324
+Epoch 63/300, seasonal_3 Loss: 0.0721 | 0.0343
+Epoch 64/300, seasonal_3 Loss: 0.0728 | 0.0363
+Epoch 65/300, seasonal_3 Loss: 0.0710 | 0.0340
+Epoch 66/300, seasonal_3 Loss: 0.0695 | 0.0368
+Epoch 67/300, seasonal_3 Loss: 0.0709 | 0.0474
+Epoch 68/300, seasonal_3 Loss: 0.0731 | 0.0432
+Epoch 69/300, seasonal_3 Loss: 0.0730 | 0.0326
+Epoch 70/300, seasonal_3 Loss: 0.0687 | 0.0348
+Epoch 71/300, seasonal_3 Loss: 0.0717 | 0.0357
+Epoch 72/300, seasonal_3 Loss: 0.0704 | 0.0335
+Epoch 73/300, seasonal_3 Loss: 0.0681 | 0.0306
+Epoch 74/300, seasonal_3 Loss: 0.0697 | 0.0306
+Epoch 75/300, seasonal_3 Loss: 0.0699 | 0.0322
+Epoch 76/300, seasonal_3 Loss: 0.0693 | 0.0302
+Epoch 77/300, seasonal_3 Loss: 0.0687 | 0.0361
+Epoch 78/300, seasonal_3 Loss: 0.0692 | 0.0378
+Epoch 79/300, seasonal_3 Loss: 0.0684 | 0.0299
+Epoch 80/300, seasonal_3 Loss: 0.0658 | 0.0307
+Epoch 81/300, seasonal_3 Loss: 0.0681 | 0.0312
+Epoch 82/300, seasonal_3 Loss: 0.0663 | 0.0286
+Epoch 83/300, seasonal_3 Loss: 0.0659 | 0.0289
+Epoch 84/300, seasonal_3 Loss: 0.0667 | 0.0283
+Epoch 85/300, seasonal_3 Loss: 0.0653 | 0.0284
+Epoch 86/300, seasonal_3 Loss: 0.0650 | 0.0341
+Epoch 87/300, seasonal_3 Loss: 0.0652 | 0.0322
+Epoch 88/300, seasonal_3 Loss: 0.0647 | 0.0281
+Epoch 89/300, seasonal_3 Loss: 0.0633 | 0.0282
+Epoch 90/300, seasonal_3 Loss: 0.0633 | 0.0283
+Epoch 91/300, seasonal_3 Loss: 0.0633 | 0.0277
+Epoch 92/300, seasonal_3 Loss: 0.0647 | 0.0285
+Epoch 93/300, seasonal_3 Loss: 0.0664 | 0.0287
+Epoch 94/300, seasonal_3 Loss: 0.0669 | 0.0304
+Epoch 95/300, seasonal_3 Loss: 0.0666 | 0.0304
+Epoch 96/300, seasonal_3 Loss: 0.0655 | 0.0299
+Epoch 97/300, seasonal_3 Loss: 0.0685 | 0.0308
+Epoch 98/300, seasonal_3 Loss: 0.0653 | 0.0291
+Epoch 99/300, seasonal_3 Loss: 0.0645 | 0.0273
+Epoch 100/300, seasonal_3 Loss: 0.0645 | 0.0276
+Epoch 101/300, seasonal_3 Loss: 0.0637 | 0.0270
+Epoch 102/300, seasonal_3 Loss: 0.0649 | 0.0272
+Epoch 103/300, seasonal_3 Loss: 0.0638 | 0.0277
+Epoch 104/300, seasonal_3 Loss: 0.0639 | 0.0284
+Epoch 105/300, seasonal_3 Loss: 0.0638 | 0.0286
+Epoch 106/300, seasonal_3 Loss: 0.0640 | 0.0280
+Epoch 107/300, seasonal_3 Loss: 0.0643 | 0.0278
+Epoch 108/300, seasonal_3 Loss: 0.0647 | 0.0278
+Epoch 109/300, seasonal_3 Loss: 0.0656 | 0.0273
+Epoch 110/300, seasonal_3 Loss: 0.0646 | 0.0269
+Epoch 111/300, seasonal_3 Loss: 0.0645 | 0.0268
+Epoch 112/300, seasonal_3 Loss: 0.0652 | 0.0286
+Epoch 113/300, seasonal_3 Loss: 0.0664 | 0.0290
+Epoch 114/300, seasonal_3 Loss: 0.0661 | 0.0275
+Epoch 115/300, seasonal_3 Loss: 0.0628 | 0.0265
+Epoch 116/300, seasonal_3 Loss: 0.0639 | 0.0262
+Epoch 117/300, seasonal_3 Loss: 0.0646 | 0.0266
+Epoch 118/300, seasonal_3 Loss: 0.0658 | 0.0266
+Epoch 119/300, seasonal_3 Loss: 0.0647 | 0.0270
+Epoch 120/300, seasonal_3 Loss: 0.0622 | 0.0262
+Epoch 121/300, seasonal_3 Loss: 0.0602 | 0.0267
+Epoch 122/300, seasonal_3 Loss: 0.0602 | 0.0289
+Epoch 123/300, seasonal_3 Loss: 0.0609 | 0.0306
+Epoch 124/300, seasonal_3 Loss: 0.0606 | 0.0293
+Epoch 125/300, seasonal_3 Loss: 0.0597 | 0.0260
+Epoch 126/300, seasonal_3 Loss: 0.0592 | 0.0245
+Epoch 127/300, seasonal_3 Loss: 0.0601 | 0.0273
+Epoch 128/300, seasonal_3 Loss: 0.0615 | 0.0282
+Epoch 129/300, seasonal_3 Loss: 0.0605 | 0.0255
+Epoch 130/300, seasonal_3 Loss: 0.0603 | 0.0319
+Epoch 131/300, seasonal_3 Loss: 0.0624 | 0.0318
+Epoch 132/300, seasonal_3 Loss: 0.0611 | 0.0253
+Epoch 133/300, seasonal_3 Loss: 0.0582 | 0.0249
+Epoch 134/300, seasonal_3 Loss: 0.0577 | 0.0244
+Epoch 135/300, seasonal_3 Loss: 0.0572 | 0.0246
+Epoch 136/300, seasonal_3 Loss: 0.0572 | 0.0248
+Epoch 137/300, seasonal_3 Loss: 0.0570 | 0.0245
+Epoch 138/300, seasonal_3 Loss: 0.0570 | 0.0240
+Epoch 139/300, seasonal_3 Loss: 0.0569 | 0.0238
+Epoch 140/300, seasonal_3 Loss: 0.0570 | 0.0239
+Epoch 141/300, seasonal_3 Loss: 0.0570 | 0.0241
+Epoch 142/300, seasonal_3 Loss: 0.0570 | 0.0242
+Epoch 143/300, seasonal_3 Loss: 0.0570 | 0.0243
+Epoch 144/300, seasonal_3 Loss: 0.0570 | 0.0242
+Epoch 145/300, seasonal_3 Loss: 0.0571 | 0.0242
+Epoch 146/300, seasonal_3 Loss: 0.0580 | 0.0250
+Epoch 147/300, seasonal_3 Loss: 0.0616 | 0.0303
+Epoch 148/300, seasonal_3 Loss: 0.0609 | 0.0262
+Epoch 149/300, seasonal_3 Loss: 0.0576 | 0.0245
+Epoch 150/300, seasonal_3 Loss: 0.0572 | 0.0245
+Epoch 151/300, seasonal_3 Loss: 0.0572 | 0.0242
+Epoch 152/300, seasonal_3 Loss: 0.0567 | 0.0250
+Epoch 153/300, seasonal_3 Loss: 0.0565 | 0.0255
+Epoch 154/300, seasonal_3 Loss: 0.0563 | 0.0247
+Epoch 155/300, seasonal_3 Loss: 0.0561 | 0.0239
+Epoch 156/300, seasonal_3 Loss: 0.0559 | 0.0237
+Epoch 157/300, seasonal_3 Loss: 0.0557 | 0.0236
+Epoch 158/300, seasonal_3 Loss: 0.0556 | 0.0240
+Epoch 159/300, seasonal_3 Loss: 0.0555 | 0.0240
+Epoch 160/300, seasonal_3 Loss: 0.0555 | 0.0237
+Epoch 161/300, seasonal_3 Loss: 0.0554 | 0.0235
+Epoch 162/300, seasonal_3 Loss: 0.0554 | 0.0235
+Epoch 163/300, seasonal_3 Loss: 0.0555 | 0.0236
+Epoch 164/300, seasonal_3 Loss: 0.0556 | 0.0239
+Epoch 165/300, seasonal_3 Loss: 0.0559 | 0.0241
+Epoch 166/300, seasonal_3 Loss: 0.0561 | 0.0243
+Epoch 167/300, seasonal_3 Loss: 0.0562 | 0.0242
+Epoch 168/300, seasonal_3 Loss: 0.0560 | 0.0240
+Epoch 169/300, seasonal_3 Loss: 0.0562 | 0.0243
+Epoch 170/300, seasonal_3 Loss: 0.0598 | 0.0276
+Epoch 171/300, seasonal_3 Loss: 0.0577 | 0.0247
+Epoch 172/300, seasonal_3 Loss: 0.0569 | 0.0236
+Epoch 173/300, seasonal_3 Loss: 0.0563 | 0.0238
+Epoch 174/300, seasonal_3 Loss: 0.0555 | 0.0241
+Epoch 175/300, seasonal_3 Loss: 0.0551 | 0.0242
+Epoch 176/300, seasonal_3 Loss: 0.0550 | 0.0241
+Epoch 177/300, seasonal_3 Loss: 0.0550 | 0.0237
+Epoch 178/300, seasonal_3 Loss: 0.0549 | 0.0234
+Epoch 179/300, seasonal_3 Loss: 0.0548 | 0.0233
+Epoch 180/300, seasonal_3 Loss: 0.0548 | 0.0234
+Epoch 181/300, seasonal_3 Loss: 0.0548 | 0.0234
+Epoch 182/300, seasonal_3 Loss: 0.0548 | 0.0234
+Epoch 183/300, seasonal_3 Loss: 0.0547 | 0.0236
+Epoch 184/300, seasonal_3 Loss: 0.0551 | 0.0244
+Epoch 185/300, seasonal_3 Loss: 0.0567 | 0.0237
+Epoch 186/300, seasonal_3 Loss: 0.0559 | 0.0242
+Epoch 187/300, seasonal_3 Loss: 0.0547 | 0.0240
+Epoch 188/300, seasonal_3 Loss: 0.0543 | 0.0235
+Epoch 189/300, seasonal_3 Loss: 0.0544 | 0.0233
+Epoch 190/300, seasonal_3 Loss: 0.0545 | 0.0234
+Epoch 191/300, seasonal_3 Loss: 0.0546 | 0.0237
+Epoch 192/300, seasonal_3 Loss: 0.0546 | 0.0237
+Epoch 193/300, seasonal_3 Loss: 0.0544 | 0.0234
+Epoch 194/300, seasonal_3 Loss: 0.0542 | 0.0234
+Epoch 195/300, seasonal_3 Loss: 0.0546 | 0.0238
+Epoch 196/300, seasonal_3 Loss: 0.0552 | 0.0239
+Epoch 197/300, seasonal_3 Loss: 0.0550 | 0.0241
+Epoch 198/300, seasonal_3 Loss: 0.0543 | 0.0240
+Epoch 199/300, seasonal_3 Loss: 0.0541 | 0.0236
+Epoch 200/300, seasonal_3 Loss: 0.0541 | 0.0235
+Epoch 201/300, seasonal_3 Loss: 0.0543 | 0.0235
+Epoch 202/300, seasonal_3 Loss: 0.0544 | 0.0234
+Epoch 203/300, seasonal_3 Loss: 0.0542 | 0.0233
+Epoch 204/300, seasonal_3 Loss: 0.0538 | 0.0234
+Epoch 205/300, seasonal_3 Loss: 0.0539 | 0.0235
+Epoch 206/300, seasonal_3 Loss: 0.0539 | 0.0236
+Epoch 207/300, seasonal_3 Loss: 0.0536 | 0.0235
+Epoch 208/300, seasonal_3 Loss: 0.0534 | 0.0234
+Epoch 209/300, seasonal_3 Loss: 0.0533 | 0.0234
+Epoch 210/300, seasonal_3 Loss: 0.0534 | 0.0235
+Epoch 211/300, seasonal_3 Loss: 0.0535 | 0.0234
+Epoch 212/300, seasonal_3 Loss: 0.0534 | 0.0232
+Epoch 213/300, seasonal_3 Loss: 0.0532 | 0.0231
+Epoch 214/300, seasonal_3 Loss: 0.0532 | 0.0232
+Epoch 215/300, seasonal_3 Loss: 0.0532 | 0.0235
+Epoch 216/300, seasonal_3 Loss: 0.0532 | 0.0236
+Epoch 217/300, seasonal_3 Loss: 0.0531 | 0.0236
+Epoch 218/300, seasonal_3 Loss: 0.0530 | 0.0235
+Epoch 219/300, seasonal_3 Loss: 0.0529 | 0.0233
+Epoch 220/300, seasonal_3 Loss: 0.0529 | 0.0233
+Epoch 221/300, seasonal_3 Loss: 0.0530 | 0.0232
+Epoch 222/300, seasonal_3 Loss: 0.0530 | 0.0231
+Epoch 223/300, seasonal_3 Loss: 0.0529 | 0.0232
+Epoch 224/300, seasonal_3 Loss: 0.0528 | 0.0233
+Epoch 225/300, seasonal_3 Loss: 0.0529 | 0.0235
+Epoch 226/300, seasonal_3 Loss: 0.0529 | 0.0237
+Epoch 227/300, seasonal_3 Loss: 0.0528 | 0.0237
+Epoch 228/300, seasonal_3 Loss: 0.0527 | 0.0235
+Epoch 229/300, seasonal_3 Loss: 0.0526 | 0.0234
+Epoch 230/300, seasonal_3 Loss: 0.0526 | 0.0233
+Epoch 231/300, seasonal_3 Loss: 0.0526 | 0.0232
+Epoch 232/300, seasonal_3 Loss: 0.0527 | 0.0232
+Epoch 233/300, seasonal_3 Loss: 0.0526 | 0.0232
+Epoch 234/300, seasonal_3 Loss: 0.0525 | 0.0233
+Epoch 235/300, seasonal_3 Loss: 0.0525 | 0.0236
+Epoch 236/300, seasonal_3 Loss: 0.0525 | 0.0237
+Epoch 237/300, seasonal_3 Loss: 0.0524 | 0.0236
+Epoch 238/300, seasonal_3 Loss: 0.0523 | 0.0235
+Epoch 239/300, seasonal_3 Loss: 0.0522 | 0.0234
+Epoch 240/300, seasonal_3 Loss: 0.0522 | 0.0233
+Epoch 241/300, seasonal_3 Loss: 0.0522 | 0.0233
+Epoch 242/300, seasonal_3 Loss: 0.0523 | 0.0233
+Epoch 243/300, seasonal_3 Loss: 0.0522 | 0.0233
+Epoch 244/300, seasonal_3 Loss: 0.0521 | 0.0234
+Epoch 245/300, seasonal_3 Loss: 0.0521 | 0.0235
+Epoch 246/300, seasonal_3 Loss: 0.0522 | 0.0237
+Epoch 247/300, seasonal_3 Loss: 0.0521 | 0.0237
+Epoch 248/300, seasonal_3 Loss: 0.0520 | 0.0236
+Epoch 249/300, seasonal_3 Loss: 0.0519 | 0.0234
+Epoch 250/300, seasonal_3 Loss: 0.0519 | 0.0234
+Epoch 251/300, seasonal_3 Loss: 0.0519 | 0.0234
+Epoch 252/300, seasonal_3 Loss: 0.0520 | 0.0234
+Epoch 253/300, seasonal_3 Loss: 0.0519 | 0.0234
+Epoch 254/300, seasonal_3 Loss: 0.0518 | 0.0234
+Epoch 255/300, seasonal_3 Loss: 0.0518 | 0.0236
+Epoch 256/300, seasonal_3 Loss: 0.0519 | 0.0237
+Epoch 257/300, seasonal_3 Loss: 0.0518 | 0.0237
+Epoch 258/300, seasonal_3 Loss: 0.0517 | 0.0236
+Epoch 259/300, seasonal_3 Loss: 0.0517 | 0.0235
+Epoch 260/300, seasonal_3 Loss: 0.0516 | 0.0235
+Epoch 261/300, seasonal_3 Loss: 0.0516 | 0.0235
+Epoch 262/300, seasonal_3 Loss: 0.0517 | 0.0234
+Epoch 263/300, seasonal_3 Loss: 0.0516 | 0.0234
+Epoch 264/300, seasonal_3 Loss: 0.0515 | 0.0235
+Epoch 265/300, seasonal_3 Loss: 0.0515 | 0.0236
+Epoch 266/300, seasonal_3 Loss: 0.0515 | 0.0237
+Epoch 267/300, seasonal_3 Loss: 0.0515 | 0.0238
+Epoch 268/300, seasonal_3 Loss: 0.0514 | 0.0237
+Epoch 269/300, seasonal_3 Loss: 0.0514 | 0.0236
+Epoch 270/300, seasonal_3 Loss: 0.0513 | 0.0236
+Epoch 271/300, seasonal_3 Loss: 0.0514 | 0.0236
+Epoch 272/300, seasonal_3 Loss: 0.0514 | 0.0236
+Epoch 273/300, seasonal_3 Loss: 0.0513 | 0.0235
+Epoch 274/300, seasonal_3 Loss: 0.0513 | 0.0236
+Epoch 275/300, seasonal_3 Loss: 0.0513 | 0.0237
+Epoch 276/300, seasonal_3 Loss: 0.0513 | 0.0238
+Epoch 277/300, seasonal_3 Loss: 0.0513 | 0.0238
+Epoch 278/300, seasonal_3 Loss: 0.0512 | 0.0238
+Epoch 279/300, seasonal_3 Loss: 0.0511 | 0.0237
+Epoch 280/300, seasonal_3 Loss: 0.0511 | 0.0237
+Epoch 281/300, seasonal_3 Loss: 0.0511 | 0.0236
+Epoch 282/300, seasonal_3 Loss: 0.0511 | 0.0236
+Epoch 283/300, seasonal_3 Loss: 0.0511 | 0.0236
+Epoch 284/300, seasonal_3 Loss: 0.0511 | 0.0237
+Epoch 285/300, seasonal_3 Loss: 0.0510 | 0.0237
+Epoch 286/300, seasonal_3 Loss: 0.0510 | 0.0238
+Epoch 287/300, seasonal_3 Loss: 0.0510 | 0.0239
+Epoch 288/300, seasonal_3 Loss: 0.0510 | 0.0238
+Epoch 289/300, seasonal_3 Loss: 0.0509 | 0.0238
+Epoch 290/300, seasonal_3 Loss: 0.0509 | 0.0238
+Epoch 291/300, seasonal_3 Loss: 0.0508 | 0.0237
+Epoch 292/300, seasonal_3 Loss: 0.0508 | 0.0237
+Epoch 293/300, seasonal_3 Loss: 0.0508 | 0.0237
+Epoch 294/300, seasonal_3 Loss: 0.0508 | 0.0237
+Epoch 295/300, seasonal_3 Loss: 0.0508 | 0.0238
+Epoch 296/300, seasonal_3 Loss: 0.0508 | 0.0238
+Epoch 297/300, seasonal_3 Loss: 0.0508 | 0.0239
+Epoch 298/300, seasonal_3 Loss: 0.0507 | 0.0239
+Epoch 299/300, seasonal_3 Loss: 0.0507 | 0.0239
+Epoch 300/300, seasonal_3 Loss: 0.0507 | 0.0239
+Training resid component with params: {'observation_period_num': 9, 'train_rates': 0.8745581644964268, 'learning_rate': 0.0006678737853552279, 'batch_size': 137, 'step_size': 5, 'gamma': 0.9416180577297116}
+Epoch 1/300, resid Loss: 0.6527 | 0.1912
+Epoch 2/300, resid Loss: 0.1813 | 0.1574
+Epoch 3/300, resid Loss: 0.1415 | 0.1294
+Epoch 4/300, resid Loss: 0.1256 | 0.1086
+Epoch 5/300, resid Loss: 0.1149 | 0.0756
+Epoch 6/300, resid Loss: 0.1042 | 0.0716
+Epoch 7/300, resid Loss: 0.1012 | 0.0633
+Epoch 8/300, resid Loss: 0.0997 | 0.0639
+Epoch 9/300, resid Loss: 0.0996 | 0.0681
+Epoch 10/300, resid Loss: 0.1002 | 0.0831
+Epoch 11/300, resid Loss: 0.1021 | 0.1187
+Epoch 12/300, resid Loss: 0.1054 | 0.1647
+Epoch 13/300, resid Loss: 0.1073 | 0.1157
+Epoch 14/300, resid Loss: 0.1080 | 0.0697
+Epoch 15/300, resid Loss: 0.1275 | 0.1000
+Epoch 16/300, resid Loss: 0.1134 | 0.0629
+Epoch 17/300, resid Loss: 0.1081 | 0.1151
+Epoch 18/300, resid Loss: 0.1393 | 0.0779
+Epoch 19/300, resid Loss: 0.1044 | 0.0531
+Epoch 20/300, resid Loss: 0.1062 | 0.0820
+Epoch 21/300, resid Loss: 0.1032 | 0.0494
+Epoch 22/300, resid Loss: 0.0904 | 0.0486
+Epoch 23/300, resid Loss: 0.0864 | 0.0504
+Epoch 24/300, resid Loss: 0.0843 | 0.0496
+Epoch 25/300, resid Loss: 0.0859 | 0.0459
+Epoch 26/300, resid Loss: 0.0838 | 0.0446
+Epoch 27/300, resid Loss: 0.0813 | 0.0441
+Epoch 28/300, resid Loss: 0.0821 | 0.0422
+Epoch 29/300, resid Loss: 0.0816 | 0.0422
+Epoch 30/300, resid Loss: 0.0784 | 0.0432
+Epoch 31/300, resid Loss: 0.0768 | 0.0454
+Epoch 32/300, resid Loss: 0.0770 | 0.0451
+Epoch 33/300, resid Loss: 0.0759 | 0.0426
+Epoch 34/300, resid Loss: 0.0741 | 0.0405
+Epoch 35/300, resid Loss: 0.0730 | 0.0383
+Epoch 36/300, resid Loss: 0.0721 | 0.0375
+Epoch 37/300, resid Loss: 0.0717 | 0.0373
+Epoch 38/300, resid Loss: 0.0714 | 0.0374
+Epoch 39/300, resid Loss: 0.0715 | 0.0381
+Epoch 40/300, resid Loss: 0.0716 | 0.0379
+Epoch 41/300, resid Loss: 0.0716 | 0.0371
+Epoch 42/300, resid Loss: 0.0715 | 0.0372
+Epoch 43/300, resid Loss: 0.0710 | 0.0365
+Epoch 44/300, resid Loss: 0.0707 | 0.0362
+Epoch 45/300, resid Loss: 0.0712 | 0.0359
+Epoch 46/300, resid Loss: 0.0719 | 0.0358
+Epoch 47/300, resid Loss: 0.0709 | 0.0353
+Epoch 48/300, resid Loss: 0.0700 | 0.0350
+Epoch 49/300, resid Loss: 0.0704 | 0.0366
+Epoch 50/300, resid Loss: 0.0719 | 0.0365
+Epoch 51/300, resid Loss: 0.0714 | 0.0389
+Epoch 52/300, resid Loss: 0.0712 | 0.0431
+Epoch 53/300, resid Loss: 0.0707 | 0.0401
+Epoch 54/300, resid Loss: 0.0712 | 0.0374
+Epoch 55/300, resid Loss: 0.0689 | 0.0374
+Epoch 56/300, resid Loss: 0.0670 | 0.0332
+Epoch 57/300, resid Loss: 0.0666 | 0.0352
+Epoch 58/300, resid Loss: 0.0678 | 0.0336
+Epoch 59/300, resid Loss: 0.0682 | 0.0337
+Epoch 60/300, resid Loss: 0.0678 | 0.0329
+Epoch 61/300, resid Loss: 0.0667 | 0.0340
+Epoch 62/300, resid Loss: 0.0680 | 0.0359
+Epoch 63/300, resid Loss: 0.0686 | 0.0341
+Epoch 64/300, resid Loss: 0.0665 | 0.0320
+Epoch 65/300, resid Loss: 0.0665 | 0.0327
+Epoch 66/300, resid Loss: 0.0664 | 0.0319
+Epoch 67/300, resid Loss: 0.0663 | 0.0323
+Epoch 68/300, resid Loss: 0.0666 | 0.0338
+Epoch 69/300, resid Loss: 0.0671 | 0.0346
+Epoch 70/300, resid Loss: 0.0678 | 0.0342
+Epoch 71/300, resid Loss: 0.0682 | 0.0349
+Epoch 72/300, resid Loss: 0.0683 | 0.0338
+Epoch 73/300, resid Loss: 0.0695 | 0.0333
+Epoch 74/300, resid Loss: 0.0750 | 0.0368
+Epoch 75/300, resid Loss: 0.0837 | 0.0400
+Epoch 76/300, resid Loss: 0.0888 | 0.0377
+Epoch 77/300, resid Loss: 0.0817 | 0.0355
+Epoch 78/300, resid Loss: 0.0698 | 0.0356
+Epoch 79/300, resid Loss: 0.0703 | 0.0379
+Epoch 80/300, resid Loss: 0.0688 | 0.0351
+Epoch 81/300, resid Loss: 0.0654 | 0.0333
+Epoch 82/300, resid Loss: 0.0638 | 0.0319
+Epoch 83/300, resid Loss: 0.0639 | 0.0319
+Epoch 84/300, resid Loss: 0.0635 | 0.0320
+Epoch 85/300, resid Loss: 0.0629 | 0.0320
+Epoch 86/300, resid Loss: 0.0627 | 0.0314
+Epoch 87/300, resid Loss: 0.0626 | 0.0312
+Epoch 88/300, resid Loss: 0.0625 | 0.0311
+Epoch 89/300, resid Loss: 0.0627 | 0.0309
+Epoch 90/300, resid Loss: 0.0627 | 0.0308
+Epoch 91/300, resid Loss: 0.0625 | 0.0307
+Epoch 92/300, resid Loss: 0.0622 | 0.0307
+Epoch 93/300, resid Loss: 0.0620 | 0.0306
+Epoch 94/300, resid Loss: 0.0618 | 0.0303
+Epoch 95/300, resid Loss: 0.0617 | 0.0302
+Epoch 96/300, resid Loss: 0.0616 | 0.0302
+Epoch 97/300, resid Loss: 0.0615 | 0.0300
+Epoch 98/300, resid Loss: 0.0615 | 0.0300
+Epoch 99/300, resid Loss: 0.0615 | 0.0300
+Epoch 100/300, resid Loss: 0.0617 | 0.0301
+Epoch 101/300, resid Loss: 0.0621 | 0.0297
+Epoch 102/300, resid Loss: 0.0622 | 0.0297
+Epoch 103/300, resid Loss: 0.0618 | 0.0296
+Epoch 104/300, resid Loss: 0.0614 | 0.0299
+Epoch 105/300, resid Loss: 0.0612 | 0.0296
+Epoch 106/300, resid Loss: 0.0611 | 0.0294
+Epoch 107/300, resid Loss: 0.0611 | 0.0296
+Epoch 108/300, resid Loss: 0.0614 | 0.0300
+Epoch 109/300, resid Loss: 0.0618 | 0.0295
+Epoch 110/300, resid Loss: 0.0612 | 0.0293
+Epoch 111/300, resid Loss: 0.0607 | 0.0290
+Epoch 112/300, resid Loss: 0.0606 | 0.0290
+Epoch 113/300, resid Loss: 0.0605 | 0.0290
+Epoch 114/300, resid Loss: 0.0605 | 0.0288
+Epoch 115/300, resid Loss: 0.0604 | 0.0288
+Epoch 116/300, resid Loss: 0.0603 | 0.0287
+Epoch 117/300, resid Loss: 0.0602 | 0.0286
+Epoch 118/300, resid Loss: 0.0601 | 0.0286
+Epoch 119/300, resid Loss: 0.0600 | 0.0284
+Epoch 120/300, resid Loss: 0.0599 | 0.0284
+Epoch 121/300, resid Loss: 0.0599 | 0.0283
+Epoch 122/300, resid Loss: 0.0600 | 0.0283
+Epoch 123/300, resid Loss: 0.0600 | 0.0285
+Epoch 124/300, resid Loss: 0.0605 | 0.0289
+Epoch 125/300, resid Loss: 0.0610 | 0.0287
+Epoch 126/300, resid Loss: 0.0597 | 0.0281
+Epoch 127/300, resid Loss: 0.0596 | 0.0281
+Epoch 128/300, resid Loss: 0.0593 | 0.0280
+Epoch 129/300, resid Loss: 0.0592 | 0.0277
+Epoch 130/300, resid Loss: 0.0591 | 0.0278
+Epoch 131/300, resid Loss: 0.0591 | 0.0276
+Epoch 132/300, resid Loss: 0.0590 | 0.0276
+Epoch 133/300, resid Loss: 0.0590 | 0.0275
+Epoch 134/300, resid Loss: 0.0589 | 0.0275
+Epoch 135/300, resid Loss: 0.0589 | 0.0274
+Epoch 136/300, resid Loss: 0.0588 | 0.0274
+Epoch 137/300, resid Loss: 0.0588 | 0.0274
+Epoch 138/300, resid Loss: 0.0588 | 0.0274
+Epoch 139/300, resid Loss: 0.0588 | 0.0274
+Epoch 140/300, resid Loss: 0.0587 | 0.0273
+Epoch 141/300, resid Loss: 0.0586 | 0.0272
+Epoch 142/300, resid Loss: 0.0586 | 0.0271
+Epoch 143/300, resid Loss: 0.0585 | 0.0270
+Epoch 144/300, resid Loss: 0.0587 | 0.0271
+Epoch 145/300, resid Loss: 0.0589 | 0.0270
+Epoch 146/300, resid Loss: 0.0589 | 0.0269
+Epoch 147/300, resid Loss: 0.0586 | 0.0268
+Epoch 148/300, resid Loss: 0.0583 | 0.0267
+Epoch 149/300, resid Loss: 0.0582 | 0.0268
+Epoch 150/300, resid Loss: 0.0583 | 0.0268
+Epoch 151/300, resid Loss: 0.0583 | 0.0268
+Epoch 152/300, resid Loss: 0.0583 | 0.0267
+Epoch 153/300, resid Loss: 0.0581 | 0.0266
+Epoch 154/300, resid Loss: 0.0580 | 0.0265
+Epoch 155/300, resid Loss: 0.0580 | 0.0265
+Epoch 156/300, resid Loss: 0.0579 | 0.0264
+Epoch 157/300, resid Loss: 0.0579 | 0.0264
+Epoch 158/300, resid Loss: 0.0578 | 0.0264
+Epoch 159/300, resid Loss: 0.0578 | 0.0264
+Epoch 160/300, resid Loss: 0.0578 | 0.0263
+Epoch 161/300, resid Loss: 0.0577 | 0.0263
+Epoch 162/300, resid Loss: 0.0577 | 0.0262
+Epoch 163/300, resid Loss: 0.0576 | 0.0262
+Epoch 164/300, resid Loss: 0.0576 | 0.0262
+Epoch 165/300, resid Loss: 0.0576 | 0.0261
+Epoch 166/300, resid Loss: 0.0576 | 0.0261
+Epoch 167/300, resid Loss: 0.0575 | 0.0261
+Epoch 168/300, resid Loss: 0.0575 | 0.0261
+Epoch 169/300, resid Loss: 0.0575 | 0.0260
+Epoch 170/300, resid Loss: 0.0574 | 0.0260
+Epoch 171/300, resid Loss: 0.0574 | 0.0259
+Epoch 172/300, resid Loss: 0.0574 | 0.0260
+Epoch 173/300, resid Loss: 0.0574 | 0.0259
+Epoch 174/300, resid Loss: 0.0573 | 0.0259
+Epoch 175/300, resid Loss: 0.0573 | 0.0258
+Epoch 176/300, resid Loss: 0.0573 | 0.0259
+Epoch 177/300, resid Loss: 0.0573 | 0.0258
+Epoch 178/300, resid Loss: 0.0573 | 0.0258
+Epoch 179/300, resid Loss: 0.0572 | 0.0257
+Epoch 180/300, resid Loss: 0.0572 | 0.0258
+Epoch 181/300, resid Loss: 0.0572 | 0.0257
+Epoch 182/300, resid Loss: 0.0572 | 0.0258
+Epoch 183/300, resid Loss: 0.0571 | 0.0257
+Epoch 184/300, resid Loss: 0.0571 | 0.0257
+Epoch 185/300, resid Loss: 0.0571 | 0.0256
+Epoch 186/300, resid Loss: 0.0571 | 0.0257
+Epoch 187/300, resid Loss: 0.0571 | 0.0256
+Epoch 188/300, resid Loss: 0.0570 | 0.0256
+Epoch 189/300, resid Loss: 0.0570 | 0.0256
+Epoch 190/300, resid Loss: 0.0570 | 0.0256
+Epoch 191/300, resid Loss: 0.0570 | 0.0256
+Epoch 192/300, resid Loss: 0.0570 | 0.0256
+Epoch 193/300, resid Loss: 0.0570 | 0.0255
+Epoch 194/300, resid Loss: 0.0569 | 0.0255
+Epoch 195/300, resid Loss: 0.0569 | 0.0255
+Epoch 196/300, resid Loss: 0.0569 | 0.0255
+Epoch 197/300, resid Loss: 0.0569 | 0.0255
+Epoch 198/300, resid Loss: 0.0569 | 0.0255
+Epoch 199/300, resid Loss: 0.0569 | 0.0255
+Epoch 200/300, resid Loss: 0.0569 | 0.0255
+Epoch 201/300, resid Loss: 0.0568 | 0.0255
+Epoch 202/300, resid Loss: 0.0568 | 0.0254
+Epoch 203/300, resid Loss: 0.0568 | 0.0254
+Epoch 204/300, resid Loss: 0.0568 | 0.0254
+Epoch 205/300, resid Loss: 0.0568 | 0.0254
+Epoch 206/300, resid Loss: 0.0568 | 0.0254
+Epoch 207/300, resid Loss: 0.0568 | 0.0254
+Epoch 208/300, resid Loss: 0.0568 | 0.0254
+Epoch 209/300, resid Loss: 0.0568 | 0.0254
+Epoch 210/300, resid Loss: 0.0567 | 0.0254
+Epoch 211/300, resid Loss: 0.0567 | 0.0254
+Epoch 212/300, resid Loss: 0.0567 | 0.0254
+Epoch 213/300, resid Loss: 0.0567 | 0.0254
+Epoch 214/300, resid Loss: 0.0567 | 0.0253
+Epoch 215/300, resid Loss: 0.0567 | 0.0253
+Epoch 216/300, resid Loss: 0.0567 | 0.0253
+Epoch 217/300, resid Loss: 0.0567 | 0.0253
+Epoch 218/300, resid Loss: 0.0567 | 0.0253
+Epoch 219/300, resid Loss: 0.0567 | 0.0253
+Epoch 220/300, resid Loss: 0.0566 | 0.0253
+Epoch 221/300, resid Loss: 0.0566 | 0.0253
+Epoch 222/300, resid Loss: 0.0566 | 0.0253
+Epoch 223/300, resid Loss: 0.0566 | 0.0253
+Epoch 224/300, resid Loss: 0.0566 | 0.0253
+Epoch 225/300, resid Loss: 0.0566 | 0.0253
+Epoch 226/300, resid Loss: 0.0566 | 0.0253
+Epoch 227/300, resid Loss: 0.0566 | 0.0253
+Epoch 228/300, resid Loss: 0.0566 | 0.0253
+Epoch 229/300, resid Loss: 0.0566 | 0.0253
+Epoch 230/300, resid Loss: 0.0566 | 0.0253
+Epoch 231/300, resid Loss: 0.0566 | 0.0252
+Epoch 232/300, resid Loss: 0.0566 | 0.0252
+Epoch 233/300, resid Loss: 0.0566 | 0.0252
+Epoch 234/300, resid Loss: 0.0565 | 0.0252
+Epoch 235/300, resid Loss: 0.0565 | 0.0252
+Epoch 236/300, resid Loss: 0.0565 | 0.0252
+Epoch 237/300, resid Loss: 0.0565 | 0.0252
+Epoch 238/300, resid Loss: 0.0565 | 0.0252
+Epoch 239/300, resid Loss: 0.0565 | 0.0252
+Epoch 240/300, resid Loss: 0.0565 | 0.0252
+Epoch 241/300, resid Loss: 0.0565 | 0.0252
+Epoch 242/300, resid Loss: 0.0565 | 0.0252
+Epoch 243/300, resid Loss: 0.0565 | 0.0252
+Epoch 244/300, resid Loss: 0.0565 | 0.0252
+Epoch 245/300, resid Loss: 0.0565 | 0.0252
+Epoch 246/300, resid Loss: 0.0565 | 0.0252
+Epoch 247/300, resid Loss: 0.0565 | 0.0252
+Epoch 248/300, resid Loss: 0.0565 | 0.0252
+Epoch 249/300, resid Loss: 0.0565 | 0.0252
+Epoch 250/300, resid Loss: 0.0565 | 0.0252
+Epoch 251/300, resid Loss: 0.0565 | 0.0252
+Epoch 252/300, resid Loss: 0.0565 | 0.0252
+Epoch 253/300, resid Loss: 0.0565 | 0.0252
+Epoch 254/300, resid Loss: 0.0564 | 0.0252
+Epoch 255/300, resid Loss: 0.0564 | 0.0252
+Epoch 256/300, resid Loss: 0.0564 | 0.0252
+Epoch 257/300, resid Loss: 0.0564 | 0.0252
+Epoch 258/300, resid Loss: 0.0564 | 0.0252
+Epoch 259/300, resid Loss: 0.0564 | 0.0252
+Epoch 260/300, resid Loss: 0.0564 | 0.0252
+Epoch 261/300, resid Loss: 0.0564 | 0.0251
+Epoch 262/300, resid Loss: 0.0564 | 0.0251
+Epoch 263/300, resid Loss: 0.0564 | 0.0251
+Epoch 264/300, resid Loss: 0.0564 | 0.0251
+Epoch 265/300, resid Loss: 0.0564 | 0.0251
+Epoch 266/300, resid Loss: 0.0564 | 0.0251
+Epoch 267/300, resid Loss: 0.0564 | 0.0251
+Epoch 268/300, resid Loss: 0.0564 | 0.0251
+Epoch 269/300, resid Loss: 0.0564 | 0.0251
+Epoch 270/300, resid Loss: 0.0564 | 0.0251
+Epoch 271/300, resid Loss: 0.0564 | 0.0251
+Epoch 272/300, resid Loss: 0.0564 | 0.0251
+Epoch 273/300, resid Loss: 0.0564 | 0.0251
+Epoch 274/300, resid Loss: 0.0564 | 0.0251
+Epoch 275/300, resid Loss: 0.0564 | 0.0251
+Epoch 276/300, resid Loss: 0.0564 | 0.0251
+Epoch 277/300, resid Loss: 0.0564 | 0.0251
+Epoch 278/300, resid Loss: 0.0564 | 0.0251
+Epoch 279/300, resid Loss: 0.0564 | 0.0251
+Epoch 280/300, resid Loss: 0.0564 | 0.0251
+Epoch 281/300, resid Loss: 0.0564 | 0.0251
+Epoch 282/300, resid Loss: 0.0564 | 0.0251
+Epoch 283/300, resid Loss: 0.0564 | 0.0251
+Epoch 284/300, resid Loss: 0.0564 | 0.0251
+Epoch 285/300, resid Loss: 0.0564 | 0.0251
+Epoch 286/300, resid Loss: 0.0564 | 0.0251
+Epoch 287/300, resid Loss: 0.0564 | 0.0251
+Epoch 288/300, resid Loss: 0.0564 | 0.0251
+Epoch 289/300, resid Loss: 0.0564 | 0.0251
+Epoch 290/300, resid Loss: 0.0563 | 0.0251
+Epoch 291/300, resid Loss: 0.0563 | 0.0251
+Epoch 292/300, resid Loss: 0.0563 | 0.0251
+Epoch 293/300, resid Loss: 0.0563 | 0.0251
+Epoch 294/300, resid Loss: 0.0563 | 0.0251
+Epoch 295/300, resid Loss: 0.0563 | 0.0251
+Epoch 296/300, resid Loss: 0.0563 | 0.0251
+Epoch 297/300, resid Loss: 0.0563 | 0.0251
+Epoch 298/300, resid Loss: 0.0563 | 0.0251
+Epoch 299/300, resid Loss: 0.0563 | 0.0251
+Epoch 300/300, resid Loss: 0.0563 | 0.0251
+Runtime (seconds): 962.170330286026
+0.0005219853339379502
+[213.18716]
+[1.2461573]
+[-4.737057]
+[2.5563288]
+[0.9385599]
+[9.84803]
+/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/sklearn/metrics/_regression.py:1266: UndefinedMetricWarning: R^2 score is not well-defined with less than two samples.
+  warnings.warn(msg, UndefinedMetricWarning)
+MSE: 46.65997272729874
+RMSE: 6.830810546875
+MAE: 6.830810546875
+R-squared: nan
+[223.03918]

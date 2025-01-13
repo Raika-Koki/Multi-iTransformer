@@ -21,7 +21,7 @@ from src.train import train
 from statsmodels.tsa.seasonal import MSTL
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0' #check
+os.environ['CUDA_VISIBLE_DEVICES'] = '1' #check
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
@@ -535,7 +535,7 @@ while True:
 
     # WandBの初期化
     wandb.init(
-        project=f"{stock_code}-stock-price-prediction-by-iTransformer(change dim4,8depth32,256)",
+        project=f"{stock_code}-stock-price-prediction-by-iTransformer(change dim4 depth32, 128)",
         name=f"{dataframes_trend['Adj_close'].index[0].strftime('%Y%m%d')}_{dataframes_trend['Adj_close'].index[-1].strftime('%Y%m%d')}[{start_date}_{end_date}]"
     )
 
@@ -550,9 +550,9 @@ while True:
             depth = 4
             dim = 32
         else:
-            depth = 8
-            dim = 256
-        
+            depth = 4
+            dim = 128
+    
         study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
         if len(study.trials) == 0 or all([t.state != optuna.trial.TrialState.COMPLETE for t in study.trials]):
             print(f"No completed trials for {component}. Skipping.")
