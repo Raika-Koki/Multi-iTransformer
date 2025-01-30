@@ -1,0 +1,26 @@
+{"time":"2025-01-15T05:32:41.152991468+09:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-15T05:32:41.153038556+09:00","level":"INFO","msg":"created symlink","path":"/data/student/k2110261/Multi-iTransformer/wandb/run-20250115_053240-5oeytcv1/logs/debug-core.log"}
+{"time":"2025-01-15T05:32:41.267567718+09:00","level":"INFO","msg":"created new stream","id":"5oeytcv1"}
+{"time":"2025-01-15T05:32:41.267622324+09:00","level":"INFO","msg":"stream: started","id":"5oeytcv1"}
+{"time":"2025-01-15T05:32:41.267705353+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"5oeytcv1"}
+{"time":"2025-01-15T05:32:41.267793131+09:00","level":"INFO","msg":"handler: started","stream_id":"5oeytcv1"}
+{"time":"2025-01-15T05:32:41.26784378+09:00","level":"INFO","msg":"sender: started","stream_id":"5oeytcv1"}
+{"time":"2025-01-15T05:32:41.723555692+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-15T07:54:32.269977816+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raika-koki/AMZN-stock-price-prediction-by-iTransformer(single)/5oeytcv1/file_stream\": unexpected EOF"}
+{"time":"2025-01-15T09:14:16.911365708+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AMZN-stock-price-prediction-by-iTransformer(single)/5oeytcv1/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-15T09:15:12.228071724+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-15T09:16:27.237152673+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-15T09:16:55.644628667+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AMZN-stock-price-prediction-by-iTransformer(single)/5oeytcv1/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-15T09:17:27.248226931+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-15T09:18:27.258807265+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-15T09:18:59.612354444+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-15T09:19:33.73325434+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-15T12:04:18.034401083+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-15T12:04:18.035546347+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-15T12:04:19.035122244+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.392666185,"progress":"586B/586B"},{"desc":"uploading output.log","runtime_seconds":0.39265791,"progress":"97.9KB/97.9KB"}],"total_operations":2}}
+{"time":"2025-01-15T12:04:19.731591158+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-15T12:04:21.118459244+09:00","level":"INFO","msg":"stream: closing","id":"5oeytcv1"}
+{"time":"2025-01-15T12:04:21.118507104+09:00","level":"INFO","msg":"handler: closed","stream_id":"5oeytcv1"}
+{"time":"2025-01-15T12:04:21.118527958+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5oeytcv1"}
+{"time":"2025-01-15T12:04:21.118573004+09:00","level":"INFO","msg":"sender: closed","stream_id":"5oeytcv1"}
+{"time":"2025-01-15T12:04:21.119762984+09:00","level":"INFO","msg":"stream: closed","id":"5oeytcv1"}

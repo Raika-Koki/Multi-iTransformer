@@ -1,0 +1,109 @@
+[32m[I 2025-01-14 01:36:29,006][0m A new study created in memory with name: no-name-14496429-9bca-4959-8dd1-6d54842324b3[0m
+[32m[I 2025-01-14 01:36:30,153][0m Trial 0 finished with value: 4.229527867254435 and parameters: {'observation_period_num': 125, 'train_rates': 0.6162019305719927, 'learning_rate': 9.57602251323035e-06, 'batch_size': 239, 'step_size': 15, 'gamma': 0.9328138049371674}. Best is trial 0 with value: 4.229527867254435.[0m
+[32m[I 2025-01-14 01:36:30,154][0m A new study created in memory with name: no-name-b5a59bc8-b3ff-4c33-b790-962ce7e4097a[0m
+[32m[I 2025-01-14 01:36:31,180][0m Trial 0 finished with value: 1.6057402367329658 and parameters: {'observation_period_num': 36, 'train_rates': 0.7340647455082345, 'learning_rate': 5.075789141702938e-06, 'batch_size': 73, 'step_size': 15, 'gamma': 0.8529823319271919}. Best is trial 0 with value: 1.6057402367329658.[0m
+[32m[I 2025-01-14 01:36:31,181][0m A new study created in memory with name: no-name-4a045d73-10ab-43ea-88e3-dc7b2fb88e4f[0m
+[32m[I 2025-01-14 01:36:32,817][0m Trial 0 finished with value: 0.18570688179835065 and parameters: {'observation_period_num': 161, 'train_rates': 0.7487601520115024, 'learning_rate': 0.0005380864958096197, 'batch_size': 67, 'step_size': 11, 'gamma': 0.7507939605013384}. Best is trial 0 with value: 0.18570688179835065.[0m
+[32m[I 2025-01-14 01:36:32,817][0m A new study created in memory with name: no-name-feb2305a-7eac-4cb7-9b60-337a0b2460b9[0m
+[33m[W 2025-01-14 01:36:33,731][0m Trial 0 failed with parameters: {'observation_period_num': 243, 'train_rates': 0.6339501377247573, 'learning_rate': 1.371405638584245e-06, 'batch_size': 252, 'step_size': 3, 'gamma': 0.8906522662436223} because of the following error: OutOfMemoryError('CUDA out of memory. Tried to allocate 480.00 MiB (GPU 0; 10.76 GiB total capacity; 9.21 GiB already allocated; 261.44 MiB free; 9.63 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF').[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformersingle.py", line 203, in <lambda>
+    study.optimize(lambda t: objective(t, comp, depth, dim), n_trials=1) #check
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformersingle.py", line 98, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/Transformer_model.py", line 24, in forward
+    output = self.transformer_encoder(src)  # (lookback_len, batch_size, dim)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 315, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 592, in forward
+    x = self.norm2(x + self._ff_block(x))
+                       ^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 607, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/functional.py", line 1252, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 480.00 MiB (GPU 0; 10.76 GiB total capacity; 9.21 GiB already allocated; 261.44 MiB free; 9.63 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+[33m[W 2025-01-14 01:36:33,894][0m Trial 0 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformersingle.py", line 203, in <module>
+    study.optimize(lambda t: objective(t, comp, depth, dim), n_trials=1) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformersingle.py", line 203, in <lambda>
+    study.optimize(lambda t: objective(t, comp, depth, dim), n_trials=1) #check
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformersingle.py", line 98, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/Transformer_model.py", line 24, in forward
+    output = self.transformer_encoder(src)  # (lookback_len, batch_size, dim)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 315, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 592, in forward
+    x = self.norm2(x + self._ff_block(x))
+                       ^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 607, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/functional.py", line 1252, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 480.00 MiB (GPU 0; 10.76 GiB total capacity; 9.21 GiB already allocated; 261.44 MiB free; 9.63 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

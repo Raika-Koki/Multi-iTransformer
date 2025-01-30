@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import MSTL
 
 # 株価データのダウンロード
-stock_code = 'AAPL'
+stock_code = 'AMZN'
 start_date = '2013-03-07'
 end_date = '2024-11-22'
 
@@ -11,7 +11,8 @@ df_stock = yf.download(stock_code, start=start_date, end=end_date)
 if len(df_stock) == 0:
     raise Exception("No data fetched for the given stock code and date range.")
 
-data = df_stock['Adj Close']
+dataseries = 'Open'
+data = df_stock[dataseries]
 print(data)
 
 # MSTLで株価データを分解する
@@ -59,7 +60,7 @@ axes[6].plot(result.resid, label='resid', color='grey')
 axes[6].legend(loc='upper left')
 axes[6].set_title('resid')
 
-plt.suptitle(f"{stock_code} from {start_date} to {end_date}", fontsize=20)
+plt.suptitle(f"{stock_code} {dataseries} from {start_date} to {end_date}", fontsize=20)
 plt.tight_layout()
 plt.show()
 plt.savefig("output.png")

@@ -1,0 +1,17 @@
+[32m[I 2025-01-14 01:08:47,833][0m A new study created in memory with name: no-name-55678d4a-8d3c-4cfe-83ff-68ee42940e84[0m
+[32m[I 2025-01-14 01:08:53,556][0m Trial 0 finished with value: 0.0031915902160696897 and parameters: {'observation_period_num': 111, 'train_rates': 0.9393296832297333, 'learning_rate': 0.00010179142846390393, 'batch_size': 23, 'step_size': 12, 'gamma': 0.972731896140515}. Best is trial 0 with value: 0.0031915902160696897.[0m
+[32m[I 2025-01-14 01:08:53,557][0m A new study created in memory with name: no-name-add7c702-0252-4395-bed1-8643bb17c935[0m
+[32m[I 2025-01-14 01:08:54,882][0m Trial 0 finished with value: 2.812162833357299 and parameters: {'observation_period_num': 111, 'train_rates': 0.9622111234341031, 'learning_rate': 1.2048321536703916e-06, 'batch_size': 103, 'step_size': 13, 'gamma': 0.9595000055251721}. Best is trial 0 with value: 2.812162833357299.[0m
+[32m[I 2025-01-14 01:08:54,884][0m A new study created in memory with name: no-name-509efe38-c1be-45f1-8498-a5d8ddde808b[0m
+[32m[I 2025-01-14 01:08:55,751][0m Trial 0 finished with value: 0.7959922724542645 and parameters: {'observation_period_num': 27, 'train_rates': 0.6455431772836582, 'learning_rate': 1.5331527344706027e-06, 'batch_size': 100, 'step_size': 11, 'gamma': 0.8843032839562129}. Best is trial 0 with value: 0.7959922724542645.[0m
+[32m[I 2025-01-14 01:08:55,752][0m A new study created in memory with name: no-name-9199950f-bd68-41a1-8bda-802d146f893e[0m
+[32m[I 2025-01-14 01:08:57,824][0m Trial 0 finished with value: 0.08497767150402069 and parameters: {'observation_period_num': 194, 'train_rates': 0.9298509912374346, 'learning_rate': 2.512842718957645e-05, 'batch_size': 227, 'step_size': 1, 'gamma': 0.9728612398363109}. Best is trial 0 with value: 0.08497767150402069.[0m
+[32m[I 2025-01-14 01:08:57,825][0m A new study created in memory with name: no-name-e5ea142f-b671-44a5-955d-9034955992ee[0m
+[32m[I 2025-01-14 01:08:59,715][0m Trial 0 finished with value: 0.055851540313317224 and parameters: {'observation_period_num': 176, 'train_rates': 0.9392733541826084, 'learning_rate': 4.462375160072992e-06, 'batch_size': 78, 'step_size': 7, 'gamma': 0.8075455447107521}. Best is trial 0 with value: 0.055851540313317224.[0m
+[32m[I 2025-01-14 01:08:59,716][0m A new study created in memory with name: no-name-0d863b7d-3d93-4bf4-b08d-cde1e9adcdcc[0m
+[32m[I 2025-01-14 01:09:02,284][0m Trial 0 finished with value: 4.846160861564909 and parameters: {'observation_period_num': 31, 'train_rates': 0.6506927820838646, 'learning_rate': 0.0004370754551025962, 'batch_size': 18, 'step_size': 12, 'gamma': 0.7721775288830985}. Best is trial 0 with value: 4.846160861564909.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformersingle.py", line 277, in <module>
+    predicted_trend_stock_price = predicted_trend[1][0, :, 0].cpu().numpy().flatten() * std_lists['trend'].iloc[0] + mean_lists['trend'].iloc[0]
+                                  ~~~~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1

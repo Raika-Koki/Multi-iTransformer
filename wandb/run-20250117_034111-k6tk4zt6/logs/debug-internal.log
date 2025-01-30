@@ -1,0 +1,26 @@
+{"time":"2025-01-17T03:41:11.43848037+09:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-17T03:41:11.438518105+09:00","level":"INFO","msg":"created symlink","path":"/data/student/k2110261/Multi-iTransformer/wandb/run-20250117_034111-k6tk4zt6/logs/debug-core.log"}
+{"time":"2025-01-17T03:41:11.742297623+09:00","level":"INFO","msg":"created new stream","id":"k6tk4zt6"}
+{"time":"2025-01-17T03:41:11.742339321+09:00","level":"INFO","msg":"stream: started","id":"k6tk4zt6"}
+{"time":"2025-01-17T03:41:11.742367863+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"k6tk4zt6"}
+{"time":"2025-01-17T03:41:11.742467957+09:00","level":"INFO","msg":"sender: started","stream_id":"k6tk4zt6"}
+{"time":"2025-01-17T03:41:11.742492592+09:00","level":"INFO","msg":"handler: started","stream_id":"k6tk4zt6"}
+{"time":"2025-01-17T03:41:12.187178975+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-17T05:34:17.769470318+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raika-koki/AAPL-stock-price-prediction-by-iTransformer(single)/k6tk4zt6/file_stream\": unexpected EOF"}
+{"time":"2025-01-17T07:15:59.062922006+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AAPL-stock-price-prediction-by-iTransformer(single)/k6tk4zt6/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-17T07:18:12.902343385+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AAPL-stock-price-prediction-by-iTransformer(single)/k6tk4zt6/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-17T07:22:32.52391028+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AAPL-stock-price-prediction-by-iTransformer(single)/k6tk4zt6/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-17T07:23:45.627446147+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-17T07:24:17.733648421+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-17T07:25:30.930931176+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AAPL-stock-price-prediction-by-iTransformer(single)/k6tk4zt6/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-17T07:25:57.669649257+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AAPL-stock-price-prediction-by-iTransformer(single)/k6tk4zt6/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-17T07:26:09.664721008+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/raika-koki/AAPL-stock-price-prediction-by-iTransformer(single)/k6tk4zt6/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-17T10:28:18.80821238+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-17T10:28:18.809197345+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-17T10:28:19.809020104+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.575030766,"progress":"1.7KB/1.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.314856878,"progress":"586B/586B"},{"desc":"uploading output.log","runtime_seconds":0.314847387,"progress":"97.7KB/97.7KB"}],"total_operations":3}}
+{"time":"2025-01-17T10:28:20.500513399+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-17T10:28:21.810127926+09:00","level":"INFO","msg":"stream: closing","id":"k6tk4zt6"}
+{"time":"2025-01-17T10:28:21.81016052+09:00","level":"INFO","msg":"handler: closed","stream_id":"k6tk4zt6"}
+{"time":"2025-01-17T10:28:21.810173132+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"k6tk4zt6"}
+{"time":"2025-01-17T10:28:21.810220856+09:00","level":"INFO","msg":"sender: closed","stream_id":"k6tk4zt6"}
+{"time":"2025-01-17T10:28:21.811254782+09:00","level":"INFO","msg":"stream: closed","id":"k6tk4zt6"}

@@ -1,0 +1,87 @@
+最適化対象: trend
+[32m[I 2025-01-30 16:54:39,831][0m A new study created in memory with name: no-name-9a14a686-e9dc-4b7c-bf42-0061d834bc1c[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+[33m[W 2025-01-30 16:55:49,793][0m Trial 0 failed with parameters: {'observation_period_num': 97, 'train_rates': 0.7959457230691129, 'learning_rate': 1.7776683666032354e-06, 'batch_size': 75, 'step_size': 13, 'gamma': 0.9857558016708505} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-01-30 16:55:49,794][0m Trial 0 failed with value nan.[0m
+[33m[W 2025-01-30 16:56:10,285][0m Trial 1 failed with parameters: {'observation_period_num': 118, 'train_rates': 0.6054191770807147, 'learning_rate': 0.0002546023780441067, 'batch_size': 220, 'step_size': 4, 'gamma': 0.9338497293877633} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-01-30 16:56:10,286][0m Trial 1 failed with value nan.[0m
+[33m[W 2025-01-30 16:56:11,855][0m Trial 2 failed with parameters: {'observation_period_num': 235, 'train_rates': 0.8284300394183797, 'learning_rate': 1.4363853223731585e-06, 'batch_size': 178, 'step_size': 7, 'gamma': 0.8693834472446149} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7ff9fb23c0e0>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 188, in forward
+    x = attn(x) + x
+        ^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 65, in forward
+    q, k, v = self.to_qkv(x)
+              ^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-01-30 16:56:11,954][0m Trial 2 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 550, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 113, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<@beartype(src.model.iTransformer.forward) at 0x7ff9fb23c0e0>", line 66, in forward
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 188, in forward
+    x = attn(x) + x
+        ^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/model.py", line 65, in forward
+    q, k, v = self.to_qkv(x)
+              ^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+KeyboardInterrupt
