@@ -1,0 +1,124 @@
+最適化対象: trend
+[32m[I 2025-02-02 16:18:17,406][0m A new study created in memory with name: no-name-b34dbceb-297c-47a3-89ca-a6efae474d1e[0m
+[33m[W 2025-02-02 16:20:18,701][0m Trial 0 failed with parameters: {'observation_period_num': 124, 'train_rates': 0.8389928371618252, 'learning_rate': 2.646657732387175e-05, 'batch_size': 212, 'step_size': 14, 'gamma': 0.8253603358090967} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:20:18,701][0m Trial 0 failed with value nan.[0m
+[33m[W 2025-02-02 16:22:47,506][0m Trial 1 failed with parameters: {'observation_period_num': 156, 'train_rates': 0.7259664470467718, 'learning_rate': 5.733869914004517e-05, 'batch_size': 165, 'step_size': 3, 'gamma': 0.9600479381585183} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:22:47,506][0m Trial 1 failed with value nan.[0m
+[33m[W 2025-02-02 16:24:48,640][0m Trial 2 failed with parameters: {'observation_period_num': 124, 'train_rates': 0.8162599234346068, 'learning_rate': 7.111114094777952e-06, 'batch_size': 116, 'step_size': 5, 'gamma': 0.8394484131236335} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:24:48,640][0m Trial 2 failed with value nan.[0m
+[33m[W 2025-02-02 16:27:26,623][0m Trial 3 failed with parameters: {'observation_period_num': 154, 'train_rates': 0.8063003232037985, 'learning_rate': 0.00011456951547051692, 'batch_size': 134, 'step_size': 12, 'gamma': 0.8848844880241074} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:27:26,623][0m Trial 3 failed with value nan.[0m
+[33m[W 2025-02-02 16:30:18,176][0m Trial 4 failed with parameters: {'observation_period_num': 147, 'train_rates': 0.9478343676078123, 'learning_rate': 3.180208353098876e-06, 'batch_size': 114, 'step_size': 9, 'gamma': 0.7582044188925658} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:30:18,176][0m Trial 4 failed with value nan.[0m
+[33m[W 2025-02-02 16:31:14,958][0m Trial 5 failed with parameters: {'observation_period_num': 70, 'train_rates': 0.6049732957267152, 'learning_rate': 2.316057438958049e-06, 'batch_size': 191, 'step_size': 14, 'gamma': 0.7954643502286365} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:31:14,958][0m Trial 5 failed with value nan.[0m
+[33m[W 2025-02-02 16:31:45,597][0m Trial 6 failed with parameters: {'observation_period_num': 20, 'train_rates': 0.7675416954645109, 'learning_rate': 2.500282298248668e-05, 'batch_size': 143, 'step_size': 4, 'gamma': 0.8187760052816475} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:31:45,597][0m Trial 6 failed with value nan.[0m
+[33m[W 2025-02-02 16:32:08,060][0m Trial 7 failed with parameters: {'observation_period_num': 13, 'train_rates': 0.9330635511546361, 'learning_rate': 5.839696339209893e-05, 'batch_size': 239, 'step_size': 14, 'gamma': 0.8357974295856376} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:32:08,061][0m Trial 7 failed with value nan.[0m
+[33m[W 2025-02-02 16:35:39,985][0m Trial 8 failed with parameters: {'observation_period_num': 182, 'train_rates': 0.9326143829375724, 'learning_rate': 1.6965519468299313e-06, 'batch_size': 172, 'step_size': 15, 'gamma': 0.9091252051379242} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:35:39,985][0m Trial 8 failed with value nan.[0m
+[33m[W 2025-02-02 16:40:08,991][0m Trial 9 failed with parameters: {'observation_period_num': 230, 'train_rates': 0.8589104707719317, 'learning_rate': 1.1376360311890494e-06, 'batch_size': 215, 'step_size': 13, 'gamma': 0.778892030426861} because of the following error: The value nan is not acceptable.[0m
+[33m[W 2025-02-02 16:40:08,991][0m Trial 9 failed with value nan.[0m
+[33m[W 2025-02-02 16:43:14,478][0m Trial 10 failed with parameters: {'observation_period_num': 146, 'train_rates': 0.8650269017663583, 'learning_rate': 0.0007427166530357777, 'batch_size': 22, 'step_size': 9, 'gamma': 0.8819225222589733} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 575, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 110, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/Transformer_model.py", line 24, in forward
+    output = self.transformer_encoder(src)  # (lookback_len, batch_size, dim)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 315, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 591, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask, is_causal=is_causal))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 599, in _sa_block
+    x = self.self_attn(x, x, x,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/activation.py", line 1205, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/functional.py", line 5373, in multi_head_attention_forward
+    attn_output = scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-02-02 16:43:14,494][0m Trial 10 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 575, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 575, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/Transformer.py", line 110, in objective
+    model, _, valid_loss = train(
+                           ^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/train.py", line 32, in train
+    output = model(data)
+             ^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/Transformer_model.py", line 24, in forward
+    output = self.transformer_encoder(src)  # (lookback_len, batch_size, dim)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 315, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 591, in forward
+    x = self.norm1(x + self._sa_block(x, src_mask, src_key_padding_mask, is_causal=is_causal))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/transformer.py", line 599, in _sa_block
+    x = self.self_attn(x, x, x,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/modules/activation.py", line 1205, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/torch/nn/functional.py", line 5373, in multi_head_attention_forward
+    attn_output = scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

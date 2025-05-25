@@ -1,0 +1,24 @@
+{"time":"2025-02-05T20:15:29.438243809+09:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-02-05T20:15:29.438285787+09:00","level":"INFO","msg":"created symlink","path":"/data/student/k2110261/Multi-iTransformer/wandb/run-20250205_201529-p0xv4050/logs/debug-core.log"}
+{"time":"2025-02-05T20:15:29.603812763+09:00","level":"INFO","msg":"created new stream","id":"p0xv4050"}
+{"time":"2025-02-05T20:15:29.603871286+09:00","level":"INFO","msg":"stream: started","id":"p0xv4050"}
+{"time":"2025-02-05T20:15:29.603908444+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"p0xv4050"}
+{"time":"2025-02-05T20:15:29.603925257+09:00","level":"INFO","msg":"sender: started","stream_id":"p0xv4050"}
+{"time":"2025-02-05T20:15:29.603939091+09:00","level":"INFO","msg":"handler: started","stream_id":"p0xv4050"}
+{"time":"2025-02-05T20:15:30.086804969+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-05T20:21:03.527788709+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-Transformer/p0xv4050/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-02-05T20:21:05.775721595+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-Transformer/p0xv4050/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-02-05T20:21:10.478639871+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-Transformer/p0xv4050/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-02-05T23:25:39.514060599+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-02-05T23:45:17.002032549+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-Transformer/p0xv4050/file_stream\": unexpected EOF"}
+{"time":"2025-02-06T04:56:55.116878987+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-Transformer/p0xv4050/file_stream\": unexpected EOF"}
+{"time":"2025-02-06T09:08:41.825057574+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-02-06T09:40:01.27057783+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-06T09:40:01.271722129+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-06T09:40:02.271196301+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.598052016,"progress":"172.4KB/172.4KB"}],"total_operations":1}}
+{"time":"2025-02-06T09:40:02.352005482+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-06T09:40:03.627133717+09:00","level":"INFO","msg":"stream: closing","id":"p0xv4050"}
+{"time":"2025-02-06T09:40:03.627161354+09:00","level":"INFO","msg":"handler: closed","stream_id":"p0xv4050"}
+{"time":"2025-02-06T09:40:03.62717092+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"p0xv4050"}
+{"time":"2025-02-06T09:40:03.627191847+09:00","level":"INFO","msg":"sender: closed","stream_id":"p0xv4050"}
+{"time":"2025-02-06T09:40:03.628133836+09:00","level":"INFO","msg":"stream: closed","id":"p0xv4050"}

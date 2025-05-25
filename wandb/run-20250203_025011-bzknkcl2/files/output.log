@@ -1,0 +1,69 @@
+最適化対象: trend
+[32m[I 2025-02-03 02:50:13,589][0m A new study created in memory with name: no-name-2956a680-b5bc-43b8-9f34-59c2f7bc8243[0m
+Non-A100 GPU detected, using math or mem efficient attention if input tensor is on cuda
+Early stopping at epoch 73
+[32m[I 2025-02-03 02:50:40,625][0m Trial 0 finished with value: 0.29385069012641907 and parameters: {'observation_period_num': 20, 'train_rates': 0.9881752957452032, 'learning_rate': 2.9303968153788988e-05, 'batch_size': 209, 'step_size': 1, 'gamma': 0.8485971708629028}. Best is trial 0 with value: 0.29385069012641907.[0m
+[32m[I 2025-02-03 02:51:12,466][0m Trial 1 finished with value: 0.592289030316319 and parameters: {'observation_period_num': 174, 'train_rates': 0.9090207176433626, 'learning_rate': 1.8175543884225497e-06, 'batch_size': 150, 'step_size': 7, 'gamma': 0.8354528010772826}. Best is trial 0 with value: 0.29385069012641907.[0m
+[32m[I 2025-02-03 02:52:36,153][0m Trial 2 finished with value: 0.09086893498897552 and parameters: {'observation_period_num': 49, 'train_rates': 0.9872790846513575, 'learning_rate': 3.438551035623581e-06, 'batch_size': 47, 'step_size': 9, 'gamma': 0.9733275490468869}. Best is trial 2 with value: 0.09086893498897552.[0m
+[32m[I 2025-02-03 02:53:06,787][0m Trial 3 finished with value: 0.033600902447364474 and parameters: {'observation_period_num': 28, 'train_rates': 0.8471613524162199, 'learning_rate': 0.0002155848433540135, 'batch_size': 180, 'step_size': 8, 'gamma': 0.915996273691245}. Best is trial 3 with value: 0.033600902447364474.[0m
+[32m[I 2025-02-03 02:53:33,896][0m Trial 4 finished with value: 0.04569488945061219 and parameters: {'observation_period_num': 36, 'train_rates': 0.6815169501465761, 'learning_rate': 0.00014961237406686912, 'batch_size': 143, 'step_size': 7, 'gamma': 0.9495162324507086}. Best is trial 3 with value: 0.033600902447364474.[0m
+[32m[I 2025-02-03 02:54:14,027][0m Trial 5 finished with value: 0.09046631653805723 and parameters: {'observation_period_num': 230, 'train_rates': 0.7550483234863717, 'learning_rate': 8.440775731400268e-05, 'batch_size': 74, 'step_size': 4, 'gamma': 0.882403007698988}. Best is trial 3 with value: 0.033600902447364474.[0m
+[32m[I 2025-02-03 02:54:42,199][0m Trial 6 finished with value: 0.06910984138859079 and parameters: {'observation_period_num': 121, 'train_rates': 0.8339778829918859, 'learning_rate': 4.330608296416458e-05, 'batch_size': 182, 'step_size': 11, 'gamma': 0.9288117696572262}. Best is trial 3 with value: 0.033600902447364474.[0m
+[32m[I 2025-02-03 02:55:14,986][0m Trial 7 finished with value: 0.3899669647216797 and parameters: {'observation_period_num': 143, 'train_rates': 0.9736504151274281, 'learning_rate': 4.3873393605539925e-06, 'batch_size': 156, 'step_size': 4, 'gamma': 0.8221597028987012}. Best is trial 3 with value: 0.033600902447364474.[0m
+[32m[I 2025-02-03 02:56:52,162][0m Trial 8 finished with value: 0.05546692884639505 and parameters: {'observation_period_num': 5, 'train_rates': 0.8736278506413648, 'learning_rate': 1.1835428282693377e-05, 'batch_size': 36, 'step_size': 8, 'gamma': 0.8132015586257073}. Best is trial 3 with value: 0.033600902447364474.[0m
+[32m[I 2025-02-03 02:57:56,735][0m Trial 9 finished with value: 0.08516979377184596 and parameters: {'observation_period_num': 131, 'train_rates': 0.6797142395397973, 'learning_rate': 0.0001182516034968436, 'batch_size': 43, 'step_size': 2, 'gamma': 0.8900983646438277}. Best is trial 3 with value: 0.033600902447364474.[0m
+[32m[I 2025-02-03 02:58:25,300][0m Trial 10 finished with value: 0.03572969448085376 and parameters: {'observation_period_num': 72, 'train_rates': 0.7795208256341193, 'learning_rate': 0.0009595889801873103, 'batch_size': 235, 'step_size': 13, 'gamma': 0.753499612188326}. Best is trial 3 with value: 0.033600902447364474.[0m
+[33m[W 2025-02-03 02:58:26,308][0m Trial 11 failed with parameters: {'observation_period_num': 76, 'train_rates': 0.7639443384837262, 'learning_rate': 0.0009121729841659123, 'batch_size': 252, 'step_size': 14, 'gamma': 0.7536918844909662} because of the following error: KeyboardInterrupt().[0m
+Traceback (most recent call last):
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 551, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 96, in objective
+    train_data, valid_data = create_multivariate_dataset(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 34, in create_multivariate_dataset
+    data = data_norm.iloc[i:i + observation_period_num].values  # [観測期間, 銘柄数]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/frame.py", line 12664, in values
+    return self._mgr.as_array()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1705, in as_array
+    return arr.transpose()
+           ^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[33m[W 2025-02-03 02:58:26,468][0m Trial 11 failed with value None.[0m
+Traceback (most recent call last):
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 551, in <module>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/study.py", line 475, in optimize
+    _optimize(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 63, in _optimize
+    _optimize_sequential(
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 160, in _optimize_sequential
+    frozen_trial = _run_trial(study, func, catch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 248, in _run_trial
+    raise func_err
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/optuna/study/_optimize.py", line 197, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 551, in <lambda>
+    study.optimize(lambda trial: objective(trial, component, depth, dim), n_trials=50) #check
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/roop_optuna.py", line 96, in objective
+    train_data, valid_data = create_multivariate_dataset(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/student/k2110261/Multi-iTransformer/src/data_create.py", line 34, in create_multivariate_dataset
+    data = data_norm.iloc[i:i + observation_period_num].values  # [観測期間, 銘柄数]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/frame.py", line 12664, in values
+    return self._mgr.as_array()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home2/y2021/k2110261/.conda/envs/tensorflow/lib/python3.11/site-packages/pandas/core/internals/managers.py", line 1705, in as_array
+    return arr.transpose()
+           ^^^^^^^^^^^^^^^
+KeyboardInterrupt

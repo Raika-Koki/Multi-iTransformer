@@ -1,0 +1,22 @@
+{"time":"2025-02-05T18:59:49.615799213+09:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-02-05T18:59:49.615832041+09:00","level":"INFO","msg":"created symlink","path":"/data/student/k2110261/Multi-iTransformer/wandb/run-20250205_185949-mm9jzwju/logs/debug-core.log"}
+{"time":"2025-02-05T18:59:49.86828758+09:00","level":"INFO","msg":"created new stream","id":"mm9jzwju"}
+{"time":"2025-02-05T18:59:49.868329761+09:00","level":"INFO","msg":"stream: started","id":"mm9jzwju"}
+{"time":"2025-02-05T18:59:49.86878642+09:00","level":"INFO","msg":"handler: started","stream_id":"mm9jzwju"}
+{"time":"2025-02-05T18:59:49.868810593+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"mm9jzwju"}
+{"time":"2025-02-05T18:59:49.86889106+09:00","level":"INFO","msg":"sender: started","stream_id":"mm9jzwju"}
+{"time":"2025-02-05T18:59:50.311245843+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-05T20:21:06.083928142+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-iTransformer/mm9jzwju/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-02-05T20:21:08.498852107+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-iTransformer/mm9jzwju/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-02-05T20:21:12.787413751+09:00","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/raika-koki/GOOG-stock-price-prediction-by-iTransformer/mm9jzwju/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}
+{"time":"2025-02-05T23:30:24.607619321+09:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-02-05T23:30:39.808957454+09:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"Post \\\"https://sqladmin.googleapis.com/sql/v1beta4/projects/wandb-production/instances/us-central1~production:generateEphemeralCert?alt=json\\u0026prettyPrint=false\\\": dial tcp: lookup sqladmin.googleapis.com: i/o timeout\",\"path\":[\"project\"]}],\"data\":{\"project\":null}}"}
+{"time":"2025-02-06T03:20:35.739284025+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-06T03:20:35.740211265+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-06T03:20:36.739952807+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.594159942,"progress":"180.2KB/180.2KB"}],"total_operations":1}}
+{"time":"2025-02-06T03:20:36.821552534+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-06T03:20:38.161266971+09:00","level":"INFO","msg":"stream: closing","id":"mm9jzwju"}
+{"time":"2025-02-06T03:20:38.161294028+09:00","level":"INFO","msg":"handler: closed","stream_id":"mm9jzwju"}
+{"time":"2025-02-06T03:20:38.161320298+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mm9jzwju"}
+{"time":"2025-02-06T03:20:38.161403933+09:00","level":"INFO","msg":"sender: closed","stream_id":"mm9jzwju"}
+{"time":"2025-02-06T03:20:38.162472606+09:00","level":"INFO","msg":"stream: closed","id":"mm9jzwju"}

@@ -1,13 +1,19 @@
 import torch
 import numpy as np
 
-def data_Normalization(df):
-    """
+"""def data_Normalization(df):
+    """"""
     データの正規化を行う関数
     df: データフレーム (株価など)
-    """
+    """"""
     mean_list = df.mean()
     std_list = df.std()
+    df = (df - mean_list) / std_list
+    return df, mean_list, std_list"""
+def data_Normalization(df):
+    mean_list = df.mean()
+    std_list = df.std()
+    std_list[std_list == 0] = 1  # 標準偏差がゼロの場合は1に置き換える
     df = (df - mean_list) / std_list
     return df, mean_list, std_list
 

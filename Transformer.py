@@ -210,11 +210,11 @@ def create_model(num_variates, params, depth, dim, pred_length):
 # 初期設定
 start_date = '2012-05-18'
 initial_end_date = datetime.strptime('2024-11-25', '%Y-%m-%d')
-stock_code = 'AMZN' #check
+stock_code = 'BA' #check
 file_name = f"best_hyperparameters_{stock_code}_Transformer.json"  # check
 predict_period_num = 1
 depth = 4
-dim = 128
+dim = 64
 
 # 経済指標ごとに関心度を計算
 alpha = 8

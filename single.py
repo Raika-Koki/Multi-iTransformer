@@ -21,7 +21,7 @@ from src.model import iTransformer, EarlyStopping
 from src.data_create import data_Normalization, create_multivariate_dataset
 from src.train import train
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0' #check
+os.environ['CUDA_VISIBLE_DEVICES'] = '2' #check
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
@@ -128,7 +128,7 @@ def create_model(params, predict_period_num, depth, dim):
 # メイン処理
 start_date = '2012-05-18'
 initial_end_date = datetime.strptime('2024-11-25', '%Y-%m-%d')
-stock_code = 'AMZN' #check
+stock_code = 'GOOG' #check
 file_name = f"best_hyperparameters_{stock_code}_iTransformer(single).json"
 predict_period_num = 1
 depth = 4

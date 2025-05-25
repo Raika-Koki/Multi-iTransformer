@@ -76,7 +76,7 @@ def objective(trial, component, depth, dim):
     # ハイパーパラメータの提案
     observation_period = trial.suggest_int('observation_period_num', 5, 252)
     train_rates = trial.suggest_float('train_rates', 0.6, 0.99)
-    learning_rate = trial.suggest_float('learning_rate', 1e-6, 1e-4, log=True)
+    learning_rate = trial.suggest_float('learning_rate', 1e-6, 1e-3, log=True)
     batch_size = trial.suggest_int('batch_size', 16, 256)
     step_size = trial.suggest_int('step_size', 1, 15)
     gamma = trial.suggest_float('gamma', 0.75, 0.99)
@@ -186,7 +186,7 @@ def create_model(params, num_variates, predict_period_num, depth, dim):
 # 初期設定
 start_date = '2012-05-18'
 initial_end_date = datetime.strptime('2024-11-25', '%Y-%m-%d')
-stock_code = 'KO' #check
+stock_code = 'GOOG' #check
 file_name = f"best_hyperparameters_{stock_code}_iTransformer.json"  # check
 predict_period_num = 1
 depth = 4 

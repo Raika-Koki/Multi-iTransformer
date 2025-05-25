@@ -1,8 +1,8 @@
 import torch
 from src.data_create import get_batch
 
-def train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num):
-    """
+"""def train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num):
+    """"""
     モデルのトレーニングを行う関数
     model: トレーニングするモデル
     train_data: トレーニングデータ
@@ -12,7 +12,7 @@ def train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_
     scheduler: 学習率スケジューラ
     batch_size: バッチサイズ
     observation_period_num: 観測期間の長さ
-    """
+    """"""
 
     # トレーニングモードに設定
     model.train()  
@@ -71,5 +71,46 @@ def train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_
     total_loss_valid = total_loss_valid / len(valid_data)
 
     return model, total_loss_train, total_loss_valid
+"""
 
+def train(model, train_data, valid_data, optimizer, criterion, scheduler, batch_size, observation_period_num):
+    model.train()
+    total_loss_train = 0.0
+
+    for batch, i in enumerate(range(0, len(train_data), batch_size)):
+        data, targets = get_batch(train_data, i, batch_size, observation_period_num)
+        optimizer.zero_grad()
+        output = model(data)
+        if isinstance(output, dict):
+            output = output[list(output.keys())[0]]
+        loss = criterion(output, targets)
+        
+        if torch.isnan(loss).any():
+            print(f"NaN detected in loss at batch {batch}")
+            return model, float('inf'), float('inf')  # 無効な値を返す
+
+        loss.backward()
+        optimizer.step()
+        total_loss_train += loss.item() * data.size(0)
+
+    scheduler.step()
+    total_loss_train = total_loss_train / len(train_data)
+
+    model.eval()
+    total_loss_valid = 0.0
+
+    with torch.no_grad():
+        for i in range(0, len(valid_data), batch_size):
+            data, targets = get_batch(valid_data, i, batch_size, observation_period_num)
+            output = model(data)
+            if isinstance(output, dict):
+                output = output[list(output.keys())[0]]
+            loss = criterion(output, targets)
+            if torch.isnan(loss).any():
+                print(f"NaN detected in validation loss at batch {i}")
+                return model, float('inf'), float('inf')  # 無効な値を返す
+            total_loss_valid += loss.item() * data.size(0)
+
+    total_loss_valid = total_loss_valid / len(valid_data)
+    return model, total_loss_train, total_loss_valid
 

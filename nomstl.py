@@ -20,7 +20,7 @@ from src.data_create import data_Normalization, create_multivariate_dataset
 from src.train import train
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0' #check
+os.environ['CUDA_VISIBLE_DEVICES'] = '3' #check
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
@@ -137,7 +137,7 @@ def create_model(params, num_variates, predict_period_num, depth, dim):
 # 初期設定
 start_date = '2012-05-18'
 initial_end_date = datetime.strptime('2024-11-25', '%Y-%m-%d')
-stock_code = 'AMZN' #check
+stock_code = 'GOOG' #check
 file_name = f"best_hyperparameters_{stock_code}_iTransformer_noMSTL.json"  # check
 predict_period_num = 1
 depth = 4 
